@@ -15,3 +15,5 @@ Zur nutzung der jeweiligen Instanzen im Ordner `pip install -r requirements.txt`
 Zur erstellung dieser Datei nutzen wir `pipreqs .` (`pip install pipreqs`).
 
 Getestet und entwickelt wird unter Python 3.9.13
+
+Auf dem Auto läuft Python 3.8.10
