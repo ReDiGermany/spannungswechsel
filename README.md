@@ -46,3 +46,4 @@ for phase in np.linspace(0, 10*np.pi, 500):
 
 [ ] Nach Klassen sortieren
 [ ] Mit den Klassen einen Kreis plotten
+[ ] zwischen beiden splines einen spline zum fahren aufbauen
