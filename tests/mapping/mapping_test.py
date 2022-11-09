@@ -48,6 +48,14 @@ def plotSplines():
     ])
     x,y,xnew,ynew = plotCircle(nodes)
     plt.plot( x,y,'o' , xnew ,ynew )
+    plt.rcParams["figure.figsize"] = [np.max(x)+1, np.max(y)+1]
+    plt.rcParams["figure.autolayout"] = True
+    max = np.max(x)
+    if np.max(x)<np.max(y):
+        max = np.max(y)
+    plt.xlim(-1, max+2)
+    plt.ylim(-1, max+2)
+
     plt.show()
 
 
@@ -60,13 +68,10 @@ def plotCourse(x,y):
     plt.xlim(0, np.max(x)+1)
     plt.ylim(0, np.max(y)+1)
     plt.grid()
-        
+
     for i in range (0,4):
         plt.plot(x[i], y[i], marker="o", markersize=10, markeredgecolor="red", markerfacecolor="green")
     plt.show()
-
-
-    
 
 x = np.array([0.241,2.324,5.2423,4.235])
 y = np.array([0.234,3.424,3.455,7.234])
