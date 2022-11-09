@@ -21,6 +21,12 @@ from time import sleep
 import ogl_viewer.viewer as gl
 import cv_viewer.tracking_viewer as cv_viewer
 
+from __future__ import division
+from matplotlib import pyplot as plt
+
+from scipy import interpolate
+
+
 lock = Lock()
 run_signal = False
 exit_signal = False
@@ -123,8 +129,63 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
         sleep(0.01)
 
 
+def plotCircle(nodes):
+    x = nodes[:,0]
+    y = nodes[:,1]
+
+    tck,u     = interpolate.splprep( [x,y] ,s = 0,per=True )
+    xnew,ynew = interpolate.splev( np.linspace( 0, 1, 100 ), tck,der = 0)
+
+    return [x,y,xnew,ynew]
+    # plt.plot( x,y,'o' , xnew ,ynew )
+
+
+def plotSplines():
+    nodes = np.array([
+        [0,4],
+        [0,6],
+        [2,8],
+        [4,6],
+        [4,5],
+        [3,4],
+        [4,3],
+        [4,2],
+        [2,0],
+        [0,2],
+        [0,4],
+    ])
+    x,y,xnew,ynew = plotCircle(nodes)
+    plt.plot( x,y,'o' , xnew ,ynew )
+
+    nodes = np.array([
+        [1,4],
+        [1,6],
+        [2,7],
+        [3,6],
+        [3,5.5],
+        [2,4.5],
+        [2,3.5],
+        [3,2.5],
+        [3,2],
+        [2,1],
+        [1,2],
+        [1,4],
+    ])
+    x,y,xnew,ynew = plotCircle(nodes)
+    plt.plot( x,y,'o' , xnew ,ynew )
+    plt.rcParams["figure.figsize"] = [np.max(x)+1, np.max(y)+1]
+    plt.rcParams["figure.autolayout"] = True
+    max = np.max(x)
+    if np.max(x)<np.max(y):
+        max = np.max(y)
+    plt.xlim(-1, max+2)
+    plt.ylim(-1, max+2)
+
+    plt.show()
+
 def main():
     global image_net, exit_signal, run_signal, detections
+    plotSplines()
 
     capture_thread = Thread(target=torch_thread,
                             kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})

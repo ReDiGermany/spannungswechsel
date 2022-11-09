@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+from __future__ import division
+from matplotlib import pyplot as plt
+from scipy import interpolate
+
+import math
+
 import sys
 import numpy as np
 
@@ -41,6 +47,54 @@ def img_preprocess(img, device, half, net_size):
     if img.ndimension() == 3:
         img = img.unsqueeze(0)
     return img, ratio, pad
+
+
+def plotCircle(nodes):
+    x = nodes[:,0]
+    y = nodes[:,1]
+
+    print(x)
+    print(y)
+
+    tck,u     = interpolate.splprep( [x,y] ,s = 0,per=True ) #
+    xnew,ynew = interpolate.splev( np.linspace( 0, 1, 100 ), tck,der = 0)
+
+    return [x,y,xnew,ynew]
+    # plt.plot( x,y,'o' , xnew ,ynew )
+
+
+def plotSplines(arr):
+    nodes = np.array(arr)
+    x,y,xnew,ynew = plotCircle(nodes)
+    plt.clf()
+    plt.plot( x,y,'o' , xnew ,ynew )
+
+    #nodes = np.array([
+    #    [1,4],
+    #    [1,6],
+    #    [2,7],
+    #    [3,6],
+    #    [3,5.5],
+    #    [2,4.5],
+    #    [2,3.5],
+    #    [3,2.5],
+    #    [3,2],
+    #    [2,1],
+    #    [1,2],
+    #    [1,4],
+    #])
+    #x,y,xnew,ynew = plotCircle(nodes)
+    #plt.plot( x,y,'o' , xnew ,ynew )
+    # plt.rcParams["figure.figsize"] = [np.max(x)+1, np.max(y)+1]
+    # plt.rcParams["figure.autolayout"] = True
+    max = np.max(x)
+    if np.max(x)<np.max(y):
+        max = np.max(y)
+    # plt.xlim(-1, max+2)
+    # plt.ylim(-1, max+2)
+
+    #plt.show()
+    plt.savefig("mygraph.png")
 
 
 def xywh2abcd(xywh, im_shape):
@@ -128,6 +182,7 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
 
 def main():
     global image_net, exit_signal, run_signal, detections
+    # plotSplines([[0,0],[1,1],[2,2]])
 
     capture_thread = Thread(target=torch_thread,
                             kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
@@ -224,35 +279,43 @@ def main():
                 obj_array = objects.object_list
             #print(str(len(obj_array))+" Object(s) detected\n")
             if len(obj_array) > 0:
+                print(len(obj_array))
+                arr = []
+                for obj in obj_array:
+                    if not math.isnan(obj.position[0]):
+                        arr.append([obj.position[0],obj.position[1]])
+                # print(arr)
+                if(len(arr)>3):
+                    plotSplines(arr)
             #print(str(len(obj_array))+" Object(s) detected\n")
-                # t = time.localtime()
-                # current_time = time.strftime("%H:%M:%S", t)
-                first_object = obj_array[0]
-                zed_pose = sl.Pose()
-                # print("First object attributes:")
-                # print(dir(first_object))
-                print("Label '"+pylons[int(repr(first_object.raw_label))]+"' ("+repr(first_object.raw_label)+") (conf. "+str(int(first_object.confidence))+"/100)")
-                if obj_param.enable_tracking :
-                    print(" Tracking ID: "+str(int(first_object.id))+" tracking state: "+repr(first_object.tracking_state)+" / "+repr(first_object.action_state)+" @ "+str(time.time()))
-                position = first_object.position
-                velocity = first_object.velocity
-                dimensions = first_object.dimensions
-                # print(str(time.time()))
-                print(" 3D position: [{0},{1},{2}]".format(position[0],position[1],position[2]))
-                #if zed.grab(runtime_parameters) == SUCCESS :
-                if True:
-                    # Get the pose of the camera relative to the world frame
-                    state = zed.get_position(zed_pose, sl.REFERENCE_FRAME.WORLD)
-                    # Display translation and timestamp
-                    py_translation = sl.Translation()
-                    # tx = round(zed_pose.get_translation(py_translation).get()[0], 3)
-                    pos = np.subtract(zed_pose.get_translation(py_translation).get(),position)
-                    if pos[0] > 0:
-                        print("left @ "+str(round(pos[2],2)))
-                    else:
-                        print("right @ "+str(round(pos[2],2)))
-                #print(np.subtract(zed.get_postition(cam_w_pose, sl.REFERENCE_FRAME.WORLD),position))
-                # print(" 3D position: [{0},{1},{2}]\n Velocity: [{3},{4},{5}]\n 3D dimentions: [{6},{7},{8}]".format(position[0],position[1],position[2],velocity[0],velocity[1],velocity[2],dimensions[0],dimensions[1],dimensions[2]))
+                # # t = time.localtime()
+                # # current_time = time.strftime("%H:%M:%S", t)
+                # first_object = obj_array[0]
+                # zed_pose = sl.Pose()
+                # # print("First object attributes:")
+                # # print(dir(first_object))
+                # print("Label '"+pylons[int(repr(first_object.raw_label))]+"' ("+repr(first_object.raw_label)+") (conf. "+str(int(first_object.confidence))+"/100)")
+                # if obj_param.enable_tracking :
+                #     print(" Tracking ID: "+str(int(first_object.id))+" tracking state: "+repr(first_object.tracking_state)+" / "+repr(first_object.action_state)+" @ "+str(time.time()))
+                # position = first_object.position
+                # velocity = first_object.velocity
+                # dimensions = first_object.dimensions
+                # # print(str(time.time()))
+                # print(" 3D position: [{0},{1},{2}]".format(position[0],position[1],position[2]))
+                # #if zed.grab(runtime_parameters) == SUCCESS :
+                # if True:
+                #     # Get the pose of the camera relative to the world frame
+                #     state = zed.get_position(zed_pose, sl.REFERENCE_FRAME.WORLD)
+                #     # Display translation and timestamp
+                #     py_translation = sl.Translation()
+                #     # tx = round(zed_pose.get_translation(py_translation).get()[0], 3)
+                #     pos = np.subtract(zed_pose.get_translation(py_translation).get(),position)
+                #     if pos[0] > 0:
+                #         print("left @ "+str(round(pos[2],2)))
+                #     else:
+                #         print("right @ "+str(round(pos[2],2)))
+                # #print(np.subtract(zed.get_postition(cam_w_pose, sl.REFERENCE_FRAME.WORLD),position))
+                # # print(" 3D position: [{0},{1},{2}]\n Velocity: [{3},{4},{5}]\n 3D dimentions: [{6},{7},{8}]".format(position[0],position[1],position[2],velocity[0],velocity[1],velocity[2],dimensions[0],dimensions[1],dimensions[2]))
 
 
 
