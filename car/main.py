@@ -35,7 +35,7 @@ def on_button_released(button):
 def on_axis_moved(axis):
     print(axis.name)
     if axis.name == "axis_l":
-        val = (90 - ((axis.x)*30))
+        val = (90 - ((axis.x)*10))
         if(val > 80 and val < 100):
             val = 90
         # print(val)
