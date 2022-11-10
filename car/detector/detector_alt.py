@@ -1,8 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.8
 
 from __future__ import division
+import matplotlib
 from matplotlib import pyplot as plt
 from scipy import interpolate
+
+import tkinter
+import matplotlib.animation as animation
 
 import math
 
@@ -35,6 +39,17 @@ exit_signal = False
 
 pylons = ["blue","green","orange","pink","yellow"]
 
+global_x = []
+global_y = []
+global_xnew = []
+global_ynew = []
+
+
+global_x1 = []
+global_y1 = []
+global_x1new = []
+global_y1new = []
+
 def img_preprocess(img, device, half, net_size):
     net_image, ratio, pad = letterbox(img[:, :, :3], net_size, auto=False)
     net_image = net_image.transpose((2, 0, 1))[::-1]  # HWC to CHW, BGR to RGB
@@ -64,16 +79,27 @@ def plotCircle(nodes):
 
 
 def plotSplines(pylons_left, pylons_right):
-
-    plt.clf()
-    if(len(pylons_left)<3):
+    global global_x1, global_y1, global_x1new, global_y1new, global_x, global_y, global_xnew, global_ynew
+    #plt.clf()
+    #plt.switch_backend('TkAgg')
+    if(len(pylons_left)>3):
         nodes_left = np.array(pylons_left)
-        x,y,xnew,ynew = plotCircle(pylons_left)
-        plt.plot( x,y,'o' , xnew ,ynew )
-    if(len(pylons_right)<3):
+        x,y,xnew,ynew = plotCircle(nodes_left)
+        global_x = x
+        global_y = y
+        global_xnew = xnew
+        global_ynew = ynew
+
+        # plt.plot( x,y,'o' , xnew ,ynew )
+    if(len(pylons_right)>3):
         nodes_right = np.array(pylons_right)
-        x1,y1,x1new,y1new = plotCircle(pylons_right) 
-        plt.plot( x1,y1,'p' , x1new ,y1new )
+        x,y,xnew,ynew = plotCircle(nodes_right) 
+        global_x1 = x
+        global_y1 = y
+        global_x1new = xnew
+        global_y1new = ynew
+
+        # plt.plot( x,y,'p' , xnew ,ynew )
 
         
     #nodes = np.array([
@@ -94,14 +120,14 @@ def plotSplines(pylons_left, pylons_right):
     #plt.plot( x,y,'o' , xnew ,ynew )
     # plt.rcParams["figure.figsize"] = [np.max(x)+1, np.max(y)+1]
     # plt.rcParams["figure.autolayout"] = True
-    max = np.max(x)
-    if np.max(x)<np.max(y):
-        max = np.max(y)
+    # max = np.max(x)
+    # if np.max(x)<np.max(y):
+    #     max = np.max(y)
     # plt.xlim(-1, max+2)
     # plt.ylim(-1, max+2)
 
-    #plt.show()
-    plt.savefig("mygraph.png")
+    # plt.show()
+    # plt.savefig("mygraph.png")
 
 
 def xywh2abcd(xywh, im_shape):
@@ -160,8 +186,10 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
     half = device.type != 'cpu'  # half precision only supported on CUDA
     imgsz = img_size
 
+
     # Load model
-    model = attempt_load(weights, device)  # load FP32
+    # TODO: attempt_load kills matplot!
+    model = attempt_load(weights, device,False)  # load FP32
     stride = int(model.stride.max())  # model stride
     imgsz = check_img_size(imgsz, s=stride)  # check img_size
     if half:
@@ -186,19 +214,27 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
             run_signal = False
         sleep(0.01)
 
+fig = plt.figure()
+ax1 = fig.add_subplot(1,1,1)
 
-def main():
+def animate(i):
+    global global_x1, global_y1, global_x1new, global_y1new, global_x, global_y, global_xnew, global_ynew
+    # pullData = open("sampleText.txt","r").read()
+    # dataArray = pullData.split('\n')
+    # xar = []
+    # yar = []
+    # for eachLine in dataArray:
+    #     if len(eachLine)>1:
+    #         x,y = eachLine.split(',')
+    #         xar.append(int(x))
+    #         yar.append(int(y))
+    # ax1.clear()
+    # ax1.plot( global_x,global_y,'o' , global_xnew ,global_ynew )
+    # ax1.plot( global_x1,global_y1,'o' , global_x1new ,global_y1new )
+
+
+def plt_thread():
     global image_net, exit_signal, run_signal, detections
-    # plotSplines([[0,0],[1,1],[2,2]])
-
-    left_pylons = []
-    right_pylons = []
-    #start_pylons = []
-
-    capture_thread = Thread(target=torch_thread,
-                            kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
-    capture_thread.start()
-
     print("Initializing Camera...")
 
     zed = sl.Camera()
@@ -266,8 +302,9 @@ def main():
     image_track_ocv = np.zeros((tracks_resolution.height, tracks_resolution.width, 4), np.uint8)
     # Camera pose
     cam_w_pose = sl.Pose()
-
+    print("?")
     while not exit_signal:
+        print("a")
         if zed.grab(runtime_params) == sl.ERROR_CODE.SUCCESS:
             # -- Get the image
             lock.acquire()
@@ -289,13 +326,15 @@ def main():
             if objects.is_new :
                 obj_array = objects.object_list
             #print(str(len(obj_array))+" Object(s) detected\n")
+            left_pylons = []
+            right_pylons = []
             if len(obj_array) > 0:
                 print(len(obj_array))
                 for obj in obj_array:
                     if not math.isnan(obj.position[0]):
-                        if(obj.raw_label == "0" or obj.raw_label == "1"):
+                        if(obj.raw_label == 0 or obj.raw_label == 1):
                             left_pylons.append([obj.position[0],obj.position[1]])
-                        if(obj.raw_label == "2" or obj.raw_label == "3"):
+                        if(obj.raw_label == 2 or obj.raw_label == 3):
                             right_pylons.append([obj.position[0],obj.position[1]])
                 # print(arr)
                 plotSplines(left_pylons, right_pylons)
@@ -352,11 +391,38 @@ def main():
             # if key == 27:
                 # exit_signal = True
         else:
-            exit_signal = True
-
+            print("failed")
+            #exit_signal = True
     # viewer.exit()
-    exit_signal = True
+    print("done")
+
+    #exit_signal = True
     zed.close()
+
+mainwindow = plt
+
+def main():
+    # print("main()")
+    # 
+    capture_thread = Thread(target=torch_thread, kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
+    capture_thread.start()
+    # print("capture_thread")
+# 
+    # plot_thread = Thread(target=plt_thread)
+    # plot_thread.start()
+    # print("plot_thread")
+# 
+    # print("plt.hide")
+# 
+    # #ani = animation.FuncAnimation(fig, animate, interval=1000)
+    # print("ani")
+
+    plt.plot( [1,1,1],[4,2,3],'o')
+    plt.show()
+    # capture_thread.join()
+    # plot_thread.join()
+
+    # plot_thread.join()
 
 
 if __name__ == '__main__':
