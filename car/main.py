@@ -33,6 +33,7 @@ def on_button_released(button):
 
 
 def on_axis_moved(axis):
+    print(axis.name)
     if axis.name == "axis_l":
         val = (90 - ((axis.x)*30))
         if(val > 80 and val < 100):
@@ -83,6 +84,7 @@ def hello(car):
 
 
     if(car):
+        print("init servers!")
         global has_car
         global Kit
         global pca
@@ -92,6 +94,11 @@ def hello(car):
 
         Kit = ServoKit(channels=16,i2c=i2c)
         print("Servo initiated!")
+
+        Kit.continuous_servo[0].throttle = 0.8
+        time.sleep(1/10)
+        Kit.continuous_servo[0].throttle = 0
+        print("beep!")
     # x = threading.Thread(target=thread_function)
     # x.start()
 
@@ -110,7 +117,7 @@ def hello(car):
             signal.pause()
     except KeyboardInterrupt:
         pass
-    x.join()
+    # x.join()
 
 if __name__ == '__main__':
     hello()

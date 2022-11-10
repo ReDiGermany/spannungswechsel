@@ -22,6 +22,9 @@ pca = PCA9685(i2c, address = 0x40)
 Kit = ServoKit(channels=16,i2c=i2c)
 print("Servo initiated!")
 
+Kit.continuous_servo[0].throttle = 0.8
+time.sleep(1/10)
+Kit.continuous_servo[0].throttle = 0
 
 
 class SimpleChat(WebSocket):
@@ -61,8 +64,9 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 if __name__ == "__main__":
-    #hostName = "192.168.0.19"
-    hostName = "192.168.171.134"
+    # hostName = "192.168.0.19"
+    # hostName = "192.168.171.134"
+    hostName = "192.168.1.220"
     serverPort = 8080
     
     webServer = HTTPServer((hostName, serverPort), MyServer)
