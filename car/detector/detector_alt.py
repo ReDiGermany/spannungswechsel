@@ -63,12 +63,19 @@ def plotCircle(nodes):
     # plt.plot( x,y,'o' , xnew ,ynew )
 
 
-def plotSplines(arr):
-    nodes = np.array(arr)
-    x,y,xnew,ynew = plotCircle(nodes)
-    plt.clf()
-    plt.plot( x,y,'o' , xnew ,ynew )
+def plotSplines(pylons_left, pylons_right):
 
+    plt.clf()
+    if(len(pylons_left)<3):
+        nodes_left = np.array(pylons_left)
+        x,y,xnew,ynew = plotCircle(pylons_left)
+        plt.plot( x,y,'o' , xnew ,ynew )
+    if(len(pylons_right)<3):
+        nodes_right = np.array(pylons_right)
+        x1,y1,x1new,y1new = plotCircle(pylons_right) 
+        plt.plot( x1,y1,'p' , x1new ,y1new )
+
+        
     #nodes = np.array([
     #    [1,4],
     #    [1,6],
@@ -184,6 +191,10 @@ def main():
     global image_net, exit_signal, run_signal, detections
     # plotSplines([[0,0],[1,1],[2,2]])
 
+    left_pylons = []
+    right_pylons = []
+    #start_pylons = []
+
     capture_thread = Thread(target=torch_thread,
                             kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
     capture_thread.start()
@@ -280,13 +291,14 @@ def main():
             #print(str(len(obj_array))+" Object(s) detected\n")
             if len(obj_array) > 0:
                 print(len(obj_array))
-                arr = []
                 for obj in obj_array:
                     if not math.isnan(obj.position[0]):
-                        arr.append([obj.position[0],obj.position[1]])
+                        if(obj.raw_label == "0" or obj.raw_label == "1"):
+                            left_pylons.append([obj.position[0],obj.position[1]])
+                        if(obj.raw_label == "2" or obj.raw_label == "3"):
+                            right_pylons.append([obj.position[0],obj.position[1]])
                 # print(arr)
-                if(len(arr)>3):
-                    plotSplines(arr)
+                plotSplines(left_pylons, right_pylons)
             #print(str(len(obj_array))+" Object(s) detected\n")
                 # # t = time.localtime()
                 # # current_time = time.strftime("%H:%M:%S", t)
