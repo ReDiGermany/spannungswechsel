@@ -1,12 +1,11 @@
 #!/usr/bin/env python3.8
 
 from __future__ import division
-import matplotlib
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 from scipy import interpolate
 
 import tkinter
-import matplotlib.animation as animation
 
 import math
 
@@ -68,10 +67,7 @@ def plotCircle(nodes):
     x = nodes[:,0]
     y = nodes[:,1]
 
-    print(x)
-    print(y)
-
-    tck,u     = interpolate.splprep( [x,y] ,s = 0,per=True ) #
+    tck,u     = interpolate.splprep( [x,y] ,s = 0) #,per=True 
     xnew,ynew = interpolate.splev( np.linspace( 0, 1, 100 ), tck,der = 0)
 
     return [x,y,xnew,ynew]
@@ -80,26 +76,26 @@ def plotCircle(nodes):
 
 def plotSplines(pylons_left, pylons_right):
     global global_x1, global_y1, global_x1new, global_y1new, global_x, global_y, global_xnew, global_ynew
-    #plt.clf()
+    print(pylons_left)
+    print(pylons_right)
+    plt.clf()
     #plt.switch_backend('TkAgg')
-    if(len(pylons_left)>3):
+    if(len(pylons_left)>1):
         nodes_left = np.array(pylons_left)
-        x,y,xnew,ynew = plotCircle(nodes_left)
-        global_x = x
-        global_y = y
-        global_xnew = xnew
-        global_ynew = ynew
+        x = nodes_left[:,0]
+        y = nodes_left[:,1]
+        #x,y,xnew,ynew = plotCircle(nodes_left)
 
-        # plt.plot( x,y,'o' , xnew ,ynew )
-    if(len(pylons_right)>3):
+        #plt.plot( x,y,'o' , xnew ,ynew )
+        plt.plot( x,y,'o',color='blue' )
+    if(len(pylons_right)>1):
         nodes_right = np.array(pylons_right)
-        x,y,xnew,ynew = plotCircle(nodes_right) 
-        global_x1 = x
-        global_y1 = y
-        global_x1new = xnew
-        global_y1new = ynew
+        x = nodes_right[:,0]
+        y = nodes_right[:,1]
+        #x,y,xnew,ynew = plotCircle(nodes_right) 
 
-        # plt.plot( x,y,'p' , xnew ,ynew )
+        #plt.plot( x,y,'p' , xnew ,ynew )
+        plt.plot( x,y,'o',color='red' )
 
         
     #nodes = np.array([
@@ -127,7 +123,7 @@ def plotSplines(pylons_left, pylons_right):
     # plt.ylim(-1, max+2)
 
     # plt.show()
-    # plt.savefig("mygraph.png")
+    plt.savefig("mygraph.png")
 
 
 def xywh2abcd(xywh, im_shape):
@@ -177,8 +173,10 @@ def detections_to_custom_box(detections, im, im0):
     return output
 
 
+bizzi = True
+
 def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
-    global image_net, exit_signal, run_signal, detections
+    global image_net, exit_signal, run_signal, detections, bizzi
 
     print("Intializing Network...")
 
@@ -190,6 +188,7 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
     # Load model
     # TODO: attempt_load kills matplot!
     model = attempt_load(weights, device,False)  # load FP32
+    bizzi = False
     stride = int(model.stride.max())  # model stride
     imgsz = check_img_size(imgsz, s=stride)  # check img_size
     if half:
@@ -214,10 +213,12 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
             run_signal = False
         sleep(0.01)
 
-fig = plt.figure()
-ax1 = fig.add_subplot(1,1,1)
+#matplotlib.use("TkAgg")
+
+fig, ax = plt.subplots()
 
 def animate(i):
+    print("lalalalallalalal")
     global global_x1, global_y1, global_x1new, global_y1new, global_x, global_y, global_xnew, global_ynew
     # pullData = open("sampleText.txt","r").read()
     # dataArray = pullData.split('\n')
@@ -228,9 +229,12 @@ def animate(i):
     #         x,y = eachLine.split(',')
     #         xar.append(int(x))
     #         yar.append(int(y))
-    # ax1.clear()
-    # ax1.plot( global_x,global_y,'o' , global_xnew ,global_ynew )
-    # ax1.plot( global_x1,global_y1,'o' , global_x1new ,global_y1new )
+    print("plotaaa")
+    global ax1
+    ax.clear()
+    ax.plot( global_x,global_y,'o' , global_xnew ,global_ynew )
+    ax.plot( global_x1,global_y1,'o' , global_x1new ,global_y1new )
+    ax.set_ylim([0,255])
 
 
 def plt_thread():
@@ -249,7 +253,7 @@ def plt_thread():
     init_params.coordinate_units = sl.UNIT.METER
     init_params.depth_mode = sl.DEPTH_MODE.ULTRA  # QUALITY
     init_params.coordinate_system = sl.COORDINATE_SYSTEM.RIGHT_HANDED_Y_UP
-    init_params.depth_maximum_distance = 10
+    init_params.depth_maximum_distance = 20
 
     runtime_params = sl.RuntimeParameters()
     status = zed.open(init_params)
@@ -283,28 +287,27 @@ def plt_thread():
     # Create OpenGL viewer
     # viewer = gl.GLViewer()
     # point_cloud_res = sl.Resolution(min(camera_infos.camera_resolution.width, 720), min(camera_infos.camera_resolution.height, 404))
-
+# 
     # point_cloud_render = sl.Mat()
     # viewer.init(camera_infos.camera_model, point_cloud_res, obj_param.enable_tracking)
     # point_cloud = sl.Mat(point_cloud_res.width, point_cloud_res.height, sl.MAT_TYPE.F32_C4, sl.MEM.CPU)
-    image_left = sl.Mat()
-    # Utilities for 2D display
-    display_resolution = sl.Resolution(min(camera_infos.camera_resolution.width, 1280), min(camera_infos.camera_resolution.height, 720))
-    image_scale = [display_resolution.width / camera_infos.camera_resolution.width, display_resolution.height / camera_infos.camera_resolution.height]
-    image_left_ocv = np.full((display_resolution.height, display_resolution.width, 4), [245, 239, 239, 255], np.uint8)
-
-    # Utilities for tracks view
-    camera_config = zed.get_camera_information().camera_configuration
-    tracks_resolution = sl.Resolution(400, display_resolution.height)
-    track_view_generator = cv_viewer.TrackingViewer(tracks_resolution, camera_config.camera_fps,
-                                                    init_params.depth_maximum_distance)
-    track_view_generator.set_camera_calibration(camera_config.calibration_parameters)
-    image_track_ocv = np.zeros((tracks_resolution.height, tracks_resolution.width, 4), np.uint8)
+    # image_left = sl.Mat()
+    # # Utilities for 2D display
+    # display_resolution = sl.Resolution(min(camera_infos.camera_resolution.width, 1280), min(camera_infos.camera_resolution.height, 720))
+    # image_scale = [display_resolution.width / camera_infos.camera_resolution.width, display_resolution.height / camera_infos.camera_resolution.height]
+    # image_left_ocv = np.full((display_resolution.height, display_resolution.width, 4), [245, 239, 239, 255], np.uint8)
+# 
+    # # Utilities for tracks view
+    # camera_config = zed.get_camera_information().camera_configuration
+    # tracks_resolution = sl.Resolution(400, display_resolution.height)
+    # track_view_generator = cv_viewer.TrackingViewer(tracks_resolution, camera_config.camera_fps,
+    #                                                 init_params.depth_maximum_distance)
+    # track_view_generator.set_camera_calibration(camera_config.calibration_parameters)
+    # image_track_ocv = np.zeros((tracks_resolution.height, tracks_resolution.width, 4), np.uint8)
     # Camera pose
     cam_w_pose = sl.Pose()
     print("?")
     while not exit_signal:
-        print("a")
         if zed.grab(runtime_params) == sl.ERROR_CODE.SUCCESS:
             # -- Get the image
             lock.acquire()
@@ -370,22 +373,22 @@ def plt_thread():
 
 
 
-            # -- Display
-            # Retrieve display data
+            # # -- Display
+            # # Retrieve display data
             # zed.retrieve_measure(point_cloud, sl.MEASURE.XYZRGBA, sl.MEM.CPU, point_cloud_res)
             # point_cloud.copy_to(point_cloud_render)
-            #  zed.retrieve_image(image_left, sl.VIEW.LEFT, sl.MEM.CPU, display_resolution)
+            # zed.retrieve_image(image_left, sl.VIEW.LEFT, sl.MEM.CPU, display_resolution)
             # zed.get_position(cam_w_pose, sl.REFERENCE_FRAME.WORLD)
-
-            # 3D rendering
-            #viewer.updateData(point_cloud_render, objects)
-            # 2D rendering
+# 
+            # # 3D rendering
+            # viewer.updateData(point_cloud_render, objects)
+            # # 2D rendering
             # np.copyto(image_left_ocv, image_left.get_data())
             # cv_viewer.render_2D(image_left_ocv, image_scale, objects, obj_param.enable_tracking)
             # global_image = cv2.hconcat([image_left_ocv])
-            # Tracking view
+            # # Tracking view
             # track_view_generator.generate_view(objects, cam_w_pose, image_track_ocv, objects.is_tracked)
-
+# 
             # cv2.imshow("ZED | 2D View and Birds View", global_image)
             # key = cv2.waitKey(10)
             # if key == 27:
@@ -399,26 +402,33 @@ def plt_thread():
     #exit_signal = True
     zed.close()
 
-mainwindow = plt
-
 def main():
+    global ani
+    ani = "aniiiii"
     # print("main()")
     # 
     capture_thread = Thread(target=torch_thread, kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
     capture_thread.start()
     # print("capture_thread")
 # 
-    # plot_thread = Thread(target=plt_thread)
-    # plot_thread.start()
+    # plt_thread()
+
+    plot_thread = Thread(target=plt_thread)
+    plot_thread.start()
+    while bizzi:
+        print("wait")
+        time.sleep(1)
+    #ani = animation.FuncAnimation(fig, animate, interval=1000)
+    time.sleep(1)
+
+    #matplotlib.pyplot.plot( [1,1,1],[4,2,3],'o')
+    #plt.show()
     # print("plot_thread")
 # 
-    # print("plt.hide")
+    #print("plt.hide")
 # 
-    # #ani = animation.FuncAnimation(fig, animate, interval=1000)
     # print("ani")
 
-    plt.plot( [1,1,1],[4,2,3],'o')
-    plt.show()
     # capture_thread.join()
     # plot_thread.join()
 
