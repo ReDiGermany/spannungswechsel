@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from scipy import interpolate
 
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+from matplotlib.figure import Figure
+
 import tkinter
 
 import math
@@ -74,56 +77,39 @@ def plotCircle(nodes):
     # plt.plot( x,y,'o' , xnew ,ynew )
 
 
-def plotSplines(pylons_left, pylons_right):
+def plotSplines(pylons_left, pylons_right,vis):
     global global_x1, global_y1, global_x1new, global_y1new, global_x, global_y, global_xnew, global_ynew
-    print(pylons_left)
-    print(pylons_right)
+    # print(pylons_left)
+    # print(pylons_right)
     plt.clf()
-    #plt.switch_backend('TkAgg')
+
+    fig = plt.figure()
+    canvas = FigureCanvas(fig)
+    ax = fig.gca()
+    
     if(len(pylons_left)>1):
         nodes_left = np.array(pylons_left)
         x = nodes_left[:,0]
         y = nodes_left[:,1]
-        #x,y,xnew,ynew = plotCircle(nodes_left)
 
-        #plt.plot( x,y,'o' , xnew ,ynew )
         plt.plot( x,y,'o',color='blue' )
     if(len(pylons_right)>1):
         nodes_right = np.array(pylons_right)
         x = nodes_right[:,0]
         y = nodes_right[:,1]
-        #x,y,xnew,ynew = plotCircle(nodes_right) 
 
-        #plt.plot( x,y,'p' , xnew ,ynew )
         plt.plot( x,y,'o',color='red' )
 
-        
-    #nodes = np.array([
-    #    [1,4],
-    #    [1,6],
-    #    [2,7],
-    #    [3,6],
-    #    [3,5.5],
-    #    [2,4.5],
-    #    [2,3.5],
-    #    [3,2.5],
-    #    [3,2],
-    #    [2,1],
-    #    [1,2],
-    #    [1,4],
-    #])
-    #x,y,xnew,ynew = plotCircle(nodes)
-    #plt.plot( x,y,'o' , xnew ,ynew )
-    # plt.rcParams["figure.figsize"] = [np.max(x)+1, np.max(y)+1]
-    # plt.rcParams["figure.autolayout"] = True
-    # max = np.max(x)
-    # if np.max(x)<np.max(y):
-    #     max = np.max(y)
-    # plt.xlim(-1, max+2)
-    # plt.ylim(-1, max+2)
+    # Preparing display and printing into ../../dump/view.jpeg
+    width, height = fig.get_size_inches() * fig.get_dpi()
+    canvas.draw()
+    image = np.frombuffer(fig.canvas.tostring_rgb(), dtype=np.uint8)
+    image = image.reshape(fig.canvas.get_width_height()[::-1] + (3,))
 
-    # plt.show()
-    plt.savefig("mygraph.png")
+    tempvis = vis[:,:,:3]
+
+    temp = merge_image(tempvis,image,1920 - int(680/2),0)
+    cv2.imwrite('../../dump/view.jpg', temp)
 
 
 def xywh2abcd(xywh, im_shape):
@@ -236,6 +222,32 @@ def animate(i):
     ax.plot( global_x1,global_y1,'o' , global_x1new ,global_y1new )
     ax.set_ylim([0,255])
 
+# https://stackoverflow.com/questions/14063070/overlay-a-smaller-image-on-a-larger-image-python-opencv
+def merge_image(back, front, x,y):
+    # convert to rgba
+    if back.shape[2] == 3:
+        back = cv2.cvtColor(back, cv2.COLOR_BGR2BGRA)
+    if front.shape[2] == 3:
+        front = cv2.cvtColor(front, cv2.COLOR_BGR2BGRA)
+
+    # crop the overlay from both images
+    bh,bw = back.shape[:2]
+    fh,fw = front.shape[:2]
+    x1, x2 = max(x, 0), min(x+fw, bw)
+    y1, y2 = max(y, 0), min(y+fh, bh)
+    front_cropped = front[y1-y:y2-y, x1-x:x2-x]
+    back_cropped = back[y1:y2, x1:x2]
+
+    alpha_front = front_cropped[:,:,3:4] / 255
+    alpha_back = back_cropped[:,:,3:4] / 255
+    
+    # replace an area in result with overlay
+    result = back.copy()
+    # print(f'af: {alpha_front.shape}\nab: {alpha_back.shape}\nfront_cropped: {front_cropped.shape}\nback_cropped: {back_cropped.shape}')
+    result[y1:y2, x1:x2, :3] = alpha_front * front_cropped[:,:,:3] + (1-alpha_front) * back_cropped[:,:,:3]
+    result[y1:y2, x1:x2, 3:4] = (alpha_front + alpha_back) / (1 + alpha_front*alpha_back) * 255
+
+    return result
 
 def plt_thread():
     global image_net, exit_signal, run_signal, detections
@@ -249,7 +261,7 @@ def plt_thread():
 
     # Create a InitParameters object and set configuration parameters
     init_params = sl.InitParameters(input_t=input_type, svo_real_time_mode=True)
-    init_params.camera_resolution = sl.RESOLUTION.HD720
+    init_params.camera_resolution = sl.RESOLUTION.HD1080
     init_params.coordinate_units = sl.UNIT.METER
     init_params.depth_mode = sl.DEPTH_MODE.ULTRA  # QUALITY
     init_params.coordinate_system = sl.COORDINATE_SYSTEM.RIGHT_HANDED_Y_UP
@@ -263,6 +275,7 @@ def plt_thread():
         exit()
 
     image_left_tmp = sl.Mat()
+    image_right_tmp = sl.Mat()
 
     print("Initialized Camera")
 
@@ -313,6 +326,8 @@ def plt_thread():
             lock.acquire()
             zed.retrieve_image(image_left_tmp, sl.VIEW.LEFT)
             image_net = image_left_tmp.get_data()
+            zed.retrieve_image(image_right_tmp, sl.VIEW.RIGHT)
+            image_net_right = image_right_tmp.get_data()
             lock.release()
             run_signal = True
 
@@ -329,6 +344,14 @@ def plt_thread():
             if objects.is_new :
                 obj_array = objects.object_list
             #print(str(len(obj_array))+" Object(s) detected\n")
+
+            # print(image_left_tmp)
+
+            # cv2.imwrite('test_raw_left.jpg', image_net)
+            # cv2.imwrite('test_raw_right.jpg', image_net_right)
+
+            vis = np.concatenate((image_net, image_net_right), axis=1)
+
             left_pylons = []
             right_pylons = []
             if len(obj_array) > 0:
@@ -340,7 +363,7 @@ def plt_thread():
                         if(obj.raw_label == 2 or obj.raw_label == 3):
                             right_pylons.append([obj.position[0],obj.position[1]])
                 # print(arr)
-                plotSplines(left_pylons, right_pylons)
+                plotSplines(left_pylons, right_pylons,vis)
             #print(str(len(obj_array))+" Object(s) detected\n")
                 # # t = time.localtime()
                 # # current_time = time.strftime("%H:%M:%S", t)
