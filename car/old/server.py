@@ -1,10 +1,11 @@
-#!/usr/bin/python3.9
+#!/usr/bin/python3.8
 print("Welcome!")
 from simple_websocket_server import WebSocketServer, WebSocket
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import http.server
 import time
 import threading
+import netifaces as ni
 print("Server libs loaded!")
 
 from board import SCL_1, SDA_1
@@ -22,7 +23,7 @@ pca = PCA9685(i2c, address = 0x40)
 Kit = ServoKit(channels=16,i2c=i2c)
 print("Servo initiated!")
 
-Kit.continuous_servo[0].throttle = 0.8
+Kit.continuous_servo[0].throttle = 1
 time.sleep(1/10)
 Kit.continuous_servo[0].throttle = 0
 
@@ -66,8 +67,11 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     # hostName = "192.168.0.19"
     # hostName = "192.168.171.134"
-    hostName = "192.168.1.220"
+    # hostName = "192.168.1.220"
+    nic = "wlan0"
+    hostName = ni.ifaddresses(nic)[ni.AF_INET][0]['addr']
     serverPort = 8080
+    print("Using {0}'s ip: {1}".format(nic,hostName))
     
     webServer = HTTPServer((hostName, serverPort), MyServer)
     print("Web Server started @ http://%s:%s" % (hostName, serverPort))
