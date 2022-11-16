@@ -1,0 +1,1831 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Mat Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classsl_1_1Mat.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-static-methods">Static Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="classsl_1_1Mat-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Mat Class Reference<div class="ingroups"><a class="el" href="group__Core__group.html">Core Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> class can handle multiple matrix formats from 1 to 4 channels, with different value types (float or uchar), and can be stored CPU and/or GPU side.  
+ <a href="classsl_1_1Mat.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a13e4639b574685e1d9162ed953e607ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a13e4639b574685e1d9162ed953e607ed">Mat</a> ()</td></tr>
+<tr class="memdesc:a13e4639b574685e1d9162ed953e607ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">empty <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> default constructor.  <a href="classsl_1_1Mat.html#a13e4639b574685e1d9162ed953e607ed">More...</a><br /></td></tr>
+<tr class="separator:a13e4639b574685e1d9162ed953e607ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35f58ef4ecfadc052b904342ac1fcca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#ab35f58ef4ecfadc052b904342ac1fcca">Mat</a> (size_t width, size_t height, <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> mat_type, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>)</td></tr>
+<tr class="memdesc:ab35f58ef4ecfadc052b904342ac1fcca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor.  <a href="classsl_1_1Mat.html#ab35f58ef4ecfadc052b904342ac1fcca">More...</a><br /></td></tr>
+<tr class="separator:ab35f58ef4ecfadc052b904342ac1fcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6d9b9cd531917318e567a37297916f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#abb6d9b9cd531917318e567a37297916f">Mat</a> (size_t width, size_t height, <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> mat_type, <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *ptr, size_t step, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>)</td></tr>
+<tr class="memdesc:abb6d9b9cd531917318e567a37297916f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor from an existing data pointer.  <a href="classsl_1_1Mat.html#abb6d9b9cd531917318e567a37297916f">More...</a><br /></td></tr>
+<tr class="separator:abb6d9b9cd531917318e567a37297916f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577e41f91b8f918baed38d25da9ea63c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a577e41f91b8f918baed38d25da9ea63c">Mat</a> (size_t width, size_t height, <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> mat_type, <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *ptr_cpu, size_t step_cpu, <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *ptr_gpu, size_t step_gpu)</td></tr>
+<tr class="memdesc:a577e41f91b8f918baed38d25da9ea63c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor from two existing data pointers, CPU and GPU.  <a href="classsl_1_1Mat.html#a577e41f91b8f918baed38d25da9ea63c">More...</a><br /></td></tr>
+<tr class="separator:a577e41f91b8f918baed38d25da9ea63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe626ee9cc65bc884c2af199ee3eead"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a9fe626ee9cc65bc884c2af199ee3eead">Mat</a> (<a class="el" href="structsl_1_1Resolution.html">Resolution</a> resolution, <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> mat_type, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>)</td></tr>
+<tr class="memdesc:a9fe626ee9cc65bc884c2af199ee3eead"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor.  <a href="classsl_1_1Mat.html#a9fe626ee9cc65bc884c2af199ee3eead">More...</a><br /></td></tr>
+<tr class="separator:a9fe626ee9cc65bc884c2af199ee3eead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96609b1af8290be83284f69a91eab25b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a96609b1af8290be83284f69a91eab25b">Mat</a> (<a class="el" href="structsl_1_1Resolution.html">Resolution</a> resolution, <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> mat_type, <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *ptr, size_t step, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>)</td></tr>
+<tr class="memdesc:a96609b1af8290be83284f69a91eab25b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor from an existing data pointer.  <a href="classsl_1_1Mat.html#a96609b1af8290be83284f69a91eab25b">More...</a><br /></td></tr>
+<tr class="separator:a96609b1af8290be83284f69a91eab25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71dee374c33d524ab8064a3a3907737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#ab71dee374c33d524ab8064a3a3907737">Mat</a> (<a class="el" href="structsl_1_1Resolution.html">Resolution</a> resolution, <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> mat_type, <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *ptr_cpu, size_t step_cpu, <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *ptr_gpu, size_t step_gpu)</td></tr>
+<tr class="memdesc:ab71dee374c33d524ab8064a3a3907737"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor from two existing data pointers, CPU and GPU.  <a href="classsl_1_1Mat.html#ab71dee374c33d524ab8064a3a3907737">More...</a><br /></td></tr>
+<tr class="separator:ab71dee374c33d524ab8064a3a3907737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc42063b353ce75ee279f48d46cd47d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a9cc42063b353ce75ee279f48d46cd47d">Mat</a> (const <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;mat)</td></tr>
+<tr class="memdesc:a9cc42063b353ce75ee279f48d46cd47d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor by copy (shallow copy).  <a href="classsl_1_1Mat.html#a9cc42063b353ce75ee279f48d46cd47d">More...</a><br /></td></tr>
+<tr class="separator:a9cc42063b353ce75ee279f48d46cd47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993e4956aabfe7ea046415add5e52524"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a993e4956aabfe7ea046415add5e52524">alloc</a> (size_t width, size_t height, <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> mat_type, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>)</td></tr>
+<tr class="memdesc:a993e4956aabfe7ea046415add5e52524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> memory.  <a href="classsl_1_1Mat.html#a993e4956aabfe7ea046415add5e52524">More...</a><br /></td></tr>
+<tr class="separator:a993e4956aabfe7ea046415add5e52524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a6fd26b7769221da5893a21283dc7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#ad7a6fd26b7769221da5893a21283dc7d">alloc</a> (<a class="el" href="structsl_1_1Resolution.html">Resolution</a> resolution, <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> mat_type, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>)</td></tr>
+<tr class="memdesc:ad7a6fd26b7769221da5893a21283dc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> memory.  <a href="classsl_1_1Mat.html#ad7a6fd26b7769221da5893a21283dc7d">More...</a><br /></td></tr>
+<tr class="separator:ad7a6fd26b7769221da5893a21283dc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85825bed2f9a04a95dcee2b84d96fd5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a85825bed2f9a04a95dcee2b84d96fd5e">~Mat</a> ()</td></tr>
+<tr class="memdesc:a85825bed2f9a04a95dcee2b84d96fd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> destructor. This function calls <a class="el" href="classsl_1_1Mat.html#a3ec982ba6ac4b4b0701e4edf3776cac7">free</a> to release owned memory.  <a href="classsl_1_1Mat.html#a85825bed2f9a04a95dcee2b84d96fd5e">More...</a><br /></td></tr>
+<tr class="separator:a85825bed2f9a04a95dcee2b84d96fd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec982ba6ac4b4b0701e4edf3776cac7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a3ec982ba6ac4b4b0701e4edf3776cac7">free</a> (<a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>|<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a>)</td></tr>
+<tr class="memdesc:a3ec982ba6ac4b4b0701e4edf3776cac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the owned memory.  <a href="classsl_1_1Mat.html#a3ec982ba6ac4b4b0701e4edf3776cac7">More...</a><br /></td></tr>
+<tr class="separator:a3ec982ba6ac4b4b0701e4edf3776cac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35dbb18591a2dcba489f153dfe7d893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#af35dbb18591a2dcba489f153dfe7d893">operator=</a> (const <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;that)</td></tr>
+<tr class="memdesc:af35dbb18591a2dcba489f153dfe7d893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a shallow copy.  <a href="classsl_1_1Mat.html#af35dbb18591a2dcba489f153dfe7d893">More...</a><br /></td></tr>
+<tr class="separator:af35dbb18591a2dcba489f153dfe7d893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2582926acd49b7e2921e9e4b7fd4fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a0c2582926acd49b7e2921e9e4b7fd4fa">updateCPUfromGPU</a> (cudaStream_t stream=0)</td></tr>
+<tr class="memdesc:a0c2582926acd49b7e2921e9e4b7fd4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downloads data from DEVICE (GPU) to HOST (CPU), if possible.  <a href="classsl_1_1Mat.html#a0c2582926acd49b7e2921e9e4b7fd4fa">More...</a><br /></td></tr>
+<tr class="separator:a0c2582926acd49b7e2921e9e4b7fd4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbba0502a2c9ddd7a01eedb8612f1f8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#adbba0502a2c9ddd7a01eedb8612f1f8e">updateGPUfromCPU</a> (cudaStream_t stream=0, int GPU_id=0)</td></tr>
+<tr class="memdesc:adbba0502a2c9ddd7a01eedb8612f1f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data from HOST (CPU) to DEVICE (GPU), if possible.  <a href="classsl_1_1Mat.html#adbba0502a2c9ddd7a01eedb8612f1f8e">More...</a><br /></td></tr>
+<tr class="separator:adbba0502a2c9ddd7a01eedb8612f1f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f65b1539cf468fb8dcd092a1222c3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a77f65b1539cf468fb8dcd092a1222c3a">copyTo</a> (<a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;dst, <a class="el" href="group__Core__group.html#ga6053bda451d8ca289b3e443377cfc004">COPY_TYPE</a> cpyType=<a class="el" href="namespacesl.html#ga6053bda451d8ca289b3e443377cfc004a5427b27bca3fdb41b1fa3f8c671eecfb">COPY_TYPE::CPU_CPU</a>, cudaStream_t stream=0) const</td></tr>
+<tr class="memdesc:a77f65b1539cf468fb8dcd092a1222c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data an other <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> (deep copy).  <a href="classsl_1_1Mat.html#a77f65b1539cf468fb8dcd092a1222c3a">More...</a><br /></td></tr>
+<tr class="separator:a77f65b1539cf468fb8dcd092a1222c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7157e742584b85a243fe928c606c3bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#af7157e742584b85a243fe928c606c3bf">setFrom</a> (const <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;src, <a class="el" href="group__Core__group.html#ga6053bda451d8ca289b3e443377cfc004">COPY_TYPE</a> cpyType=<a class="el" href="namespacesl.html#ga6053bda451d8ca289b3e443377cfc004a5427b27bca3fdb41b1fa3f8c671eecfb">COPY_TYPE::CPU_CPU</a>, cudaStream_t stream=0)</td></tr>
+<tr class="memdesc:af7157e742584b85a243fe928c606c3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from an other <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> (deep copy).  <a href="classsl_1_1Mat.html#af7157e742584b85a243fe928c606c3bf">More...</a><br /></td></tr>
+<tr class="separator:af7157e742584b85a243fe928c606c3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ea307a6e50ed1e2fcda6ef422eb906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a15ea307a6e50ed1e2fcda6ef422eb906">read</a> (const <a class="el" href="classsl_1_1String.html">String</a> &amp;filePath)</td></tr>
+<tr class="memdesc:a15ea307a6e50ed1e2fcda6ef422eb906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an image from a file.  <a href="classsl_1_1Mat.html#a15ea307a6e50ed1e2fcda6ef422eb906">More...</a><br /></td></tr>
+<tr class="separator:a15ea307a6e50ed1e2fcda6ef422eb906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accab3cb8c395f6b32c897e549fef78a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#accab3cb8c395f6b32c897e549fef78a8">write</a> (const <a class="el" href="classsl_1_1String.html">String</a> &amp;filePath, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">sl::MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">sl::MEM::CPU</a>, int compression_level=-1)</td></tr>
+<tr class="memdesc:accab3cb8c395f6b32c897e549fef78a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the <a class="el" href="classsl_1_1Mat.html">Mat</a> (only if <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> is available) into a file defined by its extension.  <a href="classsl_1_1Mat.html#accab3cb8c395f6b32c897e549fef78a8">More...</a><br /></td></tr>
+<tr class="separator:accab3cb8c395f6b32c897e549fef78a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa295eea9c7eb611e3b629b7e4d63a74c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa295eea9c7eb611e3b629b7e4d63a74c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#aa295eea9c7eb611e3b629b7e4d63a74c">setTo</a> (T value, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">sl::MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>)</td></tr>
+<tr class="memdesc:aa295eea9c7eb611e3b629b7e4d63a74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> with the given value.  <a href="classsl_1_1Mat.html#aa295eea9c7eb611e3b629b7e4d63a74c">More...</a><br /></td></tr>
+<tr class="separator:aa295eea9c7eb611e3b629b7e4d63a74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872c553e36ebd6931b6136f73ec3a0af"><td class="memTemplParams" colspan="2">template&lt;typename N &gt; </td></tr>
+<tr class="memitem:a872c553e36ebd6931b6136f73ec3a0af"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a872c553e36ebd6931b6136f73ec3a0af">setValue</a> (size_t x, size_t y, N value, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">sl::MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>)</td></tr>
+<tr class="memdesc:a872c553e36ebd6931b6136f73ec3a0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a value to a specific point in the matrix.  <a href="classsl_1_1Mat.html#a872c553e36ebd6931b6136f73ec3a0af">More...</a><br /></td></tr>
+<tr class="separator:a872c553e36ebd6931b6136f73ec3a0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad245a5178cdb4bc95e9cfc9ab220faa1"><td class="memTemplParams" colspan="2">template&lt;typename N &gt; </td></tr>
+<tr class="memitem:ad245a5178cdb4bc95e9cfc9ab220faa1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#ad245a5178cdb4bc95e9cfc9ab220faa1">getValue</a> (size_t x, size_t y, N *value, <a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>) const</td></tr>
+<tr class="memdesc:ad245a5178cdb4bc95e9cfc9ab220faa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a specific point in the matrix.  <a href="classsl_1_1Mat.html#ad245a5178cdb4bc95e9cfc9ab220faa1">More...</a><br /></td></tr>
+<tr class="separator:ad245a5178cdb4bc95e9cfc9ab220faa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52477d2dcc839fafe8a8ee5026a2621"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#aa52477d2dcc839fafe8a8ee5026a2621">getWidth</a> () const</td></tr>
+<tr class="memdesc:aa52477d2dcc839fafe8a8ee5026a2621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width of the matrix.  <a href="classsl_1_1Mat.html#aa52477d2dcc839fafe8a8ee5026a2621">More...</a><br /></td></tr>
+<tr class="separator:aa52477d2dcc839fafe8a8ee5026a2621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb56064ac644b85442a915c9fdf19f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#afdb56064ac644b85442a915c9fdf19f8">getHeight</a> () const</td></tr>
+<tr class="memdesc:afdb56064ac644b85442a915c9fdf19f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height of the matrix.  <a href="classsl_1_1Mat.html#afdb56064ac644b85442a915c9fdf19f8">More...</a><br /></td></tr>
+<tr class="separator:afdb56064ac644b85442a915c9fdf19f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2095803fee1da82ac47fc910093d06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsl_1_1Resolution.html">Resolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a9e2095803fee1da82ac47fc910093d06">getResolution</a> () const</td></tr>
+<tr class="memdesc:a9e2095803fee1da82ac47fc910093d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the resolution (width and height) of the matrix.  <a href="classsl_1_1Mat.html#a9e2095803fee1da82ac47fc910093d06">More...</a><br /></td></tr>
+<tr class="separator:a9e2095803fee1da82ac47fc910093d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a98e29bec33645a8136249a89ec641"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a90a98e29bec33645a8136249a89ec641">getChannels</a> () const</td></tr>
+<tr class="memdesc:a90a98e29bec33645a8136249a89ec641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of values stored in one pixel.  <a href="classsl_1_1Mat.html#a90a98e29bec33645a8136249a89ec641">More...</a><br /></td></tr>
+<tr class="separator:a90a98e29bec33645a8136249a89ec641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6673fd67d68f40f36677ed6945aa25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a1b6673fd67d68f40f36677ed6945aa25">getDataType</a> () const</td></tr>
+<tr class="memdesc:a1b6673fd67d68f40f36677ed6945aa25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format of the matrix.  <a href="classsl_1_1Mat.html#a1b6673fd67d68f40f36677ed6945aa25">More...</a><br /></td></tr>
+<tr class="separator:a1b6673fd67d68f40f36677ed6945aa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91472e3702165e932795750d0951c3b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a91472e3702165e932795750d0951c3b0">getMemoryType</a> () const</td></tr>
+<tr class="memdesc:a91472e3702165e932795750d0951c3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of memory (CPU and/or GPU).  <a href="classsl_1_1Mat.html#a91472e3702165e932795750d0951c3b0">More...</a><br /></td></tr>
+<tr class="separator:a91472e3702165e932795750d0951c3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f72557b305790a0232f110d7973485c"><td class="memTemplParams" colspan="2">template&lt;typename N &gt; </td></tr>
+<tr class="memitem:a9f72557b305790a0232f110d7973485c"><td class="memTemplItemLeft" align="right" valign="top">N *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a9f72557b305790a0232f110d7973485c">getPtr</a> (<a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>) const</td></tr>
+<tr class="memdesc:a9f72557b305790a0232f110d7973485c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the CPU or GPU data pointer.  <a href="classsl_1_1Mat.html#a9f72557b305790a0232f110d7973485c">More...</a><br /></td></tr>
+<tr class="separator:a9f72557b305790a0232f110d7973485c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66639b9f2c7d6cd44e40fe3bd742e36"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#af66639b9f2c7d6cd44e40fe3bd742e36">getStepBytes</a> (<a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>) const</td></tr>
+<tr class="memdesc:af66639b9f2c7d6cd44e40fe3bd742e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the memory step in Bytes (the Bytes size of one pixel row).  <a href="classsl_1_1Mat.html#af66639b9f2c7d6cd44e40fe3bd742e36">More...</a><br /></td></tr>
+<tr class="separator:af66639b9f2c7d6cd44e40fe3bd742e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e90ae4ade04a55ad15ba9f659f39763"><td class="memTemplParams" colspan="2">template&lt;typename N &gt; </td></tr>
+<tr class="memitem:a4e90ae4ade04a55ad15ba9f659f39763"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a4e90ae4ade04a55ad15ba9f659f39763">getStep</a> (<a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>) const</td></tr>
+<tr class="memdesc:a4e90ae4ade04a55ad15ba9f659f39763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the memory step in number of elements (the number of values in one pixel row).  <a href="classsl_1_1Mat.html#a4e90ae4ade04a55ad15ba9f659f39763">More...</a><br /></td></tr>
+<tr class="separator:a4e90ae4ade04a55ad15ba9f659f39763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd0cd923938a218517c4d8ef8193202"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a5fd0cd923938a218517c4d8ef8193202">getStep</a> (<a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> memory_type=<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>) const</td></tr>
+<tr class="memdesc:a5fd0cd923938a218517c4d8ef8193202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the memory step in number of elements (the number of values in one pixel row).  <a href="classsl_1_1Mat.html#a5fd0cd923938a218517c4d8ef8193202">More...</a><br /></td></tr>
+<tr class="separator:a5fd0cd923938a218517c4d8ef8193202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730a74cc75f66f213804b8b9d2365939"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a730a74cc75f66f213804b8b9d2365939">getPixelBytes</a> () const</td></tr>
+<tr class="memdesc:a730a74cc75f66f213804b8b9d2365939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size in bytes of one pixel.  <a href="classsl_1_1Mat.html#a730a74cc75f66f213804b8b9d2365939">More...</a><br /></td></tr>
+<tr class="separator:a730a74cc75f66f213804b8b9d2365939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4429863e476cebb9936573514d1f6f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a3c4429863e476cebb9936573514d1f6f">getWidthBytes</a> () const</td></tr>
+<tr class="memdesc:a3c4429863e476cebb9936573514d1f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size in bytes of a row.  <a href="classsl_1_1Mat.html#a3c4429863e476cebb9936573514d1f6f">More...</a><br /></td></tr>
+<tr class="separator:a3c4429863e476cebb9936573514d1f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49a456b67d2135d93334a2b1737d247"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#ab49a456b67d2135d93334a2b1737d247">getInfos</a> ()</td></tr>
+<tr class="memdesc:ab49a456b67d2135d93334a2b1737d247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the information about the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> into a <a class="el" href="classsl_1_1String.html">String</a>.  <a href="classsl_1_1Mat.html#ab49a456b67d2135d93334a2b1737d247">More...</a><br /></td></tr>
+<tr class="separator:ab49a456b67d2135d93334a2b1737d247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6940875839b3ed8f7e425dd7ea6a51d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a6940875839b3ed8f7e425dd7ea6a51d5">isInit</a> () const</td></tr>
+<tr class="memdesc:a6940875839b3ed8f7e425dd7ea6a51d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines whether the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is initialized or not.  <a href="classsl_1_1Mat.html#a6940875839b3ed8f7e425dd7ea6a51d5">More...</a><br /></td></tr>
+<tr class="separator:a6940875839b3ed8f7e425dd7ea6a51d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277ae510e34fb6dbb561efe4fbe35934"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a277ae510e34fb6dbb561efe4fbe35934">isMemoryOwner</a> () const</td></tr>
+<tr class="memdesc:a277ae510e34fb6dbb561efe4fbe35934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is the owner of the memory it accesses.  <a href="classsl_1_1Mat.html#a277ae510e34fb6dbb561efe4fbe35934">More...</a><br /></td></tr>
+<tr class="separator:a277ae510e34fb6dbb561efe4fbe35934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6801c0ecd6cb3e4844a83a7299feb2dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a6801c0ecd6cb3e4844a83a7299feb2dd">clone</a> (const <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;src)</td></tr>
+<tr class="memdesc:a6801c0ecd6cb3e4844a83a7299feb2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> by copy (deep copy).  <a href="classsl_1_1Mat.html#a6801c0ecd6cb3e4844a83a7299feb2dd">More...</a><br /></td></tr>
+<tr class="separator:a6801c0ecd6cb3e4844a83a7299feb2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343c68731bcccfce8c862d2573733b80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a343c68731bcccfce8c862d2573733b80">move</a> (<a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;dst)</td></tr>
+<tr class="memdesc:a343c68731bcccfce8c862d2573733b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> data to another <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a>.  <a href="classsl_1_1Mat.html#a343c68731bcccfce8c862d2573733b80">More...</a><br /></td></tr>
+<tr class="separator:a343c68731bcccfce8c862d2573733b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Functions</h2></td></tr>
+<tr class="memitem:a39533cb7f42b5117f12bcf4bcde4d41d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a39533cb7f42b5117f12bcf4bcde4d41d">swap</a> (<a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;mat1, <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;mat2)</td></tr>
+<tr class="memdesc:a39533cb7f42b5117f12bcf4bcde4d41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the content of the provided <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> (only swaps the pointers, no data copy).  <a href="classsl_1_1Mat.html#a39533cb7f42b5117f12bcf4bcde4d41d">More...</a><br /></td></tr>
+<tr class="separator:a39533cb7f42b5117f12bcf4bcde4d41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:a9a2326f35466e54c36c070829245c557"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a9a2326f35466e54c36c070829245c557">name</a> = &quot;n/a&quot;</td></tr>
+<tr class="separator:a9a2326f35466e54c36c070829245c557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f078684998b83967d507d0f453f454"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#ab3f078684998b83967d507d0f453f454">verbose</a> = false</td></tr>
+<tr class="separator:ab3f078684998b83967d507d0f453f454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7e85ea15e60300894d5610b83ab380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsl_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Mat.html#a4d7e85ea15e60300894d5610b83ab380">timestamp</a> = 0</td></tr>
+<tr class="separator:a4d7e85ea15e60300894d5610b83ab380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> class can handle multiple matrix formats from 1 to 4 channels, with different value types (float or uchar), and can be stored CPU and/or GPU side. </p>
+<p><a class="el" href="classsl_1_1Mat.html">Mat</a> is defined in a row-major order, it means that, for an image buffer, the entire first row is stored first, followed by the entire second row, and so on.</p>
+<p>The CPU and GPU buffer aren't automatically synchronized for performance reasons, you can use <a class="el" href="classsl_1_1Mat.html#a0c2582926acd49b7e2921e9e4b7fd4fa">updateCPUfromGPU</a> / <a class="el" href="classsl_1_1Mat.html#adbba0502a2c9ddd7a01eedb8612f1f8e">updateGPUfromCPU</a> to do it. If you are using the GPU side of the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> object, you need to make sure to call <a class="el" href="classsl_1_1Mat.html#a3ec982ba6ac4b4b0701e4edf3776cac7">free</a> before destroying the <a class="el" href="classsl_1_1Camera.html" title="This class is the main interface with the camera and the SDK features, such as: video,...">sl::Camera</a> object. The destruction of the <a class="el" href="classsl_1_1Camera.html" title="This class is the main interface with the camera and the SDK features, such as: video,...">sl::Camera</a> object deletes the CUDA context needed to free the GPU <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> memory. </p>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="a13e4639b574685e1d9162ed953e607ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e4639b574685e1d9162ed953e607ed">&#9670;&nbsp;</a></span>Mat() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>empty <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> default constructor. </p>
+
+</div>
+</div>
+<a id="ab35f58ef4ecfadc052b904342ac1fcca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35f58ef4ecfadc052b904342ac1fcca">&#9670;&nbsp;</a></span>Mat() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor. </p>
+<p>This function directly allocates the requested memory. It calls <a class="el" href="classsl_1_1Mat.html#a993e4956aabfe7ea046415add5e52524">alloc</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>: width of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>: height of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">MAT_TYPE::F32_C1</a>, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">MAT_TYPE::U8_C4</a>...). </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. (<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> and/or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb6d9b9cd531917318e567a37297916f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6d9b9cd531917318e567a37297916f">&#9670;&nbsp;</a></span>Mat() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor from an existing data pointer. </p>
+<p>This function doesn't allocate the memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>: width of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>: height of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">MAT_TYPE::F32_C1</a>, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">MAT_TYPE::U8_C4</a>...). </td></tr>
+    <tr><td class="paramname">ptr</td><td>: pointer to the data array. (CPU or GPU). </td></tr>
+    <tr><td class="paramname">step</td><td>: step of the data array. (the Bytes size of one pixel row). </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. (<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> and/or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a577e41f91b8f918baed38d25da9ea63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a577e41f91b8f918baed38d25da9ea63c">&#9670;&nbsp;</a></span>Mat() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *&#160;</td>
+          <td class="paramname"><em>ptr_cpu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>step_cpu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *&#160;</td>
+          <td class="paramname"><em>ptr_gpu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>step_gpu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor from two existing data pointers, CPU and GPU. </p>
+<p>This function doesn't allocate the memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>: width of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>: height of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">MAT_TYPE::F32_C1</a>, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">MAT_TYPE::U8_C4</a>...). </td></tr>
+    <tr><td class="paramname">ptr_cpu</td><td>: CPU pointer to the data array. </td></tr>
+    <tr><td class="paramname">step_cpu</td><td>: step of the CPU data array (the Bytes size of one pixel row). </td></tr>
+    <tr><td class="paramname">ptr_gpu</td><td>: GPU pointer to the data array. </td></tr>
+    <tr><td class="paramname">step_gpu</td><td>: step of the GPU data array (the Bytes size of one pixel row). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9fe626ee9cc65bc884c2af199ee3eead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe626ee9cc65bc884c2af199ee3eead">&#9670;&nbsp;</a></span>Mat() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsl_1_1Resolution.html">Resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor. </p>
+<p>This function directly allocates the requested memory. It calls <a class="el" href="classsl_1_1Mat.html#a993e4956aabfe7ea046415add5e52524">alloc</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: the size of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">MAT_TYPE::F32_C1</a>, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">MAT_TYPE::U8_C4</a>...). </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored (<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> and/or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a96609b1af8290be83284f69a91eab25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96609b1af8290be83284f69a91eab25b">&#9670;&nbsp;</a></span>Mat() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsl_1_1Resolution.html">Resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor from an existing data pointer. </p>
+<p>This function doesn't allocate the memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: the size of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">MAT_TYPE::F32_C1</a>, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">MAT_TYPE::U8_C4</a>...). </td></tr>
+    <tr><td class="paramname">ptr</td><td>: pointer to the data array. (CPU or GPU). </td></tr>
+    <tr><td class="paramname">step</td><td>: step of the data array (the Bytes size of one pixel row). </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. (<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> and/or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab71dee374c33d524ab8064a3a3907737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71dee374c33d524ab8064a3a3907737">&#9670;&nbsp;</a></span>Mat() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsl_1_1Resolution.html">Resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *&#160;</td>
+          <td class="paramname"><em>ptr_cpu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>step_cpu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">sl::uchar1</a> *&#160;</td>
+          <td class="paramname"><em>ptr_gpu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>step_gpu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor from two existing data pointers, CPU and GPU. </p>
+<p>This function doesn't allocate the memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: the size of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">MAT_TYPE::F32_C1</a>, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">MAT_TYPE::U8_C4</a>...). </td></tr>
+    <tr><td class="paramname">ptr_cpu</td><td>: CPU pointer to the data array. </td></tr>
+    <tr><td class="paramname">step_cpu</td><td>: step of the CPU data array (the Bytes size of one pixel row). </td></tr>
+    <tr><td class="paramname">ptr_gpu</td><td>: GPU pointer to the data array. </td></tr>
+    <tr><td class="paramname">step_gpu</td><td>: step of the GPU data array (the Bytes size of one pixel row). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9cc42063b353ce75ee279f48d46cd47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc42063b353ce75ee279f48d46cd47d">&#9670;&nbsp;</a></span>Mat() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> constructor by copy (shallow copy). </p>
+<p>This function doesn't allocate the memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>: the reference to the <a class="el" href="classsl_1_1Mat.html">Mat</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a85825bed2f9a04a95dcee2b84d96fd5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85825bed2f9a04a95dcee2b84d96fd5e">&#9670;&nbsp;</a></span>~Mat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classsl_1_1Mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> destructor. This function calls <a class="el" href="classsl_1_1Mat.html#a3ec982ba6ac4b4b0701e4edf3776cac7">free</a> to release owned memory. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Functions</h2>
+<a id="a993e4956aabfe7ea046415add5e52524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993e4956aabfe7ea046415add5e52524">&#9670;&nbsp;</a></span>alloc() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>: width of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>: height of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">MAT_TYPE::F32_C1</a>, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">MAT_TYPE::U8_C4</a>...). </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. (<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> and/or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>It erases previously allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="ad7a6fd26b7769221da5893a21283dc7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a6fd26b7769221da5893a21283dc7d">&#9670;&nbsp;</a></span>alloc() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsl_1_1Resolution.html">Resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: the size of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">sl::MAT_TYPE::F32_C1</a>,<a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">sl::MAT_TYPE::U8_C4</a>...). </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. (<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">sl::MEM::CPU</a> and/or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">sl::MEM::GPU</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>It erases previously allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="a3ec982ba6ac4b4b0701e4edf3776cac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec982ba6ac4b4b0701e4edf3776cac7">&#9670;&nbsp;</a></span>free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a>|<a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free the owned memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: specifies whether you want to free the <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> and/or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a> memory. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af35dbb18591a2dcba489f153dfe7d893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35dbb18591a2dcba489f153dfe7d893">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">Mat</a>&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>that</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs a shallow copy. </p>
+<p>This function doesn't copy the data array, it only copies the pointer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">that</td><td>: the <a class="el" href="classsl_1_1Mat.html">Mat</a> to be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new <a class="el" href="classsl_1_1Mat.html">Mat</a> object which point to the same data as that. </dd></dl>
+
+</div>
+</div>
+<a id="a0c2582926acd49b7e2921e9e4b7fd4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2582926acd49b7e2921e9e4b7fd4fa">&#9670;&nbsp;</a></span>updateCPUfromGPU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> updateCPUfromGPU </td>
+          <td>(</td>
+          <td class="paramtype">cudaStream_t&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Downloads data from DEVICE (GPU) to HOST (CPU), if possible. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>: specifies the GPU stream to be used to enable Asynchronous overlaping (default 0 is synchronous). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SUCCESS if everything went well, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE::FAILURE</a> otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If no CPU or GPU memory are available for this <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a>, some are directly allocated. </dd>
+<dd>
+If verbose is set to true, you have information in case of failure. </dd></dl>
+
+</div>
+</div>
+<a id="adbba0502a2c9ddd7a01eedb8612f1f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbba0502a2c9ddd7a01eedb8612f1f8e">&#9670;&nbsp;</a></span>updateGPUfromCPU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> updateGPUfromCPU </td>
+          <td>(</td>
+          <td class="paramtype">cudaStream_t&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>GPU_id</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uploads data from HOST (CPU) to DEVICE (GPU), if possible. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>: specifies the GPU stream to be used to enable Asynchronous overlaping (default 0 is synchronous). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">ERROR_CODE::SUCCESS</a> if everything went well, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE::FAILURE</a> otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If no CPU or GPU memory are available for this <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a>, some are directly allocated. </dd>
+<dd>
+If verbose is set to true, you have information in case of failure. </dd></dl>
+
+</div>
+</div>
+<a id="a77f65b1539cf468fb8dcd092a1222c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f65b1539cf468fb8dcd092a1222c3a">&#9670;&nbsp;</a></span>copyTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> copyTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga6053bda451d8ca289b3e443377cfc004">COPY_TYPE</a>&#160;</td>
+          <td class="paramname"><em>cpyType</em> = <code><a class="el" href="namespacesl.html#ga6053bda451d8ca289b3e443377cfc004a5427b27bca3fdb41b1fa3f8c671eecfb">COPY_TYPE::CPU_CPU</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cudaStream_t&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies data an other <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> (deep copy). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>: the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> where the data will be copied. </td></tr>
+    <tr><td class="paramname">cpyType</td><td>: specifies the memories that will be used for the copy. </td></tr>
+    <tr><td class="paramname">stream</td><td>: specifies the GPU stream to be used to enable Asynchronous overlaping (default 0 is synchronous). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">ERROR_CODE::SUCCESS</a> if everything went well, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE::FAILURE</a> otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the destination is not allocated or or doesn't have a compatible <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> or <a class="el" href="structsl_1_1Resolution.html">Resolution</a>, current memory is freed and new memory is directly allocated. </dd></dl>
+
+</div>
+</div>
+<a id="af7157e742584b85a243fe928c606c3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7157e742584b85a243fe928c606c3bf">&#9670;&nbsp;</a></span>setFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> setFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga6053bda451d8ca289b3e443377cfc004">COPY_TYPE</a>&#160;</td>
+          <td class="paramname"><em>cpyType</em> = <code><a class="el" href="namespacesl.html#ga6053bda451d8ca289b3e443377cfc004a5427b27bca3fdb41b1fa3f8c671eecfb">COPY_TYPE::CPU_CPU</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cudaStream_t&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies data from an other <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> (deep copy). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>: the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> where the data will be copied from. </td></tr>
+    <tr><td class="paramname">cpyType</td><td>: specifies the memories that will be used for the update. </td></tr>
+    <tr><td class="paramname">stream</td><td>: specifies the GPU stream to be used to enable Asynchronous overlaping (default 0 is synchronous). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">ERROR_CODE::SUCCESS</a> if everything went well, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE::FAILURE</a> otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the current <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is not allocated or doesn't have a compatible <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> or <a class="el" href="structsl_1_1Resolution.html">Resolution</a> with the source, current memory is freed and new memory is directly allocated. </dd></dl>
+
+</div>
+</div>
+<a id="a15ea307a6e50ed1e2fcda6ef422eb906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ea307a6e50ed1e2fcda6ef422eb906">&#9670;&nbsp;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads an image from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>: file path including the name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">ERROR_CODE::SUCCESS</a> if everything went well, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE::FAILURE</a> otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function only support images such as JPG or PNG, and can't load float format such as PCD, PLY, etc </dd></dl>
+
+</div>
+</div>
+<a id="accab3cb8c395f6b32c897e549fef78a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accab3cb8c395f6b32c897e549fef78a8">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">sl::MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">sl::MEM::CPU</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>compression_level</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the <a class="el" href="classsl_1_1Mat.html">Mat</a> (only if <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> is available) into a file defined by its extension. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>: file path including the name and extension. </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: memory type (CPU or GPU) of the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a>. </td></tr>
+    <tr><td class="paramname">compression_level</td><td>: level of compression between 0 (lowest compression == highest size == highest quality(jpg)) and 100 (highest compression == lowest size == lowest quality(jpg)). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Specific/default value for compression_level = -1 : This will set the default quality for PNG(30) or JPEG(5). </dd>
+<dd>
+compression_level is only supported for U8_Cx <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">ERROR_CODE::SUCCESS</a> if everything went well, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE::FAILURE</a> otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Supported <a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> are : <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713ac2392427280e210a63c1a2f90ed10a36">MAT_TYPE::F32_C1</a> for PNG/PFM/PGM, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a4fdf5f6ee46d516b40695fe711c89c1d">MAT_TYPE::F32_C3</a> for PCD/PLY/VTK/XYZ, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a69f5d3673471918d8d82afe8583b662f">MAT_TYPE::F32_C4</a> for PCD/PLY/VTK/WYZ, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713aed6356cd976262cdb00e652c2d2d663f">MAT_TYPE::U8_C1</a> for PNG/JPG, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a631c7ba9638b6ff3fdf8f50ddb99698e">MAT_TYPE::U8_C3</a> for PNG/JPG, <a class="el" href="namespacesl.html#gab12e66b9515d6772cda59cc2f7e69713a8ab8055056ccb37335b2d98eea8ddbcc">MAT_TYPE::U8_C4</a> for PNG/JPG, </dd></dl>
+
+</div>
+</div>
+<a id="aa295eea9c7eb611e3b629b7e4d63a74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa295eea9c7eb611e3b629b7e4d63a74c">&#9670;&nbsp;</a></span>setTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> setTo </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">sl::MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> with the given value. </p>
+<p>This function overwrites all the matrix.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: the value to be copied all over the matrix. </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines which buffer to fill, CPU and/or GPU.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function is templated for <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">uchar1</a>, <a class="el" href="namespacesl.html#aef35ad58b14f5a7c90dcce68c2e40d14">uchar2</a>, <a class="el" href="namespacesl.html#aa040a81651d2f9f6ec43606f1e078ab7">uchar3</a>, <a class="el" href="namespacesl.html#a85805eae6c9f6a74bce0ff93bb4aa7ca">uchar4</a>, <a class="el" href="namespacesl.html#af5208d01f6c6fbcb7bb55d610b9c0ead">float1</a>, <a class="el" href="namespacesl.html#a5b6044bb25c1ea557c70b0110089a075">float2</a>, <a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">float3</a>, <a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">float4</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a872c553e36ebd6931b6136f73ec3a0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872c553e36ebd6931b6136f73ec3a0af">&#9670;&nbsp;</a></span>setValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> setValue </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">N&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">sl::MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a value to a specific point in the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>: specifies the column. </td></tr>
+    <tr><td class="paramname">y</td><td>: specifies the row. </td></tr>
+    <tr><td class="paramname">value</td><td>: the value to be set. </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines which memory will be updated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">ERROR_CODE::SUCCESS</a> if everything went well, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE::FAILURE</a> otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is templated for <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">uchar1</a>, <a class="el" href="namespacesl.html#aef35ad58b14f5a7c90dcce68c2e40d14">uchar2</a>, <a class="el" href="namespacesl.html#aa040a81651d2f9f6ec43606f1e078ab7">uchar3</a>, <a class="el" href="namespacesl.html#a85805eae6c9f6a74bce0ff93bb4aa7ca">uchar4</a>, <a class="el" href="namespacesl.html#af5208d01f6c6fbcb7bb55d610b9c0ead">float1</a>, <a class="el" href="namespacesl.html#a5b6044bb25c1ea557c70b0110089a075">float2</a>, <a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">float3</a>, <a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">float4</a>.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not efficient for <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a>, use it on sparse data. </dd></dl>
+
+</div>
+</div>
+<a id="ad245a5178cdb4bc95e9cfc9ab220faa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad245a5178cdb4bc95e9cfc9ab220faa1">&#9670;&nbsp;</a></span>getValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> getValue </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">N *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the value of a specific point in the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>: specifies the column </td></tr>
+    <tr><td class="paramname">y</td><td>: specifies the row </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines which memory should be read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">ERROR_CODE::SUCCESS</a> if everything went well, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE::FAILURE</a> otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is templated for <a class="el" href="namespacesl.html#a11c55178eaefe3777614cf5e21accfe7">uchar1</a>, <a class="el" href="namespacesl.html#aef35ad58b14f5a7c90dcce68c2e40d14">uchar2</a>, <a class="el" href="namespacesl.html#aa040a81651d2f9f6ec43606f1e078ab7">uchar3</a>, <a class="el" href="namespacesl.html#a85805eae6c9f6a74bce0ff93bb4aa7ca">uchar4</a>, <a class="el" href="namespacesl.html#af5208d01f6c6fbcb7bb55d610b9c0ead">float1</a>, <a class="el" href="namespacesl.html#a5b6044bb25c1ea557c70b0110089a075">float2</a>, <a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">float3</a>, <a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">float4</a>.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not efficient for <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a>, use it on sparse data. </dd></dl>
+
+</div>
+</div>
+<a id="aa52477d2dcc839fafe8a8ee5026a2621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52477d2dcc839fafe8a8ee5026a2621">&#9670;&nbsp;</a></span>getWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the width of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The width of the matrix in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="afdb56064ac644b85442a915c9fdf19f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb56064ac644b85442a915c9fdf19f8">&#9670;&nbsp;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the height of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The height of the matrix in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="a9e2095803fee1da82ac47fc910093d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2095803fee1da82ac47fc910093d06">&#9670;&nbsp;</a></span>getResolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsl_1_1Resolution.html">Resolution</a> getResolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the resolution (width and height) of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The resolution of the matrix in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="a90a98e29bec33645a8136249a89ec641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a98e29bec33645a8136249a89ec641">&#9670;&nbsp;</a></span>getChannels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getChannels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of values stored in one pixel. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of values in a pixel. </dd></dl>
+
+</div>
+</div>
+<a id="a1b6673fd67d68f40f36677ed6945aa25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6673fd67d68f40f36677ed6945aa25">&#9670;&nbsp;</a></span>getDataType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#gab12e66b9515d6772cda59cc2f7e69713">MAT_TYPE</a> getDataType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the format of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The format of the current <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a91472e3702165e932795750d0951c3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91472e3702165e932795750d0951c3b0">&#9670;&nbsp;</a></span>getMemoryType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a> getMemoryType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the type of memory (CPU and/or GPU). </p>
+<dl class="section return"><dt>Returns</dt><dd>The type of allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="a9f72557b305790a0232f110d7973485c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f72557b305790a0232f110d7973485c">&#9670;&nbsp;</a></span>getPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">N* getPtr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the CPU or GPU data pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: specifies whether you want <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a> step. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer of the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> data. </dd></dl>
+
+</div>
+</div>
+<a id="af66639b9f2c7d6cd44e40fe3bd742e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66639b9f2c7d6cd44e40fe3bd742e36">&#9670;&nbsp;</a></span>getStepBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getStepBytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the memory step in Bytes (the Bytes size of one pixel row). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: specifies whether you want <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a> step. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The step in bytes of the specified memory. </dd></dl>
+
+</div>
+</div>
+<a id="a4e90ae4ade04a55ad15ba9f659f39763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e90ae4ade04a55ad15ba9f659f39763">&#9670;&nbsp;</a></span>getStep() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getStep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the memory step in number of elements (the number of values in one pixel row). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: specifies whether you want <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a> step. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The step in number of elements. </dd></dl>
+
+</div>
+</div>
+<a id="a5fd0cd923938a218517c4d8ef8193202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fd0cd923938a218517c4d8ef8193202">&#9670;&nbsp;</a></span>getStep() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getStep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29">MEM</a>&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code><a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the memory step in number of elements (the number of values in one pixel row). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: specifies whether you want <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a2b55387dd066c5bac646ac61543d152d">MEM::CPU</a> or <a class="el" href="namespacesl.html#ga3fc8f9f9f84fbb0f728fc2cd399ade29a52f9ec21735243ad9917cda3ca077d32">MEM::GPU</a> step. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The step in number of elements. </dd></dl>
+
+</div>
+</div>
+<a id="a730a74cc75f66f213804b8b9d2365939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730a74cc75f66f213804b8b9d2365939">&#9670;&nbsp;</a></span>getPixelBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getPixelBytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the size in bytes of one pixel. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size in bytes of a pixel. </dd></dl>
+
+</div>
+</div>
+<a id="a3c4429863e476cebb9936573514d1f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c4429863e476cebb9936573514d1f6f">&#9670;&nbsp;</a></span>getWidthBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getWidthBytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the size in bytes of a row. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size in bytes of a row. </dd></dl>
+
+</div>
+</div>
+<a id="ab49a456b67d2135d93334a2b1737d247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49a456b67d2135d93334a2b1737d247">&#9670;&nbsp;</a></span>getInfos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> getInfos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the information about the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> into a <a class="el" href="classsl_1_1String.html">String</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> information. </dd></dl>
+
+</div>
+</div>
+<a id="a6940875839b3ed8f7e425dd7ea6a51d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6940875839b3ed8f7e425dd7ea6a51d5">&#9670;&nbsp;</a></span>isInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isInit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines whether the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is initialized or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if current <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> has been allocated (by the constructor or therefore). </dd></dl>
+
+</div>
+</div>
+<a id="a277ae510e34fb6dbb561efe4fbe35934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277ae510e34fb6dbb561efe4fbe35934">&#9670;&nbsp;</a></span>isMemoryOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isMemoryOwner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is the owner of the memory it accesses. </p>
+<p>If not, the memory won't be freed if the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is destroyed. </p><dl class="section return"><dt>Returns</dt><dd>True if the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is owning its memory, else false. </dd></dl>
+
+</div>
+</div>
+<a id="a6801c0ecd6cb3e4844a83a7299feb2dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6801c0ecd6cb3e4844a83a7299feb2dd">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> clone </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplicates <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> by copy (deep copy). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>: the reference to the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> to copy. This function copies the data array(s), it marks the new <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> as the memory owner. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a343c68731bcccfce8c862d2573733b80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a343c68731bcccfce8c862d2573733b80">&#9670;&nbsp;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> data to another <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a>. </p>
+<p>This function gives the attribute of the current <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> to the specified one. (No copy). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>: the reference to the <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>: the current <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is then no more usable since its loose its attributes. </dd></dl>
+
+</div>
+</div>
+<a id="a39533cb7f42b5117f12bcf4bcde4d41d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39533cb7f42b5117f12bcf4bcde4d41d">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsl_1_1Mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Swaps the content of the provided <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> (only swaps the pointers, no data copy). </p>
+<p>This function swaps the pointers of the given <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat1</td><td>: the first mat. </td></tr>
+    <tr><td class="paramname">mat2</td><td>: the second mat. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="a9a2326f35466e54c36c070829245c557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2326f35466e54c36c070829245c557">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> name = &quot;n/a&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3f078684998b83967d507d0f453f454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f078684998b83967d507d0f453f454">&#9670;&nbsp;</a></span>verbose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool verbose = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d7e85ea15e60300894d5610b83ab380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7e85ea15e60300894d5610b83ab380">&#9670;&nbsp;</a></span>timestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsl_1_1Timestamp.html">Timestamp</a> timestamp = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

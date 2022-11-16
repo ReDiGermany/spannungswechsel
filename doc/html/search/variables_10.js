@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['sampling_5frate_1285',['sampling_rate',['../structsl_1_1SensorParameters.html#a8d632437c1878f0244e942c89b3b99f9',1,'sl::SensorParameters']]],
+  ['save_5ftexture_1286',['save_texture',['../structsl_1_1SpatialMappingParameters.html#acc76756375deb300aba5793097bac86e',1,'sl::SpatialMappingParameters']]],
+  ['sdk_5fcuda_5fctx_1287',['sdk_cuda_ctx',['../structsl_1_1InitParameters.html#ae684a455a5dc2e48a82b9aadc8c3ba53',1,'sl::InitParameters']]],
+  ['sdk_5fgpu_5fid_1288',['sdk_gpu_id',['../structsl_1_1InitParameters.html#ab85c9adecd2c9c29a1b255889be1eeb4',1,'sl::InitParameters']]],
+  ['sdk_5fverbose_1289',['sdk_verbose',['../structsl_1_1InitParameters.html#a27c7dcfc144d4f5db148d8314decfae3',1,'sl::InitParameters']]],
+  ['sdk_5fverbose_5flog_5ffile_1290',['sdk_verbose_log_file',['../structsl_1_1InitParameters.html#a47984f0dbeac572f4b4b58d69224b5a1',1,'sl::InitParameters']]],
+  ['sensing_5fmode_1291',['sensing_mode',['../structsl_1_1RuntimeParameters.html#aec11c69f30c27cc373e4ef07f6ebabc1',1,'sl::RuntimeParameters']]],
+  ['sensor_5funit_1292',['sensor_unit',['../structsl_1_1SensorParameters.html#a3aad14d4ca5925ba6ffd666a3ee00873',1,'sl::SensorParameters']]],
+  ['sensors_5fconfiguration_1293',['sensors_configuration',['../structsl_1_1CameraInformation.html#a214385a9a22c78bc967b3812d3b1da9b',1,'sl::CameraInformation']]],
+  ['sensors_5frequired_1294',['sensors_required',['../structsl_1_1InitParameters.html#a04accf33c33da2d139f8f6383efc6624',1,'sl::InitParameters']]],
+  ['serial_5fnumber_1295',['serial_number',['../structsl_1_1DeviceProperties.html#a0dd5bb55eb625de9511227cbb52f402e',1,'sl::DeviceProperties::serial_number()'],['../structsl_1_1CameraInformation.html#a0dd5bb55eb625de9511227cbb52f402e',1,'sl::CameraInformation::serial_number()'],['../structsl_1_1StreamingProperties.html#a0dd5bb55eb625de9511227cbb52f402e',1,'sl::StreamingProperties::serial_number()']]],
+  ['set_5fas_5fstatic_1296',['set_as_static',['../structsl_1_1PositionalTrackingParameters.html#a1c23e6c0df4bc26e7cc5421aea4d880e',1,'sl::PositionalTrackingParameters']]],
+  ['set_5ffloor_5fas_5forigin_1297',['set_floor_as_origin',['../structsl_1_1PositionalTrackingParameters.html#abccf07b1fa02cbbaabf55858a1ec8c59',1,'sl::PositionalTrackingParameters']]],
+  ['set_5fgravity_5fas_5forigin_1298',['set_gravity_as_origin',['../structsl_1_1PositionalTrackingParameters.html#abf134b0fc2e3327ef136197f7feafdfc',1,'sl::PositionalTrackingParameters']]],
+  ['static_5fdepth_1299',['STATIC_DEPTH',['../namespacesl.html#aae3c95bcdfd032d32c7a22f9f7042a23',1,'sl']]],
+  ['status_1300',['status',['../structsl_1_1RecordingStatus.html#ad1f0bff7112206922c9d5a87adad6f2b',1,'sl::RecordingStatus']]],
+  ['stereo_5ftransform_1301',['stereo_transform',['../structsl_1_1CalibrationParameters.html#a1c094ecaad6acfab752c6eee49539e4f',1,'sl::CalibrationParameters']]],
+  ['sublabel_1302',['sublabel',['../classsl_1_1ObjectData.html#ab48f092704c5b9de0b3ed642aa1a40f6',1,'sl::ObjectData']]],
+  ['svo_5freal_5ftime_5fmode_1303',['svo_real_time_mode',['../structsl_1_1InitParameters.html#af0759d9c02cf9cebb5e385637173fd4a',1,'sl::InitParameters']]]
+];

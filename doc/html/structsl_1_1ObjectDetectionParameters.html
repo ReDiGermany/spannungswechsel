@@ -1,0 +1,543 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>ObjectDetectionParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structsl_1_1ObjectDetectionParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="structsl_1_1ObjectDetectionParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">ObjectDetectionParameters Class Reference<div class="ingroups"><a class="el" href="group__Object__group.html">Object Detection Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sets the object detection parameters.  
+ <a href="structsl_1_1ObjectDetectionParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abe6069912936bef48985548eee61d403"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#abe6069912936bef48985548eee61d403">ObjectDetectionParameters</a> (bool image_sync_=true, bool enable_tracking_=true, bool enable_mask_output_=false, <a class="el" href="group__Object__group.html#ga4a212b90726adaaf0fae801b1cc913f4">DETECTION_MODEL</a> <a class="el" href="structsl_1_1ObjectDetectionParameters.html#a8e5a5b434114b306958871cab55cec90">detection_model</a>=<a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>, bool enable_body_fitting_=false, float max_range_=-1.f, <a class="el" href="structsl_1_1BatchParameters.html">BatchParameters</a> batch_trajectories_parameters=<a class="el" href="structsl_1_1BatchParameters.html">BatchParameters</a>(), <a class="el" href="group__Object__group.html#ga375807d6ff35199b9b48346de7a5d41b">BODY_FORMAT</a> body_format_=<a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41badc32ecfd5e73cf6b6eade387a48fd924">BODY_FORMAT::POSE_18</a>, <a class="el" href="group__Object__group.html#ga9a988902255f4e6a224452766890a014">OBJECT_FILTERING_MODE</a> filtering_mode_=<a class="el" href="namespacesl.html#ga9a988902255f4e6a224452766890a014a1bfeb94ee7e4072e75070b430c107807">OBJECT_FILTERING_MODE::NMS3D</a>, float <a class="el" href="structsl_1_1ObjectDetectionParameters.html#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">prediction_timeout_s</a>=0.2f, bool <a class="el" href="structsl_1_1ObjectDetectionParameters.html#a780e7d3498243d9c78da0ca9e2672567">allow_reduced_precision_inference</a>=false)</td></tr>
+<tr class="memdesc:abe6069912936bef48985548eee61d403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Set all parameters to their default values.  <a href="structsl_1_1ObjectDetectionParameters.html#abe6069912936bef48985548eee61d403">More...</a><br /></td></tr>
+<tr class="separator:abe6069912936bef48985548eee61d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f4eab60d956c5cdccde6b77c6b89ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a29f4eab60d956c5cdccde6b77c6b89ba">operator==</a> (const <a class="el" href="structsl_1_1ObjectDetectionParameters.html">ObjectDetectionParameters</a> &amp;param1) const</td></tr>
+<tr class="separator:a29f4eab60d956c5cdccde6b77c6b89ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5979c2d3f8e5c07bf6e1bbf11d87ec04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a5979c2d3f8e5c07bf6e1bbf11d87ec04">operator!=</a> (const <a class="el" href="structsl_1_1ObjectDetectionParameters.html">ObjectDetectionParameters</a> &amp;param1) const</td></tr>
+<tr class="separator:a5979c2d3f8e5c07bf6e1bbf11d87ec04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:a51e7be8ef1449d88408234151642e3b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a51e7be8ef1449d88408234151642e3b4">image_sync</a> = true</td></tr>
+<tr class="memdesc:a51e7be8ef1449d88408234151642e3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the object detection is synchronized to the image or runs in a separate thread. If set to true, the detection is run for every grab, otherwise, the thread runs at its own speed, which can lead to new detection once in a while.  <a href="structsl_1_1ObjectDetectionParameters.html#a51e7be8ef1449d88408234151642e3b4">More...</a><br /></td></tr>
+<tr class="separator:a51e7be8ef1449d88408234151642e3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad4edec34c2c727581ec6299e6fc6b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a3ad4edec34c2c727581ec6299e6fc6b7">enable_tracking</a> = true</td></tr>
+<tr class="memdesc:a3ad4edec34c2c727581ec6299e6fc6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the object detection will track objects across images flow.  <a href="structsl_1_1ObjectDetectionParameters.html#a3ad4edec34c2c727581ec6299e6fc6b7">More...</a><br /></td></tr>
+<tr class="separator:a3ad4edec34c2c727581ec6299e6fc6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349966e58865996f57a44b9cca174515"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a349966e58865996f57a44b9cca174515">enable_mask_output</a> = false</td></tr>
+<tr class="memdesc:a349966e58865996f57a44b9cca174515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the mask object will be computed.  <a href="structsl_1_1ObjectDetectionParameters.html#a349966e58865996f57a44b9cca174515">More...</a><br /></td></tr>
+<tr class="separator:a349966e58865996f57a44b9cca174515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5a5b434114b306958871cab55cec90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga4a212b90726adaaf0fae801b1cc913f4">DETECTION_MODEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a8e5a5b434114b306958871cab55cec90">detection_model</a> = <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a></td></tr>
+<tr class="memdesc:a8e5a5b434114b306958871cab55cec90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable human pose estimation with skeleton keypoints output.  <a href="structsl_1_1ObjectDetectionParameters.html#a8e5a5b434114b306958871cab55cec90">More...</a><br /></td></tr>
+<tr class="separator:a8e5a5b434114b306958871cab55cec90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4e565a76adb69e7d2bffeb24aa0368"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#abe4e565a76adb69e7d2bffeb24aa0368">enable_body_fitting</a> = false</td></tr>
+<tr class="memdesc:abe4e565a76adb69e7d2bffeb24aa0368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the body fitting will be applied.  <a href="structsl_1_1ObjectDetectionParameters.html#abe4e565a76adb69e7d2bffeb24aa0368">More...</a><br /></td></tr>
+<tr class="separator:abe4e565a76adb69e7d2bffeb24aa0368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d831559bc3766b6fb718cf4c482e3fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga375807d6ff35199b9b48346de7a5d41b">BODY_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a5d831559bc3766b6fb718cf4c482e3fc">body_format</a> = <a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41badc32ecfd5e73cf6b6eade387a48fd924">BODY_FORMAT::POSE_18</a></td></tr>
+<tr class="memdesc:a5d831559bc3766b6fb718cf4c482e3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the body format outputed by the sdk when retrieveObjects is called.  <a href="structsl_1_1ObjectDetectionParameters.html#a5d831559bc3766b6fb718cf4c482e3fc">More...</a><br /></td></tr>
+<tr class="separator:a5d831559bc3766b6fb718cf4c482e3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539ecba1d7ca20797a31d7ca06eb3884"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a539ecba1d7ca20797a31d7ca06eb3884">max_range</a> = -1.f</td></tr>
+<tr class="memdesc:a539ecba1d7ca20797a31d7ca06eb3884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a upper depth range for detections. <br  />
+ Defined in <a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0">UNIT</a> set at <a class="el" href="classsl_1_1Camera.html#aca7edc89436bf249865791d6a4907960">sl::Camera::open</a>. <br  />
+ Default value is set to sl::Initparameters::depth_maximum_distance (can not be higher).  <a href="structsl_1_1ObjectDetectionParameters.html#a539ecba1d7ca20797a31d7ca06eb3884">More...</a><br /></td></tr>
+<tr class="separator:a539ecba1d7ca20797a31d7ca06eb3884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35b82d77cd180099613288abe49f0f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsl_1_1BatchParameters.html">BatchParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#af35b82d77cd180099613288abe49f0f8">batch_parameters</a></td></tr>
+<tr class="memdesc:af35b82d77cd180099613288abe49f0f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Batching system parameters. Batching system (introduced in 3.5) performs short-term re-identification with deep learning and trajectories filtering. <br  />
+ <a class="el" href="structsl_1_1BatchParameters.html#ac842b6c1dcb3b1f11b611620199dc55c" title="Defines if the Batch option in the object detection module is enabled. Batch queueing system provides...">BatchParameters::enable</a> need to be true to use this feature (by default disabled)  <a href="structsl_1_1ObjectDetectionParameters.html#af35b82d77cd180099613288abe49f0f8">More...</a><br /></td></tr>
+<tr class="separator:af35b82d77cd180099613288abe49f0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817e30d0a7dade36a22047940963c943"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga9a988902255f4e6a224452766890a014">OBJECT_FILTERING_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a817e30d0a7dade36a22047940963c943">filtering_mode</a></td></tr>
+<tr class="memdesc:a817e30d0a7dade36a22047940963c943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the filtering mode that should be applied to raw detections. <br  />
+ Default value is set to OBJECT_FILTERING_MODE::NMS_3D to keep the same behavior as previous SDK version.  <a href="structsl_1_1ObjectDetectionParameters.html#a817e30d0a7dade36a22047940963c943">More...</a><br /></td></tr>
+<tr class="separator:a817e30d0a7dade36a22047940963c943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a1cb3093fff4f80f6b57ed6cf0ebd1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">prediction_timeout_s</a></td></tr>
+<tr class="memdesc:ab3a1cb3093fff4f80f6b57ed6cf0ebd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an object is not detected anymore, the SDK will predict its positions during a short period of time before its state switched to SEARCHING. <br  />
+ It prevents the jittering of the object state when there is a short misdetection. The user can define its own prediction time duration.  <a href="structsl_1_1ObjectDetectionParameters.html#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">More...</a><br /></td></tr>
+<tr class="separator:ab3a1cb3093fff4f80f6b57ed6cf0ebd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780e7d3498243d9c78da0ca9e2672567"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionParameters.html#a780e7d3498243d9c78da0ca9e2672567">allow_reduced_precision_inference</a></td></tr>
+<tr class="memdesc:a780e7d3498243d9c78da0ca9e2672567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow inference to run at a lower precision to improve runtime and memory usage, it might increase the initial optimization time and could include downloading calibration data or calibration cache and slightly reduce the accuracy.  <a href="structsl_1_1ObjectDetectionParameters.html#a780e7d3498243d9c78da0ca9e2672567">More...</a><br /></td></tr>
+<tr class="separator:a780e7d3498243d9c78da0ca9e2672567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sets the object detection parameters. </p>
+<p>The default constructor sets all parameters to their default settings.</p>
+<dl class="section note"><dt>Note</dt><dd>Parameters can be user adjusted. </dd></dl>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="abe6069912936bef48985548eee61d403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6069912936bef48985548eee61d403">&#9670;&nbsp;</a></span>ObjectDetectionParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsl_1_1ObjectDetectionParameters.html">ObjectDetectionParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>image_sync_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_tracking_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_mask_output_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Object__group.html#ga4a212b90726adaaf0fae801b1cc913f4">DETECTION_MODEL</a>&#160;</td>
+          <td class="paramname"><em>detection_model</em> = <code><a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_body_fitting_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_range_</em> = <code>-1.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsl_1_1BatchParameters.html">BatchParameters</a>&#160;</td>
+          <td class="paramname"><em>batch_trajectories_parameters</em> = <code><a class="el" href="structsl_1_1BatchParameters.html">BatchParameters</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Object__group.html#ga375807d6ff35199b9b48346de7a5d41b">BODY_FORMAT</a>&#160;</td>
+          <td class="paramname"><em>body_format_</em> = <code><a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41badc32ecfd5e73cf6b6eade387a48fd924">BODY_FORMAT::POSE_18</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Object__group.html#ga9a988902255f4e6a224452766890a014">OBJECT_FILTERING_MODE</a>&#160;</td>
+          <td class="paramname"><em>filtering_mode_</em> = <code><a class="el" href="namespacesl.html#ga9a988902255f4e6a224452766890a014a1bfeb94ee7e4072e75070b430c107807">OBJECT_FILTERING_MODE::NMS3D</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>prediction_timeout_s</em> = <code>0.2f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow_reduced_precision_inference</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. Set all parameters to their default values. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Functions</h2>
+<a id="a29f4eab60d956c5cdccde6b77c6b89ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f4eab60d956c5cdccde6b77c6b89ba">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1ObjectDetectionParameters.html">ObjectDetectionParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comparison operator == </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1ObjectDetectionParameters.html" title="Sets the object detection parameters.">ObjectDetectionParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are identical </dd></dl>
+
+</div>
+</div>
+<a id="a5979c2d3f8e5c07bf6e1bbf11d87ec04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5979c2d3f8e5c07bf6e1bbf11d87ec04">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1ObjectDetectionParameters.html">ObjectDetectionParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comparison operator != </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1ObjectDetectionParameters.html" title="Sets the object detection parameters.">ObjectDetectionParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are different </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="a51e7be8ef1449d88408234151642e3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e7be8ef1449d88408234151642e3b4">&#9670;&nbsp;</a></span>image_sync</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool image_sync = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the object detection is synchronized to the image or runs in a separate thread. If set to true, the detection is run for every grab, otherwise, the thread runs at its own speed, which can lead to new detection once in a while. </p>
+
+</div>
+</div>
+<a id="a3ad4edec34c2c727581ec6299e6fc6b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad4edec34c2c727581ec6299e6fc6b7">&#9670;&nbsp;</a></span>enable_tracking</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_tracking = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the object detection will track objects across images flow. </p>
+
+</div>
+</div>
+<a id="a349966e58865996f57a44b9cca174515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349966e58865996f57a44b9cca174515">&#9670;&nbsp;</a></span>enable_mask_output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_mask_output = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the mask object will be computed. </p>
+
+</div>
+</div>
+<a id="a8e5a5b434114b306958871cab55cec90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5a5b434114b306958871cab55cec90">&#9670;&nbsp;</a></span>detection_model</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga4a212b90726adaaf0fae801b1cc913f4">DETECTION_MODEL</a> detection_model = <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable human pose estimation with skeleton keypoints output. </p>
+
+</div>
+</div>
+<a id="abe4e565a76adb69e7d2bffeb24aa0368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4e565a76adb69e7d2bffeb24aa0368">&#9670;&nbsp;</a></span>enable_body_fitting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_body_fitting = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the body fitting will be applied. </p>
+
+</div>
+</div>
+<a id="a5d831559bc3766b6fb718cf4c482e3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d831559bc3766b6fb718cf4c482e3fc">&#9670;&nbsp;</a></span>body_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga375807d6ff35199b9b48346de7a5d41b">BODY_FORMAT</a> body_format = <a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41badc32ecfd5e73cf6b6eade387a48fd924">BODY_FORMAT::POSE_18</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the body format outputed by the sdk when retrieveObjects is called. </p>
+<dl class="section warning"><dt>Warning</dt><dd>if <a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41ba43c429782af81e8b7243ba2d271e2095" title="34 keypoint model.">BODY_FORMAT::POSE_34</a>, the ZED SDK will automatically enable the fitting <a class="el" href="structsl_1_1ObjectDetectionParameters.html#abe4e565a76adb69e7d2bffeb24aa0368">enable_body_fitting</a> </dd></dl>
+
+</div>
+</div>
+<a id="a539ecba1d7ca20797a31d7ca06eb3884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539ecba1d7ca20797a31d7ca06eb3884">&#9670;&nbsp;</a></span>max_range</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float max_range = -1.f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a upper depth range for detections. <br  />
+ Defined in <a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0">UNIT</a> set at <a class="el" href="classsl_1_1Camera.html#aca7edc89436bf249865791d6a4907960">sl::Camera::open</a>. <br  />
+ Default value is set to sl::Initparameters::depth_maximum_distance (can not be higher). </p>
+
+</div>
+</div>
+<a id="af35b82d77cd180099613288abe49f0f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35b82d77cd180099613288abe49f0f8">&#9670;&nbsp;</a></span>batch_parameters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsl_1_1BatchParameters.html">BatchParameters</a> batch_parameters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Batching system parameters. Batching system (introduced in 3.5) performs short-term re-identification with deep learning and trajectories filtering. <br  />
+ <a class="el" href="structsl_1_1BatchParameters.html#ac842b6c1dcb3b1f11b611620199dc55c" title="Defines if the Batch option in the object detection module is enabled. Batch queueing system provides...">BatchParameters::enable</a> need to be true to use this feature (by default disabled) </p>
+
+</div>
+</div>
+<a id="a817e30d0a7dade36a22047940963c943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817e30d0a7dade36a22047940963c943">&#9670;&nbsp;</a></span>filtering_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga9a988902255f4e6a224452766890a014">OBJECT_FILTERING_MODE</a> filtering_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the filtering mode that should be applied to raw detections. <br  />
+ Default value is set to OBJECT_FILTERING_MODE::NMS_3D to keep the same behavior as previous SDK version. </p>
+<dl class="section note"><dt>Note</dt><dd>: This parameter is only used in Detection Model MULTI_CLASS_BOX_XXXX and CUSTOM_BOX_OBJECTS </dd>
+<dd>
+: For Custom Object mode, it is recommended to use OBJECT_FILTERING_MODE::NMS_3D_PER_CLASS or <a class="el" href="namespacesl.html#ga9a988902255f4e6a224452766890a014ab50339a10e1de285ac99d4c3990b8693" title="SDK will not apply any preprocessing to the detected objects.">OBJECT_FILTERING_MODE::NONE</a>. In this case, you might need to add your own NMS filter before ingesting the boxes into the object detection module. </dd></dl>
+
+</div>
+</div>
+<a id="ab3a1cb3093fff4f80f6b57ed6cf0ebd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">&#9670;&nbsp;</a></span>prediction_timeout_s</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float prediction_timeout_s</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When an object is not detected anymore, the SDK will predict its positions during a short period of time before its state switched to SEARCHING. <br  />
+ It prevents the jittering of the object state when there is a short misdetection. The user can define its own prediction time duration. </p>
+<dl class="section note"><dt>Note</dt><dd>During this time, the object will have OK state even if it is not detected. </dd>
+<dd>
+the duration is expressed in seconds </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>the prediction_timeout_s will be clamped to 1 second as the prediction is getting worst with time. </dd>
+<dd>
+set this parameter to 0 to disable SDK predictions </dd></dl>
+
+</div>
+</div>
+<a id="a780e7d3498243d9c78da0ca9e2672567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780e7d3498243d9c78da0ca9e2672567">&#9670;&nbsp;</a></span>allow_reduced_precision_inference</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool allow_reduced_precision_inference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allow inference to run at a lower precision to improve runtime and memory usage, it might increase the initial optimization time and could include downloading calibration data or calibration cache and slightly reduce the accuracy. </p>
+<dl class="section note"><dt>Note</dt><dd>The fp16 is automatically enabled if the GPU is compatible and provides a speed up of almost x2 and reduce memory usage by almost half, no precision loss. </dd>
+<dd>
+This setting allow int8 precision which can speed up by another x2 factor (compared to fp16, or x4 compared to fp32) and half the fp16 memory usage, however some accuracy can be lost. The accuracy loss should not exceed 1-2% on the compatible models. The current compatible models are all HUMAN_BODY_XXXX </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

@@ -1,0 +1,706 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>ObjectData Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1ObjectData.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1ObjectData-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">ObjectData Class Reference<div class="ingroups"><a class="el" href="group__Object__group.html">Object Detection Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains data of a detected object such as its bounding_box, label, id and its 3D position.  
+ <a href="classpyzed_1_1sl_1_1ObjectData.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab4ed9d8e25abd15f5e7ffde1d9d2e4de"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#ab4ed9d8e25abd15f5e7ffde1d9d2e4de">id</a> (self)</td></tr>
+<tr class="memdesc:ab4ed9d8e25abd15f5e7ffde1d9d2e4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object identification number, used as a reference when tracking the object through the frames.  <a href="classpyzed_1_1sl_1_1ObjectData.html#ab4ed9d8e25abd15f5e7ffde1d9d2e4de">More...</a><br /></td></tr>
+<tr class="separator:ab4ed9d8e25abd15f5e7ffde1d9d2e4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245865ca3168bd85d8c6fbdddf226655"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a245865ca3168bd85d8c6fbdddf226655">unique_object_id</a> (self)</td></tr>
+<tr class="memdesc:a245865ca3168bd85d8c6fbdddf226655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID to help identify and track AI detections.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a245865ca3168bd85d8c6fbdddf226655">More...</a><br /></td></tr>
+<tr class="separator:a245865ca3168bd85d8c6fbdddf226655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121801f68ee7eaeea370796ef663e1fc"><td class="memItemLeft" align="right" valign="top"><a id="a121801f68ee7eaeea370796ef663e1fc"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a121801f68ee7eaeea370796ef663e1fc">raw_label</a> (self)</td></tr>
+<tr class="memdesc:a121801f68ee7eaeea370796ef663e1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object label, forwarded from <a class="el" href="classpyzed_1_1sl_1_1CustomBoxObjectData.html">CustomBoxObjectData</a> when using sl.DETECTION_MODEL.CUSTOM_BOX_OBJECTS. <br /></td></tr>
+<tr class="separator:a121801f68ee7eaeea370796ef663e1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bdb117782d6912ccd4a76bb3500649b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a0bdb117782d6912ccd4a76bb3500649b">label</a> (self)</td></tr>
+<tr class="memdesc:a0bdb117782d6912ccd4a76bb3500649b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object category.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a0bdb117782d6912ccd4a76bb3500649b">More...</a><br /></td></tr>
+<tr class="separator:a0bdb117782d6912ccd4a76bb3500649b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff44e594c667120193468139617315e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a8ff44e594c667120193468139617315e">sublabel</a> (self)</td></tr>
+<tr class="memdesc:a8ff44e594c667120193468139617315e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object sublabel.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a8ff44e594c667120193468139617315e">More...</a><br /></td></tr>
+<tr class="separator:a8ff44e594c667120193468139617315e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90ac2c20524cbcfc573ff8e37548e16"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#aa90ac2c20524cbcfc573ff8e37548e16">tracking_state</a> (self)</td></tr>
+<tr class="memdesc:aa90ac2c20524cbcfc573ff8e37548e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object tracking state.  <a href="classpyzed_1_1sl_1_1ObjectData.html#aa90ac2c20524cbcfc573ff8e37548e16">More...</a><br /></td></tr>
+<tr class="separator:aa90ac2c20524cbcfc573ff8e37548e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81beb77053a3899340d313e111a2d222"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a81beb77053a3899340d313e111a2d222">action_state</a> (self)</td></tr>
+<tr class="memdesc:a81beb77053a3899340d313e111a2d222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object action state.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a81beb77053a3899340d313e111a2d222">More...</a><br /></td></tr>
+<tr class="separator:a81beb77053a3899340d313e111a2d222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8dc40fb402e2d04890bc5f3fb3f786"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a4d8dc40fb402e2d04890bc5f3fb3f786">position</a> (self)</td></tr>
+<tr class="memdesc:a4d8dc40fb402e2d04890bc5f3fb3f786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object 3D centroid.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a4d8dc40fb402e2d04890bc5f3fb3f786">More...</a><br /></td></tr>
+<tr class="separator:a4d8dc40fb402e2d04890bc5f3fb3f786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367280951504bbaac7171edb623e17eb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a367280951504bbaac7171edb623e17eb">velocity</a> (self)</td></tr>
+<tr class="memdesc:a367280951504bbaac7171edb623e17eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object 3D velocity.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a367280951504bbaac7171edb623e17eb">More...</a><br /></td></tr>
+<tr class="separator:a367280951504bbaac7171edb623e17eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ca2c0d0a0fed862e62e50d0397d608"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a53ca2c0d0a0fed862e62e50d0397d608">bounding_box</a> (self)</td></tr>
+<tr class="memdesc:a53ca2c0d0a0fed862e62e50d0397d608"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D bounding box of the person represented as eight 3D points.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a53ca2c0d0a0fed862e62e50d0397d608">More...</a><br /></td></tr>
+<tr class="separator:a53ca2c0d0a0fed862e62e50d0397d608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fee4c31199a3cafe5528f49b19dad8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a98fee4c31199a3cafe5528f49b19dad8">bounding_box_2d</a> (self)</td></tr>
+<tr class="memdesc:a98fee4c31199a3cafe5528f49b19dad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D bounding box of the person represented as four 2D points starting at the top left corner and rotation clockwise.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a98fee4c31199a3cafe5528f49b19dad8">More...</a><br /></td></tr>
+<tr class="separator:a98fee4c31199a3cafe5528f49b19dad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89e8ef53b62ee0ac9b2eb86e8586781"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#ae89e8ef53b62ee0ac9b2eb86e8586781">confidence</a> (self)</td></tr>
+<tr class="memdesc:ae89e8ef53b62ee0ac9b2eb86e8586781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the detection confidence value of the object.  <a href="classpyzed_1_1sl_1_1ObjectData.html#ae89e8ef53b62ee0ac9b2eb86e8586781">More...</a><br /></td></tr>
+<tr class="separator:ae89e8ef53b62ee0ac9b2eb86e8586781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303c74b35dd67274ac7f7c18f1813494"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a303c74b35dd67274ac7f7c18f1813494">mask</a> (self)</td></tr>
+<tr class="memdesc:a303c74b35dd67274ac7f7c18f1813494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines for the bounding_box_2d the pixels which really belong to the object (set to 255) and those of the background (set to 0).  <a href="classpyzed_1_1sl_1_1ObjectData.html#a303c74b35dd67274ac7f7c18f1813494">More...</a><br /></td></tr>
+<tr class="separator:a303c74b35dd67274ac7f7c18f1813494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7acef0b75efe7a8eb4df3af0b7449539"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a7acef0b75efe7a8eb4df3af0b7449539">dimensions</a> (self)</td></tr>
+<tr class="memdesc:a7acef0b75efe7a8eb4df3af0b7449539"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D object dimensions: width, height, length  <a href="classpyzed_1_1sl_1_1ObjectData.html#a7acef0b75efe7a8eb4df3af0b7449539">More...</a><br /></td></tr>
+<tr class="separator:a7acef0b75efe7a8eb4df3af0b7449539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbf8d93fd6b830c5322f8a5009ec6b2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#aafbf8d93fd6b830c5322f8a5009ec6b2">keypoint</a> (self)</td></tr>
+<tr class="memdesc:aafbf8d93fd6b830c5322f8a5009ec6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of useful points representing the human body, expressed in 3D and only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>.  <a href="classpyzed_1_1sl_1_1ObjectData.html#aafbf8d93fd6b830c5322f8a5009ec6b2">More...</a><br /></td></tr>
+<tr class="separator:aafbf8d93fd6b830c5322f8a5009ec6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92e3e97a2b8728fefcddb89c627da19"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#ac92e3e97a2b8728fefcddb89c627da19">keypoint_2d</a> (self)</td></tr>
+<tr class="memdesc:ac92e3e97a2b8728fefcddb89c627da19"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D keypoint of the object, only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>  <a href="classpyzed_1_1sl_1_1ObjectData.html#ac92e3e97a2b8728fefcddb89c627da19">More...</a><br /></td></tr>
+<tr class="separator:ac92e3e97a2b8728fefcddb89c627da19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44fb168bdae9e02077ee7d02c32d289"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#aa44fb168bdae9e02077ee7d02c32d289">head_bounding_box</a> (self)</td></tr>
+<tr class="memdesc:aa44fb168bdae9e02077ee7d02c32d289"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D bounding box of the person head, only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>, represented as eight 3D points.  <a href="classpyzed_1_1sl_1_1ObjectData.html#aa44fb168bdae9e02077ee7d02c32d289">More...</a><br /></td></tr>
+<tr class="separator:aa44fb168bdae9e02077ee7d02c32d289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8b7304c9d15591197292eaed961c86"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a2e8b7304c9d15591197292eaed961c86">head_bounding_box_2d</a> (self)</td></tr>
+<tr class="memdesc:a2e8b7304c9d15591197292eaed961c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D bounding box of the person head, only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>, represented as four 2D points starting at the top left corner and rotation clockwise.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a2e8b7304c9d15591197292eaed961c86">More...</a><br /></td></tr>
+<tr class="separator:a2e8b7304c9d15591197292eaed961c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200f0240da3aaf633d1d6e207293ffc2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a200f0240da3aaf633d1d6e207293ffc2">head_position</a> (self)</td></tr>
+<tr class="memdesc:a200f0240da3aaf633d1d6e207293ffc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D head centroid, only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a200f0240da3aaf633d1d6e207293ffc2">More...</a><br /></td></tr>
+<tr class="separator:a200f0240da3aaf633d1d6e207293ffc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93019f4e240f74a7e2487dfff66739aa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a93019f4e240f74a7e2487dfff66739aa">keypoint_confidence</a> (self)</td></tr>
+<tr class="memdesc:a93019f4e240f74a7e2487dfff66739aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per keypoint detection confidence, can not be lower than the <a class="el" href="classpyzed_1_1sl_1_1ObjectDetectionRuntimeParameters.html#a9a9a274aa10e6dd62f82266e1fe54da3">ObjectDetectionRuntimeParameters.detection_confidence_threshold</a>.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a93019f4e240f74a7e2487dfff66739aa">More...</a><br /></td></tr>
+<tr class="separator:a93019f4e240f74a7e2487dfff66739aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3d26561478969966efd4cf7f04f6fa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a2e3d26561478969966efd4cf7f04f6fa">local_position_per_joint</a> (self)</td></tr>
+<tr class="memdesc:a2e3d26561478969966efd4cf7f04f6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per keypoint local position (the position of the child keypoint with respect to its parent expressed in its parent coordinate frame)  <a href="classpyzed_1_1sl_1_1ObjectData.html#a2e3d26561478969966efd4cf7f04f6fa">More...</a><br /></td></tr>
+<tr class="separator:a2e3d26561478969966efd4cf7f04f6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90417256e6714e028f2502800faff664"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a90417256e6714e028f2502800faff664">local_orientation_per_joint</a> (self)</td></tr>
+<tr class="memdesc:a90417256e6714e028f2502800faff664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per keypoint local orientation.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a90417256e6714e028f2502800faff664">More...</a><br /></td></tr>
+<tr class="separator:a90417256e6714e028f2502800faff664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31bfbe40a2d29d8abd268414332a131f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a31bfbe40a2d29d8abd268414332a131f">global_root_orientation</a> (self)</td></tr>
+<tr class="memdesc:a31bfbe40a2d29d8abd268414332a131f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global root orientation of the skeleton.  <a href="classpyzed_1_1sl_1_1ObjectData.html#a31bfbe40a2d29d8abd268414332a131f">More...</a><br /></td></tr>
+<tr class="separator:a31bfbe40a2d29d8abd268414332a131f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains data of a detected object such as its bounding_box, label, id and its 3D position. </p>
+</div><h2 class="groupheader">Functions</h2>
+<a id="ab4ed9d8e25abd15f5e7ffde1d9d2e4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ed9d8e25abd15f5e7ffde1d9d2e4de">&#9670;&nbsp;</a></span>id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def id </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object identification number, used as a reference when tracking the object through the frames. </p>
+<dl class="section note"><dt>Note</dt><dd>Is set to -1 if the object is not currently tracked. </dd></dl>
+
+</div>
+</div>
+<a id="a245865ca3168bd85d8c6fbdddf226655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245865ca3168bd85d8c6fbdddf226655">&#9670;&nbsp;</a></span>unique_object_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def unique_object_id </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unique ID to help identify and track AI detections. </p>
+<p>Can be either generated externally, or using <a class="el" href="group__Object__group.html#ga7b4bfd1e829c64bb82a4d2edf7edb783">generate_unique_id()</a> or left empty </p>
+
+</div>
+</div>
+<a id="a0bdb117782d6912ccd4a76bb3500649b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bdb117782d6912ccd4a76bb3500649b">&#9670;&nbsp;</a></span>label()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def label </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object category. </p>
+<p>Identifies the object type. Can have the following values: <a class="el" href="classpyzed_1_1sl_1_1OBJECT__CLASS.html">OBJECT_CLASS</a> </p>
+
+</div>
+</div>
+<a id="a8ff44e594c667120193468139617315e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff44e594c667120193468139617315e">&#9670;&nbsp;</a></span>sublabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def sublabel </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object sublabel. </p>
+<p>Identifies the object subclass. Can have the following values: <a class="el" href="classpyzed_1_1sl_1_1OBJECT__SUBCLASS.html">OBJECT_SUBCLASS</a> </p>
+
+</div>
+</div>
+<a id="aa90ac2c20524cbcfc573ff8e37548e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90ac2c20524cbcfc573ff8e37548e16">&#9670;&nbsp;</a></span>tracking_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def tracking_state </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object tracking state. </p>
+<p>Can have the following values: <a class="el" href="classpyzed_1_1sl_1_1OBJECT__TRACKING__STATE.html">OBJECT_TRACKING_STATE</a> </p>
+
+</div>
+</div>
+<a id="a81beb77053a3899340d313e111a2d222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81beb77053a3899340d313e111a2d222">&#9670;&nbsp;</a></span>action_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def action_state </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object action state. </p>
+<p>Can have the following values: <a class="el" href="classpyzed_1_1sl_1_1OBJECT__ACTION__STATE.html">OBJECT_ACTION_STATE</a> </p>
+
+</div>
+</div>
+<a id="a4d8dc40fb402e2d04890bc5f3fb3f786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8dc40fb402e2d04890bc5f3fb3f786">&#9670;&nbsp;</a></span>position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def position </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object 3D centroid. </p>
+<p>Defined in <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">InitParameters.coordinate_units</a>, expressed in <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">RuntimeParameters.measure3D_reference_frame</a> </p>
+
+</div>
+</div>
+<a id="a367280951504bbaac7171edb623e17eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a367280951504bbaac7171edb623e17eb">&#9670;&nbsp;</a></span>velocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velocity </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object 3D velocity. </p>
+<p>Defined in <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">InitParameters.coordinate_units</a> / s , expressed in <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">RuntimeParameters.measure3D_reference_frame</a> </p>
+
+</div>
+</div>
+<a id="a53ca2c0d0a0fed862e62e50d0397d608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ca2c0d0a0fed862e62e50d0397d608">&#9670;&nbsp;</a></span>bounding_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def bounding_box </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D bounding box of the person represented as eight 3D points. </p>
+<p>Defined in <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">InitParameters.coordinate_units</a>, expressed in <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">RuntimeParameters.measure3D_reference_frame</a> </p><div class="fragment"><div class="line">  1 ------ 2</div>
+<div class="line"> /        /|</div>
+<div class="line">0 ------ 3 |</div>
+<div class="line">| Object | 6</div>
+<div class="line">|        |/</div>
+<div class="line">4 ------ 7</div>
+</div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>Only available if <a class="el" href="classpyzed_1_1sl_1_1ObjectDetectionParameters.html#a8dba66f45939e36a4e2e3eec371cad00" title="Defines if the object detection will track objects across images flow.">ObjectDetectionParameters.enable_tracking</a> is activated </dd></dl>
+
+</div>
+</div>
+<a id="a98fee4c31199a3cafe5528f49b19dad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98fee4c31199a3cafe5528f49b19dad8">&#9670;&nbsp;</a></span>bounding_box_2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def bounding_box_2d </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2D bounding box of the person represented as four 2D points starting at the top left corner and rotation clockwise. </p>
+<p>Expressed in pixels on the original image resolution, where [0,0] is the top left corner. </p><div class="fragment"><div class="line">A ------ B</div>
+<div class="line">| Object |</div>
+<div class="line">D ------ C</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="ae89e8ef53b62ee0ac9b2eb86e8586781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89e8ef53b62ee0ac9b2eb86e8586781">&#9670;&nbsp;</a></span>confidence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def confidence </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the detection confidence value of the object. </p>
+<p>Values can range from 0 to 100, where lower confidence values mean that the object might not be localized perfectly or that the label (<a class="el" href="classpyzed_1_1sl_1_1OBJECT__CLASS.html">OBJECT_CLASS</a>) is uncertain. </p>
+
+</div>
+</div>
+<a id="a303c74b35dd67274ac7f7c18f1813494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303c74b35dd67274ac7f7c18f1813494">&#9670;&nbsp;</a></span>mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def mask </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines for the bounding_box_2d the pixels which really belong to the object (set to 255) and those of the background (set to 0). </p>
+<dl class="section warning"><dt>Warning</dt><dd>The mask information is available only for tracked objects (<a class="el" href="classpyzed_1_1sl_1_1OBJECT__TRACKING__STATE.html">OBJECT_TRACKING_STATE.OK</a>) that have a valid depth. Otherwise, it will not be initialized (<a class="el" href="classpyzed_1_1sl_1_1Mat.html#a8091d05297a40aa6a82b57bb70049220">mask.is_init</a> == False) </dd></dl>
+
+</div>
+</div>
+<a id="a7acef0b75efe7a8eb4df3af0b7449539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acef0b75efe7a8eb4df3af0b7449539">&#9670;&nbsp;</a></span>dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def dimensions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D object dimensions: width, height, length </p>
+<dl class="section note"><dt>Note</dt><dd>Only available if <a class="el" href="classpyzed_1_1sl_1_1ObjectDetectionParameters.html#a8dba66f45939e36a4e2e3eec371cad00" title="Defines if the object detection will track objects across images flow.">ObjectDetectionParameters.enable_tracking</a> is activated </dd></dl>
+
+</div>
+</div>
+<a id="aafbf8d93fd6b830c5322f8a5009ec6b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbf8d93fd6b830c5322f8a5009ec6b2">&#9670;&nbsp;</a></span>keypoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def keypoint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A set of useful points representing the human body, expressed in 3D and only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>. </p>
+<p>We use a classic 18 points representation, the keypoint semantic and order is given by <a class="el" href="classpyzed_1_1sl_1_1BODY__PARTS.html">BODY_PARTS</a> Defined in <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">InitParameters.coordinate_units</a>, expressed in <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">RuntimeParameters.measure3D_reference_frame</a> </p><dl class="section warning"><dt>Warning</dt><dd>in some cases, eg. body partially out of the image, some keypoints can not be detected, they will have negative coordinates. </dd></dl>
+
+</div>
+</div>
+<a id="ac92e3e97a2b8728fefcddb89c627da19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92e3e97a2b8728fefcddb89c627da19">&#9670;&nbsp;</a></span>keypoint_2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def keypoint_2d </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2D keypoint of the object, only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a> </p>
+<dl class="section warning"><dt>Warning</dt><dd>in some cases, eg. body partially out of the image or missing depth data, some keypoints can not be detected, they will have non finite values. </dd></dl>
+
+</div>
+</div>
+<a id="aa44fb168bdae9e02077ee7d02c32d289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44fb168bdae9e02077ee7d02c32d289">&#9670;&nbsp;</a></span>head_bounding_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def head_bounding_box </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D bounding box of the person head, only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>, represented as eight 3D points. </p>
+<p>Defined in <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">InitParameters.coordinate_units</a>, expressed in <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">RuntimeParameters.measure3D_reference_frame</a> </p>
+
+</div>
+</div>
+<a id="a2e8b7304c9d15591197292eaed961c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8b7304c9d15591197292eaed961c86">&#9670;&nbsp;</a></span>head_bounding_box_2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def head_bounding_box_2d </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2D bounding box of the person head, only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>, represented as four 2D points starting at the top left corner and rotation clockwise. </p>
+<p>Expressed in pixels on the original image resolution. </p>
+
+</div>
+</div>
+<a id="a200f0240da3aaf633d1d6e207293ffc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200f0240da3aaf633d1d6e207293ffc2">&#9670;&nbsp;</a></span>head_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def head_position </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D head centroid, only available in <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.HUMAN_BODY*</a>. </p>
+<p>Defined in <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">InitParameters.coordinate_units</a>, expressed in <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">RuntimeParameters.measure3D_reference_frame</a> </p>
+
+</div>
+</div>
+<a id="a93019f4e240f74a7e2487dfff66739aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93019f4e240f74a7e2487dfff66739aa">&#9670;&nbsp;</a></span>keypoint_confidence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def keypoint_confidence </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per keypoint detection confidence, can not be lower than the <a class="el" href="classpyzed_1_1sl_1_1ObjectDetectionRuntimeParameters.html#a9a9a274aa10e6dd62f82266e1fe54da3">ObjectDetectionRuntimeParameters.detection_confidence_threshold</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Not available with <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.MULTI_CLASS_BOX*</a>. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>In some cases, eg. body partially out of the image or missing depth data, some keypoints can not be detected, they will have non finite values. </dd></dl>
+
+</div>
+</div>
+<a id="a2e3d26561478969966efd4cf7f04f6fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3d26561478969966efd4cf7f04f6fa">&#9670;&nbsp;</a></span>local_position_per_joint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def local_position_per_joint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per keypoint local position (the position of the child keypoint with respect to its parent expressed in its parent coordinate frame) </p>
+<dl class="section note"><dt>Note</dt><dd>it is expressed in <a class="el" href="classpyzed_1_1sl_1_1REFERENCE__FRAME.html">sl.REFERENCE_FRAME.CAMERA</a> or <a class="el" href="classpyzed_1_1sl_1_1REFERENCE__FRAME.html">sl.REFERENCE_FRAME.WORLD</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not available with <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.MULTI_CLASS_BOX*</a> and with <a class="el" href="classpyzed_1_1sl_1_1BODY__FORMAT.html">sl.BODY_FORMAT.POSE_18</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a90417256e6714e028f2502800faff664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90417256e6714e028f2502800faff664">&#9670;&nbsp;</a></span>local_orientation_per_joint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def local_orientation_per_joint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per keypoint local orientation. </p>
+<dl class="section note"><dt>Note</dt><dd>the orientation is represented by a quaternion which is stored in a numpy array of size 4 [qx,qy,qz,qw] </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not available with <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.MULTI_CLASS_BOX*</a> and with <a class="el" href="classpyzed_1_1sl_1_1BODY__FORMAT.html">sl.BODY_FORMAT.POSE_18</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a31bfbe40a2d29d8abd268414332a131f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31bfbe40a2d29d8abd268414332a131f">&#9670;&nbsp;</a></span>global_root_orientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def global_root_orientation </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Global root orientation of the skeleton. </p>
+<p>The orientation is also represented by a quaternion with the same format as <a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#a90417256e6714e028f2502800faff664">local_orientation_per_joint</a> </p><dl class="section note"><dt>Note</dt><dd>the global root position is already accessible in <a class="el" href="classpyzed_1_1sl_1_1ObjectData.html#aafbf8d93fd6b830c5322f8a5009ec6b2">keypoint</a> attribute by using the root index of a given <a class="el" href="classpyzed_1_1sl_1_1BODY__FORMAT.html">sl.BODY_FORMAT</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not available with <a class="el" href="classpyzed_1_1sl_1_1DETECTION__MODEL.html">DETECTION_MODEL.MULTI_CLASS_BOX*</a> and with <a class="el" href="classpyzed_1_1sl_1_1BODY__FORMAT.html">sl.BODY_FORMAT.POSE_18</a>. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

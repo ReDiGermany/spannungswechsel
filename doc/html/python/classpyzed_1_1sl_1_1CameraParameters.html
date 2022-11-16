@@ -1,0 +1,346 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>CameraParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1CameraParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1CameraParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">CameraParameters Class Reference<div class="ingroups"><a class="el" href="group__Depth__group.html">Depth Sensing Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Intrinsic parameters of a camera.  
+ <a href="classpyzed_1_1sl_1_1CameraParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a94a642b5f1c8511df7584aa6a187f559"><td class="memItemLeft" align="right" valign="top"><a id="a94a642b5f1c8511df7584aa6a187f559"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#a94a642b5f1c8511df7584aa6a187f559">fx</a> (self)</td></tr>
+<tr class="memdesc:a94a642b5f1c8511df7584aa6a187f559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Focal length in pixels along x axis. <br /></td></tr>
+<tr class="separator:a94a642b5f1c8511df7584aa6a187f559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffc526bce8d75e9b6e667952f500651"><td class="memItemLeft" align="right" valign="top"><a id="aaffc526bce8d75e9b6e667952f500651"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#aaffc526bce8d75e9b6e667952f500651">fy</a> (self)</td></tr>
+<tr class="memdesc:aaffc526bce8d75e9b6e667952f500651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Focal length in pixels along y axis. <br /></td></tr>
+<tr class="separator:aaffc526bce8d75e9b6e667952f500651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619502ee58f20f38ad6eff32a8e4859c"><td class="memItemLeft" align="right" valign="top"><a id="a619502ee58f20f38ad6eff32a8e4859c"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#a619502ee58f20f38ad6eff32a8e4859c">cx</a> (self)</td></tr>
+<tr class="memdesc:a619502ee58f20f38ad6eff32a8e4859c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optical center along x axis, defined in pixels (usually close to width/2). <br /></td></tr>
+<tr class="separator:a619502ee58f20f38ad6eff32a8e4859c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e152c48eb74fa75a36a006f66e17376"><td class="memItemLeft" align="right" valign="top"><a id="a7e152c48eb74fa75a36a006f66e17376"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#a7e152c48eb74fa75a36a006f66e17376">cy</a> (self)</td></tr>
+<tr class="memdesc:a7e152c48eb74fa75a36a006f66e17376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optical center along y axis, defined in pixels (usually close to height/2). <br /></td></tr>
+<tr class="separator:a7e152c48eb74fa75a36a006f66e17376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b44e126441580f6266f73b3dbfd054"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#a90b44e126441580f6266f73b3dbfd054">disto</a> (self)</td></tr>
+<tr class="memdesc:a90b44e126441580f6266f73b3dbfd054"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Numpy array.  <a href="classpyzed_1_1sl_1_1CameraParameters.html#a90b44e126441580f6266f73b3dbfd054">More...</a><br /></td></tr>
+<tr class="separator:a90b44e126441580f6266f73b3dbfd054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298e99b705b0a77e79ee9e325de31040"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#a298e99b705b0a77e79ee9e325de31040">set_disto</a> (self, float value1, float value2, float value3, float value4, float value5)</td></tr>
+<tr class="memdesc:a298e99b705b0a77e79ee9e325de31040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the elements of the disto array.  <a href="classpyzed_1_1sl_1_1CameraParameters.html#a298e99b705b0a77e79ee9e325de31040">More...</a><br /></td></tr>
+<tr class="separator:a298e99b705b0a77e79ee9e325de31040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d3ce7701b55b4a849bad52b48671bf"><td class="memItemLeft" align="right" valign="top"><a id="ab3d3ce7701b55b4a849bad52b48671bf"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#ab3d3ce7701b55b4a849bad52b48671bf">v_fov</a> (self)</td></tr>
+<tr class="memdesc:ab3d3ce7701b55b4a849bad52b48671bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical field of view, in degrees. <br /></td></tr>
+<tr class="separator:ab3d3ce7701b55b4a849bad52b48671bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc167e5f680c70fc2c1b4db2a3ef0989"><td class="memItemLeft" align="right" valign="top"><a id="afc167e5f680c70fc2c1b4db2a3ef0989"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#afc167e5f680c70fc2c1b4db2a3ef0989">h_fov</a> (self)</td></tr>
+<tr class="memdesc:afc167e5f680c70fc2c1b4db2a3ef0989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Horizontal field of view, in degrees. <br /></td></tr>
+<tr class="separator:afc167e5f680c70fc2c1b4db2a3ef0989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b5bed5a47327d22069a420b39384a6"><td class="memItemLeft" align="right" valign="top"><a id="a87b5bed5a47327d22069a420b39384a6"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#a87b5bed5a47327d22069a420b39384a6">d_fov</a> (self)</td></tr>
+<tr class="memdesc:a87b5bed5a47327d22069a420b39384a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagonal field of view, in degrees. <br /></td></tr>
+<tr class="separator:a87b5bed5a47327d22069a420b39384a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346f7dd5556d6fd8ea398280a3528be1"><td class="memItemLeft" align="right" valign="top"><a id="a346f7dd5556d6fd8ea398280a3528be1"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#a346f7dd5556d6fd8ea398280a3528be1">image_size</a> (self)</td></tr>
+<tr class="memdesc:a346f7dd5556d6fd8ea398280a3528be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in pixels of the images given by the camera. <br /></td></tr>
+<tr class="separator:a346f7dd5556d6fd8ea398280a3528be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afbe6309655609eaceb540c2261eb66"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1CameraParameters.html#a4afbe6309655609eaceb540c2261eb66">set_up</a> (self, float fx_, float fy_, float cx_, float cy_)</td></tr>
+<tr class="memdesc:a4afbe6309655609eaceb540c2261eb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setups the parameters of a camera.  <a href="classpyzed_1_1sl_1_1CameraParameters.html#a4afbe6309655609eaceb540c2261eb66">More...</a><br /></td></tr>
+<tr class="separator:a4afbe6309655609eaceb540c2261eb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Intrinsic parameters of a camera. </p>
+<p>Those information about the camera will be returned by <a class="el" href="classpyzed_1_1sl_1_1Camera.html#ab73c7f03fb8297821c049ba5a5909c8a">Camera.get_camera_information()</a> . </p><dl class="section note"><dt>Note</dt><dd>Similar to the <a class="el" href="classpyzed_1_1sl_1_1CalibrationParameters.html">CalibrationParameters</a> , those parameters are taken from the settings file (SNXXX.conf) and are modified during the <a class="el" href="classpyzed_1_1sl_1_1Camera.html#aabca561d73610707323bcec1a4c1d6b0">Camera.open</a> call, represent the camera matrix corresponding to rectified or unrectified images. \nWhen filled with rectified parameters, fx,fy,cx,cy must be the same for Left and Right <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> once <a class="el" href="classpyzed_1_1sl_1_1Camera.html#aabca561d73610707323bcec1a4c1d6b0">Camera.open</a> has been called. Since distortion is corrected during rectification, distortion should not be considered on rectified images. </dd></dl>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a90b44e126441580f6266f73b3dbfd054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b44e126441580f6266f73b3dbfd054">&#9670;&nbsp;</a></span>disto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def disto </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A Numpy array. </p>
+<p>Distortion factor : [ k1, k2, p1, p2, k3 ]. Radial (k1,k2,k3) and Tangential (p1,p2) distortion. </p>
+
+</div>
+</div>
+<a id="a298e99b705b0a77e79ee9e325de31040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298e99b705b0a77e79ee9e325de31040">&#9670;&nbsp;</a></span>set_disto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_disto </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value5</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the elements of the disto array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">float</td><td>value1 : k1 </td></tr>
+    <tr><td class="paramname">float</td><td>value2 : k2 </td></tr>
+    <tr><td class="paramname">float</td><td>value3 : p1 </td></tr>
+    <tr><td class="paramname">float</td><td>value4 : p2 </td></tr>
+    <tr><td class="paramname">float</td><td>value5 : k3 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4afbe6309655609eaceb540c2261eb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4afbe6309655609eaceb540c2261eb66">&#9670;&nbsp;</a></span>set_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_up </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fx_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fy_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cx_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cy_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setups the parameters of a camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">float</td><td>fx_ : horizontal focal length. </td></tr>
+    <tr><td class="paramname">float</td><td>fy_ : vertical focal length. </td></tr>
+    <tr><td class="paramname">float</td><td>cx_ : horizontal optical center. </td></tr>
+    <tr><td class="paramname">float</td><td>cx_ : vertical optical center. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

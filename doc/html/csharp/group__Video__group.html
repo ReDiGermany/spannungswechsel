@@ -1,0 +1,581 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Video Module | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__Video__group.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
+  <div class="headertitle">
+<div class="title">Video Module</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Camera.html">Camera</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is the main interface with the camera and the SDK features, such as: video, depth, tracking, mapping, and more.  <a href="classsl_1_1Camera.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1InitParameters.html">InitParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct containing all parameters passed to the SDK when initializing the ZED. These parameters will be fixed for the whole execution life time of the camera.  <a href="classsl_1_1InitParameters.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1RecordingParameters.html">RecordingParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the recording parameters.  <a href="structsl_1_1RecordingParameters.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1StreamingParameters.html">StreamingParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the streaming parameters.  <a href="structsl_1_1StreamingParameters.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1DeviceProperties.html">DeviceProperties</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device properties  <a href="structsl_1_1DeviceProperties.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1StreamingProperties.html">StreamingProperties</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streaming device properties  <a href="structsl_1_1StreamingProperties.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1RecordingStatus.html">RecordingStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for information about the current SVO recording process.  <a href="structsl_1_1RecordingStatus.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga4a2a702e602c466869aa447ac2760c13"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#ga4a2a702e602c466869aa447ac2760c13">INPUT_TYPE</a> </td></tr>
+<tr class="memdesc:ga4a2a702e602c466869aa447ac2760c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists available input type in SDK.  <a href="group__Video__group.html#ga4a2a702e602c466869aa447ac2760c13">More...</a><br /></td></tr>
+<tr class="separator:ga4a2a702e602c466869aa447ac2760c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eda01e75494f556f7a4ede1a7c2d55d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#ga3eda01e75494f556f7a4ede1a7c2d55d">CAMERA_STATE</a> </td></tr>
+<tr class="memdesc:ga3eda01e75494f556f7a4ede1a7c2d55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of possible camera state  <a href="group__Video__group.html#ga3eda01e75494f556f7a4ede1a7c2d55d">More...</a><br /></td></tr>
+<tr class="separator:ga3eda01e75494f556f7a4ede1a7c2d55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd0374c748530a64a72872c43b2cc828"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a> </td></tr>
+<tr class="memdesc:gabd0374c748530a64a72872c43b2cc828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the available resolution options.  <a href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">More...</a><br /></td></tr>
+<tr class="separator:gabd0374c748530a64a72872c43b2cc828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f28c91d6488af0352a921ede97c40fe"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#ga8f28c91d6488af0352a921ede97c40fe">FLIP_MODE</a> </td></tr>
+<tr class="memdesc:ga8f28c91d6488af0352a921ede97c40fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">brief Lists available compression modes for SVO recording.  <a href="group__Video__group.html#ga8f28c91d6488af0352a921ede97c40fe">More...</a><br /></td></tr>
+<tr class="separator:ga8f28c91d6488af0352a921ede97c40fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa29851790d3e528f42f539334e6e5887"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#gaa29851790d3e528f42f539334e6e5887">MODEL</a> </td></tr>
+<tr class="memdesc:gaa29851790d3e528f42f539334e6e5887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of compatible ZED cameras.  <a href="group__Video__group.html#gaa29851790d3e528f42f539334e6e5887">More...</a><br /></td></tr>
+<tr class="separator:gaa29851790d3e528f42f539334e6e5887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77fc7bfc159040a1e2ffb074a8ad248c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">VIEW</a> </td></tr>
+<tr class="memdesc:ga77fc7bfc159040a1e2ffb074a8ad248c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists available view types retrieved from the camera, used for creating human-viewable (Image-type) textures.  <a href="group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">More...</a><br /></td></tr>
+<tr class="separator:ga77fc7bfc159040a1e2ffb074a8ad248c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bab4c6ca4fd971055eca1fdd9f4223d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#ga7bab4c6ca4fd971055eca1fdd9f4223d">VIDEO_SETTINGS</a> </td></tr>
+<tr class="memdesc:ga7bab4c6ca4fd971055eca1fdd9f4223d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists available camera settings for the ZED camera (contrast, hue, saturation, gain, etc.)  <a href="group__Video__group.html#ga7bab4c6ca4fd971055eca1fdd9f4223d">More...</a><br /></td></tr>
+<tr class="separator:ga7bab4c6ca4fd971055eca1fdd9f4223d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9401e0c9b9fec46d2eb300ffd2fc72c9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9">TIME_REFERENCE</a> </td></tr>
+<tr class="memdesc:ga9401e0c9b9fec46d2eb300ffd2fc72c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Categories indicating when a timestamp is captured.  <a href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9">More...</a><br /></td></tr>
+<tr class="separator:ga9401e0c9b9fec46d2eb300ffd2fc72c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae52adc3898d4dd4cb5b770567fe8031c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#gae52adc3898d4dd4cb5b770567fe8031c">SVO_COMPRESSION_MODE</a> </td></tr>
+<tr class="memdesc:gae52adc3898d4dd4cb5b770567fe8031c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SVO compression modes.  <a href="group__Video__group.html#gae52adc3898d4dd4cb5b770567fe8031c">More...</a><br /></td></tr>
+<tr class="separator:gae52adc3898d4dd4cb5b770567fe8031c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0361144a89b83ced3ff322f026e54370"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Video__group.html#ga0361144a89b83ced3ff322f026e54370">STREAMING_CODEC</a> </td></tr>
+<tr class="memdesc:ga0361144a89b83ced3ff322f026e54370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streaming codecs  <a href="group__Video__group.html#ga0361144a89b83ced3ff322f026e54370">More...</a><br /></td></tr>
+<tr class="separator:ga0361144a89b83ced3ff322f026e54370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga4a2a702e602c466869aa447ac2760c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a2a702e602c466869aa447ac2760c13">&#9670;&nbsp;</a></span>INPUT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#ga4a2a702e602c466869aa447ac2760c13">INPUT_TYPE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lists available input type in SDK. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4a2a702e602c466869aa447ac2760c13a7aca5ec618f7317328dcd7014cf9bdcf"></a>USB&#160;</td><td class="fielddoc"><p>USB input mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4a2a702e602c466869aa447ac2760c13a7ca093ff664bb32ca6f652ec19b1b1e7"></a>SVO&#160;</td><td class="fielddoc"><p>SVO file input mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4a2a702e602c466869aa447ac2760c13a2f05998d2a71cdc19b7109549bbe2646"></a>STREAM&#160;</td><td class="fielddoc"><p>STREAM input mode (requires to use enableStreaming()/disableStreaming() on the "sender" side) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga3eda01e75494f556f7a4ede1a7c2d55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3eda01e75494f556f7a4ede1a7c2d55d">&#9670;&nbsp;</a></span>CAMERA_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#ga3eda01e75494f556f7a4ede1a7c2d55d">CAMERA_STATE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of possible camera state </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3eda01e75494f556f7a4ede1a7c2d55da1588118736b5ecdb1ac20c16428d8ea7"></a>AVAILABLE&#160;</td><td class="fielddoc"><p>Defines if the camera can be opened by the SDK </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3eda01e75494f556f7a4ede1a7c2d55dad07995fa8f4a3a019d134fcbfca4669a"></a>NOT_AVAILABLE&#160;</td><td class="fielddoc"><p>Defines if the camera is already opened and unavailable </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gabd0374c748530a64a72872c43b2cc828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd0374c748530a64a72872c43b2cc828">&#9670;&nbsp;</a></span>RESOLUTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Represents the available resolution options. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabd0374c748530a64a72872c43b2cc828ab5cf8bac4234790ecda4797bf325116c"></a>HD2K&#160;</td><td class="fielddoc"><p>2208*1242. Supported frame rate: 15 FPS. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabd0374c748530a64a72872c43b2cc828aebf416754b5b57c91ce22b025015031b"></a>HD1080&#160;</td><td class="fielddoc"><p>1920*1080. Supported frame rates: 15, 30 FPS. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabd0374c748530a64a72872c43b2cc828a4cdfd6b884ead99d46d935f580246f0e"></a>HD720&#160;</td><td class="fielddoc"><p>1280*720. Supported frame rates: 15, 30, 60 FPS. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabd0374c748530a64a72872c43b2cc828adb4371197d1f58c7d4edb7dcd0565ad1"></a>VGA&#160;</td><td class="fielddoc"><p>672*376. Supported frame rates: 15, 30, 60, 100 FPS. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga8f28c91d6488af0352a921ede97c40fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f28c91d6488af0352a921ede97c40fe">&#9670;&nbsp;</a></span>FLIP_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#ga8f28c91d6488af0352a921ede97c40fe">FLIP_MODE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>brief Lists available compression modes for SVO recording. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8f28c91d6488af0352a921ede97c40fea88559a0cfd8250c9d65970cc145c92d4"></a>OFF&#160;</td><td class="fielddoc"><p>default behavior. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8f28c91d6488af0352a921ede97c40fea90651ebea9a35ec4e018c8157492e17c"></a>ON&#160;</td><td class="fielddoc"><p>Images and camera sensors data are flipped, useful when your camera is mounted upside down. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8f28c91d6488af0352a921ede97c40feae1f2d5134ed2543d38a0de9751cf75d9"></a>AUTO&#160;</td><td class="fielddoc"><p>in live mode: use the camera orientation (if an IMU is available) to set the flip mode, in SVO mode, read the state of this enum when recorded </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaa29851790d3e528f42f539334e6e5887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa29851790d3e528f42f539334e6e5887">&#9670;&nbsp;</a></span>MODEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#gaa29851790d3e528f42f539334e6e5887">MODEL</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Types of compatible ZED cameras. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa29851790d3e528f42f539334e6e5887a70e519e34a6d0625129508391ceed654"></a>ZED&#160;</td><td class="fielddoc"><p>ZED(1) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa29851790d3e528f42f539334e6e5887accc49115bf464e05db413e56744704b9"></a>ZED_M&#160;</td><td class="fielddoc"><p>ZED Mini. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa29851790d3e528f42f539334e6e5887a5276787f52fc1edbde249b990905a66c"></a>ZED2&#160;</td><td class="fielddoc"><p>ZED2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa29851790d3e528f42f539334e6e5887a4ad1fb7a67cec94f7a67de035a688a85"></a>ZED2i&#160;</td><td class="fielddoc"><p>ZED2i </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga77fc7bfc159040a1e2ffb074a8ad248c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77fc7bfc159040a1e2ffb074a8ad248c">&#9670;&nbsp;</a></span>VIEW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">VIEW</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lists available view types retrieved from the camera, used for creating human-viewable (Image-type) textures. </p>
+<p>Based on the VIEW enum in the ZED C++ SDK. For more info, see: <a href="https://www.stereolabs.com/docs/api/group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">https://www.stereolabs.com/docs/api/group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca684d325a7303f52e64011467ff5c5758"></a>LEFT&#160;</td><td class="fielddoc"><p>Left RGBA image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to MAT_TYPE_8U_C4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca21507b40c80068eda19865706fdc2403"></a>RIGHT&#160;</td><td class="fielddoc"><p>Right RGBA image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to sl::MAT_TYPE_8U_C4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca1f8dd4983aa346f269afe473dbeda04b"></a>LEFT_GREY&#160;</td><td class="fielddoc"><p>Left GRAY image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to sl::MAT_TYPE_8U_C1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248cac58e37392f42d14a6c2addae4d69d2ae"></a>RIGHT_GREY&#160;</td><td class="fielddoc"><p>Right GRAY image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to sl::MAT_TYPE_8U_C1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca2c8a492b81baae8fa81e2e8afef03a41"></a>LEFT_UNRECTIFIED&#160;</td><td class="fielddoc"><p>Left RGBA unrectified image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to sl::MAT_TYPE_8U_C4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca2590e94c2a8bb8565f85c3b6146ab0e2"></a>RIGHT_UNRECTIFIED&#160;</td><td class="fielddoc"><p>Right RGBA unrectified image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to sl::MAT_TYPE_8U_C4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca98a97eb863f09c6ca22adf2ed9378cf8"></a>LEFT_UNRECTIFIED_GREY&#160;</td><td class="fielddoc"><p>Left GRAY unrectified image. As a ZEDMat, MAT_TYPE is set to sl::MAT_TYPE_8U_C1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca4d8710e9bbb5604834b63b0de5bb9825"></a>RIGHT_UNRECTIFIED_GREY&#160;</td><td class="fielddoc"><p>Right GRAY unrectified image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to sl::MAT_TYPE_8U_C1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca13d64ca5814ba97a603d0cb38bdf0d32"></a>SIDE_BY_SIDE&#160;</td><td class="fielddoc"><p>Left and right image. Will be double the width to hold both. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to MAT_8U_C4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248caaa1780b4fcce2d5d9af13dc25386d111"></a>DEPTH&#160;</td><td class="fielddoc"><p>Normalized depth image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to sl::MAT_TYPE_8U_C4. </p>
+<p>Use an Image texture for viewing only. For measurements, use a Measure type instead (ZEDCamera.RetrieveMeasure()) to preserve accuracy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca87f1ba15677264359d67e2a5b34a4b68"></a>CONFIDENCE&#160;</td><td class="fielddoc"><p>Normalized confidence image. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to MAT_8U_C4. </p>
+<p>Use an Image texture for viewing only. For measurements, use a Measure type instead (ZEDCamera.RetrieveMeasure()) to preserve accuracy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248caa50eb8a5845601666a9dd4504ebef51a"></a>NORMALS&#160;</td><td class="fielddoc"><p>Color rendering of the normals. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to MAT_8U_C4. </p>
+<p>Use an Image texture for viewing only. For measurements, use a Measure type instead (ZEDCamera.RetrieveMeasure()) to preserve accuracy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca7492731e9d2fcf4a51d5927ed146a05c"></a>DEPTH_RIGHT&#160;</td><td class="fielddoc"><p>Color rendering of the right depth mapped on right sensor. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to MAT_8U_C4. </p>
+<p>Use an Image texture for viewing only. For measurements, use a Measure type instead (ZEDCamera.RetrieveMeasure()) to preserve accuracy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga77fc7bfc159040a1e2ffb074a8ad248ca8a3369e8bc6878b1679db4b6a1b41b38"></a>NORMALS_RIGHT&#160;</td><td class="fielddoc"><p>Color rendering of the normals mapped on right sensor. As a <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">Mat</a>, MAT_TYPE is set to MAT_8U_C4. </p>
+<p>Use an Image texture for viewing only. For measurements, use a Measure type instead (ZEDCamera.RetrieveMeasure()) to preserve accuracy. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga7bab4c6ca4fd971055eca1fdd9f4223d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7bab4c6ca4fd971055eca1fdd9f4223d">&#9670;&nbsp;</a></span>VIDEO_SETTINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#ga7bab4c6ca4fd971055eca1fdd9f4223d">VIDEO_SETTINGS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lists available camera settings for the ZED camera (contrast, hue, saturation, gain, etc.) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da3a8a0aeb55d2886191dee8a5e0d07cc9"></a>BRIGHTNESS&#160;</td><td class="fielddoc"><p>Brightness control. Value should be between 0 and 8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223daf5d3a63fb203b01cb2bf903ead0e3866"></a>CONTRAST&#160;</td><td class="fielddoc"><p>Contrast control. Value should be between 0 and 8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223dac632a05e08ccc97a6882f59b264a2d07"></a>HUE&#160;</td><td class="fielddoc"><p>Hue control. Value should be between 0 and 11. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da5a7c5e7d657d8e6a6a234d8ea0eec990"></a>SATURATION&#160;</td><td class="fielddoc"><p>Saturation control. Value should be between 0 and 8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da3d90d2865187291d319f5004c3ebc932"></a>SHARPNESS&#160;</td><td class="fielddoc"><p>Sharpness control. Value should be between 0 and 8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da469bb22a9f1f560331b06cd6ef0da944"></a>GAMMA&#160;</td><td class="fielddoc"><p>Gamma control. Value should be between 1 and 9 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da0803331e7c3fe03c1938ac408faaa0cc"></a>GAIN&#160;</td><td class="fielddoc"><p>Gain control. Value should be between 0 and 100 for manual control. If ZED_EXPOSURE is set to -1 (automatic mode), then gain will be automatic as well. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da23c53320729451a2128b25273d9c00f8"></a>EXPOSURE&#160;</td><td class="fielddoc"><p>Exposure control. Value can be between 0 and 100. Setting to -1 enables auto exposure and auto gain. Setting to 0 disables auto exposure but doesn't change the last applied automatic values. Setting to 1-100 disables auto mode and sets exposure to the chosen value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da7919101d06743ecab8760363529f43eb"></a>AEC_AGC&#160;</td><td class="fielddoc"><p>Auto-exposure and auto gain. Setting this to true switches on both. Assigning a specifc value to GAIN or EXPOSURE will set this to 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223daf679f706e103378224a3971160f578c9"></a>AEC_AGC_ROI&#160;</td><td class="fielddoc"><p>ROI for auto exposure/gain. ROI defines the target where the AEC/AGC will be calculated Use overloaded function for this enum </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da805d6ab9493f31502029b4770f08b446"></a>WHITEBALANCE&#160;</td><td class="fielddoc"><p>Color temperature control. Value should be between 2800 and 6500 with a step of 100. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223da6ee32d2afcf1fe21f527bb0747d1293d"></a>AUTO_WHITEBALANCE&#160;</td><td class="fielddoc"><p>Defines if the white balance is in automatic mode or not. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bab4c6ca4fd971055eca1fdd9f4223dac4338a2db04efd506b6dd1887fce93f2"></a>LED_STATUS&#160;</td><td class="fielddoc"><p>front LED status (1==enable, 0 == disable) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga9401e0c9b9fec46d2eb300ffd2fc72c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9401e0c9b9fec46d2eb300ffd2fc72c9">&#9670;&nbsp;</a></span>TIME_REFERENCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9">TIME_REFERENCE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Categories indicating when a timestamp is captured. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9401e0c9b9fec46d2eb300ffd2fc72c9a23a12f67f614b5518c7f1c2465bf95e3"></a>IMAGE&#160;</td><td class="fielddoc"><p>Timestamp from when the image was received over USB from the camera, defined by when the entire image was available in memory. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9401e0c9b9fec46d2eb300ffd2fc72c9aa2770969c827f0f2910f6179418462df"></a>CURRENT&#160;</td><td class="fielddoc"><p>Timestamp from when the relevant function was called. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gae52adc3898d4dd4cb5b770567fe8031c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae52adc3898d4dd4cb5b770567fe8031c">&#9670;&nbsp;</a></span>SVO_COMPRESSION_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#gae52adc3898d4dd4cb5b770567fe8031c">SVO_COMPRESSION_MODE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SVO compression modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae52adc3898d4dd4cb5b770567fe8031ca64799d4999d7e144f3b9624c7978d750"></a>LOSSLESS_BASED&#160;</td><td class="fielddoc"><p>Lossless compression based on png/zstd. Average size = 42% of RAW. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae52adc3898d4dd4cb5b770567fe8031ca92cd2c4dd990197be3c575e97646871a"></a>H264_BASED&#160;</td><td class="fielddoc"><p>H264(AVCHD) GPU based compression : avg size = 1% (of RAW). Requires a NVIDIA GPU </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae52adc3898d4dd4cb5b770567fe8031cafc6b21a9944ce7dde4f506d984b2e71e"></a>H265_BASED&#160;</td><td class="fielddoc"><p>H265(HEVC) GPU based compression: avg size = 1% (of RAW). Requires a NVIDIA GPU, Pascal architecture or newer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae52adc3898d4dd4cb5b770567fe8031cae7ce7702d05920c29924c3a31b90587e"></a>H264_LOSSLESS_BASED&#160;</td><td class="fielddoc"><p>H264 Lossless GPU/Hardware based compression: avg size = 25% (of RAW). Provides a SSIM/PSNR result (vs RAW) &gt;= 99.9%. Requires a NVIDIA GPU </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae52adc3898d4dd4cb5b770567fe8031cade1bd1bedbb9dd1a545ab8258d5b2916"></a>H265_LOSSLESS_BASED&#160;</td><td class="fielddoc"><p>H265 Lossless GPU/Hardware based compression: avg size = 25% (of RAW). Provides a SSIM/PSNR result (vs RAW) &gt;= 99.9%. Requires a NVIDIA GPU </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga0361144a89b83ced3ff322f026e54370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0361144a89b83ced3ff322f026e54370">&#9670;&nbsp;</a></span>STREAMING_CODEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Video__group.html#ga0361144a89b83ced3ff322f026e54370">STREAMING_CODEC</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streaming codecs </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0361144a89b83ced3ff322f026e54370a92cd2c4dd990197be3c575e97646871a"></a>H264_BASED&#160;</td><td class="fielddoc"><p>AVCHD/H264 Based compression </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0361144a89b83ced3ff322f026e54370afc6b21a9944ce7dde4f506d984b2e71e"></a>H265_BASED&#160;</td><td class="fielddoc"><p>HEVC/H265 Based compression </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

@@ -1,0 +1,578 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Pose Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1Pose.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1Pose-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Pose Class Reference<div class="ingroups"><a class="el" href="group__PositionalTracking__group.html">Positional Tracking Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains positional tracking data which gives the position and orientation of the ZED in 3D space.  
+ <a href="classpyzed_1_1sl_1_1Pose.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aecf6f47638cb4c4630ee0f8b16990307"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#aecf6f47638cb4c4630ee0f8b16990307">init_pose</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Pose.html">Pose</a> pose)</td></tr>
+<tr class="memdesc:aecf6f47638cb4c4630ee0f8b16990307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deep copy from another <a class="el" href="classpyzed_1_1sl_1_1Pose.html">Pose</a>.  <a href="classpyzed_1_1sl_1_1Pose.html#aecf6f47638cb4c4630ee0f8b16990307">More...</a><br /></td></tr>
+<tr class="separator:aecf6f47638cb4c4630ee0f8b16990307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c0cc3f1140d0c466d8e8e31b15e283"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#ac1c0cc3f1140d0c466d8e8e31b15e283">init_transform</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> <a class="el" href="classpyzed_1_1sl_1_1Pose.html#a84c6fa0d5954ea1cbb8b1efe29ae9e39">pose_data</a>, <a class="el" href="classpyzed_1_1sl_1_1Pose.html#a672dc8993db22c5203d3f78892aa042b">timestamp</a>=0, confidence=0)</td></tr>
+<tr class="memdesc:ac1c0cc3f1140d0c466d8e8e31b15e283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inits <a class="el" href="classpyzed_1_1sl_1_1Pose.html">Pose</a> from pose data.  <a href="classpyzed_1_1sl_1_1Pose.html#ac1c0cc3f1140d0c466d8e8e31b15e283">More...</a><br /></td></tr>
+<tr class="separator:ac1c0cc3f1140d0c466d8e8e31b15e283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9ae796622a39f66ba36323ab92c857"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#a6e9ae796622a39f66ba36323ab92c857">get_translation</a> (self, py_translation=<a class="el" href="classpyzed_1_1sl_1_1Translation.html">Translation</a>())</td></tr>
+<tr class="memdesc:a6e9ae796622a39f66ba36323ab92c857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the translation from the pose.  <a href="classpyzed_1_1sl_1_1Pose.html#a6e9ae796622a39f66ba36323ab92c857">More...</a><br /></td></tr>
+<tr class="separator:a6e9ae796622a39f66ba36323ab92c857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff04e4b102f5a0dbb69e1e22668aea79"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#aff04e4b102f5a0dbb69e1e22668aea79">get_orientation</a> (self, py_orientation=<a class="el" href="classpyzed_1_1sl_1_1Orientation.html">Orientation</a>())</td></tr>
+<tr class="memdesc:aff04e4b102f5a0dbb69e1e22668aea79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the orientation from the pose.  <a href="classpyzed_1_1sl_1_1Pose.html#aff04e4b102f5a0dbb69e1e22668aea79">More...</a><br /></td></tr>
+<tr class="separator:aff04e4b102f5a0dbb69e1e22668aea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39152a8099c73834aa0b6e72a46de8d4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#a39152a8099c73834aa0b6e72a46de8d4">get_rotation_matrix</a> (self, py_rotation=<a class="el" href="classpyzed_1_1sl_1_1Rotation.html">Rotation</a>())</td></tr>
+<tr class="memdesc:a39152a8099c73834aa0b6e72a46de8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation (3x3) from the pose.  <a href="classpyzed_1_1sl_1_1Pose.html#a39152a8099c73834aa0b6e72a46de8d4">More...</a><br /></td></tr>
+<tr class="separator:a39152a8099c73834aa0b6e72a46de8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5923e2968f6ffd799df944fdf986bb70"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#a5923e2968f6ffd799df944fdf986bb70">get_rotation_vector</a> (self)</td></tr>
+<tr class="memdesc:a5923e2968f6ffd799df944fdf986bb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation (3x1 rotation vector obtained from 3x3 rotation matrix using Rodrigues formula) from the pose.  <a href="classpyzed_1_1sl_1_1Pose.html#a5923e2968f6ffd799df944fdf986bb70">More...</a><br /></td></tr>
+<tr class="separator:a5923e2968f6ffd799df944fdf986bb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3181c01c7a1085793edd82db2939112"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#aa3181c01c7a1085793edd82db2939112">get_euler_angles</a> (self, radian=True)</td></tr>
+<tr class="memdesc:aa3181c01c7a1085793edd82db2939112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the <a class="el" href="classpyzed_1_1sl_1_1Rotation.html">Rotation</a> of the <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> as Euler angles.  <a href="classpyzed_1_1sl_1_1Pose.html#aa3181c01c7a1085793edd82db2939112">More...</a><br /></td></tr>
+<tr class="separator:aa3181c01c7a1085793edd82db2939112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e9e3e2bbeb4ad2397df6d467bed015"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#a79e9e3e2bbeb4ad2397df6d467bed015">valid</a> (self)</td></tr>
+<tr class="memdesc:a79e9e3e2bbeb4ad2397df6d467bed015"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean that indicates if tracking is activated or not.  <a href="classpyzed_1_1sl_1_1Pose.html#a79e9e3e2bbeb4ad2397df6d467bed015">More...</a><br /></td></tr>
+<tr class="separator:a79e9e3e2bbeb4ad2397df6d467bed015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672dc8993db22c5203d3f78892aa042b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#a672dc8993db22c5203d3f78892aa042b">timestamp</a> (self)</td></tr>
+<tr class="memdesc:a672dc8993db22c5203d3f78892aa042b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classpyzed_1_1sl_1_1Timestamp.html">Timestamp</a> of the pose.  <a href="classpyzed_1_1sl_1_1Pose.html#a672dc8993db22c5203d3f78892aa042b">More...</a><br /></td></tr>
+<tr class="separator:a672dc8993db22c5203d3f78892aa042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c6fa0d5954ea1cbb8b1efe29ae9e39"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#a84c6fa0d5954ea1cbb8b1efe29ae9e39">pose_data</a> (self, pose_data=<a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a>())</td></tr>
+<tr class="memdesc:a84c6fa0d5954ea1cbb8b1efe29ae9e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the 4x4 Matrix which contains the rotation (3x3) and the translation.  <a href="classpyzed_1_1sl_1_1Pose.html#a84c6fa0d5954ea1cbb8b1efe29ae9e39">More...</a><br /></td></tr>
+<tr class="separator:a84c6fa0d5954ea1cbb8b1efe29ae9e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05459a3205f36a81e47647a159edc593"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#a05459a3205f36a81e47647a159edc593">pose_confidence</a> (self)</td></tr>
+<tr class="memdesc:a05459a3205f36a81e47647a159edc593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Confidence/Quality of the pose estimation for the target frame.  <a href="classpyzed_1_1sl_1_1Pose.html#a05459a3205f36a81e47647a159edc593">More...</a><br /></td></tr>
+<tr class="separator:a05459a3205f36a81e47647a159edc593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd13118bfe125b133abf05840e0c80ef"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Pose.html#acd13118bfe125b133abf05840e0c80ef">pose_covariance</a> (self)</td></tr>
+<tr class="memdesc:acd13118bfe125b133abf05840e0c80ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">6x6 <a class="el" href="classpyzed_1_1sl_1_1Pose.html" title="Contains positional tracking data which gives the position and orientation of the ZED in 3D space.">Pose</a> covariance of translation (the first 3 values) and rotation in so3 (the last 3 values) (numpy array)  <a href="classpyzed_1_1sl_1_1Pose.html#acd13118bfe125b133abf05840e0c80ef">More...</a><br /></td></tr>
+<tr class="separator:acd13118bfe125b133abf05840e0c80ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains positional tracking data which gives the position and orientation of the ZED in 3D space. </p>
+<p>Different representations of position and orientation can be retrieved, along with timestamp and pose confidence. </p>
+</div><h2 class="groupheader">Functions</h2>
+<a id="aecf6f47638cb4c4630ee0f8b16990307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf6f47638cb4c4630ee0f8b16990307">&#9670;&nbsp;</a></span>init_pose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def init_pose </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Pose.html">Pose</a>&#160;</td>
+          <td class="paramname"><em>pose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deep copy from another <a class="el" href="classpyzed_1_1sl_1_1Pose.html">Pose</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pose</td><td>: the <a class="el" href="classpyzed_1_1sl_1_1Pose.html">Pose</a> to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac1c0cc3f1140d0c466d8e8e31b15e283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c0cc3f1140d0c466d8e8e31b15e283">&#9670;&nbsp;</a></span>init_transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def init_transform </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a>&#160;</td>
+          <td class="paramname"><em>pose_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>timestamp</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>confidence</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inits <a class="el" href="classpyzed_1_1sl_1_1Pose.html">Pose</a> from pose data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pose_data</td><td>: <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> containing pose data to copy </td></tr>
+    <tr><td class="paramname">timestamp</td><td>: pose timestamp </td></tr>
+    <tr><td class="paramname">confidence</td><td>: pose confidence </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e9ae796622a39f66ba36323ab92c857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9ae796622a39f66ba36323ab92c857">&#9670;&nbsp;</a></span>get_translation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_translation </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>py_translation</em> = <code><a class="el" href="classpyzed_1_1sl_1_1Translation.html">Translation</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the translation from the pose. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">py_translation</td><td>: <a class="el" href="classpyzed_1_1sl_1_1Translation.html">Translation</a> to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (3x1) translation vector </dd></dl>
+
+</div>
+</div>
+<a id="aff04e4b102f5a0dbb69e1e22668aea79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff04e4b102f5a0dbb69e1e22668aea79">&#9670;&nbsp;</a></span>get_orientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_orientation </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>py_orientation</em> = <code><a class="el" href="classpyzed_1_1sl_1_1Orientation.html">Orientation</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the orientation from the pose. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">py_orientation</td><td>: <a class="el" href="classpyzed_1_1sl_1_1Orientation.html">Orientation</a> to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (3x1) orientation vector </dd></dl>
+
+</div>
+</div>
+<a id="a39152a8099c73834aa0b6e72a46de8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39152a8099c73834aa0b6e72a46de8d4">&#9670;&nbsp;</a></span>get_rotation_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_rotation_matrix </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>py_rotation</em> = <code><a class="el" href="classpyzed_1_1sl_1_1Rotation.html">Rotation</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the rotation (3x3) from the pose. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">py_rotation</td><td>: <a class="el" href="classpyzed_1_1sl_1_1Rotation.html">Rotation</a> to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (3x3) rotation matrix </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The given <a class="el" href="classpyzed_1_1sl_1_1Rotation.html">Rotation</a> contains a copy of the <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> values. Not references. </dd></dl>
+
+</div>
+</div>
+<a id="a5923e2968f6ffd799df944fdf986bb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5923e2968f6ffd799df944fdf986bb70">&#9670;&nbsp;</a></span>get_rotation_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_rotation_vector </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the rotation (3x1 rotation vector obtained from 3x3 rotation matrix using Rodrigues formula) from the pose. </p>
+<dl class="section return"><dt>Returns</dt><dd>The (3x1) rotation vector (numpy array) </dd></dl>
+
+</div>
+</div>
+<a id="aa3181c01c7a1085793edd82db2939112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3181c01c7a1085793edd82db2939112">&#9670;&nbsp;</a></span>get_euler_angles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_euler_angles </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>radian</em> = <code>True</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the <a class="el" href="classpyzed_1_1sl_1_1Rotation.html">Rotation</a> of the <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> as Euler angles. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radian</td><td>: True if the angle in is radian, False if it is in degree. Default : True. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Euler angles, as a float3 representing the rotations arround the X, Y and Z axes. (numpy array) </dd></dl>
+
+</div>
+</div>
+<a id="a79e9e3e2bbeb4ad2397df6d467bed015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e9e3e2bbeb4ad2397df6d467bed015">&#9670;&nbsp;</a></span>valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def valid </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>boolean that indicates if tracking is activated or not. </p>
+<p>You should check that first if something went wrong. </p>
+
+</div>
+</div>
+<a id="a672dc8993db22c5203d3f78892aa042b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672dc8993db22c5203d3f78892aa042b">&#9670;&nbsp;</a></span>timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def timestamp </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classpyzed_1_1sl_1_1Timestamp.html">Timestamp</a> of the pose. </p>
+<p>This timestamp should be compared with the camera timestamp for synchronization. </p>
+
+<p class="reference">Referenced by <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#a1bd1c70c0057492138c568da7c9029c8">Timestamp.data_ns()</a>, <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#a2e7e27464ae889dd27ea574e39f63eaf">Timestamp.get_microseconds()</a>, <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#ac992955e52f18c3bffc2f621b75d284b">Timestamp.get_milliseconds()</a>, <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#a09fed671cc570ac39639f3ce06a69716">Timestamp.get_nanoseconds()</a>, <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#ac0eb87435e5ed8592c040ba56cf6d84b">Timestamp.get_seconds()</a>, <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#a4dc1ab6d0b41c325e3e539b1eb0ebce7">Timestamp.set_microseconds()</a>, <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#abd8a613357480f1bc8de5e2a0a116f24">Timestamp.set_milliseconds()</a>, <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#ab388c84ece50a673b7e798e7941b3771">Timestamp.set_nanoseconds()</a>, and <a class="el" href="classpyzed_1_1sl_1_1Timestamp.html#a9aeca59725acda2e8f9bbf81c5794e31">Timestamp.set_seconds()</a>.</p>
+
+</div>
+</div>
+<a id="a84c6fa0d5954ea1cbb8b1efe29ae9e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c6fa0d5954ea1cbb8b1efe29ae9e39">&#9670;&nbsp;</a></span>pose_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def pose_data </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>pose_data</em> = <code><a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the 4x4 Matrix which contains the rotation (3x3) and the translation. </p>
+<p><a class="el" href="classpyzed_1_1sl_1_1Orientation.html">Orientation</a> is extracted from this transform as well. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pose_data</td><td>: <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the pose data <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> </dd></dl>
+
+</div>
+</div>
+<a id="a05459a3205f36a81e47647a159edc593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05459a3205f36a81e47647a159edc593">&#9670;&nbsp;</a></span>pose_confidence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def pose_confidence </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Confidence/Quality of the pose estimation for the target frame. </p>
+<p>A confidence metric of the tracking [0-100], 0 means that the tracking is lost, 100 means that the tracking can be fully trusted. </p>
+
+</div>
+</div>
+<a id="acd13118bfe125b133abf05840e0c80ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd13118bfe125b133abf05840e0c80ef">&#9670;&nbsp;</a></span>pose_covariance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def pose_covariance </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>6x6 <a class="el" href="classpyzed_1_1sl_1_1Pose.html" title="Contains positional tracking data which gives the position and orientation of the ZED in 3D space.">Pose</a> covariance of translation (the first 3 values) and rotation in so3 (the last 3 values) (numpy array) </p>
+<dl class="section note"><dt>Note</dt><dd>Computed only if PositionalTrackingParameters.enable_spatial_memory is disabled. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

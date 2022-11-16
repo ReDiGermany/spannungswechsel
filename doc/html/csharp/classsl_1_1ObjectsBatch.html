@@ -1,0 +1,523 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>ObjectsBatch Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:38" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:38" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classsl_1_1ObjectsBatch.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="classsl_1_1ObjectsBatch-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">ObjectsBatch Class Reference<div class="ingroups"><a class="el" href="group__Object__group.html">Object Detection Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains batched data of a detected object  
+ <a href="classsl_1_1ObjectsBatch.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:adc3591df58cbeecddaa793a5205759b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#adc3591df58cbeecddaa793a5205759b9">numData</a> = 0</td></tr>
+<tr class="memdesc:adc3591df58cbeecddaa793a5205759b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many data were stored. Use this to iterate through the top of position/velocity/bounding_box/...; objects with indexes greater than numData are empty.  <a href="classsl_1_1ObjectsBatch.html#adc3591df58cbeecddaa793a5205759b9">More...</a><br /></td></tr>
+<tr class="separator:adc3591df58cbeecddaa793a5205759b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a> = 0</td></tr>
+<tr class="memdesc:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The trajectory id  <a href="classsl_1_1ObjectsBatch.html#a7441ef0865bcb3db9b8064dd7375c1ea">More...</a><br /></td></tr>
+<tr class="separator:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9e153457dc97f1a1690241223f2f0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a1c9e153457dc97f1a1690241223f2f0d">label</a> = <a class="el" href="group__Object__group.html#gga13b0c230bc8fee5bbaaaa57a45fa1177af447f5c03508de4d88e340390ba7c78f">OBJECT_CLASS.LAST</a></td></tr>
+<tr class="memdesc:a1c9e153457dc97f1a1690241223f2f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object Category. Identity the object type  <a href="classsl_1_1ObjectsBatch.html#a1c9e153457dc97f1a1690241223f2f0d">More...</a><br /></td></tr>
+<tr class="separator:a1c9e153457dc97f1a1690241223f2f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48f092704c5b9de0b3ed642aa1a40f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga0c86adfc07c4fb24dc84f1fd2adc5eba">OBJECT_SUBCLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#ab48f092704c5b9de0b3ed642aa1a40f6">sublabel</a> = <a class="el" href="group__Object__group.html#gga0c86adfc07c4fb24dc84f1fd2adc5ebaaf447f5c03508de4d88e340390ba7c78f">OBJECT_SUBCLASS.LAST</a></td></tr>
+<tr class="memdesc:ab48f092704c5b9de0b3ed642aa1a40f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object subclass  <a href="classsl_1_1ObjectsBatch.html#ab48f092704c5b9de0b3ed642aa1a40f6">More...</a><br /></td></tr>
+<tr class="separator:ab48f092704c5b9de0b3ed642aa1a40f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a696ce8f208d46de2e2d286d6847fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga43eecfa6fb832a9e5d86bb5e5007b2fa">OBJECT_TRACKING_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#ae7a696ce8f208d46de2e2d286d6847fc">trackingState</a> = <a class="el" href="group__Object__group.html#gga43eecfa6fb832a9e5d86bb5e5007b2faa1b52d4a7cbbcb87a81515c443453a2d5">OBJECT_TRACKING_STATE.TERMINATE</a></td></tr>
+<tr class="memdesc:ae7a696ce8f208d46de2e2d286d6847fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object tracking state  <a href="classsl_1_1ObjectsBatch.html#ae7a696ce8f208d46de2e2d286d6847fc">More...</a><br /></td></tr>
+<tr class="separator:ae7a696ce8f208d46de2e2d286d6847fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df40cc5f6967cf2ea5858d82a804620"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a6df40cc5f6967cf2ea5858d82a804620">positions</a> = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td></tr>
+<tr class="memdesc:a6df40cc5f6967cf2ea5858d82a804620"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sample of 3d position  <a href="classsl_1_1ObjectsBatch.html#a6df40cc5f6967cf2ea5858d82a804620">More...</a><br /></td></tr>
+<tr class="separator:a6df40cc5f6967cf2ea5858d82a804620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3341fb7739ed4a28d910d104553985df"><td class="memItemLeft" align="right" valign="top">float[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a3341fb7739ed4a28d910d104553985df">positionCovariances</a> = new float[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 6]</td></tr>
+<tr class="memdesc:a3341fb7739ed4a28d910d104553985df"><td class="mdescLeft">&#160;</td><td class="mdescRight">a sample of the associated position covariance  <a href="classsl_1_1ObjectsBatch.html#a3341fb7739ed4a28d910d104553985df">More...</a><br /></td></tr>
+<tr class="separator:a3341fb7739ed4a28d910d104553985df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a94a9142815efbb1bc6cac00a015fe"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#ac4a94a9142815efbb1bc6cac00a015fe">velocities</a> = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td></tr>
+<tr class="memdesc:ac4a94a9142815efbb1bc6cac00a015fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sample of 3d velocity  <a href="classsl_1_1ObjectsBatch.html#ac4a94a9142815efbb1bc6cac00a015fe">More...</a><br /></td></tr>
+<tr class="separator:ac4a94a9142815efbb1bc6cac00a015fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5601ae1f2d2035cd49c592719a73060"><td class="memItemLeft" align="right" valign="top">ulong[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#aa5601ae1f2d2035cd49c592719a73060">timestamps</a> = new ulong[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td></tr>
+<tr class="memdesc:aa5601ae1f2d2035cd49c592719a73060"><td class="mdescLeft">&#160;</td><td class="mdescRight">The associated position timestamp  <a href="classsl_1_1ObjectsBatch.html#aa5601ae1f2d2035cd49c592719a73060">More...</a><br /></td></tr>
+<tr class="separator:aa5601ae1f2d2035cd49c592719a73060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2800ebdc5a58827ee753993877cc849c"><td class="memItemLeft" align="right" valign="top">Vector3[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a2800ebdc5a58827ee753993877cc849c">boundingBoxes</a> = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 8]</td></tr>
+<tr class="memdesc:a2800ebdc5a58827ee753993877cc849c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sample of 3d bounding boxes  <a href="classsl_1_1ObjectsBatch.html#a2800ebdc5a58827ee753993877cc849c">More...</a><br /></td></tr>
+<tr class="separator:a2800ebdc5a58827ee753993877cc849c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8443bda9ffd63d6ebffc7fd9fddf59e"><td class="memItemLeft" align="right" valign="top">Vector2[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#aa8443bda9ffd63d6ebffc7fd9fddf59e">boundingBoxes2D</a> = new Vector2[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 4]</td></tr>
+<tr class="memdesc:aa8443bda9ffd63d6ebffc7fd9fddf59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D bounding box of the person represented as four 2D points starting at the top left corner and rotation clockwise. Expressed in pixels on the original image resolution, [0, 0] is the top left corner. A ---&mdash; B | Object | D ---&mdash; C  <a href="classsl_1_1ObjectsBatch.html#aa8443bda9ffd63d6ebffc7fd9fddf59e">More...</a><br /></td></tr>
+<tr class="separator:aa8443bda9ffd63d6ebffc7fd9fddf59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621d338af7a70dbbe77c7177c09c0508"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a621d338af7a70dbbe77c7177c09c0508">confidences</a> = new float[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td></tr>
+<tr class="memdesc:a621d338af7a70dbbe77c7177c09c0508"><td class="mdescLeft">&#160;</td><td class="mdescRight">a sample of object detection confidence  <a href="classsl_1_1ObjectsBatch.html#a621d338af7a70dbbe77c7177c09c0508">More...</a><br /></td></tr>
+<tr class="separator:a621d338af7a70dbbe77c7177c09c0508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04277a74825331c2b6ac2600e0bee60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#gaded996f5683c57eedae7b24b6818ce9a">OBJECT_ACTION_STATE</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#af04277a74825331c2b6ac2600e0bee60">actionStates</a> = new <a class="el" href="group__Object__group.html#gaded996f5683c57eedae7b24b6818ce9a">OBJECT_ACTION_STATE</a>[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td></tr>
+<tr class="memdesc:af04277a74825331c2b6ac2600e0bee60"><td class="mdescLeft">&#160;</td><td class="mdescRight">a sample of the object action state  <a href="classsl_1_1ObjectsBatch.html#af04277a74825331c2b6ac2600e0bee60">More...</a><br /></td></tr>
+<tr class="separator:af04277a74825331c2b6ac2600e0bee60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f74a6b872b433d4fd6733f2e029f58"><td class="memItemLeft" align="right" valign="top">Vector2[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a61f74a6b872b433d4fd6733f2e029f58">keypoints2D</a> = new Vector2[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 18]</td></tr>
+<tr class="memdesc:a61f74a6b872b433d4fd6733f2e029f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">a sample of 2d person keypoints. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL::MULTI_CLASS_BOX</a>. in some cases, eg. body partially out of the image or missing depth data, some keypoint can not be detected, they will have non finite values.  <a href="classsl_1_1ObjectsBatch.html#a61f74a6b872b433d4fd6733f2e029f58">More...</a><br /></td></tr>
+<tr class="separator:a61f74a6b872b433d4fd6733f2e029f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738a2e1ed4582492adcb940154487319"><td class="memItemLeft" align="right" valign="top">Vector3[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a738a2e1ed4582492adcb940154487319">keypoints</a> = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 18]</td></tr>
+<tr class="memdesc:a738a2e1ed4582492adcb940154487319"><td class="mdescLeft">&#160;</td><td class="mdescRight">a sample of 3d person keypoints Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL::MULTI_CLASS_BOX</a>. in some cases, eg. body partially out of the image or missing depth data, some keypoint can not be detected, they will have non finite values.  <a href="classsl_1_1ObjectsBatch.html#a738a2e1ed4582492adcb940154487319">More...</a><br /></td></tr>
+<tr class="separator:a738a2e1ed4582492adcb940154487319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45d1f2adfc33295a041db7e488d8d1a"><td class="memItemLeft" align="right" valign="top">Vector2[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#aa45d1f2adfc33295a041db7e488d8d1a">headBoundingBoxes2D</a> = new Vector2[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 8]</td></tr>
+<tr class="memdesc:aa45d1f2adfc33295a041db7e488d8d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">bounds the head with four 2D points. Expressed in pixels on the original image resolution. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL.MULTI_CLASS_BOX</a>.  <a href="classsl_1_1ObjectsBatch.html#aa45d1f2adfc33295a041db7e488d8d1a">More...</a><br /></td></tr>
+<tr class="separator:aa45d1f2adfc33295a041db7e488d8d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd7388fe0a6e4c7ae82c8d2452408bd"><td class="memItemLeft" align="right" valign="top">Vector3[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a1fd7388fe0a6e4c7ae82c8d2452408bd">headBoundingBoxes</a> = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 8]</td></tr>
+<tr class="memdesc:a1fd7388fe0a6e4c7ae82c8d2452408bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">bounds the head with eight 3D points. Defined in sl.InitParameters.UNIT, expressed in <a class="el" href="classsl_1_1RuntimeParameters.html#a20bab46058205c6721a186dfbd2458cb" title="Provides 3D measures (point cloud and normals) in the desired reference frame (default is REFERENCE_F...">RuntimeParameters.measure3DReferenceFrame</a>. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL.MULTI_CLASS_BOX</a>.  <a href="classsl_1_1ObjectsBatch.html#a1fd7388fe0a6e4c7ae82c8d2452408bd">More...</a><br /></td></tr>
+<tr class="separator:a1fd7388fe0a6e4c7ae82c8d2452408bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d7647281cb0fe12f55a5296a019e63"><td class="memItemLeft" align="right" valign="top">Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#a47d7647281cb0fe12f55a5296a019e63">headPositions</a> = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td></tr>
+<tr class="memdesc:a47d7647281cb0fe12f55a5296a019e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D head centroid. Defined in sl.InitParameters.UNIT, expressed in <a class="el" href="classsl_1_1RuntimeParameters.html#a20bab46058205c6721a186dfbd2458cb" title="Provides 3D measures (point cloud and normals) in the desired reference frame (default is REFERENCE_F...">RuntimeParameters.measure3DReferenceFrame</a>. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL.MULTI_CLASS_BOX</a>.  <a href="classsl_1_1ObjectsBatch.html#a47d7647281cb0fe12f55a5296a019e63">More...</a><br /></td></tr>
+<tr class="separator:a47d7647281cb0fe12f55a5296a019e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e719915985c0eb4bdd4f4d12730cea"><td class="memItemLeft" align="right" valign="top">float[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectsBatch.html#ac6e719915985c0eb4bdd4f4d12730cea">keypointConfidences</a> = new float[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 18]</td></tr>
+<tr class="memdesc:ac6e719915985c0eb4bdd4f4d12730cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per keypoint detection confidence, can not be lower than the <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a46452c935a8ff035673616704ed47f01" title="The detection confidence threshold between 1 and 99. A confidence of 1 means a low threshold,...">ObjectDetectionRuntimeParameters.detectionConfidenceThreshold</a>. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL.MULTI_CLASS_BOX</a>. in some cases, eg. body partially out of the image or missing depth data, some keypoint can not be detected, they will have non finite values.  <a href="classsl_1_1ObjectsBatch.html#ac6e719915985c0eb4bdd4f4d12730cea">More...</a><br /></td></tr>
+<tr class="separator:ac6e719915985c0eb4bdd4f4d12730cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains batched data of a detected object </p>
+</div><h2 class="groupheader">Variables</h2>
+<a id="adc3591df58cbeecddaa793a5205759b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3591df58cbeecddaa793a5205759b9">&#9670;&nbsp;</a></span>numData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numData = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How many data were stored. Use this to iterate through the top of position/velocity/bounding_box/...; objects with indexes greater than numData are empty. </p>
+
+</div>
+</div>
+<a id="a7441ef0865bcb3db9b8064dd7375c1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7441ef0865bcb3db9b8064dd7375c1ea">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int id = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The trajectory id </p>
+
+</div>
+</div>
+<a id="a1c9e153457dc97f1a1690241223f2f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9e153457dc97f1a1690241223f2f0d">&#9670;&nbsp;</a></span>label</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a> label = <a class="el" href="group__Object__group.html#gga13b0c230bc8fee5bbaaaa57a45fa1177af447f5c03508de4d88e340390ba7c78f">OBJECT_CLASS.LAST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object Category. Identity the object type </p>
+
+</div>
+</div>
+<a id="ab48f092704c5b9de0b3ed642aa1a40f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48f092704c5b9de0b3ed642aa1a40f6">&#9670;&nbsp;</a></span>sublabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga0c86adfc07c4fb24dc84f1fd2adc5eba">OBJECT_SUBCLASS</a> sublabel = <a class="el" href="group__Object__group.html#gga0c86adfc07c4fb24dc84f1fd2adc5ebaaf447f5c03508de4d88e340390ba7c78f">OBJECT_SUBCLASS.LAST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object subclass </p>
+
+</div>
+</div>
+<a id="ae7a696ce8f208d46de2e2d286d6847fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a696ce8f208d46de2e2d286d6847fc">&#9670;&nbsp;</a></span>trackingState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga43eecfa6fb832a9e5d86bb5e5007b2fa">OBJECT_TRACKING_STATE</a> trackingState = <a class="el" href="group__Object__group.html#gga43eecfa6fb832a9e5d86bb5e5007b2faa1b52d4a7cbbcb87a81515c443453a2d5">OBJECT_TRACKING_STATE.TERMINATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object tracking state </p>
+
+</div>
+</div>
+<a id="a6df40cc5f6967cf2ea5858d82a804620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df40cc5f6967cf2ea5858d82a804620">&#9670;&nbsp;</a></span>positions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 [] positions = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A sample of 3d position </p>
+
+</div>
+</div>
+<a id="a3341fb7739ed4a28d910d104553985df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3341fb7739ed4a28d910d104553985df">&#9670;&nbsp;</a></span>positionCovariances</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [,] positionCovariances = new float[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a sample of the associated position covariance </p>
+
+</div>
+</div>
+<a id="ac4a94a9142815efbb1bc6cac00a015fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a94a9142815efbb1bc6cac00a015fe">&#9670;&nbsp;</a></span>velocities</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 [] velocities = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A sample of 3d velocity </p>
+
+</div>
+</div>
+<a id="aa5601ae1f2d2035cd49c592719a73060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5601ae1f2d2035cd49c592719a73060">&#9670;&nbsp;</a></span>timestamps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong [] timestamps = new ulong[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The associated position timestamp </p>
+
+</div>
+</div>
+<a id="a2800ebdc5a58827ee753993877cc849c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2800ebdc5a58827ee753993877cc849c">&#9670;&nbsp;</a></span>boundingBoxes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 [,] boundingBoxes = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A sample of 3d bounding boxes </p>
+
+</div>
+</div>
+<a id="aa8443bda9ffd63d6ebffc7fd9fddf59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8443bda9ffd63d6ebffc7fd9fddf59e">&#9670;&nbsp;</a></span>boundingBoxes2D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 [,] boundingBoxes2D = new Vector2[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2D bounding box of the person represented as four 2D points starting at the top left corner and rotation clockwise. Expressed in pixels on the original image resolution, [0, 0] is the top left corner. A ---&mdash; B | Object | D ---&mdash; C </p>
+
+</div>
+</div>
+<a id="a621d338af7a70dbbe77c7177c09c0508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621d338af7a70dbbe77c7177c09c0508">&#9670;&nbsp;</a></span>confidences</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [] confidences = new float[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a sample of object detection confidence </p>
+
+</div>
+</div>
+<a id="af04277a74825331c2b6ac2600e0bee60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04277a74825331c2b6ac2600e0bee60">&#9670;&nbsp;</a></span>actionStates</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#gaded996f5683c57eedae7b24b6818ce9a">OBJECT_ACTION_STATE</a> [] actionStates = new <a class="el" href="group__Object__group.html#gaded996f5683c57eedae7b24b6818ce9a">OBJECT_ACTION_STATE</a>[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a sample of the object action state </p>
+
+</div>
+</div>
+<a id="a61f74a6b872b433d4fd6733f2e029f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f74a6b872b433d4fd6733f2e029f58">&#9670;&nbsp;</a></span>keypoints2D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 [,] keypoints2D = new Vector2[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 18]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a sample of 2d person keypoints. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL::MULTI_CLASS_BOX</a>. in some cases, eg. body partially out of the image or missing depth data, some keypoint can not be detected, they will have non finite values. </p>
+
+</div>
+</div>
+<a id="a738a2e1ed4582492adcb940154487319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738a2e1ed4582492adcb940154487319">&#9670;&nbsp;</a></span>keypoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 [,] keypoints = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 18]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a sample of 3d person keypoints Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL::MULTI_CLASS_BOX</a>. in some cases, eg. body partially out of the image or missing depth data, some keypoint can not be detected, they will have non finite values. </p>
+
+</div>
+</div>
+<a id="aa45d1f2adfc33295a041db7e488d8d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45d1f2adfc33295a041db7e488d8d1a">&#9670;&nbsp;</a></span>headBoundingBoxes2D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 [,] headBoundingBoxes2D = new Vector2[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bounds the head with four 2D points. Expressed in pixels on the original image resolution. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL.MULTI_CLASS_BOX</a>. </p>
+
+</div>
+</div>
+<a id="a1fd7388fe0a6e4c7ae82c8d2452408bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd7388fe0a6e4c7ae82c8d2452408bd">&#9670;&nbsp;</a></span>headBoundingBoxes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 [,] headBoundingBoxes = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bounds the head with eight 3D points. Defined in sl.InitParameters.UNIT, expressed in <a class="el" href="classsl_1_1RuntimeParameters.html#a20bab46058205c6721a186dfbd2458cb" title="Provides 3D measures (point cloud and normals) in the desired reference frame (default is REFERENCE_F...">RuntimeParameters.measure3DReferenceFrame</a>. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL.MULTI_CLASS_BOX</a>. </p>
+
+</div>
+</div>
+<a id="a47d7647281cb0fe12f55a5296a019e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d7647281cb0fe12f55a5296a019e63">&#9670;&nbsp;</a></span>headPositions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 [] headPositions = new Vector3[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D head centroid. Defined in sl.InitParameters.UNIT, expressed in <a class="el" href="classsl_1_1RuntimeParameters.html#a20bab46058205c6721a186dfbd2458cb" title="Provides 3D measures (point cloud and normals) in the desired reference frame (default is REFERENCE_F...">RuntimeParameters.measure3DReferenceFrame</a>. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL.MULTI_CLASS_BOX</a>. </p>
+
+</div>
+</div>
+<a id="ac6e719915985c0eb4bdd4f4d12730cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e719915985c0eb4bdd4f4d12730cea">&#9670;&nbsp;</a></span>keypointConfidences</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [,] keypointConfidences = new float[(int)<a class="el" href="namespacesl.html#a1426214b030fcdca0e233ae25000b459ae1e2cfaca347ca87a3a8438ca6d6f5bf">Constant.MAX_BATCH_SIZE</a>, 18]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per keypoint detection confidence, can not be lower than the <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a46452c935a8ff035673616704ed47f01" title="The detection confidence threshold between 1 and 99. A confidence of 1 means a low threshold,...">ObjectDetectionRuntimeParameters.detectionConfidenceThreshold</a>. Not available with <a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253" title="Any objects, bounding box based.">DETECTION_MODEL.MULTI_CLASS_BOX</a>. in some cases, eg. body partially out of the image or missing depth data, some keypoint can not be detected, they will have non finite values. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

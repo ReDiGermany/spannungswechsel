@@ -1,0 +1,392 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>FusedPointCloud Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1FusedPointCloud.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1FusedPointCloud-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">FusedPointCloud Class Reference<div class="ingroups"><a class="el" href="group__SpatialMapping__group.html">Spatial Mapping Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A fused point cloud contains both geometric and color data of the scene captured by spatial mapping.  
+ <a href="classpyzed_1_1sl_1_1FusedPointCloud.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac111a79c1a0117294bbd4d9940191047"><td class="memItemLeft" align="right" valign="top"><a id="ac111a79c1a0117294bbd4d9940191047"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#ac111a79c1a0117294bbd4d9940191047">chunks</a> (self)</td></tr>
+<tr class="memdesc:ac111a79c1a0117294bbd4d9940191047"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the list of chunks <br /></td></tr>
+<tr class="separator:ac111a79c1a0117294bbd4d9940191047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace921cbb4866b60b58f1a4dff53eabce"><td class="memItemLeft" align="right" valign="top"><a id="ace921cbb4866b60b58f1a4dff53eabce"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#ace921cbb4866b60b58f1a4dff53eabce">__getitem__</a> (self, x)</td></tr>
+<tr class="memdesc:ace921cbb4866b60b58f1a4dff53eabce"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets a chunk from the list <br /></td></tr>
+<tr class="separator:ace921cbb4866b60b58f1a4dff53eabce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f052128a4528fc08399cf4852063b94"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#a6f052128a4528fc08399cf4852063b94">vertices</a> (self)</td></tr>
+<tr class="memdesc:a6f052128a4528fc08399cf4852063b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertices are defined by colored 3D points {x, y, z, rgba}.  <a href="classpyzed_1_1sl_1_1FusedPointCloud.html#a6f052128a4528fc08399cf4852063b94">More...</a><br /></td></tr>
+<tr class="separator:a6f052128a4528fc08399cf4852063b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3510f53c9d4baf93cc3d0c4757f5962f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#a3510f53c9d4baf93cc3d0c4757f5962f">normals</a> (self)</td></tr>
+<tr class="memdesc:a3510f53c9d4baf93cc3d0c4757f5962f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normals are defined by three components, {nx, ny, nz}.  <a href="classpyzed_1_1sl_1_1FusedPointCloud.html#a3510f53c9d4baf93cc3d0c4757f5962f">More...</a><br /></td></tr>
+<tr class="separator:a3510f53c9d4baf93cc3d0c4757f5962f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5a630fdeb593cb76488d9adf12b5c7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#a0a5a630fdeb593cb76488d9adf12b5c7">save</a> (self, str filename, typeMesh=MESH_FILE_FORMAT.OBJ, id=[])</td></tr>
+<tr class="memdesc:a0a5a630fdeb593cb76488d9adf12b5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current fused point cloud into a file.  <a href="classpyzed_1_1sl_1_1FusedPointCloud.html#a0a5a630fdeb593cb76488d9adf12b5c7">More...</a><br /></td></tr>
+<tr class="separator:a0a5a630fdeb593cb76488d9adf12b5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabc25ceddf1338c635ee299f88a63be"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#aeabc25ceddf1338c635ee299f88a63be">load</a> (self, str filename, update_chunk_only=True)</td></tr>
+<tr class="memdesc:aeabc25ceddf1338c635ee299f88a63be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the fused point cloud from a file.  <a href="classpyzed_1_1sl_1_1FusedPointCloud.html#aeabc25ceddf1338c635ee299f88a63be">More...</a><br /></td></tr>
+<tr class="separator:aeabc25ceddf1338c635ee299f88a63be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad149341d7d849ff957baee565b19c123"><td class="memItemLeft" align="right" valign="top"><a id="ad149341d7d849ff957baee565b19c123"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#ad149341d7d849ff957baee565b19c123">clear</a> (self)</td></tr>
+<tr class="memdesc:ad149341d7d849ff957baee565b19c123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the data. <br /></td></tr>
+<tr class="separator:ad149341d7d849ff957baee565b19c123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20d5bdf08c0b1bd0c755022ab5b85fa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#af20d5bdf08c0b1bd0c755022ab5b85fa">update_from_chunklist</a> (self, id=[])</td></tr>
+<tr class="memdesc:af20d5bdf08c0b1bd0c755022ab5b85fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates <a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#a6f052128a4528fc08399cf4852063b94">vertices</a> / <a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#a3510f53c9d4baf93cc3d0c4757f5962f">normals</a> / colors from chunks' data pointed by the given chunk list.  <a href="classpyzed_1_1sl_1_1FusedPointCloud.html#af20d5bdf08c0b1bd0c755022ab5b85fa">More...</a><br /></td></tr>
+<tr class="separator:af20d5bdf08c0b1bd0c755022ab5b85fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb6736665210245465d2f0bb96348c3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#a0bb6736665210245465d2f0bb96348c3">get_number_of_points</a> (self)</td></tr>
+<tr class="memdesc:a0bb6736665210245465d2f0bb96348c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the total number of triangles stored in all chunks.  <a href="classpyzed_1_1sl_1_1FusedPointCloud.html#a0bb6736665210245465d2f0bb96348c3">More...</a><br /></td></tr>
+<tr class="separator:a0bb6736665210245465d2f0bb96348c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A fused point cloud contains both geometric and color data of the scene captured by spatial mapping. </p>
+<p>By default the fused point cloud is defined as a set of point cloud chunks, this way we update only the required data, avoiding a time consuming remapping process every time a small part of the fused point cloud is changed. </p>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a6f052128a4528fc08399cf4852063b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f052128a4528fc08399cf4852063b94">&#9670;&nbsp;</a></span>vertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def vertices </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vertices are defined by colored 3D points {x, y, z, rgba}. </p>
+<p>The information is stored in a numpy array. </p>
+
+</div>
+</div>
+<a id="a3510f53c9d4baf93cc3d0c4757f5962f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3510f53c9d4baf93cc3d0c4757f5962f">&#9670;&nbsp;</a></span>normals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def normals </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Normals are defined by three components, {nx, ny, nz}. </p>
+<p>Normals are defined for each vertices. The information is stored in a numpy array. </p>
+
+</div>
+</div>
+<a id="a0a5a630fdeb593cb76488d9adf12b5c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5a630fdeb593cb76488d9adf12b5c7">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def save </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>typeMesh</em> = <code>MESH_FILE_FORMAT.OBJ</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>id</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the current fused point cloud into a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: the path and filename of the mesh. </td></tr>
+    <tr><td class="paramname">typeMesh</td><td>: defines the file type (extension). default : <a class="el" href="classpyzed_1_1sl_1_1MESH__FILE__FORMAT.html">MESH_FILE_FORMAT.OBJ</a>. </td></tr>
+    <tr><td class="paramname">id</td><td>: Specifies a set of chunks to be saved, if none provided all chunks are saved. default : (empty). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the file was successfully saved, false otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Only <a class="el" href="classpyzed_1_1sl_1_1MESH__FILE__FORMAT.html">MESH_FILE_FORMAT.OBJ</a> support textures data. </dd>
+<dd>
+This function operates on the fused point cloud not on the chunks. This way you can save different parts of your fused point cloud (update with <a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#af20d5bdf08c0b1bd0c755022ab5b85fa">update_from_chunklist</a>). </dd></dl>
+
+</div>
+</div>
+<a id="aeabc25ceddf1338c635ee299f88a63be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeabc25ceddf1338c635ee299f88a63be">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def load </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>update_chunk_only</em> = <code>True</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads the fused point cloud from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: the path and filename of the fused point cloud (do not forget the extension). </td></tr>
+    <tr><td class="paramname">update_chunk_only</td><td>: if set to false the fused point cloud data (vertices/normals) are updated otherwise only the chunk data is updated. default : true. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the loading was successful, false otherwise. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Updating the fused point cloud is time consuming, consider using only chunks for better performances. </dd></dl>
+
+</div>
+</div>
+<a id="af20d5bdf08c0b1bd0c755022ab5b85fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20d5bdf08c0b1bd0c755022ab5b85fa">&#9670;&nbsp;</a></span>update_from_chunklist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def update_from_chunklist </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>id</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates <a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#a6f052128a4528fc08399cf4852063b94">vertices</a> / <a class="el" href="classpyzed_1_1sl_1_1FusedPointCloud.html#a3510f53c9d4baf93cc3d0c4757f5962f">normals</a> / colors from chunks' data pointed by the given chunk list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>: the indices of chunks which will be concatenated. default : (empty). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If the given chunkList is empty, all chunks will be used. </dd></dl>
+
+</div>
+</div>
+<a id="a0bb6736665210245465d2f0bb96348c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb6736665210245465d2f0bb96348c3">&#9670;&nbsp;</a></span>get_number_of_points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_number_of_points </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the total number of triangles stored in all chunks. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of points stored in all chunks. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

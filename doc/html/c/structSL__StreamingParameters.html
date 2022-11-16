@@ -1,0 +1,331 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>SL_StreamingParameters Struct Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:38" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:38" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structSL__StreamingParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">SL_StreamingParameters Struct Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sets the streaming parameters.  
+ <a href="structSL__StreamingParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a5fde1ac5bb7c0f658e441fb11b743b70"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="types__c_8h.html#a25ea40a0afc5dbe82fb6bfe5cc104ec1">SL_STREAMING_CODEC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__StreamingParameters.html#a5fde1ac5bb7c0f658e441fb11b743b70">codec</a></td></tr>
+<tr class="memdesc:a5fde1ac5bb7c0f658e441fb11b743b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the codec used for streaming.  <a href="structSL__StreamingParameters.html#a5fde1ac5bb7c0f658e441fb11b743b70">More...</a><br /></td></tr>
+<tr class="separator:a5fde1ac5bb7c0f658e441fb11b743b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814756a99acd47b6142bf16507b9e1c0"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__StreamingParameters.html#a814756a99acd47b6142bf16507b9e1c0">port</a></td></tr>
+<tr class="memdesc:a814756a99acd47b6142bf16507b9e1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the port used for streaming.  <a href="structSL__StreamingParameters.html#a814756a99acd47b6142bf16507b9e1c0">More...</a><br /></td></tr>
+<tr class="separator:a814756a99acd47b6142bf16507b9e1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90204194a579664c1fa8d31339435ec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__StreamingParameters.html#ac90204194a579664c1fa8d31339435ec">bitrate</a></td></tr>
+<tr class="memdesc:ac90204194a579664c1fa8d31339435ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the streaming bitrate in Kbits/s.  <a href="structSL__StreamingParameters.html#ac90204194a579664c1fa8d31339435ec">More...</a><br /></td></tr>
+<tr class="separator:ac90204194a579664c1fa8d31339435ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404edaa7f4ba38abebf9d2d34b49cc6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__StreamingParameters.html#a404edaa7f4ba38abebf9d2d34b49cc6c">gop_size</a></td></tr>
+<tr class="memdesc:a404edaa7f4ba38abebf9d2d34b49cc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the gop size in number of frames.  <a href="structSL__StreamingParameters.html#a404edaa7f4ba38abebf9d2d34b49cc6c">More...</a><br /></td></tr>
+<tr class="separator:a404edaa7f4ba38abebf9d2d34b49cc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5911f289e7e5bd5a0b8ca95a37c31b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__StreamingParameters.html#a0a5911f289e7e5bd5a0b8ca95a37c31b">adaptative_bitrate</a></td></tr>
+<tr class="memdesc:a0a5911f289e7e5bd5a0b8ca95a37c31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/Disable adaptive bitrate.  <a href="structSL__StreamingParameters.html#a0a5911f289e7e5bd5a0b8ca95a37c31b">More...</a><br /></td></tr>
+<tr class="separator:a0a5911f289e7e5bd5a0b8ca95a37c31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93806c41d04aa5b0d2c8b27eef3af131"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__StreamingParameters.html#a93806c41d04aa5b0d2c8b27eef3af131">chunk_size</a></td></tr>
+<tr class="memdesc:a93806c41d04aa5b0d2c8b27eef3af131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a single chunk size.  <a href="structSL__StreamingParameters.html#a93806c41d04aa5b0d2c8b27eef3af131">More...</a><br /></td></tr>
+<tr class="separator:a93806c41d04aa5b0d2c8b27eef3af131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c0f6fbd2e389fb1507b0ca547874de"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__StreamingParameters.html#ac0c0f6fbd2e389fb1507b0ca547874de">target_framerate</a></td></tr>
+<tr class="memdesc:ac0c0f6fbd2e389fb1507b0ca547874de"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines the target framerate for the streaming output.  <a href="structSL__StreamingParameters.html#ac0c0f6fbd2e389fb1507b0ca547874de">More...</a><br /></td></tr>
+<tr class="separator:ac0c0f6fbd2e389fb1507b0ca547874de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sets the streaming parameters. </p>
+<dl class="section note"><dt>Note</dt><dd>Parameters can be user adjusted. </dd></dl>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a5fde1ac5bb7c0f658e441fb11b743b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fde1ac5bb7c0f658e441fb11b743b70">&#9670;&nbsp;</a></span>codec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="types__c_8h.html#a25ea40a0afc5dbe82fb6bfe5cc104ec1">SL_STREAMING_CODEC</a> SL_StreamingParameters::codec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the codec used for streaming. </p>
+<dl class="section warning"><dt>Warning</dt><dd>If HEVC is used, make sure the receiving host is compatible with H265 decoding (Pascal NVIDIA card or newer). If not, prefer to use H264 since every compatible NVIDIA card supports H264 decoding </dd></dl>
+
+</div>
+</div>
+<a id="a814756a99acd47b6142bf16507b9e1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814756a99acd47b6142bf16507b9e1c0">&#9670;&nbsp;</a></span>port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short SL_StreamingParameters::port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the port used for streaming. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Port must be an even number. Any odd number will be rejected. </dd>
+<dd>
+Port must be opened. </dd></dl>
+
+</div>
+</div>
+<a id="ac90204194a579664c1fa8d31339435ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac90204194a579664c1fa8d31339435ec">&#9670;&nbsp;</a></span>bitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SL_StreamingParameters::bitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the streaming bitrate in Kbits/s. </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">STREAMING_CODEC   </th><th class="markdownTableHeadNone">Resolution   </th><th class="markdownTableHeadNone">FPS   </th><th class="markdownTableHeadNone">bitrate (kbps)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">H264   </td><td class="markdownTableBodyNone">HD2K   </td><td class="markdownTableBodyNone">15   </td><td class="markdownTableBodyNone">8500    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">H264   </td><td class="markdownTableBodyNone">HD1080   </td><td class="markdownTableBodyNone">30   </td><td class="markdownTableBodyNone">12500    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">H264   </td><td class="markdownTableBodyNone">HD720   </td><td class="markdownTableBodyNone">60   </td><td class="markdownTableBodyNone">7000    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">H265   </td><td class="markdownTableBodyNone">HD2K   </td><td class="markdownTableBodyNone">15   </td><td class="markdownTableBodyNone">7000    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">H265   </td><td class="markdownTableBodyNone">HD1080   </td><td class="markdownTableBodyNone">30   </td><td class="markdownTableBodyNone">11000    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">H265   </td><td class="markdownTableBodyNone">HD720   </td><td class="markdownTableBodyNone">60   </td><td class="markdownTableBodyNone">6000   </td></tr>
+</table>
+<dl class="section note"><dt>Note</dt><dd>Available range : [1000 - 60000] </dd></dl>
+
+</div>
+</div>
+<a id="a404edaa7f4ba38abebf9d2d34b49cc6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404edaa7f4ba38abebf9d2d34b49cc6c">&#9670;&nbsp;</a></span>gop_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SL_StreamingParameters::gop_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the gop size in number of frames. </p>
+<dl class="section note"><dt>Note</dt><dd>if value is set to -1, the gop size will last at maximum 2 seconds, depending on camera fps. </dd>
+<dd>
+The gop size determines the maximum distance between IDR/I-frames. Very high GOP size will result in slightly more efficient compression, especially on static scenes. But latency will increase. </dd>
+<dd>
+maximum value: 256 </dd></dl>
+
+</div>
+</div>
+<a id="a0a5911f289e7e5bd5a0b8ca95a37c31b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5911f289e7e5bd5a0b8ca95a37c31b">&#9670;&nbsp;</a></span>adaptative_bitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SL_StreamingParameters::adaptative_bitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/Disable adaptive bitrate. </p>
+<dl class="section note"><dt>Note</dt><dd>Bitrate will be adjusted depending the number of packet dropped during streaming. </dd>
+<dd>
+if activated, bitrate can vary between [bitrate/4, bitrate] </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Currently, the adaptive bitrate only works when "sending" device is a NVIDIA Jetson (X1,X2,Xavier,Nano) </dd></dl>
+
+</div>
+</div>
+<a id="a93806c41d04aa5b0d2c8b27eef3af131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93806c41d04aa5b0d2c8b27eef3af131">&#9670;&nbsp;</a></span>chunk_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short SL_StreamingParameters::chunk_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a single chunk size. </p>
+<dl class="section note"><dt>Note</dt><dd>Stream buffers are divided in X number of chunk where each chunk is "chunk_size" bytes long. </dd>
+<dd>
+Default value is 16084. You can lower this value if network generates a lot of packet lost : this will generates more chunk for a single image, but each chunk sent will be lighter to avoid inside-chunk corruption. Increasing this value can decrease latency. </dd>
+<dd>
+Available range : [4096 - 65000] </dd></dl>
+
+</div>
+</div>
+<a id="ac0c0f6fbd2e389fb1507b0ca547874de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c0f6fbd2e389fb1507b0ca547874de">&#9670;&nbsp;</a></span>target_framerate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SL_StreamingParameters::target_framerate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>defines the target framerate for the streaming output. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This framerate must be below or equal to the camera framerate. Allowed framerates are 15,30, 60 or 100 if possible. Any other values will be discarded and camera FPS will be taken. \ndefault : 0, meaning that the camera framerate will be taken </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

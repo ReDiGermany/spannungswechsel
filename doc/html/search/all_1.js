@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['backpack_26',['BACKPACK',['../namespacesl.html#ga0c86adfc07c4fb24dc84f1fd2adc5ebaaad225b2392b1192d4d6793d147cb174c',1,'sl']]],
+  ['bag_27',['BAG',['../namespacesl.html#ga13b0c230bc8fee5bbaaaa57a45fa1177a110dd19a31a5420ce23696d3ae2cf36c',1,'sl']]],
+  ['banana_28',['BANANA',['../namespacesl.html#ga0c86adfc07c4fb24dc84f1fd2adc5ebaab252d1fe1c0c16d001027c2fce9b6529',1,'sl']]],
+  ['barometer_29',['barometer',['../structsl_1_1SensorsData.html#ac90b08a695b290f618962ea019180d1b',1,'sl::SensorsData']]],
+  ['barometer_30',['BAROMETER',['../structsl_1_1SensorsData_1_1TemperatureData.html#gabb33627f8243b90e1769bfa7d90ab1ccadaeb043d84f26061872f9527c17bc6aa',1,'sl::SensorsData::TemperatureData::BAROMETER()'],['../namespacesl.html#af5bb65709fdedb44538b539ae03e8d2fadaeb043d84f26061872f9527c17bc6aa',1,'sl::BAROMETER()']]],
+  ['barometer_5fparameters_31',['barometer_parameters',['../structsl_1_1SensorsConfiguration.html#a67d8d95f08b3f4e5dfee16fbfa208059',1,'sl::SensorsConfiguration']]],
+  ['barometerdata_32',['BarometerData',['../structsl_1_1SensorsData_1_1BarometerData.html',1,'sl::SensorsData']]],
+  ['barycenter_33',['barycenter',['../classsl_1_1Chunk.html#add3d4c4e6434e88a64d55d2c5c53b056',1,'sl::Chunk::barycenter()'],['../classsl_1_1PointCloudChunk.html#add3d4c4e6434e88a64d55d2c5c53b056',1,'sl::PointCloudChunk::barycenter()']]],
+  ['batch_5fparameters_34',['batch_parameters',['../structsl_1_1ObjectDetectionParameters.html#af35b82d77cd180099613288abe49f0f8',1,'sl::ObjectDetectionParameters']]],
+  ['batchparameters_35',['BatchParameters',['../structsl_1_1BatchParameters.html#ae8c3a835c45dd80d96bccabedb6bc359',1,'sl::BatchParameters::BatchParameters()'],['../structsl_1_1BatchParameters.html',1,'BatchParameters']]],
+  ['bicycle_36',['BICYCLE',['../namespacesl.html#ga0c86adfc07c4fb24dc84f1fd2adc5ebaa4bdeeb2e61c16dbc81956e1bd9148809',1,'sl']]],
+  ['bird_37',['BIRD',['../namespacesl.html#ga0c86adfc07c4fb24dc84f1fd2adc5ebaa9d39abce5a287b8019327ecd8a97ce56',1,'sl']]],
+  ['bitrate_38',['bitrate',['../structsl_1_1RecordingParameters.html#a873ba9440e3e9786eb1476a3bfa536d0',1,'sl::RecordingParameters::bitrate()'],['../structsl_1_1StreamingParameters.html#a873ba9440e3e9786eb1476a3bfa536d0',1,'sl::StreamingParameters::bitrate()']]],
+  ['boat_39',['BOAT',['../namespacesl.html#ga0c86adfc07c4fb24dc84f1fd2adc5ebaa45341cc1cc5a485ca18fd816b833175b',1,'sl']]],
+  ['body_5fformat_40',['BODY_FORMAT',['../group__Object__group.html#ga375807d6ff35199b9b48346de7a5d41b',1,'sl']]],
+  ['body_5fformat_41',['body_format',['../structsl_1_1ObjectDetectionParameters.html#a5d831559bc3766b6fb718cf4c482e3fc',1,'sl::ObjectDetectionParameters']]],
+  ['body_5fparts_42',['BODY_PARTS',['../group__Object__group.html#gacce1373b1af32c33563d484bf326bc8e',1,'sl']]],
+  ['body_5fparts_5fpose_5f18_43',['BODY_PARTS_POSE_18',['../namespacesl.html#a650402f864db4035e7d0fae36095ed34',1,'sl']]],
+  ['both_44',['BOTH',['../namespacesl.html#gaed1a25f4b15c6110f7ac1dc385827049a6328e5e3186c227a021ef2ff77e40197',1,'sl']]],
+  ['bounding_5fbox_45',['bounding_box',['../classsl_1_1ObjectData.html#a2a590325c5917574997bd13d40964995',1,'sl::ObjectData']]],
+  ['bounding_5fbox_5f2d_46',['bounding_box_2d',['../classsl_1_1CustomBoxObjectData.html#a75d09ec5bd575411782c00ab0fab63d1',1,'sl::CustomBoxObjectData::bounding_box_2d()'],['../classsl_1_1ObjectData.html#a75d09ec5bd575411782c00ab0fab63d1',1,'sl::ObjectData::bounding_box_2d()']]],
+  ['brightness_47',['BRIGHTNESS',['../namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da3a8a0aeb55d2886191dee8a5e0d07cc9',1,'sl']]],
+  ['bus_48',['BUS',['../namespacesl.html#ga0c86adfc07c4fb24dc84f1fd2adc5ebaa0e0c9d888d1093cb2dfa6b25cbce19d8',1,'sl']]]
+];

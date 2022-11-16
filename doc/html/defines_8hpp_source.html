@@ -1,0 +1,618 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>defines.hpp Source File | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('defines_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">defines.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * SOFTWARE LICENSE</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * BY USING YOUR CAMERA YOU AGREE TO THIS SOFTWARE LICENSE. BEFORE SETTING IT UP,</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * PLEASE READ THIS SOFTWARE LICENSE CAREFULLY. IF YOU DO NOT ACCEPT THIS</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * SOFTWARE LICENSE, DO NOT USE YOUR CAMERA. RETURN IT TO UNUSED TO STEREOLABS</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * FOR A REFUND. Contact STEREOLABS at support@stereolabs.com</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * 1. Definitions</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * &quot;Authorized Accessory&quot; means a STEREOLABS branded ZED, ZED 2 or ZED Mini, and a STEREOLABS</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * licensed, third party branded, ZED hardware accessory whose packaging bears the official</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * &quot;Licensed for ZED&quot; logo. The ZED camera, ZED 2 camera and the ZED Mini camera are Authorized Accessories</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * solely for purpose of this Software license.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * &quot;Software&quot; means the Software Development Kit, available on the stereolabs.com website, and including any updates STEREOLABS may make available from</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * time to time.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * &quot;Unauthorized Accessories&quot; means all hardware accessories other than an Authorized Accessory.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * &quot;Unauthorized Software&quot; means any software not distributed by STEREOLABS.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &quot;You&quot; means the user of a ZED, ZED 2 or ZED Mini camera.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * 2. License</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * a. The Software is licensed to You, not sold. You are licensed to use the</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * Software only as downloaded from the stereolabs.com website, and updated by</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * STEREOLABS from time to time. You may not copy or reverse engineer the Software.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * b. As conditions to this Software license, You agree that:</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> *   i. You will use Your Software with ZED, ZED 2 or ZED Mini camera only and not with any</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *      other device (including). You will not use Unauthorized Accessories. They may</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *      not work or may stop working permanently after a Software update.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *   ii. You will not use or install any Unauthorized Software with an Authorized Accessory. If You do, Your ZED, ZED 2</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> *       or ZED Mini camera may stop working permanently at that time or after a later</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> *       Software update.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *   iii. You will not attempt to defeat or circumvent any Software technical limitation,</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> *        security, or anti-piracy system. If You do, Your ZED, ZED 2 or ZED Mini camera may stop</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *        working permanently at that time or after a later Software update.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> *   iv. STEREOLABS may use technical measures, including Software updates, to limit use</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *       of the Software to the ZED, ZED 2 or ZED Mini camera, to prevent use of Unauthorized</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *       Accessories, and to protect the technical limitations, security and anti-piracy</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *       systems in the ZED, ZED 2 or ZED Mini camera.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *   v. STEREOLABS may update the Software from time to time without further notice to You,</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *      for example, to update any technical limitation, security, or anti-piracy system.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * 3. Warranty</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * The Software is covered by the Limited Warranty for Your ZED, ZED 2 or ZED Mini camera, and</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * STEREOLABS gives no other guarantee, warranty, or condition for the Software. No one</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * else may give any guarantee, warranty, or condition on STEREOLABS&#39;s behalf.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * 4. EXCLUSION OF CERTAIN DAMAGES</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * STEREOLABS IS NOT RESPONSIBLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * DAMAGES; ANY LOSS OF DATA, PRIVACY, CONFIDENTIALITY, OR PROFITS; OR ANY INABILITY TO</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * USE THE SOFTWARE. THESE EXCLUSIONS APPLY EVEN IF STEREOLABS HAS BEEN ADVISED OF THE</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * POSSIBILITY OF THESE DAMAGES, AND EVEN IF ANY REMEDY FAILS OF ITS ESSENTIAL PURPOSE.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * 5. Choice of Law</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * French law governs the interpretation of this Software license and any claim that</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * STEREOLABS has breached it, regardless of conflict of law principles.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifndef __DEFINES_HPP__</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define __DEFINES_HPP__</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &lt;sl_core/utils/types.hpp&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if defined _WIN32</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#if defined(SL_SDK_COMPIL)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define SL_SDK_EXPORT __declspec(dllexport)</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define SL_SDK_EXPORT __declspec(dllimport)</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#elif __GNUC__</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#define SL_SDK_EXPORT __attribute__((visibility(&quot;default&quot;</span>)))</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#if defined(__arm__) || defined(__aarch64__)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#define _SL_JETSON_</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// SDK VERSION NUMBER</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#define ZED_SDK_MAJOR_VERSION 3</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#define ZED_SDK_MINOR_VERSION 8</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#define ZED_SDK_PATCH_VERSION 1</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#define ZED_SDK_BUILD_ID &quot;60636_b09ea52a&quot;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#define ZED_SDK_VERSION_ATTRIBUTE private: uint32_t _zed_sdk_major_version = ZED_SDK_MAJOR_VERSION, _zed_sdk_minor_version = ZED_SDK_MINOR_VERSION, _zed_sdk_patch_version = ZED_SDK_PATCH_VERSION;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group__Core__group.html#gabfc01601a6371abe68f6e07358f04ef5">   96</a></span>&#160;<span class="keywordtype">int</span> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SDK_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="group__Core__group.html#gabfc01601a6371abe68f6e07358f04ef5">getZEDSDKRuntimeVersion</a>(<span class="keywordtype">int</span> &amp;major, <span class="keywordtype">int</span>&amp; minor, <span class="keywordtype">int</span>&amp; patch);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">int</span> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SDK_EXPORT<span class="comment">/*@endcond*/</span> getZEDSDKRuntimeVersion_C(<span class="keywordtype">int</span> &amp;major, <span class="keywordtype">int</span>&amp; minor, <span class="keywordtype">int</span>&amp; patch);</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="group__Core__group.html#gaf8f385d967e2c327c22080cf23020d2f">  128</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">void</span> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SDK_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="group__Core__group.html#gaf8f385d967e2c327c22080cf23020d2f">getZEDSDKBuildVersion</a>(<span class="keywordtype">int</span> &amp;major, <span class="keywordtype">int</span>&amp; minor, <span class="keywordtype">int</span>&amp; patch) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        major = ZED_SDK_MAJOR_VERSION;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        minor = ZED_SDK_MINOR_VERSION;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        patch = ZED_SDK_PATCH_VERSION;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="namespacesl.html">  135</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesl.html">sl</a> {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="namespacesl.html#ae2b31140a18cf3fe9081dbfb4ca1b808">  142</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="namespacesl.html#ae2b31140a18cf3fe9081dbfb4ca1b808">TOO_FAR</a> = INFINITY;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="namespacesl.html#aede668d48638de751636c021d0b62f25">  146</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="namespacesl.html#aede668d48638de751636c021d0b62f25">TOO_CLOSE</a> = -INFINITY;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="namespacesl.html#a60e5f403c75d0c97a4852ba275829b5c">  150</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="namespacesl.html#a60e5f403c75d0c97a4852ba275829b5c">OCCLUSION_VALUE</a> = NAN;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="namespacesl.html#a4b9e09f3a6ec86d198da396092c990c1">  153</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="namespacesl.html#a4b9e09f3a6ec86d198da396092c990c1">INVALID_VALUE</a> = NAN;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="namespacesl.html#aae3c95bcdfd032d32c7a22f9f7042a23">  155</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="namespacesl.html#aae3c95bcdfd032d32c7a22f9f7042a23">STATIC_DEPTH</a> = 255;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="namespacesl.html#a3957793652ba038ca5bf76948852c362">  156</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="namespacesl.html#a3957793652ba038ca5bf76948852c362">DYNAMIC_DEPTH</a> = 127;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">//macro to detect wrong data measure</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#define isValidMeasure(v) (std::isfinite(v))</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="group__Video__group.html#gaed1a25f4b15c6110f7ac1dc385827049">  174</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Video__group.html#gaed1a25f4b15c6110f7ac1dc385827049">SIDE</a> {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="namespacesl.html#gaed1a25f4b15c6110f7ac1dc385827049a684d325a7303f52e64011467ff5c5758">LEFT</a>, </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="namespacesl.html#gaed1a25f4b15c6110f7ac1dc385827049a21507b40c80068eda19865706fdc2403">RIGHT</a>, </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="namespacesl.html#gaed1a25f4b15c6110f7ac1dc385827049a6328e5e3186c227a021ef2ff77e40197">BOTH</a> </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    };</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="group__Video__group.html#gafe09520beed3f2eba620708468d0eca6">  185</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="group__Video__group.html#gafe09520beed3f2eba620708468d0eca6">FLIP_MODE</a> : <span class="keywordtype">int</span> {</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6aac132f2982b98bcaa3445e535a03ff75">  186</a></span>&#160;        <a class="code" href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6aac132f2982b98bcaa3445e535a03ff75">OFF</a> = 0, </div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6a977d478dacaae531f95695750d1e9d03">  187</a></span>&#160;        <a class="code" href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6a977d478dacaae531f95695750d1e9d03">ON</a> = 1, </div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6aeef9468d1b98bca652a04bf5063fd9d6">  188</a></span>&#160;        <a class="code" href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6aeef9468d1b98bca652a04bf5063fd9d6">AUTO</a> = 2, </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a> = 3</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    };</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">  195</a></span>&#160;    <a class="code" href="classsl_1_1String.html">String</a> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SDK_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Video__group.html#gafe09520beed3f2eba620708468d0eca6">FLIP_MODE</a>&amp; flip_mode);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">  197</a></span>&#160;    inline ::std::ostream&amp; <a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="group__Video__group.html#gafe09520beed3f2eba620708468d0eca6">FLIP_MODE</a>&amp; flip_mode) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(flip_mode);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">  209</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a> {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828ab5cf8bac4234790ecda4797bf325116c">HD2K</a>, </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <a class="code" href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828aebf416754b5b57c91ce22b025015031b">HD1080</a>, </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <a class="code" href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828a4cdfd6b884ead99d46d935f580246f0e">HD720</a>, </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828adb4371197d1f58c7d4edb7dcd0565ad1">VGA</a>, </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    };</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a> &amp;resolution);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a> &amp;resolution) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(resolution);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group__Video__group.html#ga6a283d1c725e46eb2c84aedabfddf855">  231</a></span>&#160;    <a class="code" href="structsl_1_1Resolution.html">sl::Resolution</a> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SDK_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="group__Video__group.html#ga6a283d1c725e46eb2c84aedabfddf855">getResolution</a>(<a class="code" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a> resolution);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="group__Video__group.html#ga7bab4c6ca4fd971055eca1fdd9f4223d">  240</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Video__group.html#ga7bab4c6ca4fd971055eca1fdd9f4223d">VIDEO_SETTINGS</a> {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da3a8a0aeb55d2886191dee8a5e0d07cc9">BRIGHTNESS</a>, </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223daf5d3a63fb203b01cb2bf903ead0e3866">CONTRAST</a>, </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223dac632a05e08ccc97a6882f59b264a2d07">HUE</a>, </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da5a7c5e7d657d8e6a6a234d8ea0eec990">SATURATION</a>, </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da3d90d2865187291d319f5004c3ebc932">SHARPNESS</a>, </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da469bb22a9f1f560331b06cd6ef0da944">GAMMA</a>, </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da0803331e7c3fe03c1938ac408faaa0cc">GAIN</a>, </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da23c53320729451a2128b25273d9c00f8">EXPOSURE</a>, </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da7919101d06743ecab8760363529f43eb">AEC_AGC</a>, </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223daf679f706e103378224a3971160f578c9">AEC_AGC_ROI</a>, </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da21402c0e1f3ee5395d4b45ac307805e3">WHITEBALANCE_TEMPERATURE</a>, </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da8a10e2319806d9c7c6bb9d88289d0d9a">WHITEBALANCE_AUTO</a>, </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223dac4338a2db04efd506b6dd1887fce93f2">LED_STATUS</a>, </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    };</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="namespacesl.html#aacc31f4c1510873c1ca5ad0261b023e0">  259</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="namespacesl.html#aacc31f4c1510873c1ca5ad0261b023e0">VIDEO_SETTINGS_VALUE_AUTO</a> = -1;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="classsl_1_1String.html">String</a> SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Video__group.html#ga7bab4c6ca4fd971055eca1fdd9f4223d">VIDEO_SETTINGS</a> &amp;camSettings);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__Video__group.html#ga7bab4c6ca4fd971055eca1fdd9f4223d">VIDEO_SETTINGS</a> &amp;camSettings) {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(camSettings);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">  274</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">DEPTH_MODE</a> {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <a class="code" href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43ab50339a10e1de285ac99d4c3990b8693">NONE</a>, </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <a class="code" href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43a063360736adfccfae2f1d8093c02959a">PERFORMANCE</a>, </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43aac7ac10cbeba800c78f4de2922bd1e1b">QUALITY</a>, </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43af8b6b495ae37b7f4baa34a5c54bd2f6c">ULTRA</a>, </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43a7a1e75de3356082c7ad3543715ce6cc3">NEURAL</a>, </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    };</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">DEPTH_MODE</a> &amp;depthMode);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">DEPTH_MODE</a> &amp;depthMode) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(depthMode);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="group__Depth__group.html#ga391147e2eab8e101a7ff3a06cbed22da">  298</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Depth__group.html#ga391147e2eab8e101a7ff3a06cbed22da">SENSING_MODE</a> {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="namespacesl.html#ga391147e2eab8e101a7ff3a06cbed22daa94e94133f4bdc1794c6b647b8ea134d0">STANDARD</a>, </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <a class="code" href="namespacesl.html#ga391147e2eab8e101a7ff3a06cbed22daae8225b11842409df543692aebed34fd1">FILL</a>, </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    };</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Depth__group.html#ga391147e2eab8e101a7ff3a06cbed22da">SENSING_MODE</a> &amp;sensingMode);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__Depth__group.html#ga391147e2eab8e101a7ff3a06cbed22da">SENSING_MODE</a> &amp;sensingMode) {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(sensingMode);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">  321</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">MEASURE</a> {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da8814a16ee6fd71ab0305a1c425b45a4d">DISPARITY</a>, </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545daaa1780b4fcce2d5d9af13dc25386d111">DEPTH</a>, </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da87f1ba15677264359d67e2a5b34a4b68">CONFIDENCE</a>, </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dae65075d550f9b5bf9992fa1d71a131be">XYZ</a>, </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da5e5100211fadd1af0b7681b43ba5b11b">XYZRGBA</a>, </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dafc911e78b5caee76618a69046432515f">XYZBGRA</a>, </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da8f4eb99a063250cd14b1497b0c717ab4">XYZARGB</a>, </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dad739bb1addd0a2353537fa1e3a533b1a">XYZABGR</a>, </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545daa50eb8a5845601666a9dd4504ebef51a">NORMALS</a>, </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da4584134951f0109d5b9094d325f0d2f3">DISPARITY_RIGHT</a>, </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da7492731e9d2fcf4a51d5927ed146a05c">DEPTH_RIGHT</a>, </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da355ec8321f3d478aefd1a5ccbc24bd6d">XYZ_RIGHT</a>, </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dace4a56f45a655cc3b6012091f8012f61">XYZRGBA_RIGHT</a>, </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da6ed304d8a2244833fcc9bbc198005fb5">XYZBGRA_RIGHT</a>, </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da2a2aa2371ef6df147618a33ed76b999c">XYZARGB_RIGHT</a>, </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dae3d308908f1b5d8049ab52593736b55b">XYZABGR_RIGHT</a>, </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da8a3369e8bc6878b1679db4b6a1b41b38">NORMALS_RIGHT</a>, </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da478648d1b7c56244d4e107af7262ce2d">DEPTH_U16_MM</a>, </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <a class="code" href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da0acf21db610c018880ea7bfe37b5f5fb">DEPTH_U16_MM_RIGHT</a>, </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    };</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">MEASURE</a> &amp;measure);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">MEASURE</a> &amp;measure) {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(measure);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">  359</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">VIEW</a> {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca684d325a7303f52e64011467ff5c5758">LEFT</a>, </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca21507b40c80068eda19865706fdc2403">RIGHT</a>, </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248cae61813c787eb298a0dbedc77ef5cd32e">LEFT_GRAY</a>, </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca0f35c3897c341774bb71ce11b308bcf2">RIGHT_GRAY</a>, </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca2c8a492b81baae8fa81e2e8afef03a41">LEFT_UNRECTIFIED</a>, </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca2590e94c2a8bb8565f85c3b6146ab0e2">RIGHT_UNRECTIFIED</a>, </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca7955555ae8ddb64e203d074191e45b14">LEFT_UNRECTIFIED_GRAY</a>, </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca0bf794ab339c0de5950be3913142f009">RIGHT_UNRECTIFIED_GRAY</a>, </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca13d64ca5814ba97a603d0cb38bdf0d32">SIDE_BY_SIDE</a>, </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248caaa1780b4fcce2d5d9af13dc25386d111">DEPTH</a>, </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca87f1ba15677264359d67e2a5b34a4b68">CONFIDENCE</a>, </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248caa50eb8a5845601666a9dd4504ebef51a">NORMALS</a>, </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca7492731e9d2fcf4a51d5927ed146a05c">DEPTH_RIGHT</a>, </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <a class="code" href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca8a3369e8bc6878b1679db4b6a1b41b38">NORMALS_RIGHT</a>, </div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    };</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">VIEW</a> &amp;view);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">VIEW</a> &amp;view) {</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(view);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9">  392</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9">TIME_REFERENCE</a> {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <a class="code" href="namespacesl.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9a23a12f67f614b5518c7f1c2465bf95e3">IMAGE</a>, </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <a class="code" href="namespacesl.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9aa2770969c827f0f2910f6179418462df">CURRENT</a>, </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    };</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9">TIME_REFERENCE</a> &amp;time_reference);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9">TIME_REFERENCE</a> &amp;time_reference) {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(time_reference);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="group__PositionalTracking__group.html#gae481924a311113375bb3a99748d79e17">  413</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__PositionalTracking__group.html#gae481924a311113375bb3a99748d79e17">POSITIONAL_TRACKING_STATE</a> {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <a class="code" href="namespacesl.html#gae481924a311113375bb3a99748d79e17adb46ca6757195ce8c1f015c9781d869e">SEARCHING</a>, </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="namespacesl.html#gae481924a311113375bb3a99748d79e17ae0aa021e21dddbd6d8cecec71e9cf564">OK</a>, </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <a class="code" href="namespacesl.html#gae481924a311113375bb3a99748d79e17a88559a0cfd8250c9d65970cc145c92d4">OFF</a>, </div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <a class="code" href="namespacesl.html#gae481924a311113375bb3a99748d79e17a64c627caf0d127cf9d5d3a1ec9d31624">FPS_TOO_LOW</a>, </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <a class="code" href="namespacesl.html#gae481924a311113375bb3a99748d79e17a76678b8b91427d2ee20d7c70488b7081">SEARCHING_FLOOR_PLANE</a>, </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    };</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__PositionalTracking__group.html#gae481924a311113375bb3a99748d79e17">POSITIONAL_TRACKING_STATE</a> &amp;track_state);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__PositionalTracking__group.html#gae481924a311113375bb3a99748d79e17">POSITIONAL_TRACKING_STATE</a> &amp;track_state) {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(track_state);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    }</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno"><a class="line" href="group__SpatialMapping__group.html#gaea939879dc83823424875a45f4cc9676">  437</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__SpatialMapping__group.html#gaea939879dc83823424875a45f4cc9676">AREA_EXPORTING_STATE</a> {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <a class="code" href="namespacesl.html#gaea939879dc83823424875a45f4cc9676ad0749aaba8b833466dfcbb0428e4f89c">SUCCESS</a>, </div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <a class="code" href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a43491564ebcfd38568918efbd6e840fd">RUNNING</a>, </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <a class="code" href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a06972acc3aafeb3a65dbd996c8dedc73">NOT_STARTED</a>, </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <a class="code" href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a293c4924fead44d719a886d02e883bec">FILE_EMPTY</a>, </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <a class="code" href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a46c82d16f79f5d93bf336fe7ef8f9acb">FILE_ERROR</a>, </div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <a class="code" href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a8f1d841af6c34590085e3827dc46a50e">SPATIAL_MEMORY_DISABLED</a>, </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    };</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__SpatialMapping__group.html#gaea939879dc83823424875a45f4cc9676">AREA_EXPORTING_STATE</a> &amp;area_export);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__SpatialMapping__group.html#gaea939879dc83823424875a45f4cc9676">AREA_EXPORTING_STATE</a> &amp;area_export) {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(area_export);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    }</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
+<div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="group__SpatialMapping__group.html#ga004c296fb18548aabf8430a59a335958">  462</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__SpatialMapping__group.html#ga004c296fb18548aabf8430a59a335958">SPATIAL_MAPPING_STATE</a> {</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <a class="code" href="namespacesl.html#ga004c296fb18548aabf8430a59a335958a86bf8c89d85949f8f45cde2f73fce113">INITIALIZING</a>, </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <a class="code" href="namespacesl.html#ga004c296fb18548aabf8430a59a335958ae0aa021e21dddbd6d8cecec71e9cf564">OK</a>, </div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <a class="code" href="namespacesl.html#ga004c296fb18548aabf8430a59a335958aea8a564efbb910c22c45506553bb7469">NOT_ENOUGH_MEMORY</a>, </div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <a class="code" href="namespacesl.html#ga004c296fb18548aabf8430a59a335958a987ccd915b17c81fb4ed90447146d3ab">NOT_ENABLED</a>, </div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <a class="code" href="namespacesl.html#ga004c296fb18548aabf8430a59a335958a64c627caf0d127cf9d5d3a1ec9d31624">FPS_TOO_LOW</a>, </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    };</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    String SL_SDK_EXPORT <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__SpatialMapping__group.html#ga004c296fb18548aabf8430a59a335958">SPATIAL_MAPPING_STATE</a> &amp;mapping_state);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__SpatialMapping__group.html#ga004c296fb18548aabf8430a59a335958">SPATIAL_MAPPING_STATE</a> &amp;mapping_state) {</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(mapping_state);</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    }</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
+<div class="line"><a name="l00487"></a><span class="lineno"><a class="line" href="group__Video__group.html#gae52adc3898d4dd4cb5b770567fe8031c">  487</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__Video__group.html#gae52adc3898d4dd4cb5b770567fe8031c">SVO_COMPRESSION_MODE</a> {</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <a class="code" href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031ca2ddbad59e7b20a654735c2d8b4f480c3">LOSSLESS</a>, </div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <a class="code" href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031ca8ba63b54352f7053b055235a9ec7ac09">H264</a>, </div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <a class="code" href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031ca5be0961e6e8a5cd49abb33d4c0f0ffc0">H265</a>, </div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        <a class="code" href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031cae6262d49214a3c099b779110458c5c7d">H264_LOSSLESS</a>, </div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <a class="code" href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031cab38bf3897b3225bf2dd4190f23f4c3f1">H265_LOSSLESS</a>, </div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    };</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
+<div class="line"><a name="l00499"></a><span class="lineno"><a class="line" href="namespacesl.html#af890dc3349ff46e1df0287e33d9a689c">  499</a></span>&#160;    <a class="code" href="classsl_1_1String.html">String</a> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SDK_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__Video__group.html#gae52adc3898d4dd4cb5b770567fe8031c">SVO_COMPRESSION_MODE</a> &amp;svo_compression);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
+<div class="line"><a name="l00501"></a><span class="lineno"><a class="line" href="namespacesl.html#a29c01fdd097b1842ed388cbd69672629">  501</a></span>&#160;    inline ::std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(::std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__Video__group.html#gae52adc3898d4dd4cb5b770567fe8031c">SVO_COMPRESSION_MODE</a> &amp;svo_compression) {</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(svo_compression);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    }</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160; </div>
+<div class="line"><a name="l00510"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html">  510</a></span>&#160;    <span class="keyword">struct </span><span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SDK_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="structsl_1_1RecordingStatus.html">RecordingStatus</a> {</div>
+<div class="line"><a name="l00511"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html#af409115fcaa12619a90c9b581bafa64a">  511</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structsl_1_1RecordingStatus.html#af409115fcaa12619a90c9b581bafa64a">is_recording</a>; </div>
+<div class="line"><a name="l00512"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html#ac11c92540ec51f6fc5a62b437f332ea8">  512</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structsl_1_1RecordingStatus.html#ac11c92540ec51f6fc5a62b437f332ea8">is_paused</a>; </div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html#ad1f0bff7112206922c9d5a87adad6f2b">  513</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structsl_1_1RecordingStatus.html#ad1f0bff7112206922c9d5a87adad6f2b">status</a>; </div>
+<div class="line"><a name="l00514"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html#a2b5b09fe44a7bcce25875a48d27d7cb3">  514</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structsl_1_1RecordingStatus.html#a2b5b09fe44a7bcce25875a48d27d7cb3">current_compression_time</a>; </div>
+<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html#ab041fc6ffd47623c7036b706473b092b">  515</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structsl_1_1RecordingStatus.html#ab041fc6ffd47623c7036b706473b092b">current_compression_ratio</a>; </div>
+<div class="line"><a name="l00516"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html#abfdb6f2267771fcb6a2fc4a968443ef9">  516</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structsl_1_1RecordingStatus.html#abfdb6f2267771fcb6a2fc4a968443ef9">average_compression_time</a>; </div>
+<div class="line"><a name="l00517"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html#ad6c3f2ca54068a9b181ff307930d924f">  517</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structsl_1_1RecordingStatus.html#ad6c3f2ca54068a9b181ff307930d924f">average_compression_ratio</a>; </div>
+<div class="line"><a name="l00522"></a><span class="lineno"><a class="line" href="structsl_1_1RecordingStatus.html#a1c5bb55f2c0a77c72d0f950cb5d9d9ef">  522</a></span>&#160;        <a class="code" href="structsl_1_1RecordingStatus.html#a1c5bb55f2c0a77c72d0f950cb5d9d9ef">RecordingStatus</a>();</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    };</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160; </div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;};</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160; </div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*__DEFINES_HPP__*/</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclasssl_1_1String_html"><div class="ttname"><a href="classsl_1_1String.html">sl::String</a></div><div class="ttdoc">Defines a string.</div><div class="ttdef"><b>Definition:</b> types.hpp:145</div></div>
+<div class="ttc" id="agroup__Core__group_html_gabfc01601a6371abe68f6e07358f04ef5"><div class="ttname"><a href="group__Core__group.html#gabfc01601a6371abe68f6e07358f04ef5">getZEDSDKRuntimeVersion</a></div><div class="ttdeci">int getZEDSDKRuntimeVersion(int &amp;major, int &amp;minor, int &amp;patch)</div><div class="ttdoc">Dynamic version verification: Returns the ZED SDK version currently installed on the computer....</div></div>
+<div class="ttc" id="agroup__Core__group_html_gaf8f385d967e2c327c22080cf23020d2f"><div class="ttname"><a href="group__Core__group.html#gaf8f385d967e2c327c22080cf23020d2f">getZEDSDKBuildVersion</a></div><div class="ttdeci">const void getZEDSDKBuildVersion(int &amp;major, int &amp;minor, int &amp;patch)</div><div class="ttdoc">Returns the ZED SDK version which the current program has been compiled with. The major,...</div><div class="ttdef"><b>Definition:</b> defines.hpp:128</div></div>
+<div class="ttc" id="agroup__Depth__group_html_ga391147e2eab8e101a7ff3a06cbed22da"><div class="ttname"><a href="group__Depth__group.html#ga391147e2eab8e101a7ff3a06cbed22da">sl::SENSING_MODE</a></div><div class="ttdeci">SENSING_MODE</div><div class="ttdoc">Lists available depth sensing modes.</div><div class="ttdef"><b>Definition:</b> defines.hpp:298</div></div>
+<div class="ttc" id="agroup__Depth__group_html_ga798a8eed10c573d759ef7e5a5bcd545d"><div class="ttname"><a href="group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">sl::MEASURE</a></div><div class="ttdeci">MEASURE</div><div class="ttdoc">Lists retrievable measures.</div><div class="ttdef"><b>Definition:</b> defines.hpp:321</div></div>
+<div class="ttc" id="agroup__Depth__group_html_ga8d542017c9b012a19a15d46be9b7fa43"><div class="ttname"><a href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">sl::DEPTH_MODE</a></div><div class="ttdeci">DEPTH_MODE</div><div class="ttdoc">Lists available depth computation modes.</div><div class="ttdef"><b>Definition:</b> defines.hpp:274</div></div>
+<div class="ttc" id="agroup__PositionalTracking__group_html_gae481924a311113375bb3a99748d79e17"><div class="ttname"><a href="group__PositionalTracking__group.html#gae481924a311113375bb3a99748d79e17">sl::POSITIONAL_TRACKING_STATE</a></div><div class="ttdeci">POSITIONAL_TRACKING_STATE</div><div class="ttdoc">Lists the different states of positional tracking.</div><div class="ttdef"><b>Definition:</b> defines.hpp:413</div></div>
+<div class="ttc" id="agroup__SpatialMapping__group_html_ga004c296fb18548aabf8430a59a335958"><div class="ttname"><a href="group__SpatialMapping__group.html#ga004c296fb18548aabf8430a59a335958">sl::SPATIAL_MAPPING_STATE</a></div><div class="ttdeci">SPATIAL_MAPPING_STATE</div><div class="ttdoc">Gives the spatial mapping state.</div><div class="ttdef"><b>Definition:</b> defines.hpp:462</div></div>
+<div class="ttc" id="agroup__SpatialMapping__group_html_gaea939879dc83823424875a45f4cc9676"><div class="ttname"><a href="group__SpatialMapping__group.html#gaea939879dc83823424875a45f4cc9676">sl::AREA_EXPORTING_STATE</a></div><div class="ttdeci">AREA_EXPORTING_STATE</div><div class="ttdoc">Lists the different states of spatial memory area export.</div><div class="ttdef"><b>Definition:</b> defines.hpp:437</div></div>
+<div class="ttc" id="agroup__Video__group_html_ga6a283d1c725e46eb2c84aedabfddf855"><div class="ttname"><a href="group__Video__group.html#ga6a283d1c725e46eb2c84aedabfddf855">sl::getResolution</a></div><div class="ttdeci">sl::Resolution getResolution(RESOLUTION resolution)</div><div class="ttdoc">Returns the actual size of the given resolution.</div></div>
+<div class="ttc" id="agroup__Video__group_html_ga77fc7bfc159040a1e2ffb074a8ad248c"><div class="ttname"><a href="group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">sl::VIEW</a></div><div class="ttdeci">VIEW</div><div class="ttdoc">Lists available views.</div><div class="ttdef"><b>Definition:</b> defines.hpp:359</div></div>
+<div class="ttc" id="agroup__Video__group_html_ga7bab4c6ca4fd971055eca1fdd9f4223d"><div class="ttname"><a href="group__Video__group.html#ga7bab4c6ca4fd971055eca1fdd9f4223d">sl::VIDEO_SETTINGS</a></div><div class="ttdeci">VIDEO_SETTINGS</div><div class="ttdoc">Lists available camera settings for the ZED camera (contrast, hue, saturation, gain....</div><div class="ttdef"><b>Definition:</b> defines.hpp:240</div></div>
+<div class="ttc" id="agroup__Video__group_html_ga9401e0c9b9fec46d2eb300ffd2fc72c9"><div class="ttname"><a href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9">sl::TIME_REFERENCE</a></div><div class="ttdeci">TIME_REFERENCE</div><div class="ttdoc">Lists specific and particular timestamps.</div><div class="ttdef"><b>Definition:</b> defines.hpp:392</div></div>
+<div class="ttc" id="agroup__Video__group_html_gabd0374c748530a64a72872c43b2cc828"><div class="ttname"><a href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">sl::RESOLUTION</a></div><div class="ttdeci">RESOLUTION</div><div class="ttdoc">Represents the available resolution defined in the cameraResolution list.</div><div class="ttdef"><b>Definition:</b> defines.hpp:209</div></div>
+<div class="ttc" id="agroup__Video__group_html_gae52adc3898d4dd4cb5b770567fe8031c"><div class="ttname"><a href="group__Video__group.html#gae52adc3898d4dd4cb5b770567fe8031c">sl::SVO_COMPRESSION_MODE</a></div><div class="ttdeci">SVO_COMPRESSION_MODE</div><div class="ttdoc">Lists available compression modes for SVO recording.</div><div class="ttdef"><b>Definition:</b> defines.hpp:487</div></div>
+<div class="ttc" id="agroup__Video__group_html_gaed1a25f4b15c6110f7ac1dc385827049"><div class="ttname"><a href="group__Video__group.html#gaed1a25f4b15c6110f7ac1dc385827049">sl::SIDE</a></div><div class="ttdeci">SIDE</div><div class="ttdoc">defines left,right,both to distinguish between left and right or both sides</div><div class="ttdef"><b>Definition:</b> defines.hpp:174</div></div>
+<div class="ttc" id="agroup__Video__group_html_gafe09520beed3f2eba620708468d0eca6"><div class="ttname"><a href="group__Video__group.html#gafe09520beed3f2eba620708468d0eca6">sl::FLIP_MODE</a></div><div class="ttdeci">FLIP_MODE</div><div class="ttdoc">Gives the camera flip mode.</div><div class="ttdef"><b>Definition:</b> defines.hpp:185</div></div>
+<div class="ttc" id="anamespacesl_html"><div class="ttname"><a href="namespacesl.html">sl</a></div><div class="ttdef"><b>Definition:</b> defines.hpp:135</div></div>
+<div class="ttc" id="anamespacesl_html_a3957793652ba038ca5bf76948852c362"><div class="ttname"><a href="namespacesl.html#a3957793652ba038ca5bf76948852c362">sl::DYNAMIC_DEPTH</a></div><div class="ttdeci">static const unsigned char DYNAMIC_DEPTH</div><div class="ttdef"><b>Definition:</b> defines.hpp:156</div></div>
+<div class="ttc" id="anamespacesl_html_a4b9e09f3a6ec86d198da396092c990c1"><div class="ttname"><a href="namespacesl.html#a4b9e09f3a6ec86d198da396092c990c1">sl::INVALID_VALUE</a></div><div class="ttdeci">static const float INVALID_VALUE</div><div class="ttdef"><b>Definition:</b> defines.hpp:153</div></div>
+<div class="ttc" id="anamespacesl_html_a570f11479ebe1c6b5ea98af217731f2a"><div class="ttname"><a href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">sl::toString</a></div><div class="ttdeci">* toString(const FLIP_MODE &amp;flip_mode)</div></div>
+<div class="ttc" id="anamespacesl_html_a60e5f403c75d0c97a4852ba275829b5c"><div class="ttname"><a href="namespacesl.html#a60e5f403c75d0c97a4852ba275829b5c">sl::OCCLUSION_VALUE</a></div><div class="ttdeci">static const float OCCLUSION_VALUE</div><div class="ttdef"><b>Definition:</b> defines.hpp:150</div></div>
+<div class="ttc" id="anamespacesl_html_a8b0718a8bb58d67c87557bd845c971b7"><div class="ttname"><a href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">sl::operator&lt;&lt;</a></div><div class="ttdeci">inline ::std::ostream &amp; operator&lt;&lt;(::std::ostream &amp;os, const FLIP_MODE &amp;flip_mode)</div><div class="ttdef"><b>Definition:</b> defines.hpp:197</div></div>
+<div class="ttc" id="anamespacesl_html_aacc31f4c1510873c1ca5ad0261b023e0"><div class="ttname"><a href="namespacesl.html#aacc31f4c1510873c1ca5ad0261b023e0">sl::VIDEO_SETTINGS_VALUE_AUTO</a></div><div class="ttdeci">const int VIDEO_SETTINGS_VALUE_AUTO</div><div class="ttdef"><b>Definition:</b> defines.hpp:259</div></div>
+<div class="ttc" id="anamespacesl_html_aae3c95bcdfd032d32c7a22f9f7042a23"><div class="ttname"><a href="namespacesl.html#aae3c95bcdfd032d32c7a22f9f7042a23">sl::STATIC_DEPTH</a></div><div class="ttdeci">static const unsigned char STATIC_DEPTH</div><div class="ttdef"><b>Definition:</b> defines.hpp:155</div></div>
+<div class="ttc" id="anamespacesl_html_ae2b31140a18cf3fe9081dbfb4ca1b808"><div class="ttname"><a href="namespacesl.html#ae2b31140a18cf3fe9081dbfb4ca1b808">sl::TOO_FAR</a></div><div class="ttdeci">static const float TOO_FAR</div><div class="ttdef"><b>Definition:</b> defines.hpp:142</div></div>
+<div class="ttc" id="anamespacesl_html_aede668d48638de751636c021d0b62f25"><div class="ttname"><a href="namespacesl.html#aede668d48638de751636c021d0b62f25">sl::TOO_CLOSE</a></div><div class="ttdeci">static const float TOO_CLOSE</div><div class="ttdef"><b>Definition:</b> defines.hpp:146</div></div>
+<div class="ttc" id="anamespacesl_html_ga004c296fb18548aabf8430a59a335958a64c627caf0d127cf9d5d3a1ec9d31624"><div class="ttname"><a href="namespacesl.html#ga004c296fb18548aabf8430a59a335958a64c627caf0d127cf9d5d3a1ec9d31624">sl::SPATIAL_MAPPING_STATE::FPS_TOO_LOW</a></div><div class="ttdeci">@ FPS_TOO_LOW</div></div>
+<div class="ttc" id="anamespacesl_html_ga004c296fb18548aabf8430a59a335958a86bf8c89d85949f8f45cde2f73fce113"><div class="ttname"><a href="namespacesl.html#ga004c296fb18548aabf8430a59a335958a86bf8c89d85949f8f45cde2f73fce113">sl::SPATIAL_MAPPING_STATE::INITIALIZING</a></div><div class="ttdeci">@ INITIALIZING</div></div>
+<div class="ttc" id="anamespacesl_html_ga004c296fb18548aabf8430a59a335958a987ccd915b17c81fb4ed90447146d3ab"><div class="ttname"><a href="namespacesl.html#ga004c296fb18548aabf8430a59a335958a987ccd915b17c81fb4ed90447146d3ab">sl::SPATIAL_MAPPING_STATE::NOT_ENABLED</a></div><div class="ttdeci">@ NOT_ENABLED</div></div>
+<div class="ttc" id="anamespacesl_html_ga004c296fb18548aabf8430a59a335958ae0aa021e21dddbd6d8cecec71e9cf564"><div class="ttname"><a href="namespacesl.html#ga004c296fb18548aabf8430a59a335958ae0aa021e21dddbd6d8cecec71e9cf564">sl::SPATIAL_MAPPING_STATE::OK</a></div><div class="ttdeci">@ OK</div></div>
+<div class="ttc" id="anamespacesl_html_ga004c296fb18548aabf8430a59a335958aea8a564efbb910c22c45506553bb7469"><div class="ttname"><a href="namespacesl.html#ga004c296fb18548aabf8430a59a335958aea8a564efbb910c22c45506553bb7469">sl::SPATIAL_MAPPING_STATE::NOT_ENOUGH_MEMORY</a></div><div class="ttdeci">@ NOT_ENOUGH_MEMORY</div></div>
+<div class="ttc" id="anamespacesl_html_ga391147e2eab8e101a7ff3a06cbed22daa94e94133f4bdc1794c6b647b8ea134d0"><div class="ttname"><a href="namespacesl.html#ga391147e2eab8e101a7ff3a06cbed22daa94e94133f4bdc1794c6b647b8ea134d0">sl::SENSING_MODE::STANDARD</a></div><div class="ttdeci">@ STANDARD</div></div>
+<div class="ttc" id="anamespacesl_html_ga391147e2eab8e101a7ff3a06cbed22daae8225b11842409df543692aebed34fd1"><div class="ttname"><a href="namespacesl.html#ga391147e2eab8e101a7ff3a06cbed22daae8225b11842409df543692aebed34fd1">sl::SENSING_MODE::FILL</a></div><div class="ttdeci">@ FILL</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca0bf794ab339c0de5950be3913142f009"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca0bf794ab339c0de5950be3913142f009">sl::VIEW::RIGHT_UNRECTIFIED_GRAY</a></div><div class="ttdeci">@ RIGHT_UNRECTIFIED_GRAY</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca0f35c3897c341774bb71ce11b308bcf2"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca0f35c3897c341774bb71ce11b308bcf2">sl::VIEW::RIGHT_GRAY</a></div><div class="ttdeci">@ RIGHT_GRAY</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca13d64ca5814ba97a603d0cb38bdf0d32"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca13d64ca5814ba97a603d0cb38bdf0d32">sl::VIEW::SIDE_BY_SIDE</a></div><div class="ttdeci">@ SIDE_BY_SIDE</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca21507b40c80068eda19865706fdc2403"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca21507b40c80068eda19865706fdc2403">sl::VIEW::RIGHT</a></div><div class="ttdeci">@ RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca2590e94c2a8bb8565f85c3b6146ab0e2"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca2590e94c2a8bb8565f85c3b6146ab0e2">sl::VIEW::RIGHT_UNRECTIFIED</a></div><div class="ttdeci">@ RIGHT_UNRECTIFIED</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca2c8a492b81baae8fa81e2e8afef03a41"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca2c8a492b81baae8fa81e2e8afef03a41">sl::VIEW::LEFT_UNRECTIFIED</a></div><div class="ttdeci">@ LEFT_UNRECTIFIED</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca684d325a7303f52e64011467ff5c5758"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca684d325a7303f52e64011467ff5c5758">sl::VIEW::LEFT</a></div><div class="ttdeci">@ LEFT</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca7492731e9d2fcf4a51d5927ed146a05c"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca7492731e9d2fcf4a51d5927ed146a05c">sl::VIEW::DEPTH_RIGHT</a></div><div class="ttdeci">@ DEPTH_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca7955555ae8ddb64e203d074191e45b14"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca7955555ae8ddb64e203d074191e45b14">sl::VIEW::LEFT_UNRECTIFIED_GRAY</a></div><div class="ttdeci">@ LEFT_UNRECTIFIED_GRAY</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca87f1ba15677264359d67e2a5b34a4b68"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca87f1ba15677264359d67e2a5b34a4b68">sl::VIEW::CONFIDENCE</a></div><div class="ttdeci">@ CONFIDENCE</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248ca8a3369e8bc6878b1679db4b6a1b41b38"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248ca8a3369e8bc6878b1679db4b6a1b41b38">sl::VIEW::NORMALS_RIGHT</a></div><div class="ttdeci">@ NORMALS_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248caa50eb8a5845601666a9dd4504ebef51a"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248caa50eb8a5845601666a9dd4504ebef51a">sl::VIEW::NORMALS</a></div><div class="ttdeci">@ NORMALS</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248caaa1780b4fcce2d5d9af13dc25386d111"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248caaa1780b4fcce2d5d9af13dc25386d111">sl::VIEW::DEPTH</a></div><div class="ttdeci">@ DEPTH</div></div>
+<div class="ttc" id="anamespacesl_html_ga77fc7bfc159040a1e2ffb074a8ad248cae61813c787eb298a0dbedc77ef5cd32e"><div class="ttname"><a href="namespacesl.html#ga77fc7bfc159040a1e2ffb074a8ad248cae61813c787eb298a0dbedc77ef5cd32e">sl::VIEW::LEFT_GRAY</a></div><div class="ttdeci">@ LEFT_GRAY</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da0acf21db610c018880ea7bfe37b5f5fb"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da0acf21db610c018880ea7bfe37b5f5fb">sl::MEASURE::DEPTH_U16_MM_RIGHT</a></div><div class="ttdeci">@ DEPTH_U16_MM_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da2a2aa2371ef6df147618a33ed76b999c"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da2a2aa2371ef6df147618a33ed76b999c">sl::MEASURE::XYZARGB_RIGHT</a></div><div class="ttdeci">@ XYZARGB_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da355ec8321f3d478aefd1a5ccbc24bd6d"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da355ec8321f3d478aefd1a5ccbc24bd6d">sl::MEASURE::XYZ_RIGHT</a></div><div class="ttdeci">@ XYZ_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da4584134951f0109d5b9094d325f0d2f3"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da4584134951f0109d5b9094d325f0d2f3">sl::MEASURE::DISPARITY_RIGHT</a></div><div class="ttdeci">@ DISPARITY_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da478648d1b7c56244d4e107af7262ce2d"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da478648d1b7c56244d4e107af7262ce2d">sl::MEASURE::DEPTH_U16_MM</a></div><div class="ttdeci">@ DEPTH_U16_MM</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da5e5100211fadd1af0b7681b43ba5b11b"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da5e5100211fadd1af0b7681b43ba5b11b">sl::MEASURE::XYZRGBA</a></div><div class="ttdeci">@ XYZRGBA</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da6ed304d8a2244833fcc9bbc198005fb5"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da6ed304d8a2244833fcc9bbc198005fb5">sl::MEASURE::XYZBGRA_RIGHT</a></div><div class="ttdeci">@ XYZBGRA_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da7492731e9d2fcf4a51d5927ed146a05c"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da7492731e9d2fcf4a51d5927ed146a05c">sl::MEASURE::DEPTH_RIGHT</a></div><div class="ttdeci">@ DEPTH_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da87f1ba15677264359d67e2a5b34a4b68"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da87f1ba15677264359d67e2a5b34a4b68">sl::MEASURE::CONFIDENCE</a></div><div class="ttdeci">@ CONFIDENCE</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da8814a16ee6fd71ab0305a1c425b45a4d"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da8814a16ee6fd71ab0305a1c425b45a4d">sl::MEASURE::DISPARITY</a></div><div class="ttdeci">@ DISPARITY</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da8a3369e8bc6878b1679db4b6a1b41b38"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da8a3369e8bc6878b1679db4b6a1b41b38">sl::MEASURE::NORMALS_RIGHT</a></div><div class="ttdeci">@ NORMALS_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545da8f4eb99a063250cd14b1497b0c717ab4"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545da8f4eb99a063250cd14b1497b0c717ab4">sl::MEASURE::XYZARGB</a></div><div class="ttdeci">@ XYZARGB</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545daa50eb8a5845601666a9dd4504ebef51a"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545daa50eb8a5845601666a9dd4504ebef51a">sl::MEASURE::NORMALS</a></div><div class="ttdeci">@ NORMALS</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545daaa1780b4fcce2d5d9af13dc25386d111"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545daaa1780b4fcce2d5d9af13dc25386d111">sl::MEASURE::DEPTH</a></div><div class="ttdeci">@ DEPTH</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545dace4a56f45a655cc3b6012091f8012f61"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dace4a56f45a655cc3b6012091f8012f61">sl::MEASURE::XYZRGBA_RIGHT</a></div><div class="ttdeci">@ XYZRGBA_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545dad739bb1addd0a2353537fa1e3a533b1a"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dad739bb1addd0a2353537fa1e3a533b1a">sl::MEASURE::XYZABGR</a></div><div class="ttdeci">@ XYZABGR</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545dae3d308908f1b5d8049ab52593736b55b"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dae3d308908f1b5d8049ab52593736b55b">sl::MEASURE::XYZABGR_RIGHT</a></div><div class="ttdeci">@ XYZABGR_RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545dae65075d550f9b5bf9992fa1d71a131be"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dae65075d550f9b5bf9992fa1d71a131be">sl::MEASURE::XYZ</a></div><div class="ttdeci">@ XYZ</div></div>
+<div class="ttc" id="anamespacesl_html_ga798a8eed10c573d759ef7e5a5bcd545dafc911e78b5caee76618a69046432515f"><div class="ttname"><a href="namespacesl.html#ga798a8eed10c573d759ef7e5a5bcd545dafc911e78b5caee76618a69046432515f">sl::MEASURE::XYZBGRA</a></div><div class="ttdeci">@ XYZBGRA</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da0803331e7c3fe03c1938ac408faaa0cc"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da0803331e7c3fe03c1938ac408faaa0cc">sl::VIDEO_SETTINGS::GAIN</a></div><div class="ttdeci">@ GAIN</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da21402c0e1f3ee5395d4b45ac307805e3"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da21402c0e1f3ee5395d4b45ac307805e3">sl::VIDEO_SETTINGS::WHITEBALANCE_TEMPERATURE</a></div><div class="ttdeci">@ WHITEBALANCE_TEMPERATURE</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da23c53320729451a2128b25273d9c00f8"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da23c53320729451a2128b25273d9c00f8">sl::VIDEO_SETTINGS::EXPOSURE</a></div><div class="ttdeci">@ EXPOSURE</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da3a8a0aeb55d2886191dee8a5e0d07cc9"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da3a8a0aeb55d2886191dee8a5e0d07cc9">sl::VIDEO_SETTINGS::BRIGHTNESS</a></div><div class="ttdeci">@ BRIGHTNESS</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da3d90d2865187291d319f5004c3ebc932"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da3d90d2865187291d319f5004c3ebc932">sl::VIDEO_SETTINGS::SHARPNESS</a></div><div class="ttdeci">@ SHARPNESS</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da469bb22a9f1f560331b06cd6ef0da944"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da469bb22a9f1f560331b06cd6ef0da944">sl::VIDEO_SETTINGS::GAMMA</a></div><div class="ttdeci">@ GAMMA</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da5a7c5e7d657d8e6a6a234d8ea0eec990"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da5a7c5e7d657d8e6a6a234d8ea0eec990">sl::VIDEO_SETTINGS::SATURATION</a></div><div class="ttdeci">@ SATURATION</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da7919101d06743ecab8760363529f43eb"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da7919101d06743ecab8760363529f43eb">sl::VIDEO_SETTINGS::AEC_AGC</a></div><div class="ttdeci">@ AEC_AGC</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223da8a10e2319806d9c7c6bb9d88289d0d9a"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223da8a10e2319806d9c7c6bb9d88289d0d9a">sl::VIDEO_SETTINGS::WHITEBALANCE_AUTO</a></div><div class="ttdeci">@ WHITEBALANCE_AUTO</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223dac4338a2db04efd506b6dd1887fce93f2"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223dac4338a2db04efd506b6dd1887fce93f2">sl::VIDEO_SETTINGS::LED_STATUS</a></div><div class="ttdeci">@ LED_STATUS</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223dac632a05e08ccc97a6882f59b264a2d07"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223dac632a05e08ccc97a6882f59b264a2d07">sl::VIDEO_SETTINGS::HUE</a></div><div class="ttdeci">@ HUE</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223daf5d3a63fb203b01cb2bf903ead0e3866"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223daf5d3a63fb203b01cb2bf903ead0e3866">sl::VIDEO_SETTINGS::CONTRAST</a></div><div class="ttdeci">@ CONTRAST</div></div>
+<div class="ttc" id="anamespacesl_html_ga7bab4c6ca4fd971055eca1fdd9f4223daf679f706e103378224a3971160f578c9"><div class="ttname"><a href="namespacesl.html#ga7bab4c6ca4fd971055eca1fdd9f4223daf679f706e103378224a3971160f578c9">sl::VIDEO_SETTINGS::AEC_AGC_ROI</a></div><div class="ttdeci">@ AEC_AGC_ROI</div></div>
+<div class="ttc" id="anamespacesl_html_ga8d542017c9b012a19a15d46be9b7fa43a063360736adfccfae2f1d8093c02959a"><div class="ttname"><a href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43a063360736adfccfae2f1d8093c02959a">sl::DEPTH_MODE::PERFORMANCE</a></div><div class="ttdeci">@ PERFORMANCE</div></div>
+<div class="ttc" id="anamespacesl_html_ga8d542017c9b012a19a15d46be9b7fa43a7a1e75de3356082c7ad3543715ce6cc3"><div class="ttname"><a href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43a7a1e75de3356082c7ad3543715ce6cc3">sl::DEPTH_MODE::NEURAL</a></div><div class="ttdeci">@ NEURAL</div></div>
+<div class="ttc" id="anamespacesl_html_ga8d542017c9b012a19a15d46be9b7fa43aac7ac10cbeba800c78f4de2922bd1e1b"><div class="ttname"><a href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43aac7ac10cbeba800c78f4de2922bd1e1b">sl::DEPTH_MODE::QUALITY</a></div><div class="ttdeci">@ QUALITY</div></div>
+<div class="ttc" id="anamespacesl_html_ga8d542017c9b012a19a15d46be9b7fa43ab50339a10e1de285ac99d4c3990b8693"><div class="ttname"><a href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43ab50339a10e1de285ac99d4c3990b8693">sl::DEPTH_MODE::NONE</a></div><div class="ttdeci">@ NONE</div></div>
+<div class="ttc" id="anamespacesl_html_ga8d542017c9b012a19a15d46be9b7fa43af8b6b495ae37b7f4baa34a5c54bd2f6c"><div class="ttname"><a href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43af8b6b495ae37b7f4baa34a5c54bd2f6c">sl::DEPTH_MODE::ULTRA</a></div><div class="ttdeci">@ ULTRA</div></div>
+<div class="ttc" id="anamespacesl_html_ga9401e0c9b9fec46d2eb300ffd2fc72c9a23a12f67f614b5518c7f1c2465bf95e3"><div class="ttname"><a href="namespacesl.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9a23a12f67f614b5518c7f1c2465bf95e3">sl::TIME_REFERENCE::IMAGE</a></div><div class="ttdeci">@ IMAGE</div></div>
+<div class="ttc" id="anamespacesl_html_ga9401e0c9b9fec46d2eb300ffd2fc72c9aa2770969c827f0f2910f6179418462df"><div class="ttname"><a href="namespacesl.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9aa2770969c827f0f2910f6179418462df">sl::TIME_REFERENCE::CURRENT</a></div><div class="ttdeci">@ CURRENT</div></div>
+<div class="ttc" id="anamespacesl_html_gabd0374c748530a64a72872c43b2cc828a4cdfd6b884ead99d46d935f580246f0e"><div class="ttname"><a href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828a4cdfd6b884ead99d46d935f580246f0e">sl::RESOLUTION::HD720</a></div><div class="ttdeci">@ HD720</div></div>
+<div class="ttc" id="anamespacesl_html_gabd0374c748530a64a72872c43b2cc828ab5cf8bac4234790ecda4797bf325116c"><div class="ttname"><a href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828ab5cf8bac4234790ecda4797bf325116c">sl::RESOLUTION::HD2K</a></div><div class="ttdeci">@ HD2K</div></div>
+<div class="ttc" id="anamespacesl_html_gabd0374c748530a64a72872c43b2cc828adb4371197d1f58c7d4edb7dcd0565ad1"><div class="ttname"><a href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828adb4371197d1f58c7d4edb7dcd0565ad1">sl::RESOLUTION::VGA</a></div><div class="ttdeci">@ VGA</div></div>
+<div class="ttc" id="anamespacesl_html_gabd0374c748530a64a72872c43b2cc828aebf416754b5b57c91ce22b025015031b"><div class="ttname"><a href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828aebf416754b5b57c91ce22b025015031b">sl::RESOLUTION::HD1080</a></div><div class="ttdeci">@ HD1080</div></div>
+<div class="ttc" id="anamespacesl_html_gae481924a311113375bb3a99748d79e17a64c627caf0d127cf9d5d3a1ec9d31624"><div class="ttname"><a href="namespacesl.html#gae481924a311113375bb3a99748d79e17a64c627caf0d127cf9d5d3a1ec9d31624">sl::POSITIONAL_TRACKING_STATE::FPS_TOO_LOW</a></div><div class="ttdeci">@ FPS_TOO_LOW</div></div>
+<div class="ttc" id="anamespacesl_html_gae481924a311113375bb3a99748d79e17a76678b8b91427d2ee20d7c70488b7081"><div class="ttname"><a href="namespacesl.html#gae481924a311113375bb3a99748d79e17a76678b8b91427d2ee20d7c70488b7081">sl::POSITIONAL_TRACKING_STATE::SEARCHING_FLOOR_PLANE</a></div><div class="ttdeci">@ SEARCHING_FLOOR_PLANE</div></div>
+<div class="ttc" id="anamespacesl_html_gae481924a311113375bb3a99748d79e17a88559a0cfd8250c9d65970cc145c92d4"><div class="ttname"><a href="namespacesl.html#gae481924a311113375bb3a99748d79e17a88559a0cfd8250c9d65970cc145c92d4">sl::POSITIONAL_TRACKING_STATE::OFF</a></div><div class="ttdeci">@ OFF</div></div>
+<div class="ttc" id="anamespacesl_html_gae481924a311113375bb3a99748d79e17adb46ca6757195ce8c1f015c9781d869e"><div class="ttname"><a href="namespacesl.html#gae481924a311113375bb3a99748d79e17adb46ca6757195ce8c1f015c9781d869e">sl::POSITIONAL_TRACKING_STATE::SEARCHING</a></div><div class="ttdeci">@ SEARCHING</div></div>
+<div class="ttc" id="anamespacesl_html_gae481924a311113375bb3a99748d79e17ae0aa021e21dddbd6d8cecec71e9cf564"><div class="ttname"><a href="namespacesl.html#gae481924a311113375bb3a99748d79e17ae0aa021e21dddbd6d8cecec71e9cf564">sl::POSITIONAL_TRACKING_STATE::OK</a></div><div class="ttdeci">@ OK</div></div>
+<div class="ttc" id="anamespacesl_html_gae52adc3898d4dd4cb5b770567fe8031ca2ddbad59e7b20a654735c2d8b4f480c3"><div class="ttname"><a href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031ca2ddbad59e7b20a654735c2d8b4f480c3">sl::SVO_COMPRESSION_MODE::LOSSLESS</a></div><div class="ttdeci">@ LOSSLESS</div></div>
+<div class="ttc" id="anamespacesl_html_gae52adc3898d4dd4cb5b770567fe8031ca5be0961e6e8a5cd49abb33d4c0f0ffc0"><div class="ttname"><a href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031ca5be0961e6e8a5cd49abb33d4c0f0ffc0">sl::SVO_COMPRESSION_MODE::H265</a></div><div class="ttdeci">@ H265</div></div>
+<div class="ttc" id="anamespacesl_html_gae52adc3898d4dd4cb5b770567fe8031ca8ba63b54352f7053b055235a9ec7ac09"><div class="ttname"><a href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031ca8ba63b54352f7053b055235a9ec7ac09">sl::SVO_COMPRESSION_MODE::H264</a></div><div class="ttdeci">@ H264</div></div>
+<div class="ttc" id="anamespacesl_html_gae52adc3898d4dd4cb5b770567fe8031cab38bf3897b3225bf2dd4190f23f4c3f1"><div class="ttname"><a href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031cab38bf3897b3225bf2dd4190f23f4c3f1">sl::SVO_COMPRESSION_MODE::H265_LOSSLESS</a></div><div class="ttdeci">@ H265_LOSSLESS</div></div>
+<div class="ttc" id="anamespacesl_html_gae52adc3898d4dd4cb5b770567fe8031cae6262d49214a3c099b779110458c5c7d"><div class="ttname"><a href="namespacesl.html#gae52adc3898d4dd4cb5b770567fe8031cae6262d49214a3c099b779110458c5c7d">sl::SVO_COMPRESSION_MODE::H264_LOSSLESS</a></div><div class="ttdeci">@ H264_LOSSLESS</div></div>
+<div class="ttc" id="anamespacesl_html_gaea939879dc83823424875a45f4cc9676a06972acc3aafeb3a65dbd996c8dedc73"><div class="ttname"><a href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a06972acc3aafeb3a65dbd996c8dedc73">sl::AREA_EXPORTING_STATE::NOT_STARTED</a></div><div class="ttdeci">@ NOT_STARTED</div></div>
+<div class="ttc" id="anamespacesl_html_gaea939879dc83823424875a45f4cc9676a293c4924fead44d719a886d02e883bec"><div class="ttname"><a href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a293c4924fead44d719a886d02e883bec">sl::AREA_EXPORTING_STATE::FILE_EMPTY</a></div><div class="ttdeci">@ FILE_EMPTY</div></div>
+<div class="ttc" id="anamespacesl_html_gaea939879dc83823424875a45f4cc9676a43491564ebcfd38568918efbd6e840fd"><div class="ttname"><a href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a43491564ebcfd38568918efbd6e840fd">sl::AREA_EXPORTING_STATE::RUNNING</a></div><div class="ttdeci">@ RUNNING</div></div>
+<div class="ttc" id="anamespacesl_html_gaea939879dc83823424875a45f4cc9676a46c82d16f79f5d93bf336fe7ef8f9acb"><div class="ttname"><a href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a46c82d16f79f5d93bf336fe7ef8f9acb">sl::AREA_EXPORTING_STATE::FILE_ERROR</a></div><div class="ttdeci">@ FILE_ERROR</div></div>
+<div class="ttc" id="anamespacesl_html_gaea939879dc83823424875a45f4cc9676a8f1d841af6c34590085e3827dc46a50e"><div class="ttname"><a href="namespacesl.html#gaea939879dc83823424875a45f4cc9676a8f1d841af6c34590085e3827dc46a50e">sl::AREA_EXPORTING_STATE::SPATIAL_MEMORY_DISABLED</a></div><div class="ttdeci">@ SPATIAL_MEMORY_DISABLED</div></div>
+<div class="ttc" id="anamespacesl_html_gaea939879dc83823424875a45f4cc9676ad0749aaba8b833466dfcbb0428e4f89c"><div class="ttname"><a href="namespacesl.html#gaea939879dc83823424875a45f4cc9676ad0749aaba8b833466dfcbb0428e4f89c">sl::AREA_EXPORTING_STATE::SUCCESS</a></div><div class="ttdeci">@ SUCCESS</div></div>
+<div class="ttc" id="anamespacesl_html_gaed1a25f4b15c6110f7ac1dc385827049a21507b40c80068eda19865706fdc2403"><div class="ttname"><a href="namespacesl.html#gaed1a25f4b15c6110f7ac1dc385827049a21507b40c80068eda19865706fdc2403">sl::SIDE::RIGHT</a></div><div class="ttdeci">@ RIGHT</div></div>
+<div class="ttc" id="anamespacesl_html_gaed1a25f4b15c6110f7ac1dc385827049a6328e5e3186c227a021ef2ff77e40197"><div class="ttname"><a href="namespacesl.html#gaed1a25f4b15c6110f7ac1dc385827049a6328e5e3186c227a021ef2ff77e40197">sl::SIDE::BOTH</a></div><div class="ttdeci">@ BOTH</div></div>
+<div class="ttc" id="anamespacesl_html_gaed1a25f4b15c6110f7ac1dc385827049a684d325a7303f52e64011467ff5c5758"><div class="ttname"><a href="namespacesl.html#gaed1a25f4b15c6110f7ac1dc385827049a684d325a7303f52e64011467ff5c5758">sl::SIDE::LEFT</a></div><div class="ttdeci">@ LEFT</div></div>
+<div class="ttc" id="anamespacesl_html_gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f"><div class="ttname"><a href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">sl::AI_MODELS::LAST</a></div><div class="ttdeci">@ LAST</div></div>
+<div class="ttc" id="anamespacesl_html_gafe09520beed3f2eba620708468d0eca6a977d478dacaae531f95695750d1e9d03"><div class="ttname"><a href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6a977d478dacaae531f95695750d1e9d03">sl::ON</a></div><div class="ttdeci">@ ON</div><div class="ttdef"><b>Definition:</b> defines.hpp:187</div></div>
+<div class="ttc" id="anamespacesl_html_gafe09520beed3f2eba620708468d0eca6aac132f2982b98bcaa3445e535a03ff75"><div class="ttname"><a href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6aac132f2982b98bcaa3445e535a03ff75">sl::OFF</a></div><div class="ttdeci">@ OFF</div><div class="ttdef"><b>Definition:</b> defines.hpp:186</div></div>
+<div class="ttc" id="anamespacesl_html_gafe09520beed3f2eba620708468d0eca6aeef9468d1b98bca652a04bf5063fd9d6"><div class="ttname"><a href="namespacesl.html#gafe09520beed3f2eba620708468d0eca6aeef9468d1b98bca652a04bf5063fd9d6">sl::AUTO</a></div><div class="ttdeci">@ AUTO</div><div class="ttdef"><b>Definition:</b> defines.hpp:188</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html"><div class="ttname"><a href="structsl_1_1RecordingStatus.html">sl::RecordingStatus</a></div><div class="ttdoc">Recording structure that contains information about SVO.</div><div class="ttdef"><b>Definition:</b> defines.hpp:510</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html_a1c5bb55f2c0a77c72d0f950cb5d9d9ef"><div class="ttname"><a href="structsl_1_1RecordingStatus.html#a1c5bb55f2c0a77c72d0f950cb5d9d9ef">sl::RecordingStatus::RecordingStatus</a></div><div class="ttdeci">RecordingStatus()</div><div class="ttdoc">Default constructor. Set all parameters to their default values.</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html_a2b5b09fe44a7bcce25875a48d27d7cb3"><div class="ttname"><a href="structsl_1_1RecordingStatus.html#a2b5b09fe44a7bcce25875a48d27d7cb3">sl::RecordingStatus::current_compression_time</a></div><div class="ttdeci">double current_compression_time</div><div class="ttdef"><b>Definition:</b> defines.hpp:514</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html_ab041fc6ffd47623c7036b706473b092b"><div class="ttname"><a href="structsl_1_1RecordingStatus.html#ab041fc6ffd47623c7036b706473b092b">sl::RecordingStatus::current_compression_ratio</a></div><div class="ttdeci">double current_compression_ratio</div><div class="ttdef"><b>Definition:</b> defines.hpp:515</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html_abfdb6f2267771fcb6a2fc4a968443ef9"><div class="ttname"><a href="structsl_1_1RecordingStatus.html#abfdb6f2267771fcb6a2fc4a968443ef9">sl::RecordingStatus::average_compression_time</a></div><div class="ttdeci">double average_compression_time</div><div class="ttdef"><b>Definition:</b> defines.hpp:516</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html_ac11c92540ec51f6fc5a62b437f332ea8"><div class="ttname"><a href="structsl_1_1RecordingStatus.html#ac11c92540ec51f6fc5a62b437f332ea8">sl::RecordingStatus::is_paused</a></div><div class="ttdeci">bool is_paused</div><div class="ttdef"><b>Definition:</b> defines.hpp:512</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html_ad1f0bff7112206922c9d5a87adad6f2b"><div class="ttname"><a href="structsl_1_1RecordingStatus.html#ad1f0bff7112206922c9d5a87adad6f2b">sl::RecordingStatus::status</a></div><div class="ttdeci">bool status</div><div class="ttdef"><b>Definition:</b> defines.hpp:513</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html_ad6c3f2ca54068a9b181ff307930d924f"><div class="ttname"><a href="structsl_1_1RecordingStatus.html#ad6c3f2ca54068a9b181ff307930d924f">sl::RecordingStatus::average_compression_ratio</a></div><div class="ttdeci">double average_compression_ratio</div><div class="ttdef"><b>Definition:</b> defines.hpp:517</div></div>
+<div class="ttc" id="astructsl_1_1RecordingStatus_html_af409115fcaa12619a90c9b581bafa64a"><div class="ttname"><a href="structsl_1_1RecordingStatus.html#af409115fcaa12619a90c9b581bafa64a">sl::RecordingStatus::is_recording</a></div><div class="ttdeci">bool is_recording</div><div class="ttdef"><b>Definition:</b> defines.hpp:511</div></div>
+<div class="ttc" id="astructsl_1_1Resolution_html"><div class="ttname"><a href="structsl_1_1Resolution.html">sl::Resolution</a></div><div class="ttdoc">Width and height of an array.</div><div class="ttdef"><b>Definition:</b> types.hpp:188</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->

@@ -1,0 +1,1088 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>InitParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1InitParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1InitParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">InitParameters Class Reference<div class="ingroups"><a class="el" href="group__Video__group.html">Video Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Holds the options used to initialize the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> object.  
+ <a href="classpyzed_1_1sl_1_1InitParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a966642dc0c6e9d9d7d54889394157a44"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a966642dc0c6e9d9d7d54889394157a44">__cinit__</a> (self, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5b6d46d021957bd781c0c003d60156c6">camera_resolution</a>=RESOLUTION.HD720, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a2b435c213e9f41f5c1f3312af0124290">camera_fps</a>=0, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a3bbfffa102044cfdea15b52d0ab14bcb">svo_real_time_mode</a>=False, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#afd3dd2722970dda70b86d35cc04de0d6">depth_mode</a>=DEPTH_MODE.PERFORMANCE, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">coordinate_units</a>=UNIT.MILLIMETER, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a743f3eb9828d8102f2bd3c7599b3da01">coordinate_system</a>=COORDINATE_SYSTEM.IMAGE, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5e7a148739a4d13b5cd266e779136a31">sdk_verbose</a>=0, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa1f83d3e1230003809d1c688acd86bb5">sdk_gpu_id</a>=-1, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ab63767dc3bff0a34591ed7d321ef9a5d">depth_minimum_distance</a>=-1.0, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7c98056cb987d0a2ae936104364ddaa3">depth_maximum_distance</a>=-1.0, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ad71a767aaa8fb6e8ad02f71bb4bd89c5">camera_disable_self_calib</a>=False, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa6c0e12efad29491d954a32e0a3c878b">camera_image_flip</a>=FLIP_MODE.AUTO, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aac4e897ab029a021462c27d10ef924bd">enable_right_side_measure</a>=False, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#af679179a8b16e065cf4c2e7b91c60dbe">sdk_verbose_log_file</a>=&quot;&quot;, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a930df045f20b0816fb3bd3a1615783bb">depth_stabilization</a>=1, input_t=<a class="el" href="classpyzed_1_1sl_1_1InputType.html">InputType</a>(), <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ac3230b880fb396efb42c0f9febcd4c10">optional_settings_path</a>=&quot;&quot;, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7c353c1906dfac4c770b45a5251d11b3">sensors_required</a>=False, enable_image_enhancement=True, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a715438717703d6ae8ca192b8c3ee772f">optional_opencv_calibration_file</a>=&quot;&quot;, <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a108da6cededa52fc51c8a721d3608f11">open_timeout_sec</a>=5.0)</td></tr>
+<tr class="memdesc:a966642dc0c6e9d9d7d54889394157a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a966642dc0c6e9d9d7d54889394157a44">More...</a><br /></td></tr>
+<tr class="separator:a966642dc0c6e9d9d7d54889394157a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6358d3f5b4b09351aa6841aa7d7aebc2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a6358d3f5b4b09351aa6841aa7d7aebc2">save</a> (self, str filename)</td></tr>
+<tr class="memdesc:a6358d3f5b4b09351aa6841aa7d7aebc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function saves the current set of parameters into a file to be reloaded with the <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa457b2902812e9778a0ac1bb946d84dd">load()</a> function.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a6358d3f5b4b09351aa6841aa7d7aebc2">More...</a><br /></td></tr>
+<tr class="separator:a6358d3f5b4b09351aa6841aa7d7aebc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa457b2902812e9778a0ac1bb946d84dd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa457b2902812e9778a0ac1bb946d84dd">load</a> (self, str filename)</td></tr>
+<tr class="memdesc:aa457b2902812e9778a0ac1bb946d84dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the other parameters from the values contained in a previously saved file.  <a href="classpyzed_1_1sl_1_1InitParameters.html#aa457b2902812e9778a0ac1bb946d84dd">More...</a><br /></td></tr>
+<tr class="separator:aa457b2902812e9778a0ac1bb946d84dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6d46d021957bd781c0c003d60156c6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5b6d46d021957bd781c0c003d60156c6">camera_resolution</a> (self)</td></tr>
+<tr class="memdesc:a5b6d46d021957bd781c0c003d60156c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the chosen camera resolution.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a5b6d46d021957bd781c0c003d60156c6">More...</a><br /></td></tr>
+<tr class="separator:a5b6d46d021957bd781c0c003d60156c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b435c213e9f41f5c1f3312af0124290"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a2b435c213e9f41f5c1f3312af0124290">camera_fps</a> (self)</td></tr>
+<tr class="memdesc:a2b435c213e9f41f5c1f3312af0124290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requested camera frame rate.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a2b435c213e9f41f5c1f3312af0124290">More...</a><br /></td></tr>
+<tr class="separator:a2b435c213e9f41f5c1f3312af0124290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c353c1906dfac4c770b45a5251d11b3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7c353c1906dfac4c770b45a5251d11b3">sensors_required</a> (self)</td></tr>
+<tr class="memdesc:a7c353c1906dfac4c770b45a5251d11b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the motion sensors opening of the ZED 2 / ZED-M to open the camera.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a7c353c1906dfac4c770b45a5251d11b3">More...</a><br /></td></tr>
+<tr class="separator:a7c353c1906dfac4c770b45a5251d11b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bbfffa102044cfdea15b52d0ab14bcb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a3bbfffa102044cfdea15b52d0ab14bcb">svo_real_time_mode</a> (self)</td></tr>
+<tr class="memdesc:a3bbfffa102044cfdea15b52d0ab14bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">When playing back an SVO file, each call to <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2338c15f49b5f132df373a06bd281822">Camera.grab()</a> will extract a new frame and use it.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a3bbfffa102044cfdea15b52d0ab14bcb">More...</a><br /></td></tr>
+<tr class="separator:a3bbfffa102044cfdea15b52d0ab14bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3dd2722970dda70b86d35cc04de0d6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#afd3dd2722970dda70b86d35cc04de0d6">depth_mode</a> (self)</td></tr>
+<tr class="memdesc:afd3dd2722970dda70b86d35cc04de0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SDK offers several <a class="el" href="classpyzed_1_1sl_1_1DEPTH__MODE.html">DEPTH_MODE</a> options offering various levels of performance and accuracy.  <a href="classpyzed_1_1sl_1_1InitParameters.html#afd3dd2722970dda70b86d35cc04de0d6">More...</a><br /></td></tr>
+<tr class="separator:afd3dd2722970dda70b86d35cc04de0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fc82658b89c05c9d6094446391f5db"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">coordinate_units</a> (self)</td></tr>
+<tr class="memdesc:a50fc82658b89c05c9d6094446391f5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This parameter allows you to select the unit to be used for all metric values of the SDK.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">More...</a><br /></td></tr>
+<tr class="separator:a50fc82658b89c05c9d6094446391f5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743f3eb9828d8102f2bd3c7599b3da01"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a743f3eb9828d8102f2bd3c7599b3da01">coordinate_system</a> (self)</td></tr>
+<tr class="memdesc:a743f3eb9828d8102f2bd3c7599b3da01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Positional tracking, point clouds and many other features require a given <a class="el" href="classpyzed_1_1sl_1_1COORDINATE__SYSTEM.html">COORDINATE_SYSTEM</a> to be used as reference.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a743f3eb9828d8102f2bd3c7599b3da01">More...</a><br /></td></tr>
+<tr class="separator:a743f3eb9828d8102f2bd3c7599b3da01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7a148739a4d13b5cd266e779136a31"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5e7a148739a4d13b5cd266e779136a31">sdk_verbose</a> (self)</td></tr>
+<tr class="memdesc:a5e7a148739a4d13b5cd266e779136a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">This parameter allows you to enable the verbosity of the SDK to get a variety of runtime information in the console.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a5e7a148739a4d13b5cd266e779136a31">More...</a><br /></td></tr>
+<tr class="separator:a5e7a148739a4d13b5cd266e779136a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f83d3e1230003809d1c688acd86bb5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa1f83d3e1230003809d1c688acd86bb5">sdk_gpu_id</a> (self)</td></tr>
+<tr class="memdesc:aa1f83d3e1230003809d1c688acd86bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default the SDK will use the most powerful NVIDIA graphics card found.  <a href="classpyzed_1_1sl_1_1InitParameters.html#aa1f83d3e1230003809d1c688acd86bb5">More...</a><br /></td></tr>
+<tr class="separator:aa1f83d3e1230003809d1c688acd86bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63767dc3bff0a34591ed7d321ef9a5d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ab63767dc3bff0a34591ed7d321ef9a5d">depth_minimum_distance</a> (self)</td></tr>
+<tr class="memdesc:ab63767dc3bff0a34591ed7d321ef9a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This parameter allows you to specify the minimum depth value (from the camera) that will be computed, measured in the <a class="el" href="classpyzed_1_1sl_1_1UNIT.html">UNIT</a> you define.  <a href="classpyzed_1_1sl_1_1InitParameters.html#ab63767dc3bff0a34591ed7d321ef9a5d">More...</a><br /></td></tr>
+<tr class="separator:ab63767dc3bff0a34591ed7d321ef9a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c98056cb987d0a2ae936104364ddaa3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7c98056cb987d0a2ae936104364ddaa3">depth_maximum_distance</a> (self)</td></tr>
+<tr class="memdesc:a7c98056cb987d0a2ae936104364ddaa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the current maximum distance that can be computed in the defined <a class="el" href="classpyzed_1_1sl_1_1UNIT.html">UNIT</a>.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a7c98056cb987d0a2ae936104364ddaa3">More...</a><br /></td></tr>
+<tr class="separator:a7c98056cb987d0a2ae936104364ddaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71a767aaa8fb6e8ad02f71bb4bd89c5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ad71a767aaa8fb6e8ad02f71bb4bd89c5">camera_disable_self_calib</a> (self)</td></tr>
+<tr class="memdesc:ad71a767aaa8fb6e8ad02f71bb4bd89c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">At initialization, the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> runs a self-calibration process that corrects small offsets from the device's factory calibration.  <a href="classpyzed_1_1sl_1_1InitParameters.html#ad71a767aaa8fb6e8ad02f71bb4bd89c5">More...</a><br /></td></tr>
+<tr class="separator:ad71a767aaa8fb6e8ad02f71bb4bd89c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c0e12efad29491d954a32e0a3c878b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa6c0e12efad29491d954a32e0a3c878b">camera_image_flip</a> (self)</td></tr>
+<tr class="memdesc:aa6c0e12efad29491d954a32e0a3c878b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you are using the camera upside down, setting this parameter to FLIP_MODE.ON will cancel its rotation.  <a href="classpyzed_1_1sl_1_1InitParameters.html#aa6c0e12efad29491d954a32e0a3c878b">More...</a><br /></td></tr>
+<tr class="separator:aa6c0e12efad29491d954a32e0a3c878b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4e897ab029a021462c27d10ef924bd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aac4e897ab029a021462c27d10ef924bd">enable_right_side_measure</a> (self)</td></tr>
+<tr class="memdesc:aac4e897ab029a021462c27d10ef924bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default, the SDK only computes a single depth map, aligned with the left camera image.  <a href="classpyzed_1_1sl_1_1InitParameters.html#aac4e897ab029a021462c27d10ef924bd">More...</a><br /></td></tr>
+<tr class="separator:aac4e897ab029a021462c27d10ef924bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af679179a8b16e065cf4c2e7b91c60dbe"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#af679179a8b16e065cf4c2e7b91c60dbe">sdk_verbose_log_file</a> (self)</td></tr>
+<tr class="memdesc:af679179a8b16e065cf4c2e7b91c60dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">When <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5e7a148739a4d13b5cd266e779136a31">sdk_verbose</a> is enabled, this parameter allows you to redirect both the SDK verbose messages and your own application messages to a file.  <a href="classpyzed_1_1sl_1_1InitParameters.html#af679179a8b16e065cf4c2e7b91c60dbe">More...</a><br /></td></tr>
+<tr class="separator:af679179a8b16e065cf4c2e7b91c60dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930df045f20b0816fb3bd3a1615783bb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a930df045f20b0816fb3bd3a1615783bb">depth_stabilization</a> (self)</td></tr>
+<tr class="memdesc:a930df045f20b0816fb3bd3a1615783bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regions of the generated depth map can oscillate from one frame to another.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a930df045f20b0816fb3bd3a1615783bb">More...</a><br /></td></tr>
+<tr class="separator:a930df045f20b0816fb3bd3a1615783bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3230b880fb396efb42c0f9febcd4c10"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ac3230b880fb396efb42c0f9febcd4c10">optional_settings_path</a> (self)</td></tr>
+<tr class="memdesc:ac3230b880fb396efb42c0f9febcd4c10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the optional path where the SDK has to search for the settings file (SN&lt;XXXX&gt;.conf file).  <a href="classpyzed_1_1sl_1_1InitParameters.html#ac3230b880fb396efb42c0f9febcd4c10">More...</a><br /></td></tr>
+<tr class="separator:ac3230b880fb396efb42c0f9febcd4c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715438717703d6ae8ca192b8c3ee772f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a715438717703d6ae8ca192b8c3ee772f">optional_opencv_calibration_file</a> (self)</td></tr>
+<tr class="memdesc:a715438717703d6ae8ca192b8c3ee772f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an optional file path where the SDK can find a file containing the calibration information of the camera computed by OpenCV.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a715438717703d6ae8ca192b8c3ee772f">More...</a><br /></td></tr>
+<tr class="separator:a715438717703d6ae8ca192b8c3ee772f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108da6cededa52fc51c8a721d3608f11"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a108da6cededa52fc51c8a721d3608f11">open_timeout_sec</a> (self)</td></tr>
+<tr class="memdesc:a108da6cededa52fc51c8a721d3608f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a timeout in seconds after which an error is reported if the <a class="el" href="classpyzed_1_1sl_1_1Camera.html#aabca561d73610707323bcec1a4c1d6b0">sl.Camera.open()</a> command fails.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a108da6cededa52fc51c8a721d3608f11">More...</a><br /></td></tr>
+<tr class="separator:a108da6cededa52fc51c8a721d3608f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd7b633aab8353cd81c3a274698eae9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5fd7b633aab8353cd81c3a274698eae9">set_from_camera_id</a> (self, uint id)</td></tr>
+<tr class="memdesc:a5fd7b633aab8353cd81c3a274698eae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call of <a class="el" href="classpyzed_1_1sl_1_1InputType.html#a5fd7b633aab8353cd81c3a274698eae9">InputType.set_from_camera_id</a> function of input.  <a href="classpyzed_1_1sl_1_1InitParameters.html#a5fd7b633aab8353cd81c3a274698eae9">More...</a><br /></td></tr>
+<tr class="separator:a5fd7b633aab8353cd81c3a274698eae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade16969278524285582fc38631461a05"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ade16969278524285582fc38631461a05">set_from_serial_number</a> (self, uint serial_number)</td></tr>
+<tr class="memdesc:ade16969278524285582fc38631461a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call of <a class="el" href="classpyzed_1_1sl_1_1InputType.html#ade16969278524285582fc38631461a05">InputType.set_from_serial_number</a> function of input.  <a href="classpyzed_1_1sl_1_1InitParameters.html#ade16969278524285582fc38631461a05">More...</a><br /></td></tr>
+<tr class="separator:ade16969278524285582fc38631461a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c6dc70e9f62aa2356a84cc464ecf60"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ac7c6dc70e9f62aa2356a84cc464ecf60">set_from_svo_file</a> (self, str svo_input_filename)</td></tr>
+<tr class="memdesc:ac7c6dc70e9f62aa2356a84cc464ecf60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call of <a class="el" href="classpyzed_1_1sl_1_1InputType.html#ac7c6dc70e9f62aa2356a84cc464ecf60">InputType.set_from_svo_file</a> function of input.  <a href="classpyzed_1_1sl_1_1InitParameters.html#ac7c6dc70e9f62aa2356a84cc464ecf60">More...</a><br /></td></tr>
+<tr class="separator:ac7c6dc70e9f62aa2356a84cc464ecf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42b5378a0b765e7cfbed76f7c52750d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa42b5378a0b765e7cfbed76f7c52750d">set_from_stream</a> (self, str sender_ip, port=30000)</td></tr>
+<tr class="memdesc:aa42b5378a0b765e7cfbed76f7c52750d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call of <a class="el" href="classpyzed_1_1sl_1_1InputType.html#aa42b5378a0b765e7cfbed76f7c52750d">InputType.set_from_stream</a> function of input.  <a href="classpyzed_1_1sl_1_1InitParameters.html#aa42b5378a0b765e7cfbed76f7c52750d">More...</a><br /></td></tr>
+<tr class="separator:aa42b5378a0b765e7cfbed76f7c52750d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Holds the options used to initialize the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> object. </p>
+<p>Once passed to the <a class="el" href="classpyzed_1_1sl_1_1Camera.html#aabca561d73610707323bcec1a4c1d6b0">Camera.open()</a> function, these settings will be set for the entire execution life time of the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a>. You can get further information in the detailed description bellow.</p>
+<p>This structure allows you to select multiple parameters for the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> such as the selected camera, its resolution, depth mode, coordinate system, and unit, of measurement. Once filled with the desired options, it should be passed to the <a class="el" href="classpyzed_1_1sl_1_1Camera.html#aabca561d73610707323bcec1a4c1d6b0">Camera.open()</a> function. </p><div class="fragment"><div class="line"><span class="keyword">import</span> <a class="code" href="namespacepyzed_1_1sl.html">pyzed.sl</a> <span class="keyword">as</span> sl</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">def </span>main() :</div>
+<div class="line">    zed = sl.Camera() <span class="comment"># Create a ZED camera object</span></div>
+<div class="line">    init_params = sl.InitParameters() <span class="comment"># Set initial parameters</span></div>
+<div class="line">    init_params.sdk_verbose = 0  <span class="comment"># Disable verbose mode</span></div>
+<div class="line">    init_params.camera_resolution = sl.RESOLUTION.HD1080 <span class="comment"># Use HD1080 video mode</span></div>
+<div class="line">    init_params.camera_fps = 30 <span class="comment"># Set fps at 30</span></div>
+<div class="line">    <span class="comment"># Other parameters are left to their default values</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment"># Open the camera</span></div>
+<div class="line">    err = zed.open(init_params)</div>
+<div class="line">    <span class="keywordflow">if</span> err != sl.ERROR_CODE.SUCCESS :</div>
+<div class="line">        exit(-1)</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment"># Close the camera</span></div>
+<div class="line">    zed.close()</div>
+<div class="line">    <span class="keywordflow">return</span> 0</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span> :</div>
+<div class="line">    main()</div>
+<div class="ttc" id="anamespacepyzed_1_1sl_html"><div class="ttname"><a href="namespacepyzed_1_1sl.html">pyzed.sl</a></div><div class="ttdef"><b>Definition:</b> sl.pyx:1</div></div>
+</div><!-- fragment --><p>With its default values, it opens the ZED camera in live mode at RESOLUTION.HD720 and sets the depth mode to DEPTH_MODE.PERFORMANCE You can customize it to fit your application. The parameters can also be saved and reloaded using its <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a6358d3f5b4b09351aa6841aa7d7aebc2">save()</a> and <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa457b2902812e9778a0ac1bb946d84dd">load()</a> functions. </p>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a966642dc0c6e9d9d7d54889394157a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a966642dc0c6e9d9d7d54889394157a44">&#9670;&nbsp;</a></span>__cinit__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def __cinit__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>camera_resolution</em> = <code>RESOLUTION.HD720</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>camera_fps</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>svo_real_time_mode</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>depth_mode</em> = <code>DEPTH_MODE.PERFORMANCE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>coordinate_units</em> = <code>UNIT.MILLIMETER</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>coordinate_system</em> = <code>COORDINATE_SYSTEM.IMAGE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sdk_verbose</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sdk_gpu_id</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>depth_minimum_distance</em> = <code>-1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>depth_maximum_distance</em> = <code>-1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>camera_disable_self_calib</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>camera_image_flip</em> = <code>FLIP_MODE.AUTO</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>enable_right_side_measure</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sdk_verbose_log_file</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>depth_stabilization</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>input_t</em> = <code><a class="el" href="classpyzed_1_1sl_1_1InputType.html">InputType</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>optional_settings_path</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sensors_required</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>enable_image_enhancement</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>optional_opencv_calibration_file</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>open_timeout_sec</em> = <code>5.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera_resolution</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5b6d46d021957bd781c0c003d60156c6">camera_resolution</a> </td></tr>
+    <tr><td class="paramname">camera_fps</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a2b435c213e9f41f5c1f3312af0124290">camera_fps</a> </td></tr>
+    <tr><td class="paramname">svo_real_time_mode</td><td>: activates <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a3bbfffa102044cfdea15b52d0ab14bcb">svo_real_time_mode</a> </td></tr>
+    <tr><td class="paramname">depth_mode</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#afd3dd2722970dda70b86d35cc04de0d6">depth_mode</a> </td></tr>
+    <tr><td class="paramname">coordinate_units</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a50fc82658b89c05c9d6094446391f5db">coordinate_units</a> </td></tr>
+    <tr><td class="paramname">coordinate_system</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a743f3eb9828d8102f2bd3c7599b3da01">coordinate_system</a> </td></tr>
+    <tr><td class="paramname">sdk_verbose</td><td>: sets <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5e7a148739a4d13b5cd266e779136a31">sdk_verbose</a> </td></tr>
+    <tr><td class="paramname">sdk_gpu_id</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa1f83d3e1230003809d1c688acd86bb5">sdk_gpu_id</a> </td></tr>
+    <tr><td class="paramname">depth_minimum_distance</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ab63767dc3bff0a34591ed7d321ef9a5d">depth_minimum_distance</a> </td></tr>
+    <tr><td class="paramname">depth_maximum_distance</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7c98056cb987d0a2ae936104364ddaa3">depth_maximum_distance</a> </td></tr>
+    <tr><td class="paramname">camera_disable_self_calib</td><td>: activates <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ad71a767aaa8fb6e8ad02f71bb4bd89c5">camera_disable_self_calib</a> </td></tr>
+    <tr><td class="paramname">camera_image_flip</td><td>: sets <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa6c0e12efad29491d954a32e0a3c878b">camera_image_flip</a> </td></tr>
+    <tr><td class="paramname">enable_right_side_measure</td><td>: activates <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aac4e897ab029a021462c27d10ef924bd">enable_right_side_measure</a> </td></tr>
+    <tr><td class="paramname">sdk_verbose_log_file</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#af679179a8b16e065cf4c2e7b91c60dbe">sdk_verbose_log_file</a> </td></tr>
+    <tr><td class="paramname">depth_stabilization</td><td>: activates <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a930df045f20b0816fb3bd3a1615783bb">depth_stabilization</a> </td></tr>
+    <tr><td class="paramname">input_t</td><td>: the chosen input_t (<a class="el" href="classpyzed_1_1sl_1_1InputType.html">InputType</a> ) </td></tr>
+    <tr><td class="paramname">optional_settings_path</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#ac3230b880fb396efb42c0f9febcd4c10">optional_settings_path</a> </td></tr>
+    <tr><td class="paramname">sensors_required</td><td>: activates <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7c353c1906dfac4c770b45a5251d11b3">sensors_required</a> </td></tr>
+    <tr><td class="paramname">enable_image_enhancement</td><td>: activates enable_image_enhancement </td></tr>
+    <tr><td class="paramname">optional_opencv_calibration_file</td><td>: sets <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a715438717703d6ae8ca192b8c3ee772f">optional_opencv_calibration_file</a> </td></tr>
+    <tr><td class="paramname">open_timeout_sec</td><td>: sets <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a108da6cededa52fc51c8a721d3608f11">open_timeout_sec</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line">params = sl.InitParameters(camera_resolution=RESOLUTION.HD720, camera_fps=30, depth_mode=DEPTH_MODE.PERFORMANCE)</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a6358d3f5b4b09351aa6841aa7d7aebc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6358d3f5b4b09351aa6841aa7d7aebc2">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def save </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function saves the current set of parameters into a file to be reloaded with the <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#aa457b2902812e9778a0ac1bb946d84dd">load()</a> function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: the path to the file in which the parameters will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if file was successfully saved, otherwise false.</dd></dl>
+<div class="fragment"><div class="line">init_params = sl.InitParameters() <span class="comment"># Set initial parameters</span></div>
+<div class="line">init_params.sdk_verbose = 1 <span class="comment"># Enable verbose mode</span></div>
+<div class="line">init_params.set_from_svo_file(<span class="stringliteral">&quot;/path/to/file.svo&quot;</span>) <span class="comment"># Selects the and SVO file to be read</span></div>
+<div class="line">init_params.save(<span class="stringliteral">&quot;initParameters.conf&quot;</span>) <span class="comment"># Export the parameters into a file</span></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="aa457b2902812e9778a0ac1bb946d84dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa457b2902812e9778a0ac1bb946d84dd">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def load </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sets the other parameters from the values contained in a previously saved file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: the path to the file from which the parameters will be loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the file was successfully loaded, otherwise false.</dd></dl>
+<div class="fragment"><div class="line">init_params = sl.InitParameters() <span class="comment"># Set initial parameters</span></div>
+<div class="line">init_params.load(<span class="stringliteral">&quot;initParameters.conf&quot;</span>) <span class="comment"># Load the init_params from a previously exported file</span></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a5b6d46d021957bd781c0c003d60156c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6d46d021957bd781c0c003d60156c6">&#9670;&nbsp;</a></span>camera_resolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def camera_resolution </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the chosen camera resolution. </p>
+<p>Small resolutions offer higher framerate and lower computation time. In most situations, the RESOLUTION.HD720 at 60 fps is the best balance between image quality and framerate. Available resolutions are listed here: <a class="el" href="classpyzed_1_1sl_1_1RESOLUTION.html">RESOLUTION</a> </p>
+
+</div>
+</div>
+<a id="a2b435c213e9f41f5c1f3312af0124290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b435c213e9f41f5c1f3312af0124290">&#9670;&nbsp;</a></span>camera_fps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def camera_fps </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requested camera frame rate. </p>
+<p>If set to 0, the highest FPS of the specified <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5b6d46d021957bd781c0c003d60156c6">InitParameters.camera_resolution</a> will be used. See <a class="el" href="classpyzed_1_1sl_1_1RESOLUTION.html">RESOLUTION</a> for a list of supported framerates. default 0 </p><dl class="section note"><dt>Note</dt><dd>If the requested camera_fps is unsupported, the closest available FPS will be used. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classpyzed_1_1sl_1_1CameraInformation.html#a225d82ed162f7e7ef9108087442932e6">CameraInformation.__cinit__()</a>, <a class="el" href="classpyzed_1_1sl_1_1CameraConfiguration.html#a2b435c213e9f41f5c1f3312af0124290">CameraConfiguration.camera_fps()</a>, and <a class="el" href="classpyzed_1_1sl_1_1CameraInformation.html#a2b435c213e9f41f5c1f3312af0124290">CameraInformation.camera_fps()</a>.</p>
+
+</div>
+</div>
+<a id="a7c353c1906dfac4c770b45a5251d11b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c353c1906dfac4c770b45a5251d11b3">&#9670;&nbsp;</a></span>sensors_required()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def sensors_required </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force the motion sensors opening of the ZED 2 / ZED-M to open the camera. </p>
+<p>default : false If set to false, the SDK will try to <b>open and use</b> the IMU (second USB device on USB2.0) and will open the camera successfully even if the sensors failed to open. This can be used for example when using a USB3.0 only extension cable (some fiber extension for example). This parameter only impacts the LIVE mode. If set to true, the camera will fail to open if the sensors cannot be opened. This parameter should be used when the IMU data must be available, such as Object Detection module or when the gravity is needed. </p>
+
+</div>
+</div>
+<a id="a3bbfffa102044cfdea15b52d0ab14bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bbfffa102044cfdea15b52d0ab14bcb">&#9670;&nbsp;</a></span>svo_real_time_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def svo_real_time_mode </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When playing back an SVO file, each call to <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2338c15f49b5f132df373a06bd281822">Camera.grab()</a> will extract a new frame and use it. </p>
+<p>However, this ignores the real capture rate of the images saved in the SVO file. Enabling this parameter will bring the SDK closer to a real simulation when playing back a file by using the images' timestamps. However, calls to <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2338c15f49b5f132df373a06bd281822">Camera.grab()</a> will return an error when trying to play too fast, and frames will be dropped when playing too slowly. </p>
+
+</div>
+</div>
+<a id="afd3dd2722970dda70b86d35cc04de0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3dd2722970dda70b86d35cc04de0d6">&#9670;&nbsp;</a></span>depth_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def depth_mode </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The SDK offers several <a class="el" href="classpyzed_1_1sl_1_1DEPTH__MODE.html">DEPTH_MODE</a> options offering various levels of performance and accuracy. </p>
+<p>This parameter allows you to set the <a class="el" href="classpyzed_1_1sl_1_1DEPTH__MODE.html">DEPTH_MODE</a> that best matches your needs. default DEPTH_MODE.PERFORMANCE </p>
+
+</div>
+</div>
+<a id="a50fc82658b89c05c9d6094446391f5db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50fc82658b89c05c9d6094446391f5db">&#9670;&nbsp;</a></span>coordinate_units()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def coordinate_units </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This parameter allows you to select the unit to be used for all metric values of the SDK. </p>
+<p>(depth, point cloud, tracking, mesh, and others). default : UNIT.MILLIMETER </p>
+
+</div>
+</div>
+<a id="a743f3eb9828d8102f2bd3c7599b3da01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743f3eb9828d8102f2bd3c7599b3da01">&#9670;&nbsp;</a></span>coordinate_system()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def coordinate_system </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Positional tracking, point clouds and many other features require a given <a class="el" href="classpyzed_1_1sl_1_1COORDINATE__SYSTEM.html">COORDINATE_SYSTEM</a> to be used as reference. </p>
+<p>This parameter allows you to select the <a class="el" href="classpyzed_1_1sl_1_1COORDINATE__SYSTEM.html">COORDINATE_SYSTEM</a> use by the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> to return its measures. default : COORDINATE_SYSTEM.IMAGE </p>
+
+</div>
+</div>
+<a id="a5e7a148739a4d13b5cd266e779136a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7a148739a4d13b5cd266e779136a31">&#9670;&nbsp;</a></span>sdk_verbose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def sdk_verbose </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This parameter allows you to enable the verbosity of the SDK to get a variety of runtime information in the console. </p>
+<p>When developing an application, enabling verbose mode (sdk_verbose &gt;= 1) can help you understand the current SDK behavior. However, this might not be desirable in a shipped version. default : 0 = no verbose message </p><dl class="section note"><dt>Note</dt><dd>The verbose messages can also be exported into a log file. See <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#af679179a8b16e065cf4c2e7b91c60dbe">sdk_verbose_log_file</a> for more </dd></dl>
+
+</div>
+</div>
+<a id="aa1f83d3e1230003809d1c688acd86bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f83d3e1230003809d1c688acd86bb5">&#9670;&nbsp;</a></span>sdk_gpu_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def sdk_gpu_id </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>By default the SDK will use the most powerful NVIDIA graphics card found. </p>
+<p>However, when running several applications, or using several cameras at the same time, splitting the load over available GPUs can be useful. This parameter allows you to select the GPU used by the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> using an ID from 0 to n-1 GPUs in your PC. default : -1</p>
+<dl class="section note"><dt>Note</dt><dd>A non-positive value will search for all CUDA capable devices and select the most powerful. </dd></dl>
+
+</div>
+</div>
+<a id="ab63767dc3bff0a34591ed7d321ef9a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63767dc3bff0a34591ed7d321ef9a5d">&#9670;&nbsp;</a></span>depth_minimum_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def depth_minimum_distance </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This parameter allows you to specify the minimum depth value (from the camera) that will be computed, measured in the <a class="el" href="classpyzed_1_1sl_1_1UNIT.html">UNIT</a> you define. </p>
+<p>In stereovision (the depth technology used by the camera), looking for closer depth values can have a slight impact on performance. However, this difference is almost invisible on modern GPUs. In cases of limited computational power, increasing this value can provide better performance. default : (-1) corresponding to 700 mm for a ZED/ZED2 and 200 mm for ZED Mini. </p><dl class="section note"><dt>Note</dt><dd>With a ZED camera you can decrease this value to 300 mm whereas you can set it to 100 mm using a ZED Mini and 200 mm for a ZED2. In any case this value cannot be greater than 3 meters. Specific value (0): This will set the depth minimum distance to the minimum authorized value :<ul>
+<li>300mm for ZED</li>
+<li>100mm for ZED-M</li>
+<li>200mm for ZED2 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a7c98056cb987d0a2ae936104364ddaa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c98056cb987d0a2ae936104364ddaa3">&#9670;&nbsp;</a></span>depth_maximum_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def depth_maximum_distance </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the current maximum distance that can be computed in the defined <a class="el" href="classpyzed_1_1sl_1_1UNIT.html">UNIT</a>. </p>
+<p>When estimating the depth, the SDK uses this upper limit to turn higher values into TOO_FAR ones (unavailable depth values). </p><dl class="section note"><dt>Note</dt><dd>Changing this value has no impact on performance and doesn't affect the positional tracking nor the spatial mapping. (Only the depth, point cloud, normals) </dd></dl>
+
+</div>
+</div>
+<a id="ad71a767aaa8fb6e8ad02f71bb4bd89c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71a767aaa8fb6e8ad02f71bb4bd89c5">&#9670;&nbsp;</a></span>camera_disable_self_calib()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def camera_disable_self_calib </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>At initialization, the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> runs a self-calibration process that corrects small offsets from the device's factory calibration. </p>
+<p>A drawback is that calibration parameters will sligtly change from one (live) run to another, which can be an issue for repeatability. If set to true, self-calibration will be disabled and calibration parameters won't be optimized (using the parameters of the conf file). default : false </p><dl class="section note"><dt>Note</dt><dd>In most situations, self calibration should remain enabled. </dd></dl>
+
+</div>
+</div>
+<a id="aa6c0e12efad29491d954a32e0a3c878b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6c0e12efad29491d954a32e0a3c878b">&#9670;&nbsp;</a></span>camera_image_flip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def camera_image_flip </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If you are using the camera upside down, setting this parameter to FLIP_MODE.ON will cancel its rotation. </p>
+<p>The images will be horizontally flipped. default : FLIP_MODE.AUTO </p>
+
+</div>
+</div>
+<a id="aac4e897ab029a021462c27d10ef924bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac4e897ab029a021462c27d10ef924bd">&#9670;&nbsp;</a></span>enable_right_side_measure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def enable_right_side_measure </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>By default, the SDK only computes a single depth map, aligned with the left camera image. </p>
+<p>This parameter allows you to enable the DEPTH.DEPTH_RIGHT and other &lt;XXX&gt;.RIGHT at the cost of additional computational time. For example, mixed reality passthrough applications require one depth map per eye, so this parameter can be activated. default : false </p>
+
+</div>
+</div>
+<a id="af679179a8b16e065cf4c2e7b91c60dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af679179a8b16e065cf4c2e7b91c60dbe">&#9670;&nbsp;</a></span>sdk_verbose_log_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def sdk_verbose_log_file </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a5e7a148739a4d13b5cd266e779136a31">sdk_verbose</a> is enabled, this parameter allows you to redirect both the SDK verbose messages and your own application messages to a file. </p>
+<p>default : (empty) Should contain the path to the file to be written. A file will be created if missing. </p><dl class="section note"><dt>Note</dt><dd>Setting this parameter to any value will redirect all standard output print calls of the entire program. This means that your own standard output print calls will be redirected to the log file. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The log file won't be cleared after successive executions of the application. This means that it can grow indefinitely if not cleared. </dd></dl>
+
+</div>
+</div>
+<a id="a930df045f20b0816fb3bd3a1615783bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930df045f20b0816fb3bd3a1615783bb">&#9670;&nbsp;</a></span>depth_stabilization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def depth_stabilization </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regions of the generated depth map can oscillate from one frame to another. </p>
+<p>These oscillations result from a lack of texture (too homogeneous) on an object and by image noise. This parameter control a stabilization filter that reduces these oscillations. In the range [0-100], 0 is disable (raw depth), smoothness is linear from 1 to 100. </p><dl class="section note"><dt>Note</dt><dd>The stabilization uses the positional tracking to increase its accuracy, so the Positional Tracking module will be enabled automatically when set to a value different from 0 </dd></dl>
+
+</div>
+</div>
+<a id="ac3230b880fb396efb42c0f9febcd4c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3230b880fb396efb42c0f9febcd4c10">&#9670;&nbsp;</a></span>optional_settings_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def optional_settings_path </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the optional path where the SDK has to search for the settings file (SN&lt;XXXX&gt;.conf file). </p>
+<p>This file contains the calibration information of the camera.</p>
+<p>default : (empty). The SNXXX.conf file will be searched in the default directory (/usr/local/zed/settings/ for Linux or C:/ProgramData/stereolabs/settings for Windows)</p>
+<dl class="section note"><dt>Note</dt><dd>if a path is specified and no file has been found, the SDK will search on the default path (see default) for the *.conf file.</dd></dl>
+<p>Automatic download of conf file (through ZED Explorer or the installer) will still download the file in the default path. If you want to use another path by using this entry, make sure to copy the file in the proper location.</p>
+<div class="fragment"><div class="line">init_params = sl.InitParameters() <span class="comment"># Set initial parameters</span></div>
+<div class="line">home = <span class="stringliteral">&quot;/path/to/home&quot;</span></div>
+<div class="line">path= home+<span class="stringliteral">&quot;/Documents/settings/&quot;</span> <span class="comment"># assuming /path/to/home/Documents/settings/SNXXXX.conf exists. Otherwise, it will be searched in /usr/local/zed/settings/</span></div>
+<div class="line">init_params.optional_settings_path = path</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a715438717703d6ae8ca192b8c3ee772f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715438717703d6ae8ca192b8c3ee772f">&#9670;&nbsp;</a></span>optional_opencv_calibration_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def optional_opencv_calibration_file </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set an optional file path where the SDK can find a file containing the calibration information of the camera computed by OpenCV. </p>
+<dl class="section note"><dt>Note</dt><dd>Using this will disable the factory calibration of the camera. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Erroneous calibration values can lead to poor SDK modules accuracy. </dd></dl>
+
+</div>
+</div>
+<a id="a108da6cededa52fc51c8a721d3608f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108da6cededa52fc51c8a721d3608f11">&#9670;&nbsp;</a></span>open_timeout_sec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def open_timeout_sec </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a timeout in seconds after which an error is reported if the <a class="el" href="classpyzed_1_1sl_1_1Camera.html#aabca561d73610707323bcec1a4c1d6b0">sl.Camera.open()</a> command fails. </p>
+<p>Set to '-1' to try to open the camera endlessly without returning error in case of failure. Set to '0' to return error in case of failure at the first attempt. Default : 5.0f </p><dl class="section note"><dt>Note</dt><dd>This parameter only impacts the LIVE mode. </dd></dl>
+
+</div>
+</div>
+<a id="a5fd7b633aab8353cd81c3a274698eae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fd7b633aab8353cd81c3a274698eae9">&#9670;&nbsp;</a></span>set_from_camera_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_from_camera_id </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call of <a class="el" href="classpyzed_1_1sl_1_1InputType.html#a5fd7b633aab8353cd81c3a274698eae9">InputType.set_from_camera_id</a> function of input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>: The desired camera ID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade16969278524285582fc38631461a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade16969278524285582fc38631461a05">&#9670;&nbsp;</a></span>set_from_serial_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_from_serial_number </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>serial_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call of <a class="el" href="classpyzed_1_1sl_1_1InputType.html#ade16969278524285582fc38631461a05">InputType.set_from_serial_number</a> function of input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serial_number</td><td>: The desired camera serial_number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7c6dc70e9f62aa2356a84cc464ecf60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c6dc70e9f62aa2356a84cc464ecf60">&#9670;&nbsp;</a></span>set_from_svo_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_from_svo_file </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>svo_input_filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call of <a class="el" href="classpyzed_1_1sl_1_1InputType.html#ac7c6dc70e9f62aa2356a84cc464ecf60">InputType.set_from_svo_file</a> function of input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">svo_input_filename</td><td>: The path to the desired SVO file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa42b5378a0b765e7cfbed76f7c52750d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42b5378a0b765e7cfbed76f7c52750d">&#9670;&nbsp;</a></span>set_from_stream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_from_stream </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>sender_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>port</em> = <code>30000</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call of <a class="el" href="classpyzed_1_1sl_1_1InputType.html#aa42b5378a0b765e7cfbed76f7c52750d">InputType.set_from_stream</a> function of input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender_ip</td><td>: The IP address of the streaming sender </td></tr>
+    <tr><td class="paramname">port</td><td>: The port on which to listen. Default: 30000 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

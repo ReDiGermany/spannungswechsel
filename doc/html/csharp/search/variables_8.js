@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['id_1058',['id',['../structsl_1_1ObjectData.html#a7441ef0865bcb3db9b8064dd7375c1ea',1,'sl.ObjectData.id()'],['../classsl_1_1ObjectsBatch.html#a7441ef0865bcb3db9b8064dd7375c1ea',1,'sl.ObjectsBatch.id()'],['../structsl_1_1DeviceProperties.html#a7441ef0865bcb3db9b8064dd7375c1ea',1,'sl.DeviceProperties.id()']]],
+  ['idretentiontime_1059',['idRetentionTime',['../structsl_1_1BatchParameters.html#a2bedeb25428e5b5ad6fcc26d67142d10',1,'sl::BatchParameters']]],
+  ['image_5fsync_5fval_1060',['image_sync_val',['../structsl_1_1SensorsData.html#a1ed20f7c90c8dde8aca60ca88152bcbf',1,'sl::SensorsData']]],
+  ['imagesync_1061',['imageSync',['../structsl_1_1ObjectDetectionParameters.html#a9b1621ec8a25cad11658775f6f7e80d9',1,'sl::ObjectDetectionParameters']]],
+  ['imu_1062',['imu',['../structsl_1_1SensorsData.html#a8bb16e9e9ff00bf9310d0e1d10a839ba',1,'sl::SensorsData']]],
+  ['imu_5fmagnometer_5frotation_1063',['imu_magnometer_rotation',['../structsl_1_1SensorsConfiguration.html#aa1d5ef4037613cdc1ad2393cc07e5bc3',1,'sl::SensorsConfiguration']]],
+  ['imu_5fmagnometer_5ftranslation_1064',['imu_magnometer_translation',['../structsl_1_1SensorsConfiguration.html#a1089fe0bbeb67f212325a0f3ae068bce',1,'sl::SensorsConfiguration']]],
+  ['imu_5ftemp_1065',['imu_temp',['../structsl_1_1TemperatureSensorData.html#a90aa772faa34936a1978bde7ed5474cd',1,'sl::TemperatureSensorData']]],
+  ['initialworldposition_1066',['initialWorldPosition',['../classsl_1_1PositionalTrackingParameters.html#addd15277352a856f0695119fcf84540f',1,'sl::PositionalTrackingParameters']]],
+  ['initialworldrotation_1067',['initialWorldRotation',['../classsl_1_1PositionalTrackingParameters.html#a52aab7a6d47e0c20ffafc5fbea307d93',1,'sl::PositionalTrackingParameters']]],
+  ['inputtype_1068',['inputType',['../structsl_1_1CameraInformation.html#a0329739f2db27a78b1d1a22716b207c4',1,'sl.CameraInformation.inputType()'],['../classsl_1_1InitParameters.html#a358540f2d51c4874fd31f332f340faaf',1,'sl.InitParameters.inputType()']]],
+  ['ip_1069',['ip',['../structsl_1_1StreamingProperties.html#a865cb413d15ff160fe873d00ca9e30b0',1,'sl::StreamingProperties']]],
+  ['ipstream_1070',['ipStream',['../classsl_1_1InitParameters.html#abfcddcf4bae47fb546f7060bdf108de4',1,'sl::InitParameters']]],
+  ['is_5fpaused_1071',['is_paused',['../structsl_1_1RecordingStatus.html#ac11c92540ec51f6fc5a62b437f332ea8',1,'sl::RecordingStatus']]],
+  ['is_5frecording_1072',['is_recording',['../structsl_1_1RecordingStatus.html#af409115fcaa12619a90c9b581bafa64a',1,'sl::RecordingStatus']]],
+  ['isavailable_1073',['isAvailable',['../structsl_1_1SensorParameters.html#a0df202ed36867a559961a8a23d3241d3',1,'sl::SensorParameters']]],
+  ['isgrounded_1074',['isGrounded',['../structsl_1_1CustomBoxObjectData.html#a5c1fe17b7b048d1b7a82c0689c310a5f',1,'sl::CustomBoxObjectData']]],
+  ['isnew_1075',['isNew',['../structsl_1_1Objects.html#a4f71ccea91537244d4d7f45e617dedbc',1,'sl::Objects']]],
+  ['istracked_1076',['isTracked',['../structsl_1_1Objects.html#adfc049c42543eb54156d64c924e5440c',1,'sl::Objects']]]
+];

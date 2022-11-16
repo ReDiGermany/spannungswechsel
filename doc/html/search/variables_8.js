@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['id_1209',['id',['../classsl_1_1ObjectData.html#a7441ef0865bcb3db9b8064dd7375c1ea',1,'sl::ObjectData::id()'],['../structsl_1_1DeviceProperties.html#a7441ef0865bcb3db9b8064dd7375c1ea',1,'sl::DeviceProperties::id()']]],
+  ['id_5fretention_5ftime_1210',['id_retention_time',['../structsl_1_1BatchParameters.html#a205323818b78e596427370bd5fa0c0c9',1,'sl::BatchParameters']]],
+  ['image_5fsize_1211',['image_size',['../structsl_1_1CameraParameters.html#afeb167aec3e0d45aa3b412784bed9327',1,'sl::CameraParameters']]],
+  ['image_5fsync_1212',['image_sync',['../structsl_1_1ObjectDetectionParameters.html#a51e7be8ef1449d88408234151642e3b4',1,'sl::ObjectDetectionParameters']]],
+  ['image_5fsync_5ftrigger_1213',['image_sync_trigger',['../structsl_1_1SensorsData.html#a83863b40b29dc70c5df994602e61dd0a',1,'sl::SensorsData']]],
+  ['imu_1214',['imu',['../structsl_1_1SensorsData.html#ae6c8eb788cfa9037da7891612df4247f',1,'sl::SensorsData']]],
+  ['imu_5fmagnetometer_5ftransform_1215',['imu_magnetometer_transform',['../structsl_1_1SensorsConfiguration.html#a595d9f7f3edd8f2fba871e7b2151f210',1,'sl::SensorsConfiguration']]],
+  ['initial_5fworld_5ftransform_1216',['initial_world_transform',['../structsl_1_1PositionalTrackingParameters.html#aa2acc20b47d292508ff3ddd00f61bc6c',1,'sl::PositionalTrackingParameters']]],
+  ['input_1217',['input',['../structsl_1_1InitParameters.html#a038bdd9a6c90977959bc30164bdf7882',1,'sl::InitParameters']]],
+  ['input_5ftype_1218',['input_type',['../structsl_1_1CameraInformation.html#adab7fe6f9f320469310e8f8eef341ad1',1,'sl::CameraInformation']]],
+  ['invalid_5fvalue_1219',['INVALID_VALUE',['../namespacesl.html#a4b9e09f3a6ec86d198da396092c990c1',1,'sl']]],
+  ['ip_1220',['ip',['../structsl_1_1StreamingProperties.html#afb2606cb3d89feee976b1457dfa4fac3',1,'sl::StreamingProperties']]],
+  ['is_5favailable_1221',['is_available',['../structsl_1_1SensorsData_1_1BarometerData.html#a5c7907851daebae8adaea36a34caed71',1,'sl::SensorsData::BarometerData::is_available()'],['../structsl_1_1SensorsData_1_1MagnetometerData.html#a5c7907851daebae8adaea36a34caed71',1,'sl::SensorsData::MagnetometerData::is_available()'],['../structsl_1_1SensorsData_1_1IMUData.html#a5c7907851daebae8adaea36a34caed71',1,'sl::SensorsData::IMUData::is_available()']]],
+  ['is_5fgrounded_1222',['is_grounded',['../classsl_1_1CustomBoxObjectData.html#a0fce95d97aa37e653471e6ad5f358e50',1,'sl::CustomBoxObjectData']]],
+  ['is_5fnew_1223',['is_new',['../classsl_1_1Objects.html#a02e9f7b8108aedf00be260acf95383de',1,'sl::Objects']]],
+  ['is_5fpaused_1224',['is_paused',['../structsl_1_1RecordingStatus.html#ac11c92540ec51f6fc5a62b437f332ea8',1,'sl::RecordingStatus']]],
+  ['is_5frecording_1225',['is_recording',['../structsl_1_1RecordingStatus.html#af409115fcaa12619a90c9b581bafa64a',1,'sl::RecordingStatus']]],
+  ['is_5ftracked_1226',['is_tracked',['../classsl_1_1Objects.html#a6faa608f081f6b8050dcde80ece5a583',1,'sl::Objects']]],
+  ['isavailable_1227',['isAvailable',['../structsl_1_1SensorParameters.html#a0df202ed36867a559961a8a23d3241d3',1,'sl::SensorParameters']]]
+];

@@ -1,0 +1,617 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Mesh.hpp Source File | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('Mesh_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Mesh.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * SOFTWARE LICENSE</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * BY USING YOUR CAMERA YOU AGREE TO THIS SOFTWARE LICENSE. BEFORE SETTING IT UP,</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * PLEASE READ THIS SOFTWARE LICENSE CAREFULLY. IF YOU DO NOT ACCEPT THIS</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * SOFTWARE LICENSE, DO NOT USE YOUR CAMERA. RETURN IT TO UNUSED TO STEREOLABS</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * FOR A REFUND. Contact STEREOLABS at support@stereolabs.com</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * 1. Definitions</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * &quot;Authorized Accessory&quot; means a STEREOLABS branded ZED, ZED 2 or ZED Mini, and a STEREOLABS</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * licensed, third party branded, ZED hardware accessory whose packaging bears the official</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * &quot;Licensed for ZED&quot; logo. The ZED camera, ZED 2 camera and the ZED Mini camera are Authorized Accessories</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * solely for purpose of this Software license.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * &quot;Software&quot; means the Software Development Kit, available on the stereolabs.com website, and including any updates STEREOLABS may make available from</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * time to time.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * &quot;Unauthorized Accessories&quot; means all hardware accessories other than an Authorized Accessory.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * &quot;Unauthorized Software&quot; means any software not distributed by STEREOLABS.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &quot;You&quot; means the user of a ZED, ZED 2 or ZED Mini camera.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * 2. License</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * a. The Software is licensed to You, not sold. You are licensed to use the</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * Software only as downloaded from the stereolabs.com website, and updated by</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * STEREOLABS from time to time. You may not copy or reverse engineer the Software.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * b. As conditions to this Software license, You agree that:</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> *   i. You will use Your Software with ZED, ZED 2 or ZED Mini camera only and not with any</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *      other device (including). You will not use Unauthorized Accessories. They may</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *      not work or may stop working permanently after a Software update.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *   ii. You will not use or install any Unauthorized Software with an Authorized Accessory. If You do, Your ZED, ZED 2</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> *       or ZED Mini camera may stop working permanently at that time or after a later</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> *       Software update.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *   iii. You will not attempt to defeat or circumvent any Software technical limitation,</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> *        security, or anti-piracy system. If You do, Your ZED, ZED 2 or ZED Mini camera may stop</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *        working permanently at that time or after a later Software update.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> *   iv. STEREOLABS may use technical measures, including Software updates, to limit use</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *       of the Software to the ZED, ZED 2 or ZED Mini camera, to prevent use of Unauthorized</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *       Accessories, and to protect the technical limitations, security and anti-piracy</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *       systems in the ZED, ZED 2 or ZED Mini camera.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *   v. STEREOLABS may update the Software from time to time without further notice to You,</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *      for example, to update any technical limitation, security, or anti-piracy system.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * 3. Warranty</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * The Software is covered by the Limited Warranty for Your ZED, ZED 2 or ZED Mini camera, and</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * STEREOLABS gives no other guarantee, warranty, or condition for the Software. No one</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * else may give any guarantee, warranty, or condition on STEREOLABS&#39;s behalf.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * 4. EXCLUSION OF CERTAIN DAMAGES</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * STEREOLABS IS NOT RESPONSIBLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * DAMAGES; ANY LOSS OF DATA, PRIVACY, CONFIDENTIALITY, OR PROFITS; OR ANY INABILITY TO</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * USE THE SOFTWARE. THESE EXCLUSIONS APPLY EVEN IF STEREOLABS HAS BEEN ADVISED OF THE</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * POSSIBILITY OF THESE DAMAGES, AND EVEN IF ANY REMEDY FAILS OF ITS ESSENTIAL PURPOSE.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * 5. Choice of Law</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * French law governs the interpretation of this Software license and any claim that</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * STEREOLABS has breached it, regardless of conflict of law principles.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifndef __MESH_HPP__</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define __MESH_HPP__</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#include &lt;sl_core/utils/Core.hpp&gt;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifdef CORE_COMPILATION</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#define SL_SCANNING_EXPORT __declspec(dllexport)</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#define SL_SCANNING_EXPORT</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#elif __GNUC__</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#define SL_SCANNING_EXPORT __attribute__((visibility(&quot;default&quot;</span>)))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#define SL_SCANNING_EXPORT</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesl.html">sl</a> {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group__SpatialMapping__group.html#ga001684799cf2f2a948bfa463f39cae19">   90</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__SpatialMapping__group.html#ga001684799cf2f2a948bfa463f39cae19">MESH_FILE_FORMAT</a> {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="namespacesl.html#ga001684799cf2f2a948bfa463f39cae19a4a3c9b033e217d93b5841938bc23e3a2">PLY</a>, </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="namespacesl.html#ga001684799cf2f2a948bfa463f39cae19a3527f957d6810f291d5baf809c1ea1c5">PLY_BIN</a>, </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="namespacesl.html#ga001684799cf2f2a948bfa463f39cae19af34d534adfb78a9e6432be4621a93eec">OBJ</a>, </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    };</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="namespacesl.html#af8e4634d3ea07fd7995778439c8b64ce">  100</a></span>&#160;    <a class="code" href="classsl_1_1String.html">String</a> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__SpatialMapping__group.html#ga001684799cf2f2a948bfa463f39cae19">MESH_FILE_FORMAT</a> &amp;mesh_frmt);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="namespacesl.html#a90881f4bb9ae854ad14801755d6ec528">  102</a></span>&#160;    <span class="keyword">inline</span> std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__SpatialMapping__group.html#ga001684799cf2f2a948bfa463f39cae19">MESH_FILE_FORMAT</a> &amp;mesh_frmt) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(mesh_frmt);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group__SpatialMapping__group.html#ga6c3e4c7af6febbba4baeed6aec323443">  112</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="group__SpatialMapping__group.html#ga6c3e4c7af6febbba4baeed6aec323443">MESH_TEXTURE_FORMAT</a> {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="namespacesl.html#ga6c3e4c7af6febbba4baeed6aec323443a889574aebacda6bfd3e534e2b49b8028">RGB</a>, </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="namespacesl.html#ga6c3e4c7af6febbba4baeed6aec323443aea3495a278957dc58165e48a8945469f">RGBA</a>, </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    };</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="namespacesl.html#a60c62e8139176f3ec966bc33336cdae9">  121</a></span>&#160;    <a class="code" href="classsl_1_1String.html">String</a> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="group__SpatialMapping__group.html#ga6c3e4c7af6febbba4baeed6aec323443">MESH_TEXTURE_FORMAT</a> &amp;text_frmt);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="namespacesl.html#ad8ea167fbb5f3b415981c732772078f4">  123</a></span>&#160;    <span class="keyword">inline</span> std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="group__SpatialMapping__group.html#ga6c3e4c7af6febbba4baeed6aec323443">MESH_TEXTURE_FORMAT</a> &amp;text_frmt) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(text_frmt);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classsl_1_1MeshFilterParameters.html">  135</a></span>&#160;    <span class="keyword">class </span><span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="classsl_1_1MeshFilterParameters.html">MeshFilterParameters</a> {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classsl_1_1MeshFilterParameters.html#a090065a0a84ccbbd05da8e14bd8db51d">  143</a></span>&#160;        <span class="keyword">enum class</span> <a class="code" href="classsl_1_1MeshFilterParameters.html#a090065a0a84ccbbd05da8e14bd8db51d">MESH_FILTER</a> {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            LOW, </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            MEDIUM, </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            HIGH, </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        };</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classsl_1_1MeshFilterParameters.html#a10bf37af218ee043361294db1f17b470">  155</a></span>&#160;        <a class="code" href="classsl_1_1MeshFilterParameters.html#a10bf37af218ee043361294db1f17b470">MeshFilterParameters</a>(<a class="code" href="classsl_1_1MeshFilterParameters.html#a090065a0a84ccbbd05da8e14bd8db51d">MESH_FILTER</a> mesh_filtering = MESH_FILTER::LOW) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            set(mesh_filtering);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classsl_1_1MeshFilterParameters.html#aed2f0da7d8e7bc74befda7ebf997a985">  163</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1MeshFilterParameters.html#aed2f0da7d8e7bc74befda7ebf997a985">set</a>(<a class="code" href="classsl_1_1MeshFilterParameters.html#a090065a0a84ccbbd05da8e14bd8db51d">MESH_FILTER</a> mesh_filtering = MESH_FILTER::LOW) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            filtering = mesh_filtering;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classsl_1_1MeshFilterParameters.html#a728d27177f8c77de34d4e904349b430d">  167</a></span>&#160;        <a class="code" href="classsl_1_1MeshFilterParameters.html#a090065a0a84ccbbd05da8e14bd8db51d">MESH_FILTER</a> filtering = MESH_FILTER::LOW;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classsl_1_1MeshFilterParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">  174</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1MeshFilterParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">save</a>(<a class="code" href="classsl_1_1String.html">String</a> filename);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classsl_1_1MeshFilterParameters.html#a706f01ee88d8ba83113e49487f834eba">  181</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1MeshFilterParameters.html#a706f01ee88d8ba83113e49487f834eba">load</a>(<a class="code" href="classsl_1_1String.html">String</a> filename);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    };</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="namespacesl.html#ada603a181e7c4d76ce011e3b696d026b">  185</a></span>&#160;    <a class="code" href="classsl_1_1String.html">String</a> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="classsl_1_1MeshFilterParameters.html#a090065a0a84ccbbd05da8e14bd8db51d">MeshFilterParameters::MESH_FILTER</a> &amp;mesh_filter);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="namespacesl.html#ad2915f806c31400f311d4d7a58121f42">  187</a></span>&#160;    <span class="keyword">inline</span> std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="classsl_1_1MeshFilterParameters.html#a090065a0a84ccbbd05da8e14bd8db51d">MeshFilterParameters::MESH_FILTER</a> &amp;mesh_filter) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(mesh_filter);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">/*@cond SHOWHIDDEN*/</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">enum class</span> MESH_CREATION {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        NONE,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        LIVE,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        LOAD</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    };</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">class </span>SL_CORE_EXPORT TextureImagePool {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        TextureImagePool();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        ~TextureImagePool();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> isEmpty() {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">return</span> v.size() == 0;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        std::vector&lt;std::pair&lt;sl::Mat *, sl::Transform&gt;&gt; v;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordtype">void</span> init(<a class="code" href="structsl_1_1Resolution.html">sl::Resolution</a> res);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordtype">void</span> emplace_back();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <a class="code" href="structsl_1_1Resolution.html">sl::Resolution</a> resolution;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    };</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">/*@endcond*/</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html">  227</a></span>&#160;    <span class="keyword">class </span><span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="classsl_1_1Chunk.html">Chunk</a> {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#a9b6d483f2d4284db0933f85aa636653b">  232</a></span>&#160;        <a class="code" href="classsl_1_1Chunk.html#a9b6d483f2d4284db0933f85aa636653b">Chunk</a>();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#a5aab0c1f2cbca353b840193d9d54cdd7">  237</a></span>&#160;        <a class="code" href="classsl_1_1Chunk.html#a5aab0c1f2cbca353b840193d9d54cdd7">~Chunk</a>();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#abb6cb34905b5a140c0e9061a4ef6d9cc">  242</a></span>&#160;        std::vector&lt;float3&gt; <a class="code" href="classsl_1_1Chunk.html#abb6cb34905b5a140c0e9061a4ef6d9cc">vertices</a>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#afe6275a3faa3ff197640fe00eab02343">  247</a></span>&#160;        std::vector&lt;uint3&gt; <a class="code" href="classsl_1_1Chunk.html#afe6275a3faa3ff197640fe00eab02343">triangles</a>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#aa8b89f2c6e91a2a2a618f339091725b3">  252</a></span>&#160;        std::vector&lt;float3&gt; <a class="code" href="classsl_1_1Chunk.html#aa8b89f2c6e91a2a2a618f339091725b3">normals</a>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#aad00ad5e31c7ee177c876881acf9969e">  261</a></span>&#160;        std::vector&lt;float2&gt; <a class="code" href="classsl_1_1Chunk.html#aad00ad5e31c7ee177c876881acf9969e">uv</a>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#ad421643e83d036aca98ff1e76b53a8b4">  266</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="classsl_1_1Chunk.html#ad421643e83d036aca98ff1e76b53a8b4">timestamp</a>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#add3d4c4e6434e88a64d55d2c5c53b056">  271</a></span>&#160;        <a class="code" href="classsl_1_1Vector3.html">float3</a> <a class="code" href="classsl_1_1Chunk.html#add3d4c4e6434e88a64d55d2c5c53b056">barycenter</a>;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#aed5906ba847e1e5ff98b487b31acb048">  276</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1Chunk.html#aed5906ba847e1e5ff98b487b31acb048">has_been_updated</a>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="classsl_1_1Chunk.html#ac8bb3912a3ce86b15842e79d0b421204">  281</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1Chunk.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    };</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html">  291</a></span>&#160;    <span class="keyword">class </span><span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="classsl_1_1Mesh.html">Mesh</a> {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>SpatialMappingHandler;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">  297</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;size_t&gt; <a class="code" href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#a2a23c7c0c4e0da252b7bc0e13b6f81d8">  302</a></span>&#160;        <a class="code" href="classsl_1_1Mesh.html#a2a23c7c0c4e0da252b7bc0e13b6f81d8">Mesh</a>();</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#a6e26384cfb03023e7dc2e5419baf813f">  307</a></span>&#160;        <a class="code" href="classsl_1_1Mesh.html#a6e26384cfb03023e7dc2e5419baf813f">~Mesh</a>();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#a058f5ba2efd52be49bb6e7025a2c4ec0">  312</a></span>&#160;        std::vector&lt;Chunk&gt; <a class="code" href="classsl_1_1Mesh.html#a058f5ba2efd52be49bb6e7025a2c4ec0">chunks</a>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#abb6cb34905b5a140c0e9061a4ef6d9cc">  317</a></span>&#160;        std::vector&lt;float3&gt; <a class="code" href="classsl_1_1Mesh.html#abb6cb34905b5a140c0e9061a4ef6d9cc">vertices</a>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#afe6275a3faa3ff197640fe00eab02343">  322</a></span>&#160;        std::vector&lt;uint3&gt; <a class="code" href="classsl_1_1Mesh.html#afe6275a3faa3ff197640fe00eab02343">triangles</a>;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#aa8b89f2c6e91a2a2a618f339091725b3">  327</a></span>&#160;        std::vector&lt;float3&gt; <a class="code" href="classsl_1_1Mesh.html#aa8b89f2c6e91a2a2a618f339091725b3">normals</a>;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#aad00ad5e31c7ee177c876881acf9969e">  336</a></span>&#160;        std::vector&lt;float2&gt; <a class="code" href="classsl_1_1Mesh.html#aad00ad5e31c7ee177c876881acf9969e">uv</a>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#ac86ea892583ae2350090474ae13379e0">  343</a></span>&#160;        <a class="code" href="classsl_1_1Mat.html">Mat</a> <a class="code" href="classsl_1_1Mesh.html#ac86ea892583ae2350090474ae13379e0">texture</a>;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#a395a97e6d39083fbd20e581f7e38c1f5">  348</a></span>&#160;        <a class="code" href="classsl_1_1Chunk.html">Chunk</a> &amp;<a class="code" href="classsl_1_1Mesh.html#a395a97e6d39083fbd20e581f7e38c1f5">operator[]</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#af2f83a58035672b3aab19a4dea4f741d">  354</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classsl_1_1Mesh.html#af2f83a58035672b3aab19a4dea4f741d">getNumberOfTriangles</a>();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#a09de10626f0e5b8286ce8e39ea912d2c">  362</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1Mesh.html#a09de10626f0e5b8286ce8e39ea912d2c">updateMeshFromChunkList</a>(<a class="code" href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a> IDs = <a class="code" href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a>());</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#af9dc4882bf6d5db941f8ec91a3ce9dad">  369</a></span>&#160;        <a class="code" href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a> <a class="code" href="classsl_1_1Mesh.html#af9dc4882bf6d5db941f8ec91a3ce9dad">getVisibleList</a>(<a class="code" href="classsl_1_1Transform.html">Transform</a> camera_pose);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#acc0eea456723d44eecf9f1d1bd61c53a">  377</a></span>&#160;        <a class="code" href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a> <a class="code" href="classsl_1_1Mesh.html#acc0eea456723d44eecf9f1d1bd61c53a">getSurroundingList</a>(<a class="code" href="classsl_1_1Transform.html">Transform</a> camera_pose, <span class="keywordtype">float</span> radius);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#ac6559662785e5764a73ed0cf17ddd4ca">  390</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1Mesh.html#ac6559662785e5764a73ed0cf17ddd4ca">filter</a>(<a class="code" href="classsl_1_1MeshFilterParameters.html">MeshFilterParameters</a> mesh_filter_params = <a class="code" href="classsl_1_1MeshFilterParameters.html">MeshFilterParameters</a>(), <span class="keywordtype">bool</span> update_chunk_only = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#a5fd7d6069ed79613363de7ca9ee0a4df">  409</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1Mesh.html#a5fd7d6069ed79613363de7ca9ee0a4df">applyTexture</a>(<a class="code" href="group__SpatialMapping__group.html#ga6c3e4c7af6febbba4baeed6aec323443">MESH_TEXTURE_FORMAT</a> texture_format = <a class="code" href="namespacesl.html#ga6c3e4c7af6febbba4baeed6aec323443a889574aebacda6bfd3e534e2b49b8028">MESH_TEXTURE_FORMAT::RGB</a>);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#ad1a6c69c1e5ec234a83b9346d5205822">  420</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1Mesh.html#ad1a6c69c1e5ec234a83b9346d5205822">mergeChunks</a>(<span class="keywordtype">int</span> faces_per_chunk);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#a401af518099e43a6e40e8f41ee915d17">  430</a></span>&#160;        <a class="code" href="classsl_1_1Vector3.html">sl::float3</a> <a class="code" href="classsl_1_1Mesh.html#a401af518099e43a6e40e8f41ee915d17">getGravityEstimate</a>();</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#ae7d711457c31baebd461e0f996916df5">  437</a></span>&#160;        std::vector&lt;int&gt; <a class="code" href="classsl_1_1Mesh.html#ae7d711457c31baebd461e0f996916df5">getBoundaries</a>();</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#aa77ee385f771ae467d51cb4c815ae465">  449</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1Mesh.html#aa77ee385f771ae467d51cb4c815ae465">save</a>(<a class="code" href="classsl_1_1String.html">String</a> filename, <a class="code" href="group__SpatialMapping__group.html#ga001684799cf2f2a948bfa463f39cae19">MESH_FILE_FORMAT</a> type = <a class="code" href="namespacesl.html#ga001684799cf2f2a948bfa463f39cae19af34d534adfb78a9e6432be4621a93eec">MESH_FILE_FORMAT::OBJ</a>, <a class="code" href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a> IDs = <a class="code" href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a>());</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
+<div class="line"><a name="l00459"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#a0db696f043133694b211d5b967798cc3">  459</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1Mesh.html#a0db696f043133694b211d5b967798cc3">load</a>(<a class="code" href="classsl_1_1String.html">String</a> filename, <span class="keywordtype">bool</span> update_chunk_only = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
+<div class="line"><a name="l00464"></a><span class="lineno"><a class="line" href="classsl_1_1Mesh.html#ac8bb3912a3ce86b15842e79d0b421204">  464</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1Mesh.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        std::shared_ptr&lt;TextureImagePool&gt; p_im_pool;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <a class="code" href="structsl_1_1CameraParameters.html">sl::CameraParameters</a> cam_param;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="keywordtype">float</span> min_d, max_d;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="keywordtype">size_t</span> memory;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        <span class="keywordtype">bool</span> face_order;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <span class="keywordtype">int</span> id_mesher; </div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        MESH_CREATION state;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    };</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
+<div class="line"><a name="l00482"></a><span class="lineno"><a class="line" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3">  482</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3">PLANE_TYPE</a> {</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <a class="code" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3a86e5d0d8407ce71f7e2004ef3949894e">HORIZONTAL</a>,</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <a class="code" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3a3e1b74251c07310c5f1b968145bf00dc">VERTICAL</a>,</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <a class="code" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a>,</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <a class="code" href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">LAST</a></div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    };</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00492"></a><span class="lineno"><a class="line" href="namespacesl.html#a6a7c2408a0e3cfa0eedc7f2e5af44ced">  492</a></span>&#160;    <a class="code" href="classsl_1_1String.html">String</a> <span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(<span class="keyword">const</span> <a class="code" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3">PLANE_TYPE</a> &amp;type);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
+<div class="line"><a name="l00494"></a><span class="lineno"><a class="line" href="namespacesl.html#a3097270ae02d7097f57c72aaaa967f7f">  494</a></span>&#160;    <span class="keyword">inline</span> std::ostream &amp;<a class="code" href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3">PLANE_TYPE</a> &amp;type) {</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">toString</a>(type);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    }</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160; </div>
+<div class="line"><a name="l00506"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html">  506</a></span>&#160;    <span class="keyword">class </span><span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="classsl_1_1Plane.html">Plane</a> {</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>PlaneCandidate;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>PlaneDetectorHandler;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#ae2159c976aa9b03f37f1f8854346d9aa">  513</a></span>&#160;        <a class="code" href="classsl_1_1Plane.html#ae2159c976aa9b03f37f1f8854346d9aa">Plane</a>();</div>
+<div class="line"><a name="l00514"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#afd6a8411d0c58362c5667c6178abb69a">  514</a></span>&#160;        <a class="code" href="classsl_1_1Plane.html#afd6a8411d0c58362c5667c6178abb69a">~Plane</a>();</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
+<div class="line"><a name="l00519"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#ac8bb3912a3ce86b15842e79d0b421204">  519</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1Plane.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160; </div>
+<div class="line"><a name="l00526"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#a68b132b8768ffe82fdb524bbca21780b">  526</a></span>&#160;        <a class="code" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3">PLANE_TYPE</a> type = <a class="code" href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3a696b031073e74bf2cb98e5ef201d4aa3">PLANE_TYPE::UNKNOWN</a>;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160; </div>
+<div class="line"><a name="l00533"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#a046a48e89921bf838a7b228918746a73">  533</a></span>&#160;        <a class="code" href="classsl_1_1Vector3.html">sl::float3</a> <a class="code" href="classsl_1_1Plane.html#a046a48e89921bf838a7b228918746a73">getNormal</a>();</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160; </div>
+<div class="line"><a name="l00539"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#a062d10901acf2fbe4eb864b262af97f8">  539</a></span>&#160;        <a class="code" href="classsl_1_1Vector3.html">sl::float3</a> <a class="code" href="classsl_1_1Plane.html#a062d10901acf2fbe4eb864b262af97f8">getCenter</a>();</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160; </div>
+<div class="line"><a name="l00546"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#ade8093152b83fe576253347e434ae7f2">  546</a></span>&#160;        <a class="code" href="classsl_1_1Transform.html">Transform</a> <a class="code" href="classsl_1_1Plane.html#ade8093152b83fe576253347e434ae7f2">getPose</a>();</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
+<div class="line"><a name="l00554"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#a33522ea247c2f47921352c307279dd86">  554</a></span>&#160;        <a class="code" href="classsl_1_1Vector2.html">sl::float2</a> <a class="code" href="classsl_1_1Plane.html#a33522ea247c2f47921352c307279dd86">getExtents</a>();</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160; </div>
+<div class="line"><a name="l00560"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#ae5080d63d8703462b5db4d1eb4333942">  560</a></span>&#160;        <a class="code" href="classsl_1_1Vector4.html">sl::float4</a> <a class="code" href="classsl_1_1Plane.html#ae5080d63d8703462b5db4d1eb4333942">getPlaneEquation</a>();</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
+<div class="line"><a name="l00566"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#a5b39b867384ebd7dda864ce65828f158">  566</a></span>&#160;        std::vector&lt;sl::float3&gt; <a class="code" href="classsl_1_1Plane.html#a5b39b867384ebd7dda864ce65828f158">getBounds</a>();</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#a21acee3650c2a30dac0e86ab9a619de3">  572</a></span>&#160;        <a class="code" href="classsl_1_1Mesh.html">sl::Mesh</a> <a class="code" href="classsl_1_1Plane.html#a21acee3650c2a30dac0e86ab9a619de3">extractMesh</a>();</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
+<div class="line"><a name="l00580"></a><span class="lineno"><a class="line" href="classsl_1_1Plane.html#aa27f341eb265f9f6e0615be04ea6ead8">  580</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classsl_1_1Plane.html#aa27f341eb265f9f6e0615be04ea6ead8">getClosestDistance</a>(<a class="code" href="classsl_1_1Vector3.html">sl::float3</a> point = <a class="code" href="classsl_1_1Vector3.html">sl::float3</a>(0, 0, 0));</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        </div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        std::vector&lt;sl::float3&gt; bounds3D_RuCu;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        std::vector&lt;sl::float2&gt; bounds2D;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        <a class="code" href="classsl_1_1Vector2.html">sl::float2</a> sizeRect;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        <a class="code" href="classsl_1_1Transform.html">sl::Transform</a> planePose_RuCu;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <a class="code" href="classsl_1_1Vector4.html">sl::float4</a> e_RcCi;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <a class="code" href="classsl_1_1Transform.html">sl::Transform</a> Rt_RcCiRuCi;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <a class="code" href="classsl_1_1Transform.html">sl::Transform</a> pose_RcCi;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160; </div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <a class="code" href="classsl_1_1Vector4.html">sl::float4</a> planeEquation_RuCu;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <a class="code" href="classsl_1_1Mesh.html">sl::Mesh</a> mesh_RuCu;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160; </div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        <span class="keywordtype">float</span> coef, unit_factor;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <a class="code" href="classsl_1_1Transform.html">sl::Transform</a> transform_Ci2Cu;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keywordtype">bool</span> isFloor;</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <span class="keywordtype">void</span> computeBoundingRect(std::vector&lt;sl::uint2&gt; &amp;bounds2D_RcCi, <a class="code" href="classsl_1_1Vector4.html">sl::float4</a> param);</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    };</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
+<div class="line"><a name="l00608"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html">  608</a></span>&#160;    <span class="keyword">class </span><span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="classsl_1_1PointCloudChunk.html">PointCloudChunk</a> {</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00613"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html#adbad1d788a24c8661498b19f88f12d42">  613</a></span>&#160;        <a class="code" href="classsl_1_1PointCloudChunk.html#adbad1d788a24c8661498b19f88f12d42">PointCloudChunk</a>();</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160; </div>
+<div class="line"><a name="l00618"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html#a41fa2f2b80a964b78e61d81fe1b0f1a6">  618</a></span>&#160;        <a class="code" href="classsl_1_1PointCloudChunk.html#a41fa2f2b80a964b78e61d81fe1b0f1a6">~PointCloudChunk</a>();</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00623"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html#a29bdd26f56ad96c2d5208c364a2d44d4">  623</a></span>&#160;        std::vector&lt;float4&gt; <a class="code" href="classsl_1_1PointCloudChunk.html#a29bdd26f56ad96c2d5208c364a2d44d4">vertices</a>;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160; </div>
+<div class="line"><a name="l00628"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html#aa8b89f2c6e91a2a2a618f339091725b3">  628</a></span>&#160;        std::vector&lt;float3&gt; <a class="code" href="classsl_1_1PointCloudChunk.html#aa8b89f2c6e91a2a2a618f339091725b3">normals</a>;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
+<div class="line"><a name="l00633"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html#ad421643e83d036aca98ff1e76b53a8b4">  633</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="classsl_1_1PointCloudChunk.html#ad421643e83d036aca98ff1e76b53a8b4">timestamp</a>;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160; </div>
+<div class="line"><a name="l00638"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html#add3d4c4e6434e88a64d55d2c5c53b056">  638</a></span>&#160;        <a class="code" href="classsl_1_1Vector3.html">float3</a> <a class="code" href="classsl_1_1PointCloudChunk.html#add3d4c4e6434e88a64d55d2c5c53b056">barycenter</a>;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160; </div>
+<div class="line"><a name="l00643"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html#aed5906ba847e1e5ff98b487b31acb048">  643</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1PointCloudChunk.html#aed5906ba847e1e5ff98b487b31acb048">has_been_updated</a>;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160; </div>
+<div class="line"><a name="l00648"></a><span class="lineno"><a class="line" href="classsl_1_1PointCloudChunk.html#ac8bb3912a3ce86b15842e79d0b421204">  648</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1PointCloudChunk.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    };</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160; </div>
+<div class="line"><a name="l00658"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html">  658</a></span>&#160;    <span class="keyword">class </span><span class="comment">/*@cond SHOWHIDDEN*/</span>SL_SCANNING_EXPORT<span class="comment">/*@endcond*/</span> <a class="code" href="classsl_1_1FusedPointCloud.html">FusedPointCloud</a> {</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>SpatialMappingHandler;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160; </div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00664"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#ac702b26ea76d51abde3263c61926f2a2">  664</a></span>&#160;        <span class="keyword">typedef</span> std::vector&lt;size_t&gt; <a class="code" href="classsl_1_1FusedPointCloud.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a>;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160; </div>
+<div class="line"><a name="l00669"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#a6e47492dec30087af31fb3bf1fb9230d">  669</a></span>&#160;        <a class="code" href="classsl_1_1FusedPointCloud.html#a6e47492dec30087af31fb3bf1fb9230d">FusedPointCloud</a>();</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160; </div>
+<div class="line"><a name="l00674"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#a5ec8ecff414bf3af3685837b85410d12">  674</a></span>&#160;        <a class="code" href="classsl_1_1FusedPointCloud.html#a5ec8ecff414bf3af3685837b85410d12">~FusedPointCloud</a>();</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160; </div>
+<div class="line"><a name="l00679"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#aa3ad8c669e4402dfb4b88ea36af462b1">  679</a></span>&#160;        std::vector&lt;PointCloudChunk&gt; <a class="code" href="classsl_1_1FusedPointCloud.html#aa3ad8c669e4402dfb4b88ea36af462b1">chunks</a>;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
+<div class="line"><a name="l00684"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#a29bdd26f56ad96c2d5208c364a2d44d4">  684</a></span>&#160;        std::vector&lt;float4&gt; <a class="code" href="classsl_1_1FusedPointCloud.html#a29bdd26f56ad96c2d5208c364a2d44d4">vertices</a>;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
+<div class="line"><a name="l00689"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#aa8b89f2c6e91a2a2a618f339091725b3">  689</a></span>&#160;        std::vector&lt;float3&gt; <a class="code" href="classsl_1_1FusedPointCloud.html#aa8b89f2c6e91a2a2a618f339091725b3">normals</a>;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160; </div>
+<div class="line"><a name="l00694"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#a27ca124c3c5b2b817ef429db83644d50">  694</a></span>&#160;        <a class="code" href="classsl_1_1PointCloudChunk.html">PointCloudChunk</a> &amp;<a class="code" href="classsl_1_1FusedPointCloud.html#a27ca124c3c5b2b817ef429db83644d50">operator[]</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160; </div>
+<div class="line"><a name="l00700"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#a12e9b8ab7d4790342216dafd10433c01">  700</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classsl_1_1FusedPointCloud.html#a12e9b8ab7d4790342216dafd10433c01">getNumberOfPoints</a>();</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160; </div>
+<div class="line"><a name="l00708"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#adca0fe544893a0a17a52551e3431249b">  708</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1FusedPointCloud.html#adca0fe544893a0a17a52551e3431249b">updateFromChunkList</a>(<a class="code" href="classsl_1_1FusedPointCloud.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a> IDs = <a class="code" href="classsl_1_1FusedPointCloud.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a>());</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160; </div>
+<div class="line"><a name="l00720"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#aa77ee385f771ae467d51cb4c815ae465">  720</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1FusedPointCloud.html#aa77ee385f771ae467d51cb4c815ae465">save</a>(<a class="code" href="classsl_1_1String.html">String</a> filename, <a class="code" href="group__SpatialMapping__group.html#ga001684799cf2f2a948bfa463f39cae19">MESH_FILE_FORMAT</a> type = <a class="code" href="namespacesl.html#ga001684799cf2f2a948bfa463f39cae19af34d534adfb78a9e6432be4621a93eec">MESH_FILE_FORMAT::OBJ</a>, <a class="code" href="classsl_1_1FusedPointCloud.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a> IDs = <a class="code" href="classsl_1_1FusedPointCloud.html#ac702b26ea76d51abde3263c61926f2a2">chunkList</a>());</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
+<div class="line"><a name="l00730"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#a0db696f043133694b211d5b967798cc3">  730</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsl_1_1FusedPointCloud.html#a0db696f043133694b211d5b967798cc3">load</a>(<a class="code" href="classsl_1_1String.html">String</a> filename, <span class="keywordtype">bool</span> update_chunk_only = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160; </div>
+<div class="line"><a name="l00735"></a><span class="lineno"><a class="line" href="classsl_1_1FusedPointCloud.html#ac8bb3912a3ce86b15842e79d0b421204">  735</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsl_1_1FusedPointCloud.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <a class="code" href="structsl_1_1CameraParameters.html">sl::CameraParameters</a> cam_param;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="keywordtype">float</span> min_d, max_d;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keywordtype">size_t</span> memory;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <span class="keywordtype">int</span> id_mesher; </div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        MESH_CREATION state;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    };</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160; </div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160; </div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;}</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160; </div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MESH_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html"><div class="ttname"><a href="classsl_1_1Chunk.html">sl::Chunk</a></div><div class="ttdoc">Represents a sub-mesh, it contains local vertices and triangles.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:227</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_a5aab0c1f2cbca353b840193d9d54cdd7"><div class="ttname"><a href="classsl_1_1Chunk.html#a5aab0c1f2cbca353b840193d9d54cdd7">sl::Chunk::~Chunk</a></div><div class="ttdeci">~Chunk()</div><div class="ttdoc">Chunk destructor.</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_a9b6d483f2d4284db0933f85aa636653b"><div class="ttname"><a href="classsl_1_1Chunk.html#a9b6d483f2d4284db0933f85aa636653b">sl::Chunk::Chunk</a></div><div class="ttdeci">Chunk()</div><div class="ttdoc">Default constructor which creates an empty Chunk.</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_aa8b89f2c6e91a2a2a618f339091725b3"><div class="ttname"><a href="classsl_1_1Chunk.html#aa8b89f2c6e91a2a2a618f339091725b3">sl::Chunk::normals</a></div><div class="ttdeci">std::vector&lt; float3 &gt; normals</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:252</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_aad00ad5e31c7ee177c876881acf9969e"><div class="ttname"><a href="classsl_1_1Chunk.html#aad00ad5e31c7ee177c876881acf9969e">sl::Chunk::uv</a></div><div class="ttdeci">std::vector&lt; float2 &gt; uv</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:261</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_abb6cb34905b5a140c0e9061a4ef6d9cc"><div class="ttname"><a href="classsl_1_1Chunk.html#abb6cb34905b5a140c0e9061a4ef6d9cc">sl::Chunk::vertices</a></div><div class="ttdeci">std::vector&lt; float3 &gt; vertices</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:242</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="classsl_1_1Chunk.html#ac8bb3912a3ce86b15842e79d0b421204">sl::Chunk::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clears all chunk data.</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_ad421643e83d036aca98ff1e76b53a8b4"><div class="ttname"><a href="classsl_1_1Chunk.html#ad421643e83d036aca98ff1e76b53a8b4">sl::Chunk::timestamp</a></div><div class="ttdeci">unsigned long long timestamp</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:266</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_add3d4c4e6434e88a64d55d2c5c53b056"><div class="ttname"><a href="classsl_1_1Chunk.html#add3d4c4e6434e88a64d55d2c5c53b056">sl::Chunk::barycenter</a></div><div class="ttdeci">float3 barycenter</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:271</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_aed5906ba847e1e5ff98b487b31acb048"><div class="ttname"><a href="classsl_1_1Chunk.html#aed5906ba847e1e5ff98b487b31acb048">sl::Chunk::has_been_updated</a></div><div class="ttdeci">bool has_been_updated</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:276</div></div>
+<div class="ttc" id="aclasssl_1_1Chunk_html_afe6275a3faa3ff197640fe00eab02343"><div class="ttname"><a href="classsl_1_1Chunk.html#afe6275a3faa3ff197640fe00eab02343">sl::Chunk::triangles</a></div><div class="ttdeci">std::vector&lt; uint3 &gt; triangles</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:247</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html">sl::FusedPointCloud</a></div><div class="ttdoc">A fused point cloud contains both geometric and color data of the scene captured by spatial mapping.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:658</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_a0db696f043133694b211d5b967798cc3"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#a0db696f043133694b211d5b967798cc3">sl::FusedPointCloud::load</a></div><div class="ttdeci">bool load(String filename, bool update_chunk_only=false)</div><div class="ttdoc">Loads the fused point cloud from a file.</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_a12e9b8ab7d4790342216dafd10433c01"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#a12e9b8ab7d4790342216dafd10433c01">sl::FusedPointCloud::getNumberOfPoints</a></div><div class="ttdeci">size_t getNumberOfPoints()</div><div class="ttdoc">Computes the total number of triangles stored in all chunks.</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_a27ca124c3c5b2b817ef429db83644d50"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#a27ca124c3c5b2b817ef429db83644d50">sl::FusedPointCloud::operator[]</a></div><div class="ttdeci">PointCloudChunk &amp; operator[](int index)</div><div class="ttdoc">Defines the [] operator to directly access the desired chunk.</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_a29bdd26f56ad96c2d5208c364a2d44d4"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#a29bdd26f56ad96c2d5208c364a2d44d4">sl::FusedPointCloud::vertices</a></div><div class="ttdeci">std::vector&lt; float4 &gt; vertices</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:684</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_a5ec8ecff414bf3af3685837b85410d12"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#a5ec8ecff414bf3af3685837b85410d12">sl::FusedPointCloud::~FusedPointCloud</a></div><div class="ttdeci">~FusedPointCloud()</div><div class="ttdoc">FusedPointCloud destructor.</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_a6e47492dec30087af31fb3bf1fb9230d"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#a6e47492dec30087af31fb3bf1fb9230d">sl::FusedPointCloud::FusedPointCloud</a></div><div class="ttdeci">FusedPointCloud()</div><div class="ttdoc">Default constructor which creates an empty FusedPointCloud.</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_aa3ad8c669e4402dfb4b88ea36af462b1"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#aa3ad8c669e4402dfb4b88ea36af462b1">sl::FusedPointCloud::chunks</a></div><div class="ttdeci">std::vector&lt; PointCloudChunk &gt; chunks</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:679</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_aa77ee385f771ae467d51cb4c815ae465"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#aa77ee385f771ae467d51cb4c815ae465">sl::FusedPointCloud::save</a></div><div class="ttdeci">bool save(String filename, MESH_FILE_FORMAT type=MESH_FILE_FORMAT::OBJ, chunkList IDs=chunkList())</div><div class="ttdoc">Saves the current fused point cloud into a file.</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_aa8b89f2c6e91a2a2a618f339091725b3"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#aa8b89f2c6e91a2a2a618f339091725b3">sl::FusedPointCloud::normals</a></div><div class="ttdeci">std::vector&lt; float3 &gt; normals</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:689</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_ac702b26ea76d51abde3263c61926f2a2"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#ac702b26ea76d51abde3263c61926f2a2">sl::FusedPointCloud::chunkList</a></div><div class="ttdeci">std::vector&lt; size_t &gt; chunkList</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:664</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#ac8bb3912a3ce86b15842e79d0b421204">sl::FusedPointCloud::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clears all the data.</div></div>
+<div class="ttc" id="aclasssl_1_1FusedPointCloud_html_adca0fe544893a0a17a52551e3431249b"><div class="ttname"><a href="classsl_1_1FusedPointCloud.html#adca0fe544893a0a17a52551e3431249b">sl::FusedPointCloud::updateFromChunkList</a></div><div class="ttdeci">void updateFromChunkList(chunkList IDs=chunkList())</div><div class="ttdoc">Updates vertices / normals / colors from chunk data pointed by the given chunkList.</div></div>
+<div class="ttc" id="aclasssl_1_1Mat_html"><div class="ttname"><a href="classsl_1_1Mat.html">sl::Mat</a></div><div class="ttdoc">The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...</div><div class="ttdef"><b>Definition:</b> Core.hpp:154</div></div>
+<div class="ttc" id="aclasssl_1_1MeshFilterParameters_html"><div class="ttname"><a href="classsl_1_1MeshFilterParameters.html">sl::MeshFilterParameters</a></div><div class="ttdoc">Defines the behavior of the sl::Mesh::filter function.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:135</div></div>
+<div class="ttc" id="aclasssl_1_1MeshFilterParameters_html_a090065a0a84ccbbd05da8e14bd8db51d"><div class="ttname"><a href="classsl_1_1MeshFilterParameters.html#a090065a0a84ccbbd05da8e14bd8db51d">sl::MeshFilterParameters::MESH_FILTER</a></div><div class="ttdeci">MESH_FILTER</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:143</div></div>
+<div class="ttc" id="aclasssl_1_1MeshFilterParameters_html_a10bf37af218ee043361294db1f17b470"><div class="ttname"><a href="classsl_1_1MeshFilterParameters.html#a10bf37af218ee043361294db1f17b470">sl::MeshFilterParameters::MeshFilterParameters</a></div><div class="ttdeci">MeshFilterParameters(MESH_FILTER mesh_filtering=MESH_FILTER::LOW)</div><div class="ttdoc">Default constructor, set all parameters to their default and optimized values.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:155</div></div>
+<div class="ttc" id="aclasssl_1_1MeshFilterParameters_html_a706f01ee88d8ba83113e49487f834eba"><div class="ttname"><a href="classsl_1_1MeshFilterParameters.html#a706f01ee88d8ba83113e49487f834eba">sl::MeshFilterParameters::load</a></div><div class="ttdeci">bool load(String filename)</div><div class="ttdoc">Loads the values of the parameters contained in a file.</div></div>
+<div class="ttc" id="aclasssl_1_1MeshFilterParameters_html_aed2f0da7d8e7bc74befda7ebf997a985"><div class="ttname"><a href="classsl_1_1MeshFilterParameters.html#aed2f0da7d8e7bc74befda7ebf997a985">sl::MeshFilterParameters::set</a></div><div class="ttdeci">void set(MESH_FILTER mesh_filtering=MESH_FILTER::LOW)</div><div class="ttdoc">Sets the filtering intensity.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:163</div></div>
+<div class="ttc" id="aclasssl_1_1MeshFilterParameters_html_af9cc1551df5fc5f6ba7d10f86a93df42"><div class="ttname"><a href="classsl_1_1MeshFilterParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">sl::MeshFilterParameters::save</a></div><div class="ttdeci">bool save(String filename)</div><div class="ttdoc">Saves the current bunch of parameters into a file.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html"><div class="ttname"><a href="classsl_1_1Mesh.html">sl::Mesh</a></div><div class="ttdoc">A mesh contains the geometric (and optionally texture) data of the scene captured by spatial mapping.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:291</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_a058f5ba2efd52be49bb6e7025a2c4ec0"><div class="ttname"><a href="classsl_1_1Mesh.html#a058f5ba2efd52be49bb6e7025a2c4ec0">sl::Mesh::chunks</a></div><div class="ttdeci">std::vector&lt; Chunk &gt; chunks</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:312</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_a09de10626f0e5b8286ce8e39ea912d2c"><div class="ttname"><a href="classsl_1_1Mesh.html#a09de10626f0e5b8286ce8e39ea912d2c">sl::Mesh::updateMeshFromChunkList</a></div><div class="ttdeci">void updateMeshFromChunkList(chunkList IDs=chunkList())</div><div class="ttdoc">Updates vertices / normals / triangles / uv from chunk data pointed by the given chunkList.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_a0db696f043133694b211d5b967798cc3"><div class="ttname"><a href="classsl_1_1Mesh.html#a0db696f043133694b211d5b967798cc3">sl::Mesh::load</a></div><div class="ttdeci">bool load(String filename, bool update_chunk_only=false)</div><div class="ttdoc">Loads the mesh from a file.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_a2a23c7c0c4e0da252b7bc0e13b6f81d8"><div class="ttname"><a href="classsl_1_1Mesh.html#a2a23c7c0c4e0da252b7bc0e13b6f81d8">sl::Mesh::Mesh</a></div><div class="ttdeci">Mesh()</div><div class="ttdoc">Default constructor which creates an empty Mesh.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_a395a97e6d39083fbd20e581f7e38c1f5"><div class="ttname"><a href="classsl_1_1Mesh.html#a395a97e6d39083fbd20e581f7e38c1f5">sl::Mesh::operator[]</a></div><div class="ttdeci">Chunk &amp; operator[](int index)</div><div class="ttdoc">Defines the [] operator to directly access the desired chunk.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_a401af518099e43a6e40e8f41ee915d17"><div class="ttname"><a href="classsl_1_1Mesh.html#a401af518099e43a6e40e8f41ee915d17">sl::Mesh::getGravityEstimate</a></div><div class="ttdeci">sl::float3 getGravityEstimate()</div><div class="ttdoc">Estimates the gravity vector.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_a5fd7d6069ed79613363de7ca9ee0a4df"><div class="ttname"><a href="classsl_1_1Mesh.html#a5fd7d6069ed79613363de7ca9ee0a4df">sl::Mesh::applyTexture</a></div><div class="ttdeci">bool applyTexture(MESH_TEXTURE_FORMAT texture_format=MESH_TEXTURE_FORMAT::RGB)</div><div class="ttdoc">Applies texture to the mesh.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_a6e26384cfb03023e7dc2e5419baf813f"><div class="ttname"><a href="classsl_1_1Mesh.html#a6e26384cfb03023e7dc2e5419baf813f">sl::Mesh::~Mesh</a></div><div class="ttdeci">~Mesh()</div><div class="ttdoc">Mesh destructor.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_aa77ee385f771ae467d51cb4c815ae465"><div class="ttname"><a href="classsl_1_1Mesh.html#aa77ee385f771ae467d51cb4c815ae465">sl::Mesh::save</a></div><div class="ttdeci">bool save(String filename, MESH_FILE_FORMAT type=MESH_FILE_FORMAT::OBJ, chunkList IDs=chunkList())</div><div class="ttdoc">Saves the current Mesh into a file.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_aa8b89f2c6e91a2a2a618f339091725b3"><div class="ttname"><a href="classsl_1_1Mesh.html#aa8b89f2c6e91a2a2a618f339091725b3">sl::Mesh::normals</a></div><div class="ttdeci">std::vector&lt; float3 &gt; normals</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:327</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_aad00ad5e31c7ee177c876881acf9969e"><div class="ttname"><a href="classsl_1_1Mesh.html#aad00ad5e31c7ee177c876881acf9969e">sl::Mesh::uv</a></div><div class="ttdeci">std::vector&lt; float2 &gt; uv</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:336</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_abb6cb34905b5a140c0e9061a4ef6d9cc"><div class="ttname"><a href="classsl_1_1Mesh.html#abb6cb34905b5a140c0e9061a4ef6d9cc">sl::Mesh::vertices</a></div><div class="ttdeci">std::vector&lt; float3 &gt; vertices</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:317</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_ac6559662785e5764a73ed0cf17ddd4ca"><div class="ttname"><a href="classsl_1_1Mesh.html#ac6559662785e5764a73ed0cf17ddd4ca">sl::Mesh::filter</a></div><div class="ttdeci">bool filter(MeshFilterParameters mesh_filter_params=MeshFilterParameters(), bool update_chunk_only=false)</div><div class="ttdoc">Filters the mesh.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_ac702b26ea76d51abde3263c61926f2a2"><div class="ttname"><a href="classsl_1_1Mesh.html#ac702b26ea76d51abde3263c61926f2a2">sl::Mesh::chunkList</a></div><div class="ttdeci">std::vector&lt; size_t &gt; chunkList</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:297</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_ac86ea892583ae2350090474ae13379e0"><div class="ttname"><a href="classsl_1_1Mesh.html#ac86ea892583ae2350090474ae13379e0">sl::Mesh::texture</a></div><div class="ttdeci">Mat texture</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:343</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="classsl_1_1Mesh.html#ac8bb3912a3ce86b15842e79d0b421204">sl::Mesh::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clears all the data.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_acc0eea456723d44eecf9f1d1bd61c53a"><div class="ttname"><a href="classsl_1_1Mesh.html#acc0eea456723d44eecf9f1d1bd61c53a">sl::Mesh::getSurroundingList</a></div><div class="ttdeci">chunkList getSurroundingList(Transform camera_pose, float radius)</div><div class="ttdoc">Computes the list of chunks which are close to a specific point of view.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_ad1a6c69c1e5ec234a83b9346d5205822"><div class="ttname"><a href="classsl_1_1Mesh.html#ad1a6c69c1e5ec234a83b9346d5205822">sl::Mesh::mergeChunks</a></div><div class="ttdeci">void mergeChunks(int faces_per_chunk)</div><div class="ttdoc">Merges current chunks.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_ae7d711457c31baebd461e0f996916df5"><div class="ttname"><a href="classsl_1_1Mesh.html#ae7d711457c31baebd461e0f996916df5">sl::Mesh::getBoundaries</a></div><div class="ttdeci">std::vector&lt; int &gt; getBoundaries()</div><div class="ttdoc">Compute the indices of boundary vertices.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_af2f83a58035672b3aab19a4dea4f741d"><div class="ttname"><a href="classsl_1_1Mesh.html#af2f83a58035672b3aab19a4dea4f741d">sl::Mesh::getNumberOfTriangles</a></div><div class="ttdeci">size_t getNumberOfTriangles()</div><div class="ttdoc">Computes the total number of triangles stored in all chunks.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_af9dc4882bf6d5db941f8ec91a3ce9dad"><div class="ttname"><a href="classsl_1_1Mesh.html#af9dc4882bf6d5db941f8ec91a3ce9dad">sl::Mesh::getVisibleList</a></div><div class="ttdeci">chunkList getVisibleList(Transform camera_pose)</div><div class="ttdoc">Computes the list of visible chunks from a specific point of view.</div></div>
+<div class="ttc" id="aclasssl_1_1Mesh_html_afe6275a3faa3ff197640fe00eab02343"><div class="ttname"><a href="classsl_1_1Mesh.html#afe6275a3faa3ff197640fe00eab02343">sl::Mesh::triangles</a></div><div class="ttdeci">std::vector&lt; uint3 &gt; triangles</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:322</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html"><div class="ttname"><a href="classsl_1_1Plane.html">sl::Plane</a></div><div class="ttdoc">A plane defined by a point and a normal, or a plane equation Other elements can be extracted such as ...</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:506</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_a046a48e89921bf838a7b228918746a73"><div class="ttname"><a href="classsl_1_1Plane.html#a046a48e89921bf838a7b228918746a73">sl::Plane::getNormal</a></div><div class="ttdeci">sl::float3 getNormal()</div><div class="ttdoc">Get the plane normal vector.</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_a062d10901acf2fbe4eb864b262af97f8"><div class="ttname"><a href="classsl_1_1Plane.html#a062d10901acf2fbe4eb864b262af97f8">sl::Plane::getCenter</a></div><div class="ttdeci">sl::float3 getCenter()</div><div class="ttdoc">Get the plane center point.</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_a21acee3650c2a30dac0e86ab9a619de3"><div class="ttname"><a href="classsl_1_1Plane.html#a21acee3650c2a30dac0e86ab9a619de3">sl::Plane::extractMesh</a></div><div class="ttdeci">sl::Mesh extractMesh()</div><div class="ttdoc">Compute and return the mesh of the bounds polygon.</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_a33522ea247c2f47921352c307279dd86"><div class="ttname"><a href="classsl_1_1Plane.html#a33522ea247c2f47921352c307279dd86">sl::Plane::getExtents</a></div><div class="ttdeci">sl::float2 getExtents()</div><div class="ttdoc">Get the width and height of the bounding rectangle around the plane contours.</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_a5b39b867384ebd7dda864ce65828f158"><div class="ttname"><a href="classsl_1_1Plane.html#a5b39b867384ebd7dda864ce65828f158">sl::Plane::getBounds</a></div><div class="ttdeci">std::vector&lt; sl::float3 &gt; getBounds()</div><div class="ttdoc">Get the polygon bounds of the plane.</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_aa27f341eb265f9f6e0615be04ea6ead8"><div class="ttname"><a href="classsl_1_1Plane.html#aa27f341eb265f9f6e0615be04ea6ead8">sl::Plane::getClosestDistance</a></div><div class="ttdeci">float getClosestDistance(sl::float3 point=sl::float3(0, 0, 0))</div><div class="ttdoc">Get the distance between the input point and the projected point alongside the normal vector onto the...</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="classsl_1_1Plane.html#ac8bb3912a3ce86b15842e79d0b421204">sl::Plane::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clears all the data.</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_ade8093152b83fe576253347e434ae7f2"><div class="ttname"><a href="classsl_1_1Plane.html#ade8093152b83fe576253347e434ae7f2">sl::Plane::getPose</a></div><div class="ttdeci">Transform getPose()</div><div class="ttdoc">Get the plane pose relative to the global reference frame.</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_ae2159c976aa9b03f37f1f8854346d9aa"><div class="ttname"><a href="classsl_1_1Plane.html#ae2159c976aa9b03f37f1f8854346d9aa">sl::Plane::Plane</a></div><div class="ttdeci">Plane()</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_ae5080d63d8703462b5db4d1eb4333942"><div class="ttname"><a href="classsl_1_1Plane.html#ae5080d63d8703462b5db4d1eb4333942">sl::Plane::getPlaneEquation</a></div><div class="ttdeci">sl::float4 getPlaneEquation()</div><div class="ttdoc">Get the plane equation.</div></div>
+<div class="ttc" id="aclasssl_1_1Plane_html_afd6a8411d0c58362c5667c6178abb69a"><div class="ttname"><a href="classsl_1_1Plane.html#afd6a8411d0c58362c5667c6178abb69a">sl::Plane::~Plane</a></div><div class="ttdeci">~Plane()</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html">sl::PointCloudChunk</a></div><div class="ttdoc">Represents a sub fused point cloud, it contains local vertices and colors.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:608</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html_a29bdd26f56ad96c2d5208c364a2d44d4"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html#a29bdd26f56ad96c2d5208c364a2d44d4">sl::PointCloudChunk::vertices</a></div><div class="ttdeci">std::vector&lt; float4 &gt; vertices</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:623</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html_a41fa2f2b80a964b78e61d81fe1b0f1a6"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html#a41fa2f2b80a964b78e61d81fe1b0f1a6">sl::PointCloudChunk::~PointCloudChunk</a></div><div class="ttdeci">~PointCloudChunk()</div><div class="ttdoc">PointCloudChunk destructor.</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html_aa8b89f2c6e91a2a2a618f339091725b3"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html#aa8b89f2c6e91a2a2a618f339091725b3">sl::PointCloudChunk::normals</a></div><div class="ttdeci">std::vector&lt; float3 &gt; normals</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:628</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html#ac8bb3912a3ce86b15842e79d0b421204">sl::PointCloudChunk::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clears all chunk data.</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html_ad421643e83d036aca98ff1e76b53a8b4"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html#ad421643e83d036aca98ff1e76b53a8b4">sl::PointCloudChunk::timestamp</a></div><div class="ttdeci">unsigned long long timestamp</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:633</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html_adbad1d788a24c8661498b19f88f12d42"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html#adbad1d788a24c8661498b19f88f12d42">sl::PointCloudChunk::PointCloudChunk</a></div><div class="ttdeci">PointCloudChunk()</div><div class="ttdoc">Default constructor which creates an empty PointCloudChunk.</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html_add3d4c4e6434e88a64d55d2c5c53b056"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html#add3d4c4e6434e88a64d55d2c5c53b056">sl::PointCloudChunk::barycenter</a></div><div class="ttdeci">float3 barycenter</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:638</div></div>
+<div class="ttc" id="aclasssl_1_1PointCloudChunk_html_aed5906ba847e1e5ff98b487b31acb048"><div class="ttname"><a href="classsl_1_1PointCloudChunk.html#aed5906ba847e1e5ff98b487b31acb048">sl::PointCloudChunk::has_been_updated</a></div><div class="ttdeci">bool has_been_updated</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:643</div></div>
+<div class="ttc" id="aclasssl_1_1String_html"><div class="ttname"><a href="classsl_1_1String.html">sl::String</a></div><div class="ttdoc">Defines a string.</div><div class="ttdef"><b>Definition:</b> types.hpp:145</div></div>
+<div class="ttc" id="aclasssl_1_1Transform_html"><div class="ttname"><a href="classsl_1_1Transform.html">sl::Transform</a></div><div class="ttdoc">Designed to contain translation and rotation data of the positional tracking.</div><div class="ttdef"><b>Definition:</b> Core.hpp:914</div></div>
+<div class="ttc" id="aclasssl_1_1Vector2_html"><div class="ttname"><a href="classsl_1_1Vector2.html">sl::Vector2&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclasssl_1_1Vector3_html"><div class="ttname"><a href="classsl_1_1Vector3.html">sl::Vector3&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclasssl_1_1Vector4_html"><div class="ttname"><a href="classsl_1_1Vector4.html">sl::Vector4&lt; float &gt;</a></div></div>
+<div class="ttc" id="agroup__SpatialMapping__group_html_ga001684799cf2f2a948bfa463f39cae19"><div class="ttname"><a href="group__SpatialMapping__group.html#ga001684799cf2f2a948bfa463f39cae19">sl::MESH_FILE_FORMAT</a></div><div class="ttdeci">MESH_FILE_FORMAT</div><div class="ttdoc">Lists available mesh file formats.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:90</div></div>
+<div class="ttc" id="agroup__SpatialMapping__group_html_ga6c3e4c7af6febbba4baeed6aec323443"><div class="ttname"><a href="group__SpatialMapping__group.html#ga6c3e4c7af6febbba4baeed6aec323443">sl::MESH_TEXTURE_FORMAT</a></div><div class="ttdeci">MESH_TEXTURE_FORMAT</div><div class="ttdoc">Lists available mesh texture formats.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:112</div></div>
+<div class="ttc" id="anamespacesl_html"><div class="ttname"><a href="namespacesl.html">sl</a></div><div class="ttdef"><b>Definition:</b> defines.hpp:135</div></div>
+<div class="ttc" id="anamespacesl_html_a570f11479ebe1c6b5ea98af217731f2a"><div class="ttname"><a href="namespacesl.html#a570f11479ebe1c6b5ea98af217731f2a">sl::toString</a></div><div class="ttdeci">* toString(const FLIP_MODE &amp;flip_mode)</div></div>
+<div class="ttc" id="anamespacesl_html_a6a917c0031f78daf898e779ddae225a3"><div class="ttname"><a href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3">sl::PLANE_TYPE</a></div><div class="ttdeci">PLANE_TYPE</div><div class="ttdoc">List available plane type detected from the orientation.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:482</div></div>
+<div class="ttc" id="anamespacesl_html_a6a917c0031f78daf898e779ddae225a3a3e1b74251c07310c5f1b968145bf00dc"><div class="ttname"><a href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3a3e1b74251c07310c5f1b968145bf00dc">sl::PLANE_TYPE::VERTICAL</a></div><div class="ttdeci">@ VERTICAL</div></div>
+<div class="ttc" id="anamespacesl_html_a6a917c0031f78daf898e779ddae225a3a696b031073e74bf2cb98e5ef201d4aa3"><div class="ttname"><a href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3a696b031073e74bf2cb98e5ef201d4aa3">sl::PLANE_TYPE::UNKNOWN</a></div><div class="ttdeci">@ UNKNOWN</div></div>
+<div class="ttc" id="anamespacesl_html_a6a917c0031f78daf898e779ddae225a3a86e5d0d8407ce71f7e2004ef3949894e"><div class="ttname"><a href="namespacesl.html#a6a917c0031f78daf898e779ddae225a3a86e5d0d8407ce71f7e2004ef3949894e">sl::PLANE_TYPE::HORIZONTAL</a></div><div class="ttdeci">@ HORIZONTAL</div></div>
+<div class="ttc" id="anamespacesl_html_a8b0718a8bb58d67c87557bd845c971b7"><div class="ttname"><a href="namespacesl.html#a8b0718a8bb58d67c87557bd845c971b7">sl::operator&lt;&lt;</a></div><div class="ttdeci">inline ::std::ostream &amp; operator&lt;&lt;(::std::ostream &amp;os, const FLIP_MODE &amp;flip_mode)</div><div class="ttdef"><b>Definition:</b> defines.hpp:197</div></div>
+<div class="ttc" id="anamespacesl_html_ga001684799cf2f2a948bfa463f39cae19a3527f957d6810f291d5baf809c1ea1c5"><div class="ttname"><a href="namespacesl.html#ga001684799cf2f2a948bfa463f39cae19a3527f957d6810f291d5baf809c1ea1c5">sl::MESH_FILE_FORMAT::PLY_BIN</a></div><div class="ttdeci">@ PLY_BIN</div></div>
+<div class="ttc" id="anamespacesl_html_ga001684799cf2f2a948bfa463f39cae19a4a3c9b033e217d93b5841938bc23e3a2"><div class="ttname"><a href="namespacesl.html#ga001684799cf2f2a948bfa463f39cae19a4a3c9b033e217d93b5841938bc23e3a2">sl::MESH_FILE_FORMAT::PLY</a></div><div class="ttdeci">@ PLY</div></div>
+<div class="ttc" id="anamespacesl_html_ga001684799cf2f2a948bfa463f39cae19af34d534adfb78a9e6432be4621a93eec"><div class="ttname"><a href="namespacesl.html#ga001684799cf2f2a948bfa463f39cae19af34d534adfb78a9e6432be4621a93eec">sl::MESH_FILE_FORMAT::OBJ</a></div><div class="ttdeci">@ OBJ</div></div>
+<div class="ttc" id="anamespacesl_html_ga6c3e4c7af6febbba4baeed6aec323443a889574aebacda6bfd3e534e2b49b8028"><div class="ttname"><a href="namespacesl.html#ga6c3e4c7af6febbba4baeed6aec323443a889574aebacda6bfd3e534e2b49b8028">sl::MESH_TEXTURE_FORMAT::RGB</a></div><div class="ttdeci">@ RGB</div></div>
+<div class="ttc" id="anamespacesl_html_ga6c3e4c7af6febbba4baeed6aec323443aea3495a278957dc58165e48a8945469f"><div class="ttname"><a href="namespacesl.html#ga6c3e4c7af6febbba4baeed6aec323443aea3495a278957dc58165e48a8945469f">sl::MESH_TEXTURE_FORMAT::RGBA</a></div><div class="ttdeci">@ RGBA</div></div>
+<div class="ttc" id="anamespacesl_html_gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f"><div class="ttname"><a href="namespacesl.html#gaf90fcebb970fc56cb9963d1a8b91a8d1af447f5c03508de4d88e340390ba7c78f">sl::AI_MODELS::LAST</a></div><div class="ttdeci">@ LAST</div></div>
+<div class="ttc" id="astructsl_1_1CameraParameters_html"><div class="ttname"><a href="structsl_1_1CameraParameters.html">sl::CameraParameters</a></div><div class="ttdoc">Intrinsic parameters of a camera.</div><div class="ttdef"><b>Definition:</b> Core.hpp:1047</div></div>
+<div class="ttc" id="astructsl_1_1Resolution_html"><div class="ttname"><a href="structsl_1_1Resolution.html">sl::Resolution</a></div><div class="ttdoc">Width and height of an array.</div><div class="ttdef"><b>Definition:</b> types.hpp:188</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->

@@ -1,0 +1,1642 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Mat Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1Mat.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-static-methods">Static Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1Mat-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Mat Class Reference<div class="ingroups"><a class="el" href="group__Core__group.html">Core Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> class can handle multiple matrix formats from 1 to 4 channels, with different value types (float or uchar), and can be stored CPU and/or GPU side.  
+ <a href="classpyzed_1_1sl_1_1Mat.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a841a7a706607b9540be3c36bac92747d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a841a7a706607b9540be3c36bac92747d">__cinit__</a> (self, width=0, height=0, mat_type=MAT_TYPE.F32_C1, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a841a7a706607b9540be3c36bac92747d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classpyzed_1_1sl_1_1Mat.html#a841a7a706607b9540be3c36bac92747d">More...</a><br /></td></tr>
+<tr class="separator:a841a7a706607b9540be3c36bac92747d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4018cd347537eeff9be2b027829d4005"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a4018cd347537eeff9be2b027829d4005">init_mat_type</a> (self, width, height, mat_type, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a4018cd347537eeff9be2b027829d4005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> .  <a href="classpyzed_1_1sl_1_1Mat.html#a4018cd347537eeff9be2b027829d4005">More...</a><br /></td></tr>
+<tr class="separator:a4018cd347537eeff9be2b027829d4005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa33400f3b0c8243e7ee9fecaff3083"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a9aa33400f3b0c8243e7ee9fecaff3083">init_mat_cpu</a> (self, int width, int height, <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a> mat_type, ptr, step, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a9aa33400f3b0c8243e7ee9fecaff3083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> from an existing data pointer.  <a href="classpyzed_1_1sl_1_1Mat.html#a9aa33400f3b0c8243e7ee9fecaff3083">More...</a><br /></td></tr>
+<tr class="separator:a9aa33400f3b0c8243e7ee9fecaff3083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71135634a1bd92849252a57e5e3ad261"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a71135634a1bd92849252a57e5e3ad261">init_mat_resolution</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Resolution.html">Resolution</a> resolution, <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a> mat_type, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a71135634a1bd92849252a57e5e3ad261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> .  <a href="classpyzed_1_1sl_1_1Mat.html#a71135634a1bd92849252a57e5e3ad261">More...</a><br /></td></tr>
+<tr class="separator:a71135634a1bd92849252a57e5e3ad261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9270b33621c0e2139c1a60f0623f91"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a5c9270b33621c0e2139c1a60f0623f91">init_mat_resolution_cpu</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Resolution.html">Resolution</a> resolution, mat_type, ptr, step, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a5c9270b33621c0e2139c1a60f0623f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> from an existing data pointer.  <a href="classpyzed_1_1sl_1_1Mat.html#a5c9270b33621c0e2139c1a60f0623f91">More...</a><br /></td></tr>
+<tr class="separator:a5c9270b33621c0e2139c1a60f0623f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41469838406624efcf5703d223eb9aaf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a41469838406624efcf5703d223eb9aaf">init_mat</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> matrix)</td></tr>
+<tr class="memdesc:a41469838406624efcf5703d223eb9aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> by copy (shallow copy).  <a href="classpyzed_1_1sl_1_1Mat.html#a41469838406624efcf5703d223eb9aaf">More...</a><br /></td></tr>
+<tr class="separator:a41469838406624efcf5703d223eb9aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae4d270a9457ffe5e0e39d869119504"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a2ae4d270a9457ffe5e0e39d869119504">alloc_size</a> (self, width, height, mat_type, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a2ae4d270a9457ffe5e0e39d869119504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> memory.  <a href="classpyzed_1_1sl_1_1Mat.html#a2ae4d270a9457ffe5e0e39d869119504">More...</a><br /></td></tr>
+<tr class="separator:a2ae4d270a9457ffe5e0e39d869119504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ea54a253848f09c77ff9a0fc1b29ca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a98ea54a253848f09c77ff9a0fc1b29ca">alloc_resolution</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Resolution.html">Resolution</a> resolution, <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a> mat_type, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a98ea54a253848f09c77ff9a0fc1b29ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> memory.  <a href="classpyzed_1_1sl_1_1Mat.html#a98ea54a253848f09c77ff9a0fc1b29ca">More...</a><br /></td></tr>
+<tr class="separator:a98ea54a253848f09c77ff9a0fc1b29ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73940a7d67cf044693bf9836386360e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ae73940a7d67cf044693bf9836386360e">free</a> (self, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:ae73940a7d67cf044693bf9836386360e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the owned memory.  <a href="classpyzed_1_1sl_1_1Mat.html#ae73940a7d67cf044693bf9836386360e">More...</a><br /></td></tr>
+<tr class="separator:ae73940a7d67cf044693bf9836386360e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93f4adc5fd1be857eace8bd308d5cfc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ac93f4adc5fd1be857eace8bd308d5cfc">copy_to</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> dst, cpy_type=COPY_TYPE.CPU_CPU)</td></tr>
+<tr class="memdesc:ac93f4adc5fd1be857eace8bd308d5cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data to another <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (deep copy).  <a href="classpyzed_1_1sl_1_1Mat.html#ac93f4adc5fd1be857eace8bd308d5cfc">More...</a><br /></td></tr>
+<tr class="separator:ac93f4adc5fd1be857eace8bd308d5cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e02a952c2a026a5d39dcb5d0b5c4570"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a4e02a952c2a026a5d39dcb5d0b5c4570">set_from</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> src, cpy_type=COPY_TYPE.CPU_CPU)</td></tr>
+<tr class="memdesc:a4e02a952c2a026a5d39dcb5d0b5c4570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from an other <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (deep copy).  <a href="classpyzed_1_1sl_1_1Mat.html#a4e02a952c2a026a5d39dcb5d0b5c4570">More...</a><br /></td></tr>
+<tr class="separator:a4e02a952c2a026a5d39dcb5d0b5c4570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b8d58acbbc2bb9a741e473009e7e65"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a10b8d58acbbc2bb9a741e473009e7e65">read</a> (self, str filepath)</td></tr>
+<tr class="memdesc:a10b8d58acbbc2bb9a741e473009e7e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an image from a file (only if <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> is available on the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> ).  <a href="classpyzed_1_1sl_1_1Mat.html#a10b8d58acbbc2bb9a741e473009e7e65">More...</a><br /></td></tr>
+<tr class="separator:a10b8d58acbbc2bb9a741e473009e7e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0568cd94ee09fa51eaf50679e3a2def"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ae0568cd94ee09fa51eaf50679e3a2def">write</a> (self, str filepath, memory_type=MEM.CPU, compression_level=-1)</td></tr>
+<tr class="memdesc:ae0568cd94ee09fa51eaf50679e3a2def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (only if <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> is available on the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> ) into a file as an image.  <a href="classpyzed_1_1sl_1_1Mat.html#ae0568cd94ee09fa51eaf50679e3a2def">More...</a><br /></td></tr>
+<tr class="separator:ae0568cd94ee09fa51eaf50679e3a2def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512e06462005853433acd06e867d0b05"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a512e06462005853433acd06e867d0b05">set_to</a> (self, value, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a512e06462005853433acd06e867d0b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> with the given value.  <a href="classpyzed_1_1sl_1_1Mat.html#a512e06462005853433acd06e867d0b05">More...</a><br /></td></tr>
+<tr class="separator:a512e06462005853433acd06e867d0b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad069bda36c643327661c6802230ed025"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ad069bda36c643327661c6802230ed025">set_value</a> (self, int x, int y, value, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:ad069bda36c643327661c6802230ed025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a value to a specific point in the matrix.  <a href="classpyzed_1_1sl_1_1Mat.html#ad069bda36c643327661c6802230ed025">More...</a><br /></td></tr>
+<tr class="separator:ad069bda36c643327661c6802230ed025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5748ec3d9eaaa3887a6465ced3b4bf9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#aa5748ec3d9eaaa3887a6465ced3b4bf9">get_value</a> (self, int x, int y, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:aa5748ec3d9eaaa3887a6465ced3b4bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a specific point in the matrix.  <a href="classpyzed_1_1sl_1_1Mat.html#aa5748ec3d9eaaa3887a6465ced3b4bf9">More...</a><br /></td></tr>
+<tr class="separator:aa5748ec3d9eaaa3887a6465ced3b4bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e681d75010bed8f92522938312e0f2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ab8e681d75010bed8f92522938312e0f2">get_width</a> (self)</td></tr>
+<tr class="memdesc:ab8e681d75010bed8f92522938312e0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width of the matrix.  <a href="classpyzed_1_1sl_1_1Mat.html#ab8e681d75010bed8f92522938312e0f2">More...</a><br /></td></tr>
+<tr class="separator:ab8e681d75010bed8f92522938312e0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0ca8383240ff6bf28296c916660c4d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a2f0ca8383240ff6bf28296c916660c4d">get_height</a> (self)</td></tr>
+<tr class="memdesc:a2f0ca8383240ff6bf28296c916660c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height of the matrix.  <a href="classpyzed_1_1sl_1_1Mat.html#a2f0ca8383240ff6bf28296c916660c4d">More...</a><br /></td></tr>
+<tr class="separator:a2f0ca8383240ff6bf28296c916660c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1620624dc3fb805ff51ba6b500fc73f6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a1620624dc3fb805ff51ba6b500fc73f6">get_resolution</a> (self)</td></tr>
+<tr class="memdesc:a1620624dc3fb805ff51ba6b500fc73f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the resolution of the matrix.  <a href="classpyzed_1_1sl_1_1Mat.html#a1620624dc3fb805ff51ba6b500fc73f6">More...</a><br /></td></tr>
+<tr class="separator:a1620624dc3fb805ff51ba6b500fc73f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af76e750cfff5e9bcef9693bca22ceb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a3af76e750cfff5e9bcef9693bca22ceb">get_channels</a> (self)</td></tr>
+<tr class="memdesc:a3af76e750cfff5e9bcef9693bca22ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of values stored in one pixel.  <a href="classpyzed_1_1sl_1_1Mat.html#a3af76e750cfff5e9bcef9693bca22ceb">More...</a><br /></td></tr>
+<tr class="separator:a3af76e750cfff5e9bcef9693bca22ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b3e79a6c06dd39684f401e23e25cf3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ac5b3e79a6c06dd39684f401e23e25cf3">get_data_type</a> (self)</td></tr>
+<tr class="memdesc:ac5b3e79a6c06dd39684f401e23e25cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format of the matrix.  <a href="classpyzed_1_1sl_1_1Mat.html#ac5b3e79a6c06dd39684f401e23e25cf3">More...</a><br /></td></tr>
+<tr class="separator:ac5b3e79a6c06dd39684f401e23e25cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb50f1a682534545ece29d233ff72a83"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#abb50f1a682534545ece29d233ff72a83">get_memory_type</a> (self)</td></tr>
+<tr class="memdesc:abb50f1a682534545ece29d233ff72a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format of the matrix.  <a href="classpyzed_1_1sl_1_1Mat.html#abb50f1a682534545ece29d233ff72a83">More...</a><br /></td></tr>
+<tr class="separator:abb50f1a682534545ece29d233ff72a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8f08eb3ebc14e70692b0a3eecd6756"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a2e8f08eb3ebc14e70692b0a3eecd6756">get_data</a> (self, memory_type=MEM.CPU, deep_copy=False)</td></tr>
+<tr class="memdesc:a2e8f08eb3ebc14e70692b0a3eecd6756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast the data of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> in a Numpy array (with or without copy).  <a href="classpyzed_1_1sl_1_1Mat.html#a2e8f08eb3ebc14e70692b0a3eecd6756">More...</a><br /></td></tr>
+<tr class="separator:a2e8f08eb3ebc14e70692b0a3eecd6756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c96da1199ec37b1c9aab6676cdbef7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ab8c96da1199ec37b1c9aab6676cdbef7">get_step_bytes</a> (self, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:ab8c96da1199ec37b1c9aab6676cdbef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the memory step in Bytes (the Bytes size of one pixel row).  <a href="classpyzed_1_1sl_1_1Mat.html#ab8c96da1199ec37b1c9aab6676cdbef7">More...</a><br /></td></tr>
+<tr class="separator:ab8c96da1199ec37b1c9aab6676cdbef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760a046126c492433773e2848cf8e77c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a760a046126c492433773e2848cf8e77c">get_step</a> (self, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a760a046126c492433773e2848cf8e77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the memory step in number of elements (the number of values in one pixel row).  <a href="classpyzed_1_1sl_1_1Mat.html#a760a046126c492433773e2848cf8e77c">More...</a><br /></td></tr>
+<tr class="separator:a760a046126c492433773e2848cf8e77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1693189a5c473c2eca133670a1a68a5c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a1693189a5c473c2eca133670a1a68a5c">get_pixel_bytes</a> (self)</td></tr>
+<tr class="memdesc:a1693189a5c473c2eca133670a1a68a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size in bytes of one pixel.  <a href="classpyzed_1_1sl_1_1Mat.html#a1693189a5c473c2eca133670a1a68a5c">More...</a><br /></td></tr>
+<tr class="separator:a1693189a5c473c2eca133670a1a68a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264691408f9e5ac5ef43215f64f2d456"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a264691408f9e5ac5ef43215f64f2d456">get_width_bytes</a> (self)</td></tr>
+<tr class="memdesc:a264691408f9e5ac5ef43215f64f2d456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size in bytes of a row.  <a href="classpyzed_1_1sl_1_1Mat.html#a264691408f9e5ac5ef43215f64f2d456">More...</a><br /></td></tr>
+<tr class="separator:a264691408f9e5ac5ef43215f64f2d456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505a5e558b52cbfb7eb8c6b7dea782ea"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a505a5e558b52cbfb7eb8c6b7dea782ea">get_infos</a> (self)</td></tr>
+<tr class="memdesc:a505a5e558b52cbfb7eb8c6b7dea782ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the information about the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> into a string.  <a href="classpyzed_1_1sl_1_1Mat.html#a505a5e558b52cbfb7eb8c6b7dea782ea">More...</a><br /></td></tr>
+<tr class="separator:a505a5e558b52cbfb7eb8c6b7dea782ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8091d05297a40aa6a82b57bb70049220"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a8091d05297a40aa6a82b57bb70049220">is_init</a> (self)</td></tr>
+<tr class="memdesc:a8091d05297a40aa6a82b57bb70049220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines whether the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> is initialized or not.  <a href="classpyzed_1_1sl_1_1Mat.html#a8091d05297a40aa6a82b57bb70049220">More...</a><br /></td></tr>
+<tr class="separator:a8091d05297a40aa6a82b57bb70049220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76fe234bdc1f0de1126fc18c5cc4074"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#aa76fe234bdc1f0de1126fc18c5cc4074">is_memory_owner</a> (self)</td></tr>
+<tr class="memdesc:aa76fe234bdc1f0de1126fc18c5cc4074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> is the owner of the memory it accesses.  <a href="classpyzed_1_1sl_1_1Mat.html#aa76fe234bdc1f0de1126fc18c5cc4074">More...</a><br /></td></tr>
+<tr class="separator:aa76fe234bdc1f0de1126fc18c5cc4074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4036a820148c67abc21969b23357e8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#afb4036a820148c67abc21969b23357e8">clone</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> py_mat)</td></tr>
+<tr class="memdesc:afb4036a820148c67abc21969b23357e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> by copy (deep copy).  <a href="classpyzed_1_1sl_1_1Mat.html#afb4036a820148c67abc21969b23357e8">More...</a><br /></td></tr>
+<tr class="separator:afb4036a820148c67abc21969b23357e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c15fa1f1e0b132270be6f7ddb4739d2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a1c15fa1f1e0b132270be6f7ddb4739d2">move</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> py_mat)</td></tr>
+<tr class="memdesc:a1c15fa1f1e0b132270be6f7ddb4739d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves <a class="el" href="classpyzed_1_1sl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> data to another <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>.  <a href="classpyzed_1_1sl_1_1Mat.html#a1c15fa1f1e0b132270be6f7ddb4739d2">More...</a><br /></td></tr>
+<tr class="separator:a1c15fa1f1e0b132270be6f7ddb4739d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7070d5910e7faf1bbfa6aae7a0775024"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a7070d5910e7faf1bbfa6aae7a0775024">get_pointer</a> (self, memory_type=MEM.CPU)</td></tr>
+<tr class="memdesc:a7070d5910e7faf1bbfa6aae7a0775024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer of the content of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>.  <a href="classpyzed_1_1sl_1_1Mat.html#a7070d5910e7faf1bbfa6aae7a0775024">More...</a><br /></td></tr>
+<tr class="separator:a7070d5910e7faf1bbfa6aae7a0775024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5907ca3bbf8e7cd8f40c3007338f6d02"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a5907ca3bbf8e7cd8f40c3007338f6d02">name</a> (self)</td></tr>
+<tr class="memdesc:a5907ca3bbf8e7cd8f40c3007338f6d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (optional).  <a href="classpyzed_1_1sl_1_1Mat.html#a5907ca3bbf8e7cd8f40c3007338f6d02">More...</a><br /></td></tr>
+<tr class="separator:a5907ca3bbf8e7cd8f40c3007338f6d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672dc8993db22c5203d3f78892aa042b"><td class="memItemLeft" align="right" valign="top"><a id="a672dc8993db22c5203d3f78892aa042b"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#a672dc8993db22c5203d3f78892aa042b">timestamp</a> (self)</td></tr>
+<tr class="memdesc:a672dc8993db22c5203d3f78892aa042b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timestamp of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>. <br /></td></tr>
+<tr class="separator:a672dc8993db22c5203d3f78892aa042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae215d72e5777c8df4e6bdb3f2d258bdb"><td class="memItemLeft" align="right" valign="top"><a id="ae215d72e5777c8df4e6bdb3f2d258bdb"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ae215d72e5777c8df4e6bdb3f2d258bdb">verbose</a> (self)</td></tr>
+<tr class="memdesc:ae215d72e5777c8df4e6bdb3f2d258bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> can display information or not. <br /></td></tr>
+<tr class="separator:ae215d72e5777c8df4e6bdb3f2d258bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Functions</h2></td></tr>
+<tr class="memitem:ab244743a097cb8bcdced150c37c04966"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mat.html#ab244743a097cb8bcdced150c37c04966">swap</a> (<a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> mat1, <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> mat2)</td></tr>
+<tr class="memdesc:ab244743a097cb8bcdced150c37c04966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the content of the provided <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (only swaps the pointers, no data copy).  <a href="classpyzed_1_1sl_1_1Mat.html#ab244743a097cb8bcdced150c37c04966">More...</a><br /></td></tr>
+<tr class="separator:ab244743a097cb8bcdced150c37c04966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> class can handle multiple matrix formats from 1 to 4 channels, with different value types (float or uchar), and can be stored CPU and/or GPU side. </p>
+<p><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> is defined in a row-major order, it means that, for an image buffer, the entire first row is stored first, followed by the entire second row, and so on.</p>
+<p>The CPU and GPU buffer aren't automatically synchronized for performance reasons, you can use update_gpu_from_cpu / update_gpu_from_cpu to do it. If you are using the GPU side of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> object, you need to make sure to call <a class="el" href="classpyzed_1_1sl_1_1Mat.html#ae73940a7d67cf044693bf9836386360e">free</a> before destroying the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> object. The destruction of the <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> object deletes the CUDA context needed to free the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> memory. </p>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a841a7a706607b9540be3c36bac92747d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841a7a706607b9540be3c36bac92747d">&#9670;&nbsp;</a></span>__cinit__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def __cinit__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>width</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>height</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mat_type</em> = <code>MAT_TYPE.F32_C1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>: width of the matrix in pixels. Default: 0 </td></tr>
+    <tr><td class="paramname">height</td><td>: height of the matrix in pixels. Default: 0 </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix ( <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> , <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> ...). Default: <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value)</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line">mat = sl.Mat(width=0, height=0, mat_type=MAT_TYPE.F32_C1, memory_type=MEM.CPU)</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a4018cd347537eeff9be2b027829d4005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4018cd347537eeff9be2b027829d4005">&#9670;&nbsp;</a></span>init_mat_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def init_mat_type </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> . </p>
+<p>This function directly allocates the requested memory. It calls <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a2ae4d270a9457ffe5e0e39d869119504">alloc_size</a> . </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>: width of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>: height of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> , <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> ...) </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9aa33400f3b0c8243e7ee9fecaff3083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa33400f3b0c8243e7ee9fecaff3083">&#9670;&nbsp;</a></span>init_mat_cpu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def init_mat_cpu </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> from an existing data pointer. </p>
+<p>This function doesn't allocate the memory. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>: width of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>: height of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> , <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> ...) </td></tr>
+    <tr><td class="paramname">ptr</td><td>: pointer to the data array. (CPU or GPU). </td></tr>
+    <tr><td class="paramname">step</td><td>: step of the data array. (the Bytes size of one pixel row). </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a71135634a1bd92849252a57e5e3ad261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71135634a1bd92849252a57e5e3ad261">&#9670;&nbsp;</a></span>init_mat_resolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def init_mat_resolution </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Resolution.html">Resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> . </p>
+<p>This function directly allocates the requested memory. It calls <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a98ea54a253848f09c77ff9a0fc1b29ca">alloc_resolution</a> . </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: the size of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> , <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> ... ) </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c9270b33621c0e2139c1a60f0623f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9270b33621c0e2139c1a60f0623f91">&#9670;&nbsp;</a></span>init_mat_resolution_cpu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def init_mat_resolution_cpu </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Resolution.html">Resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> from an existing data pointer. </p>
+<p>This function doesn't allocate the memory. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: the size of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> , <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> ...) </td></tr>
+    <tr><td class="paramname">ptr</td><td>: pointer to the data array. (CPU or GPU). </td></tr>
+    <tr><td class="paramname">step</td><td>: step of the data array. (the Bytes size of one pixel row). </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a41469838406624efcf5703d223eb9aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41469838406624efcf5703d223eb9aaf">&#9670;&nbsp;</a></span>init_mat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def init_mat </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inits a new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> by copy (shallow copy). </p>
+<p>This function doesn't allocate the memory. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>: a <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2ae4d270a9457ffe5e0e39d869119504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae4d270a9457ffe5e0e39d869119504">&#9670;&nbsp;</a></span>alloc_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def alloc_size </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>: width of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>: height of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> , <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> ...) </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>It erases previously allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="a98ea54a253848f09c77ff9a0fc1b29ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ea54a253848f09c77ff9a0fc1b29ca">&#9670;&nbsp;</a></span>alloc_resolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def alloc_resolution </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Resolution.html">Resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a>&#160;</td>
+          <td class="paramname"><em>mat_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: the size of the matrix in pixels. </td></tr>
+    <tr><td class="paramname">mat_type</td><td>: the type of the matrix (<a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> , <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> ...) </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines where the buffer will be stored. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>It erases previously allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="ae73940a7d67cf044693bf9836386360e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73940a7d67cf044693bf9836386360e">&#9670;&nbsp;</a></span>free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def free </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free the owned memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: specifies which memory you wish to free. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac93f4adc5fd1be857eace8bd308d5cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93f4adc5fd1be857eace8bd308d5cfc">&#9670;&nbsp;</a></span>copy_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def copy_to </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cpy_type</em> = <code>COPY_TYPE.CPU_CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies data to another <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (deep copy). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>: the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> where the data will be copied. </td></tr>
+    <tr><td class="paramname">cpy_type</td><td>: specifies the memories that will be used for the copy. Default: <a class="el" href="classpyzed_1_1sl_1_1COPY__TYPE.html">COPY_TYPE.CPU_CPU</a> (you cannot change the default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_CODE.SUCCESS if everything went well, ERROR_CODE.FAILURE otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the destination is not allocated or doesn't have a compatible <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a> or <a class="el" href="classpyzed_1_1sl_1_1Resolution.html">Resolution</a> , current memory is freed and new memory is directly allocated. </dd></dl>
+
+</div>
+</div>
+<a id="a4e02a952c2a026a5d39dcb5d0b5c4570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e02a952c2a026a5d39dcb5d0b5c4570">&#9670;&nbsp;</a></span>set_from()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_from </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cpy_type</em> = <code>COPY_TYPE.CPU_CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies data from an other <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (deep copy). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>: the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> where the data will be copied from. </td></tr>
+    <tr><td class="paramname">cpy_type</td><td>: specifies the memories that will be used for the update. Default: <a class="el" href="classpyzed_1_1sl_1_1COPY__TYPE.html">COPY_TYPE.CPU_CPU</a> (you cannot change the default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_CODE.SUCCESS if everything went well, ERROR_CODE.FAILURE otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> doesn't have a compatible <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a> or <a class="el" href="classpyzed_1_1sl_1_1Resolution.html">Resolution</a> with the source, current memory is freed and new memory is directly allocated. </dd></dl>
+
+</div>
+</div>
+<a id="a10b8d58acbbc2bb9a741e473009e7e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b8d58acbbc2bb9a741e473009e7e65">&#9670;&nbsp;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def read </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filepath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads an image from a file (only if <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> is available on the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> ). </p>
+<p>Supported input files format are PNG and JPEG. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>: file path including the name and extension </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_CODE.SUCCESS if everything went well, ERROR_CODE.FAILURE otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Supported <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a> are : <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> for PNG/PFM/PGM <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C3</a> for PCD/PLY/VTK/XYZ <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C4</a> for PCD/PLY/VTK/WYZ <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C1</a> for PNG/JPG <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C3</a> for PNG/JPG <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> for PNG/JPG </dd></dl>
+
+</div>
+</div>
+<a id="ae0568cd94ee09fa51eaf50679e3a2def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0568cd94ee09fa51eaf50679e3a2def">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def write </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>compression_level</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (only if <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> is available on the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> ) into a file as an image. </p>
+<p>Supported output files format are PNG and JPEG. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>: file path including the name and extension. </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: memory type of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a>. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change the default value) </td></tr>
+    <tr><td class="paramname">compression_level</td><td>: level of compression between 0 (lowest compression == highest size == highest quality(jpg)) and 100 (highest compression == lowest size == lowest quality(jpg)). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Specific/default value for compression_level = -1 : This will set the default quality for PNG(30) or JPEG(5). </dd>
+<dd>
+compression_level is only supported for <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">U8_Cx</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_CODE.SUCCESS if everything went well, ERROR_CODE.FAILURE otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Supported <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE</a> are : <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C1</a> for PNG/PFM/PGM <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C3</a> for PCD/PLY/VTK/XYZ <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.F32_C4</a> for PCD/PLY/VTK/WYZ <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C1</a> for PNG/JPG <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C3</a> for PNG/JPG <br  />
+ - <a class="el" href="classpyzed_1_1sl_1_1MAT__TYPE.html">MAT_TYPE.U8_C4</a> for PNG/JPG </dd></dl>
+
+</div>
+</div>
+<a id="a512e06462005853433acd06e867d0b05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512e06462005853433acd06e867d0b05">&#9670;&nbsp;</a></span>set_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_to </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> with the given value. </p>
+<p>This function overwrites all the matrix. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>: the value to be copied all over the matrix. </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines which buffer to fill. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change the default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad069bda36c643327661c6802230ed025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad069bda36c643327661c6802230ed025">&#9670;&nbsp;</a></span>set_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def set_value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a value to a specific point in the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>: specifies the column. </td></tr>
+    <tr><td class="paramname">y</td><td>: specifies the row. </td></tr>
+    <tr><td class="paramname">value</td><td>: the value to be set. </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines which memory will be updated. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change the default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_CODE.SUCCESS if everything went well, ERROR_CODE.FAILURE otherwise.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>not efficient for GPU, use it on sparse data. </dd></dl>
+
+</div>
+</div>
+<a id="aa5748ec3d9eaaa3887a6465ced3b4bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5748ec3d9eaaa3887a6465ced3b4bf9">&#9670;&nbsp;</a></span>get_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the value of a specific point in the matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>: specifies the column </td></tr>
+    <tr><td class="paramname">y</td><td>: specifies the row </td></tr>
+    <tr><td class="paramname">memory_type</td><td>: defines which memory should be read. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change this default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_CODE.SUCCESS if everything went well, ERROR_CODE.FAILURE otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ab8e681d75010bed8f92522938312e0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e681d75010bed8f92522938312e0f2">&#9670;&nbsp;</a></span>get_width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_width </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the width of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The width of the matrix in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="a2f0ca8383240ff6bf28296c916660c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0ca8383240ff6bf28296c916660c4d">&#9670;&nbsp;</a></span>get_height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_height </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the height of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The height of the matrix in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="a1620624dc3fb805ff51ba6b500fc73f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1620624dc3fb805ff51ba6b500fc73f6">&#9670;&nbsp;</a></span>get_resolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_resolution </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the resolution of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The resolution of the matrix in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="a3af76e750cfff5e9bcef9693bca22ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af76e750cfff5e9bcef9693bca22ceb">&#9670;&nbsp;</a></span>get_channels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_channels </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of values stored in one pixel. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of values in a pixel. </dd></dl>
+
+</div>
+</div>
+<a id="ac5b3e79a6c06dd39684f401e23e25cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b3e79a6c06dd39684f401e23e25cf3">&#9670;&nbsp;</a></span>get_data_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_data_type </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the format of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The format of the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> . </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classpyzed_1_1sl_1_1Mat.html#aa5748ec3d9eaaa3887a6465ced3b4bf9">Mat.get_value()</a>, <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a512e06462005853433acd06e867d0b05">Mat.set_to()</a>, and <a class="el" href="classpyzed_1_1sl_1_1Mat.html#ad069bda36c643327661c6802230ed025">Mat.set_value()</a>.</p>
+
+</div>
+</div>
+<a id="abb50f1a682534545ece29d233ff72a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb50f1a682534545ece29d233ff72a83">&#9670;&nbsp;</a></span>get_memory_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_memory_type </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the format of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The format of the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2e8f08eb3ebc14e70692b0a3eecd6756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8f08eb3ebc14e70692b0a3eecd6756">&#9670;&nbsp;</a></span>get_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_data </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>deep_copy</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cast the data of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> in a Numpy array (with or without copy). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: defines which memory should be read. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change the default value) </td></tr>
+    <tr><td class="paramname">deep_copy</td><td>: defines if the memory of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> need to be duplicated or not. The fastest is deep_copy at False but the <a class="el" href="classpyzed_1_1sl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">sl::Mat</a> memory must not be released to use the numpy array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Numpy array containing the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> data. </dd></dl>
+
+</div>
+</div>
+<a id="ab8c96da1199ec37b1c9aab6676cdbef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c96da1199ec37b1c9aab6676cdbef7">&#9670;&nbsp;</a></span>get_step_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_step_bytes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the memory step in Bytes (the Bytes size of one pixel row). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: defines which memory should be read. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change the default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The step in bytes of the specified memory. </dd></dl>
+
+</div>
+</div>
+<a id="a760a046126c492433773e2848cf8e77c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760a046126c492433773e2848cf8e77c">&#9670;&nbsp;</a></span>get_step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_step </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the memory step in number of elements (the number of values in one pixel row). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: defines which memory should be read. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change the default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The step in number of elements. </dd></dl>
+
+</div>
+</div>
+<a id="a1693189a5c473c2eca133670a1a68a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1693189a5c473c2eca133670a1a68a5c">&#9670;&nbsp;</a></span>get_pixel_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_pixel_bytes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the size in bytes of one pixel. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size in bytes of a pixel. </dd></dl>
+
+</div>
+</div>
+<a id="a264691408f9e5ac5ef43215f64f2d456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264691408f9e5ac5ef43215f64f2d456">&#9670;&nbsp;</a></span>get_width_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_width_bytes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the size in bytes of a row. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size in bytes of a row. </dd></dl>
+
+</div>
+</div>
+<a id="a505a5e558b52cbfb7eb8c6b7dea782ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505a5e558b52cbfb7eb8c6b7dea782ea">&#9670;&nbsp;</a></span>get_infos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_infos </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the information about the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> into a string. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> information. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classpyzed_1_1sl_1_1Matrix4f.html#a3355f83c4087eea9b05d7778b5cdb52d">Matrix4f.m()</a>, and <a class="el" href="classpyzed_1_1sl_1_1Mat.html#ae215d72e5777c8df4e6bdb3f2d258bdb">Mat.verbose()</a>.</p>
+
+</div>
+</div>
+<a id="a8091d05297a40aa6a82b57bb70049220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8091d05297a40aa6a82b57bb70049220">&#9670;&nbsp;</a></span>is_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def is_init </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines whether the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> is initialized or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> has been allocated (by the constructor or therefore). </dd></dl>
+
+</div>
+</div>
+<a id="aa76fe234bdc1f0de1126fc18c5cc4074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76fe234bdc1f0de1126fc18c5cc4074">&#9670;&nbsp;</a></span>is_memory_owner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def is_memory_owner </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> is the owner of the memory it accesses. </p>
+<p>If not, the memory won't be freed if the <a class="el" href="classpyzed_1_1sl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> is destroyed. </p><dl class="section return"><dt>Returns</dt><dd>True if the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> is owning its memory, else false. </dd></dl>
+
+</div>
+</div>
+<a id="afb4036a820148c67abc21969b23357e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4036a820148c67abc21969b23357e8">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def clone </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>&#160;</td>
+          <td class="paramname"><em>py_mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplicates <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> by copy (deep copy). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">py_mat</td><td>: the reference to the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> to copy. This function copies the data array(s), it marks the new <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> as the memory owner. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c15fa1f1e0b132270be6f7ddb4739d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c15fa1f1e0b132270be6f7ddb4739d2">&#9670;&nbsp;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def move </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>&#160;</td>
+          <td class="paramname"><em>py_mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves <a class="el" href="classpyzed_1_1sl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> data to another <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>. </p>
+<p>This function gives the attribute of the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> to the specified one. (No copy). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">py_mat</td><td>: the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> to move.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>the current <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> is then no more usable since it loses its attributes. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a841a7a706607b9540be3c36bac92747d">Mat.__cinit__()</a>, <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a41469838406624efcf5703d223eb9aaf">Mat.init_mat()</a>, <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a9aa33400f3b0c8243e7ee9fecaff3083">Mat.init_mat_cpu()</a>, <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a71135634a1bd92849252a57e5e3ad261">Mat.init_mat_resolution()</a>, <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a5c9270b33621c0e2139c1a60f0623f91">Mat.init_mat_resolution_cpu()</a>, and <a class="el" href="classpyzed_1_1sl_1_1Mat.html#a4018cd347537eeff9be2b027829d4005">Mat.init_mat_type()</a>.</p>
+
+</div>
+</div>
+<a id="ab244743a097cb8bcdced150c37c04966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab244743a097cb8bcdced150c37c04966">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>&#160;</td>
+          <td class="paramname"><em>mat1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>&#160;</td>
+          <td class="paramname"><em>mat2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Swaps the content of the provided <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (only swaps the pointers, no data copy). </p>
+<p>Static Method.</p>
+<p>This function swaps the pointers of the given <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat1</td><td>: the first mat. </td></tr>
+    <tr><td class="paramname">mat2</td><td>: the second mat. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7070d5910e7faf1bbfa6aae7a0775024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7070d5910e7faf1bbfa6aae7a0775024">&#9670;&nbsp;</a></span>get_pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_pointer </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>memory_type</em> = <code>MEM.CPU</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the pointer of the content of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_type</td><td>: Defines which memory you want to get. Default: <a class="el" href="classpyzed_1_1sl_1_1MEM.html">MEM.CPU</a> (you cannot change the default value) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the pointer of the content of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a5907ca3bbf8e7cd8f40c3007338f6d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5907ca3bbf8e7cd8f40c3007338f6d02">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The name of the <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> (optional). </p>
+<p>In <a class="el" href="classpyzed_1_1sl_1_1Mat.html#ae215d72e5777c8df4e6bdb3f2d258bdb">verbose</a> mode, it's used to indicate which <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> is printing information. Default set to "n/a" to avoid empty string if not filled. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

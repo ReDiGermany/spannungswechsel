@@ -1,0 +1,508 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>IMUData Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1IMUData.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1IMUData-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">IMUData Class Reference<div class="ingroups"><a class="el" href="group__Sensors__group.html">Sensors Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains the IMU sensor data.  
+ <a href="classpyzed_1_1sl_1_1IMUData.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aabf21355d880c6ba2a2b2965bb73fa30"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#aabf21355d880c6ba2a2b2965bb73fa30">get_angular_velocity_uncalibrated</a> (self, angular_velocity_uncalibrated=[0, 0, 0])</td></tr>
+<tr class="memdesc:aabf21355d880c6ba2a2b2965bb73fa30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the (3x1) Vector for raw angular velocity of the gyroscope, given in deg/s.  <a href="classpyzed_1_1sl_1_1IMUData.html#aabf21355d880c6ba2a2b2965bb73fa30">More...</a><br /></td></tr>
+<tr class="separator:aabf21355d880c6ba2a2b2965bb73fa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731f62e08f56247bb2982d469dfd1139"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#a731f62e08f56247bb2982d469dfd1139">get_angular_velocity</a> (self, angular_velocity=[0, 0, 0])</td></tr>
+<tr class="memdesc:a731f62e08f56247bb2982d469dfd1139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the (3x1) Vector for uncalibrated angular velocity of the gyroscope, given in deg/s.  <a href="classpyzed_1_1sl_1_1IMUData.html#a731f62e08f56247bb2982d469dfd1139">More...</a><br /></td></tr>
+<tr class="separator:a731f62e08f56247bb2982d469dfd1139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4954d0a5facf4538654e0736b3f556db"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#a4954d0a5facf4538654e0736b3f556db">get_linear_acceleration</a> (self, linear_acceleration=[0, 0, 0])</td></tr>
+<tr class="memdesc:a4954d0a5facf4538654e0736b3f556db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the (3x1) Vector for linear acceleration of the gyroscope, given in m/s^2.  <a href="classpyzed_1_1sl_1_1IMUData.html#a4954d0a5facf4538654e0736b3f556db">More...</a><br /></td></tr>
+<tr class="separator:a4954d0a5facf4538654e0736b3f556db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083fd17308eb4cec6f3b4286f44de381"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#a083fd17308eb4cec6f3b4286f44de381">get_linear_acceleration_uncalibrated</a> (self, linear_acceleration_uncalibrated=[0, 0, 0])</td></tr>
+<tr class="memdesc:a083fd17308eb4cec6f3b4286f44de381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the (3x1) Vector for uncalibrated linear acceleration of the gyroscope, given in m/s^2.  <a href="classpyzed_1_1sl_1_1IMUData.html#a083fd17308eb4cec6f3b4286f44de381">More...</a><br /></td></tr>
+<tr class="separator:a083fd17308eb4cec6f3b4286f44de381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041a674ccc582c7090d12519a6a7e490"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#a041a674ccc582c7090d12519a6a7e490">get_angular_velocity_covariance</a> (self, angular_velocity_covariance=<a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a>())</td></tr>
+<tr class="memdesc:a041a674ccc582c7090d12519a6a7e490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the (3x3) Covariance matrix for angular velocity (x,y,z axes)  <a href="classpyzed_1_1sl_1_1IMUData.html#a041a674ccc582c7090d12519a6a7e490">More...</a><br /></td></tr>
+<tr class="separator:a041a674ccc582c7090d12519a6a7e490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16abec2d6c677591f5d0b1efa94bcce"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#aa16abec2d6c677591f5d0b1efa94bcce">get_linear_acceleration_covariance</a> (self, linear_acceleration_covariance=<a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a>())</td></tr>
+<tr class="memdesc:aa16abec2d6c677591f5d0b1efa94bcce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the (3x3) Covariance matrix for linear acceleration (x,y,z axes)  <a href="classpyzed_1_1sl_1_1IMUData.html#aa16abec2d6c677591f5d0b1efa94bcce">More...</a><br /></td></tr>
+<tr class="separator:aa16abec2d6c677591f5d0b1efa94bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0a921cdf3bbde167e74218997d6c14"><td class="memItemLeft" align="right" valign="top"><a id="abc0a921cdf3bbde167e74218997d6c14"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#abc0a921cdf3bbde167e74218997d6c14">is_available</a> (self)</td></tr>
+<tr class="memdesc:abc0a921cdf3bbde167e74218997d6c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the sensor is available in your camera. <br /></td></tr>
+<tr class="separator:abc0a921cdf3bbde167e74218997d6c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672dc8993db22c5203d3f78892aa042b"><td class="memItemLeft" align="right" valign="top"><a id="a672dc8993db22c5203d3f78892aa042b"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#a672dc8993db22c5203d3f78892aa042b">timestamp</a> (self)</td></tr>
+<tr class="memdesc:a672dc8993db22c5203d3f78892aa042b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the sensors data timestamp. <br /></td></tr>
+<tr class="separator:a672dc8993db22c5203d3f78892aa042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec9493048c9a15c342ca933bf2fe859"><td class="memItemLeft" align="right" valign="top"><a id="a2ec9493048c9a15c342ca933bf2fe859"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#a2ec9493048c9a15c342ca933bf2fe859">effective_rate</a> (self)</td></tr>
+<tr class="memdesc:a2ec9493048c9a15c342ca933bf2fe859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realtime data acquisition rate [Hz]. <br /></td></tr>
+<tr class="separator:a2ec9493048c9a15c342ca933bf2fe859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5379996e678efc9ed7acb620cc6e734"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#af5379996e678efc9ed7acb620cc6e734">get_pose_covariance</a> (self, pose_covariance=<a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a>())</td></tr>
+<tr class="memdesc:af5379996e678efc9ed7acb620cc6e734"><td class="mdescLeft">&#160;</td><td class="mdescRight">(3x3) 3x3 Covariance matrix for pose orientation (x,y,z axes)  <a href="classpyzed_1_1sl_1_1IMUData.html#af5379996e678efc9ed7acb620cc6e734">More...</a><br /></td></tr>
+<tr class="separator:af5379996e678efc9ed7acb620cc6e734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82086ddc690ea11fcbc50ce62724ef69"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1IMUData.html#a82086ddc690ea11fcbc50ce62724ef69">get_pose</a> (self, pose=<a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a>())</td></tr>
+<tr class="memdesc:a82086ddc690ea11fcbc50ce62724ef69"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMU pose (IMU 6-dof fusion)  <a href="classpyzed_1_1sl_1_1IMUData.html#a82086ddc690ea11fcbc50ce62724ef69">More...</a><br /></td></tr>
+<tr class="separator:a82086ddc690ea11fcbc50ce62724ef69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains the IMU sensor data. </p>
+</div><h2 class="groupheader">Functions</h2>
+<a id="aabf21355d880c6ba2a2b2965bb73fa30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf21355d880c6ba2a2b2965bb73fa30">&#9670;&nbsp;</a></span>get_angular_velocity_uncalibrated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_angular_velocity_uncalibrated </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>angular_velocity_uncalibrated</em> = <code>[0,&#160;0,&#160;0]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the (3x1) Vector for raw angular velocity of the gyroscope, given in deg/s. </p>
+<p>Values are uncorrected from IMU calibration. In other words, the current velocity at which the sensor is rotating around the x, y, and z axes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angular_velocity_uncalibrated</td><td>: An array to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uncalibrated angular velocity (3x1) vector in an array </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Those values are the exact raw values from the IMU. </dd>
+<dd>
+Not available in SVO or Stream mode </dd></dl>
+
+</div>
+</div>
+<a id="a731f62e08f56247bb2982d469dfd1139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a731f62e08f56247bb2982d469dfd1139">&#9670;&nbsp;</a></span>get_angular_velocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_angular_velocity </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>angular_velocity</em> = <code>[0,&#160;0,&#160;0]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the (3x1) Vector for uncalibrated angular velocity of the gyroscope, given in deg/s. </p>
+<p>Values are corrected from bias, scale and misalignment. In other words, the current velocity at which the sensor is rotating around the x, y, and z axes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angular_velocity</td><td>: An array to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The angular velocity (3x1) vector in an array </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Those values can be directly ingested in a IMU fusion algorithm to extract quaternion </dd>
+<dd>
+Not available in SVO or Stream mode </dd></dl>
+
+</div>
+</div>
+<a id="a4954d0a5facf4538654e0736b3f556db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4954d0a5facf4538654e0736b3f556db">&#9670;&nbsp;</a></span>get_linear_acceleration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_linear_acceleration </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>linear_acceleration</em> = <code>[0,&#160;0,&#160;0]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the (3x1) Vector for linear acceleration of the gyroscope, given in m/s^2. </p>
+<p>In other words, the current acceleration of the sensor, along with the x, y, and z axes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linear_acceleration</td><td>: An array to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The linear acceleration (3x1) vector in an array </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Those values can be directly ingested in a IMU fusion algorithm to extract quaternion </dd></dl>
+
+</div>
+</div>
+<a id="a083fd17308eb4cec6f3b4286f44de381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083fd17308eb4cec6f3b4286f44de381">&#9670;&nbsp;</a></span>get_linear_acceleration_uncalibrated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_linear_acceleration_uncalibrated </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>linear_acceleration_uncalibrated</em> = <code>[0,&#160;0,&#160;0]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the (3x1) Vector for uncalibrated linear acceleration of the gyroscope, given in m/s^2. </p>
+<p>Values are uncorrected from IMU calibration. In other words, the current acceleration of the sensor, along with the x, y, and z axes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linear_acceleration_uncalibrated</td><td>: An array to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uncalibrated linear acceleration (3x1) vector in an array </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Those values are the exact raw values from the IMU. </dd>
+<dd>
+Those values can be directly ingested in a IMU fusion algorithm to extract quaternion. </dd>
+<dd>
+Not available in SVO or Stream mode </dd></dl>
+
+</div>
+</div>
+<a id="a041a674ccc582c7090d12519a6a7e490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041a674ccc582c7090d12519a6a7e490">&#9670;&nbsp;</a></span>get_angular_velocity_covariance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_angular_velocity_covariance </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>angular_velocity_covariance</em> = <code><a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the (3x3) Covariance matrix for angular velocity (x,y,z axes) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angular_velocity_covariance</td><td>: <a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a> to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (3x3) Covariance matrix for angular velocity </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Not available in SVO or Stream mode </dd></dl>
+
+</div>
+</div>
+<a id="aa16abec2d6c677591f5d0b1efa94bcce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16abec2d6c677591f5d0b1efa94bcce">&#9670;&nbsp;</a></span>get_linear_acceleration_covariance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_linear_acceleration_covariance </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>linear_acceleration_covariance</em> = <code><a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the (3x3) Covariance matrix for linear acceleration (x,y,z axes) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linear_acceleration_covariance</td><td>: <a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a> to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (3x3) Covariance matrix for linear acceleration </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Not available in SVO or Stream mode </dd></dl>
+
+</div>
+</div>
+<a id="af5379996e678efc9ed7acb620cc6e734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5379996e678efc9ed7acb620cc6e734">&#9670;&nbsp;</a></span>get_pose_covariance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_pose_covariance </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>pose_covariance</em> = <code><a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(3x3) 3x3 Covariance matrix for pose orientation (x,y,z axes) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pose_covariance</td><td>: <a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a> to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classpyzed_1_1sl_1_1Matrix3f.html">Matrix3f</a> to be returned </dd></dl>
+
+</div>
+</div>
+<a id="a82086ddc690ea11fcbc50ce62724ef69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82086ddc690ea11fcbc50ce62724ef69">&#9670;&nbsp;</a></span>get_pose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def get_pose </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>pose</em> = <code><a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IMU pose (IMU 6-dof fusion) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pose</td><td>: Transform() to be returned. It creates one by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> to be returned </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

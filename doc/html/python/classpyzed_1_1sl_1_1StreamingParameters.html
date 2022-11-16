@@ -1,0 +1,404 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>StreamingParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1StreamingParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1StreamingParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">StreamingParameters Class Reference<div class="ingroups"><a class="el" href="group__Video__group.html">Video Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sets the streaming parameters.  
+ <a href="classpyzed_1_1sl_1_1StreamingParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a09b63a73b08df71a6bd193b004002c0f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a09b63a73b08df71a6bd193b004002c0f">__cinit__</a> (self, <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a860714e48c1b04ffe77696291a237957">codec</a>=STREAMING_CODEC.H265, <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#aa63f40ef11482db7146b0d135ab93ba0">port</a>=30000, <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#afef94940010d85bd93723554bb59cce0">bitrate</a>=8000, <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a49c9e6bd1f537be89beba04fe6ec6008">gop_size</a>=-1, <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#ae0ace47dc55719c29ae00e6f30bf8277">adaptative_bitrate</a>=False, <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#ac1121798d75c715e620c78a7ce1ce828">chunk_size</a>=32768, <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a6e31f5164c91a999c52442b12434f063">target_framerate</a>=0)</td></tr>
+<tr class="memdesc:a09b63a73b08df71a6bd193b004002c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classpyzed_1_1sl_1_1StreamingParameters.html#a09b63a73b08df71a6bd193b004002c0f">More...</a><br /></td></tr>
+<tr class="separator:a09b63a73b08df71a6bd193b004002c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1121798d75c715e620c78a7ce1ce828"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#ac1121798d75c715e620c78a7ce1ce828">chunk_size</a> (self)</td></tr>
+<tr class="memdesc:ac1121798d75c715e620c78a7ce1ce828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a single chunk size.  <a href="classpyzed_1_1sl_1_1StreamingParameters.html#ac1121798d75c715e620c78a7ce1ce828">More...</a><br /></td></tr>
+<tr class="separator:ac1121798d75c715e620c78a7ce1ce828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860714e48c1b04ffe77696291a237957"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a860714e48c1b04ffe77696291a237957">codec</a> (self)</td></tr>
+<tr class="memdesc:a860714e48c1b04ffe77696291a237957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the codec used for streaming.  <a href="classpyzed_1_1sl_1_1StreamingParameters.html#a860714e48c1b04ffe77696291a237957">More...</a><br /></td></tr>
+<tr class="separator:a860714e48c1b04ffe77696291a237957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63f40ef11482db7146b0d135ab93ba0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#aa63f40ef11482db7146b0d135ab93ba0">port</a> (self)</td></tr>
+<tr class="memdesc:aa63f40ef11482db7146b0d135ab93ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the port the data will be streamed on.  <a href="classpyzed_1_1sl_1_1StreamingParameters.html#aa63f40ef11482db7146b0d135ab93ba0">More...</a><br /></td></tr>
+<tr class="separator:aa63f40ef11482db7146b0d135ab93ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef94940010d85bd93723554bb59cce0"><td class="memItemLeft" align="right" valign="top"><a id="afef94940010d85bd93723554bb59cce0"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#afef94940010d85bd93723554bb59cce0">bitrate</a> (self)</td></tr>
+<tr class="memdesc:afef94940010d85bd93723554bb59cce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the streaming bitrate in Kbits/s. <br /></td></tr>
+<tr class="separator:afef94940010d85bd93723554bb59cce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ace47dc55719c29ae00e6f30bf8277"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#ae0ace47dc55719c29ae00e6f30bf8277">adaptative_bitrate</a> (self)</td></tr>
+<tr class="memdesc:ae0ace47dc55719c29ae00e6f30bf8277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/Disable adaptive bitrate.  <a href="classpyzed_1_1sl_1_1StreamingParameters.html#ae0ace47dc55719c29ae00e6f30bf8277">More...</a><br /></td></tr>
+<tr class="separator:ae0ace47dc55719c29ae00e6f30bf8277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c9e6bd1f537be89beba04fe6ec6008"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a49c9e6bd1f537be89beba04fe6ec6008">gop_size</a> (self)</td></tr>
+<tr class="memdesc:a49c9e6bd1f537be89beba04fe6ec6008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the gop size in frame unit.  <a href="classpyzed_1_1sl_1_1StreamingParameters.html#a49c9e6bd1f537be89beba04fe6ec6008">More...</a><br /></td></tr>
+<tr class="separator:a49c9e6bd1f537be89beba04fe6ec6008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e31f5164c91a999c52442b12434f063"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a6e31f5164c91a999c52442b12434f063">target_framerate</a> (self)</td></tr>
+<tr class="memdesc:a6e31f5164c91a999c52442b12434f063"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines the target framerate for the streaming output.  <a href="classpyzed_1_1sl_1_1StreamingParameters.html#a6e31f5164c91a999c52442b12434f063">More...</a><br /></td></tr>
+<tr class="separator:a6e31f5164c91a999c52442b12434f063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sets the streaming parameters. </p>
+<p>The default constructor sets all parameters to their default settings. </p><dl class="section note"><dt>Note</dt><dd>Parameters can be user adjusted. </dd></dl>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a09b63a73b08df71a6bd193b004002c0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b63a73b08df71a6bd193b004002c0f">&#9670;&nbsp;</a></span>__cinit__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def __cinit__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>codec</em> = <code>STREAMING_CODEC.H265</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>port</em> = <code>30000</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>bitrate</em> = <code>8000</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>gop_size</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>adaptative_bitrate</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>chunk_size</em> = <code>32768</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>target_framerate</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codec</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a860714e48c1b04ffe77696291a237957">codec</a> </td></tr>
+    <tr><td class="paramname">port</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#aa63f40ef11482db7146b0d135ab93ba0">port</a> </td></tr>
+    <tr><td class="paramname">bitrate</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#afef94940010d85bd93723554bb59cce0">bitrate</a> </td></tr>
+    <tr><td class="paramname">gop_size</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a49c9e6bd1f537be89beba04fe6ec6008">gop_size</a> </td></tr>
+    <tr><td class="paramname">adaptative_bitrate</td><td>: activtates <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#ae0ace47dc55719c29ae00e6f30bf8277">adaptative_bitrate</a> </td></tr>
+    <tr><td class="paramname">chunk_size</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#ac1121798d75c715e620c78a7ce1ce828">chunk_size</a> </td></tr>
+    <tr><td class="paramname">target_framerate</td><td>: the chosen <a class="el" href="classpyzed_1_1sl_1_1StreamingParameters.html#a6e31f5164c91a999c52442b12434f063">target_framerate</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line">params = sl.StreamingParameters(port=30000)</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="ac1121798d75c715e620c78a7ce1ce828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1121798d75c715e620c78a7ce1ce828">&#9670;&nbsp;</a></span>chunk_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def chunk_size </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a single chunk size. </p>
+<dl class="section note"><dt>Note</dt><dd>Stream buffers are divided in X number of chunks where each chunk is "chunk_size" bits long. </dd>
+<dd>
+Default value is 32768. You can lower this value if network generates a lot of packet lost : this will generate more chunks for a single image, but each chunk sent will be lighter to avoid inside-chunk corruption. </dd>
+<dd>
+Available range : [8192 - 65000] </dd></dl>
+
+</div>
+</div>
+<a id="a860714e48c1b04ffe77696291a237957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860714e48c1b04ffe77696291a237957">&#9670;&nbsp;</a></span>codec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def codec </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the codec used for streaming. </p>
+<dl class="section warning"><dt>Warning</dt><dd>If HEVC is used, make sure the receiving host is compatible with H265 decoding (Pascal NVIDIA card or newer). If not, prefer to use H264 since every compatible NVIDIA card supports H264 decoding </dd></dl>
+
+</div>
+</div>
+<a id="aa63f40ef11482db7146b0d135ab93ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63f40ef11482db7146b0d135ab93ba0">&#9670;&nbsp;</a></span>port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def port </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the port the data will be streamed on. </p>
+<dl class="section warning"><dt>Warning</dt><dd>port must be an even number. Any odd number will be rejected. </dd></dl>
+
+</div>
+</div>
+<a id="ae0ace47dc55719c29ae00e6f30bf8277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ace47dc55719c29ae00e6f30bf8277">&#9670;&nbsp;</a></span>adaptative_bitrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def adaptative_bitrate </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/Disable adaptive bitrate. </p>
+<dl class="section note"><dt>Note</dt><dd>Bitrate will be adjusted regarding the number of packet loss during streaming. </dd>
+<dd>
+if activated, bitrate can vary between [bitrate/4, bitrate] </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Bitrate will be adjusted regarding the number of packet loss during streaming. </dd></dl>
+
+</div>
+</div>
+<a id="a49c9e6bd1f537be89beba04fe6ec6008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49c9e6bd1f537be89beba04fe6ec6008">&#9670;&nbsp;</a></span>gop_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def gop_size </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the gop size in frame unit. </p>
+<dl class="section note"><dt>Note</dt><dd>if value is set to -1, the gop size will match 2 seconds, depending on camera fps. </dd>
+<dd>
+The gop size determines the maximum distance between IDR/I-frames. Very high GOP sizes will result in slightly more efficient compression, especially on static scenes. But it can result in more latency if IDR/I-frame packet are lost during streaming. </dd>
+<dd>
+Default value is -1. Maximum allowed value is 256 (frames). </dd></dl>
+
+</div>
+</div>
+<a id="a6e31f5164c91a999c52442b12434f063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e31f5164c91a999c52442b12434f063">&#9670;&nbsp;</a></span>target_framerate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def target_framerate </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>defines the target framerate for the streaming output. </p>
+<p>This framerate must be below or equal to the camera framerate. Allowed framerates are 15,30, 60 or 100 if possible. Any other values will be discarded and camera FPS will be taken. </p><dl class="section note"><dt>Note</dt><dd>By default 0 means that the camera framerate will be taken </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

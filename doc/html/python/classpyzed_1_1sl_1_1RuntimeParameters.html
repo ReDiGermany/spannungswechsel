@@ -1,0 +1,486 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>RuntimeParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1RuntimeParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1RuntimeParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">RuntimeParameters Class Reference<div class="ingroups"><a class="el" href="group__Depth__group.html">Depth Sensing Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Parameters that define the behavior of the <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2338c15f49b5f132df373a06bd281822">Camera.grab</a>.  
+ <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a665bf7be2eb5f9c47d8f609e2f01adbd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a665bf7be2eb5f9c47d8f609e2f01adbd">__cinit__</a> (self, <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a9b67684c88e5314154f9bf3ad9b79224">sensing_mode</a>=SENSING_MODE.STANDARD, <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a6797cf5689d17e560dd866a8939bb7f5">enable_depth</a>=True, <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#abb9d2e8a7d828705f868f52366e14fd2">confidence_threshold</a>=100, <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#afad8a39897755eceaf3869e19d128430">texture_confidence_threshold</a>=100, <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">measure3D_reference_frame</a>=REFERENCE_FRAME.CAMERA, <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a776278d9042d8f28fb31ef4cff513971">remove_saturated_areas</a>=True)</td></tr>
+<tr class="memdesc:a665bf7be2eb5f9c47d8f609e2f01adbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#a665bf7be2eb5f9c47d8f609e2f01adbd">More...</a><br /></td></tr>
+<tr class="separator:a665bf7be2eb5f9c47d8f609e2f01adbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6358d3f5b4b09351aa6841aa7d7aebc2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a6358d3f5b4b09351aa6841aa7d7aebc2">save</a> (self, str filename)</td></tr>
+<tr class="memdesc:a6358d3f5b4b09351aa6841aa7d7aebc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current set of parameters into a file.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#a6358d3f5b4b09351aa6841aa7d7aebc2">More...</a><br /></td></tr>
+<tr class="separator:a6358d3f5b4b09351aa6841aa7d7aebc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa457b2902812e9778a0ac1bb946d84dd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aa457b2902812e9778a0ac1bb946d84dd">load</a> (self, str filename)</td></tr>
+<tr class="memdesc:aa457b2902812e9778a0ac1bb946d84dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the values of the parameters contained in a file.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#aa457b2902812e9778a0ac1bb946d84dd">More...</a><br /></td></tr>
+<tr class="separator:aa457b2902812e9778a0ac1bb946d84dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b67684c88e5314154f9bf3ad9b79224"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a9b67684c88e5314154f9bf3ad9b79224">sensing_mode</a> (self)</td></tr>
+<tr class="memdesc:a9b67684c88e5314154f9bf3ad9b79224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the algorithm used for depth map computation, more info : <a class="el" href="classpyzed_1_1sl_1_1SENSING__MODE.html">SENSING_MODE</a> definition.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#a9b67684c88e5314154f9bf3ad9b79224">More...</a><br /></td></tr>
+<tr class="separator:a9b67684c88e5314154f9bf3ad9b79224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6797cf5689d17e560dd866a8939bb7f5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a6797cf5689d17e560dd866a8939bb7f5">enable_depth</a> (self)</td></tr>
+<tr class="memdesc:a6797cf5689d17e560dd866a8939bb7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the depth map should be computed.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#a6797cf5689d17e560dd866a8939bb7f5">More...</a><br /></td></tr>
+<tr class="separator:a6797cf5689d17e560dd866a8939bb7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa63e20fb8dddbf1d0e422cbfe93169"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">measure3D_reference_frame</a> (self)</td></tr>
+<tr class="memdesc:aeaa63e20fb8dddbf1d0e422cbfe93169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides 3D measures (point cloud and normals) in the desired reference frame.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">More...</a><br /></td></tr>
+<tr class="separator:aeaa63e20fb8dddbf1d0e422cbfe93169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9d2e8a7d828705f868f52366e14fd2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#abb9d2e8a7d828705f868f52366e14fd2">confidence_threshold</a> (self)</td></tr>
+<tr class="memdesc:abb9d2e8a7d828705f868f52366e14fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threshold to reject depth values based on their confidence.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#abb9d2e8a7d828705f868f52366e14fd2">More...</a><br /></td></tr>
+<tr class="separator:abb9d2e8a7d828705f868f52366e14fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90125702c829c621d16421d7ec04b8f5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a90125702c829c621d16421d7ec04b8f5">textureness_confidence_threshold</a> (self)</td></tr>
+<tr class="separator:a90125702c829c621d16421d7ec04b8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad8a39897755eceaf3869e19d128430"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#afad8a39897755eceaf3869e19d128430">texture_confidence_threshold</a> (self)</td></tr>
+<tr class="memdesc:afad8a39897755eceaf3869e19d128430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threshold to reject depth values based on their texture confidence.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#afad8a39897755eceaf3869e19d128430">More...</a><br /></td></tr>
+<tr class="separator:afad8a39897755eceaf3869e19d128430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776278d9042d8f28fb31ef4cff513971"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a776278d9042d8f28fb31ef4cff513971">remove_saturated_areas</a> (self)</td></tr>
+<tr class="memdesc:a776278d9042d8f28fb31ef4cff513971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the saturated area (Luminance&gt;=255) must be removed from depth map estimationd.  <a href="classpyzed_1_1sl_1_1RuntimeParameters.html#a776278d9042d8f28fb31ef4cff513971">More...</a><br /></td></tr>
+<tr class="separator:a776278d9042d8f28fb31ef4cff513971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Parameters that define the behavior of the <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2338c15f49b5f132df373a06bd281822">Camera.grab</a>. </p>
+<p>Default values are enabled. You can customize it to fit your application and then save it to create a preset that can be loaded for further executions. </p>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a665bf7be2eb5f9c47d8f609e2f01adbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a665bf7be2eb5f9c47d8f609e2f01adbd">&#9670;&nbsp;</a></span>__cinit__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def __cinit__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sensing_mode</em> = <code>SENSING_MODE.STANDARD</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>enable_depth</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>confidence_threshold</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>texture_confidence_threshold</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>measure3D_reference_frame</em> = <code>REFERENCE_FRAME.CAMERA</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>remove_saturated_areas</em> = <code>True</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensing_mode</td><td>: chosen <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a9b67684c88e5314154f9bf3ad9b79224">sensing_mode</a> </td></tr>
+    <tr><td class="paramname">enable_depth</td><td>: activates <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#a6797cf5689d17e560dd866a8939bb7f5">enable_depth</a> </td></tr>
+    <tr><td class="paramname">confidence_threshold</td><td>: chosen <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#abb9d2e8a7d828705f868f52366e14fd2">confidence_threshold</a> </td></tr>
+    <tr><td class="paramname">texture_confidence_threshold</td><td>: chosen <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#afad8a39897755eceaf3869e19d128430">texture_confidence_threshold</a> </td></tr>
+    <tr><td class="paramname">measure3D_reference_frame</td><td>: chosen <a class="el" href="classpyzed_1_1sl_1_1RuntimeParameters.html#aeaa63e20fb8dddbf1d0e422cbfe93169">measure3D_reference_frame</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line">params = sl.RuntimeParameters(sensing_mode=SENSING_MODE.STANDARD, enable_depth=<span class="keyword">True</span>)</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a6358d3f5b4b09351aa6841aa7d7aebc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6358d3f5b4b09351aa6841aa7d7aebc2">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def save </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the current set of parameters into a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: the path to the file in which the parameters will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the file was successfully saved, otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="aa457b2902812e9778a0ac1bb946d84dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa457b2902812e9778a0ac1bb946d84dd">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def load </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads the values of the parameters contained in a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: the path to the file from which the parameters will be loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the file was successfully loaded, otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a9b67684c88e5314154f9bf3ad9b79224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b67684c88e5314154f9bf3ad9b79224">&#9670;&nbsp;</a></span>sensing_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def sensing_mode </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the algorithm used for depth map computation, more info : <a class="el" href="classpyzed_1_1sl_1_1SENSING__MODE.html">SENSING_MODE</a> definition. </p>
+<p>default : <a class="el" href="classpyzed_1_1sl_1_1SENSING__MODE.html">SENSING_MODE.STANDARD</a> </p>
+
+</div>
+</div>
+<a id="a6797cf5689d17e560dd866a8939bb7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6797cf5689d17e560dd866a8939bb7f5">&#9670;&nbsp;</a></span>enable_depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def enable_depth </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the depth map should be computed. </p>
+<p>If false, only the images are available. default : True </p>
+
+</div>
+</div>
+<a id="aeaa63e20fb8dddbf1d0e422cbfe93169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa63e20fb8dddbf1d0e422cbfe93169">&#9670;&nbsp;</a></span>measure3D_reference_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def measure3D_reference_frame </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provides 3D measures (point cloud and normals) in the desired reference frame. </p>
+<p>default : <a class="el" href="classpyzed_1_1sl_1_1REFERENCE__FRAME.html">REFERENCE_FRAME.CAMERA</a> </p>
+
+</div>
+</div>
+<a id="abb9d2e8a7d828705f868f52366e14fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9d2e8a7d828705f868f52366e14fd2">&#9670;&nbsp;</a></span>confidence_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def confidence_threshold </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threshold to reject depth values based on their confidence. </p>
+<p>Each depth pixel has a corresponding confidence. (MEASURE.CONFIDENCE) A lower value means more confidence and precision (but less density). An upper value reduces filtering (more density, less certainty). <br  />
+ - <b>setConfidenceThreshold(100)</b> will allow values from <b>0</b> to <b>100</b>. (no filtering) <br  />
+ - <b>setConfidenceThreshold(90)</b> will allow values from <b>10</b> to <b>100</b>. (filtering lowest confidence values) <br  />
+ - <b>setConfidenceThreshold(30)</b> will allow values from <b>70</b> to <b>100</b>. (keeping highest confidence values and lowering the density of the depth map) The value should be in [1,100]. <br  />
+ By default, the confidence threshold is set at 100, meaning that no depth pixel will be rejected. </p>
+
+</div>
+</div>
+<a id="a90125702c829c621d16421d7ec04b8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90125702c829c621d16421d7ec04b8f5">&#9670;&nbsp;</a></span>textureness_confidence_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def textureness_confidence_threshold </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use texture_confidence_threshold instead </dd></dl>
+
+</div>
+</div>
+<a id="afad8a39897755eceaf3869e19d128430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad8a39897755eceaf3869e19d128430">&#9670;&nbsp;</a></span>texture_confidence_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def texture_confidence_threshold </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threshold to reject depth values based on their texture confidence. </p>
+<p>A lower value means more confidence and precision (but less density). An upper value reduces filtering (more density, less certainty). The value should be in [1,100]. By default, the confidence threshold is set at 100, meaning that no depth pixel will be rejected. </p>
+
+</div>
+</div>
+<a id="a776278d9042d8f28fb31ef4cff513971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776278d9042d8f28fb31ef4cff513971">&#9670;&nbsp;</a></span>remove_saturated_areas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def remove_saturated_areas </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the saturated area (Luminance&gt;=255) must be removed from depth map estimationd. </p>
+<p>default : True </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

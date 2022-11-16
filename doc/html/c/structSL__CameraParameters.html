@@ -1,0 +1,295 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>SL_CameraParameters Struct Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:38" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:38"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:38" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structSL__CameraParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">SL_CameraParameters Struct Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a1de12c03720d13f948ff4aca32648211"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__CameraParameters.html#a1de12c03720d13f948ff4aca32648211">fx</a></td></tr>
+<tr class="separator:a1de12c03720d13f948ff4aca32648211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501e1f15ac1cb681dd1e930edcace558"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__CameraParameters.html#a501e1f15ac1cb681dd1e930edcace558">fy</a></td></tr>
+<tr class="separator:a501e1f15ac1cb681dd1e930edcace558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c3ad9a206e69c49c29bbb3829b33e9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__CameraParameters.html#a34c3ad9a206e69c49c29bbb3829b33e9">cx</a></td></tr>
+<tr class="separator:a34c3ad9a206e69c49c29bbb3829b33e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b4e1968ef58093e8cdce174f21ee2e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__CameraParameters.html#a20b4e1968ef58093e8cdce174f21ee2e">cy</a></td></tr>
+<tr class="separator:a20b4e1968ef58093e8cdce174f21ee2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafee157f14b5bc344bd0f0601c4fd0ec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__CameraParameters.html#aafee157f14b5bc344bd0f0601c4fd0ec">disto</a> [5]</td></tr>
+<tr class="separator:aafee157f14b5bc344bd0f0601c4fd0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587b5770c7342fc9aab05a8c4d644111"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__CameraParameters.html#a587b5770c7342fc9aab05a8c4d644111">v_fov</a></td></tr>
+<tr class="separator:a587b5770c7342fc9aab05a8c4d644111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb347aa5d0039b38fa84e0943859bf1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__CameraParameters.html#a6eb347aa5d0039b38fa84e0943859bf1">h_fov</a></td></tr>
+<tr class="separator:a6eb347aa5d0039b38fa84e0943859bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac921430ab994e208b8205c17bb085c9e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__CameraParameters.html#ac921430ab994e208b8205c17bb085c9e">d_fov</a></td></tr>
+<tr class="separator:ac921430ab994e208b8205c17bb085c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2444a9abcce9236edd6103f1062c0c78"><td class="memItemLeft" align="right" valign="top"><a id="a2444a9abcce9236edd6103f1062c0c78"></a>
+struct <a class="el" href="structSL__Resolution.html">SL_Resolution</a>&#160;</td><td class="memItemRight" valign="bottom"><b>image_size</b></td></tr>
+<tr class="separator:a2444a9abcce9236edd6103f1062c0c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a1de12c03720d13f948ff4aca32648211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de12c03720d13f948ff4aca32648211">&#9670;&nbsp;</a></span>fx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SL_CameraParameters::fx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Focal length in pixels along x axis. </p>
+
+</div>
+</div>
+<a id="a501e1f15ac1cb681dd1e930edcace558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501e1f15ac1cb681dd1e930edcace558">&#9670;&nbsp;</a></span>fy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SL_CameraParameters::fy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Focal length in pixels along y axis. </p>
+
+</div>
+</div>
+<a id="a34c3ad9a206e69c49c29bbb3829b33e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c3ad9a206e69c49c29bbb3829b33e9">&#9670;&nbsp;</a></span>cx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SL_CameraParameters::cx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optical center along x axis, defined in pixels (usually close to width/2). </p>
+
+</div>
+</div>
+<a id="a20b4e1968ef58093e8cdce174f21ee2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b4e1968ef58093e8cdce174f21ee2e">&#9670;&nbsp;</a></span>cy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SL_CameraParameters::cy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optical center along y axis, defined in pixels (usually close to height/2). </p>
+
+</div>
+</div>
+<a id="aafee157f14b5bc344bd0f0601c4fd0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafee157f14b5bc344bd0f0601c4fd0ec">&#9670;&nbsp;</a></span>disto</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SL_CameraParameters::disto[5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Distortion factor : [ k1, k2, p1, p2, k3 ]. Radial (k1,k2,k3) and Tangential (p1,p2) distortion. </p>
+
+</div>
+</div>
+<a id="a587b5770c7342fc9aab05a8c4d644111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587b5770c7342fc9aab05a8c4d644111">&#9670;&nbsp;</a></span>v_fov</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SL_CameraParameters::v_fov</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vertical field of view, in degrees. </p>
+
+</div>
+</div>
+<a id="a6eb347aa5d0039b38fa84e0943859bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb347aa5d0039b38fa84e0943859bf1">&#9670;&nbsp;</a></span>h_fov</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SL_CameraParameters::h_fov</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Horizontal field of view, in degrees. </p>
+
+</div>
+</div>
+<a id="ac921430ab994e208b8205c17bb085c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac921430ab994e208b8205c17bb085c9e">&#9670;&nbsp;</a></span>d_fov</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SL_CameraParameters::d_fov</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Diagonal field of view, in degrees. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

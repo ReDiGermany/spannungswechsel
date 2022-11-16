@@ -1,0 +1,26 @@
+var structSL__ObjectData =
+[
+    [ "id", "structSL__ObjectData.html#a820a1e16de5f14f2b81914b3bf4d4543", null ],
+    [ "unique_object_id", "structSL__ObjectData.html#a9188ced5bc3717db98aba816fcffafef", null ],
+    [ "raw_label", "structSL__ObjectData.html#abfdd90c370f3409b8e122f8159a5480a", null ],
+    [ "label", "structSL__ObjectData.html#a2aee8b04ff5d8f4c09e541429c3b5919", null ],
+    [ "sublabel", "structSL__ObjectData.html#accfb35a24b01e36ecbd47f071b85a3a2", null ],
+    [ "tracking_state", "structSL__ObjectData.html#ab7ccdecbbbf814a6ec714aaf9bd99cf3", null ],
+    [ "action_state", "structSL__ObjectData.html#a48d888ace34963f643803099c0bee77b", null ],
+    [ "confidence", "structSL__ObjectData.html#a51aae3240bb41a197b3a96ff012486c3", null ],
+    [ "mask", "structSL__ObjectData.html#aa13a22675c874f17789a19b502cc92d3", null ],
+    [ "bounding_box_2d", "structSL__ObjectData.html#a09ea73a7aede84b5afe7d09d36dd04d6", null ],
+    [ "position", "structSL__ObjectData.html#a23e8fe328b47f02521548cf37876ff20", null ],
+    [ "head_position", "structSL__ObjectData.html#aa341e71628253c7a8e463f334917108f", null ],
+    [ "velocity", "structSL__ObjectData.html#a6e20a709281fc6d900ebf14ea2257976", null ],
+    [ "dimensions", "structSL__ObjectData.html#aa1f72a23132f5578f1ff059fcfd4f1e9", null ],
+    [ "bounding_box", "structSL__ObjectData.html#a2cce657bafb2fe4a29002e9e1ab66b16", null ],
+    [ "head_bounding_box", "structSL__ObjectData.html#a98780d85522cf6569cbaba32ea7eb01b", null ],
+    [ "keypoint_2d", "structSL__ObjectData.html#aae1452b7cef2cf2f234d1afbf5e5c548", null ],
+    [ "keypoint", "structSL__ObjectData.html#a68b2eac52a0535d677ea163b01eacbf2", null ],
+    [ "position_covariance", "structSL__ObjectData.html#a1f566f07d7d33ac7ac21fcb1558d575b", null ],
+    [ "keypoint_confidence", "structSL__ObjectData.html#a197aa640b81668a5558ae415765e5ef7", null ],
+    [ "local_position_per_joint", "structSL__ObjectData.html#aef8d4b0fb8b5b620255fe303a7345dc9", null ],
+    [ "local_orientation_per_joint", "structSL__ObjectData.html#a9160c00db755e162b73407bbe361c105", null ],
+    [ "global_root_orientation", "structSL__ObjectData.html#ac4190acd6bbc2f09f4a9ff9c0d7ba9c3", null ]
+];

@@ -1,0 +1,534 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>PositionalTrackingParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structsl_1_1PositionalTrackingParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="structsl_1_1PositionalTrackingParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">PositionalTrackingParameters Class Reference<div class="ingroups"><a class="el" href="group__PositionalTracking__group.html">Positional Tracking Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Parameters for positional tracking initialization.  
+ <a href="structsl_1_1PositionalTrackingParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a51f95b77a73e4c6f88af6350a736e76f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a51f95b77a73e4c6f88af6350a736e76f">PositionalTrackingParameters</a> (<a class="el" href="classsl_1_1Transform.html">Transform</a> init_position_=<a class="el" href="classsl_1_1Transform.html">Transform</a>(), bool enable_memory_=true, bool enable_pose_smoothing_=false, <a class="el" href="classsl_1_1String.html">String</a> area_path_=<a class="el" href="classsl_1_1String.html">String</a>(), bool set_floor_as_origin_=false, bool enable_imu_fusion_=true, bool set_as_static_=false, float <a class="el" href="structsl_1_1PositionalTrackingParameters.html#aadd6031f9eb834584a65ac85b69c8e98">depth_min_range</a>=-1.f, bool set_gravity_as_origin_=true)</td></tr>
+<tr class="memdesc:a51f95b77a73e4c6f88af6350a736e76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Sets all parameters to their default and optimized values.  <a href="structsl_1_1PositionalTrackingParameters.html#a51f95b77a73e4c6f88af6350a736e76f">More...</a><br /></td></tr>
+<tr class="separator:a51f95b77a73e4c6f88af6350a736e76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cc1551df5fc5f6ba7d10f86a93df42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">save</a> (<a class="el" href="classsl_1_1String.html">String</a> filename)</td></tr>
+<tr class="memdesc:af9cc1551df5fc5f6ba7d10f86a93df42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current set of parameters into a file.  <a href="structsl_1_1PositionalTrackingParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">More...</a><br /></td></tr>
+<tr class="separator:af9cc1551df5fc5f6ba7d10f86a93df42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706f01ee88d8ba83113e49487f834eba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a706f01ee88d8ba83113e49487f834eba">load</a> (<a class="el" href="classsl_1_1String.html">String</a> filename)</td></tr>
+<tr class="memdesc:a706f01ee88d8ba83113e49487f834eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the values of the parameters contained in a file.  <a href="structsl_1_1PositionalTrackingParameters.html#a706f01ee88d8ba83113e49487f834eba">More...</a><br /></td></tr>
+<tr class="separator:a706f01ee88d8ba83113e49487f834eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddc0b96f1fd3ec7a9139f452f6df08f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a0ddc0b96f1fd3ec7a9139f452f6df08f">operator==</a> (const <a class="el" href="structsl_1_1PositionalTrackingParameters.html">PositionalTrackingParameters</a> &amp;param1) const</td></tr>
+<tr class="separator:a0ddc0b96f1fd3ec7a9139f452f6df08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b60cf84587b6a5edfc24e2aaad537b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a2b60cf84587b6a5edfc24e2aaad537b1">operator!=</a> (const <a class="el" href="structsl_1_1PositionalTrackingParameters.html">PositionalTrackingParameters</a> &amp;param1) const</td></tr>
+<tr class="separator:a2b60cf84587b6a5edfc24e2aaad537b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:aa2acc20b47d292508ff3ddd00f61bc6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#aa2acc20b47d292508ff3ddd00f61bc6c">initial_world_transform</a></td></tr>
+<tr class="separator:aa2acc20b47d292508ff3ddd00f61bc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167cc9e2baed1f406fd7c641affa8b99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a167cc9e2baed1f406fd7c641affa8b99">enable_area_memory</a></td></tr>
+<tr class="separator:a167cc9e2baed1f406fd7c641affa8b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4913ecfd3d2cab868e39576e012bc7a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a4913ecfd3d2cab868e39576e012bc7a1">enable_pose_smoothing</a></td></tr>
+<tr class="separator:a4913ecfd3d2cab868e39576e012bc7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccf07b1fa02cbbaabf55858a1ec8c59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#abccf07b1fa02cbbaabf55858a1ec8c59">set_floor_as_origin</a></td></tr>
+<tr class="separator:abccf07b1fa02cbbaabf55858a1ec8c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5732d2a19ac924dbdfd3e7a8ff162ca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a5732d2a19ac924dbdfd3e7a8ff162ca6">area_file_path</a></td></tr>
+<tr class="separator:a5732d2a19ac924dbdfd3e7a8ff162ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dffb5d6f491fa869fed2b13b178e1a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a2dffb5d6f491fa869fed2b13b178e1a9">enable_imu_fusion</a></td></tr>
+<tr class="separator:a2dffb5d6f491fa869fed2b13b178e1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c23e6c0df4bc26e7cc5421aea4d880e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#a1c23e6c0df4bc26e7cc5421aea4d880e">set_as_static</a></td></tr>
+<tr class="separator:a1c23e6c0df4bc26e7cc5421aea4d880e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd6031f9eb834584a65ac85b69c8e98"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#aadd6031f9eb834584a65ac85b69c8e98">depth_min_range</a></td></tr>
+<tr class="memdesc:aadd6031f9eb834584a65ac85b69c8e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">This setting allows you to change the minimum depth used by the SDK for Positional Tracking. It may be useful for example if any steady objects are in front of the camera and may perturbed the positional tracking algorithm. default : -1 which means no minimum depth.  <a href="structsl_1_1PositionalTrackingParameters.html#aadd6031f9eb834584a65ac85b69c8e98">More...</a><br /></td></tr>
+<tr class="separator:aadd6031f9eb834584a65ac85b69c8e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf134b0fc2e3327ef136197f7feafdfc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1PositionalTrackingParameters.html#abf134b0fc2e3327ef136197f7feafdfc">set_gravity_as_origin</a></td></tr>
+<tr class="memdesc:abf134b0fc2e3327ef136197f7feafdfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This setting allows you to override 2 of the 3 rotations from initial_world_transform using the IMU gravity default : true.  <a href="structsl_1_1PositionalTrackingParameters.html#abf134b0fc2e3327ef136197f7feafdfc">More...</a><br /></td></tr>
+<tr class="separator:abf134b0fc2e3327ef136197f7feafdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Parameters for positional tracking initialization. </p>
+<p>A default constructor is enabled and set to its default parameters. <br  />
+ You can customize it to fit your application and then save it to create a preset that can be loaded for further executions.</p>
+<dl class="section note"><dt>Note</dt><dd>Parameters can be user adjusted. </dd></dl>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="a51f95b77a73e4c6f88af6350a736e76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f95b77a73e4c6f88af6350a736e76f">&#9670;&nbsp;</a></span>PositionalTrackingParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsl_1_1PositionalTrackingParameters.html">PositionalTrackingParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1Transform.html">Transform</a>&#160;</td>
+          <td class="paramname"><em>init_position_</em> = <code><a class="el" href="classsl_1_1Transform.html">Transform</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_memory_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_pose_smoothing_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td>
+          <td class="paramname"><em>area_path_</em> = <code><a class="el" href="classsl_1_1String.html">String</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set_floor_as_origin_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_imu_fusion_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set_as_static_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depth_min_range</em> = <code>-1.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set_gravity_as_origin_</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. Sets all parameters to their default and optimized values. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Functions</h2>
+<a id="af9cc1551df5fc5f6ba7d10f86a93df42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cc1551df5fc5f6ba7d10f86a93df42">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the current set of parameters into a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: the name of the file which will be created to store the parameters (extension '.yml' will be added if not set). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the file was successfully saved, otherwise false. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>For security reason, the file must not exist. In case a file already exists, Function will return false and existing file will not be updated. </dd></dl>
+
+</div>
+</div>
+<a id="a706f01ee88d8ba83113e49487f834eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706f01ee88d8ba83113e49487f834eba">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads the values of the parameters contained in a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the path to the file from which the parameters will be loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the file was successfully loaded, otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a0ddc0b96f1fd3ec7a9139f452f6df08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddc0b96f1fd3ec7a9139f452f6df08f">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1PositionalTrackingParameters.html">PositionalTrackingParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comparison operator == </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1PositionalTrackingParameters.html" title="Parameters for positional tracking initialization.">PositionalTrackingParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are identical </dd></dl>
+
+</div>
+</div>
+<a id="a2b60cf84587b6a5edfc24e2aaad537b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b60cf84587b6a5edfc24e2aaad537b1">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1PositionalTrackingParameters.html">PositionalTrackingParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comparison operator != </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1PositionalTrackingParameters.html" title="Parameters for positional tracking initialization.">PositionalTrackingParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are different </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="aa2acc20b47d292508ff3ddd00f61bc6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2acc20b47d292508ff3ddd00f61bc6c">&#9670;&nbsp;</a></span>initial_world_transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Transform.html">Transform</a> initial_world_transform</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Position of the camera in the world frame when the camera is started. By default, it should be identity. <br  />
+ Use this <a class="el" href="classsl_1_1Transform.html">Transform</a> to place the camera frame in the world frame. <br  />
+ default: Identity matrix.</p>
+<dl class="section note"><dt>Note</dt><dd>The camera frame (which defines the reference frame for the camera) is by default positioned at the world frame when tracking is started. </dd></dl>
+
+</div>
+</div>
+<a id="a167cc9e2baed1f406fd7c641affa8b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a167cc9e2baed1f406fd7c641affa8b99">&#9670;&nbsp;</a></span>enable_area_memory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_area_memory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This mode enables the camera to remember its surroundings. This helps correct positional tracking drift, and can be helpful for positioning different cameras relative to one other in space. <br  />
+ default: true</p>
+<dl class="section warning"><dt>Warning</dt><dd>: This mode requires more resources to run, but greatly improves tracking accuracy. We recommend leaving it on by default. </dd></dl>
+
+</div>
+</div>
+<a id="a4913ecfd3d2cab868e39576e012bc7a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4913ecfd3d2cab868e39576e012bc7a1">&#9670;&nbsp;</a></span>enable_pose_smoothing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_pose_smoothing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This mode enables smooth pose correction for small drift correction. <br  />
+ default: false </p>
+
+</div>
+</div>
+<a id="abccf07b1fa02cbbaabf55858a1ec8c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abccf07b1fa02cbbaabf55858a1ec8c59">&#9670;&nbsp;</a></span>set_floor_as_origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_floor_as_origin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This mode initializes the tracking to be aligned with the floor plane to better position the camera in space. <br  />
+ default: false </p><dl class="section note"><dt>Note</dt><dd>This launches floor plane detection in the background until a suitable floor plane is found. The tracking is in <a class="el" href="namespacesl.html#gae481924a311113375bb3a99748d79e17adb46ca6757195ce8c1f015c9781d869e">POSITIONAL_TRACKING_STATE::SEARCHING</a> state.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This features work best with the ZED-M since it needs an IMU to classify the floor. The ZED needs to look at the floor during initialization for optimum results. </dd></dl>
+
+</div>
+</div>
+<a id="a5732d2a19ac924dbdfd3e7a8ff162ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5732d2a19ac924dbdfd3e7a8ff162ca6">&#9670;&nbsp;</a></span>area_file_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> area_file_path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Area localization file that describes the surroundings, saved from a previous tracking session. <br  />
+ default: (empty)</p>
+<dl class="section note"><dt>Note</dt><dd>Loading an area file will start a search phase, during which the camera will try to position itself in the previously learned area.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The area file describes a specific location. If you are using an area file describing a different location, the tracking function will continuously search for a position and may not find a correct one. </dd>
+<dd>
+The '.area' file can only be used with the same depth mode (MODE) as the one used during area recording. </dd></dl>
+
+</div>
+</div>
+<a id="a2dffb5d6f491fa869fed2b13b178e1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dffb5d6f491fa869fed2b13b178e1a9">&#9670;&nbsp;</a></span>enable_imu_fusion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_imu_fusion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This setting allows you to enable or disable IMU fusion. When set to false, only the optical odometry will be used. <br  />
+ default: true </p><dl class="section note"><dt>Note</dt><dd>This setting has no impact on the tracking of a ZED camera; only the ZED Mini uses a built-in IMU. </dd></dl>
+
+</div>
+</div>
+<a id="a1c23e6c0df4bc26e7cc5421aea4d880e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c23e6c0df4bc26e7cc5421aea4d880e">&#9670;&nbsp;</a></span>set_as_static</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_as_static</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This setting allows you define the camera as static. If true, it will not move in the environment. This allows you to set its position using initial_world_transform. <br  />
+ All SDK functionalities requiring positional tracking will be enabled without additional computation <br  />
+ <a class="el" href="classsl_1_1Camera.html#aec3f07c489393fc818967f847a99acbb" title="Retrieves the estimated position and orientation of the camera in the specified reference frame.">Camera::getPosition()</a> will return the value set as initial_world_transform for the PATH, and identity as the POSE. </p>
+
+</div>
+</div>
+<a id="aadd6031f9eb834584a65ac85b69c8e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd6031f9eb834584a65ac85b69c8e98">&#9670;&nbsp;</a></span>depth_min_range</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float depth_min_range</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This setting allows you to change the minimum depth used by the SDK for Positional Tracking. It may be useful for example if any steady objects are in front of the camera and may perturbed the positional tracking algorithm. default : -1 which means no minimum depth. </p>
+
+</div>
+</div>
+<a id="abf134b0fc2e3327ef136197f7feafdfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf134b0fc2e3327ef136197f7feafdfc">&#9670;&nbsp;</a></span>set_gravity_as_origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set_gravity_as_origin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This setting allows you to override 2 of the 3 rotations from initial_world_transform using the IMU gravity default : true. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

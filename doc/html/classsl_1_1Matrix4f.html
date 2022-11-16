@@ -1,0 +1,891 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Matrix4f Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classsl_1_1Matrix4f.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-static-methods">Static Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="classsl_1_1Matrix4f-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Matrix4f Class Reference<div class="ingroups"><a class="el" href="group__Core__group.html">Core Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents a generic 4*4 matrix.  
+ <a href="classsl_1_1Matrix4f.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a519bb6dd76a3db4a010107cbee55a26c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a519bb6dd76a3db4a010107cbee55a26c">Matrix4f</a> ()</td></tr>
+<tr class="memdesc:a519bb6dd76a3db4a010107cbee55a26c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> default constructor.  <a href="classsl_1_1Matrix4f.html#a519bb6dd76a3db4a010107cbee55a26c">More...</a><br /></td></tr>
+<tr class="separator:a519bb6dd76a3db4a010107cbee55a26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ad5d3556202c422f2abb9e621b356e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a84ad5d3556202c422f2abb9e621b356e">Matrix4f</a> (float data[])</td></tr>
+<tr class="memdesc:a84ad5d3556202c422f2abb9e621b356e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> copy constructor (deep copy).  <a href="classsl_1_1Matrix4f.html#a84ad5d3556202c422f2abb9e621b356e">More...</a><br /></td></tr>
+<tr class="separator:a84ad5d3556202c422f2abb9e621b356e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f40956c12d50b9849ebaa289690a3e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a3f40956c12d50b9849ebaa289690a3e0">Matrix4f</a> (const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;mat)</td></tr>
+<tr class="memdesc:a3f40956c12d50b9849ebaa289690a3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> copy constructor (deep copy).  <a href="classsl_1_1Matrix4f.html#a3f40956c12d50b9849ebaa289690a3e0">More...</a><br /></td></tr>
+<tr class="separator:a3f40956c12d50b9849ebaa289690a3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254c4a45f9dea4f7343eacb15ca79168"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a254c4a45f9dea4f7343eacb15ca79168">operator*</a> (const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;mat) const</td></tr>
+<tr class="separator:a254c4a45f9dea4f7343eacb15ca79168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ce2c7f7b9fa4c64b2bf7188fc36674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a08ce2c7f7b9fa4c64b2bf7188fc36674">operator*</a> (const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; float &gt; &amp;vect) const</td></tr>
+<tr class="separator:a08ce2c7f7b9fa4c64b2bf7188fc36674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9dc9e4d4f55ac350328f44d05643217"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#aa9dc9e4d4f55ac350328f44d05643217">operator*</a> (const float &amp;scalar) const</td></tr>
+<tr class="separator:aa9dc9e4d4f55ac350328f44d05643217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86708b5c57ef425cdb460addeee1ac9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a86708b5c57ef425cdb460addeee1ac9d">operator+</a> (const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;mat) const</td></tr>
+<tr class="separator:a86708b5c57ef425cdb460addeee1ac9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d82c61a159a0dea9b11dc79af70d57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a80d82c61a159a0dea9b11dc79af70d57">operator+</a> (const float &amp;scalar) const</td></tr>
+<tr class="separator:a80d82c61a159a0dea9b11dc79af70d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cd47aa503a8127b6985b9d392ebde2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#af5cd47aa503a8127b6985b9d392ebde2">operator-</a> (const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;mat) const</td></tr>
+<tr class="separator:af5cd47aa503a8127b6985b9d392ebde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41776a44dc708a2ac1c11be0d58a6ebd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a41776a44dc708a2ac1c11be0d58a6ebd">operator-</a> (const float &amp;scalar) const</td></tr>
+<tr class="separator:a41776a44dc708a2ac1c11be0d58a6ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91f381aff57cdeadba7a4d07e5ff069"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#ae91f381aff57cdeadba7a4d07e5ff069">operator==</a> (const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;mat) const</td></tr>
+<tr class="separator:ae91f381aff57cdeadba7a4d07e5ff069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c60d7ad8c25046cb9f4747145a45726"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a2c60d7ad8c25046cb9f4747145a45726">operator!=</a> (const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;mat) const</td></tr>
+<tr class="separator:a2c60d7ad8c25046cb9f4747145a45726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79427ff9580fb640002e62291006f739"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a79427ff9580fb640002e62291006f739">operator()</a> (int u, int v)</td></tr>
+<tr class="memdesc:a79427ff9580fb640002e62291006f739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets access to a specific point in the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> (read / write).  <a href="classsl_1_1Matrix4f.html#a79427ff9580fb640002e62291006f739">More...</a><br /></td></tr>
+<tr class="separator:a79427ff9580fb640002e62291006f739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f12d01c1777d3b6f5d4892dda87888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#af9f12d01c1777d3b6f5d4892dda87888">inverse</a> ()</td></tr>
+<tr class="memdesc:af9f12d01c1777d3b6f5d4892dda87888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to its inverse.  <a href="classsl_1_1Matrix4f.html#af9f12d01c1777d3b6f5d4892dda87888">More...</a><br /></td></tr>
+<tr class="separator:af9f12d01c1777d3b6f5d4892dda87888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a99ffb20127be48232d12260e934dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#af3a99ffb20127be48232d12260e934dc">transpose</a> ()</td></tr>
+<tr class="memdesc:af3a99ffb20127be48232d12260e934dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to its transpose.  <a href="classsl_1_1Matrix4f.html#af3a99ffb20127be48232d12260e934dc">More...</a><br /></td></tr>
+<tr class="separator:af3a99ffb20127be48232d12260e934dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382e6ad7e6721b121e510959e1011be3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a382e6ad7e6721b121e510959e1011be3">setIdentity</a> ()</td></tr>
+<tr class="memdesc:a382e6ad7e6721b121e510959e1011be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to identity.  <a href="classsl_1_1Matrix4f.html#a382e6ad7e6721b121e510959e1011be3">More...</a><br /></td></tr>
+<tr class="separator:a382e6ad7e6721b121e510959e1011be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8969cb5fdb4916f259075029741e727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#ac8969cb5fdb4916f259075029741e727">setZeros</a> ()</td></tr>
+<tr class="memdesc:ac8969cb5fdb4916f259075029741e727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to zero.  <a href="classsl_1_1Matrix4f.html#ac8969cb5fdb4916f259075029741e727">More...</a><br /></td></tr>
+<tr class="separator:ac8969cb5fdb4916f259075029741e727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc12a780b7b3601fb670a3f04795defd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#abc12a780b7b3601fb670a3f04795defd">setSubMatrix3f</a> (<a class="el" href="classsl_1_1Matrix3f.html">Matrix3f</a> input, int row=0, int column=0)</td></tr>
+<tr class="memdesc:abc12a780b7b3601fb670a3f04795defd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a 3x3 Matrix inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>.  <a href="classsl_1_1Matrix4f.html#abc12a780b7b3601fb670a3f04795defd">More...</a><br /></td></tr>
+<tr class="separator:abc12a780b7b3601fb670a3f04795defd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09b5c3c8901ed0bfe16198ed0c2ca43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#ac09b5c3c8901ed0bfe16198ed0c2ca43">setSubVector3f</a> (<a class="el" href="classsl_1_1Vector3.html">Vector3</a>&lt; float &gt; input, int column=3)</td></tr>
+<tr class="memdesc:ac09b5c3c8901ed0bfe16198ed0c2ca43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a 3x1 Vector inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> at the specified column index.  <a href="classsl_1_1Matrix4f.html#ac09b5c3c8901ed0bfe16198ed0c2ca43">More...</a><br /></td></tr>
+<tr class="separator:ac09b5c3c8901ed0bfe16198ed0c2ca43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21050792e6b329281d0f901b4be154c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#af21050792e6b329281d0f901b4be154c">setSubVector4f</a> (<a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; float &gt; input, int column=3)</td></tr>
+<tr class="memdesc:af21050792e6b329281d0f901b4be154c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a 4x1 Vector inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> at the specified column index.  <a href="classsl_1_1Matrix4f.html#af21050792e6b329281d0f901b4be154c">More...</a><br /></td></tr>
+<tr class="separator:af21050792e6b329281d0f901b4be154c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49a456b67d2135d93334a2b1737d247"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#ab49a456b67d2135d93334a2b1737d247">getInfos</a> ()</td></tr>
+<tr class="memdesc:ab49a456b67d2135d93334a2b1737d247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the components of the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> in a <a class="el" href="classsl_1_1String.html">String</a>.  <a href="classsl_1_1Matrix4f.html#ab49a456b67d2135d93334a2b1737d247">More...</a><br /></td></tr>
+<tr class="separator:ab49a456b67d2135d93334a2b1737d247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Functions</h2></td></tr>
+<tr class="memitem:addf696541f7c5aa1e64a25557030db30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#addf696541f7c5aa1e64a25557030db30">inverse</a> (const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;mat)</td></tr>
+<tr class="memdesc:addf696541f7c5aa1e64a25557030db30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the inverse of a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>.  <a href="classsl_1_1Matrix4f.html#addf696541f7c5aa1e64a25557030db30">More...</a><br /></td></tr>
+<tr class="separator:addf696541f7c5aa1e64a25557030db30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343bf9289e824f5245d1d1a0fba12277"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a343bf9289e824f5245d1d1a0fba12277">transpose</a> (const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;mat)</td></tr>
+<tr class="memdesc:a343bf9289e824f5245d1d1a0fba12277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the transpose of a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>.  <a href="classsl_1_1Matrix4f.html#a343bf9289e824f5245d1d1a0fba12277">More...</a><br /></td></tr>
+<tr class="separator:a343bf9289e824f5245d1d1a0fba12277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10dad16c76a94f075450cfda3b0b1cbe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a10dad16c76a94f075450cfda3b0b1cbe">identity</a> ()</td></tr>
+<tr class="memdesc:a10dad16c76a94f075450cfda3b0b1cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an identity <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>.  <a href="classsl_1_1Matrix4f.html#a10dad16c76a94f075450cfda3b0b1cbe">More...</a><br /></td></tr>
+<tr class="separator:a10dad16c76a94f075450cfda3b0b1cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78dd1c543cb7c301bc4144ecdf6eeb35"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#a78dd1c543cb7c301bc4144ecdf6eeb35">zeros</a> ()</td></tr>
+<tr class="memdesc:a78dd1c543cb7c301bc4144ecdf6eeb35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> filled with zeros.  <a href="classsl_1_1Matrix4f.html#a78dd1c543cb7c301bc4144ecdf6eeb35">More...</a><br /></td></tr>
+<tr class="separator:a78dd1c543cb7c301bc4144ecdf6eeb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:ae2ff67f0e4f1087845099b27b00281bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Matrix4f.html#ae2ff67f0e4f1087845099b27b00281bb">matrix_name</a></td></tr>
+<tr class="memdesc:ae2ff67f0e4f1087845099b27b00281bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the matrix (optional).  <a href="classsl_1_1Matrix4f.html#ae2ff67f0e4f1087845099b27b00281bb">More...</a><br /></td></tr>
+<tr class="separator:ae2ff67f0e4f1087845099b27b00281bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a generic 4*4 matrix. </p>
+<p>It is defined in a row-major order, it means that, in the value buffer, the entire first row is stored first, followed by the entire second row, and so on. You can access the data by the 'm' ptr or by the element attribute.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">r00   </td><td class="markdownTableBodyNone">r01   </td><td class="markdownTableBodyNone">r02   </td><td class="markdownTableBodyNone">tx    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">r10   </td><td class="markdownTableBodyNone">r11   </td><td class="markdownTableBodyNone">r12   </td><td class="markdownTableBodyNone">ty    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">r20   </td><td class="markdownTableBodyNone">r21   </td><td class="markdownTableBodyNone">r22   </td><td class="markdownTableBodyNone">tz    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">m30   </td><td class="markdownTableBodyNone">m31   </td><td class="markdownTableBodyNone">m32   </td><td class="markdownTableBodyNone">m33   </td></tr>
+</table>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="a519bb6dd76a3db4a010107cbee55a26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519bb6dd76a3db4a010107cbee55a26c">&#9670;&nbsp;</a></span>Matrix4f() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> default constructor. </p>
+
+</div>
+</div>
+<a id="a84ad5d3556202c422f2abb9e621b356e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ad5d3556202c422f2abb9e621b356e">&#9670;&nbsp;</a></span>Matrix4f() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>data</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> copy constructor (deep copy). </p>
+
+</div>
+</div>
+<a id="a3f40956c12d50b9849ebaa289690a3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f40956c12d50b9849ebaa289690a3e0">&#9670;&nbsp;</a></span>Matrix4f() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> copy constructor (deep copy). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>: the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Functions</h2>
+<a id="a254c4a45f9dea4f7343eacb15ca79168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a254c4a45f9dea4f7343eacb15ca79168">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Gives the result of the multiplication between two <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </p>
+
+</div>
+</div>
+<a id="a08ce2c7f7b9fa4c64b2bf7188fc36674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ce2c7f7b9fa4c64b2bf7188fc36674">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vect</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Gives the result of the multiplication between a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> and a float4. </p>
+
+</div>
+</div>
+<a id="aa9dc9e4d4f55ac350328f44d05643217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9dc9e4d4f55ac350328f44d05643217">&#9670;&nbsp;</a></span>operator*() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Gives the result of the multiplication between a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> and a scalar. </p>
+
+</div>
+</div>
+<a id="a86708b5c57ef425cdb460addeee1ac9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86708b5c57ef425cdb460addeee1ac9d">&#9670;&nbsp;</a></span>operator+() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Gives the result of the addition between two <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </p>
+
+</div>
+</div>
+<a id="a80d82c61a159a0dea9b11dc79af70d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d82c61a159a0dea9b11dc79af70d57">&#9670;&nbsp;</a></span>operator+() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Gives the result of the addition between a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> and a scalar. </p>
+
+</div>
+</div>
+<a id="af5cd47aa503a8127b6985b9d392ebde2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cd47aa503a8127b6985b9d392ebde2">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Gives the result of the subtraction between two <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </p>
+
+</div>
+</div>
+<a id="a41776a44dc708a2ac1c11be0d58a6ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41776a44dc708a2ac1c11be0d58a6ebd">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Gives the result of the subtraction between a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> and a scalar. </p>
+
+</div>
+</div>
+<a id="ae91f381aff57cdeadba7a4d07e5ff069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91f381aff57cdeadba7a4d07e5ff069">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Tests two <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> equality. </p>
+
+</div>
+</div>
+<a id="a2c60d7ad8c25046cb9f4747145a45726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c60d7ad8c25046cb9f4747145a45726">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief Tests two <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> inequality. </p>
+
+</div>
+</div>
+<a id="a79427ff9580fb640002e62291006f739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79427ff9580fb640002e62291006f739">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float&amp; operator() </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets access to a specific point in the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> (read / write). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>: specify the row. </td></tr>
+    <tr><td class="paramname">v</td><td>: specify the column. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value at the u, v coordinates. </dd></dl>
+
+</div>
+</div>
+<a id="af9f12d01c1777d3b6f5d4892dda87888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f12d01c1777d3b6f5d4892dda87888">&#9670;&nbsp;</a></span>inverse() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> inverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to its inverse. </p>
+<dl class="section return"><dt>Returns</dt><dd>SUCCESS if the inverse has been computed, <a class="el" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28ca36fc6065a3e970bc3e6b2e59da52bf2a">ERROR_CODE.FAILURE</a> is not (det = 0). </dd></dl>
+
+</div>
+</div>
+<a id="addf696541f7c5aa1e64a25557030db30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addf696541f7c5aa1e64a25557030db30">&#9670;&nbsp;</a></span>inverse() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> inverse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the inverse of a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>: the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to compute the inverse from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The inverse of the given <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </dd></dl>
+
+</div>
+</div>
+<a id="af3a99ffb20127be48232d12260e934dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a99ffb20127be48232d12260e934dc">&#9670;&nbsp;</a></span>transpose() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void transpose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to its transpose. </p>
+
+</div>
+</div>
+<a id="a343bf9289e824f5245d1d1a0fba12277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a343bf9289e824f5245d1d1a0fba12277">&#9670;&nbsp;</a></span>transpose() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> transpose </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the transpose of a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>: the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to compute the transpose from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The transpose of the given <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a382e6ad7e6721b121e510959e1011be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a382e6ad7e6721b121e510959e1011be3">&#9670;&nbsp;</a></span>setIdentity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setIdentity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to identity. </p>
+
+</div>
+</div>
+<a id="a10dad16c76a94f075450cfda3b0b1cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10dad16c76a94f075450cfda3b0b1cbe">&#9670;&nbsp;</a></span>identity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> identity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an identity <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> set to identity. </dd></dl>
+
+</div>
+</div>
+<a id="ac8969cb5fdb4916f259075029741e727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8969cb5fdb4916f259075029741e727">&#9670;&nbsp;</a></span>setZeros()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setZeros </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> to zero. </p>
+
+</div>
+</div>
+<a id="a78dd1c543cb7c301bc4144ecdf6eeb35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78dd1c543cb7c301bc4144ecdf6eeb35">&#9670;&nbsp;</a></span>zeros()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classsl_1_1Matrix4f.html">Matrix4f</a> zeros </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> filled with zeros. </p>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> set to zero. </dd></dl>
+
+</div>
+</div>
+<a id="abc12a780b7b3601fb670a3f04795defd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc12a780b7b3601fb670a3f04795defd">&#9670;&nbsp;</a></span>setSubMatrix3f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> setSubMatrix3f </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1Matrix3f.html">Matrix3f</a>&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>column</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a 3x3 Matrix inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Can be used to set the rotation matrix when the matrix4f is a pose or an isometric matrix. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>: sub matrix to put inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </td></tr>
+    <tr><td class="paramname">row</td><td>: index of the row to start the 3x3 block. Must be 0 or 1. </td></tr>
+    <tr><td class="paramname">column</td><td>: index of the column to start the 3x3 block. Must be 0 or 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SUCCESS if everything went well, ERROR_CODE_FAILURE otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ac09b5c3c8901ed0bfe16198ed0c2ca43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09b5c3c8901ed0bfe16198ed0c2ca43">&#9670;&nbsp;</a></span>setSubVector3f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> setSubVector3f </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1Vector3.html">Vector3</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>column</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a 3x1 Vector inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> at the specified column index. </p>
+<dl class="section note"><dt>Note</dt><dd>Can be used to set the Translation/Position matrix when the matrix4f is a pose or an isometry. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>: sub vector to put inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </td></tr>
+    <tr><td class="paramname">column</td><td>: index of the column to start the 3x3 block. By default, it is the last column (translation for a <a class="el" href="classsl_1_1Pose.html" title="Contains positional tracking data which gives the position and orientation of the ZED in 3D space.">Pose</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SUCCESS if everything went well, ERROR_CODE_FAILURE otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="af21050792e6b329281d0f901b4be154c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21050792e6b329281d0f901b4be154c">&#9670;&nbsp;</a></span>setSubVector4f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> setSubVector4f </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>column</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a 4x1 Vector inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> at the specified column index. </p>
+<dl class="section note"><dt>Note</dt><dd>Can be used to set the Translation/Position matrix when the matrix4f is a pose or an isometry. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>: sub vector to put inside the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </td></tr>
+    <tr><td class="paramname">column</td><td>: index of the column to start the 3x3 block. By default, it is the last column (translation for a <a class="el" href="classsl_1_1Pose.html" title="Contains positional tracking data which gives the position and orientation of the ZED in 3D space.">Pose</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SUCCESS if everything went well, ERROR_CODE_FAILURE otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ab49a456b67d2135d93334a2b1737d247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49a456b67d2135d93334a2b1737d247">&#9670;&nbsp;</a></span>getInfos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> getInfos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the components of the <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a> in a <a class="el" href="classsl_1_1String.html">String</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classsl_1_1String.html">String</a> containing the components of the current <a class="el" href="classsl_1_1Matrix4f.html" title="Represents a generic 4*4 matrix.">Matrix4f</a>. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="ae2ff67f0e4f1087845099b27b00281bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ff67f0e4f1087845099b27b00281bb">&#9670;&nbsp;</a></span>matrix_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> matrix_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the matrix (optional). </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

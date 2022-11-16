@@ -1,0 +1,3400 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Release Notes | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:37"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:37" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md_release_notes.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Release Notes </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><br  />
+</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+3.8.1</h1>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Improvements</h2>
+<ul>
+<li>Improved and deployed 3.8 ZED SDK Docker images for size and clarity</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed default image sharpening value to be similar to previous versions.</li>
+<li>Fixed setRegionOfInterest function for PERFORMANCE, QUALITY, and NEURAL depth map that previously resulted in artifacts on the edges.</li>
+<li>Fixed PlaneAtHit that could return shrunk planes</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Known issue</h2>
+<ul>
+<li>Maxwell and Kepler GPUs (compute capabilities 35, 50 and 52) are not supported using CUDA 11.X, only with CUDA 10.2</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
+3.8</h1>
+<h2><a class="anchor" id="autotoc_md6"></a>
+New Features / Improvements</h2>
+<p>ZED SDK 3.8 is a major release that includes new features and performance improvements to depth sensing and body tracking. This update brings up to 50% performance improvement for Neural depth sensing. Human skeleton tracking has also been sped up by +40% on most platforms. The Linux installer size has been reduced by 50%.</p>
+<p>A new plugin for Unreal Engine 5 is now available. The latest ROS2 LTS distribution Humble Hawksbill is also now supported.</p>
+<p>Note: On Linux, the “zstd” package is now required to uncompress the installer (see details below).</p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Features</h2>
+<ul>
+<li>Improved Neural depth runtime by up to 50%. Depth FPS now reaches 60FPS on platforms such as Jetson AGX Orin, and 30FPS for 2 cameras. This speed-up is a combination of network optimization, pruning and improved usage of FP16 inference.</li>
+<li>Added <code>ObjectDetectionParameters::allow_reduced_precision_inference</code> parameter to be able to run the AI inference with quantization to improve runtime while allowing a slight decrease in accuracy. By default all AI models are running in fp16 (half) with no accuracy difference when the GPU supports (requires a Jetson or Volta GPU and newer) it and fallback to fp32 otherwise. This mode allows int8 inference that provides x4 the throughput on supported operations compared to fp32 and decreases the memory usage. The accuracy loss should not exceed 1-2% on the compatible models. For now, only <code>HUMAN_BODY_xxxx</code> models support it.</li>
+<li>Added a new <code>Camera::setRegionOfInterest</code> function, it defines a region of interest with a mask to focus on for all the SDK, discarding other parts. It can be useful to filter out known objects that are irrelevant, such as vehicle hoods or drone propellers that can degrade positional tracking or depth estimation by adding noises. Two new samples are now available.</li>
+</ul>
+<p>Improved Depth Viewer rendering pipeline, especially on Jetson. It is now up to 50% faster.</p>
+<ul>
+<li>Improved sharpening behavior, the lowest setting now disables it. The processing has also been improved and no longer produces color artifacts.</li>
+<li>Added <code>PositionalTrackingParameters::set_gravity_as_origin</code> parameter. It allows you to set the odometry world position using sensor data. For instance, if true (default), the initial_world_transform will be aligned with IMU gravity by keeping the user's yaw.</li>
+<li>Added <code>PositionalTrackingParameters::depth_min_range</code> parameter to change the minimum range of the odometry. It may be useful if we want to remove some fixed objects in near range.</li>
+<li>Added <code>ObjectDetectionParameters::prediction_timeout_s</code> parameter to tune the prediction time when an object disappears. When an object is not detected anymore, the SDK will predict its positions for a short period of time before its state switches to SEARCHING. This parameter prevents the jittering of the object state when there is a short misdetection</li>
+</ul>
+<p>Improved floor plane detection stability</p>
+<ul>
+<li>Introduced a new <code><a class="el" href="group__PositionalTracking__group.html#ggae481924a311113375bb3a99748d79e17a76678b8b91427d2ee20d7c70488b7081" title="The camera is searching for the floor plane to locate itself related to it, the REFERENCE_FRAME....">sl::POSITIONAL_TRACKING_STATE::SEARCHING_FLOOR_PLANE</a></code>, when you use the <code>sl::PositionalTrackingParameter::set_floor_as_origin</code>, to know if the positional tracking is started or not</li>
+<li><a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl::Mat</a> class has been improved to allow faster transfers. The <code>updateGPUfromCPU</code> and <code>updateCPUfromGPU</code>, as well as <code>copyTo</code>, now include a <code>cudaStream_t</code> parameter to asynchronously retrieve the data when using GPU memory.</li>
+<li>Added a support function, <code>sl::convertImage</code>, to convert image format from <code>sl::MAT_TYPE::U8C4</code> to <code>sl::MAT_TYPE::S8C4</code>, mainly for Unreal Engine.</li>
+<li>On Linux, the installers now use zstandard as the default compression (previously gzip). They are now half the size and twice faster to extract. The zstd package must be installed ('sudo apt install zstd') to use the ZED SDK installer.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Bug fixes</h2>
+<ul>
+<li>Fixed a slight drift in <a class="el" href="structsl_1_1Pose.html" title="Pose structure with data on timing and validity in addition to position and rotation.">sl::Pose</a> from the Camera::getPosition function when using <a class="el" href="group__PositionalTracking__group.html#gga7160d24146fdddd5a7e8f67fde1c4487addf0d6b21537d984fea6544f58101fa8" title="Matrix contains the displacement from the previous camera position to the current one.">sl::REFERENCE_FRAME::CAMERA</a>. The cumulative pose from this local pose could introduce a huge drift compared to the <a class="el" href="structsl_1_1Pose.html" title="Pose structure with data on timing and validity in addition to position and rotation.">sl::Pose</a> from <a class="el" href="group__PositionalTracking__group.html#gga7160d24146fdddd5a7e8f67fde1c4487a5289492cf082446ca4a6eec9f72f1ec3" title="Matrix contains the total displacement from the world origin/the first tracked point.">sl::REFERENCE_FRAME::WORLD</a> when loop closure is disabled.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Python</h3>
+<ul>
+<li>Improve installation script with better python package folder detection (reported by Github user @GER-Jani).</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Unity</h3>
+<ul>
+<li>Add the option to open the camera by its serial number.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Unreal</h3>
+<ul>
+<li>Release of a new plugin compatible with Unreal Engine 5</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md12"></a>
+&lt;a href="https://github.com/stereolabs/zed-ros2-wrapper"&gt;ROS2&lt;/a&gt;</h3>
+<ul>
+<li>Added support for ROS2 Humble Hawksbill. Thx @nakai-omer. The two ROS2 LTS releases are now supported simultaneously.</li>
+<li>Fixed a wrong behavior of the <code>set_pose</code> service. Now the initial odometry is coherent with the new starting point value used as a parameter.</li>
+<li>Added Plane Detection feature. <a href="https://www.stereolabs.com/docs/ros2/plane_detection/">Read more</a>.</li>
+<li>Added a sub-set of parameters for debugging with new parameters <code>debug_mode</code> and <code>debug_sensors</code>.</li>
+<li>Fixed the "NO DEPTH" mode. By setting <code>depth.quality</code> to 0 now the depth extraction and all the sub-modules depending on it are correctly disabled.</li>
+<li>Set <code>read_only</code> flag in the parameter descriptor for non-dynamic parameters. Thx @bjsowa.</li>
+<li>Enabled Intra Process Communication (IPC). The ZED node no longer publishes topics with <code>TRANSIENT LOCAL</code> durability.</li>
+<li>Added TF broadcasting diagnostic.</li>
+<li>Fixed data grabbing frame rate when publishing is set to a lower value.</li>
+<li>Improved IMU/Left Camera TF broadcasting at IMU frequency.</li>
+<li>Improved TF broadcasting at grabbing frequency.</li>
+<li>Fixed random errors when closing the node.</li>
+<li>New data thread configuration to maximize data publishing frequency.<ul>
+<li>Sensor data publishing moved from timer to thread.</li>
+<li>RGB/Depth data publishing moved from timer to thread.</li>
+</ul>
+</li>
+<li>Moved Sensor Parameters from cameras configuration files to <code>common.yaml</code>.</li>
+<li>Moved Object Detection parameters from cameras configuration files to <code>common.yaml</code>.</li>
+<li>The parameter <code>general.sdk_verbose</code> is now an integer accepting different SDK verbose levels.</li>
+<li>Added a new benchmarking tool in the <code>zed-ros2-examples</code> repository to get frequency and bandwidth information from a subscribed topic and plot data.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md13"></a>
+&lt;a href="https://github.com/stereolabs/zed-ros-wrapper"&gt;ROS&lt;/a&gt;</h3>
+<ul>
+<li>Fixed TF timestamp issue in SVO mode.</li>
+<li>Added Plane Detection. <a href="https://www.stereolabs.com/docs/ros/plane_detection/">Read more</a>.</li>
+<li>Fixed wrong TF broadcasting when calling the set_pose, reset_tracking, and reset_odometry services. Now the initial odometry is coherent with the new starting point.</li>
+<li>Added parameter sensors/max_pub_rate to set the maximum publishing frequency of sensors data</li>
+<li>Improved Sensors thread.</li>
+<li>Fixed the frame links of barometer, magnetometer, and temperature sensors for ZED2i.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Deprecation</h2>
+<ul>
+<li>CUDA 10.0 installers are no longer supported with this release. Users are encouraged to migrate to the latest CUDA 11.X.</li>
+<li>Jetson users are encouraged to move the latest L4T 35.1 when using a Xavier and Orin, and L4T 32.7 for Nano and TX2. The L4T 32.3, 32.4, 32.5, 32.6 are now deprecated.</li>
+</ul>
+<p>Note: While CUDA 10.2 is still supported, users are strongly encouraged to migrate to CUDA 11.X, which provides a performance improvement between 20 to 40% with the same hardware.</p>
+<h2><a class="anchor" id="autotoc_md15"></a>
+Known issue</h2>
+<ul>
+<li>Maxwell and Kepler GPUs (compute capabilities 35, 50 and 52) are not supported using CUDA 11.X, only with CUDA 10.2</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md16"></a>
+3.7.7</h1>
+<h2><a class="anchor" id="autotoc_md17"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed lost camera video settings when grab() triggers a internal recovery The camera settings were set back to default, whereas they should have been kept as the previous choosen value. This is now the expected behavior.</li>
+<li>Fixed camera settings control in Streaming mode (sender/receiver). The receiver could lost the ability to control the camera settings after a while. It happened when the sender grab() function was triggering a internal recovery and lost the control of camera settings.</li>
+<li>Fixed a Heap buffer overflow in SVO recording on Jetson that could lead to unexpected random behavior.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md18"></a>
+3.7.6</h1>
+<h2><a class="anchor" id="autotoc_md19"></a>
+Regression Fixes</h2>
+<ul>
+<li>Fixed cuDNN packaging for Windows installer</li>
+<li>Fixed <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl::Mat</a> GPU allocation on jetson leading to NO_GPU_COMPATIBLE Error</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md20"></a>
+3.7.5</h1>
+<h1><a class="anchor" id="autotoc_md21"></a>
+SDK</h1>
+<h1><a class="anchor" id="autotoc_md22"></a>
+Platform</h1>
+<ul>
+<li>Added support for Ubuntu 22.04</li>
+<li>Added support for CUDA up to 11.7</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md23"></a>
+Improvements</h1>
+<ul>
+<li>Increased PERSON_HEAD_BOX models inference speed by up to 50% while slightly improving accuracy, especially in the far range</li>
+<li>Increased MULTI_CLASS models accuracy by ~2% while also improving inference speed, by up to 5%</li>
+<li>Improved Positional Tracking accuracy when using Visual Inertial Fusion</li>
+<li>Reduced GPU memory footprint of the SDK, up to 300Mo</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md24"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed platform detection issue in the python installer script for L4T 34.X</li>
+<li>Fixed symbol export for windows python installer</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md25"></a>
+Tools</h2>
+<ul>
+<li>DepthViewer can now open streams</li>
+<li>DepthViewer enables camera settings control</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md26"></a>
+3.7.4</h1>
+<h2><a class="anchor" id="autotoc_md27"></a>
+Security Fixes</h2>
+<ul>
+<li>Fixed incorrect permission on Linux: the installed udev rules, to open the IMU without root access, were incorrect and could allow privilege escalation.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md28"></a>
+Improvements</h2>
+<ul>
+<li>Removed warning verbose of deprecated functions during compilation</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md29"></a>
+3.7.3</h1>
+<h2><a class="anchor" id="autotoc_md30"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed possible crash in Reid model optimization</li>
+<li>Fixed spatial mapping invalid behavior when using multiple camera simultaneously</li>
+<li>Fixed Custom object detector random infinite loops</li>
+<li>Fixed self calibration un-deterministic behavior</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md31"></a>
+Improvements</h2>
+<ul>
+<li>Added AI model download and optimization progress bars</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md32"></a>
+Tools</h2>
+<ul>
+<li>Fixed ZED Explorer streaming input</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md33"></a>
+Samples</h2>
+<ul>
+<li>Added support for YOLOv5 v6 in the custom detector cpp sample</li>
+<li>Improved sample cmake</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md34"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md35"></a>
+Python</h3>
+<ul>
+<li>Improved numpy conversion in get_data() function by removing the deep copy by default (up to 30% faster samples)</li>
+<li>Fixed missing timestamp attribute for Mat class</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md36"></a>
+Platforms</h2>
+<ul>
+<li>Added support of JP5.0 DP (L4T 34.1)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md37"></a>
+3.7.2</h1>
+<h2><a class="anchor" id="autotoc_md38"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed possible segmentation fault when calling <code>enableRecording()</code> / <code>enableStreaming()</code> in a separated thread than <code>grab()</code> function.</li>
+<li>Fixed recording freeze issue on Jetson introduced in 3.7.1</li>
+<li>Added security check in custom object tracking when bounding box is not valid.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md39"></a>
+Tools</h2>
+<ul>
+<li>Fixed camera firmware update on Linux.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md40"></a>
+3.7.1</h1>
+<h2><a class="anchor" id="autotoc_md41"></a>
+Improvements</h2>
+<ul>
+<li>ZED Depth Viewer will now propose to optimize the NEURAL depth mode if necessary when requested.</li>
+<li>Manual Exposure and Gain are now kept when camera is closed/re-opened. This ensure that you can setup a manual configuration and keep it with other software that uses the ZED SDK. Note that changes are lost when camera is unplugged.</li>
+<li>Improved automatic <code>grab()</code> recovery for more stability.</li>
+<li>Improved camera sanity check (checks that images are consistent) on Linux and Windows for more stability.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md42"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed heap memory overflow when optimizing the NEURAL depth mode model.</li>
+<li>Fixed an issue in <code>Camera::getSensorsData()</code> that could cause a segmentation fault.</li>
+<li>Fixed a keypoint rotation issue when using body tacking in <code>BODY_FORMAT::POSE_34</code>. This was causing unexpected jumps in body tracking.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md43"></a>
+Tools</h2>
+<ul>
+<li>Add Streaming input in ZED Explorer</li>
+<li>Fixed Depth Viewer stability (when changing resolution or depth mode).</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md44"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md45"></a>
+Unreal Engine</h3>
+<ul>
+<li>Add support for 3.7 in Unreal plugin with Custom Engine (zed-UE4.21)</li>
+<li>Add support for streaming input in Unreal plugin.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md46"></a>
+C# API</h3>
+<ul>
+<li>Update C# function naming to match the C++ API.</li>
+<li>Added missing <a class="el" href="classsl_1_1Camera.html" title="This class is the main interface with the camera and the SDK features, such as: video,...">sl::Camera</a> methods.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md47"></a>
+Platforms</h2>
+<ul>
+<li>Added support of JP4.6.1 (L4T 32.7)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md48"></a>
+3.7.0</h1>
+<h2><a class="anchor" id="autotoc_md49"></a>
+SDK</h2>
+<h2><a class="anchor" id="autotoc_md50"></a>
+New Features / Improvements</h2>
+<p>Stereolabs continues to push the boundaries of depth-sensing by introducing a ground-breaking new depth mode with the new <b>NEURAL DEPTH MODE</b>.<br  />
+ Based on multiple years of development, we are finally releasing this new depth mode to bring depth sensing applications to the next level.</p>
+<p>The ZED SDK 3.7.0 also features a new Lossless and hardware-based compression mode to record Lossless SVO files in real-time, new parameters for fine-tuning of the object detection module, and improvements for the other depth mode (Performance, Quality, and Ultra).</p>
+<p>We are also introducing performance improvements for the SVO recording and Streaming module.</p>
+<h2><a class="anchor" id="autotoc_md51"></a>
+Features</h2>
+<ul>
+<li>Introduced new <b>depth mode NEURAL</b> based on AI. This new depth mode can be configured with <code>sl::InitParameters::depth_mode = <a class="el" href="group__Depth__group.html#gga8d542017c9b012a19a15d46be9b7fa43a7a1e75de3356082c7ad3543715ce6cc3" title="End to End Neural disparity estimation, requires AI module">sl::DEPTH_MODE::NEURAL</a></code>. It requires an optimization of the AI model used in the backend that must be done only one time for a GPU (similar to the Object Detection/Skeleton tracking module). Use <code>ZED_Diagnostic -nrlo</code> after installing the ZED SDK or launch your application with the new depth mode and wait for the optimization to finish.</li>
+<li>Introduced new <b>lossless and hardware-based compression mode</b>: <code>sl::SVO_COMPRESSION_MODE::H264_LOSSLESS</code> and <code>sl::SVO_COMPRESSION_MODE::H265_LOSSLESS</code>. Those modes require an NVIDIA GPU (when using in ZED Explorer) and provide real-time lossless recording on Desktop and any Jetson (Nano, TX2_NX, Xavier...) with low CPU usage.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md52"></a>
+Improvements</h2>
+<ul>
+<li>Introduced new <b>runtime parameter</b> with <code>sl::RuntimeParameters::remove_saturated_area</code> to activate/de-activate saturation filtering during depth sensing. By default, this parameter is at <code>true</code> to keep the same behavior as the previous version, where saturated areas were removed from the depth map. You can now set it to <code>false</code> to keep those areas in the depth processing.</li>
+<li>Introduced new <b>object detection parameter</b> with <code>sl::ObjectDetectionParameters::filtering_mode</code> associated with the new enumerate 'sl:OBJECT_FILTERING_MODE`. This allows a fine-tuning of the object filtering and tracking after object detection has been done or after custom objects have been ingested. By default, this parameter is at <code>sl: OBJECT_FILTERING_MODE::NMS3D</code> to keep the same behavior as the previous version. You can now also choose <code>NONE</code> or <code>NMS3D_PER_CLASS</code> to adjust the level of filtering done during object tracking.</li>
+<li>Added new function to get Min/Max of current depth map through <a class="el" href="structsl_1_1float2.html" title="Represents a 2D vector of floats for use on both the CPU and GPU.">sl::float2</a> Camera::getDepthRange()</li>
+<li>Improved SVO recording and streaming performances when called internally inside the ZED SDK to reduce overall grab() time.</li>
+<li>Improved error logging inside the ZED SDK to have more precise debug information.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md53"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed internet requirement when dependencies are already available on the PC when installing a new SDK.</li>
+<li>Fixed bugs in the AI model during optimization and loading ( for Object Detection and Body Tracking modules).</li>
+<li>Fixed the ZED_SVO_Editor with &ndash;cut option that created wrong compression artifacts on specific positions.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md54"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md55"></a>
+Unreal Engine / Livelink</h3>
+<ul>
+<li>Added support for SDK 3.7</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md56"></a>
+Unity</h3>
+<ul>
+<li>Added support for SDK 3.7</li>
+<li>Merged HDRP, URP, and standard RP in a single package.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md57"></a>
+ROS</h3>
+<ul>
+<li>Added support for SDK 3.7</li>
+<li>Fix for not allowed empty string as default parameters in launch files after Ubuntu update</li>
+<li>Replaced the deprecated function set_on_parameters_set_callback with add_on_set_parameters_callback to improve compatibility with ROS2 Galactic</li>
+</ul>
+<p><br  />
+</p>
+<h1><a class="anchor" id="autotoc_md58"></a>
+3.6.5</h1>
+<h2><a class="anchor" id="autotoc_md59"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed detection issue with new UVC kernel driver</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md60"></a>
+3.6.4</h1>
+<h2><a class="anchor" id="autotoc_md61"></a>
+Improvements</h2>
+<ul>
+<li>Improved ZED, ZED Mini and ZED2i connection stability on Linux by adding USB autosuspend udev rules</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md62"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed installation process of CUDA in the Linux installer for CUDA 11</li>
+<li>Fixed a crash when using corrupted SVOs as input</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md63"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md64"></a>
+Unreal Engine / Livelink</h3>
+<ul>
+<li>Improved skeleton tracking integration.</li>
+<li>Fixed avatars height relative to the ground floor.</li>
+<li>Fixed floor texture tiling.</li>
+<li>Reduce skeletons blinking by displaying only skeletons with OK tracking states.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md65"></a>
+Unity</h3>
+<ul>
+<li>Improved skeleton tracking integration.</li>
+<li>Fixed a bug where some avatars were not correctly animated.</li>
+<li>Fixed avatars height relative to the ground floor.</li>
+<li>Reduce skeletons blinking by displaying only skeletons with OK tracking states.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md66"></a>
+3.6.3</h1>
+<h2><a class="anchor" id="autotoc_md67"></a>
+Improvements</h2>
+<ul>
+<li>ZED Diagnostic correctly reports used and required cuda version.</li>
+<li>Adding support for Python 3.9 and 3.10</li>
+<li>Adding a new scripts to help identify Linux platform versions (such as CUDA, Ubuntu and Jetpack version) to select compatible ZED SDK installer. --&gt; Usage example: <code>bash -c "$(curl -fsSL https://download.stereolabs.com/getzed)"</code></li>
+<li>Improved streaming receiver on Windows to have a smoother experience.</li>
+<li>Improved depth stabilizer, removed a ghost effect on dynamic edges.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md68"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed various memory leak in tools.</li>
+<li>Fixed random GPU memory corruption leading to non repeatable output.</li>
+<li>Fixed an wrong behavior in <code>sl::Camera::getAreaExportState()</code> always returning success, now it returns the real state of the export process.</li>
+<li>Fixed a bug with AI model deflate where corrupted file could create an allocation issue and segmentation fault.</li>
+<li>Fixed an issue in ZED SVO Editor leading to a crash if the destination dir is not created.</li>
+<li>Fixed missing magnetometer values (heading, state, uncalibrated) in SVO or streaming input type.</li>
+<li>Fixed setSVOPosition(0) that could lead to wrong position in SVO file.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md69"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md70"></a>
+Python</h3>
+<ul>
+<li>Fixed an issue leading to uncomplete array when retrieving depth as <code>DEPTH_U16_MM</code>.</li>
+<li>Adding custom object detection API python sample using Pytorch (YOLOv5)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md71"></a>
+3.6.2</h1>
+<h2><a class="anchor" id="autotoc_md72"></a>
+Improvements</h2>
+<ul>
+<li>Adding CUDA 11.5 supports.</li>
+<li>Adding Windows 11 supports.</li>
+<li>AI model download has been improved to be more robust against CDN issues (auto-retry download with alternative URL).</li>
+<li>AI models and optimized models are now preprocessed in RAM instead of temporary files, this makes the process faster and more robust especially with concurrent launches.</li>
+<li>Installer script on Linux now check first if the packages are already installed and don't require an internet connection if not needed.</li>
+<li>Improved Linux USB camera acquisition.</li>
+<li>Reduced stream latency.</li>
+<li>Improved stream runtime which decrease the number of dropped frames.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md73"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed an issue in Linux platform (Desktop and Jetson), leading to an important CPU load when using SDK as stream receiver.</li>
+<li>Fixed <code>DEPTH_MODE::ULTRA</code> repeatability (without depth stabilization).</li>
+<li>Fixed ZED Calibration tool on large size screen (and improved stability).</li>
+<li>Fixed a memory issue when optimizing all AI models from ZED Diagnostic tool (option -aio).</li>
+<li>Adding missing toString function for BODY_FORMAT.</li>
+<li>Adding missing packages libpng and libgomp from docker images.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md74"></a>
+3.6.1</h1>
+<h2><a class="anchor" id="autotoc_md75"></a>
+Bug Fixes</h2>
+<ul>
+<li>Upgraded TensorRT version to 8.2 on Desktop to avoid potential issues when using CUDA 11.4 and the object detection module</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md76"></a>
+3.6.0</h1>
+<h2><a class="anchor" id="autotoc_md77"></a>
+SDK</h2>
+<h2><a class="anchor" id="autotoc_md78"></a>
+New Features / Improvements</h2>
+<p>Following user feedback, for this release, we decided to focus our attention on making the Object Detection module work with the ZED Mini at the quality it deserves. The Object Detection module is now compatible with the ZED2/2i AND ZED Mini.</p>
+<p>This release adds support for the newer CUDA 11 minor versions, the CUDA 11 installer can be used for all CUDA 11 versions (11.0(*), 11.1, 11.2, 11.3, 11.4). TensorRT library for the AI module has been updated to 8.0, the ReID feature is now supported for all platforms. JetPack 4.6 is now supported. It also adds new skeleton format, allowing the user to get the local keypoint orientation and position (relative to its parent's coordinate frame) when body fitting is enabled. This is useful to simplify avatar animation using software like Unity or Unreal for example.</p>
+<h2><a class="anchor" id="autotoc_md79"></a>
+API</h2>
+<ul>
+<li>Added magnetic heading with accuracy information to SensorsData</li>
+<li>Added new skeleton format <code><a class="el" href="group__Object__group.html#gga375807d6ff35199b9b48346de7a5d41ba43c429782af81e8b7243ba2d271e2095">sl::BODY_FORMAT::POSE_34</a></code> to be able to extract local keypoint orientation and position when body fitting is enabled. The old format is always available with <code><a class="el" href="group__Object__group.html#gga375807d6ff35199b9b48346de7a5d41badc32ecfd5e73cf6b6eade387a48fd924">sl::BODY_FORMAT::POSE_18</a></code> and behaves exactly the same as previous ZED SDK version. <code><a class="el" href="group__Object__group.html#ga375807d6ff35199b9b48346de7a5d41b" title="Lists of supported skeleton body model">sl::BODY_FORMAT</a> ObjectDetectionParameters::body_format</code> has been added to Object Detection init parameters to set the output skeleton format.</li>
+<li>The ZED SDK now informs the user about invalid serial number detected for an MCU and suggest to run "ZED_Diagnostic -r" to recover the camera</li>
+<li>Added missing imu/magnetometer, in <code><a class="el" href="structsl_1_1SensorsConfiguration.html" title="Structure containing information about all the sensors available in the current device">sl::SensorsConfiguration</a> ::imu_magnetometer_transform</code> transform for ZED2 and ZED2i</li>
+<li>Added function to extract 3D data and perform tracking of custom 3D bounding boxes.</li>
+<li>Added a new detection mode <code><a class="el" href="group__Object__group.html#gga4a212b90726adaaf0fae801b1cc913f4a5a655820a6a32842b5d6c0c592845637" title="Bounding Box detector specialized in person heads, particulary well suited for crowded environement,...">sl::DETECTION_MODEL::PERSON_HEAD_BOX</a></code> for person head detection and tracking. It may be beneficial for application in crowded scene where persons in background are merely detected by the general purpose person detection model.</li>
+<li>Added a C Wrapper of the ZED SDK.</li>
+<li>Added the new <code>InitParameters::open_timeout_sec</code> to set the maximum period of opening retry in case of connection issues<ul>
+<li>Improved <code>open</code> function</li>
+<li>Added the <code>fullReboot</code> parameter to <code>sl::Camera::reboot</code> to select a full reboot or a simple UVC module reboot</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md80"></a>
+Tools</h2>
+<ul>
+<li>ZED Diagnostic:<ul>
+<li>can now recover a ZED Mini, ZED2 or ZED2i with invalid eeprom if started from the command line with option '-r'</li>
+<li>can remove/clear all AI models files (engines and optim) with option '-aic'</li>
+<li>can download all AI models with option '-aid'</li>
+<li>can optimize (and download if need) all AI models with option '-aio'</li>
+<li>can optimize (and download if need) a specific AI Model '- ais X' with X as <code><a class="el" href="group__Object__group.html#ga4a212b90726adaaf0fae801b1cc913f4" title="List available models for detection">sl::DETECTION_MODEL</a></code> (int)</li>
+</ul>
+</li>
+<li>Sensor Viewer: Improved Magnetometer calibration process with more informations</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md81"></a>
+Bug Fixes</h2>
+<h3><a class="anchor" id="autotoc_md82"></a>
+API</h3>
+<ul>
+<li>Fixed <code>sl::Camera::reboot</code> command for ZED2i</li>
+<li>Improved grab recovery behavior</li>
+<li>Fix wrong values for camera/imu transform in translate coordinate</li>
+<li>Object and Skeleton tracking are now automatically resetted if the user sets a new SVO position that is far enough from the current SVO position. This allows for example to loop on a SVO.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md83"></a>
+Tools</h3>
+<ul>
+<li>Fixed ZED Diagnostic report information about MCU for ZED2i</li>
+<li>MCU Firmware upgrade now works correctly also for Windows</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md84"></a>
+Notes</h2>
+<ul>
+<li>(*)The new CUDA 11 installer supports all minor versions (except CUDA 11.0 for Windows which is no longer supported)</li>
+<li>CUDA 10.0 and JetPack 4.3 installers were deprecated and now no longer supports AI module. They can still use all other SDK modules, users are encouraged to upgrade.</li>
+<li>On Linux, since 3.5, the static version of the SDK doesn't include the sl_ai library anymore for performance and support reasons. <code>libsl_ai.so</code> is now needed to use the AI module even when using the static sl_zed library. On Jetson the static library is now available for all Jetpack version. The installers are now unified again and include everything while being smaller in size.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md85"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md86"></a>
+LiveLink</h3>
+<ul>
+<li>Introduced a Live link plugin for Unreal Engine which allows to send skeleton tracking data to UE4 as well as an Unreal engine project already set up to receive this data and animate 3D models. See our <a href="https://github.com/stereolabs/zed-livelink-plugin">LiveLink</a> repository.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md87"></a>
+C-API</h3>
+<ul>
+<li>Introduced a new C wrapper for creating C applications with the ZED SDK. The <a href="https://github.com/stereolabs/zed-c-api/tree/master">C API</a> is now available on GitHub.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md88"></a>
+Python</h3>
+<ul>
+<li>Updated documentation</li>
+<li>Added support of ZED SDK 3.6</li>
+<li>Added support of the new skeleton API</li>
+<li>Added support of the new Head and Custom detection</li>
+<li>Added access to IMU raw data (sl.IMUData.get_angular_velocity_uncalibrated and sl.IMUData.get_linear_acceleration_uncalibrated)</li>
+<li>Added access to IMU effective rate (sl.IMUData.effective_rate)</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md89"></a>
+C-sharp</h3>
+<ul>
+<li>Added support of ZED SDK 3.6</li>
+<li>Added support of the new skeleton API</li>
+<li>The C# API now uses the newly release C wrapper.</li>
+<li>The dependancies (C wrapper and C# interface) are now regrouped into one <a href="https://www.nuget.org/packages/Stereolabs.zed/">nuget package</a> to ease its use.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md90"></a>
+&lt;a href="https://github.com/stereolabs/zed-ros-wrapper"&gt;ROS&lt;/a&gt;</h3>
+<ul>
+<li>Fixed sensors topics pubblication for ZED2i</li>
+<li>Fixed sensor_msgs type for depth image in OpenNI mode, from <code>sensor_msgs::image_encodings::mono16</code> to <code>sensor_msgs::image_encodings::TYPE_16UC1</code>. Depth image in OpenNI mode is now compatible with the nodelet <code>depthimage_to_laserscan</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md91"></a>
+&lt;a href="https://github.com/stereolabs/zed-ros2-wrapper"&gt;ROS2&lt;/a&gt;</h3>
+<ul>
+<li>Migration to ROS2 Foxy Fitzroy</li>
+<li>Added xacro support for automatic URDF configuration</li>
+<li>Reworked launch files to support xacro and launch parameters<ul>
+<li>Use <code>ros2 launch zed_wrapper &lt;launch_file&gt; -s</code> to retrieve all the available parameters</li>
+</ul>
+</li>
+<li>Added <code>svo_path:=&lt;full path to SVO file&gt;</code> as input for all the launch files to start the node using an SVO as input without modifying 'common.yaml`</li>
+<li>Improved diagnostic information adding elaboration time on all the main tasks</li>
+<li>Improved diagnostic time and frequencies calculation</li>
+<li>Added StopWatch to sl_tools</li>
+<li>Enabled Diagnostic status publishing</li>
+<li>Changed the default values of the QoS parameter reliability for all topics from BEST_EFFORT to RELIABLE to guarantee compatibility with all ROS2 tools</li>
+<li>Fixed tab error in <code>zedm.yaml</code></li>
+<li>Fixed compatibility issue with ZED SDK older than v3.5 - Thanks @PhilippPolterauer</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md92"></a>
+3.5.6</h1>
+<h2><a class="anchor" id="autotoc_md93"></a>
+Bug Fixes</h2>
+<h3><a class="anchor" id="autotoc_md94"></a>
+API</h3>
+<ul>
+<li>Fixed regression in performance for skeleton tracking introduced in 3.5.X version.</li>
+<li>Fixed thread sanitizer issue reported in Camera self-calibration.</li>
+<li>Fixed some jumps in object tracking due to over-estimated disparity covariance.</li>
+<li>Fixed incorrect automatic recovery for ZED2/ZED2i performed internally in Camera::open() when camera was not properly detected.</li>
+<li>Fixed potential crash in Streaming on Windows, on receiver side.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md95"></a>
+3.5.5</h1>
+<h2><a class="anchor" id="autotoc_md96"></a>
+Bug Fixes</h2>
+<h3><a class="anchor" id="autotoc_md97"></a>
+API</h3>
+<ul>
+<li>Fixed a crash with CUDA 11.1 when loading <code>sl::DETECTION_MODEL::HUMAN_BODY_*</code> models on Linux during model optimization.</li>
+<li>Added security in <code>Camera::open()</code> when serial number is detected as 0. This previously returned <code>ERROR_CODE::SUCCESS</code> even when the serial number was invalid. This now returns <code>ERROR_CODE::CAMERA_NOT_DETECTED</code>.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md98"></a>
+3.5.4</h1>
+<h2><a class="anchor" id="autotoc_md99"></a>
+Bug Fixes</h2>
+<h3><a class="anchor" id="autotoc_md100"></a>
+API</h3>
+<ul>
+<li>Fixed dynamic load of nvidia-encoder library that made the encoding in docker environment broken (introduced in 3.5.3).</li>
+<li>Fixed potential memory leak on streaming module (receiver part).</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md101"></a>
+Tools</h3>
+<ul>
+<li>Fixed ZED Explorer tool with &ndash;dc option when used for ZED2i.</li>
+<li>Fixed ZED Calibration tool with &ndash;cimu option for ZED2 and ZED2i. It now properly resets the runtime bias saved in memory.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md102"></a>
+3.5.3</h1>
+<h2><a class="anchor" id="autotoc_md103"></a>
+Bug Fixes</h2>
+<h3><a class="anchor" id="autotoc_md104"></a>
+API</h3>
+<ul>
+<li>Global Fixes for memory leaks on all modules.</li>
+<li>Fixed minor memory leaks when disabling object detection.</li>
+<li>Fixed minor memory leaks when using SVO recording in H264/H265 on desktop.</li>
+<li>Fixed a potential bug in LIVE mode when reading serial number (could lead to a buffer overflow).</li>
+<li>Fixed an issue on Normal map generation that was a regression between 2.8 and 3.X.</li>
+<li>Fixed wrong YUV4:2:2 to RGB convertion when using SVO real time mode.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md105"></a>
+3.5.2</h1>
+<h2><a class="anchor" id="autotoc_md106"></a>
+Bug Fixes</h2>
+<h3><a class="anchor" id="autotoc_md107"></a>
+API</h3>
+<ul>
+<li>Fixed automatic recovery on ZED2 / ZED2i when camera was falling in a over-exposed frozen state (on left and/or right camera).This was introduced in 3.5.1 and it was not performing correctly. It should now be really fixed.</li>
+<li>Fixed some thread sanitizer warning on Desktop versions reported by the ZED SDK.</li>
+<li>Added automatic power-cycle of the ZED2/ZED2i when not correctly detected. It could happen on Jetson platform when the camera was already plugged in before the jetson was booting up. This is now automatically handled in the <code>Camera::open()</code> function.</li>
+<li>Fixed SVO Decoding and Local Streaming on Jetpack4.5 that was freezing with a NVBuffer transform error message. This bug was introduced in 3.5.1 during the decoding rework and it is now fixed.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md108"></a>
+3.5.1</h1>
+<h2><a class="anchor" id="autotoc_md109"></a>
+Bug Fixes</h2>
+<h3><a class="anchor" id="autotoc_md110"></a>
+API</h3>
+<ul>
+<li>Fixed bug in SVO playback on Jetson when <code>ERROR_CODE::END_OF_SVOFILE_REACHED</code> was not reached, leading to a infinite loop.</li>
+<li>Reworked SVO decoding (H264/5) on Jetson and Desktop leading to a more precise <code>Camera::setSVOPosition()</code>.</li>
+<li>Fixed a potential random crash in SVO decoding on Jetson when decoder was closed.</li>
+<li>Improved IMU data filtering for a more stable orientation given by the IMU. More precisely, IMU acceleration filtering has been increased to reduce its intrinsic noise.</li>
+<li>Fixed crash on <code>Camera::close()</code> when using multiple cameras at the same time, especially when one camera was close before others.</li>
+<li>Fixed potential infinite freeze issue in <code>Camera::open()</code> function when using streaming input mode.</li>
+<li>Added automatic recovery on ZED2 / ZED2i when camera was falling in a over-exposed frozen state (on left and/or right camera). Note that this works only ofr ZED2 and ZED2i</li>
+<li>Fixed sl::Camera::getSpatialMappingParameters returning false values.</li>
+<li>Fixed object detection random crash (MULTI_CLASS_BOX_XX OR HUMAN_BODY_XX) when the depth SENSING_MODE::FILL parameter was used.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md111"></a>
+Tools</h3>
+<ul>
+<li>Fixed ZED Sensor Viewer magnetometer calibration when using a ZED2i</li>
+<li>Fixed ZED Explorer SpinBox for setting SVO position. It was not increasing/decreasing the current position.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md112"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md113"></a>
+Python</h3>
+<ul>
+<li>Fixed inverted pixel coordinates in sl.Mat.get_value() function</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md114"></a>
+3.5.0</h1>
+<p>ZED SDK 3.5 introduces a major improvement in the Body Tracking module which is now up to 2.5 faster and 30% more accurate and a new medium mode.</p>
+<p>Besides, it also introduces a new way to retrieve detected objects in batches, powered by deep learning Re-Identification and appearance matching. This allows to keep the same ID for a detected object even if it has been occluded, hidden or out of the scene for some time.</p>
+<p>Finally, the ZED SDK 3.5 adds the support of the upcoming ZED 2i.</p>
+<h2><a class="anchor" id="autotoc_md115"></a>
+SDK</h2>
+<h2><a class="anchor" id="autotoc_md116"></a>
+New Features / Improvements</h2>
+<h3><a class="anchor" id="autotoc_md117"></a>
+API</h3>
+<ul>
+<li>Introduced new Body Tracking model with better performances and accuracy :<ul>
+<li>FAST mode is now x5(jetson)/x1.5(desktop) faster compared to FAST v3.4.</li>
+<li>MEDIUM mode is x2(jetson) faster compared to FAST v3.4.</li>
+<li>MEDIUM mode is 28% more precise compared to FAST v3.4</li>
+<li>ACCURATE mode is now x2 faster compared to ACCURATE v3.4</li>
+<li>ACCURATE mode is now 10% more precise compared to ACCURATE v3.4</li>
+<li>This new model can also detect bodies in a much further range than previous version.</li>
+</ul>
+</li>
+<li>Introduced new batching system for retrieving Objects in the Object Detection module.<ul>
+<li>The objects can now be retrieved in batches of objects data defined by the new <code><a class="el" href="classsl_1_1ObjectsBatch.html" title="Contains batched data of a detected object">sl::ObjectsBatch</a></code> structure. This adds a latency in the objects output flow, which allows internally a Re-Identification of the objects and check if an existing ID can be re-assigned. Therefore, an oject that has been occluded/hidden or just moved out of the scene can now kept its original ID if the match is successfull.</li>
+<li>Activate the batching system with <code>sl::ObjectDetectionParameters::BatchParameters</code>. See the API documentation for more information.</li>
+<li>Call <code>sl::Camera::retrieveObjects()</code> to ingest the live objects into the batching system.</li>
+<li>Retrieve batched objects with <code>sl::Camera::getObjectsBatch(std::vector&lt;<a class="el" href="classsl_1_1ObjectsBatch.html" title="Contains batched data of a detected object">sl::ObjectsBatch</a>&gt;&amp;)</code></li>
+<li>A <code><a class="el" href="classsl_1_1ObjectsBatch.html" title="Contains batched data of a detected object">sl::ObjectsBatch</a></code> is bound to a specific ID. it contains the list of timestamps, positions, bbox,.... Each list have the exact same size.</li>
+</ul>
+</li>
+<li>Updated Object detection models (<code>MULTI_CLASS</code> models) which slighty improve runtime (5%) and accuracy (2.5%).</li>
+<li>Added <code>MULTI_CLASS_BOX_MEDIUM</code> mode, x2 faster compared to ACCURATE mode while being 20% more precise compared to FAST.</li>
+<li>Added support of upcoming ZED2i new camera (USB : 2b03:f880/f881).</li>
+<li>Improved <code>TRACKING_STATE::SEARCHING</code>, in Object Detection module, leading to better recovery and avoid flying boxes.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md118"></a>
+Samples</h3>
+<ul>
+<li>Updated object detection/birds eye viewer sample with a flag to activate/de-activate batch to show how to use the new batching system.</li>
+<li>Added a new Body Tracking Tutorial</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md119"></a>
+Tools</h3>
+<ul>
+<li>Added <a href="https://www.stereolabs.com/docs/sensors/magnetometer/#magnetometer-calibration">documentation</a> about Magnetometer Calibration using Sensor Viewer</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md120"></a>
+Bug Fixes</h2>
+<h3><a class="anchor" id="autotoc_md121"></a>
+API</h3>
+<ul>
+<li>Fixed a memory leak impacting the Object Detection module when using multi class box models.</li>
+<li>Fixed issue with magnetometer calibration parameters not correctly saved in camera internal memory. Note that this requires to perform a new magnetometer calibration (with ZED Sensor Viewer tool) as previous are invalid in the new system.</li>
+<li>Fixed non valid IMU data on some SVOs last frame (skipped)</li>
+<li>Fixed the depth confidence value which could be higher than 100</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md122"></a>
+Tools</h3>
+<ul>
+<li>Fixed ZEDfu crash on Jetson platform.</li>
+<li>Fixed the "Edges" rendering mode on ZEDfu for Jetson.</li>
+<li>Fixed Depth Viewer with multi screen and improve Settings Panel GUI</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md123"></a>
+Notes</h2>
+<ul>
+<li>The new batching system for object detection is only available with TensorRT7.1. Since TRT7.1 is not supported for all CUDA version, the module is only supported on the following platforms :<ul>
+<li>Windows with CUDA 11.0.</li>
+<li>Linux with CUDA 10.2 or cuda 11.0.</li>
+<li>Jetsons with JP44 and JP45.</li>
+</ul>
+</li>
+<li>On Linux, the static version of the SDK doesn't include the sl_ai library anymore for performance and support reasons. <code>libsl_ai.so</code> is now needed to use the AI module even when using the static sl_zed library. On Jetson the static library is now available for all Jetpack version. The installers are now unified again and include everything while being smaller in size.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md124"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md125"></a>
+Python</h3>
+<ul>
+<li>Dropping python 3.5 support (not maintained since September 2020)</li>
+<li>Added support of ZED SDK 3.5</li>
+<li>Added support of upcoming ZED2i camera</li>
+<li>Added support of the new batching system</li>
+<li>Updated the object detection/bird view sample with a flag to activate/de-activate batch to show how to use the new batching system.</li>
+<li>Improved the body tracking sample with a new display and better performance</li>
+<li>Added a new Body Tracking Tutorial</li>
+<li>Fixed <code><a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl.Mat()</a>.set_value</code> and <code><a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl.Mat()</a>.set_to</code> functions</li>
+<li>Fixed <code><a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl.Mat()</a>.get_data</code> function for <code><a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl.Mat</a></code> of type <code>sl.MAT_TYPE.U16_C1</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md126"></a>
+C-sharp</h3>
+<ul>
+<li>Added support of ZED SDK 3.5</li>
+<li>Added support of upcoming ZED2i camera</li>
+<li>Added support of the new batching system</li>
+<li>Updated the object detection/bird view sample with a flag to activate/de-activate batch to show how to use the new batching system.</li>
+<li>Updated the body tracking sample with a new display</li>
+<li>Added a new Body Tracking Tutorial</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md127"></a>
+&lt;a href="https://github.com/stereolabs/zed-gstreamer"&gt;GStreamer&lt;/a&gt;</h3>
+<ul>
+<li>Depth mode has now a default value of NONE. To disable the depth elaboration it is also necessary to disable the positional tracking and the object detection, so the values of the relative activation options have been set to false as default. The zedsrc element now starts without performing any depth elaboration with the default settings.</li>
+<li>Added missing Positional Tracking parameters</li>
+<li>Added missing Runtime parameters (texture confidence, confidence, sensing mode and measure reference frame).</li>
+<li>Added missing Object Detection parameters (for body fitting and max range)</li>
+<li>Change parameters names in <code>zedsrc</code> to match the names in the ZED SDK</li>
+</ul>
+<p>See <a href="https://github.com/stereolabs/zed-gstreamer/blob/master/latest_changes.md">GStreamer plugin changelog</a> for details.</p>
+<h3><a class="anchor" id="autotoc_md128"></a>
+&lt;a href="https://github.com/stereolabs/zed-openni"&gt;OpenNI2 plugin&lt;/a&gt;</h3>
+<ul>
+<li>Added online <a href="https://www.stereolabs.com/docs/openni2/">documentation</a></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md129"></a>
+ROS</h3>
+<ul>
+<li>Added support for new DEPTH16_MM data type for depth (OPENNI MODE)</li>
+<li>Fixed issue #660: detected objects topic not published if depth computation not active</li>
+<li>Improved support for ZED Object Detection</li>
+<li>Added Skeleton Tracking support</li>
+<li>New Rviz plugin for Object Detection in <code>zed-ros-examples</code></li>
+<li>New parameters and name changing to fit the new OD features, also the <code>start_object_detection</code> service has been modified to match the new features:<ul>
+<li>new <code>model</code> parameter to choose the AI model</li>
+<li>new <code>max_range</code> parameter to limit the detection range</li>
+<li>new <code>sk_body_fitting</code> parameter to enable Skeleton fitting for skeleton AI models</li>
+<li><code>people</code> -&gt; <code>mc_people</code> to indicate that it is related to multiclass AI models</li>
+<li><code>vehicles</code>-&gt; <code>mc_vehicles</code> to indicate that it is related to multiclass AI models</li>
+<li>new <code>mc_bag</code> parameter to enable bags detection with multiclass AI models</li>
+<li>new <code>mc_animal</code> parameter to enable animals detection with multiclass AI models</li>
+<li>new <code>mc_electronics</code> parameter to enable electronic devices detection with multiclass AI models</li>
+<li>new <code>mc_fruit_vegetable</code> parameter to enable fruits and vegetables detection with multiclass AI models</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md130"></a>
+&lt;a href="https://github.com/stereolabs/zed-open-capture"&gt;Open Capture driver&lt;/a&gt;</h2>
+<ul>
+<li>Fixed issue with framerate</li>
+<li>Added AEC AGC ROI support</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md131"></a>
+3.4.2</h1>
+<h2><a class="anchor" id="autotoc_md132"></a>
+General Improvements</h2>
+<ul>
+<li>Improved local streaming on receiver side by optimizing the frame packet reception rate. This reduce a lot the number of frames dropped on the receiver.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md133"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed a random crash that would occur when using 'sl::ObjectDetectionParameters::enable_mask_output = true'.</li>
+<li>Fixed a random crash that would occur when changing 'sl::ObjectDetectionRuntimeParameters::object_class_detection_confidence_threshold'</li>
+<li>Improved API Documentation of '<a class="el" href="group__Video__group.html#ga8f28c91d6488af0352a921ede97c40fe" title="brief Lists available compression modes for SVO recording.">sl::FLIP_MODE</a>'</li>
+<li>Fix Camera::getStreamingDeviceList() when using multiple subnetwork.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md134"></a>
+3.4.1</h1>
+<h2><a class="anchor" id="autotoc_md135"></a>
+General Improvements</h2>
+<ul>
+<li>Improved local streaming on server side that reduce packet drop.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md136"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed a bug when using <code>SENSING_MODE::FILL</code> on jetson, causing a black depth image in fill mode.</li>
+<li>Added missing texture_confidence_threshold in <code>Runtimeparameters::save/load</code> function. This parameter can now correctly be saved and loaded.</li>
+<li>Fixed sl::Mat::write() function when using U16_C1 mat format (provided by <code>MEASURE::DEPTH_U16_MM</code> and <code>MEASURE::DEPTH_U16_MM_RIGHT</code>).</li>
+<li>Fixed an issue in SVO real time mode where grab() returns an ERROR_CODE::CAMERA_NOT_INITIALIZED when next image in SVO was not available in the next 2 seconds. This is fixed by waiting for the next image without considering a timeout of 2 seconds. This only affect SVO real time mode.</li>
+<li>Fixed memory address sanitizer issue in Object Detection module.</li>
+<li>Fixed a bug with InitParameter::load/save function when using streaming input type. The ip/port was not properly saved in the yml file and load was therefore returning false. It is now correctly saved.</li>
+<li>Fixed a bug with IMU online bias correction that leads to corrupted stored bias values. Maximum correction has been decreased to avoid wrong orientation for IMU. <br  />
+ It only affects ZED-M and ZED2.</li>
+<li>Fixed missing <code>SensorsData::imu::pose_covariance</code> and <code>CameraInformation::sensors_configuration::camera_imu_transform</code> when using Streaming or SVO input mode.</li>
+<li>Fixed a bug in sl::FusedPointCloud::save() when trying to save a fused point cloud as an OBJ file.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md137"></a>
+3.4.0</h1>
+<p>The new ZED SDK 3.4 introduces several updates to the API, a new two-pass offline mode in ZEDfu and many more features. It also brings major improvements in positional Tracking when using area relocalization.</p>
+<h2><a class="anchor" id="autotoc_md138"></a>
+SDK</h2>
+<h2><a class="anchor" id="autotoc_md139"></a>
+New Features</h2>
+<h3><a class="anchor" id="autotoc_md140"></a>
+API</h3>
+<ul>
+<li>Added depth map format (<code>MEASURE::DEPTH_U16_MM</code> and <code>MEASURE::DEPTH_U16_MM_RIGHT</code>) as unsigned short (<code>MAT_TYPE::U16_C1</code>) to store it in millimeters. This is useful for some integrations that requires a 16bits format for the depth map.</li>
+<li>Added depth max range for Detection module using <code>ObjectDetectionParameters::max_range</code> You can now set a different range for depth estimation and object detection.</li>
+<li>Added skeletons keypoints confidence (<code>ObjectData::keypoint_confidence</code>). Now each skeleton keypoints have their own confidence.</li>
+<li>Added a way to import OpenCV calibration using <code>InitParameters::optional_opencv_calibration_file</code> This allows to use a xml/yaml/json file provided by OpenCV Stereo Calibration module as an initial calibration.</li>
+<li>Added <code>Camera::updateSelfCalibration()</code> function to update the camera self calibration at runtime. It can be called anytime after <code>Camera::open()</code> has been successfully called. This is similar to previous resetSelfCalibration() that was removed in 3.X.</li>
+<li>Added <code><a class="el" href="structsl_1_1Resolution.html" title="Holds a camera resolution as two pointers (for height and width) for easy passing back and forth to t...">sl::Resolution</a> getResolution(RESOLUTION resolution)</code> function to get the actual size (width and height) of a specific <code>RESOLUTION</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md141"></a>
+Tools</h3>
+<ul>
+<li>Added an offline two-pass mode for SVOs in ZEDfu to better handle positional tracking loop closures. You can select the "Offline" mode in the main interface when using SVOs file in ZEDfu. This will first pre-process the SVO file by creating a complete relocalization database as a first step, then re-run the SVO file while using this database to find and close loops as a second step. This results into a more precise and aligned mesh compared to live method. This also reduce a lot the LOST tracking state while running the spatial mapping.</li>
+<li>ZEDCalibration Tool can now be used with a ZED2.</li>
+<li>Added a calibration procedure for magnetometer in ZED Sensors Viewer. You can start the calibration procedure by selecting "Magnetometer", then "calibrate magnetometer", and follow the guidelines.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md142"></a>
+General Improvements</h2>
+<ul>
+<li>Positional tracking with area memory activated performs faster and more accurate relocalization, leading to better global accuracy. Previously, the relocalization was sensitive to the position of the camera (requires to be close to the position saved in the database). Now it is less sensitive and will work even if the camera is not as close to the saved position in database as before.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md143"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed the magnetometer data coordinate frame. Previously it was given in the coordinate frame of the magnetometer. It is now given in the coordinate frame of the IMU, so that Gyroscope, Accelerometer and Magnetometer share the same coordinate frame.</li>
+<li>Fixed an issue with Tegra encoder limiting the number of calls to the recording module. Previously, it was limited to around 900/1000 enableRecording()/disableRecording() calls due to a bug in the Tegra encoder. It is now unlimited.</li>
+<li>Fixed Sensors Data timestamp and fused IMU pose when using Streaming input mod, as reported here : <a href="https://github.com/stereolabs/zed-examples/issues/337">https://github.com/stereolabs/zed-examples/issues/337</a>. Now <code>Camera::getSensorsData()</code> will provide the same values if using LIVE or STREAMING mode.</li>
+<li>Increased image timestamp adjustment speed when the system clock changes (when using NTP/PTP synchronization). Previously, the maximum allowed correction was 500us for a single frame. Now it's at a maximum of 4ms per frame. This means that the correction should be much faster when a suddent jump happens in system clock .</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md144"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md145"></a>
+Python</h3>
+<h4><a class="anchor" id="autotoc_md146"></a>
+Fixes:</h4>
+<ul>
+<li>In classes Matrix3f and Matrix4f: fixed transpose_mat, inverse_mat, zeros static methods</li>
+<li>Fixed ObjectData attribute setters</li>
+<li>Fixed method zeros() to create a sl.Orientation filled with zeros</li>
+<li>Fixed PointCloudChunk, FusedPointCloud vertices: they contained only 3D positional info and have now color information</li>
+<li>Fixed method to retrieve the chunks in a FusedPointCloud</li>
+<li>Fixed methods to get the current RuntimeParameters, StreamingParameters, RecordingParameters, RecordingStatus and StreamingProperties: some attributes could not be retrieved properly</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md147"></a>
+Updates (from C++ SDK):</h4>
+<ul>
+<li>Added method sleep_us to tell a program to sleep for a given period of time in microseconds</li>
+<li>Added methods to save (resp. load) SpatialMappingParameters into (resp. from) a file</li>
+<li>Added an ‘effective_rate’ attribute to BarometerData to retrieve the realtime data acquisition rate</li>
+<li>Added an attribute to <a class="el" href="classsl_1_1Camera.html" title="This class is the main interface with the camera and the SDK features, such as: video,...">sl.Camera</a> class to check whether or not the Positional Tracking is enabled</li>
+<li>Added FLIP_MODE enum</li>
+<li>Added object_class_filter attribute to ObjectDetectionParameters to select which object to track and detect</li>
+<li>From 3.4: Added OD max_range and Skeleton keypoint confidence, getResolution() function</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md148"></a>
+GStreamer</h3>
+<ul>
+<li>Add compatibility fix for ZED SDK v3.4</li>
+<li>Add support for UINT16 Depth map</li>
+<li>Change parameters names in zedsrc to match the names in the ZED SDK</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md149"></a>
+OpenNI (NEW!)</h3>
+<ul>
+<li>New driver to allow to use a ZED camera with OpenNI2</li>
+<li>RGB, Depth and Gray streams</li>
+<li>Camera configuration by YAML files</li>
+<li>NiTE2 compatibility</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md150"></a>
+3.3.3</h1>
+<h2><a class="anchor" id="autotoc_md151"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed a bug in the python script installer for Jetson JP43</li>
+<li>Fixed a bug in depth estimation while using VGA resolution and ULTRA mode on Jetson. The image pitch was wrong according to image size. This is now fixed and provides a correct depth Mat.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md152"></a>
+3.3.2</h1>
+<h2><a class="anchor" id="autotoc_md153"></a>
+General Improvements</h2>
+<ul>
+<li>Improved C++ installer to better detect CUDA, NVIDIA driver and dependencies version. CUDA can now be automatically installed if needed on Linux</li>
+<li>Improved Python installer reliability, better handling of errors and unexpected host configurations</li>
+<li>Improved Object Tracking runtime for crowded scenes</li>
+<li>Improved floor plane segmentation</li>
+<li>Improved object 2D bounding boxes stability</li>
+<li>Improved Object Localization in case of static camera</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md154"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed Detection Module high CPU usage</li>
+<li>Fixed a bug in SVO Recording module on Jetson that created two duplicated keyframe on start</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md155"></a>
+3.3.1</h1>
+<p>The ZED SDK patch 3.3.1 fixed bugs reported by users to make the ZED SDK even more useful. Some modules have been reworked to provide a better experience. We also improved our documentation to make it more dense and easier to understand. Wrappers and their sample have been updated to better reflect SDK capabilities.</p>
+<h2><a class="anchor" id="autotoc_md156"></a>
+Bug Fixes</h2>
+<h2><a class="anchor" id="autotoc_md157"></a>
+SDK</h2>
+<ul>
+<li>Improved Auto-Exposure behavior to fixe random overflow leading to purple images.</li>
+<li>Updated Depth Performance filtering to reduce occlusions, results are closer to SDK 2.8.</li>
+<li>Updated Depth Quality filtering to remove the quantification effect in some cases.</li>
+<li>Fixed an issue in Spatial Mapping module which was leading to aborting the process.</li>
+<li>Improved object tracking process runtime.</li>
+<li>Reduced object detection flickering.</li>
+<li>SDK installation now follow Windows rules about program drive.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md158"></a>
+Tools</h2>
+<ul>
+<li>ZEDfu no longer stop in a random way.</li>
+<li>Fixed ZED Diagnostic behavior with cuda 11.1.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md159"></a>
+Integrations</h2>
+<h3><a class="anchor" id="autotoc_md160"></a>
+Matlab</h3>
+<ul>
+<li>Added full sensors data.</li>
+<li>Added missing Object Data attribute (velocity, confidence)</li>
+<li>Updated Samples</li>
+<li>Added sensors data sample</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md161"></a>
+CSharp</h3>
+<ul>
+<li>Updated C# API to match C++/python naming.</li>
+<li>Added NuGet compatibility for C# API.</li>
+<li>Added new spatial mapping sample for C# API.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md162"></a>
+Python</h3>
+<ul>
+<li>Improved Documentation.</li>
+<li>Fixed issues in API leading to disjointed data into Matrix3f or Matrix4f when setting/getting values from Rotation or Orientation.</li>
+<li>Fixed Spatial Mapping Triangles index which was leading to false ordering.</li>
+<li>Updated Object Detection API.</li>
+<li>Samples now match C++ ones with new opengl viewers.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md163"></a>
+ROS</h3>
+<ul>
+<li>Fixed rgb/depth asyn issue</li>
+<li>Improved IMU and other sensor sync</li>
+<li>Fixed issue with sensors data from SVO</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md164"></a>
+ROS2</h3>
+<ul>
+<li>Support for ROS2 Eloquent Elusor</li>
+<li>Support for SDK v3.3</li>
+<li>Support for ZED2</li>
+<li>Support for new ZED2 sensors</li>
+<li>Support for Object Detection with ZED2</li>
+<li>Switched from lifecycle node to "normal" node to improve ROS2 compatibility</li>
+<li>New <a href="https://github.com/stereolabs/zed-ros2-examples">zed-ros2-examples</a> Github repository</li>
+<li>New Rviz2 plugin to visualize Object Detection results (bounding boxes and skeletons)</li>
+<li>New improved tutorials</li>
+<li>Improved Python launch files</li>
+<li>Updated <a href="https://www.stereolabs.com/docs/ros2/">online documentation</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md165"></a>
+3.3.0</h1>
+<p>The new ZED SDK 3.3 introduces a major update of Object Detection module, bringing up to 2x improvements in accuracy and speed on desktop and Jetson platforms, along with new object classes. Body Tracking is also improved thank to a new body fitting technique. A new lightweight SDK installer is now available on Linux, along with many fixes and improvements.</p>
+<h2><a class="anchor" id="autotoc_md166"></a>
+SDK</h2>
+<h2><a class="anchor" id="autotoc_md167"></a>
+New Platforms</h2>
+<ul>
+<li>Introduced CUDA 11.1 and RTX 30x support.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md168"></a>
+New Features</h2>
+<h3><a class="anchor" id="autotoc_md169"></a>
+Object Detection</h3>
+<ul>
+<li>Improved Object Detection accuracy and speed while reducing memory usage, up to 40% faster inference speed on Jetson Nano JP44 and 40% more accuracy compared to previous versions.</li>
+<li>Add a new Detection Model <code>MULTI_CLASS_BOX_ACCURATE</code>, 3x times more accurate than the standard 3.2 model (while being only 30% slower).</li>
+<li>New objects classes can now be detected, such as BAG, ANIMAL, ELECTRONICS, FRUIT_VEGETABLE.</li>
+<li>Detected Objects now have a sub-class, which is more descriptive.</li>
+<li>Detected Objects are now sorted by depth, from the closest to the farthest.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md170"></a>
+Body Tracking</h3>
+<ul>
+<li>Add body fitting mode, resulting in smooth and realistic skeletons movements. Can be enabled using <code>ObjectDetectionParameters::enable_body_fitting</code>.</li>
+<li>Improved speed of skeleton detection by +40% on all platforms.</li>
+<li>Reduced CPU usage when using skeleton tracking.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md171"></a>
+General Improvements</h2>
+<ul>
+<li>Camera capture and grab is now more stable during long-term usage and can recover from USB connection drops.</li>
+<li>Camera capture timestamps (from <code>sl::zed::getTimestamp()</code>) are now continuously adjusted to host clock changes (for example when using NTP or PTP synchronization). This allows for better synchronization between multiple ZED cameras connected to different hosts sharing the same sync source (NTP or PTP).</li>
+<li><code>Camera::saveAreaMap</code> function now check if the ".area" extension is used and adds it if necessary.</li>
+<li>On Linux, the SDK installer has been split into a standard and full version. The installer is up to 50% lighter on desktop using the standard version. The major difference between the two version is that the full SDK installer contains the static ZED library.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md172"></a>
+Bug Fixes</h2>
+<ul>
+<li>Resolve symbols conflicts when linking with OpenCV using the static ZED library.</li>
+<li>Improve CUDA version detection in the Python installer script.</li>
+<li>Windows installers are now signed again.</li>
+<li>Improve ZED2 connection reliability (<code>open()</code>) when LOW_USB_BANDWIDTH was triggered as output. It can now automatically recover by restarting the camera module.</li>
+<li>Fix missing linear acceleration metadata in SVO files ( for ZED2) recorded with ZED Explorer.</li>
+<li>Fix <code>RecordingStatus</code> linking error that could occurs in some cases like dynamically loading the zed library</li>
+<li>Fix download location when using custom settings filepath (<code>InitParameters::optional_settings_path</code>), the previous behavior incorrectly downloaded the file into the standard path.</li>
+<li>getCurrentFPS function now reports correctly the application FPS (computed from the time between two consecutive grab calls), even when using SVO or Streaming inputs.</li>
+<li>Fix and improve Plane Detection with Depth Mode set in QUALITY.</li>
+<li>Fix Object Detection sample crash when using 2D mask that could occurs when the mask was empty.</li>
+<li>Fix Spatial mapping chunk usage with fused point clouds. The <code>chunk::has_been_updated</code> flag was not correctly set, leading to all the chunks marked as updated. Now only the chunks that have been updated during the last loop are marked as true.</li>
+<li>Spatial Mapping can now use all the available memory and is not limited to a power of 2 amount.</li>
+<li>Spatial Mapping from a SVO now processes each frame, unless it is set as real time mode. It was previously in a non synchronized thread and could skip frames when using in offline mode.</li>
+<li>Fix usage of an initial transform matrix in positional tracking initialization in the Python wrapper (it was previously partially ignored).</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md173"></a>
+Integrations</h2>
+<ul>
+<li>ROS2 Eloquent is now supported in the latest ZED ROS 2 wrapper update.</li>
+<li>Updated and fixed various ROS wrapper issues.</li>
+<li>Improved Unity plugin support of Object detection and Skeleton tracking.</li>
+<li>Updated C++, Python and C# wrappers and samples. Tutorials codes are now available in the installer package.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md174"></a>
+Known Issues</h2>
+<ul>
+<li>ZED Static library is not available with JetPack 4.4.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md175"></a>
+Deprecation</h2>
+<ul>
+<li>JetPack 4.3 support is now deprecated and will be removed in the next release. In 3.3, JP 43 SDK uses the previous version of Object detection module (MULTI CLASS BOX model).</li>
+<li>CUDA 10.0 support is now deprecated. Users are encouraged to move to CUDA 11.0 or newer.</li>
+<li>Ubuntu 16.04 support is deprecated and will be removed in the next release.</li>
+<li>CUDA 9.0 and JetPack 4.2 support have been removed.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md176"></a>
+3.2.2</h1>
+<h2><a class="anchor" id="autotoc_md177"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed a bug on H26x SVO playback on desktop when trying to read the last frame and that last frame was a keyframe.</li>
+<li>Fixed a bug on H26x SVO playback when last frame was not all the time readable.</li>
+<li>Fixed depth occlusion detection issue that leads to misaligned depth on image movement. This also impacted the plane detection that was not consistent as in 2.7/8 version.</li>
+<li>Fixed a bug in Object detection mask that were not properly estimated and rendered.</li>
+<li>Fixed camera detection ID on Windows when other non-ZED cameras were connected.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md178"></a>
+tools</h2>
+<ul>
+<li>Fixed detection issues in ZED Sensor Viewer on Windows.</li>
+<li>Fixed crash when record was called on ZED Sensor Viewer on Windows when no camera are connected.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md179"></a>
+3.2.1</h1>
+<h2><a class="anchor" id="autotoc_md180"></a>
+New Platforms</h2>
+<ul>
+<li>Introduced Ubuntu 20.04 and CUDA 11 support.</li>
+<li>Added support for NVIDIA JetPack 4.4 official release.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md181"></a>
+Improvements</h2>
+<ul>
+<li>Improved object detection accuracy and stability, increasing AP by +15%. Object boxes are now more stable both in detection and tracking modes.</li>
+<li>Improved skeleton tracking: 3D localization of skeletons has been improved, along with their bounding boxes and head position. Skeletons with unrealistic sizes have also been removed. Body tracking is still in Beta, and further improvements will be released in future updates.</li>
+<li>Improved playback of SVO recorded in Flip mode. They will be automatically flipped when necessary.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md182"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed a camera freeze issue on Jetson caused by the internal USB hub of the board. Now the camera will reconnect automatically if the hub disconnects the device.</li>
+<li>Fixed a bug in confidence of detected objects. When 'detection_confidence_threshold' was changed, an object that was previously tracked could still be output even if the confidence was below the new threshold value. They are now removed.</li>
+<li>Fixed a H264/5 decoding issue when playing back SVO on Jetson platforms. Setting a frame position could previously lead to an SVO freeze.</li>
+<li>Fixed a positional tracking bug when using Local Streaming as input. An invalid tracking state was generated that would lead to wrong camera pose in Streaming mode.</li>
+<li>Fixed 'setSVOPosition()'' on Jetson platforms that was generating a wrong image sequence when grab() was called.</li>
+<li>Fixed a bug on <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl::Mat</a> initialisation by reference if that reference was empty. Now the <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl::Mat</a> created will be seen as uninitialized.</li>
+<li>Fixed an incorrect CMake output into stderr for a status message, reported by @spiderkeys.</li>
+<li>Fixed the performance optimizer script for Jetson NX where an incorrect power profile was selected.</li>
+<li>Improved AI model optimization process on Jetson platforms.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md183"></a>
+Samples</h2>
+<ul>
+<li>Added new sample "Point Cloud Mapping" to show how to map an area in point cloud format with the spatial mapping module.</li>
+<li>Fixed an OpenGL scaling issue in Body Tracking / Object detection samples.</li>
+<li>Fixed various bugs in samples.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md184"></a>
+3.2.0</h1>
+<p>The new ZED SDK 3.2 introduces a new Body Tracking module and brings major performance improvement for Object Detection. The release also adds support for Jetson Xavier NX and JetPack 4.4, along with a new C# wrapper and an open source capture library for the ZED camera family.</p>
+<h2><a class="anchor" id="autotoc_md185"></a>
+SDK</h2>
+<h2><a class="anchor" id="autotoc_md186"></a>
+New Features</h2>
+<h3><a class="anchor" id="autotoc_md187"></a>
+Body Tracking</h3>
+<ul>
+<li>Added a new AI-powered detection model that detects and tracks body skeletons in 2D and 3D. Skeleton tracking can be used on both desktop and embedded platforms such as NVIDIA Jetson.</li>
+<li>Body tracking is part of the Object Detection module and can be called using <code>DETECTION_MODEL::HUMAN_BODY_FAST</code> or <code>DETECTION_MODEL::HUMAN_BODY_ACCURATE</code> for a more accurate skeleton tracking at a lower FPS.</li>
+<li>Added new objects in the ObjectData class that contain skeleton and head data:<ul>
+<li>keypoint_2d for 2D human keypoints/joints (<code>ObjectData::keypoint_2d;</code>)</li>
+<li>keypoint for 3D human keypoints/joints (<code>ObjectData::keypoint;</code>)</li>
+<li>head_bounding_box_2d for head 2D bounding box (<code>ObjectData::head_bounding_box_2d;</code>)</li>
+<li>head_bounding_box for head 3D bounding box (<code>ObjectData::head_bounding_box;</code>)</li>
+<li>head_position for head 3D location (<code>ObjectData::head_position;</code>)</li>
+</ul>
+</li>
+<li>Added the 3D uncertainty (covariance) of a body root position in <code>ObjectData::position_covariance[6]</code>.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md188"></a>
+Object Detection</h3>
+<ul>
+<li>Added the 3D uncertainty (covariance) of an object position in <code>ObjectData::position_covariance[6]</code>.</li>
+<li>Improved Object Detection FPS on NVIDIA Jetson (Jetpack 4.4). Detection is now 2x times faster on Jetson Nano compared to 3.1.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md189"></a>
+Video Streaming &amp; Recording</h3>
+<ul>
+<li>Added direct stream-to-record feature to allow recording from a streaming input without re-encoding the video. This allows to dramatically reduce hardware resources when ingesting and recording multiple streams on a single PC. Use <code>RecordingParameters::transcode_streaming_input = false</code>.</li>
+<li>Added framerate parameter for video recording and streaming. It is now possible to capture at 60FPS for example and record or stream at 15FPS. See <code>RecordingParameters::target_framerate</code> and <code>StreamingParameters::target_framerate</code>.</li>
+<li>Added bitrate parameter for SVO recording with specific bitrate values (for H264/H265 SVO only). See <code>RecordingParameters::bitrate</code>.</li>
+<li>Added new Auto Flip mode for ZED 2 and ZED Mini (using IMU). Using <code>InitParameter::camera_image_flip = FLIP_MODE::AUTO</code> will automatically set the correct flip mode for the camera, so that you don't need to set it manually either in Live or SVO mode. This parameter will also works for SVO recorded with 3.X SDK version, since the flip mode was already recorded in the metadata. See <code>InitParameter::camera_image_flip = FLIP_MODE::AUTO</code>.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md190"></a>
+General Improvements</h2>
+<ul>
+<li>Improved floor plane detection for ZED-M and ZED 2 (using IMU).</li>
+<li>Improved barometer readings with sensor fusion to reduce drift during camera movements. It requires a ZED 2 sensor firmware update to v777.</li>
+<li>Updated <code>toVerbose()</code> function. Added CUDA error code/string in verbose message when <code>ERROR_CODE::CUDA_ERROR</code> is returned.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md191"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed IMU data that was not flipped correctly when flip was enabled with <code>camera_image_flip</code>.</li>
+<li>Fixed bug in IMU orientation covariance, leading to NaN occurences.</li>
+<li>Fixed grab() error code that could generate an <code>ERROR_CODE::CAMERA_NOT_INITIALIZED</code> at the end of an SVO file read in real time mode . It now generates a correct <code>ERROR_CODE::END_OF_SVO_FILE</code>.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md192"></a>
+Plugins &amp; Interfaces</h2>
+<ul>
+<li>Introduced a new C# wrapper for creating C# applications with the ZED SDK (Windows only). The <a href="https://github.com/stereolabs/zed-csharp-api/tree/master">C# API</a> is now available on GitHub.</li>
+<li>Introduced a new open source capture library for the ZED camera family that doesn't require CUDA or NVIDIA hardware. It provides low level access to the camera video and sensors, as well as camera controls such as exposure/gain, which were not accessible with standard capture libraries (OpenCV for example). The project is available on GitHub as <a href="https://github.com/stereolabs/zed-open-capture">zed-open-capture</a>.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md193"></a>
+Platforms</h2>
+<ul>
+<li>Introduced Jetson Xavier NX and JetPack 4.4 support.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md194"></a>
+Known Issues</h2>
+<ul>
+<li>Static libraries are not available on JetPack 4.4 due to a linking issue with TENSORRT static library in JetPack 4.4. This should be fixed in the next patch.</li>
+<li>Updating ZED 2 sensor firmware on Windows can sometimes be unreliable. We recommend updating your camera firmware on Linux.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md195"></a>
+3.1.2</h1>
+<h2><a class="anchor" id="autotoc_md196"></a>
+SDK</h2>
+<ul>
+<li>Improved streaming and recording FPS on Nvidia Jetson. Frame drops have been reduced from 15% to 1% when using HD720@60fps with streaming or recording module enabled on Jetson Nano.</li>
+<li>Fixed a bug in H264/H265 SVO playback: The first frame was not correctly read and replaced by the second frame. This is now fixed and consistent with previous SDK versions.</li>
+<li>Added a security in object detection maximum perception distance. Depth maximum distance is now clamped at 100 meters to avoid memory overflow when using object detection.</li>
+<li>Added security and warnings when input parameters (InitParameters, StreamingParameters,...) were out of range.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md197"></a>
+Plugins</h2>
+<ul>
+<li>Improved and fixed zed-docker ROS images. See here : <a href="https://github.com/stereolabs/zed-docker/pull/17">https://github.com/stereolabs/zed-docker/pull/17</a></li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md198"></a>
+3.1.1</h1>
+<h2><a class="anchor" id="autotoc_md199"></a>
+SDK</h2>
+<ul>
+<li>Fixed random jumps in ZED Mini IMU data. This was due to invalid timestamps that were sometimes generated.</li>
+<li>Fixed depth and normals maps in <code>SENSING_MODE::FILL</code> mode with confidence at 100. NaN or Inf values have been removed.</li>
+<li>Fixed a coordinate system issue in the object detection module. In certain coordinate systems, the distance between the left and right camera eyes was not set correctly, leading to invalid objects and position.</li>
+<li>Added a warning message when requested FPS is out of range (HD2K with fps=30 for example).</li>
+<li>Fixed a random camera opening issue that could return a wrong serial number and an <code>ERROR_CODE::INVALID_CALIBRATION_FILE</code> error in <code>open()</code>.</li>
+<li>Fixed required CUDA version declaration in the CMake file.</li>
+<li>Fixed Windows installer splash screen that could be displayed incorrectly.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md200"></a>
+Tools</h2>
+<ul>
+<li>Fixed IMU firmware update in ZED Explorer which was broken in 3.1.0. It now works correctly.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md201"></a>
+Plugins</h2>
+<ul>
+<li>Updated Matlab plugin with 3.1 features.</li>
+<li>Updated Unreal plugin with 3.1 features.</li>
+<li>Add beta support of URP pipeline in the Unity plugin (<a href="https://github.com/stereolabs/zed-unity/tree/URP_Compatibility_beta">https://github.com/stereolabs/zed-unity/tree/URP_Compatibility_beta</a>).</li>
+<li>Add beta support of HDRP pipeline in the Unity plugin (<a href="https://github.com/stereolabs/zed-unity/tree/HDRP_Compatibility_beta">https://github.com/stereolabs/zed-unity/tree/HDRP_Compatibility_beta</a>).</li>
+<li>Fix dependencies issues in some ZED Docker images (Ubuntu 18 was missing libgomp).</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md202"></a>
+3.1.0</h1>
+<h2><a class="anchor" id="autotoc_md203"></a>
+SDK</h2>
+<h2><a class="anchor" id="autotoc_md204"></a>
+New Features</h2>
+<ul>
+<li>Added new <code>VIDEO_SETTINGS::GAMMA</code> control to adjust gamma level of the camera. Can be very helpful in low light environments.</li>
+<li>Added new <code>VIDEO_SETTINGS::AEC_AGC_ROI</code> control to select a region of interest for auto exposure/gain adjustment. Exposure and Gain levels will be automatically optimized for the ROI and not for the full image. This is useful in high dynamic range scenes, for example when indoors and outdoors areas are visible at the same time. See <code>setCameraSettings(sl::VIDEO_SETTINGS,sl::Rect,sl::SIDE)</code> function for more information.</li>
+<li>Updated Camera Control sample to show how to use new Gamma and ROI features.</li>
+<li>Updated <code>CameraInformation</code> structure to improve availability of Camera, Sensors configuration and calibration information<ul>
+<li>Added <code>SensorParameter</code> structure to access accelerometer, gyroscope, magnetometer, barometer configuration (resolution, sampling rate, noise density...).</li>
+<li>Added stereo_transform (extrinsics stereo parameters) in user <code>COORDINATE_SYSTEM</code> and <code>UNITS</code>.</li>
+<li>Updated camera_imu_transform to user <code>COORDINATE_SYSTEM</code> and <code>UNITS</code>.</li>
+</ul>
+</li>
+<li>Added compression level option in Mat::Write() function to adjust quality and size of PNG and JPG files.</li>
+<li>Added new Sensor Tutorial for reading sensor data and configuration. &lt;&gt;</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md205"></a>
+Improvements</h2>
+<ul>
+<li>Improved temporal stability and denoising of depth map.</li>
+<li>Improved accuracy of <code>QUALITY</code> depth mode.</li>
+<li>Improved performance when using the Object Detection module with the masks enabled.</li>
+<li>Jetson installation process has been improved. The installer now detects if it's running within Docker to skip any unnecessary steps. Object detection optimized AI model is now downloaded instead of being optimized on the host, making setup much faster.</li>
+<li>Improved cuDNN version handling.</li>
+<li>Added <code>Debug</code> compilation mode detection to warn about compatibility issues when mixing with Release libraries.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md206"></a>
+Bug Fixes</h2>
+<ul>
+<li>Fixed resetPositionalTracking() that was not taking into account user-defined values for the yaw angle.</li>
+<li>Fixed Object detection AI model optimization that could lead to a corrupted model file. Additional checks have been added to handle file corruption.</li>
+<li>Fixed <code>getCameraSettings()</code> behavior when using Streaming input type. Now settings are available even if setCameraSettings() has not been called before.</li>
+<li>Fixed <code>getDeviceList()</code> on Windows. When multiple camera were connected, DeviceProperties of one of the camera were wrong.</li>
+<li>Fixed multiple SVO recording in a single session. If enableRecording() was called again after disableRecording(), the SVO file was not correctly recorded. <br  />
+</li>
+<li>Fixed <code>setSVOPosition()</code> for H264/H265 SVO files that could return an image at an incorrect position.</li>
+<li>Fixed 3D Object Detection AI model optimization on Jetson Nano by increasing swap file size during the installation process.</li>
+<li>Improved robustness and reliability of the Object Detection AI model optimization process on all platforms.</li>
+<li>Improved compatibility with Darknet framework by adding <code>undef GPU</code> to solve the conflict with the macro and the SDK enumerate values.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md207"></a>
+Python API</h2>
+<ul>
+<li>New Video features (Gamma, ROI selection), Camera and Sensors information added to the Python API.</li>
+<li>To facilitate the Python API installation, it is now compiled for each platform. The installer includes a Python script that automatically downloads the right version for your PC. See the new Installation doc for more information.</li>
+<li>Fixed issue with get_sdk_version() that returned an empty string.</li>
+<li>Fixed Export_SVO sample which didn't set the SVO input correctly.</li>
+<li>Fixed several getters functions that required input-output arguments instead of returning it (does not break the API).</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md208"></a>
+Tools</h2>
+<ul>
+<li>ZED Explorer: Improved SVO playback. Slider can now be used anytime during video playback. Yes, this should have been the case from the start.</li>
+<li>ZED Explorer: Added Exposure/Gain ROI selection to the main UI window. Draw a rectangle with the mouse on the left image to adjust Exposure/Gain for this specific ROI.</li>
+<li>ZED Depth Viewer: Add toggle buttons to set Depth Confidence at 50 and the new Texture Confidence at 90. Depth and Texture confidence are still accessible through the settings window.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md209"></a>
+Plugins</h1>
+<h2><a class="anchor" id="autotoc_md210"></a>
+Docker</h2>
+<ul>
+<li>Added Python API to all Docker desktop images.</li>
+<li>Added Jetson <code>runtime</code> optimized images and <code>ros-devel</code> images (previously only <code>devel</code> was available).</li>
+<li>Added Jetson Python API specific image variants including, <code>py-devel</code>, <code>py-runtime</code> and <code>tools-devel</code> that are optimized to run with limited storage space (e.g. Jetson Nano).</li>
+<li>Added <code>NVIDIA_DRIVER_CAPABILITES</code> declaration in each image. It should now better control which driver features (e.g. compute, graphics) are exposed to the container.</li>
+<li>Reduced <code>devel</code> images size by removing unnecessary tools and graphics libraries (moved to <code>gl-devel</code> images).</li>
+<li>Improved <a href="https://www.stereolabs.com/docs/docker/">Docker Docs</a> and <a href="https://github.com/stereolabs/zed-docker#troubleshooting">Troubleshooting</a> section.</li>
+</ul>
+<p>See <a href="https://hub.docker.com/repository/docker/stereolabs/zed">Stereolabs DockerHub</a> repository for all available images.</p>
+<h2><a class="anchor" id="autotoc_md211"></a>
+ROS</h2>
+<ul>
+<li>Added new package zed_interfaces with isolated declarations of custom messages, services and actions.</li>
+<li>Removed <code>world_frame</code> parameter.</li>
+<li>Removed <code>publish_pose_covariance</code> parameter, now covariance for pose and odometry is always published.</li>
+<li>Removed _m from parameters mapping/resolution_m and mapping/max_mapping_range_m.</li>
+<li>Renamed the parameter depth_resample_factor to <code>depth_downsample_factor</code>.</li>
+<li>Renamed the parameter img_resample_factor to <code>img_downsample_factor</code>.</li>
+<li>Renamed the parameter odometry_db to <code>area_memory_db_path</code>.</li>
+<li>Renamed the parameter frame_rate to <code>grab_frame_rate</code>.</li>
+<li>Added new dynamic parameter <code>pub_frame_rate</code> to reduce Video and Depth publishing frequency irrespective of Camera FPS.</li>
+<li>Added new dynamic parameter <code>gamma</code> for Gamma Control.</li>
+<li>Added new dynamic parameter <code>depth_texture_conf</code> to filter depth according to textureness information.</li>
+<li>Added new TF frames for all the sensors available on ZED 2.</li>
+<li>Added topics to publish grayscale images.</li>
+<li>Added topic to publish Camera to IMU transform: /&lt;camera_name&gt;/&lt;node_name&gt;/camera_imu_transform</li>
+<li>Default value for depth_confidence changed from 100 to 50.</li>
+<li>Added base_frame as launch parameter to propagate the value of the parameter in the Xacro description.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md212"></a>
+3.0.3</h1>
+<h2><a class="anchor" id="autotoc_md213"></a>
+SDK</h2>
+<ul>
+<li>Fix recording issue with ZED Camera or with streaming input type that was crashing the encoder.</li>
+<li>Fix Ubuntu16 installer that was missing turbojpeg dependencies.</li>
+<li>Fix Qt5 Opengl/Svg dependencies in Ubuntu installers.</li>
+<li>Fix old firmware (1142) support for ZED Camera on Windows.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md214"></a>
+Tools</h2>
+<ul>
+<li>Fix minimum depth distance setting in ZED Depth Viewer when graphic card was less than 3Gb GPU memory.</li>
+<li>Fix unresponsive GUI in ZED Sensor Viewer when a ZED Camera was connected.</li>
+<li>Fix ZED Calibration tool with &ndash;cimu option that was crashing on Windows.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md215"></a>
+3.0.2</h1>
+<h2><a class="anchor" id="autotoc_md216"></a>
+SDK</h2>
+<ul>
+<li>Improved Spatial mapping performance by up to 200% on desktop and Jetson embedded platforms. Depth fusion is now much faster and the resulting model now refreshes in real-time on most platforms.</li>
+<li>Improved <code>DEPTH_MODE::PERFORMANCE</code>. It now benefits from neural depth estimation with improved accuracy, edges and cleaner data.</li>
+<li>Increased <code>DEPTH_MODE::PERFORMANCE</code> speed with a performance boost of up to 15%.</li>
+<li>Fixed a bug in <code>resetTracking</code> function. The yaw angle defined by the Transform parameter was not taken into account.</li>
+<li>Removed libturbojpeg-0-dev dependency from Ubuntu16 installer since the package is only available in Ubuntu18.</li>
+<li>Eliminated flickering in <code>VIEW::DEPTH</code> image when the scene has very low depth content.</li>
+<li>Fixed cuDNN reported version on Jetpack 4.2. The model failed to run due to an incorrect reported version. It now works correctly.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md217"></a>
+Tools</h2>
+<ul>
+<li>Added new ZED Sensor Viewer tool that lets you display accelerometer, gyroscope, barometer, magnetometer and temperature sensors charts for ZED 2.</li>
+<li>Added new LiDAR mode view in ZED Depth Viewer. LiDAR mode will be available in the API in ZED SDK 3.1.</li>
+<li>Added new Confidence 50 view in ZED Depth Viewer. It displays sparser but more confident depth maps.</li>
+<li>Added new Texture Confidence slider in ZED Depth Viewer. It lets you remove untextured areas such as the sky or white walls from the depth map.</li>
+<li>Added minimum distance settings in the saved configuration for ZED Depth Viewer, so that it takes the saved value when the tool is launched again.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md218"></a>
+Plugins</h2>
+<ul>
+<li>Updated Unity plugin to support ZED 2 and SDK 3.0.</li>
+<li>Updated Unreal plugin to support ZED 2 and SDK 3.0 with custom engine based on 4.21.</li>
+<li>Updated Matlab plugin to support ZED 2 and SDK 3.0.</li>
+<li>Updated ROS plugin to support ZED 2 and SDK 3.0.</li>
+<li>Updated ROS wrapper wiki with up to date topics, parameters and services for ZED SDK 3.0.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md219"></a>
+App</h2>
+<ul>
+<li>Updated ZED World demo to support ZED 2 and ZED SDK 3.0. <br  />
+ <hr  />
+ <br  />
+ <br  />
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md220"></a>
+3.0.1</h1>
+<h2><a class="anchor" id="autotoc_md221"></a>
+Python</h2>
+<ul>
+<li>Added <a href="https://www.stereolabs.com/docs/api/python/">python API documentation</a></li>
+<li>Fixed an issue preventing the compilation of the python wraper</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md222"></a>
+Tools</h2>
+<ul>
+<li>Updated minimum depth range in Depth Viewer to automatically adapt to available GPU memory.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md223"></a>
+3.0.0</h1>
+<h2><a class="anchor" id="autotoc_md224"></a>
+New ZED 2 Camera</h2>
+<p>ZED SDK 3.0 is the first release that supports the brand new <a href="https://www.stereolabs.com/zed-2/">ZED 2 camera</a>, improved in every way with wider angle optics, more accurate factory calibration, built-in new generation environmental and motion sensors and industrial grade mounting system and enclosure.</p>
+<p>The SDK 3.0 also introduces new neural depth sensing, improved positional tracking, new AI-based object detection API that detects and tracks objects in 3D, image quality enhancement, performance improvements and a lot more features.</p>
+<p>To update to 3.0 from previous versions, read the <a href="https://www.stereolabs.com/developers/release/3.0/migration-guide/">migration guide</a>.</p>
+<h2><a class="anchor" id="autotoc_md225"></a>
+New Features</h2>
+<h3><a class="anchor" id="autotoc_md226"></a>
+Object Detection</h3>
+<ul>
+<li>Added a new module that detects and tracks objects in 2D and 3D, compatible with ZED 2.</li>
+<li>Added <code>enable / disableObjectDetection</code> and <code>retrieveObjects</code> functions.</li>
+<li>Added <code>ObjectData</code> class that contains detected object data, such as 2D and 3D bounding box, tracking information, dimensions and 2D mask.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md227"></a>
+Depth</h3>
+<ul>
+<li>Introduced neural networks for depth estimation in <code>ULTRA</code> mode to improve stereo depth accuracy. Other modes will be updated in following SDK updates.</li>
+<li>Introduced new confidence filter that detects homogenous zones. Use <code>textureness_confidence_threshold</code> to remove noisy values in the depth map such as sky or untextured areas.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md228"></a>
+Video</h3>
+<ul>
+<li>Added image enhancement setting to provide more vivid and accurate colors. Enabled by default in 3.0.</li>
+<li>Added image sharpness setting to improve sharpening of live and recorded videos.</li>
+<li>Updated SVO video format to store new sensors data.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md229"></a>
+Sensors</h3>
+<ul>
+<li>Introduced new Sensor API to provide access to data from IMU, barometer, magnetometer and temperature sensors in the ZED 2.</li>
+<li>Updated documentation and added tutorial to show how to use the different sensors. <br  />
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md230"></a>
+Local Streaming</h3>
+<ul>
+<li>Improved local network streaming of video data between sending and receiving host computers. <br  />
+</li>
+<li>Video Streaming API is not compatible between 2.8 and 3.0.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md231"></a>
+Docker</h3>
+<ul>
+<li>Improved Docker support for all ZED SDK versions.</li>
+<li>Introduced lightweight <code>runtime</code> Docker images for deployment of Docker applications using the ZED SDK.</li>
+<li>Updated <a href="https://hub.docker.com/r/stereolabs/zed/">Stereolabs DockerHub</a> repository with the new images.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md232"></a>
+Performance</h3>
+<ul>
+<li>Improved speed of the Depth module by carefully optimizing critical functions on desktop and embedded platforms.</li>
+<li>Optimized image rectification pipeline.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md233"></a>
+Software Support</h3>
+<ul>
+<li>Updated to C++14 (previously C++11)</li>
+<li>The new Object Detection module uses TensorRT and cuDNN to run efficiently on embedded platforms. The module is dynamically loaded from a separate sl_ai library to avoid the explicit dependency when using sl_zed.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md234"></a>
+Platforms</h3>
+<ul>
+<li>Added support CUDA 10.2 and JetPack 4.3.</li>
+<li>Dropped support for JetPack 3.3 and Windows 7. While ZED may still be used on Windows 7, it is not officially supported.</li>
+</ul>
+<p>.space(data-MY="60px") <br  />
+ </p>
+<h2><a class="anchor" id="autotoc_md235"></a>
+Major 3.0 API Changes</h2>
+<ul>
+<li>Since there are a lot of changes compared to ZED SDK v2, a <a href="/developers/release/3.0/migration-guide/">migration guide</a> is available to help you switch easily from 2.8 to 3.0.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md236"></a>
+General</h3>
+<ul>
+<li>Each enum is now an enum class (forced using <code>TYPE::VALUE</code>, instead of the current <code>TYPE::TYPE_VALUE</code> or even <code>TYPE_VALUE</code>).</li>
+<li>All deprecated functions / parameters / options have been removed.</li>
+<li>All libs are now merged into sl_zed for clarity and ease of deployment.</li>
+<li>All headers are now merged into a single sl/Camera.hpp.</li>
+<li><code>Camera::grab</code> is now blocking (guaranteed to return a new frame).</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md237"></a>
+Functions</h3>
+<ul>
+<li><code>SaveAs</code> functions have been replaced by <code>Mat::save()</code>.</li>
+<li>Added getter functions to retrieve any module parameter from Camera, such as <code>getPositionalTrackingParameters</code>.</li>
+<li>Added static function <code>Camera::reboot()</code> to perform a hardware reset of the camera.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md238"></a>
+Video</h3>
+<ul>
+<li>Resolution and FPS information have been moved to <code>Camera::getCameraInformation</code>.</li>
+<li>The <code>CAMERA_SETTINGS</code> enum is renamed to <code>VIDEO_SETTINGS</code>.</li>
+<li>Added <code>InitParameters::image_enhancement</code> for better black level correction, AWB adjustment and improved gamma curve</li>
+<li>Added <code>VIDEO_SETTINGS::SHARPNESS</code>, a digital two-pass sharpening control that improves image quality.</li>
+<li>Video recording is now automatically handled by the grab function, without having to explicitly call the <code>record()</code> function (now removed).</li>
+<li>Added a new <code>pauseRecording</code> function.</li>
+<li>Added <code>RecordingParameters</code> structure.</li>
+<li>Deprecated <code>RAW</code> and <code>LOSSY</code> compression modes. They have been removed from SDK recording options.</li>
+<li><code>AVCHD</code> and <code>HEVC</code> have been renamed into <code>H264</code> and <code>H265</code>.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md239"></a>
+Sensors</h3>
+<ul>
+<li>Added <code>SensorsData</code> class to store the data of all the other sensors present in the new ZED 2 which includes <code>BarometerData</code>, <code>TemperatureData</code>, <code>MagnetometerData</code> and <code>IMUData</code>. It also includes a state; <code>CAMERA_MOTION_STATE</code> which indicates if the camera is static, moving or falling.</li>
+<li><code>Camera::getIMUData()</code> has been replaced by <code>Camera::getSensorsData()</code> to reflect the class update. It provides access to all the sensor values.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md240"></a>
+Depth</h3>
+<ul>
+<li>Depth range and confidence parameters have been moved into <code>InitParameters</code>.</li>
+<li>Improved <code>ULTRA</code> mode with better accuracy and contours. <br  />
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md241"></a>
+Positional Tracking</h3>
+<ul>
+<li>Positional Tracking module function have been renamed to include "Positional" to differentiate it from object tracking. For instance: <code>Camera::enableTracking</code> is now <code>Camera::enablePositionalTracking</code>.</li>
+<li>Spatial memory has been renamed to Area memory for consistency with Area files (<code>enable_area_memory</code>, saveAreaMap`)</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md242"></a>
+Streaming</h3>
+<ul>
+<li>Added <code>StreamingParameters::chunk_size</code> to select the maximum size of each transmitted packet and improve packet transmission.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md243"></a>
+Spatial Mapping</h3>
+<ul>
+<li>Removed all deprecated Mesh functions. The overloaded SpatialMap functions that include support for both <code>Mesh</code> and <code>FusedPointCloud</code> should now be used.</li>
+<li><code>extractWholeSpatialMap</code> is now smarter if a previously retrieved map is passed as an argument. It will retrieve only the difference between the initial and updated mesh.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md244"></a>
+Compatibility</h3>
+<ul>
+<li>Streaming module is not compatible between 2.8 and 3.0.</li>
+<li>Due to a change in SVO metadata, SVOs recorded with 3.0 will only be compatible with SDK 2.8.4 and upwards.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md245"></a>
+2.8.4</h1>
+<h2><a class="anchor" id="autotoc_md246"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md247"></a>
+General</h3>
+<ul>
+<li>Fixed a memory leak in Streaming module on Jetson that continuously increased memory until the camera was closed.</li>
+<li>Improved IMU timestamp accuracy. Timestamp is still based on epoch time and IMU clock drift is now compensated. Note that <code>getIMUData(TIME_REFERENCE_IMAGE).timestamp</code> and <code>getTimestamp(TIME_REFERENCE_IMAGE)</code> can now be slightly different since they are not based on the same computation, however the difference will be less than the time of a frame.</li>
+<li>Fixed a wrong translation scale that was applied in <code>getCameraInformation().camera_imu_transform</code>. Translation was given in meters when the selected unit was in millimeters.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md248"></a>
+Tools</h3>
+<ul>
+<li>Fixed ZED Explorer which was still creating a UI interface when used in command line. Command line options are now available even if no screen is connected to the host PC/Jetson.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md249"></a>
+Platforms</h3>
+<ul>
+<li>Fixed Jetson clock script so that it correctly enables maximum performance (nvpmodel -m 0) with the new JetPack 4.2.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md250"></a>
+2.8.3</h1>
+<h2><a class="anchor" id="autotoc_md251"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md252"></a>
+General</h3>
+<ul>
+<li>Fixed multiple camera detection on Ubuntu 18.</li>
+<li>Fixed getCameraSettingsValue() when using network streaming input. It was not fully supported on previous versions.</li>
+<li>Fixed random freeze on Windows when using network streaming input.</li>
+<li>Fixed retrieveImage() for Side by Side View mode that would lead to an empty image.</li>
+<li>Fixed error code that returned SUCCESS when retrieveImage() or retrieveMeasure() was used with a resolution higher than the camera resolution. Functions will now return ERROR_CODE_INVALID_RESOLUTION.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md253"></a>
+SVO</h3>
+<ul>
+<li>Fixed a bug in LOSSLESS compression on Linux when using ZED Mini cameras. IMU metadata was not reported in the SVO file, leading to wrong tracking states.</li>
+<li>Fixed metadata synchronization issue where IMU and image data could be out of sync in H264 (AVCHD) and H265 (HEVC) SVO files recorded on Desktop platforms.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md254"></a>
+Samples</h3>
+<ul>
+<li>Fixed support of Visual Studio 2019 for Samples that required GLEW library.</li>
+<li>Improved mouse control in Positional Tracking sample.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md255"></a>
+Tools</h3>
+<ul>
+<li>Fixed SVO playback controls in ZED Explorer. Previously, the "+/-" button could jump one frame each time it was clicked.</li>
+<li>Fixed SVO conversion to H264 (AVCHD) and H265 (HEVC) in ZED SVO Editor tool.</li>
+<li>Improved zoom in/out control in Depth Viewer.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md256"></a>
+Plugins</h2>
+<h3><a class="anchor" id="autotoc_md257"></a>
+Unity</h3>
+<ul>
+<li>Added support for building applications with Unity and ZED on Linux. See <a href="https://github.com/stereolabs/zed-unity">zed-unity repository</a> for more information.</li>
+<li>Fixed issue when using multiple cameras that could lead to a crash if both cameras shared the same CAMERA_ID.</li>
+<li>Fixed minor issues in the plugin. See <a href="https://github.com/stereolabs/zed-unity/releases">zed-unity release notes</a> for more details.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md258"></a>
+2.8.2</h1>
+<h2><a class="anchor" id="autotoc_md259"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md260"></a>
+General</h3>
+<ul>
+<li>Added static sl_svo library on Linux. All ZED SDK libraries are now available as static libraries.</li>
+<li>Fixed SVO playback speed in ZED Explorer. SVO are now played at their capture speed.</li>
+<li>Applied multiple minor UI updates in ZED Explorer.</li>
+<li>Fixed an issue preventing the tools to be launched with a double click on Ubuntu 18.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md261"></a>
+Video</h3>
+<ul>
+<li>Fixed unrectified image orientation in Flip mode.</li>
+<li>Fixed a potential issue leading to file corruption when multiple programs accessed the camera calibration file at the same time.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md262"></a>
+Positional Tracking</h3>
+<ul>
+<li>Updated IMU output to remove gyroscope bias correction from raw data. This will improve SLAM algorithms that include online bias estimation and use the IMU raw data.</li>
+<li>Fixed enable_imu_fusion function. When set to false, it now effectively disables IMU use for visual odometry estimation.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md263"></a>
+Spatial Mapping</h3>
+<ul>
+<li>Fixed a memory detection issue preventing the mapping to start when &lt;2GB of RAM was available.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md264"></a>
+SVO</h3>
+<ul>
+<li>Fixed a potential issue when reading the last frame of an SVO file.</li>
+<li>Added support for ~ character in SVO paths on Linux.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md265"></a>
+Samples</h3>
+<ul>
+<li>Added ArUco Marker detection sample showing how to relocalize the camera during tracking.</li>
+<li>Updated OpenCV-related samples for compatibility with OpenCV 4.</li>
+<li>Fixed installation of the SVO recording sample.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md266"></a>
+2.8.1</h1>
+<h2><a class="anchor" id="autotoc_md267"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md268"></a>
+Positional Tracking</h3>
+<ul>
+<li>Fixed IMU bias correction that could lead to slow movement not being correctly tracked.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md269"></a>
+SVO</h3>
+<ul>
+<li>Fixed automatic low recording bitrate when target FPS is not reached.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md270"></a>
+Tools</h3>
+<ul>
+<li>Fixed ZED Explorer image stall when taking a screenshot.</li>
+<li>Removed debug message in ZED Explorer console.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md271"></a>
+2.8.0</h1>
+<h2><a class="anchor" id="autotoc_md272"></a>
+New Features</h2>
+<ul>
+<li>Streaming over IP network</li>
+<li>ZED SDK 2.8 introduces a brand new streaming feature. Users can now connect as many ZED cameras as needed directly to a network and conveniently access the video feeds simultaneously, on multiple devices and applications. <a href="https://www.stereolabs.com/blog/how-to-set-up-a-multi-camera-network/">Get Started</a>.</li>
+<li>Also, Ethernet cabling greatly extends the distance allowed between the ZED camera and the host device making installation and placement of ZED cameras more flexible and scalable. Introducing a brand new <a href="https://www.stereolabs.com/blog/zed-wrapper-for-ros2/">ROS 2 wrapper</a> for the ZED SDK, taking advantage of all the new features and optimization of the new ROS 2 version.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md273"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md274"></a>
+General</h3>
+<ul>
+<li>Added Streaming capabilities. The ZED SDK can now stream data from local cameras over the network, for multiple remote computers running the SDK to use as input.</li>
+<li>Added support for scanning into point clouds using Spatial Mapping.</li>
+<li>In collaboration with NVIDIA, solved an issue on Jetson preventing the ZED Mini from being detected after reboot. Fix is available in Jetpack 4.2 and will be applied to older versions.</li>
+<li>Fixed an issue on Jetson TX2 leading to incorrect floor plane detection with the ZED Mini.</li>
+<li>Fixed image timestamping issue that could lead to offsets when using <code>getTimestamp(TIME_REFERENCE_IMAGE)</code>.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md275"></a>
+Streaming</h3>
+<ul>
+<li>Added input.setFromStream(...) function in InitParameters to open a streaming camera.</li>
+<li>Added enableStreaming(...) and disableStreaming() functions to start and stop a stream from a camera.</li>
+<li>Added StreamingParameters structure to setup custom bitrate, port and codec of a camera stream.</li>
+<li>Added isStreamingEnabled() function to get the streaming status of a camera.</li>
+<li>Added getStreamingDeviceList() function to list the camera streams available on the network.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md276"></a>
+Spatial Mapping</h3>
+<ul>
+<li>Added map_type parameter in SpatialMappingParameters to select between mesh or point cloud-based mapping.</li>
+<li>Added SPATIAL_MAP_TYPE enumerate to list available mapping types (mesh vs. point cloud).</li>
+<li>Added extractWholeSpatialMap(...) function, deprecating extractWholeMesh(...).</li>
+<li>Added retrieveSpatialMapAsync(...) function, deprecating retrieveMeshAsync(...).</li>
+<li>Added requestSpatialMapAsync() function, deprecating requestMeshAsync().</li>
+<li>Added getSpatialMapRequestStatusAsync() function, deprecating getMeshRequestStatusAsync().</li>
+<li>Fixed an issue that could lead to a crash during mesh texturing in Unity.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md277"></a>
+API</h3>
+<ul>
+<li>Added CAMERA_SETTINGS_LED_STATUS in CAMERA_SETTINGS to allow users to enable or disable the camera LED.</li>
+<li>Updated Jetson installers. There is now one installer per Jetpack version that covers all supported Jetson boards, instead of one installer per board and per Jetpack.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md278"></a>
+SVO</h3>
+<ul>
+<li>Fixed memory leak in disableRecording() function.</li>
+<li>Introduced optional_settings_path to select a custom calibration file path.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md279"></a>
+Positional Tracking</h3>
+<ul>
+<li>Added enable_imu_fusion parameter in TrackingParameters to disable camera-IMU odometry fusion when using a ZED Mini in specific environments such as high vibration platforms.</li>
+<li>Updated TrackingParameters.enable_pose_smoothing behavior to better track high-speed movements of the camera when disabled.</li>
+<li>Updated Pose.pose_covariance behavior when using spatial memory. The covariance is now accessible when TrackingParameters.enable_spatial_memory is activated.</li>
+<li>Deprecated Pose.pose_confidence attribute. Use Pose.pose_covariance instead.</li>
+<li>Introduced camera_disable_imu to disable the imu opening in live mode. This allows opening a ZED-M on USB 3.0 only extensions cord such as optical fiber.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md280"></a>
+Samples</h3>
+<ul>
+<li>Introduced Streaming Sender and Streaming Receiver samples to help users get started with the new feature.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md281"></a>
+Tools</h3>
+<ul>
+<li>Added a feature to ZEDfu to scan and export as fused point cloud.</li>
+<li>Fixed a graphics resizing issue in ZED Explorer on Ubuntu 18.</li>
+<li>Fixed an issue in SVO Editor that prevented cutting an SVO within the first few frames.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md282"></a>
+Plugins</h2>
+<h3><a class="anchor" id="autotoc_md283"></a>
+Python</h3>
+<ul>
+<li>Updated API for compatibility with 2.8 release.</li>
+<li>Added 2.8 streaming capabilities.</li>
+<li>Added native OpenCV sample to open the camera without the ZED SDK on non-NVIDIA computers.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md284"></a>
+ROS 2</h3>
+<ul>
+<li>Releasing the beta version of the new ROS 2 wrapper.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md285"></a>
+ROS</h3>
+<ul>
+<li>Updated API for compatibility with 2.8 release.</li>
+<li>Moved parameters from launch files to YAML files. This makes them clearer and unifies parameters between different launch files.</li>
+<li>Added minimum depth parameter (min_depth).</li>
+<li>Added base_link to the TF tree to improve user experience when adding ZED cameras to a standard ROS robot configuration. Pose and Odometry are now referred to base_link instead of zed_camera_center.</li>
+<li>Added a separated launch file for ZED Mini (zedm.launch and display_zedm.launch).</li>
+<li>Added a service to set the ON/OFF status of the blue LED (firmware &gt; 1523).</li>
+<li>Added a service to toggle the status of the blue led (firmware &gt; 1523).</li>
+<li>Added a parameter to choose the default SVO compression mode for SVO recording.</li>
+<li>Added 2D mode for stable navigation on planar surfaces.</li>
+<li>Added option to set a fixed pose/odometry covariance or use the dynamic matrices calculated by the SDK.</li>
+<li>Added SVO recording services.</li>
+<li>Added zero-copy to Pointcloud publishing (thanks @RhysMcK).</li>
+<li>Added dynamic parameter to change the frequency of point cloud publishing. Now the point cloud can have a frequency different from the grab frequency (always less than or equal to the grab frequency).</li>
+<li>Added services to start/stop network streaming, which allows remote machines to acquire and process images using a ROS node or a "not ROS" application.</li>
+<li>Added stereo side-by-side image topic for raw and rectified images.</li>
+<li>Removed initial warning about TF not being available.</li>
+<li>Improved console logging for a better vision of the node configuration.</li>
+<li>Fixed additional minor issues.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md286"></a>
+Unity</h3>
+<ul>
+<li>Updated API for compatibility with 2.8 release.</li>
+<li>Added support for multiple cameras on the same PC - complete refactoring of the plugin to support this.</li>
+<li>Added Multicam sample to demonstrate how to use more than one ZED camera at once.</li>
+<li>Added support for the SDK's new streaming features - direct USB connection no longer required.</li>
+<li>Added Pose Smoothing to positional tracking relocalization. Enabling spatial memory for tracking no longer creates "jumps" in position estimation.</li>
+<li>Added Estimate Initial Position feature to set the ZED's pitch and height based on automatic floor plane detection at start.</li>
+<li>Removed dependence on Unity layers for showing the correct real-world feed to the proper camera. Users can now adjust ZED rig culling masks like any Unity Camera.</li>
+<li>Moved Spatial Mapping and SVO recording/playback to ZEDManager, removing ZEDSpatialMappingManager and deprecating ZEDSVOManager.</li>
+<li>Simplified how detected planes are drawn in scene, giving more control and allowing them to be drawn at the same time as a spatial mapping mesh.</li>
+<li>Fixed ZED rig drift when tracked with ZEDControllerTracker. This was caused by how the latency compensation was handled.</li>
+<li>Fixed long pause when closing applications while a ZED was initializing.</li>
+<li>Updated controller scripts to work with SteamVR Unity plugin version 2.</li>
+<li>Fixed additional minor issues.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md287"></a>
+Unreal</h3>
+<ul>
+<li>Updated engine and plugin to support 2.8 release.</li>
+<li>Added Pose Smoothing to positional tracking relocalization. Enabling spatial memory for tracking no longer creates "jumps" in position estimation.</li>
+<li>Unreal engine version updated to 4.21.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md288"></a>
+2.7.1</h1>
+<h2><a class="anchor" id="autotoc_md289"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md290"></a>
+General</h3>
+<ul>
+<li>Fixed a minor range issue in the depth confidence.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md291"></a>
+SVO</h3>
+<ul>
+<li>Fixed an issue affecting the playback on a PC of an H264 SVO recorded on Jetson.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md292"></a>
+2.7.0</h1>
+<p>The ZED SDK 2.7 release introduces CUDA 10, Ubuntu 18 and Jetson Xavier support, H264/H265 compression for SVO, new TensorFlow and YOLO samples and static compilation support on Linux.</p>
+<h2><a class="anchor" id="autotoc_md293"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md294"></a>
+API</h3>
+<ul>
+<li>Added support for <code>CUDA 10</code>.</li>
+<li>Added support for <code>Ubuntu 18.04</code>.</li>
+<li>Added support for the <code>Jetson Xavier</code> platform.</li>
+<li>Added static compilation support on Linux.</li>
+<li>Fixed random freeze when disconnecting a camera while in use.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md295"></a>
+SVO</h3>
+<ul>
+<li>Added <code>H264</code> and <code>H265</code> hardware encoding and decoding with NVENC for SVO files. A single SVO is now up to 40 times smaller for the same image quality. Thanks to hardware encoding, CPU utilization is now minimal when recording SVO, and drop frames have been eliminated.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md296"></a>
+Positional Tracking</h3>
+<ul>
+<li>Added <code>enable_imu_fusion</code> parameter in <code>TrackingParameters</code> to disable the camera-IMU odometry fusion when using a ZED Mini.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md297"></a>
+Samples</h3>
+<ul>
+<li>Introduced a <a href="https://github.com/stereolabs/zed-tensorflow">TensorFlow sample</a> for 3D object detection with the ZED and TF.</li>
+<li>Introduced a <a href="https://github.com/stereolabs/zed-yolo">YOLO sample</a> for 3D object detection with the ZED and YOLO in C++ and Python.</li>
+<li>Introduced a <a href="https://github.com/stereolabs/zed-docker">Docker example</a> showing how to run a ZED SDK image as a container. Images are available on <a href="https://hub.docker.com/r/stereolabs/zed/">Docker Hub</a>.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md298"></a>
+Tools</h3>
+<ul>
+<li>Fixed hot plugging that could cause a freeze in ZED Explorer.</li>
+<li>Fixed issue preventing downgrading firmware in ZED Explorer.</li>
+<li>Fixed various minor issues with firmware update in ZED Explorer.</li>
+<li>Fixed various minor memory issues that could lead to stability issues in ZED Explorer.</li>
+<li>Fixed minor memory issue leading to empty mesh in ZEDfu.</li>
+<li>Fixed graphical issue preventing launching ZEDfu on Ubuntu.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md299"></a>
+Plugins</h2>
+<h3><a class="anchor" id="autotoc_md300"></a>
+ROS</h3>
+<ul>
+<li>Added covariance data to the odometry message.</li>
+<li>Added pose_with_covariance topic.</li>
+<li>Added Odometry and Pose path messages.</li>
+<li>Added floor alignment feature in positional tracking to align the World Frame orientation with the foor plane.</li>
+<li>Removed OpenCV dependency.</li>
+<li>Added parameter to disable the publishing of the map frame.</li>
+<li>Added parameter to disable the publishing of the covariance in odometry and pose.</li>
+<li>Added three new tutorials about Video, Depth and Pose subscription in C++.</li>
+<li>Updated the plugins structure in RVIZ display.</li>
+<li>Updated documentation with new tutorials about Video, Depth and Positional Tracking modules.</li>
+<li>Moved "zed_nodelet_example" and "zed_rtabmap_example" in the new "examples" folder.</li>
+<li>Fixed reconnection issue. Thanks to @RhysMcK.</li>
+<li>Fixed Pointcloud structure issue. Thanks to @ChristofDubs.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md301"></a>
+Unity</h3>
+<ul>
+<li>Added toggle box to reveal a camera rig used for final HMD output, normally hidden, for advanced users.</li>
+<li>Added toggle boxes for the fade-in effect when the ZED initializes, and setting the ZED rig Gameobject to "DontDestroyOnLoad" on start.</li>
+<li>Updated the previously hard-coded layers the ZED plugin used (8-11) to be adjusted in the Inspector, and set them to 28-31 by default.</li>
+<li>Updated greenscreen config file loading so that it will work in a build when placed in a Resources folder, and changed default save path accordingly.</li>
+<li>Updated error messages from playing SVOs in loop mode with tracking enabled.</li>
+<li>Fixed Rift/Vive controller drift when using ZED's tracking instead of the HMD's.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md302"></a>
+2.6.0</h1>
+<h2><a class="anchor" id="autotoc_md303"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md304"></a>
+General</h3>
+<ul>
+<li>Added new entry in Init Parameters sl::InitParameters::optional_settings_path. This allows to set a new path for looking at the SN&lt;xxx&gt;.conf calibration files. See the API documentation for examples.</li>
+<li>Warning messages are now displayed only if InitParameters::sdk_verbose is enabled. This allows a clean console when verbose is not activated.</li>
+<li>Fixed incorrect string message for <code>sl::COORDINATE_SYSTEM::COORDINATE_SYSTEM_RIGHT_HANDED_Z_UP_X_FWD</code>.</li>
+<li>Fixed random freeze on <code>Camera::close()</code> on Ubuntu when camera was unplugged during frame capture.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md305"></a>
+Positional Tracking</h3>
+<ul>
+<li>Improved overall speed of positionnal tracking computation.<ul>
+<li>50% more efficient on Tegra.</li>
+<li>50% more efficient on linux desktop.</li>
+<li>15% more efficient on windows.</li>
+</ul>
+</li>
+<li>Added covariance estimation of the Pose. <br  />
+</li>
+<li>A new field has been added in <code><a class="el" href="structsl_1_1Pose.html" title="Pose structure with data on timing and validity in addition to position and rotation.">sl::Pose</a></code> called pose_covariance.</li>
+<li>For this version, the covariance is only calculated if <code>sl::TrackingParameters::enable_spatial_memory</code> is disabled.</li>
+<li>Added detection of initial orientation and position of the camera.</li>
+<li>Added <code>sl::TrackingParameter::set_floor_as_origin option</code> to automatically start the tracking at the detected initial position.</li>
+<li>The initial position estimation uses the floor plane detection to estimate the height and orientation of the camera. Make sure that the floor plane is visible enough to have a proper estimation.</li>
+<li>Tracking state will be in <code>TRACKING_SEARCH</code> state until the floor plane has been detected and the position of the camera estimated.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md306"></a>
+Tools</h3>
+<ul>
+<li>Fixed low depth framerate in ZED Depth Viewer on Ubuntu Desktop.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md307"></a>
+Firmware</h2>
+<ul>
+<li>A new IMU firmware for the ZED-M has been introduced in ZED SDK 2.6*</li>
+<li>The IMU framerate is now running at 800Hz, compared to 500Hz in previous firmware.</li>
+<li>This improves the IMU fusion with a better accuracy and less drifts.</li>
+<li>The Synchronization between the camera stream and the IMU stream has been improved for a better visual-inertial tracking. (ZED-M only).</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md308"></a>
+2.5.1</h1>
+<h2><a class="anchor" id="autotoc_md309"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md310"></a>
+General</h3>
+<ul>
+<li>Fixed segmentation fault when using the ZED in USB2.0 on Ubuntu.</li>
+<li>Fixed memory leak on sl::Camera::getDeviceList().</li>
+<li>Fixed a bug that leads to a wrong camera detection in getDeviceList() when this function was called a lot of time.</li>
+<li>Fixed wrong timestamp in IMUData when getIMUData(sl:TIME_REFERENCE_CURRENT) was called. Now, you can use the timestamp to check if the values are new (timestamp will be different, otherwise they will be the same).</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md311"></a>
+2.5.0</h1>
+<h2><a class="anchor" id="autotoc_md312"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md313"></a>
+General</h3>
+<ul>
+<li>Added new coordinate system RIGHT_HANDED_Z_UP_X_FWD for better support on ROS.</li>
+<li>Moved GPU computation in a non-default stream for better GPU overlapping and performance improvements with CUDA-based third party libraries.</li>
+<li>Added IMU to camera transform in IMUData class (only for ZED-M). This can be used if using RAW IMU data to obtain a quaternion (in IMU frame) and express it in Left camera frame.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md314"></a>
+Depth</h3>
+<ul>
+<li>Fixed Nan value in FILL mode when confidence is at 100%.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md315"></a>
+Planes</h3>
+<ul>
+<li>Fixed scaling bug when UNIT parameters was not in METERS.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md316"></a>
+SVO</h3>
+<ul>
+<li>Fixed timestamp to 0ULL (instead of -1) for legacy RAW compression mode.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md317"></a>
+Plugins</h2>
+<h3><a class="anchor" id="autotoc_md318"></a>
+Unity</h3>
+<ul>
+<li>Added Drone Fight demo (similar to ZEDWorld).</li>
+<li>Added Movie Screen demo (similar to ZEDWorld).</li>
+<li>Added Object Placement with Planes demo.</li>
+<li>Multiples bug fixes and improvements (see Unity release notes in unity package or on Github).</li>
+<li>Updated plugin compatibility with ZED SDK 2.5.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md319"></a>
+Unreal</h3>
+<ul>
+<li>Updated custom engine to UE4.19.1.</li>
+<li>Updated plugin compatibility with ZED SDK 2.5.</li>
+<li>Added option in BP_Initializer for selecting the Pawn tracking mode:<ul>
+<li>Full ZED tracking</li>
+<li>Full HMD tracking</li>
+<li>Mixte tracking (position from HMD and rotation from ZED)</li>
+</ul>
+</li>
+<li>Added SRemap experimental rendering option which improves the pass-through.</li>
+<li>Moved BP_ZedCamera blueprint class to C++ only.</li>
+<li>Global performance improvement.</li>
+<li>Improved Vive support.</li>
+<li>Fixed a bug making the Editor crash randomly when closing the game preview.</li>
+<li>Fixed a bug saying "wrong reference frame" when starting game preview.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md320"></a>
+ROS</h3>
+<ul>
+<li>Updated wrapper compatibility with ZED SDK 2.5.</li>
+<li>Github example code refactored in a more clear format</li>
+<li>Updated "package.xml" to "Format 2" (<a href="http://wiki.ros.org/catkin/package.xml">http://wiki.ros.org/catkin/package.xml</a>). Thanks to rbonghi</li>
+<li>Odometry is now published when subscribing to point cloud topics. Thanks to ArkadiuszNiemiec</li>
+<li>Added launch example to run the ROS wrapper nodelet in a standalone nodelet manager. Thanks to Russ76</li>
+<li>Added a publisher for internal IMU data. Thanks to tonftybj</li>
+<li>Added a publisher for disparity image. Thanks to fujimo-t</li>
+<li>Fixed minor bugs</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md321"></a>
+App</h2>
+<ul>
+<li>The complete source code of the multiplayer PingPong demo based on Unreal has been released on Github! The binary package is also available in the release section of Github.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md322"></a>
+Platforms</h2>
+<ul>
+<li><p class="startli">Updated to CUDA 9.2 and kept the version with CUDA 9.0</p>
+<p class="startli"><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md323"></a>
+2.4.1</h1>
+<h2><a class="anchor" id="autotoc_md324"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md325"></a>
+Video</h3>
+<ul>
+<li>Improved asynchronous SVO pipeline with up to 30% more recording bandwidth.</li>
+<li>Reduced frame latency on Linux platforms. The image buffer is now filled asynchronously instead of waiting for a grab() call.</li>
+<li>Fixed a recording issue leading to IMU data not being saved in the SVO file.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md326"></a>
+Depth</h3>
+<ul>
+<li>Improved depth estimation and stability on homogeneous surfaces in FILL sensing mode.</li>
+<li>Improved sharpness on depth edges in FILL sensing mode.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md327"></a>
+Tracking</h3>
+<ul>
+<li>Improved robustness against near moving objects. (Like user hands in AR)</li>
+<li>Updated enable_spatial_memory parameter behavior. Disabling it now provides a pure Visual Odometry.</li>
+<li>Updated relocalization and loop closure rules to improve the tracking accuracy.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md328"></a>
+Samples</h3>
+<ul>
+<li>Introduced a zed-opencv-native sample for stereo image capture without the SDK.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md329"></a>
+Tools</h2>
+<ul>
+<li>Added an SDK version management to keep you informed about new updates and features.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md330"></a>
+Jetson</h2>
+<ul>
+<li>Major performance improvements on Jetson boards thanks to internal SDK optimizations and updated CPU and GPU frequencies available during the SDK installation.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md331"></a>
+2.4.0</h1>
+<p>ZED SDK 2.4 introduces a major firmware update for ZED and ZED Mini, bringing multi-camera support to Windows and Linux and improving significantly USB connectivity on Windows 10. We also introduce plane detection for a better understanding of the environment, as well as various fixes and improvements to the ZED API, tools, samples, and documentation.</p>
+<h2><a class="anchor" id="autotoc_md332"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md333"></a>
+Depth</h3>
+<ul>
+<li>Improved depth edges and details in PERFORMANCE and ULTRA modes.</li>
+<li>Improved depth reliabiliity by removing oversaturated areas detected in the images.</li>
+<li>Improved confidence maps for better usability.</li>
+<li>Updated confidence threshold to 97% in Depth Viewer.</li>
+<li>Improved stability of MEDIUM and QUALITY depth modes in STANDARD sensing.</li>
+<li>Fixed depth stabilization bug that could occur when reading an SVO.</li>
+<li>Fixed depth stabilization bug that could disable the stabilizer if tracking state switched to SEARCH.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md334"></a>
+Tracking</h3>
+<ul>
+<li>Improved positional tracking accuracy.</li>
+<li>Fixed issue with IMU that would increase drift when using visual-inertial positional tracking.</li>
+<li>Fixed an issue where the initial tracking position would be incorrect when playing back an SVO taken with a ZED mini.</li>
+<li>Fixed an issue preventing tracking from being enabled with an SVO recorded with a ZED mini where self-calibration was disabled.</li>
+<li>Fixed a potential crash when restarting positional tracking.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md335"></a>
+API</h3>
+<ul>
+<li>Added Camera::findFloorPlane function for floor detection and improved tracking initialization.</li>
+<li>Added Camera::findPlaneAtHit function that returns the best matching plane at a selected pixel position in the image.</li>
+<li>Added Plane object to store information about a detected plane, such as its center, normal, bounds, etc.</li>
+<li>Updated open() function to allow SDK, tools and plugins to open the device 0.5s faster.</li>
+<li>Reduced SVO compression ratio in Lossy mode to improve image quality.</li>
+<li>Deprecated function Camera::setFPS.</li>
+<li>Fixed an issue that could allow CameraInformation::camera_imu_transform to be empty.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md336"></a>
+Samples</h3>
+<ul>
+<li>Introduced a multi-camera sample showing how to capture data from multiple connected devices on Windows and Linux.</li>
+<li>Introduced a new tutorial showing how to use the new findFloorPlane function.</li>
+<li>Introduced a plane detection sample to display planes detected by the new findPlaneAtHit function.</li>
+<li>Introduced an OpenGL example code on GitHub to show how to display camera feed with OpenGL.</li>
+<li>Updated positional tracking example code to show how to get IMU data from a ZED Mini.</li>
+<li>Updated Matlab plugin with getIMUData function, giving access to the ZED Mini IMU values.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md337"></a>
+Documentation</h3>
+<ul>
+<li>Updated Mesh API reference documentation to describe how textures are linked to vertices.</li>
+<li>Updated Unity Spatial Mapping section to add missing steps in the tutorial.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md338"></a>
+Tools</h2>
+<ul>
+<li>ZED Explorer now opens a device up to 1.0 second faster.</li>
+<li>Updated ZED Diagnostic tool messages for clarity.</li>
+<li>Added a smudge detector in ZED Diagnostic to warn users when the camera lenses need to be cleaned.</li>
+<li>Minor ZED Calibration tool GUI update for readability.</li>
+<li>Updated ZED Depth Viewer settings to display ULTRA depth mode by default.</li>
+<li>Updated the settings GUI in ZED Explorer.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md339"></a>
+Plugins</h2>
+<ul>
+<li>ROS - Added dynamic adjustment of gain and exposure settings in ROS wrapper (Thanks to GitHub user @fujimo-t).</li>
+<li>Unity - Major update of the plugin. See changes here.</li>
+<li>Unity - Released plugin source code on GitHub. Contributions are encouraged!</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md340"></a>
+Platforms</h2>
+<ul>
+<li>Updated to JetPack 3.2 for Jetson TX1 and TX2.</li>
+<li>Updated Jetson installer to enable MAX-N performance mode by default.</li>
+<li>Added Ubuntu installer compiled with CUDA 9 for better TensorFlow compatibility.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md341"></a>
+2.3.3</h1>
+<h2><a class="anchor" id="autotoc_md342"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md343"></a>
+Depth</h3>
+<ul>
+<li>Fixed right disparity values being over filtered when using enable_right_side_measure.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md344"></a>
+Tools</h3>
+<ul>
+<li>Updated automatic camera calibration download to avoid caching issues.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md345"></a>
+2.3.2</h1>
+<h2><a class="anchor" id="autotoc_md346"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md347"></a>
+Compatibility</h3>
+<ul>
+<li>Removed a registry key generating side effects on Windows Mixed Reality Headsets.</li>
+<li>Fixed CUDA installation on Windows 7.</li>
+<li>Fixed Redistributables installation on Windows 10.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md348"></a>
+Stability</h3>
+<ul>
+<li>Improved internal image grabbing process against camera reconnections.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md349"></a>
+Depth</h3>
+<ul>
+<li>Improved confidence map precision in Performance and ULTRA depth mode.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md350"></a>
+SDK Tools</h3>
+<ul>
+<li>Fixed several bugs in ZED Explorer leading to unexpected crashes of the application.</li>
+<li>Updated point cloud preview in the Depth Viewer.</li>
+<li>Updated Diagnostic tool to handle more situations.</li>
+<li>Updated firmware update mechanism in Windows 10 to authorize downgrading.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md351"></a>
+ZED World</h3>
+<ul>
+<li>Embedded CUDA version to simplify the installation.</li>
+<li>Fixed latency correction and image projection in HMDs for a smoother experience.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md352"></a>
+2.3.1</h1>
+<h2><a class="anchor" id="autotoc_md353"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md354"></a>
+ULTRA Depth Mode</h3>
+<ul>
+<li>Optimized memory usage, it now uses only 50% less GPU memory.</li>
+<li>Optimized depth density, ULTRA depth map are more dense by default.</li>
+<li>Optimized confidence map, confidence values are more linear and accurate.</li>
+<li>Fixed an issue when retriving normals in VGA resolution with the ULTRA mode.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md355"></a>
+Camera Settings</h3>
+<ul>
+<li>Fixed an issue leading to exposure and gain settings to be applied on the left image only.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md356"></a>
+Tracking / SVO Playback</h3>
+<ul>
+<li>Fixed tracking behavior during the playback of an SVO recorded with a ZED mini.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md357"></a>
+2.3.0</h1>
+<h2><a class="anchor" id="autotoc_md358"></a>
+New Features</h2>
+<h3><a class="anchor" id="autotoc_md359"></a>
+Introducing stereo passthrough in Unity:</h3>
+<ul>
+<li>Added support of the ZED mini camera.</li>
+<li>Added stereo passthrough feature with optimized rendering in VR headsets</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md360"></a>
+SDK device detection:</h3>
+<ul>
+<li>Connected ZED and ZED mini cameras can now be listed before opening them.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md361"></a>
+IMU-optimized tracking for ZED mini:</h3>
+<ul>
+<li>The new ZED mini supports comes with an optimized tracking fusion that takes advantage its integrated IMU. </li>
+</ul>
+<h3><a class="anchor" id="autotoc_md362"></a>
+New ULTRA depth mode:</h3>
+<ul>
+<li>Introducing a new ULTRA depth mode for an improved depth accuracy in reduced-real-time applications.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md363"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md364"></a>
+ZED mini support</h3>
+<ul>
+<li>Added sl::Camera::getDeviceList() static function to get the connected ZED and ZED mini in a vector of <a class="el" href="structsl_1_1DeviceProperties.html" title="Device properties">sl::DeviceProperties</a>.</li>
+<li>Added <a class="el" href="structsl_1_1DeviceProperties.html" title="Device properties">sl::DeviceProperties</a> structure to contain the information of each device.</li>
+<li>Added <a class="el" href="group__Video__group.html#gaa29851790d3e528f42f539334e6e5887" title="Types of compatible ZED cameras.">sl::MODEL</a> enumerate to diferentiate the ZED mini from the ZED.</li>
+<li>Added camera_model information in the <a class="el" href="structsl_1_1CameraInformation.html" title="Structure containing information of a single camera (serial number, model, input type,...">sl::CameraInformation</a> structure.</li>
+<li>Added sl::Camera::getIMUData() function that give access to the fused and RAW IMU data.</li>
+<li>Added sl::IMUData to store the IMU values filled by getIMUData().</li>
+<li>Added sl::Camera::SetIMUPrior() function as an input for external IMU sensors.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md365"></a>
+Updated API</h3>
+<ul>
+<li>Added sl::DEPTH_MODE::DEPTH_MODE_ULTRA for the new ULTRA depth mode.</li>
+<li>Added sl::Camera::getPlaneAtHit() function to get plane estimations from the depth information.</li>
+<li>Added sl::Plane object to store the plane information</li>
+<li>Added sl::Camera::getTimestamp() to replace the existing timestamp functions.</li>
+<li>Added <a class="el" href="group__Video__group.html#ga9401e0c9b9fec46d2eb300ffd2fc72c9" title="Categories indicating when a timestamp is captured.">sl::TIME_REFERENCE</a> to switch between live data and frame synchronized ones in function cals.</li>
+<li>Changed timestamp reference form PC uptime to epoch.</li>
+<li>Deprecated sl::Camera::getCurrentTimestamp(), replaced by sl::Camera::getTimestamp(TIME_REFERENCE_CURRENT)</li>
+<li>Deprecated sl::Camera::getCameraTimeStamp(), replaced by sl::Camera::getTimestamp(TIME_REFERENCE_IMAGE)</li>
+<li>Deprecated SVO_COMPRESSION_MODE_RAW in SVO writing modes. Playback is still available.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md366"></a>
+Tools</h3>
+<ul>
+<li>Introducing a graphical interface for the Diagnostic tool.</li>
+<li>Improving Diagnostic tool accuracy and messages.</li>
+<li>Adding the ZED mini 3D representation in Depth Viewer.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md367"></a>
+Plugins</h2>
+<ul>
+<li>Unity:</li>
+<li>Added ZED mini support.</li>
+<li>Introducing stereo passthrough for VR headsets.</li>
+<li>ROS:</li>
+<li>Added ZED mini support.</li>
+<li>Added ZED camera selection from serial number.</li>
+<li>Fixed occasional crash when closing the wrapper.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md368"></a>
+Dependencies</h2>
+<ul>
+<li>Introducing CUDA 9.1 support. (CUDA 8 for Jetson TX1 and TX2)</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md369"></a>
+Known Issues</h2>
+<ul>
+<li>On certain configurations, VRCompositor in SteamVR can freeze when using HTC Vive and ZED. Disabling Async Reprojection in SteamVR can fix the issue.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md370"></a>
+2.2.0</h1>
+<h2><a class="anchor" id="autotoc_md371"></a>
+New Features</h2>
+<h3><a class="anchor" id="autotoc_md372"></a>
+Performance improvements:</h3>
+<ul>
+<li>Improved depth computation performance by 20%. Reduced memory usage.</li>
+<li>Improved positional tracking speed by 15%.</li>
+<li>Updated internal SDK architecture to reduce and stabilize overall grab() time. 2.3 will further improve grab() time, especially for applications using depth and positional tracking.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md373"></a>
+Major update of Unity plugin:</h3>
+<ul>
+<li>The plugin has been completely refactored to simplify the creation of interactive AR applications.</li>
+<li>Added Spatial Mapping to enable physical interactions with the real-world environment.</li>
+<li>Updated VR Green Screen sample. Improved chroma key, VR controller support, general usability and fixed various bugs. <br  />
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md374"></a>
+SDK version detection:</h3>
+<ul>
+<li>Applications that use the ZED SDK are now able to identify the installed SDK version before loading it.</li>
+<li>When loaded by an executable, the ZED SDK now detects the expected ZED SDK version and self-adapt to ensure runtime compatibility.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md375"></a>
+External CUDA context:</h3>
+<ul>
+<li>SDK CUDA context can now be retrieved to allow context sharing within an application.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md376"></a>
+&lt;strong&gt;Gravity orientation estimation&lt;/strong&gt;:</h3>
+<ul>
+<li>Real-world gravity orientation can now be estimated after mapping an area.</li>
+<li>The dominant floor plane is extracted from the mesh and its normal is used to estimate the gravity vector.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md377"></a>
+CMake find_package:</h3>
+<ul>
+<li>The ZED SDK can be linked to a project by using the find_package command on Cmake (previously only supported on linux).</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md378"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md379"></a>
+Updated Video API</h3>
+<ul>
+<li>Improved real-time SVO playback mode. SVO will now always play at their capture frame-rate, not faster.</li>
+<li>Fixed Flip mode on Nvidia Jetson boards</li>
+<li>Fixed an issue affecting SVO recording on Linux.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md380"></a>
+Updated Depth API</h3>
+<ul>
+<li>Reduced depth computation time by 20% and improved stability.</li>
+<li>Reduced GPU memory usage by x2 in PERFORMANCE mode.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md381"></a>
+Updated Positional Tracking API</h3>
+<ul>
+<li>Updated positional tracking behaviour. Tracking now always returns a camera pose, even when tracking state is "Searching..." or saving an area file.</li>
+<li>Fixed tracking reset. Reset tracking no longer freezes the application when calling disable/enable in a row.</li>
+<li>Fixed tracking bug at high velocity. Tracking now correctly returns a pose when moving at high speed.</li>
+<li>Fixed bug in Spatial Memory that would sometimes make the pose jump to an incorrect location.</li>
+<li>Introduced Camera::saveCurrentArea() function to save an area file without having to disable tracking.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md382"></a>
+Updated Spatial Mapping API</h3>
+<ul>
+<li>Improved Spatial Mapping API stability.</li>
+<li>Introduced Mesh::getGravityEstimate() to estimate gravity vector using mesh.</li>
+<li>Refactor MeshFilterParameters::MESH_FILTER, optimized for a better fitting of the initial Mesh.</li>
+<li>Renamed SpatialMappingParameters::RESOLUTION as MAPPING_RESOLUTION to avoid confusion with <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828" title="Represents the available resolution options.">sl::RESOLUTION</a>.</li>
+<li>Renamed SpatialMappingParameters::RANGE as MAPPING_RANGE.</li>
+<li>Renamed MeshFilterParameters::FILTER as MESH_FILTER.</li>
+<li>Renamed SpatialMappingParameters::keep_mesh_consistent as use_chunk_only. This parameter allows to disable mesh update and speed up applications which only use chunk lists.</li>
+<li>Renamed SpatialMappingParameters::invert_vertex_order as reverse_vertex_order. This parameter allows to retrieve mesh vertices in clockwise or counterclockwise order.</li>
+<li>Renamed SpatialMappingParameters::range_meter.second as SpatialMappingParameters::range_meter.</li>
+<li>Renamed SpatialMappingParameters::allowed_max as SpatialMappingParameters::allowed_range.</li>
+<li>Removed SpatialMappingParameters::range_meter.first.</li>
+<li>Removed SpatialMappingParameters::allowed_min.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md383"></a>
+General SDK changes</h3>
+<ul>
+<li>Added Camera::getZEDSDKBuildVersion() and Camera::getZEDSDKRuntimeVersion() functions to allow SDK version detection at runtime. Applications on Windows are now able to check if a compatible version of the SDK is available before loading the SDK libraries.</li>
+<li>Added InitParameters::sdk_cuda_ctx input to allow context sharing within an application.</li>
+<li>Improved thread safety.</li>
+<li>Improved ZED USB device detection on certain Windows 10 configurations.</li>
+<li>Fixed "Corrupted SDK" error message that would trigger when opening the camera.</li>
+<li>Removed keep_occluded_point parameter in savePointCloudAs(). New behavior is set to keep_occluded_point = false.</li>
+<li>Deprecated independent string conversion functions *2str() in favor of a new universal toString() one.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md384"></a>
+Plugins</h2>
+<ul>
+<li>Unity:</li>
+<li>Refactored plugin organization and architecture.</li>
+<li>Added Spatial Mapping feature to allow physical interactions with the real-world environment.</li>
+<li>Improved chroma key in Green Screen sample. Matte edges are now much cleaner and sharper.</li>
+<li>Improved PBS lighting in forward rendering mode.</li>
+<li>Added AR post-processing shaders to enable realistic integration of virtual objects in ZED video. <br  />
+</li>
+<li>Added OpenGL support.</li>
+<li>Added camera loading screen with error reporting.</li>
+<li>Added callbacks reporting the camera status.</li>
+<li>Fixed SVO reading speed when playing back recorded videos in Unity.</li>
+<li>Fixed multithreading issue leading to crashes on computers with low resources.</li>
+<li>ROS:</li>
+<li>Updated wrapper to ensure compatibility with ZED SDK 2.2.</li>
+<li>Removed X11 dependency to allow usage of remote ROS nodes without display.</li>
+<li>Matlab:</li>
+<li>Updated interface to ensure compatibility with ZED SDK 2.2.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md385"></a>
+Samples and Tutorials</h2>
+<ul>
+<li>SVO Export sample is now able to save 16-bit images of the depth from an SVO file.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md386"></a>
+Tools</h2>
+<ul>
+<li>ZED Depth Viewer: Fixed point cloud rendering and export issues leading to empty files.</li>
+<li>Updated Diagnostic tool.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md387"></a>
+Dependencies</h2>
+<ul>
+<li>Removed X11 on Linux to allow SDK access and control from a remote SSH connection.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md388"></a>
+Known Issues</h2>
+<ul>
+<li>On certain configurations, VRCompositor in SteamVR can freeze when using HTC Vive and ZED. Disabling Async Reprojection in SteamVR can fix the issue.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md389"></a>
+2.1.0/1</h1>
+<h2><a class="anchor" id="autotoc_md390"></a>
+Major New Features</h2>
+<h3><a class="anchor" id="autotoc_md391"></a>
+Major update of Depth Sensing API</h3>
+<ul>
+<li>New depth stabilization mode is now available. It brings significant improvement to depth sensing accuracy and noise reduction. It is enabled by default and requires the positional tracking (enabled automatically).</li>
+<li>Images/Depth/Measures resolutions can now be adjusted in retrieve*() functions, speeding up applications that need lower resolution Mat.</li>
+<li>Normal maps are now available for the left and right eye.</li>
+<li>Depth map and point cloud are now available for the right eye.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md392"></a>
+Plugins</h2>
+<ul>
+<li>Unity:</li>
+<li>Added Light script to enable light interactions between the real and virtual world.</li>
+<li>Added Vive tracker support.</li>
+<li>Added Oculus Rift support in Green Screen MR sample.</li>
+<li>Added a semi-automated calibration script to align the real and virtual world in Green Screen MR sample.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md393"></a>
+Dependencies</h2>
+<ul>
+<li>Removed OpenCV as an SDK dependency.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md394"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md395"></a>
+Updated Depth API:</h3>
+<ul>
+<li>Added <a class="el" href="structsl_1_1Resolution.html" title="Holds a camera resolution as two pointers (for height and width) for easy passing back and forth to t...">sl::Resolution</a> parameter in retrieve*() function to allow retrieval of smaller depth resolutions.</li>
+<li>Added RuntimeParameters::depth_stabilization to enable depth stabilization. Enabled by default in 2.1.</li>
+<li>Added MEASURE_NORMALS as a new MEASURE to extract the normal map of the scene. Output is an <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl::Mat</a> with 4 channels (x,y,z,empty) of 32bit float.</li>
+<li>Added InitParameters::enable_right_measure for all measure types to extract a measure MEASURE_XXX_RIGHT mapped on the right image.</li>
+<li>Fixed bug in the confidence map for PERFORMANCE mode.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md396"></a>
+Updated Spatial Mapping API (see details below):</h3>
+<ul>
+<li>Added vector of <a class="el" href="structsl_1_1Chunk.html" title="Represents a sub-mesh, it contains local vertices and triangles.">sl::Chunk</a> to allow access to smaller parts of a mesh ("chunks").</li>
+<li>Added Mesh::getVisibilityList() to get the list of chunks visible by the ZED.</li>
+<li>Added Mesh::getSurroundingList() to get the list of chunks located within a specific distance of the ZED.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md397"></a>
+Updated Positional Tracking API (see details below):</h3>
+<ul>
+<li>Added getEulerAngles() to retrieve camera rotations in degrees or radians.</li>
+<li>Renamed getRotation() into getRotationMatrix().</li>
+<li>Updated Positional Tracking sample.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md398"></a>
+Experimental feature</h2>
+<h3><a class="anchor" id="autotoc_md399"></a>
+Spatial Mapping API update</h3>
+<ul>
+<li>Mesh Chunks have been introduced. Spatial mapping now divides the world in fixed-size blocks called chunks. Instead of storing and accessing a single mesh with a million+ vertices, this allows to store and access multiple local submesh with a much lower number of vertices.</li>
+<li>Chunks within a certain distance of the camera can be accessed through Visibility and Surrounding lists. See <a class="el" href="classsl_1_1Mesh.html" title="A mesh contains the geometric (and optionally texture) data of the scene captured by spatial mapping.">sl::Mesh</a> API documentation for more information.</li>
+<li>Additional optimization techniques based on chunks will be introduced in later updates.</li>
+<li><b>Known Issue:</b> The normals can be duplicated with a slight orientation difference on the edge of the chunks on the mesh, this can cause lightning issues</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md400"></a>
+2.0.1</h1>
+<h2><a class="anchor" id="autotoc_md401"></a>
+SDK</h2>
+<ul>
+<li>Bug fix on initial_world_transform units</li>
+<li>Bug fix on Mesh::load() function</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md402"></a>
+Tools</h2>
+<ul>
+<li>Bug fix on ZEDfu installation for TX1</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md403"></a>
+2.0.0</h1>
+<h2><a class="anchor" id="autotoc_md404"></a>
+Major New Features</h2>
+<h3><a class="anchor" id="autotoc_md405"></a>
+Major SDK update</h3>
+<ul>
+<li>The ZED SDK is now composed of different modules: Video, Depth, Positional Tracking and Spatial Mapping. Each module can be configured through dedicated parameters. Support functions have also been introduced and memory management has been simplified. The new API is much easier to use and integrate.</li>
+<li>ZED SDK 2.0 introduces breaking changes. To help you switch from 1.2 to 2.0, read the migration guide.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md406"></a>
+New Spatial Mapping module</h3>
+<ul>
+<li>New Spatial Mapping module is introduced in 2.0.</li>
+<li>Spatial Mapping combines stereo depth sensing and motion tracking to capture a 3D map of the environment. Spatial mapping is useful for collision avoidance, motion planning and realistic blending of real and virtual worlds.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md407"></a>
+Major update of Positional Tracking module</h3>
+<ul>
+<li>New Spatial Memory mode now enables the ZED to memorize its surroundings. It significantly improves positional tracking by correcting drift and ensures a consistent experience across uses. Spatial Memory is enabled by default and replaces the previous Area Learning mode.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md408"></a>
+New Unity plugin and samples</h3>
+<ul>
+<li>Unity package now supports ZED SDK 2.0 and Unity 5.5.</li>
+<li>Added new VR, MR and Green Screen samples.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md409"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md410"></a>
+Updated Video module</h3>
+<ul>
+<li>Added control of camera White Balance.</li>
+<li>Reduced video capture latency on Linux: It is now possible to adjust the size of the buffer queue size for video capture using InitParams::reqBuffersCountLinux.</li>
+<li>Added real-time SVO mode: This mode reads SVO files and skips frames if necessary to simulate the behavior of the camera operating in live mode. Real-time mode is not available for SVO files recorded in RAW compression.</li>
+<li>Fixed bug with camera control functions that sometimes returned erroneous values.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md411"></a>
+Updated Depth module</h3>
+<ul>
+<li>Improved depth quality for STANDARD mode and reduced aliasing.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md412"></a>
+Updated Positional Tracking module</h3>
+<ul>
+<li>Introduced Spatial Memory mode that significantly reduces drift over time.</li>
+<li>Introduced new Pose, Translation, Orientation, Rotation and Transform classes that provide better and finer control over the API.</li>
+<li>Refactored tracking parameters into a TrackingParameters class. Use default parameters for optimal results.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md413"></a>
+Added Spatial Mapping module</h3>
+<ul>
+<li>Introduced new <a class="el" href="classsl_1_1Mesh.html" title="A mesh contains the geometric (and optionally texture) data of the scene captured by spatial mapping.">sl::Mesh</a> class to store polygonal meshes.</li>
+<li>enableSpatialMapping() starts Spatial Mapping.</li>
+<li>requestMeshAsync(), getMeshRequestStatusAsync(), retrieveMeshAsync(sl::Mesh) request and retrieve the mesh that is being created. These functions are asynchronous and designed for real-time mesh extraction.</li>
+<li>extractWholeMesh(sl::Mesh) extracts the current mesh synchronously. This function is designed to extract the whole mesh at the end of a mapping session.</li>
+<li>disableSpatialMapping() stops Spatial Mapping.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md414"></a>
+Added new Mat class</h3>
+<ul>
+<li>The <a class="el" href="classsl_1_1Mat.html" title="Mirrors the sl::Mat class used in the ZED C++ SDK to store images. Can be used to retrieve individual...">sl::Mat</a> class simplifies CPU and GPU memory management.</li>
+<li>Memory can be owned or shared (reference) with another Mat.</li>
+<li>Reallocation is handled by the SDK. It is not necessary to pre-allocate memory.</li>
+<li>Transfer between CPU and GPU memory is simplified using Mat::updateCPUfromGPU() and Mat::updateGPUfromCPU().</li>
+<li>Direct conversion to OpenCV cv::Mat is now available using Mat::toCVMat().</li>
+<li>Direct data access is available using Mat::getPtr&lt;T&gt;()</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md415"></a>
+General SDK changes</h3>
+<ul>
+<li>Added default Camera constructor and open()/close() functions</li>
+<li>Unified namespace: all the class and function are now into the single unified namespace "sl".</li>
+<li>Changed filename input type from std::string to sl::String, based on const char* to allow Debug build under Windows.</li>
+<li>Renamed coordinate systems and added new COORDINATE_SYSTEM "LEFT_HANDED_Z_UP".</li>
+<li>Fixed bug with invalid depth values when out of range.</li>
+<li>Minor bug fixes and general improvements.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md416"></a>
+Tools</h2>
+<ul>
+<li>ZED Explorer: Updated GUI.</li>
+<li>ZED Depth Viewer: Updated GUI.</li>
+<li>ZEDfu: Updated tool to use the new Spatial Mapping API.</li>
+<li>ZED SVO Editor: Added compression options.</li>
+<li>ZED Calibration: Fixed a crash when adding or removing the ZED while the tool is running.</li>
+<li>Updated Diagnostic Tool.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md417"></a>
+Plugins</h2>
+<h3><a class="anchor" id="autotoc_md418"></a>
+Unity</h3>
+<ul>
+<li>Refactored plugin to ensure compatibility with ZED SDK 2.0 and Unity 5.5.</li>
+<li>Improved overall stability and performance.</li>
+<li>Added Positional Tracking for VR sample.</li>
+<li>Added Green Screen VR Capture sample.</li>
+<li>Added Simple Mixed Reality sample.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md419"></a>
+ROS</h3>
+<ul>
+<li>Updated wrapper to ensure compatibility with ZED SDK 2.0.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md420"></a>
+Matlab</h3>
+<ul>
+<li>Updated interface to ensure compatibility with ZED SDK 2.0.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md421"></a>
+Samples and Tutorials</h2>
+<h3><a class="anchor" id="autotoc_md422"></a>
+Introduced new samples for each major API module:</h3>
+<ul>
+<li>Camera Control: Shows how to open the ZED, control camera settings and display images.</li>
+<li>Depth Sensing: Shows how to get a depth map from the ZED and display a 3D point cloud using OpenGL.</li>
+<li>Motion Tracking: Shows how to use the ZED as a positional tracker and display the ZED in 3D space using OpenGL.</li>
+<li>Spatial Mapping: Shows how to map a scene using the Spatial Mapping API and display the projection of the mesh on the image in real-time using OpenGL.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md423"></a>
+Added new 'Interface' samples:</h3>
+<ul>
+<li>OpenCV: Shows how to use the ZED with OpenCV.</li>
+<li>PCL: Shows how to use the ZED with PCL.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md424"></a>
+Added tutorials showing how to use the different modules of the SDK: Video, Depth, Tracking, Mapping.</h3>
+<h2><a class="anchor" id="autotoc_md425"></a>
+Dependencies</h2>
+<ul>
+<li>Removed Eigen.</li>
+<li>Removed Boost from all samples.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md426"></a>
+Platform Support</h2>
+<ul>
+<li>New Jetson TX2 is now supported.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md427"></a>
+1.2.0</h1>
+<h2><a class="anchor" id="autotoc_md428"></a>
+New Features</h2>
+<h3><a class="anchor" id="autotoc_md429"></a>
+Major update of Unity plugin</h3>
+<ul>
+<li>Unity plugin now includes ZED images, depth and tracking, along with new simplified C# interface.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md430"></a>
+Major update of ROS wrapper</h3>
+<ul>
+<li>ROS wrapper has been significantly improved. New features have been introduced and documentation has been updated.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md431"></a>
+New recording modes</h3>
+<ul>
+<li>A new lossy compression mode is introduced in this release. It improves the compression ratio by 5 with minimal loss in image quality and is faster than previous compression modes.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md432"></a>
+Frame drop detection</h3>
+<ul>
+<li>Dropped frames can now be detected by calling getFrameDroppedCount().</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md433"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md434"></a>
+Improved SVO recording:</h3>
+<ul>
+<li>Added lossy compression mode.</li>
+<li>Improved lossless compression and limited frame drops during recording.</li>
+<li>Added recording_state structure for record() function output. The structure contains status, current and average compression time/ratio.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md435"></a>
+Bug fixes</h3>
+<ul>
+<li>Fixed bug when destroying Camera object that could lead to a crash.</li>
+<li>Fixed bug (Jetson only) when calling retrieveMeasure_cpu() and writePointCloudAs() functions that stored a part of the image.</li>
+<li>Fixed bug when using setCameraSettingsValue() in SVO mode.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md436"></a>
+Tools and Samples</h2>
+<ul>
+<li>ZED Explorer: Added compression mode selection for recording.</li>
+<li>ZED Explorer: Fixed minor bugs with recording in command line.</li>
+<li>ZED Depth Viewer: Minor bug fixes.</li>
+<li>Code refactoring and documentation update of most samples on GitHub.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md437"></a>
+App</h2>
+<ul>
+<li>ZEDfu: Fixed bug when RAM memory limit is exceeded during mesh post-processing. Now *.ply files are saved even if post-processing doesn't run.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md438"></a>
+Plugins</h2>
+<ul>
+<li>Unity: New package which makes ZED stereo images, depth and tracking available in Unity.</li>
+<li>Unity: All major C++ ZED SDK functions are now accessible in Unity through C# interface.</li>
+<li>ROS wrapper: Improved performance and fixed minor bugs.<ul>
+<li>Converted wrapper to nodelet to improve performance. Thanks to GitHub contributor @furushchev.</li>
+<li>Added support for using multiple ZED and GPU.</li>
+<li>Added URDF model.</li>
+<li>Updated topics names and added additional launch file examples.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md439"></a>
+Compatibility notes:</h2>
+<ul>
+<li>Jetson TK1: This is the last update for Jetson TK1. Next releases will support TX1 only.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md440"></a>
+1.1.1</h1>
+<h2><a class="anchor" id="autotoc_md441"></a>
+Platforms</h2>
+<ul>
+<li>Added Ubuntu 16.04 compatibility .</li>
+<li>Added NVIDIA Pascal GPUs support and CUDA 8 compatibility on Windows and Linux.</li>
+<li>Added JetPack 2.3 compatibility on Jetson TX1.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md442"></a>
+SDK</h2>
+<ul>
+<li>grab() function now returns an appropriate error code ERRCODE when issues occur.</li>
+<li>grab() function now accepts either a structure as input or a list of variables.</li>
+<li>Minor bug fixes.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md443"></a>
+Tools</h2>
+<ul>
+<li>Fixed bug in ZED Calibration tool that could lead to app crash.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md444"></a>
+App</h2>
+<ul>
+<li>ZEDfu: Improved memory management and framerate.</li>
+<li>ZEDfu: Fixed bug when Live input is started and self-calibration fails.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md445"></a>
+1.1.0</h1>
+<h2><a class="anchor" id="autotoc_md446"></a>
+New Features</h2>
+<h3><a class="anchor" id="autotoc_md447"></a>
+New recording pipeline</h3>
+<ul>
+<li>SVO or AVI recording can now be started whith enableRecording() and stopped with stopRecording() without deleting the ZED camera object. You can also record videos whith depth and tracking enabled. Use the record() function after a grab() call to save incoming images in your video file.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md448"></a>
+New grayscale and raw image output</h3>
+<ul>
+<li>Grayscale images and raw (unrectified) images can now be retrieved using retrieveImage functions.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md449"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md450"></a>
+New positional tracking matrix output</h3>
+<ul>
+<li>Besides the 4x4 Eigen matrix that contains the position and orientation of the camera, a new structure "MotionPoseData" that contains the rotation, translation and orientation (quaternion) of the camera can be retrieved. The quaternion can be used more easily in OpenGL and Unity applications.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md451"></a>
+New XYZ+Color output</h3>
+<ul>
+<li>Added XYZBGRA, XYZARGB, XYZABGR support in retrieveMeasure*() function. This improves performance with ROS and other third-party libraries.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md452"></a>
+Bug fixes</h3>
+<ul>
+<li>Fixed PNG error when SVO end is reached.</li>
+<li>Fixed some Valgrind errors when using ZED SDK.</li>
+<li>Fixed timestamp output on Windows (now in nanoseconds).</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md453"></a>
+Tools and Samples</h2>
+<h3><a class="anchor" id="autotoc_md454"></a>
+New diagnostic tool</h3>
+<ul>
+<li>ZED Diagnostic, located in the Tools folder, analyzes your hardware configuration and detects potential issues that may affect the performance of your system.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md455"></a>
+Minor fixes</h3>
+<ul>
+<li>ZED Depth Viewer window can now be resized.</li>
+<li>ZED Depth Viewer and ZED Explorer now support ZED disconnections and reconnections.</li>
+<li>Added frame drop and effective framerate indicators in ZED Explorer for Live, Recording and SVO Playback mode.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md456"></a>
+Compatibility notes</h2>
+<ul>
+<li>Jetson TX1: Current version is for JetPack 2.1 in 32bits mode. New versions will only be released for JetPack 2.2 and above in 64bits mode.</li>
+<li>Windows: Current version supports CUDA 7.5. Next updates will support CUDA 8.0 only.</li>
+<li>Ubuntu: Current version supports Ubuntu 14.04 and CUDA 7.5. Next updates will support Ubuntu 16.04 with CUDA 8.0.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md457"></a>
+1.0.0</h1>
+<h2><a class="anchor" id="autotoc_md458"></a>
+Major New Features</h2>
+<h3><a class="anchor" id="autotoc_md459"></a>
+Positional tracking API</h3>
+<ul>
+<li>New tracking API is introduced in 1.0</li>
+<li>It calculates position and orientation of the camera for every frame using a new improved stereo SLAM technology. See Tracking samples to learn how to use the new API. </li>
+</ul>
+<h3><a class="anchor" id="autotoc_md460"></a>
+New ZEDfu large-scale 3D reconstruction application</h3>
+<ul>
+<li>ZEDfu demonstrates how to combine stereo depth sensing and camera tracking to capture realistic environmental assets for VR, films and games.</li>
+<li>Now available as a standalone downloadable application for Windows platform. Also available in the �App� folder of the ZED SDK.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md461"></a>
+New high-speed Wide VGA mode</h3>
+<ul>
+<li>Updated ZED firmware (1142) introduces Wide VGA @100 FPS, replacing previous VGA mode.</li>
+<li>WVGA resolution is increased to 672*376 per image with improved image quality and a much wider field of view.</li>
+<li>Firmware update is done automatically during installation of the ZED SDK (Win, Linux, Jetson).</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md462"></a>
+SVO compression</h3>
+<ul>
+<li>New SVO lossless compression now saves 66% in file size and processing time.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md463"></a>
+Unity support</h3>
+<ul>
+<li>Positional tracking API is compatible with Unity.</li>
+<li>Unity plugin for ZED is available as a downloadable package on our Developer page.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md464"></a>
+SDK</h2>
+<h3><a class="anchor" id="autotoc_md465"></a>
+Added positional tracking API:</h3>
+<ul>
+<li>New getPosition() function provides position and orientation of the camera for every frame. Use enableTracking() during initialization to use the Tracking API.</li>
+<li>enableAreaLearning parameter can be set to activate camera relocalization and loop closure detection during tracking.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md466"></a>
+Updated depth sensing mode with up to 2x faster computation:</h3>
+<ul>
+<li>Updated MODE::PERFORMANCE to new faster than real-time stereo matching algorithm.</li>
+<li>Added MODE::MEDIUM with depth estimation quality and speed similar to the previous MODE:PERFORMANCE.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md467"></a>
+Added manual control for camera exposure time:</h3>
+<ul>
+<li>Exposure time can now be configured manually by the user with setCameraSettingsValue() function.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md468"></a>
+Replaced parameters for Init() function with new "InitParams" structure:</h3>
+<ul>
+<li>UNIT: Desired metric units can be specified in "InitParams" structure. All the provided data will be scaled according to the selected units: baseline, depth, XYZ, depthclamp, closestDephValue, tracking information... Therefore, "setBaselineRatio()" has been removed.</li>
+<li>COORDINATE_SYSTEM: Coordinate systems such as left or right-handed coordinates can now be selected in "InitParams" structure. The oriented data such as (XYZ) point cloud and tracking information will be expressed in the specified coordinate system.</li>
+<li>minimumDistance: the minimumDistance for depth computation can now be configured manually and set above 50cm. On certain configurations, this can dramatically improve frame-rate.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md469"></a>
+Invalid MEASURE values are now separated into three distinct values:</h3>
+<ul>
+<li>OCCLUSION_VALUE: NaN (not a number), for occlusions.</li>
+<li>TOO_FAR: Inf (infinity), for values above DepthClampValue.</li>
+<li>TOO_CLOSE: -Inf, for values below ClosestDepthValue.</li>
+<li>isValidMeasure(): New macro function that returns false if the given value is one of the above, else returns true.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md470"></a>
+Added function to calculate ZED camera field of view:</h3>
+<ul>
+<li>Left and right eye field of view can now be retrieved using getParameters() : LeftCam/RightCam.hFOV/dFOV/vFOV. See StereoParameters structure for more details.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md471"></a>
+SVO files now record the camera framerate as well as timestamp during recording:</h3>
+<ul>
+<li>Use getCameraTimestamp() function to extract the timestamp from the current SVO image. This can be used to detect frame drops during recording.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md472"></a>
+Tools and Samples</h2>
+<ul>
+<li>New unified GUI for the tools</li>
+<li>Added two samples using the Positional Tracking API: cpu/Simple Tracking and cpu/Tracking Viewer.</li>
+<li>"Grabbing thread" sample has been renamed to "Optimized Grab".</li>
+<li>Updated all samples with ZED SDK 1.0 compatibility</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md473"></a>
+API Changes</h2>
+<ul>
+<li>Camera::init(...): Replaced arguments with InitParams structure. See SDK Changes.</li>
+<li>SENSING_MODE: RAW and FULL modes have been renamed to STANDARD and FILL. This better reflects the use of the different depth sensing modes. Old names have been removed.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md474"></a>
+Dependencies</h2>
+<ul>
+<li>Updated OpenCV, from 2.4.9 to 3.1 on Window and Linux.</li>
+<li>Added Eigen 3.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md475"></a>
+0.9.4 Beta</h1>
+<h2><a class="anchor" id="autotoc_md476"></a>
+Platforms</h2>
+<ul>
+<li>Linux: Added compatibility for Linux Kernel 4.X. Previous ZED SDK version were incompatible with new Linux kernel, producing a "ZED_NOT_AVAILABLE" message and segfault.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md477"></a>
+SDK</h2>
+<ul>
+<li>Fixed a bug in color correction.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md478"></a>
+Tools</h2>
+<ul>
+<li>Introducing a new tool called "ZED Calibration" that can be used to easily recalibrate your ZED. Must be used in Live mode. Please follow the tutorial inside the tool to learn how to use this new tool.</li>
+<li>Added automated check of ZED SDK version in ZED Explorer. You can also use ZED Explorer with -v command line option to check if your SDK is up to date.</li>
+<li>Fixed bug in ZED Depth Viewer that could lead to degraded performance on specific CPU/GPU configurations on Windows.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md479"></a>
+0.9.3 Beta</h1>
+<h2><a class="anchor" id="autotoc_md480"></a>
+Platforms</h2>
+<ul>
+<li>Compatible with CUDA 7.5 for Windows and Linux.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md481"></a>
+SDK</h2>
+<ul>
+<li>Improved grab() time.</li>
+<li>Reduce Latency when using cpu functions for Jetson.</li>
+<li>Changed Selfcalibration to a non-blocking function. Self-Calibration is done in background and the result can be checked with the status function.</li>
+<li>Improved Init() time</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md482"></a>
+Tools</h2>
+<ul>
+<li>Merged ZED Explorer and ZED Settings App into one single tool.</li>
+<li>Added command line options for ZED Explorer for check compatibility and recording</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md483"></a>
+Known Issues</h2>
+<ul>
+<li>On Ubuntu 14.04, the newer kernel 4.X is NOT supported.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md484"></a>
+0.9.2b Beta</h1>
+<h2><a class="anchor" id="autotoc_md485"></a>
+SDK</h2>
+<p>Bug fixes. Patches version. <br  />
+<br  />
+<br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md486"></a>
+0.9.2 Beta</h1>
+<h2><a class="anchor" id="autotoc_md487"></a>
+Platforms</h2>
+<ul>
+<li>Added Window 10 compatibility.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md488"></a>
+SDK</h2>
+<ul>
+<li>Improved Left/Right image quality with retrieveImage*().</li>
+<li>Improved grab time on embedded platform (Jetson TK1).</li>
+<li>Added possibility to disable self-calibration during init().</li>
+<li>Added function that returns results of self-calibration.</li>
+<li>More calibration parameters available.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md489"></a>
+Tools</h2>
+<ul>
+<li>Bug fixes in Depth Viewer tool.</li>
+<li>Added more calibration parameters in ZED Settings App</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md490"></a>
+0.9.1 Beta</h1>
+<h2><a class="anchor" id="autotoc_md491"></a>
+SDK</h2>
+<ul>
+<li>Bug fixes for Auto-calibration that made samples crash on Windows 8</li>
+<li>Bug fixes for ply write function that made incoherent color.</li>
+<li>Add more support for slMat2cvMat function.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md492"></a>
+Tools</h2>
+<ul>
+<li>Improved global framerate of Depth Viewer tool.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md493"></a>
+0.9.0 Beta</h1>
+<h2><a class="anchor" id="autotoc_md494"></a>
+SDK</h2>
+<ul>
+<li>Added triangulation function to extract XYZ or XYZRGBA point cloud.</li>
+<li>Added Save functions to save point cloud in multiple formats and depth image in multiple format.</li>
+<li>Added Camera and Current Timestamp extraction function to help synchronization with other devices.</li>
+<li>Added FPS extraction function.</li>
+<li>Bug fixes when using svo files.</li>
+<li>Improved AutoCalibration.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md495"></a>
+Samples</h2>
+<ul>
+<li>Complete re-factory of samples.</li>
+<li>Added Cuda sample for background substraction and image disparity for right image.</li>
+<li>Added ROS Sample to demonstrate how to interact with ROS.</li>
+<li>Added Recording sample to demonstrate how to use recording functions.</li>
+<li>Added SVO Playback sample to demonstrate how to simply use the svo file.</li>
+<li>Simplify existing samples.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md496"></a>
+Tools</h2>
+<ul>
+<li>Added ZED Depth Viewer sample to have a plug and play tool to demonstrate all the functions of the ZED SDK.</li>
+<li>Added Cmd Line mode for ZED Explorer to record svo without Graphics.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md497"></a>
+0.8.2 Beta</h1>
+<h2><a class="anchor" id="autotoc_md498"></a>
+SDK</h2>
+<ul>
+<li>Added flip mode (to work with ZED Camera vertically flipped)</li>
+<li>Added multiple input possibility under Linux system.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md499"></a>
+Samples</h2>
+<ul>
+<li>Added Multiple input sample.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md500"></a>
+0.8.1 Beta</h1>
+<h2><a class="anchor" id="autotoc_md501"></a>
+SDK</h2>
+<ul>
+<li>Major improvement of Disparity estimation in untextured areas and repetitive patterns</li>
+<li>Reduced grab() time by 10%</li>
+<li>Reduced retrieveImage() time to &lt;0.5ms when grab is done with disparity enabled</li>
+<li>Added new function to adjust ZED camera parameters (set / getCameraSettingsValue), including exposure, white balance, brightness, contrast and hue</li>
+<li>Added option to select a different framerate other than the default ones available in the ZED Camera constructor. For example, it is now possible to select VGA mode @ 30 fps</li>
+<li>Added getSVOPosition() to retrieve current SVO position</li>
+<li>Bug fix in "Live mode" on Windows x64</li>
+<li>Added compatibility with NVIDIA GeForce 9 series of graphics cards</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md502"></a>
+Tools</h2>
+<ul>
+<li>Minor bug fix in ZED Explorer on Linux</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md503"></a>
+0.8.0 Beta</h1>
+<h2><a class="anchor" id="autotoc_md504"></a>
+Platforms</h2>
+<ul>
+<li>Added Linux (Ubuntu 14.04 LTS only) compatibility.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md505"></a>
+Tools</h2>
+<ul>
+<li>Added SVOEditor: command line tool to cut and concatenate SVO files. See -help for more details</li>
+<li>Bug fix in ZED Settings App with "-sn" options</li>
+<li>Minor bug fix in ZED Explorer</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md506"></a>
+SDK</h2>
+<ul>
+<li>Improved Disparity estimation</li>
+<li>Bug fix in Disparity/Depth normalization</li>
+<li>Bug fix in NONE grab mode (MODE::NONE)</li>
+<li>Merged MODE::MEDIUM et MODE::QUALITY into a single QUALITY MODE</li>
+<li>Add specific functions for SVO (set position and get number of frames)</li>
+<li>Changed name of "DispReliability" to "ConfidenceThreshold"</li>
+<li>Conformed set/get functions</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md507"></a>
+Known Issues</h2>
+<ul>
+<li>Tools or Samples may not launch when run twice on Win8. Reconnecting the ZED will solve this issue.</li>
+</ul>
+<p><br  />
+ </p><hr  />
+<p> <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="autotoc_md508"></a>
+0.7.1a Alpha</h1>
+<h2><a class="anchor" id="autotoc_md509"></a>
+Notes</h2>
+<ul>
+<li>Initial release.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md510"></a>
+Known Issues</h2>
+<ul>
+<li>Specific samples can crash at launch on Win 8. Relaunching the sample solves the problem. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->

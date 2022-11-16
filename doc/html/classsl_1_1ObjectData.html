@@ -1,0 +1,691 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>ObjectData Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classsl_1_1ObjectData.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="classsl_1_1ObjectData-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">ObjectData Class Reference<div class="ingroups"><a class="el" href="group__Object__group.html">Object Detection Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains data of a detected object such as its <a class="el" href="classsl_1_1ObjectData.html#a2a590325c5917574997bd13d40964995">bounding_box</a>, <a class="el" href="classsl_1_1ObjectData.html#a1c9e153457dc97f1a1690241223f2f0d">label</a>, <a class="el" href="classsl_1_1ObjectData.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a> and its 3D <a class="el" href="classsl_1_1ObjectData.html#a73ad5e3f5c238f322437399b54d8ec5e">position</a>.  
+ <a href="classsl_1_1ObjectData.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae19fc00c23467dfa798593952a483e0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#ae19fc00c23467dfa798593952a483e0e">ObjectData</a> ()</td></tr>
+<tr class="separator:ae19fc00c23467dfa798593952a483e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c63fe9291abceb487e0bf53e05e99b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a8c63fe9291abceb487e0bf53e05e99b5">~ObjectData</a> ()</td></tr>
+<tr class="separator:a8c63fe9291abceb487e0bf53e05e99b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a></td></tr>
+<tr class="memdesc:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object identification number, used as a reference when tracking the object through the frames.  <a href="classsl_1_1ObjectData.html#a7441ef0865bcb3db9b8064dd7375c1ea">More...</a><br /></td></tr>
+<tr class="separator:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008e18075a1444099a2c8b4f3718d211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a008e18075a1444099a2c8b4f3718d211">unique_object_id</a></td></tr>
+<tr class="memdesc:a008e18075a1444099a2c8b4f3718d211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID to help identify and track AI detections. Can be either generated externally, or using <a class="el" href="group__Object__group.html#ga12aeceb74e6198f9414edbe8f1795171">generate_unique_id()</a> or left empty.  <a href="classsl_1_1ObjectData.html#a008e18075a1444099a2c8b4f3718d211">More...</a><br /></td></tr>
+<tr class="separator:a008e18075a1444099a2c8b4f3718d211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9881e86ec18b66dc467bc14803417179"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a9881e86ec18b66dc467bc14803417179">raw_label</a> = 0</td></tr>
+<tr class="memdesc:a9881e86ec18b66dc467bc14803417179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object label, forwarded from <a class="el" href="classsl_1_1CustomBoxObjectData.html">CustomBoxObjectData</a> when using <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ab0b2e61ab28b7e9e76190e2ac097866d">DETECTION_MODEL::CUSTOM_BOX_OBJECTS</a>.  <a href="classsl_1_1ObjectData.html#a9881e86ec18b66dc467bc14803417179">More...</a><br /></td></tr>
+<tr class="separator:a9881e86ec18b66dc467bc14803417179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9e153457dc97f1a1690241223f2f0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a1c9e153457dc97f1a1690241223f2f0d">label</a></td></tr>
+<tr class="memdesc:a1c9e153457dc97f1a1690241223f2f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object category. Identify the object type.  <a href="classsl_1_1ObjectData.html#a1c9e153457dc97f1a1690241223f2f0d">More...</a><br /></td></tr>
+<tr class="separator:a1c9e153457dc97f1a1690241223f2f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48f092704c5b9de0b3ed642aa1a40f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga0c86adfc07c4fb24dc84f1fd2adc5eba">OBJECT_SUBCLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#ab48f092704c5b9de0b3ed642aa1a40f6">sublabel</a></td></tr>
+<tr class="memdesc:ab48f092704c5b9de0b3ed642aa1a40f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object subclass.  <a href="classsl_1_1ObjectData.html#ab48f092704c5b9de0b3ed642aa1a40f6">More...</a><br /></td></tr>
+<tr class="separator:ab48f092704c5b9de0b3ed642aa1a40f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d7e6be5d7beef632fe5c255a67d253"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#ga43eecfa6fb832a9e5d86bb5e5007b2fa">OBJECT_TRACKING_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a16d7e6be5d7beef632fe5c255a67d253">tracking_state</a></td></tr>
+<tr class="memdesc:a16d7e6be5d7beef632fe5c255a67d253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object tracking state.  <a href="classsl_1_1ObjectData.html#a16d7e6be5d7beef632fe5c255a67d253">More...</a><br /></td></tr>
+<tr class="separator:a16d7e6be5d7beef632fe5c255a67d253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eca67aecfc7cb4fd57fb131d6236763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Object__group.html#gaded996f5683c57eedae7b24b6818ce9a">OBJECT_ACTION_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a0eca67aecfc7cb4fd57fb131d6236763">action_state</a></td></tr>
+<tr class="memdesc:a0eca67aecfc7cb4fd57fb131d6236763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object action state.  <a href="classsl_1_1ObjectData.html#a0eca67aecfc7cb4fd57fb131d6236763">More...</a><br /></td></tr>
+<tr class="separator:a0eca67aecfc7cb4fd57fb131d6236763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ad5e3f5c238f322437399b54d8ec5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a73ad5e3f5c238f322437399b54d8ec5e">position</a></td></tr>
+<tr class="memdesc:a73ad5e3f5c238f322437399b54d8ec5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object 3D centroid. Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>.  <a href="classsl_1_1ObjectData.html#a73ad5e3f5c238f322437399b54d8ec5e">More...</a><br /></td></tr>
+<tr class="separator:a73ad5e3f5c238f322437399b54d8ec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac90f0ac331b57801075e841f730779b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#aac90f0ac331b57801075e841f730779b">velocity</a></td></tr>
+<tr class="memdesc:aac90f0ac331b57801075e841f730779b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the object 3D velocity Defined in sl:InitParameters::UNIT / seconds, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>.  <a href="classsl_1_1ObjectData.html#aac90f0ac331b57801075e841f730779b">More...</a><br /></td></tr>
+<tr class="separator:aac90f0ac331b57801075e841f730779b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6f44423e06a050a6fa5e43d1d8ef7b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#add6f44423e06a050a6fa5e43d1d8ef7b">position_covariance</a> [6]</td></tr>
+<tr class="memdesc:add6f44423e06a050a6fa5e43d1d8ef7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">the covariance matrix of the 3d position, represented by its upper triangular matrix value  <a href="classsl_1_1ObjectData.html#add6f44423e06a050a6fa5e43d1d8ef7b">More...</a><br /></td></tr>
+<tr class="separator:add6f44423e06a050a6fa5e43d1d8ef7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d09ec5bd575411782c00ab0fab63d1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacesl.html#a54181cbf891a0aa708256c300b6aa2eb">sl::uint2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a75d09ec5bd575411782c00ab0fab63d1">bounding_box_2d</a></td></tr>
+<tr class="memdesc:a75d09ec5bd575411782c00ab0fab63d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D bounding box of the person represented as four 2D points starting at the top left corner and rotation clockwise. Expressed in pixels on the original image resolution, [0,0] is the top left corner.  <a href="classsl_1_1ObjectData.html#a75d09ec5bd575411782c00ab0fab63d1">More...</a><br /></td></tr>
+<tr class="separator:a75d09ec5bd575411782c00ab0fab63d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c475a9ddaa98bf7cfcc8a5bdea7b0e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1Mat.html">sl::Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a4c475a9ddaa98bf7cfcc8a5bdea7b0e2">mask</a></td></tr>
+<tr class="memdesc:a4c475a9ddaa98bf7cfcc8a5bdea7b0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines for the bounding_box_2d the pixels which really belong to the object (set to 255) and those of the background (set to 0).  <a href="classsl_1_1ObjectData.html#a4c475a9ddaa98bf7cfcc8a5bdea7b0e2">More...</a><br /></td></tr>
+<tr class="separator:a4c475a9ddaa98bf7cfcc8a5bdea7b0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058b8558da894ebfbef73d1a9b57deaa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a058b8558da894ebfbef73d1a9b57deaa">confidence</a></td></tr>
+<tr class="memdesc:a058b8558da894ebfbef73d1a9b57deaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the detection confidence value of the object. From 0 to 100, a low value means the object might not be localized perfectly or the label (OBJECT_CLASS) is uncertain.  <a href="classsl_1_1ObjectData.html#a058b8558da894ebfbef73d1a9b57deaa">More...</a><br /></td></tr>
+<tr class="separator:a058b8558da894ebfbef73d1a9b57deaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a590325c5917574997bd13d40964995"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a2a590325c5917574997bd13d40964995">bounding_box</a></td></tr>
+<tr class="memdesc:a2a590325c5917574997bd13d40964995"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D bounding box of the person represented as eight 3D points Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>.  <a href="classsl_1_1ObjectData.html#a2a590325c5917574997bd13d40964995">More...</a><br /></td></tr>
+<tr class="separator:a2a590325c5917574997bd13d40964995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977b468ef7b549c1f653b9beee643ba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a977b468ef7b549c1f653b9beee643ba4">dimensions</a></td></tr>
+<tr class="memdesc:a977b468ef7b549c1f653b9beee643ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D object dimensions: width, height, length Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>.  <a href="classsl_1_1ObjectData.html#a977b468ef7b549c1f653b9beee643ba4">More...</a><br /></td></tr>
+<tr class="separator:a977b468ef7b549c1f653b9beee643ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4db03d5e76d488accadc2fa6f2f8a32"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacesl.html#a5b6044bb25c1ea557c70b0110089a075">sl::float2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#ac4db03d5e76d488accadc2fa6f2f8a32">keypoint_2d</a></td></tr>
+<tr class="memdesc:ac4db03d5e76d488accadc2fa6f2f8a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of useful points representing the human body, expressed in 2D, respect to the original image resolution. We use a classic 18 points representation, the points semantic and order is given by BODY_PARTS. Expressed in pixels on the original image resolution, [0,0] is the top left corner.  <a href="classsl_1_1ObjectData.html#ac4db03d5e76d488accadc2fa6f2f8a32">More...</a><br /></td></tr>
+<tr class="separator:ac4db03d5e76d488accadc2fa6f2f8a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbcf08d0ee3800edda16f668dd9c4696"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#abbcf08d0ee3800edda16f668dd9c4696">keypoint</a></td></tr>
+<tr class="memdesc:abbcf08d0ee3800edda16f668dd9c4696"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of useful points representing the human body, expressed in 3D. We use a classic 18 points representation, the points semantic and order is given by BODY_PARTS. Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>.  <a href="classsl_1_1ObjectData.html#abbcf08d0ee3800edda16f668dd9c4696">More...</a><br /></td></tr>
+<tr class="separator:abbcf08d0ee3800edda16f668dd9c4696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80799e50a3090c977ed013abbe5d8e3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacesl.html#a54181cbf891a0aa708256c300b6aa2eb">sl::uint2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#aa80799e50a3090c977ed013abbe5d8e3">head_bounding_box_2d</a></td></tr>
+<tr class="memdesc:aa80799e50a3090c977ed013abbe5d8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">bounds the head with four 2D points. Expressed in pixels on the original image resolution.  <a href="classsl_1_1ObjectData.html#aa80799e50a3090c977ed013abbe5d8e3">More...</a><br /></td></tr>
+<tr class="separator:aa80799e50a3090c977ed013abbe5d8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6678e85c90226ec2b5ef9de8db3a9ddf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a6678e85c90226ec2b5ef9de8db3a9ddf">head_bounding_box</a></td></tr>
+<tr class="memdesc:a6678e85c90226ec2b5ef9de8db3a9ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">bounds the head with eight 3D points. Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>.  <a href="classsl_1_1ObjectData.html#a6678e85c90226ec2b5ef9de8db3a9ddf">More...</a><br /></td></tr>
+<tr class="separator:a6678e85c90226ec2b5ef9de8db3a9ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5f4026b7ca318ee66a3b037c67fd98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#a1c5f4026b7ca318ee66a3b037c67fd98">head_position</a></td></tr>
+<tr class="memdesc:a1c5f4026b7ca318ee66a3b037c67fd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D head centroid. Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>.  <a href="classsl_1_1ObjectData.html#a1c5f4026b7ca318ee66a3b037c67fd98">More...</a><br /></td></tr>
+<tr class="separator:a1c5f4026b7ca318ee66a3b037c67fd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee1d37a6e79ea2f53c1846c7b4a9b94"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#aeee1d37a6e79ea2f53c1846c7b4a9b94">keypoint_confidence</a></td></tr>
+<tr class="memdesc:aeee1d37a6e79ea2f53c1846c7b4a9b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per keypoint detection confidence, can not be lower than the <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#aba4f4811a42c6d273a629b35c0f2889e">ObjectDetectionRuntimeParameters::detection_confidence_threshold</a>.  <a href="classsl_1_1ObjectData.html#aeee1d37a6e79ea2f53c1846c7b4a9b94">More...</a><br /></td></tr>
+<tr class="separator:aeee1d37a6e79ea2f53c1846c7b4a9b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13129ddedde9d23eaf9b6e09b01cbe0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#ac13129ddedde9d23eaf9b6e09b01cbe0">local_position_per_joint</a></td></tr>
+<tr class="memdesc:ac13129ddedde9d23eaf9b6e09b01cbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per keypoint local position (the position of the child keypoint with respect to its parent expressed in its parent coordinate frame)  <a href="classsl_1_1ObjectData.html#ac13129ddedde9d23eaf9b6e09b01cbe0">More...</a><br /></td></tr>
+<tr class="separator:ac13129ddedde9d23eaf9b6e09b01cbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3f5ab3c0fbdee303115bdb07c1b739"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">sl::float4</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#afe3f5ab3c0fbdee303115bdb07c1b739">local_orientation_per_joint</a></td></tr>
+<tr class="memdesc:afe3f5ab3c0fbdee303115bdb07c1b739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per keypoint local orientation.  <a href="classsl_1_1ObjectData.html#afe3f5ab3c0fbdee303115bdb07c1b739">More...</a><br /></td></tr>
+<tr class="separator:afe3f5ab3c0fbdee303115bdb07c1b739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac776ec7900f90e78a1febee88bb06ec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">sl::float4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1ObjectData.html#ac776ec7900f90e78a1febee88bb06ec7">global_root_orientation</a></td></tr>
+<tr class="memdesc:ac776ec7900f90e78a1febee88bb06ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">global root orientation of the skeleton. The orientation is also represented by a quaternion with the same format as <a class="el" href="classsl_1_1ObjectData.html#afe3f5ab3c0fbdee303115bdb07c1b739">local_orientation_per_joint</a>  <a href="classsl_1_1ObjectData.html#ac776ec7900f90e78a1febee88bb06ec7">More...</a><br /></td></tr>
+<tr class="separator:ac776ec7900f90e78a1febee88bb06ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains data of a detected object such as its <a class="el" href="classsl_1_1ObjectData.html#a2a590325c5917574997bd13d40964995">bounding_box</a>, <a class="el" href="classsl_1_1ObjectData.html#a1c9e153457dc97f1a1690241223f2f0d">label</a>, <a class="el" href="classsl_1_1ObjectData.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a> and its 3D <a class="el" href="classsl_1_1ObjectData.html#a73ad5e3f5c238f322437399b54d8ec5e">position</a>. </p>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="ae19fc00c23467dfa798593952a483e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19fc00c23467dfa798593952a483e0e">&#9670;&nbsp;</a></span>ObjectData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1ObjectData.html">ObjectData</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c63fe9291abceb487e0bf53e05e99b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c63fe9291abceb487e0bf53e05e99b5">&#9670;&nbsp;</a></span>~ObjectData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classsl_1_1ObjectData.html">ObjectData</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="a7441ef0865bcb3db9b8064dd7375c1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7441ef0865bcb3db9b8064dd7375c1ea">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object identification number, used as a reference when tracking the object through the frames. </p>
+<dl class="section note"><dt>Note</dt><dd>Only available if <a class="el" href="structsl_1_1ObjectDetectionParameters.html#a3ad4edec34c2c727581ec6299e6fc6b7">ObjectDetectionParameters::enable_tracking</a> is activated else set to -1. </dd></dl>
+
+</div>
+</div>
+<a id="a008e18075a1444099a2c8b4f3718d211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008e18075a1444099a2c8b4f3718d211">&#9670;&nbsp;</a></span>unique_object_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> unique_object_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unique ID to help identify and track AI detections. Can be either generated externally, or using <a class="el" href="group__Object__group.html#ga12aeceb74e6198f9414edbe8f1795171">generate_unique_id()</a> or left empty. </p>
+
+</div>
+</div>
+<a id="a9881e86ec18b66dc467bc14803417179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9881e86ec18b66dc467bc14803417179">&#9670;&nbsp;</a></span>raw_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int raw_label = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object label, forwarded from <a class="el" href="classsl_1_1CustomBoxObjectData.html">CustomBoxObjectData</a> when using <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ab0b2e61ab28b7e9e76190e2ac097866d">DETECTION_MODEL::CUSTOM_BOX_OBJECTS</a>. </p>
+
+</div>
+</div>
+<a id="a1c9e153457dc97f1a1690241223f2f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9e153457dc97f1a1690241223f2f0d">&#9670;&nbsp;</a></span>label</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a> label</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object category. Identify the object type. </p>
+
+</div>
+</div>
+<a id="ab48f092704c5b9de0b3ed642aa1a40f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48f092704c5b9de0b3ed642aa1a40f6">&#9670;&nbsp;</a></span>sublabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga0c86adfc07c4fb24dc84f1fd2adc5eba">OBJECT_SUBCLASS</a> sublabel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object subclass. </p>
+
+</div>
+</div>
+<a id="a16d7e6be5d7beef632fe5c255a67d253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d7e6be5d7beef632fe5c255a67d253">&#9670;&nbsp;</a></span>tracking_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#ga43eecfa6fb832a9e5d86bb5e5007b2fa">OBJECT_TRACKING_STATE</a> tracking_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object tracking state. </p>
+
+</div>
+</div>
+<a id="a0eca67aecfc7cb4fd57fb131d6236763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eca67aecfc7cb4fd57fb131d6236763">&#9670;&nbsp;</a></span>action_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Object__group.html#gaded996f5683c57eedae7b24b6818ce9a">OBJECT_ACTION_STATE</a> action_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object action state. </p>
+
+</div>
+</div>
+<a id="a73ad5e3f5c238f322437399b54d8ec5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ad5e3f5c238f322437399b54d8ec5e">&#9670;&nbsp;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a> position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object 3D centroid. Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>. </p>
+
+</div>
+</div>
+<a id="aac90f0ac331b57801075e841f730779b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac90f0ac331b57801075e841f730779b">&#9670;&nbsp;</a></span>velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a> velocity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the object 3D velocity Defined in sl:InitParameters::UNIT / seconds, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>. </p>
+
+</div>
+</div>
+<a id="add6f44423e06a050a6fa5e43d1d8ef7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6f44423e06a050a6fa5e43d1d8ef7b">&#9670;&nbsp;</a></span>position_covariance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float position_covariance[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the covariance matrix of the 3d position, represented by its upper triangular matrix value </p>
+<div class="fragment"><div class="line">= [p0, p1, p2]</div>
+<div class="line">  [p1, p3, p4]</div>
+<div class="line">  [p2, p4, p5]</div>
+</div><!-- fragment --><p> where pi is position_covariance[i] </p>
+
+</div>
+</div>
+<a id="a75d09ec5bd575411782c00ab0fab63d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d09ec5bd575411782c00ab0fab63d1">&#9670;&nbsp;</a></span>bounding_box_2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacesl.html#a54181cbf891a0aa708256c300b6aa2eb">sl::uint2</a>&gt; bounding_box_2d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2D bounding box of the person represented as four 2D points starting at the top left corner and rotation clockwise. Expressed in pixels on the original image resolution, [0,0] is the top left corner. </p>
+<div class="fragment"><div class="line">A ------ B</div>
+<div class="line">| Object |</div>
+<div class="line">D ------ C</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a4c475a9ddaa98bf7cfcc8a5bdea7b0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c475a9ddaa98bf7cfcc8a5bdea7b0e2">&#9670;&nbsp;</a></span>mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1Mat.html">sl::Mat</a> mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines for the bounding_box_2d the pixels which really belong to the object (set to 255) and those of the background (set to 0). </p>
+<dl class="section warning"><dt>Warning</dt><dd>: The mask information is only available for tracked objects ( <a class="el" href="namespacesl.html#ga43eecfa6fb832a9e5d86bb5e5007b2faae0aa021e21dddbd6d8cecec71e9cf564">OBJECT_TRACKING_STATE::OK</a>) that have a valid depth. Otherwise, <a class="el" href="classsl_1_1Mat.html" title="The Mat class can handle multiple matrix formats from 1 to 4 channels, with different value types (fl...">Mat</a> will not be initialized (mask.isInit() == false) </dd></dl>
+
+</div>
+</div>
+<a id="a058b8558da894ebfbef73d1a9b57deaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a058b8558da894ebfbef73d1a9b57deaa">&#9670;&nbsp;</a></span>confidence</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float confidence</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the detection confidence value of the object. From 0 to 100, a low value means the object might not be localized perfectly or the label (OBJECT_CLASS) is uncertain. </p>
+
+</div>
+</div>
+<a id="a2a590325c5917574997bd13d40964995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a590325c5917574997bd13d40964995">&#9670;&nbsp;</a></span>bounding_box</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a>&gt; bounding_box</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D bounding box of the person represented as eight 3D points Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>. </p>
+<div class="fragment"><div class="line">  1 ------ 2</div>
+<div class="line"> /        /|</div>
+<div class="line">0 ------ 3 |</div>
+<div class="line">| Object | 6</div>
+<div class="line">|        |/</div>
+<div class="line">4 ------ 7</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a977b468ef7b549c1f653b9beee643ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977b468ef7b549c1f653b9beee643ba4">&#9670;&nbsp;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a> dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D object dimensions: width, height, length Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>. </p>
+
+</div>
+</div>
+<a id="ac4db03d5e76d488accadc2fa6f2f8a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4db03d5e76d488accadc2fa6f2f8a32">&#9670;&nbsp;</a></span>keypoint_2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacesl.html#a5b6044bb25c1ea557c70b0110089a075">sl::float2</a>&gt; keypoint_2d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A set of useful points representing the human body, expressed in 2D, respect to the original image resolution. We use a classic 18 points representation, the points semantic and order is given by BODY_PARTS. Expressed in pixels on the original image resolution, [0,0] is the top left corner. </p>
+<dl class="section note"><dt>Note</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>in some cases, eg. body partially out of the image, some keypoint can not be detected, they will have negatives coordinates. </dd></dl>
+
+</div>
+</div>
+<a id="abbcf08d0ee3800edda16f668dd9c4696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbcf08d0ee3800edda16f668dd9c4696">&#9670;&nbsp;</a></span>keypoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a>&gt; keypoint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A set of useful points representing the human body, expressed in 3D. We use a classic 18 points representation, the points semantic and order is given by BODY_PARTS. Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>in some cases, eg. body partially out of the image or missing depth data, some keypoint can not be detected, they will have non finite values. </dd></dl>
+
+</div>
+</div>
+<a id="aa80799e50a3090c977ed013abbe5d8e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80799e50a3090c977ed013abbe5d8e3">&#9670;&nbsp;</a></span>head_bounding_box_2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacesl.html#a54181cbf891a0aa708256c300b6aa2eb">sl::uint2</a>&gt; head_bounding_box_2d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bounds the head with four 2D points. Expressed in pixels on the original image resolution. </p>
+<dl class="section note"><dt>Note</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a6678e85c90226ec2b5ef9de8db3a9ddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6678e85c90226ec2b5ef9de8db3a9ddf">&#9670;&nbsp;</a></span>head_bounding_box</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a>&gt; head_bounding_box</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bounds the head with eight 3D points. Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a1c5f4026b7ca318ee66a3b037c67fd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5f4026b7ca318ee66a3b037c67fd98">&#9670;&nbsp;</a></span>head_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a> head_position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D head centroid. Defined in sl:InitParameters::UNIT, expressed in <a class="el" href="structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4">RuntimeParameters::measure3D_reference_frame</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>*. </dd></dl>
+
+</div>
+</div>
+<a id="aeee1d37a6e79ea2f53c1846c7b4a9b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee1d37a6e79ea2f53c1846c7b4a9b94">&#9670;&nbsp;</a></span>keypoint_confidence</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; keypoint_confidence</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per keypoint detection confidence, can not be lower than the <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#aba4f4811a42c6d273a629b35c0f2889e">ObjectDetectionRuntimeParameters::detection_confidence_threshold</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>*. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>in some cases, eg. body partially out of the image or missing depth data, some keypoint can not be detected, they will have non finite values. </dd></dl>
+
+</div>
+</div>
+<a id="ac13129ddedde9d23eaf9b6e09b01cbe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13129ddedde9d23eaf9b6e09b01cbe0">&#9670;&nbsp;</a></span>local_position_per_joint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacesl.html#aa21e242f2d030e0f1878f8a5854c35e2">sl::float3</a>&gt; local_position_per_joint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per keypoint local position (the position of the child keypoint with respect to its parent expressed in its parent coordinate frame) </p>
+<dl class="section note"><dt>Note</dt><dd>it is expressed in <a class="el" href="namespacesl.html#ga7160d24146fdddd5a7e8f67fde1c4487addf0d6b21537d984fea6544f58101fa8">REFERENCE_FRAME::CAMERA</a> or <a class="el" href="namespacesl.html#ga7160d24146fdddd5a7e8f67fde1c4487a5289492cf082446ca4a6eec9f72f1ec3">REFERENCE_FRAME::WORLD</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>* and with <a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41badc32ecfd5e73cf6b6eade387a48fd924" title="18 keypoint model of COCO 18.">sl::BODY_FORMAT::POSE_18</a>. </dd></dl>
+
+</div>
+</div>
+<a id="afe3f5ab3c0fbdee303115bdb07c1b739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3f5ab3c0fbdee303115bdb07c1b739">&#9670;&nbsp;</a></span>local_orientation_per_joint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">sl::float4</a>&gt; local_orientation_per_joint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per keypoint local orientation. </p>
+<dl class="section note"><dt>Note</dt><dd>the orientation is represented by a quaternion which is stored in <a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">sl::float4</a> (<a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">sl::float4</a> q = sl::float4(qx,qy,qz,qw);) </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>* and with <a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41badc32ecfd5e73cf6b6eade387a48fd924" title="18 keypoint model of COCO 18.">sl::BODY_FORMAT::POSE_18</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ac776ec7900f90e78a1febee88bb06ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac776ec7900f90e78a1febee88bb06ec7">&#9670;&nbsp;</a></span>global_root_orientation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesl.html#ac3eaabd86b6924fdaa4bacecc2a10d4c">sl::float4</a> global_root_orientation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>global root orientation of the skeleton. The orientation is also represented by a quaternion with the same format as <a class="el" href="classsl_1_1ObjectData.html#afe3f5ab3c0fbdee303115bdb07c1b739">local_orientation_per_joint</a> </p>
+<dl class="section note"><dt>Note</dt><dd>the global root position is already accessible in <a class="el" href="classsl_1_1ObjectData.html#abbcf08d0ee3800edda16f668dd9c4696">keypoint</a> attribute by using the root index of a given <a class="el" href="group__Object__group.html#ga375807d6ff35199b9b48346de7a5d41b" title="Lists of supported skeleton body model.">sl::BODY_FORMAT</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not available with <a class="el" href="namespacesl.html#ga4a212b90726adaaf0fae801b1cc913f4ad0ad3b3bdc4f664d988f674418c92253">DETECTION_MODEL::MULTI_CLASS_BOX</a>* and with <a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41badc32ecfd5e73cf6b6eade387a48fd924" title="18 keypoint model of COCO 18.">sl::BODY_FORMAT::POSE_18</a>. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

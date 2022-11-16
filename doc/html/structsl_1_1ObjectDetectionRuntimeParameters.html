@@ -1,0 +1,352 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>ObjectDetectionRuntimeParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structsl_1_1ObjectDetectionRuntimeParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="structsl_1_1ObjectDetectionRuntimeParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">ObjectDetectionRuntimeParameters Class Reference<div class="ingroups"><a class="el" href="group__Object__group.html">Object Detection Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sets the object detection runtime parameters.  
+ <a href="structsl_1_1ObjectDetectionRuntimeParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1cb56610f5b2ef504ca37c2b81dc2746"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a1cb56610f5b2ef504ca37c2b81dc2746">ObjectDetectionRuntimeParameters</a> (float <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#aba4f4811a42c6d273a629b35c0f2889e">detection_confidence_threshold</a>=20.f, std::vector&lt; <a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a> &gt; <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a193dcc0a3d583d3375cb021a388f3151">object_class_filter</a>={}, std::map&lt; <a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>, float &gt; <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a78f48e3e8ee766cd7ab206e9f9a34101">object_class_detection_confidence_threshold</a>=std::map&lt; <a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>, float &gt;(), int <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a056694626c89bd6593cdf7d52cba9f53">minimum_keypoints_threshold</a>=0)</td></tr>
+<tr class="memdesc:a1cb56610f5b2ef504ca37c2b81dc2746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Set all parameters to their default values.  <a href="structsl_1_1ObjectDetectionRuntimeParameters.html#a1cb56610f5b2ef504ca37c2b81dc2746">More...</a><br /></td></tr>
+<tr class="separator:a1cb56610f5b2ef504ca37c2b81dc2746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46d31ec860b36d3f5839b525024b4dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#ad46d31ec860b36d3f5839b525024b4dc">operator==</a> (const <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html">ObjectDetectionRuntimeParameters</a> &amp;param1) const</td></tr>
+<tr class="separator:ad46d31ec860b36d3f5839b525024b4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26d70f1f752a47817ffc5ee5a9aeecb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#af26d70f1f752a47817ffc5ee5a9aeecb">operator!=</a> (const <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html">ObjectDetectionRuntimeParameters</a> &amp;param1) const</td></tr>
+<tr class="separator:af26d70f1f752a47817ffc5ee5a9aeecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:aba4f4811a42c6d273a629b35c0f2889e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#aba4f4811a42c6d273a629b35c0f2889e">detection_confidence_threshold</a></td></tr>
+<tr class="memdesc:aba4f4811a42c6d273a629b35c0f2889e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the confidence threshold: interval between 1 and 99. A confidence of 1 meaning a low threshold, more uncertain objects and 99 very few but very precise objects. If the scene contains a lot of objects, increasing the confidence can slightly speed up the process, since every object instances are tracked.  <a href="structsl_1_1ObjectDetectionRuntimeParameters.html#aba4f4811a42c6d273a629b35c0f2889e">More...</a><br /></td></tr>
+<tr class="separator:aba4f4811a42c6d273a629b35c0f2889e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193dcc0a3d583d3375cb021a388f3151"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a193dcc0a3d583d3375cb021a388f3151">object_class_filter</a></td></tr>
+<tr class="memdesc:a193dcc0a3d583d3375cb021a388f3151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select which object types to detect and track. By default all classes are tracked. Fewer object types can slightly speed up the process, since every objects are tracked. Only the selected classes in the vector will be output.  <a href="structsl_1_1ObjectDetectionRuntimeParameters.html#a193dcc0a3d583d3375cb021a388f3151">More...</a><br /></td></tr>
+<tr class="separator:a193dcc0a3d583d3375cb021a388f3151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f48e3e8ee766cd7ab206e9f9a34101"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a78f48e3e8ee766cd7ab206e9f9a34101">object_class_detection_confidence_threshold</a></td></tr>
+<tr class="memdesc:a78f48e3e8ee766cd7ab206e9f9a34101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a detection threshold for each classes, can be empty for some classes, <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#aba4f4811a42c6d273a629b35c0f2889e" title="Defines the confidence threshold: interval between 1 and 99. A confidence of 1 meaning a low threshol...">ObjectDetectionRuntimeParameters::detection_confidence_threshold</a> will be taken as fallback/default value.  <a href="structsl_1_1ObjectDetectionRuntimeParameters.html#a78f48e3e8ee766cd7ab206e9f9a34101">More...</a><br /></td></tr>
+<tr class="separator:a78f48e3e8ee766cd7ab206e9f9a34101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056694626c89bd6593cdf7d52cba9f53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a056694626c89bd6593cdf7d52cba9f53">minimum_keypoints_threshold</a></td></tr>
+<tr class="memdesc:a056694626c89bd6593cdf7d52cba9f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the minimum keypoints threshold. the SDK will outputs skeleton with more keypoints than this threshold. it is useful for example to remove unstable fitting results when a skeleton is partially occluded.  <a href="structsl_1_1ObjectDetectionRuntimeParameters.html#a056694626c89bd6593cdf7d52cba9f53">More...</a><br /></td></tr>
+<tr class="separator:a056694626c89bd6593cdf7d52cba9f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sets the object detection runtime parameters. </p>
+<p>The default constructor sets all parameters to their default settings.</p>
+<dl class="section note"><dt>Note</dt><dd>Parameters can be user adjusted. </dd></dl>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="a1cb56610f5b2ef504ca37c2b81dc2746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb56610f5b2ef504ca37c2b81dc2746">&#9670;&nbsp;</a></span>ObjectDetectionRuntimeParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html">ObjectDetectionRuntimeParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>detection_confidence_threshold</em> = <code>20.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a> &gt;&#160;</td>
+          <td class="paramname"><em>object_class_filter</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>, float &gt;&#160;</td>
+          <td class="paramname"><em>object_class_detection_confidence_threshold</em> = <code>std::map&lt;&#160;<a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>,&#160;float&#160;&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minimum_keypoints_threshold</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. Set all parameters to their default values. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Functions</h2>
+<a id="ad46d31ec860b36d3f5839b525024b4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46d31ec860b36d3f5839b525024b4dc">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html">ObjectDetectionRuntimeParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comparison operator == </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html" title="Sets the object detection runtime parameters.">ObjectDetectionRuntimeParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are identical </dd></dl>
+
+</div>
+</div>
+<a id="af26d70f1f752a47817ffc5ee5a9aeecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26d70f1f752a47817ffc5ee5a9aeecb">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html">ObjectDetectionRuntimeParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comparison operator != </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html" title="Sets the object detection runtime parameters.">ObjectDetectionRuntimeParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are different </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="aba4f4811a42c6d273a629b35c0f2889e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4f4811a42c6d273a629b35c0f2889e">&#9670;&nbsp;</a></span>detection_confidence_threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float detection_confidence_threshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the confidence threshold: interval between 1 and 99. A confidence of 1 meaning a low threshold, more uncertain objects and 99 very few but very precise objects. If the scene contains a lot of objects, increasing the confidence can slightly speed up the process, since every object instances are tracked. </p>
+<p>Default confidence threshold value, used as a fallback when <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a78f48e3e8ee766cd7ab206e9f9a34101" title="Defines a detection threshold for each classes, can be empty for some classes, ObjectDetectionRuntime...">ObjectDetectionRuntimeParameters::object_class_detection_confidence_threshold</a> is partially set </p>
+
+</div>
+</div>
+<a id="a193dcc0a3d583d3375cb021a388f3151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193dcc0a3d583d3375cb021a388f3151">&#9670;&nbsp;</a></span>object_class_filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>&gt; object_class_filter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select which object types to detect and track. By default all classes are tracked. Fewer object types can slightly speed up the process, since every objects are tracked. Only the selected classes in the vector will be output. </p>
+<p>In order to get all the available classes, the filter vector must be empty : </p><div class="fragment"><div class="line"><a class="code" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a193dcc0a3d583d3375cb021a388f3151">object_class_filter</a> = {};</div>
+<div class="ttc" id="astructsl_1_1ObjectDetectionRuntimeParameters_html_a193dcc0a3d583d3375cb021a388f3151"><div class="ttname"><a href="structsl_1_1ObjectDetectionRuntimeParameters.html#a193dcc0a3d583d3375cb021a388f3151">sl::ObjectDetectionRuntimeParameters::object_class_filter</a></div><div class="ttdeci">std::vector&lt; OBJECT_CLASS &gt; object_class_filter</div><div class="ttdoc">Select which object types to detect and track. By default all classes are tracked....</div><div class="ttdef"><b>Definition:</b> Camera.hpp:1257</div></div>
+</div><!-- fragment --><p>To select a set of specific object classes, like vehicles, persons and animals for instance: </p><div class="fragment"><div class="line"><a class="code" href="structsl_1_1ObjectDetectionRuntimeParameters.html#a193dcc0a3d583d3375cb021a388f3151">object_class_filter</a> = {<a class="code" href="namespacesl.html#ga13b0c230bc8fee5bbaaaa57a45fa1177ae9fa318f4d73c31493e98096efa497e2">OBJECT_CLASS::VEHICLE</a>, <a class="code" href="namespacesl.html#ga13b0c230bc8fee5bbaaaa57a45fa1177a9a8538fe173720857a031b8314073752">OBJECT_CLASS::PERSON</a>, <a class="code" href="namespacesl.html#ga13b0c230bc8fee5bbaaaa57a45fa1177a5a91b94bd57ea4b80e2cf856319271a6">OBJECT_CLASS::ANIMAL</a>};</div>
+<div class="ttc" id="anamespacesl_html_ga13b0c230bc8fee5bbaaaa57a45fa1177a5a91b94bd57ea4b80e2cf856319271a6"><div class="ttname"><a href="namespacesl.html#ga13b0c230bc8fee5bbaaaa57a45fa1177a5a91b94bd57ea4b80e2cf856319271a6">sl::OBJECT_CLASS::ANIMAL</a></div><div class="ttdeci">@ ANIMAL</div></div>
+<div class="ttc" id="anamespacesl_html_ga13b0c230bc8fee5bbaaaa57a45fa1177a9a8538fe173720857a031b8314073752"><div class="ttname"><a href="namespacesl.html#ga13b0c230bc8fee5bbaaaa57a45fa1177a9a8538fe173720857a031b8314073752">sl::OBJECT_CLASS::PERSON</a></div><div class="ttdeci">@ PERSON</div></div>
+<div class="ttc" id="anamespacesl_html_ga13b0c230bc8fee5bbaaaa57a45fa1177ae9fa318f4d73c31493e98096efa497e2"><div class="ttname"><a href="namespacesl.html#ga13b0c230bc8fee5bbaaaa57a45fa1177ae9fa318f4d73c31493e98096efa497e2">sl::OBJECT_CLASS::VEHICLE</a></div><div class="ttdeci">@ VEHICLE</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a78f48e3e8ee766cd7ab206e9f9a34101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f48e3e8ee766cd7ab206e9f9a34101">&#9670;&nbsp;</a></span>object_class_detection_confidence_threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="group__Object__group.html#ga13b0c230bc8fee5bbaaaa57a45fa1177">OBJECT_CLASS</a>, float&gt; object_class_detection_confidence_threshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a detection threshold for each classes, can be empty for some classes, <a class="el" href="structsl_1_1ObjectDetectionRuntimeParameters.html#aba4f4811a42c6d273a629b35c0f2889e" title="Defines the confidence threshold: interval between 1 and 99. A confidence of 1 meaning a low threshol...">ObjectDetectionRuntimeParameters::detection_confidence_threshold</a> will be taken as fallback/default value. </p>
+
+</div>
+</div>
+<a id="a056694626c89bd6593cdf7d52cba9f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056694626c89bd6593cdf7d52cba9f53">&#9670;&nbsp;</a></span>minimum_keypoints_threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int minimum_keypoints_threshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the minimum keypoints threshold. the SDK will outputs skeleton with more keypoints than this threshold. it is useful for example to remove unstable fitting results when a skeleton is partially occluded. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

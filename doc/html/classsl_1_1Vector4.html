@@ -1,0 +1,745 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Vector4&lt; T &gt; Class Template Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 3)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Oct 25 2022 21:20:35"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Oct 25 2022 21:20:35" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td class="headerSpacer"></td>
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com"><img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo"></a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/" >DOCUMENTATION</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/code-samples/" >SAMPLES</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a class="active" href="https://www.stereolabs.com/developers/documentation/API/latest/" >API REFERENCE</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://support.stereolabs.com/hc/en-us" >SUPPORT</a>
+                            </td>
+                            <td class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/developers/release/latest/" >DOWNLOADS</a>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 3-->
+                                    <!--<span id="projectnumber"> | ZED SDK 3.8.1</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td class="headerSpacer"></td>
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classsl_1_1Vector4.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-static-methods">Static Functions</a> &#124;
+<a href="classsl_1_1Vector4-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Vector4&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__Core__group.html">Core Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents a four dimensions vector for both CPU and GPU.  
+ <a href="classsl_1_1Vector4.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9de94dfc47d53b6624ee082377666f61"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a9de94dfc47d53b6624ee082377666f61">size</a> () const</td></tr>
+<tr class="separator:a9de94dfc47d53b6624ee082377666f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e1e8e3e23891bdfca4fd2cd696e86b"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a82e1e8e3e23891bdfca4fd2cd696e86b">Vector4</a> ()</td></tr>
+<tr class="separator:a82e1e8e3e23891bdfca4fd2cd696e86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7a671bedf8cbf11f56fe863b0764d4"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#afd7a671bedf8cbf11f56fe863b0764d4">Vector4</a> (const T &amp;t)</td></tr>
+<tr class="separator:afd7a671bedf8cbf11f56fe863b0764d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20bb6c44c28c92b0dacd22f1d009bd5"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#ac20bb6c44c28c92b0dacd22f1d009bd5">Vector4</a> (const T *tp)</td></tr>
+<tr class="separator:ac20bb6c44c28c92b0dacd22f1d009bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47efaba725f9a3b279855fdb226bd15b"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a47efaba725f9a3b279855fdb226bd15b">Vector4</a> (const T v0, const T v1, const T v2, const T v3)</td></tr>
+<tr class="separator:a47efaba725f9a3b279855fdb226bd15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838685428151ef317fce8442a9d26910"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a838685428151ef317fce8442a9d26910">Vector4</a> (const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;v)</td></tr>
+<tr class="separator:a838685428151ef317fce8442a9d26910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c75770dcb8c07e83ede4f9e6e4cca4"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a99c75770dcb8c07e83ede4f9e6e4cca4">Vector4</a> (const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;v, const T d)</td></tr>
+<tr class="separator:a99c75770dcb8c07e83ede4f9e6e4cca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58965e2a2ef1c0413ad3c253781bc047"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a58965e2a2ef1c0413ad3c253781bc047">Vector4</a> (const <a class="el" href="classsl_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;v, const T d=0)</td></tr>
+<tr class="separator:a58965e2a2ef1c0413ad3c253781bc047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a923338765b647bd2ced4fc21b5bab"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a11a923338765b647bd2ced4fc21b5bab">ptr</a> () const</td></tr>
+<tr class="separator:a11a923338765b647bd2ced4fc21b5bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee81ada2d031e4198c427b1517b29cc"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a1ee81ada2d031e4198c427b1517b29cc">setValues</a> (const T *b)</td></tr>
+<tr class="separator:a1ee81ada2d031e4198c427b1517b29cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa260bb85620b68042916bea9a1e8659a"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#aa260bb85620b68042916bea9a1e8659a">operator=</a> (const <a class="el" href="classsl_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="separator:aa260bb85620b68042916bea9a1e8659a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77fc45ac440bd0373ef1750205002c8"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#ad77fc45ac440bd0373ef1750205002c8">operator[]</a> (int i)</td></tr>
+<tr class="separator:ad77fc45ac440bd0373ef1750205002c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8dd6f83837d4e8f482dcaf53881e11"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a0a8dd6f83837d4e8f482dcaf53881e11">operator[]</a> (int i) const</td></tr>
+<tr class="separator:a0a8dd6f83837d4e8f482dcaf53881e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d71a93c72f4efc8f46f70443613c9e"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#a56d71a93c72f4efc8f46f70443613c9e">norm</a> ()</td></tr>
+<tr class="memdesc:a56d71a93c72f4efc8f46f70443613c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the norm of the vector  <a href="classsl_1_1Vector4.html#a56d71a93c72f4efc8f46f70443613c9e">More...</a><br /></td></tr>
+<tr class="separator:a56d71a93c72f4efc8f46f70443613c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafec8053a96734ff4467d007c20c0b8a"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#aafec8053a96734ff4467d007c20c0b8a">square</a> ()</td></tr>
+<tr class="memdesc:aafec8053a96734ff4467d007c20c0b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the squared norm of the vector  <a href="classsl_1_1Vector4.html#aafec8053a96734ff4467d007c20c0b8a">More...</a><br /></td></tr>
+<tr class="separator:aafec8053a96734ff4467d007c20c0b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51b3749faa93371ed1519826e7b52e6"><td class="memItemLeft" align="right" valign="top">_FCT_CPU_GPU_ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#ac51b3749faa93371ed1519826e7b52e6">sum</a> ()</td></tr>
+<tr class="memdesc:ac51b3749faa93371ed1519826e7b52e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the sum of the vector  <a href="classsl_1_1Vector4.html#ac51b3749faa93371ed1519826e7b52e6">More...</a><br /></td></tr>
+<tr class="separator:ac51b3749faa93371ed1519826e7b52e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Functions</h2></td></tr>
+<tr class="memitem:ac19b759c71dccec3693f6a9526698a6b"><td class="memItemLeft" align="right" valign="top">static _FCT_CPU_GPU_ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#ac19b759c71dccec3693f6a9526698a6b">dot</a> (const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;a, const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:ac19b759c71dccec3693f6a9526698a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the dot product of two vector  <a href="classsl_1_1Vector4.html#ac19b759c71dccec3693f6a9526698a6b">More...</a><br /></td></tr>
+<tr class="separator:ac19b759c71dccec3693f6a9526698a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00cf763e8ae7575523b4572af25849d"><td class="memItemLeft" align="right" valign="top">static _FCT_CPU_GPU_ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1Vector4.html#ac00cf763e8ae7575523b4572af25849d">distance</a> (const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;a, const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:ac00cf763e8ae7575523b4572af25849d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the distance between two vector  <a href="classsl_1_1Vector4.html#ac00cf763e8ae7575523b4572af25849d">More...</a><br /></td></tr>
+<tr class="separator:ac00cf763e8ae7575523b4572af25849d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class sl::Vector4&lt; T &gt;</h3>
+
+<p>Represents a four dimensions vector for both CPU and GPU. </p>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="a82e1e8e3e23891bdfca4fd2cd696e86b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e1e8e3e23891bdfca4fd2cd696e86b">&#9670;&nbsp;</a></span>Vector4() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd7a671bedf8cbf11f56fe863b0764d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7a671bedf8cbf11f56fe863b0764d4">&#9670;&nbsp;</a></span>Vector4() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac20bb6c44c28c92b0dacd22f1d009bd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20bb6c44c28c92b0dacd22f1d009bd5">&#9670;&nbsp;</a></span>Vector4() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>tp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47efaba725f9a3b279855fdb226bd15b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47efaba725f9a3b279855fdb226bd15b">&#9670;&nbsp;</a></span>Vector4() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>v0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>v3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a838685428151ef317fce8442a9d26910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838685428151ef317fce8442a9d26910">&#9670;&nbsp;</a></span>Vector4() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99c75770dcb8c07e83ede4f9e6e4cca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c75770dcb8c07e83ede4f9e6e4cca4">&#9670;&nbsp;</a></span>Vector4() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58965e2a2ef1c0413ad3c253781bc047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58965e2a2ef1c0413ad3c253781bc047">&#9670;&nbsp;</a></span>Vector4() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>d</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Functions</h2>
+<a id="a9de94dfc47d53b6624ee082377666f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de94dfc47d53b6624ee082377666f61">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ int size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11a923338765b647bd2ced4fc21b5bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a923338765b647bd2ced4fc21b5bab">&#9670;&nbsp;</a></span>ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ const T* ptr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ee81ada2d031e4198c427b1517b29cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee81ada2d031e4198c427b1517b29cc">&#9670;&nbsp;</a></span>setValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt;T&gt;&amp; setValues </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa260bb85620b68042916bea9a1e8659a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa260bb85620b68042916bea9a1e8659a">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt;T&gt;&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad77fc45ac440bd0373ef1750205002c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77fc45ac440bd0373ef1750205002c8">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ T&amp; operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a8dd6f83837d4e8f482dcaf53881e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8dd6f83837d4e8f482dcaf53881e11">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ const T&amp; operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56d71a93c72f4efc8f46f70443613c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d71a93c72f4efc8f46f70443613c9e">&#9670;&nbsp;</a></span>norm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ float norm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the norm of the vector </p>
+
+</div>
+</div>
+<a id="aafec8053a96734ff4467d007c20c0b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafec8053a96734ff4467d007c20c0b8a">&#9670;&nbsp;</a></span>square()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ float square </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the squared norm of the vector </p>
+
+</div>
+</div>
+<a id="ac51b3749faa93371ed1519826e7b52e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51b3749faa93371ed1519826e7b52e6">&#9670;&nbsp;</a></span>sum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_FCT_CPU_GPU_ float sum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the sum of the vector </p>
+
+</div>
+</div>
+<a id="ac19b759c71dccec3693f6a9526698a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19b759c71dccec3693f6a9526698a6b">&#9670;&nbsp;</a></span>dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static _FCT_CPU_GPU_ float dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the dot product of two vector </p>
+
+</div>
+</div>
+<a id="ac00cf763e8ae7575523b4572af25849d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00cf763e8ae7575523b4572af25849d">&#9670;&nbsp;</a></span>distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static _FCT_CPU_GPU_ float distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsl_1_1Vector4.html">Vector4</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the distance between two vector </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

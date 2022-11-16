@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['calibration_5fparameters_1146',['calibration_parameters',['../structsl_1_1CameraConfiguration.html#a4eaf821b06aaecc5b30499513aaacba8',1,'sl::CameraConfiguration']]],
+  ['calibration_5fparameters_5fraw_1147',['calibration_parameters_raw',['../structsl_1_1CameraConfiguration.html#a8f2c51ac944aa2ea3f118ea53542b361',1,'sl::CameraConfiguration']]],
+  ['camera_5fconfiguration_1148',['camera_configuration',['../structsl_1_1CameraInformation.html#afe2de8826b7360b40cb20735b3c05e18',1,'sl::CameraInformation']]],
+  ['camera_5fdisable_5fself_5fcalib_1149',['camera_disable_self_calib',['../structsl_1_1InitParameters.html#affeaa06cfc1d849e311e484ceb8edcc5',1,'sl::InitParameters']]],
+  ['camera_5ffps_1150',['camera_fps',['../structsl_1_1InitParameters.html#a8aebd3c5eea7c24cfa15a96cbb2ec8aa',1,'sl::InitParameters']]],
+  ['camera_5fimage_5fflip_1151',['camera_image_flip',['../structsl_1_1InitParameters.html#af1b6f147ea846a05da9ddaa49e6873b1',1,'sl::InitParameters']]],
+  ['camera_5fimu_5ftransform_1152',['camera_imu_transform',['../structsl_1_1SensorsConfiguration.html#ad109ecec2ba7d33f0da838d8adb02641',1,'sl::SensorsConfiguration']]],
+  ['camera_5fmodel_1153',['camera_model',['../structsl_1_1DeviceProperties.html#a78a29ab065ab8b6786ecbdf6d82232e2',1,'sl::DeviceProperties::camera_model()'],['../structsl_1_1CameraInformation.html#a78a29ab065ab8b6786ecbdf6d82232e2',1,'sl::CameraInformation::camera_model()']]],
+  ['camera_5fmoving_5fstate_1154',['camera_moving_state',['../structsl_1_1SensorsData.html#aeee89b99ce3f2aee9527dcd23f40e4a2',1,'sl::SensorsData']]],
+  ['camera_5fresolution_1155',['camera_resolution',['../structsl_1_1InitParameters.html#a760124c608fefd930b428910a52d929c',1,'sl::InitParameters']]],
+  ['camera_5fstate_1156',['camera_state',['../structsl_1_1DeviceProperties.html#a54b051d7c4d642038ff0464cdfac0812',1,'sl::DeviceProperties']]],
+  ['chunk_5fsize_1157',['chunk_size',['../structsl_1_1StreamingParameters.html#a2d0979d8250263b9257c975547af011c',1,'sl::StreamingParameters']]],
+  ['chunks_1158',['chunks',['../classsl_1_1Mesh.html#a058f5ba2efd52be49bb6e7025a2c4ec0',1,'sl::Mesh::chunks()'],['../classsl_1_1FusedPointCloud.html#aa3ad8c669e4402dfb4b88ea36af462b1',1,'sl::FusedPointCloud::chunks()']]],
+  ['codec_1159',['codec',['../structsl_1_1StreamingParameters.html#af8f476e6495fbecae55ca91e5ba05658',1,'sl::StreamingParameters::codec()'],['../structsl_1_1StreamingProperties.html#af8f476e6495fbecae55ca91e5ba05658',1,'sl::StreamingProperties::codec()']]],
+  ['compression_5fmode_1160',['compression_mode',['../structsl_1_1RecordingParameters.html#ae08e74f1929f90aa0ee3b520c31b0103',1,'sl::RecordingParameters']]],
+  ['confidence_1161',['confidence',['../classsl_1_1ObjectData.html#a058b8558da894ebfbef73d1a9b57deaa',1,'sl::ObjectData']]],
+  ['confidence_5fthreshold_1162',['confidence_threshold',['../structsl_1_1RuntimeParameters.html#ade2446d6529e8416f2f8ae002eaeb149',1,'sl::RuntimeParameters']]],
+  ['coordinate_5fsystem_1163',['coordinate_system',['../structsl_1_1InitParameters.html#a91ec3b7ae3b97080fb3da772ad7b48e3',1,'sl::InitParameters']]],
+  ['coordinate_5funits_1164',['coordinate_units',['../structsl_1_1InitParameters.html#a75cb1e715c1be19c591d21fa2591b421',1,'sl::InitParameters']]],
+  ['current_5fbitrate_1165',['current_bitrate',['../structsl_1_1StreamingProperties.html#aa1cfbb04f9c38b23665ee1c00ee3820e',1,'sl::StreamingProperties']]],
+  ['current_5fcompression_5fratio_1166',['current_compression_ratio',['../structsl_1_1RecordingStatus.html#ab041fc6ffd47623c7036b706473b092b',1,'sl::RecordingStatus']]],
+  ['current_5fcompression_5ftime_1167',['current_compression_time',['../structsl_1_1RecordingStatus.html#a2b5b09fe44a7bcce25875a48d27d7cb3',1,'sl::RecordingStatus']]],
+  ['cx_1168',['cx',['../structsl_1_1CameraParameters.html#a6067f2d853b5521ca0162bd2770da5cf',1,'sl::CameraParameters']]],
+  ['cy_1169',['cy',['../structsl_1_1CameraParameters.html#a6ac0a8c09e91acc33bc9b451a3d4bcab',1,'sl::CameraParameters']]]
+];
