@@ -12,23 +12,169 @@
             padding: 0;
             margin: 0;
             overflow: hidden;
+            display: flex;
         }
-        img {
-            max-width: 100vw;
+        div {
+            width: 50vw;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        body.phone {
+            flex-direction: column;
+        }
+        body.phone div {
+            width: 100vw;
+            height: 100vh;
+        }
+        #details {
+            position: absolute;
+            top: 0;
+            right:-760px;
         }
     </style>
 </head>
 <body>
-    <img src="#" alt="failed" id="mainImage" />
+    <div id="chartImage">
+        <canvas id="myChart"></canvas>
+        <div id="details"></div>
+    </div>
+    <div id="mainImage"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+        document.querySelector("body").classList.add(window.innerWidth<window.innerHeight?"normal":"phone")
+        const ctx = document.getElementById('myChart');
+        const chart = new Chart(ctx, {
+            type: 'bubble',
+            data: {
+                datasets: [
+                    {
+                        label: 'Blue Pylons',
+                        data: [],
+                        backgroundColor: 'rgb(0, 0, 255)'
+                    },
+                    {
+                        label: 'Red Pylons',
+                        data: [],
+                        backgroundColor: 'rgb(255, 0, 0)'
+                    },
+                    {
+                        label: 'SELF',
+                        data: [],
+                        backgroundColor: 'rgb(0, 0, 0)',
+                    }
+                ]
+            },
+            options: {
+                aspectRatio:1,
+                responsive: true,
+                // elements:{
+                //     point: {
+                //         radius: 0
+                //     }
+                // },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Bubble Chart'
+                    }
+                },
+                animation: {
+                    duration: 0
+                },
+                scales: {
+                    y: {
+                        max: 100,
+                        min: -100,
+                    },
+                    x: {
+                        max: 100,
+                        min: -100,
+                    }
+                }
+            },
+        });
         const webSocket = new WebSocket("ws://"+window.location.host.split(":")[0]+":8081");
         webSocket.onopen = (event) => {
             // webSocket.send("Here's some text that the server is urgently awaiting!");
         };
+        const euler_from_quaternion = ({x, y, z, w})=> {
+            // Convert a quaternion into euler angles (roll, pitch, yaw)
+            // roll is rotation around x in radians (counterclockwise)
+            // pitch is rotation around y in radians (counterclockwise)
+            // yaw is rotation around z in radians (counterclockwise)
+            const t0 = +2.0 * (w * x + y * z)
+            const t1 = +1.0 - 2.0 * (x * x + y * y)
+            const roll_x = Math.atan2(t0, t1)
+        
+            let t2 = +2.0 * (w * y - z * x)
+            t2 = t2 > +1.0 ? +1.0: t2
+            t2 = t2 < -1.0 ? -1.0: t2
+            const pitch_y = Math.asin(t2)
+        
+            const t3 = +2.0 * (w * z + x * y)
+            const t4 = +1.0 - 2.0 * (y * y + z * z)
+            const yaw_z = Math.atan2(t3, t4)
+        
+            return {x:roll_x, y:pitch_y, z:yaw_z}
+        }
         webSocket.onmessage = (event) => {
-            let img = event.data.replace(/\'/,"")
-            img = img.substr(1,img.length-2)
-            document.getElementById("mainImage").src = "data:image/jpeg;base64,"+img
+            let img = event.data.replace(/\'/ig,"")
+            if(img.startsWith("left-eye:")){
+                const image = img.substr(10,img.length-2)
+                document.getElementById("mainImage").style.backgroundImage = "url(data:image/jpeg;base64,"+image+")"
+            }else if(img.startsWith("chart:")){
+                const image = img.substr(7,img.length-2)
+                document.getElementById("chartImage").style.backgroundImage = "url(data:image/jpeg;base64,"+image+")"
+            }else if(img.startsWith("self:")){
+                const data = JSON.parse(img.substr(5))
+                const distance = 10
+                const point2 = []
+                const alpha = data.orientation.y*180 // * 180/Math.PI
+
+                const t = euler_from_quaternion(data.orientation)
+
+                const a = distance * Math.sin(t.y)
+                const b = distance * Math.cos(t.y)
+                
+                chart.data.datasets[2].data = [
+                    [data.translation.x,data.translation.z,30],
+                    [data.translation.x+a,data.translation.z+b,10],
+                ]
+
+                document.getElementById("details").innerHTML = `Translation:<br />
+                x: ${data.translation.x}<br />
+                y: ${data.translation.y}<br />
+                z: ${data.translation.z}<br />
+                timestamp: ${data.timestamp}<br /><br />
+                Orientation:<br />
+                x: ${data.orientation.x}<br />
+                y: ${data.orientation.y}<br />
+                z: ${data.orientation.z}<br />
+                w: ${data.orientation.w}<br /><br />
+                Orientation 2:<br />
+                roll: ${t.x}<br />
+                pitch: ${t.y}<br />
+                yaw: ${t.z}<br />
+                winkel: ${t.y * 180/Math.PI}<br />`
+                chart.update()
+            }else if(img.startsWith("pylons:")){
+                const data = img.split(":")
+                // console.log(JSON.parse(data[1]))
+                const red = JSON.parse(data[1])
+                const blue = JSON.parse(data[2])
+                chart.data.datasets[0].data = red.map(e=>({x:e[0],y:e[1],r:5}))
+                chart.data.datasets[1].data = blue.map(e=>({x:e[0],y:e[1],r:5}))
+                chart.update()
+            }else{
+                // console.log(img)
+            }
+            // document.getElementById("mainImage").src = "data:image/jpeg;base64,"+img
+            // document.getElementById("chartImage").src = "data:image/jpeg;base64,"+img
         }
     </script>
 </body>
