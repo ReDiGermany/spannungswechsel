@@ -35,6 +35,61 @@ pylons = ["blue","green","orange","pink","yellow"]
 bizzi = True
 # fig, ax = plt.subplots()
 
+
+# def toBGR(r,g,b):
+#     return (b,g,r)
+
+# colors in BGR
+Cache = {
+    "blue": {
+        "classId": 0,
+        "color": (255,0,0),
+        "items": {}
+    },
+    "green": {
+        "classId": 1,
+        "color": (0,255,0),
+        "items": {}
+    },
+    "red": {
+        "classId": 2,
+        "color": (0,0,255),
+        "items": {}
+    },
+    "pink": {
+        "classId": 3,
+        "color": (255,0,255),
+        "items": {}
+    },
+    "yellow": {
+        "classId": 4,
+        "color": (0,255,255),
+        "items": {}
+    },
+    "self": {
+        "classId": [],
+        "color": (0,0,0),
+        "items": {
+            "0":{
+                "translation":{
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                },
+                "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 0,
+                },
+                "timestamp": 0
+            }
+        }
+    }
+}
+server.setCache(Cache)
+
+
 def plotPylons(blue_pylons, red_pylons, image):
     plt.clf()
 
@@ -61,6 +116,28 @@ def plotPylons(blue_pylons, red_pylons, image):
     # cv2.imwrite('../../dump/view.jpg', temp)
     plt.close()
 
+def euler_from_quaternion(x, y, z, w):
+        """
+        Convert a quaternion into euler angles (roll, pitch, yaw)
+        roll is rotation around x in radians (counterclockwise)
+        pitch is rotation around y in radians (counterclockwise)
+        yaw is rotation around z in radians (counterclockwise)
+        """
+        t0 = +2.0 * (w * x + y * z)
+        t1 = +1.0 - 2.0 * (x * x + y * y)
+        roll_x = math.atan2(t0, t1)
+     
+        t2 = +2.0 * (w * y - z * x)
+        t2 = +1.0 if t2 > +1.0 else t2
+        t2 = -1.0 if t2 < -1.0 else t2
+        pitch_y = math.asin(t2)
+     
+        t3 = +2.0 * (w * z + x * y)
+        t4 = +1.0 - 2.0 * (y * y + z * z)
+        yaw_z = math.atan2(t3, t4)
+     
+        return roll_x, pitch_y, yaw_z # in radians
+        
 def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
     global image_net, exit_signal, run_signal, detections
     print("Initializing Camera...")
@@ -81,7 +158,7 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
 
     runtime_params = sl.RuntimeParameters()
     status = zed.open(init_params)
-    zed.set_camera_settings(sl.VIDEO_SETTINGS.BRIGHTNESS, 8) # 0 - 8
+    zed.set_camera_settings(sl.VIDEO_SETTINGS.BRIGHTNESS, 5) # 0 - 8
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.CONTRAST, 8) # 0 - 8
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.HUE, 11) # 0 - 11
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.SATURATION, 8) # 0 - 8
@@ -115,7 +192,7 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
 
     initial_position = sl.Transform()
     initial_translation = sl.Translation()
-    initial_translation.init_vector(0,18,-75)
+    # initial_translation.init_vector(0,18,-75)
     initial_position.set_translation(initial_translation)
     positional_tracking_parameters.set_initial_world_transform(initial_position)
 
@@ -129,6 +206,7 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
 
     objects = sl.Objects()
     obj_runtime_param = sl.ObjectDetectionRuntimeParameters()
+    # obj_runtime_param.detection_confidence_threshold = 25
 
     # Display
     camera_infos = zed.get_camera_information()
@@ -173,23 +251,44 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
             oy = round(cam_w_pose.get_orientation(py_orientation).get()[1], 3)
             oz = round(cam_w_pose.get_orientation(py_orientation).get()[2], 3)
             ow = round(cam_w_pose.get_orientation(py_orientation).get()[3], 3)
-            print("Translation: tx: {0}, ty:  {1}, tz:  {2}, timestamp: {3} | Orientation: ox: {4}, oy:  {5}, oz: {6}, ow: {7}".format(tx, ty, tz, cam_w_pose.timestamp.get_seconds(),ox, oy, oz, ow))
-            json_object = json.dumps({
+            
+            ex = round(cam_w_pose.get_euler_angles()[0],3)
+            ey = round(cam_w_pose.get_euler_angles()[1],3)
+            ez = round(cam_w_pose.get_euler_angles()[2],3)
+
+            vx = round(cam_w_pose.get_rotation_vector()[0],3)
+            vy = round(cam_w_pose.get_rotation_vector()[1],3)
+            vz = round(cam_w_pose.get_rotation_vector()[2],3)
+
+            # print("Translation: tx: {0}, ty:  {1}, tz:  {2}, timestamp: {3} | Orientation: ox: {4}, oy:  {5}, oz: {6}, ow: {7}".format(tx, ty, tz, cam_w_pose.timestamp.get_seconds(),ox, oy, oz, ow))
+            roll_x, pitch_y, yaw_z = euler_from_quaternion(ox,oy,oz,ow)
+            # (x, y, z, w):
+            Cache["self"]["items"]["0"] = {
                 "translation":{
-                    "x":tx,
-                    "y":ty,
-                    "z":tz,
+                    "x": tx,
+                    "y": ty,
+                    "z": tz,
                 },
                 "orientation": {
-                    "x":ox,
-                    "y":oy,
-                    "z":oz,
-                    "w":ow,
+                    "x": ox,
+                    "y": oy,
+                    "z": oz,
+                    "w": ow,
                 },
-                "timestamp":cam_w_pose.timestamp.get_seconds()
-            }) 
-            # print(json_object)
-            server.sendWebsocketMessage("self:"+json_object)
+                "euler": {
+                    "x": ex,
+                    "y": ey,
+                    "z": ez,
+                },
+                "rvect": {
+                    "x": vx,
+                    "y": vy,
+                    "z": vz,
+                },
+                "timestamp": cam_w_pose.timestamp.get_seconds()
+            }
+            json_object = json.dumps(Cache)
+            # server.sendWebsocketMessage("self:"+json_object)
 
             zed.retrieve_image(image_left_tmp, sl.VIEW.LEFT)
             image_net = image_left_tmp.get_data()
@@ -197,13 +296,11 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
             zed.retrieve_image(image_right_tmp, sl.VIEW.RIGHT)
             image_net_right = image_right_tmp.get_data()
             
-            # img, ratio, pad = aux.img_preprocess(image_net, device, half, imgsz)
-
-            # pred = model(img)[0]
-            # det = non_max_suppression(pred, conf_thres, iou_thres)
-
-            # detections = aux.detections_to_custom_box(det, img, image_net)
-            # zed.ingest_custom_box_objects(detections)
+            img, ratio, pad = aux.img_preprocess(image_net, device, half, imgsz)
+            pred = model(img)[0]
+            det = non_max_suppression(pred, conf_thres, iou_thres)
+            detections = aux.detections_to_custom_box(det, img, image_net)
+            zed.ingest_custom_box_objects(detections)
             zed.retrieve_objects(objects, obj_runtime_param)
             # if objects.is_new :
             obj_array = objects.object_list
@@ -249,27 +346,76 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
                         #     "velocity": obj.velocity,
                         # }
                         # print(dic)
+                        if obj.tracking_state==sl.OBJECT_TRACKING_STATE.OK:
 
-                        color = (0,0,0)
+                            color = (0,0,0)
 
-                        if(obj.raw_label == 0 or obj.raw_label == 1):
-                            blue_pylons.append([obj.position[0],obj.position[1]])
-                            color = (255,0,0)
-                        elif(obj.raw_label == 2 or obj.raw_label == 3):
-                            red_pylons.append([obj.position[0],obj.position[1]])
-                            color = (0,0,255)
-                        else:
-                            print("Found pylon out of identity")
-                        
-                        cv2.line(image_net, (int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])),(int(obj.bounding_box_2d[1][0]),int(obj.bounding_box_2d[1][1])), color, 1) 
-                        cv2.line(image_net, (int(obj.bounding_box_2d[1][0]),int(obj.bounding_box_2d[1][1])),(int(obj.bounding_box_2d[2][0]),int(obj.bounding_box_2d[2][1])), color, 1) 
-                        cv2.line(image_net, (int(obj.bounding_box_2d[2][0]),int(obj.bounding_box_2d[2][1])),(int(obj.bounding_box_2d[3][0]),int(obj.bounding_box_2d[3][1])), color, 1) 
-                        cv2.line(image_net, (int(obj.bounding_box_2d[3][0]),int(obj.bounding_box_2d[3][1])),(int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])), color, 1) 
+                            # if(obj.raw_label == 0 or obj.raw_label == 1):
+                            #     blue_pylons.append([obj.position[0],obj.position[2]])
+                            #     color = (255,0,0)
+                            # elif(obj.raw_label == 2 or obj.raw_label == 3):
+                            #     red_pylons.append([obj.position[0],obj.position[2]])
+                            #     color = (0,0,255)
+                            # else:
+                            #     print("Found pylon out of identity")
+                            
+                            # pylons = ["blue","green","orange","pink","yellow"]
+                            def position_to_object(pos):
+                                return {"x":pos[0],"y":pos[1],"z":pos[2]}
+                                
+                            def compare_position_and_update(old,new,limit=0.5):
+                                a = np.array((old["x"],old["y"],old["z"]))
+                                b = np.array((new["x"],new["y"],new["z"]))
+                                dist = np.linalg.norm(a-b)
+                                return old if dist > limit else new
 
-                    else:
-                        print("Found unpositioned item")
-                # vis = np.concatenate((image_net, image_net_right), axis=1)
-                plotPylons(blue_pylons, red_pylons,image_net)
+                            key = ""
+
+                            if(obj.raw_label == Cache["blue"]["classId"]):
+                                key = "blue"
+                            elif(obj.raw_label == Cache["green"]["classId"]):
+                                key = "green"
+                            elif(obj.raw_label == Cache["red"]["classId"]):
+                                key = "red"
+                            elif(obj.raw_label == Cache["pink"]["classId"]):
+                                key = "pink"
+                            elif(obj.raw_label == Cache["yellow"]["classId"]):
+                                key = "yellow"
+                            else:
+                                print("Found pylon out of identity")
+                                return
+                            
+                            
+                            color = Cache[key]["color"]
+                            if obj.id in Cache[key]["items"]:
+                                Cache[key]["items"][obj.id] = compare_position_and_update(
+                                    Cache[key]["items"][obj.id],
+                                    position_to_object(obj.position)
+                                )
+                            else:
+                                Cache[key]["items"][obj.id] = position_to_object(obj.position)
+                            
+                            font = cv2.FONT_HERSHEY_SIMPLEX
+                            org = (int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1]))
+                            fontScale = .5
+                            thickness = 1
+                            image_net = cv2.putText(image_net, "({2}) {0} x {1}".format(
+                                round(obj.position[0]-30),
+                                round(obj.position[2]),
+                                obj.id
+                            ), org, font, fontScale, color, thickness, cv2.LINE_AA)
+    
+                            cv2.line(image_net, (int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])),(int(obj.bounding_box_2d[1][0]),int(obj.bounding_box_2d[1][1])), color, 1) 
+                            cv2.line(image_net, (int(obj.bounding_box_2d[1][0]),int(obj.bounding_box_2d[1][1])),(int(obj.bounding_box_2d[2][0]),int(obj.bounding_box_2d[2][1])), color, 1) 
+                            cv2.line(image_net, (int(obj.bounding_box_2d[2][0]),int(obj.bounding_box_2d[2][1])),(int(obj.bounding_box_2d[3][0]),int(obj.bounding_box_2d[3][1])), color, 1) 
+                            cv2.line(image_net, (int(obj.bounding_box_2d[3][0]),int(obj.bounding_box_2d[3][1])),(int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])), color, 1) 
+
+            json_object = json.dumps(Cache)
+            server.setImage(image_net[:,:,:3])
+            # server.sendWebsocketMessage("left-eye:"+str(aux.image_to_base64(image_net[:,:,:3])))
+            # server.sendWebsocketMessage("chart:"+str(aux.image_to_base64(image)))
+            server.setPositions(json_object)
+            # server.sendWebsocketMessage("pylons:"+json_object)
             # else:
             #     plotPylons([], [],image_net)
         else:

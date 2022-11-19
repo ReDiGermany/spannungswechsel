@@ -1,181 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Remote</title>
     <style>
-        html, body {
+        @import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+        html,
+        body {
             width: 100vw;
             height: 100vh;
             padding: 0;
             margin: 0;
             overflow: hidden;
             display: flex;
+            font-family: 'Cousine', monospace;
+
         }
-        div {
-            width: 50vw;
+
+        body > div {
             height: 100vh;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
         }
+
         body.phone {
             flex-direction: column;
         }
-        body.phone div {
+
+        body.phone > div {
             width: 100vw;
-            height: 100vh;
+            height: 50vh;
         }
-        #details {
+
+        /* #details {
             position: absolute;
             top: 0;
-            right:-760px;
+            right: -760px;
+        } */
+        #chartImage{
+            display: flex;
+            flex-direction: row;
+        }
+        #myDiv {
+            width: 100%;
+        }
+        #chartImage {
+            width: calc( 100vw - (100vw / 3) - 300px )
+        }
+        #deletes {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            width: 300px;
+            padding: 15px;
+        }
+        #deletes a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #deletes a:hover {
+            text-decoration: underline;
+        }
+        #mainImage {
+            width: calc( 100vw / 3 )
+        }
+        #mainImage img {
+            width: 100%;
+        }
+        h2 {
+            margin:0;
         }
     </style>
 </head>
+
 <body>
     <div id="chartImage">
-        <canvas id="myChart"></canvas>
+        <div id="myDiv"></div>
         <div id="details"></div>
     </div>
-    <div id="mainImage"></div>
+    <div id="deletes"></div>
+    <div id="mainImage">
+        <img id="stream" src="" alt="">
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
     <script>
-        document.querySelector("body").classList.add(window.innerWidth<window.innerHeight?"normal":"phone")
-        const ctx = document.getElementById('myChart');
-        const chart = new Chart(ctx, {
-            type: 'bubble',
-            data: {
-                datasets: [
-                    {
-                        label: 'Blue Pylons',
-                        data: [],
-                        backgroundColor: 'rgb(0, 0, 255)'
-                    },
-                    {
-                        label: 'Red Pylons',
-                        data: [],
-                        backgroundColor: 'rgb(255, 0, 0)'
-                    },
-                    {
-                        label: 'SELF',
-                        data: [],
-                        backgroundColor: 'rgb(0, 0, 0)',
-                    }
-                ]
-            },
-            options: {
-                aspectRatio:1,
-                responsive: true,
-                // elements:{
-                //     point: {
-                //         radius: 0
-                //     }
-                // },
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Chart.js Bubble Chart'
-                    }
-                },
-                animation: {
-                    duration: 0
-                },
-                scales: {
-                    y: {
-                        max: 100,
-                        min: -100,
-                    },
-                    x: {
-                        max: 100,
-                        min: -100,
-                    }
+        document.querySelector("body").classList.add(window.innerWidth > window.innerHeight ? "normal" : "phone")
+        
+        // const webSocket = new WebSocket("ws://" + window.location.host.split(":")[0] + ":8081");
+        // webSocket.onopen = (event) => {
+        //     webSocket.send("Here's some text that the server is urgently awaiting!");
+        // };
+        // webSocket.onmessage = (event) => {
+        // }
+        
+
+        const traces = {
+            blue: {
+                x: [],
+                y: [],
+                // xaxis: 'x2',
+                // yaxis: 'y2',
+                mode: 'lines+markers',
+                type: 'scatter',
+                marker: {
+                    color: 'rgb(0,0,255)',
                 }
             },
-        });
-        const webSocket = new WebSocket("ws://"+window.location.host.split(":")[0]+":8081");
-        webSocket.onopen = (event) => {
-            // webSocket.send("Here's some text that the server is urgently awaiting!");
-        };
-        const euler_from_quaternion = ({x, y, z, w})=> {
-            // Convert a quaternion into euler angles (roll, pitch, yaw)
-            // roll is rotation around x in radians (counterclockwise)
-            // pitch is rotation around y in radians (counterclockwise)
-            // yaw is rotation around z in radians (counterclockwise)
-            const t0 = +2.0 * (w * x + y * z)
-            const t1 = +1.0 - 2.0 * (x * x + y * y)
-            const roll_x = Math.atan2(t0, t1)
-        
-            let t2 = +2.0 * (w * y - z * x)
-            t2 = t2 > +1.0 ? +1.0: t2
-            t2 = t2 < -1.0 ? -1.0: t2
-            const pitch_y = Math.asin(t2)
-        
-            const t3 = +2.0 * (w * z + x * y)
-            const t4 = +1.0 - 2.0 * (y * y + z * z)
-            const yaw_z = Math.atan2(t3, t4)
-        
-            return {x:roll_x, y:pitch_y, z:yaw_z}
+            red: {
+                x: [],
+                y: [],
+                // xaxis: 'x2',
+                // yaxis: 'y2',
+                type: 'scatter',
+                mode: 'lines+markers',
+                marker: {
+                    color: 'rgb(255,0,0)',
+                }
+            },
+            yellow: {
+                x: [],
+                y: [],
+                // xaxis: 'x2',
+                // yaxis: 'y2',
+                type: 'scatter',
+                mode: 'lines+markers',
+                marker: {
+                    color: 'rgb(255,255,0)',
+                }
+            },
+            green: {
+                x: [],
+                y: [],
+                // xaxis: 'x2',
+                // yaxis: 'y2',
+                type: 'scatter',
+                mode: 'lines+markers',
+                marker: {
+                    color: 'rgb(0,255,0)',
+                }
+            },
+            pink: {
+                x: [],
+                y: [],
+                // xaxis: 'x2',
+                // yaxis: 'y2',
+                type: 'scatter',
+                mode: 'lines+markers',
+                marker: {
+                    color: 'rgb(255,255,0)',
+                }
+            },
+            black: {
+                x: [],
+                y: [],
+                // xaxis: 'x2',
+                // yaxis: 'y2',
+                type: 'scatter',
+                mode: 'lines+markers',
+                marker: {
+                    color: 'rgb(0,0,0)',
+                    size: [10,5],
+                }
+            },
+            selected: {
+                x: [],
+                y: [],
+                // yaxis: 'y2',
+                mode: 'lines+markers',
+                type: 'scatter',
+                marker: {
+                    color: 'rgb(0,0,0)',
+                    size: [10],
+                }
+            },
         }
-        webSocket.onmessage = (event) => {
-            let img = event.data.replace(/\'/ig,"")
-            if(img.startsWith("left-eye:")){
-                const image = img.substr(10,img.length-2)
-                document.getElementById("mainImage").style.backgroundImage = "url(data:image/jpeg;base64,"+image+")"
-            }else if(img.startsWith("chart:")){
-                const image = img.substr(7,img.length-2)
-                document.getElementById("chartImage").style.backgroundImage = "url(data:image/jpeg;base64,"+image+")"
-            }else if(img.startsWith("self:")){
-                const data = JSON.parse(img.substr(5))
-                const distance = 10
-                const point2 = []
-                const alpha = data.orientation.y*180 // * 180/Math.PI
+        
+        let rawTraces = null
 
-                const t = euler_from_quaternion(data.orientation)
+        let range = [0,0]
 
-                const a = distance * Math.sin(t.y)
-                const b = distance * Math.cos(t.y)
+        const plot = () => {
+            // console.log(traces)
+            const x = [
+                ...traces.blue.x,
+                ...traces.blue.y,
+                ...traces.red.x,
+                ...traces.red.y,
+                ...traces.yellow.x,
+                ...traces.yellow.y,
+                ...traces.green.x,
+                ...traces.green.y,
+                ...traces.pink.x,
+                ...traces.pink.y,
+                ...traces.black.x,
+                ...traces.black.y,
+                ...traces.selected.x,
+                ...traces.selected.y,
+            ].sort((a,b)=>a-b)
+            const tempRange = [x[0]-10, x[x.length-1]+10]
+            if(tempRange[0]<range[0]) range[0] = tempRange[0]
+            if(tempRange[1]>range[1]) range[1] = tempRange[1]
+            // console.log(range)
+            // Plotly.newPlot('myDiv', Object.values(traces), {
                 
-                chart.data.datasets[2].data = [
-                    [data.translation.x,data.translation.z,30],
-                    [data.translation.x+a,data.translation.z+b,10],
-                ]
-
-                document.getElementById("details").innerHTML = `Translation:<br />
-                x: ${data.translation.x}<br />
-                y: ${data.translation.y}<br />
-                z: ${data.translation.z}<br />
-                timestamp: ${data.timestamp}<br /><br />
-                Orientation:<br />
-                x: ${data.orientation.x}<br />
-                y: ${data.orientation.y}<br />
-                z: ${data.orientation.z}<br />
-                w: ${data.orientation.w}<br /><br />
-                Orientation 2:<br />
-                roll: ${t.x}<br />
-                pitch: ${t.y}<br />
-                yaw: ${t.z}<br />
-                winkel: ${t.y * 180/Math.PI}<br />`
-                chart.update()
-            }else if(img.startsWith("pylons:")){
-                const data = img.split(":")
-                // console.log(JSON.parse(data[1]))
-                const red = JSON.parse(data[1])
-                const blue = JSON.parse(data[2])
-                chart.data.datasets[0].data = red.map(e=>({x:e[0],y:e[1],r:5}))
-                chart.data.datasets[1].data = blue.map(e=>({x:e[0],y:e[1],r:5}))
-                chart.update()
-            }else{
-                // console.log(img)
+            const axis = {
+                autorange: false,
+                zerolinewidth: 0,
+                zeroline: false,
+                range,
             }
-            // document.getElementById("mainImage").src = "data:image/jpeg;base64,"+img
-            // document.getElementById("chartImage").src = "data:image/jpeg;base64,"+img
+            Plotly.newPlot('myDiv', Object.values(traces), {
+                width: 500,
+                height: 500,
+                autoscale: false,
+                showlegend: false,
+                yaxis: axis,
+                xaxis: axis
+            });
         }
+    const img = new Image()
+    const x = document.getElementById("stream");
+
+    img.onload = function() {
+        x.src = img.src;
+    };
+
+        setInterval(()=>{
+            img.src = `/image?t=${new Date().getTime()}`
+        },1000/3)
+        setInterval(()=>{
+            fetch("/positions")
+                .then((response) => response.json())
+                .then(data=>{
+                    rawTraces = data
+
+                    const build = (color,arr) => {
+                        if(!(color in data )) return arr
+                        const x = Object.values(data[color].items).map(e=>e.x)
+                        const z = Object.values(data[color].items).map(e=>e.z)
+                        traces[color].x = x;
+                        traces[color].y = z;
+
+                        return [[x,...arr[0]],[z,...arr[1]]]
+                    }
+
+                    let val = [[],[]]
+                    for(let k in traces){
+                        val = build(k,val)
+                    }
+                    const allx = val[0].sort()
+                    const allz = val[1].sort()
+
+                    const distance = 10
+                    const point2 = []
+                    const pos = data.self.items["0"];
+                    // console.log(t,pos.euler)
+                    const a = distance * Math.sin(pos.euler.y)
+                    const b = distance * Math.cos(pos.euler.y)
+                    traces.black.x = [pos.translation.x,pos.translation.x+a]
+                    traces.black.y = [pos.translation.z,pos.translation.z+b]
+
+                    plot()
+
+                    const html = ["<h2>Known Cones</h2>"]                    
+                    for(let k in data){
+                        if(k==="self") continue;
+                        for(let n in data[k].items){
+                            html.push(`<a data-delete="" href="/delete/${k}:${n}">${k.padStart(6," ")} ${Math.round(data[k].items[n].x)} ${Math.round(data[k].items[n].z)}</a>`)
+                        }
+                    }
+
+                    document.getElementById("deletes").innerHTML = html.join("")
+                    const d = document.querySelectorAll("[data-delete]");
+                    for(let i=0;i<d.length;i++){
+                        d[i].addEventListener("click",e=>{
+                            e.preventDefault();
+                            fetch(e.target.href)
+                        })
+                        d[i].addEventListener("mouseenter",e=>{
+                            e.preventDefault();
+                            const href = e.target.href.split("/")
+                            const uri = href[href.length - 1].split(":")
+                            const item = rawTraces[uri[0]].items[uri[1]];
+                            traces.selected.x = [item.x]
+                            traces.selected.y = [item.z]
+                            plot()
+                        })
+                        d[i].addEventListener("mouseleave",e=>{
+                            e.preventDefault();
+                            traces.selected.x = []
+                            traces.selected.y = []
+                            plot()
+                        })
+                    }
+
+                    document.getElementById("details").innerHTML = `Translation:<br />
+                    x: ${pos.translation.x}<br />
+                    y: ${pos.translation.y}<br />
+                    z: ${pos.translation.z}<br />
+                    timestamp: ${pos.timestamp}<br /><br />
+                    Orientation:<br />
+                    x: ${pos.orientation.x}<br />
+                    y: ${pos.orientation.y}<br />
+                    z: ${pos.orientation.z}<br />
+                    w: ${pos.orientation.w}<br /><br />
+                    Orientation 2:<br />
+                    roll: ${pos.euler.x}<br />
+                    pitch: ${pos.euler.y}<br />
+                    yaw: ${pos.euler.z}<br />
+                    winkel: ${Math.round(pos.euler.y * 180 / Math.PI,2)}<br />`
+
+                })
+        },1000)
+
     </script>
 </body>
+
 </html>

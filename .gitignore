@@ -1,2 +1,3 @@
 timo/
 dump/*
+*__pycache__*
