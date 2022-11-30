@@ -17,7 +17,8 @@
             overflow: hidden;
             display: flex;
             font-family: 'Cousine', monospace;
-
+            background: #202020;
+            color: #fff;
         }
 
         body > div {
@@ -68,102 +69,206 @@
             text-decoration: underline;
         }
         #mainImage {
-            width: calc( 100vw / 3 )
+            width: calc( 100vw / 2 )
         }
         #mainImage img {
             width: 100%;
+            transition: all .3s;
+        }
+        #mainImage img:hover {
+            transform: scale(2) translateX(-25%) translateY(25%)
         }
         h2 {
             margin:0;
+        }
+        #details {
+            padding-top: 20px;
         }
     </style>
 </head>
 
 <body>
     <div id="chartImage">
-        <div id="myDiv"></div>
-        <div id="details"></div>
+        <div id="myDiv">
+
+        </div>
+        <div id="details">
+            Translation:<br>
+            x: 0<br>
+            y: 0<br>
+            z: 0<br>
+            timestamp: 0<br>
+            Orientation:<br>
+            x: 0<br>
+            y: 0<br>
+            z: 0<br>
+            w: 0<br>
+            Orientation 2:<br>
+            roll: 0<br>
+            pitch: 0<br>
+            yaw: 0<br>
+            winkel: 0<br>
+        </div>
     </div>
-    <div id="deletes"></div>
+    <div id="deletes">
+        <h2>Known Cones</h2>
+        <a data-delete="" href="/reset_cones">Delete all</a>
+    </div>
     <div id="mainImage">
-        <img id="stream" src="" alt="">
+        <img id="stream" src="" alt="" />
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
     <script>
+
+        function interpolate(t, points, tangents, knots, derivative, result) {
+
+        var n = points.length;    // number or points / tangents / knots
+        var d = points[0].length; // vector dimensionality
+        var v = result || new Array(d); // destination vector
+
+        if(knots) {
+            // find knot interval for t
+            for(var i=0; i<n-1; i++) {
+            if(t >= knots[i] && t <= knots[i+1]) {
+                break;
+            }
+            }
+
+            if(i === n-1) throw new Error('out of bounds');
+
+            var i0 = i;
+            var i1 = i + 1;
+            var k0 = knots[i0];
+            var k1 = knots[i1];
+            var scale = k1 - k0;
+
+            t = (t - k0) / scale;
+
+        } else {
+
+            var t = t * (n - 1); // rescale t to [0, n-1]
+            var i0 = t|0;        // truncate
+            var i1 = i0 + 1;
+
+            if(i0 > n-1) throw new Error('out of bounds');
+            if(i0 === n-1) i1 = i0;
+
+            var scale = i1 - i0;
+
+            t = (t - i0) / scale;
+        }
+
+        if(derivative) {
+            var t2 = t * t;
+            var h00 = 6 * t2 - 6 * t;
+            var h10 = 3 * t2 - 4 * t + 1;
+            var h01 = - 6 * t2 + 6 * t;
+            var h11 = 3 * t2 - 2 * t;
+        } else {
+            var t2 = t * t;
+            var it = 1 - t;
+            var it2 = it * it;
+            var tt = 2 * t;
+            var h00 = (1 + tt) * it2;
+            var h10 = t * it2;
+            var h01 = t2 * (3 - tt);
+            var h11 = t2 * (t - 1);
+        }
+
+        for(var i=0; i<d; i++) {
+            v[i] = h00 * points[i0][i] + 
+                h10 * tangents[i0][i] * scale +
+                h01 * points[i1][i] +
+                h11 * tangents[i1][i] * scale;
+        }
+
+        return v;
+        }
+
         document.querySelector("body").classList.add(window.innerWidth > window.innerHeight ? "normal" : "phone")
+        const x = document.getElementById("stream");
         
-        // const webSocket = new WebSocket("ws://" + window.location.host.split(":")[0] + ":8081");
-        // webSocket.onopen = (event) => {
-        //     webSocket.send("Here's some text that the server is urgently awaiting!");
-        // };
-        // webSocket.onmessage = (event) => {
-        // }
+        const webSocket = new WebSocket("ws://" + window.location.host.split(":")[0] + ":8081");
+        webSocket.onopen = (event) => {
+            webSocket.send("Here's some text that the server is urgently awaiting!");
+        };
+        webSocket.onmessage = (event) => {
+            let img = event.data.substr(11)
+            img = img.substr(0,img.length-1)
+            console.log("new img")
+            const image = `data:image/jpeg;base64,${img}`
+            x.src = image;
+        }
         
+        const showLines = false
 
         const traces = {
             blue: {
                 x: [],
                 y: [],
-                // xaxis: 'x2',
-                // yaxis: 'y2',
-                mode: 'lines+markers',
+                mode: showLines?'lines+markers':'markers',
                 type: 'scatter',
                 marker: {
                     color: 'rgb(0,0,255)',
+                },
+                line: {
+                    color: 'rgba(0,0,255,.2)',
                 }
             },
             red: {
                 x: [],
                 y: [],
-                // xaxis: 'x2',
-                // yaxis: 'y2',
                 type: 'scatter',
-                mode: 'lines+markers',
+                mode: showLines?'lines+markers':'markers',
                 marker: {
                     color: 'rgb(255,0,0)',
+                },
+                line: {
+                    color: 'rgba(255,0,0,.2)',
                 }
             },
             yellow: {
                 x: [],
                 y: [],
-                // xaxis: 'x2',
-                // yaxis: 'y2',
                 type: 'scatter',
-                mode: 'lines+markers',
+                mode: showLines?'lines+markers':'markers',
                 marker: {
                     color: 'rgb(255,255,0)',
+                },
+                line: {
+                    color: 'rgba(255,255,0,.2)',
                 }
             },
             green: {
                 x: [],
                 y: [],
-                // xaxis: 'x2',
-                // yaxis: 'y2',
                 type: 'scatter',
-                mode: 'lines+markers',
+                mode: showLines?'lines+markers':'markers',
                 marker: {
                     color: 'rgb(0,255,0)',
+                },
+                line: {
+                    color: 'rgba(0,255,0,.2)',
                 }
             },
             pink: {
                 x: [],
                 y: [],
-                // xaxis: 'x2',
-                // yaxis: 'y2',
                 type: 'scatter',
-                mode: 'lines+markers',
+                mode: showLines?'lines+markers':'markers',
                 marker: {
-                    color: 'rgb(255,255,0)',
+                    color: 'rgb(255,0,255)',
+                },
+                line: {
+                    color: 'rgba(255,0,255,.2)',
                 }
             },
             black: {
                 x: [],
                 y: [],
-                // xaxis: 'x2',
-                // yaxis: 'y2',
                 type: 'scatter',
-                mode: 'lines+markers',
+                mode: 'markers',
                 marker: {
                     color: 'rgb(0,0,0)',
                     size: [10,5],
@@ -173,7 +278,7 @@
                 x: [],
                 y: [],
                 // yaxis: 'y2',
-                mode: 'lines+markers',
+                mode: 'markers',
                 type: 'scatter',
                 marker: {
                     color: 'rgb(0,0,0)',
@@ -225,101 +330,264 @@
                 xaxis: axis
             });
         }
-    const img = new Image()
-    const x = document.getElementById("stream");
+        const img = new Image()
 
-    img.onload = function() {
-        x.src = img.src;
-    };
+        img.onload = function() {
+            x.src = img.src;
+        };
 
-        setInterval(()=>{
-            img.src = `/image?t=${new Date().getTime()}`
-        },1000/3)
-        setInterval(()=>{
-            fetch("/positions")
-                .then((response) => response.json())
-                .then(data=>{
-                    rawTraces = data
+        // setInterval(()=>{
+        //     // img.src = `/image?t=${new Date().getTime()}`
+        //     x.src = `/image?t=${new Date().getTime()}`
+        // },1000)
+        if(false){
+            setInterval(()=>{
+                fetch("/positions")
+                    .then((response) => response.json())
+                    .then(data=>{
+                        rawTraces = data
 
-                    const build = (color,arr) => {
-                        if(!(color in data )) return arr
-                        const x = Object.values(data[color].items).map(e=>e.x)
-                        const z = Object.values(data[color].items).map(e=>e.z)
-                        traces[color].x = x;
-                        traces[color].y = z;
+                        const build = (color,arr) => {
+                            if(!(color in data )) return arr
+                            const x = Object.values(data[color].items).map(e=>e.x)
+                            const z = Object.values(data[color].items).map(e=>e.z)
+                            traces[color].x = x;
+                            traces[color].y = z;
 
-                        return [[x,...arr[0]],[z,...arr[1]]]
-                    }
-
-                    let val = [[],[]]
-                    for(let k in traces){
-                        val = build(k,val)
-                    }
-                    const allx = val[0].sort()
-                    const allz = val[1].sort()
-
-                    const distance = 10
-                    const point2 = []
-                    const pos = data.self.items["0"];
-                    // console.log(t,pos.euler)
-                    const a = distance * Math.sin(pos.euler.y)
-                    const b = distance * Math.cos(pos.euler.y)
-                    traces.black.x = [pos.translation.x,pos.translation.x+a]
-                    traces.black.y = [pos.translation.z,pos.translation.z+b]
-
-                    plot()
-
-                    const html = ["<h2>Known Cones</h2>"]                    
-                    for(let k in data){
-                        if(k==="self") continue;
-                        for(let n in data[k].items){
-                            html.push(`<a data-delete="" href="/delete/${k}:${n}">${k.padStart(6," ")} ${Math.round(data[k].items[n].x)} ${Math.round(data[k].items[n].z)}</a>`)
+                            return [[x,...arr[0]],[z,...arr[1]]]
                         }
+
+                        let val = [[],[]]
+                        for(let k in traces){
+                            val = build(k,val)
+                        }
+                        const allx = val[0].sort()
+                        const allz = val[1].sort()
+
+                        const distance = 10
+                        const point2 = []
+                        const pos = data.self.items["0"];
+                        // console.log(t,pos.euler)
+                        const a = distance * Math.sin(pos.euler.y)
+                        const b = distance * Math.cos(pos.euler.y)
+                        traces.black.x = [pos.translation.x,pos.translation.x+a]
+                        traces.black.y = [pos.translation.z,pos.translation.z+b]
+
+                        plot()
+
+                        const html = ["<h2>Known Cones</h2>"]                    
+                        for(let k in data){
+                            if(k==="self") continue;
+                            for(let n in data[k].items){
+                                html.push(`<a data-delete="" href="/delete/${k}:${n}">${k.padStart(6," ")} ${Math.round(data[k].items[n].x)} ${Math.round(data[k].items[n].z)}</a>`)
+                            }
+                        }
+                        html.push(`<a data-delete="" href="/reset_cones">Delete all</a>`)
+
+                        document.getElementById("deletes").innerHTML = html.join("")
+                        const d = document.querySelectorAll("[data-delete]");
+                        for(let i=0;i<d.length;i++){
+                            d[i].addEventListener("click",e=>{
+                                e.preventDefault();
+                                fetch(e.target.href)
+                            })
+                            d[i].addEventListener("mouseenter",e=>{
+                                e.preventDefault();
+                                const href = e.target.href.split("/")
+                                const uri = href[href.length - 1].split(":")
+                                const item = rawTraces[uri[0]].items[uri[1]];
+                                traces.selected.x = [item.x]
+                                traces.selected.y = [item.z]
+                                plot()
+                            })
+                            d[i].addEventListener("mouseleave",e=>{
+                                e.preventDefault();
+                                traces.selected.x = []
+                                traces.selected.y = []
+                                plot()
+                            })
+                        }
+
+                        document.getElementById("details").innerHTML = `Translation:<br />
+                        x: ${pos.translation.x}<br />
+                        y: ${pos.translation.y}<br />
+                        z: ${pos.translation.z}<br />
+                        timestamp: ${pos.timestamp}<br />
+                        <br />
+                        Orientation:<br />
+                        x: ${pos.orientation.x}<br />
+                        y: ${pos.orientation.y}<br />
+                        z: ${pos.orientation.z}<br />
+                        w: ${pos.orientation.w}<br />
+                        <br />
+                        Orientation 2:<br />
+                        roll: ${pos.euler.x}<br />
+                        pitch: ${pos.euler.y}<br />
+                        yaw: ${pos.euler.z}<br />
+                        winkel: ${Math.round(pos.euler.y * 180 / Math.PI,2)}<br />`
+
+                    })
+            },1000)
+        }else{
+            const tempData = {"neighbours": [{"color": "blue", "x": 32, "neighbours": [{"distance": 64.4980619863884, "color": "red", "sameColor": false, "y": 51, "x": -32, "id": "5"}, {"distance": 52.773099207835045, "color": "blue", "sameColor": true, "y": 111, "x": 23, "id": "4"}], "id": "1", "y": 59}, {"color": "blue", "x": -8, "neighbours": [{"distance": 78.24321056807422, "color": "red", "sameColor": false, "y": 94, "x": -57, "id": "6"}, {"distance": 52.392747589718944, "color": "blue", "sameColor": true, "y": 176, "x": -56, "id": "3"}], "id": "2", "y": 155}, {"color": "blue", "x": -56, "neighbours": [{"distance": 82.00609733428362, "color": "red", "sameColor": false, "y": 94, "x": -57, "id": "6"}, {"distance": 52.392747589718944, "color": "blue", "sameColor": true, "y": 155, "x": -8, "id": "2"}], "id": "3", "y": 176}, {"color": "blue", "x": 23, "neighbours": [{"distance": 81.39410298049853, "color": "red", "sameColor": false, "y": 51, "x": -32, "id": "5"}, {"distance": 52.773099207835045, "color": "blue", "sameColor": true, "y": 59, "x": 32, "id": "1"}], "id": "4", "y": 111}, {"color": "red", "x": -32, "neighbours": [{"distance": 64.4980619863884, "color": "blue", "sameColor": false, "y": 59, "x": 32, "id": "1"}, {"distance": 49.73932046178355, "color": "red", "sameColor": true, "y": 94, "x": -57, "id": "6"}], "id": "5", "y": 51}, {"color": "red", "x": -57, "neighbours": [{"distance": 78.24321056807422, "color": "blue", "sameColor": false, "y": 155, "x": -8, "id": "2"}, {"distance": 49.73932046178355, "color": "red", "sameColor": true, "y": 51, "x": -32, "id": "5"}], "id": "6", "y": 94}], "route": {"y": 55, "x": 0, "id": "0", "next": [{"y": 81, "x": -5, "id": "3", "distance": 26.476404589747453}, {"y": 124, "x": -33, "id": "1", "distance": 76.48529270389177}, {"y": 124, "x": -33, "id": "5", "distance": 76.48529270389177}, {"y": 135, "x": -57, "id": "2", "distance": 98.22932352408826}]}}
+
+            console.log(tempData)
+
+            const traces1 = {
+                blue: {
+                    x: [],
+                    y: [],
+                    mode: showLines?'lines+markers':'markers',
+                    type: 'scatter',
+                    marker: {
+                        color: 'rgb(0,0,255)',
+                    },
+                    line: {
+                        color: 'rgba(0,0,255,.2)',
                     }
-
-                    document.getElementById("deletes").innerHTML = html.join("")
-                    const d = document.querySelectorAll("[data-delete]");
-                    for(let i=0;i<d.length;i++){
-                        d[i].addEventListener("click",e=>{
-                            e.preventDefault();
-                            fetch(e.target.href)
-                        })
-                        d[i].addEventListener("mouseenter",e=>{
-                            e.preventDefault();
-                            const href = e.target.href.split("/")
-                            const uri = href[href.length - 1].split(":")
-                            const item = rawTraces[uri[0]].items[uri[1]];
-                            traces.selected.x = [item.x]
-                            traces.selected.y = [item.z]
-                            plot()
-                        })
-                        d[i].addEventListener("mouseleave",e=>{
-                            e.preventDefault();
-                            traces.selected.x = []
-                            traces.selected.y = []
-                            plot()
-                        })
+                },
+                red: {
+                    x: [],
+                    y: [],
+                    type: 'scatter',
+                    mode: showLines?'lines+markers':'markers',
+                    marker: {
+                        color: 'rgb(255,0,0)',
+                    },
+                    line: {
+                        color: 'rgba(255,0,0,.2)',
                     }
+                },
+                yellow: {
+                    x: [],
+                    y: [],
+                    type: 'scatter',
+                    mode: showLines?'lines+markers':'markers',
+                    marker: {
+                        color: 'rgb(255,255,0)',
+                    },
+                    line: {
+                        color: 'rgba(255,255,0,.2)',
+                    }
+                },
+                green: {
+                    x: [],
+                    y: [],
+                    type: 'scatter',
+                    mode: showLines?'lines+markers':'markers',
+                    marker: {
+                        color: 'rgb(0,255,0)',
+                    },
+                    line: {
+                        color: 'rgba(0,255,0,.2)',
+                    }
+                },
+                pink: {
+                    x: [],
+                    y: [],
+                    type: 'scatter',
+                    mode: showLines?'lines+markers':'markers',
+                    marker: {
+                        color: 'rgb(255,0,255)',
+                    },
+                    line: {
+                        color: 'rgba(255,0,255,.2)',
+                    }
+                },
+                black: {
+                    x: [],
+                    y: [],
+                    type: 'scatter',
+                    mode: 'markers',
+                    marker: {
+                        color: 'rgb(0,0,0)',
+                        size: [10,5],
+                    }
+                },
+                selected: {
+                    x: [],
+                    y: [],
+                    // yaxis: 'y2',
+                    mode: 'markers',
+                    type: 'scatter',
+                    marker: {
+                        color: 'rgb(0,0,0)',
+                        size: [10],
+                    }
+                },
+            }
+            
+            console.log(tempData.route.next)
+            const driveX = [tempData.route.x,...tempData.route.next.map(e=>e.x)]
+            const driveY = [tempData.route.y,...tempData.route.next.map(e=>e.y)]
+            
+            const points = []
 
-                    document.getElementById("details").innerHTML = `Translation:<br />
-                    x: ${pos.translation.x}<br />
-                    y: ${pos.translation.y}<br />
-                    z: ${pos.translation.z}<br />
-                    timestamp: ${pos.timestamp}<br /><br />
-                    Orientation:<br />
-                    x: ${pos.orientation.x}<br />
-                    y: ${pos.orientation.y}<br />
-                    z: ${pos.orientation.z}<br />
-                    w: ${pos.orientation.w}<br /><br />
-                    Orientation 2:<br />
-                    roll: ${pos.euler.x}<br />
-                    pitch: ${pos.euler.y}<br />
-                    yaw: ${pos.euler.z}<br />
-                    winkel: ${Math.round(pos.euler.y * 180 / Math.PI,2)}<br />`
+            for(var t=0; t<1; t+=0.01) {
+                points.push(interpolate(
+                    t,
+                    // [[tempData.route.x,tempData.route.y],[tempData.route.next[0].x,tempData.route.next[0].y]],
+                    [[tempData.route.x,tempData.route.y],...tempData.route.next.map(e=>[e.x,e.y])],
+                    [[0,0],...tempData.route.next.map(e=>[1,0])],
+                ))
+            }
+            console.log("points:",points)
 
+            const tempReturn = []
+            const driveRoute = {
+                x: [tempData.route.x,...tempData.route.next.map(e=>e.x)],
+                y: [tempData.route.y,...tempData.route.next.map(e=>e.y)],
+                mode: 'lines+markers', // lines+
+                type: 'scatter',
+                line: {
+                    color: "#000"
+                },
+                marker: {
+                    color: "#000"
+                },
+            }
+            const interpolatedRoute = {
+                x: [...points.map(e=>e[0])],
+                y: [...points.map(e=>e[1])],
+                mode: 'lines+markers', // lines+
+                type: 'scatter',
+                line: {
+                    color: "#000"
+                },
+                marker: {
+                    color: "#000"
+                },
+            }
+            
+            // const first = Object.values(tempData.route)[0]
+
+            // const buildDriveRoute = (x,y,first,route,id) => {
+            //     if(route[id].next.id==first) return [x,y]
+            //     x.push(route[id].x)
+            //     y.push(route[id].y)
+            //     const [tx,ty] = buildDriveRoute(x,y,first,route,route[id].next.id)
+            // }
+            // let x = []
+            // let y = []
+            // [x,y] = buildDriveRoute(x,y,first,tempData.route,first.id)
+            // console.log(x,y)
+
+            for(let i=0;i<tempData.neighbours.length;i++){
+                // console.log(tempData.neighbours[i].neighbours.map(e=>e.x))
+                tempReturn.push({
+                    x: [tempData.neighbours[i].x,...tempData.neighbours[i].neighbours.map(e=>e.x),tempData.neighbours[i].x],
+                    y: [tempData.neighbours[i].y,...tempData.neighbours[i].neighbours.map(e=>e.y),tempData.neighbours[i].y],
+                    mode: 'lines+markers',
+                    type: 'scatter',
                 })
-        },1000)
-
+            }
+            // tempReturn.push(driveRoute)
+            Plotly.newPlot('myDiv', [...tempReturn,driveRoute,interpolatedRoute], {
+                width: 500,
+                height: 500,
+                autoscale: true,
+            });
+        }
     </script>
 </body>
 
