@@ -137,7 +137,8 @@ def euler_from_quaternion(x, y, z, w):
         yaw_z = math.atan2(t3, t4)
      
         return roll_x, pitch_y, yaw_z # in radians
-        
+
+
 def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
     global image_net, exit_signal, run_signal, detections
     print("Initializing Camera...")
@@ -150,15 +151,16 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
 
     # Create a InitParameters object and set configuration parameters
     init_params = sl.InitParameters(input_t=input_type, svo_real_time_mode=True)
-    init_params.camera_resolution = sl.RESOLUTION.HD720
+    init_params.camera_resolution = sl.RESOLUTION.HD1080
     init_params.coordinate_units = sl.UNIT.CENTIMETER
     init_params.coordinate_system = sl.COORDINATE_SYSTEM.LEFT_HANDED_Y_UP
-    init_params.depth_mode = sl.DEPTH_MODE.ULTRA  # QUALITY
+    # init_params.depth_mode = sl.DEPTH_MODE.ULTRA  # QUALITY
+    init_params.depth_mode = sl.DEPTH_MODE.QUALITY #PERFORMANCE  # QUALITY
     # init_params.depth_maximum_distance = 20
 
     runtime_params = sl.RuntimeParameters()
     status = zed.open(init_params)
-    zed.set_camera_settings(sl.VIDEO_SETTINGS.BRIGHTNESS, 5) # 0 - 8
+    # zed.set_camera_settings(sl.VIDEO_SETTINGS.BRIGHTNESS, 5) # 0 - 8
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.CONTRAST, 8) # 0 - 8
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.HUE, 11) # 0 - 11
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.SATURATION, 8) # 0 - 8
@@ -171,6 +173,22 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.WHITEBALANCE_TEMPERATURE, 8) # 2800 - 6500 (100+)
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.WHITEBALANCE_AUTO, 8) # True | False
     # zed.set_camera_settings(sl.VIDEO_SETTINGS.LED_STATUS, 8) # 0 - 1
+
+    
+    print("BRIGHTNESS: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.BRIGHTNESS))) # 0 - 8
+    print("CONTRAST: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.CONTRAST))) # 0 - 8
+    print("HUE: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.HUE))) # 0 - 11
+    print("SATURATION: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.SATURATION))) # 0 - 8
+    print("SHARPNESS: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.SHARPNESS))) # 0 - 8
+    print("GAMMA: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.GAMMA))) # 1 - 9
+    print("GAIN: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.GAIN))) # 0 - 100
+    print("EXPOSURE: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.EXPOSURE))) # 0 - 100
+    print("AEC_AGC: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.AEC_AGC))) # True | False
+    print("AEC_AGC_ROI: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.AEC_AGC_ROI))) # True | False
+    print("WHITEBALANCE_TEMPERATURE: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.WHITEBALANCE_TEMPERATURE))) # 2800 - 6500 (100+)
+    print("WHITEBALANCE_AUTO: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.WHITEBALANCE_AUTO))) # True | False
+    print("LED_STATUS: {0}".format(zed.get_camera_settings(sl.VIDEO_SETTINGS.LED_STATUS))) # 0 - 1
+    server.setZed(zed,sl)
 
 
     if status != sl.ERROR_CODE.SUCCESS:
@@ -235,6 +253,8 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
     timeName = ""
     timeNum = 0
 
+    secCache = 0
+
     while not exit_signal:
         if zed.grab(runtime_params) == sl.ERROR_CODE.SUCCESS:
             # Get the pose of the camera relative to the world frame
@@ -261,7 +281,7 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
             vz = round(cam_w_pose.get_rotation_vector()[2],3)
 
             # print("Translation: tx: {0}, ty:  {1}, tz:  {2}, timestamp: {3} | Orientation: ox: {4}, oy:  {5}, oz: {6}, ow: {7}".format(tx, ty, tz, cam_w_pose.timestamp.get_seconds(),ox, oy, oz, ow))
-            roll_x, pitch_y, yaw_z = euler_from_quaternion(ox,oy,oz,ow)
+            # roll_x, pitch_y, yaw_z = euler_from_quaternion(ox,oy,oz,ow)
             # (x, y, z, w):
             Cache["self"]["items"]["0"] = {
                 "translation":{
@@ -287,14 +307,14 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
                 },
                 "timestamp": cam_w_pose.timestamp.get_seconds()
             }
-            json_object = json.dumps(Cache)
+            # json_object = json.dumps(Cache)
             # server.sendWebsocketMessage("self:"+json_object)
 
             zed.retrieve_image(image_left_tmp, sl.VIEW.LEFT)
             image_net = image_left_tmp.get_data()
             
-            zed.retrieve_image(image_right_tmp, sl.VIEW.RIGHT)
-            image_net_right = image_right_tmp.get_data()
+            # zed.retrieve_image(image_right_tmp, sl.VIEW.RIGHT)
+            # image_net_right = image_right_tmp.get_data()
             
             img, ratio, pad = aux.img_preprocess(image_net, device, half, imgsz)
             pred = model(img)[0]
@@ -399,25 +419,31 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
                             org = (int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1]))
                             fontScale = .5
                             thickness = 1
-                            image_net = cv2.putText(image_net, "({2}) {0} x {1}".format(
+                            image_net = cv2.putText(image_net, "(id: {2} | class: {3}) {0} x {1}".format(
                                 round(obj.position[0]-30),
                                 round(obj.position[2]),
-                                obj.id
+                                obj.id,
+                                key
                             ), org, font, fontScale, color, thickness, cv2.LINE_AA)
-    
+                            # print("draw")
                             cv2.line(image_net, (int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])),(int(obj.bounding_box_2d[1][0]),int(obj.bounding_box_2d[1][1])), color, 1) 
                             cv2.line(image_net, (int(obj.bounding_box_2d[1][0]),int(obj.bounding_box_2d[1][1])),(int(obj.bounding_box_2d[2][0]),int(obj.bounding_box_2d[2][1])), color, 1) 
                             cv2.line(image_net, (int(obj.bounding_box_2d[2][0]),int(obj.bounding_box_2d[2][1])),(int(obj.bounding_box_2d[3][0]),int(obj.bounding_box_2d[3][1])), color, 1) 
                             cv2.line(image_net, (int(obj.bounding_box_2d[3][0]),int(obj.bounding_box_2d[3][1])),(int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])), color, 1) 
 
-            json_object = json.dumps(Cache)
-            server.setImage(image_net[:,:,:3])
-            # server.sendWebsocketMessage("left-eye:"+str(aux.image_to_base64(image_net[:,:,:3])))
-            # server.sendWebsocketMessage("chart:"+str(aux.image_to_base64(image)))
-            server.setPositions(json_object)
-            # server.sendWebsocketMessage("pylons:"+json_object)
-            # else:
-            #     plotPylons([], [],image_net)
+                # print("show")
+
+                json_object = json.dumps(Cache)
+                server.setImage(image_net[:,:,:3])
+                now = datetime.now()
+                if secCache != now.second:
+                    secCache  = now.second
+                    server.sendWebsocketMessage("left-eye:"+str(aux.image_to_base64(image_net[:,:,:3])))
+                # server.sendWebsocketMessage("chart:"+str(aux.image_to_base64(image)))
+                server.setPositions(json_object)
+                # server.sendWebsocketMessage("pylons:"+json_object)
+                # else:
+                #     plotPylons([], [],image_net)
         else:
             print("failed")
     print("done")
