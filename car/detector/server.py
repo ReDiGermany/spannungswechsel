@@ -10,12 +10,19 @@ import numpy as np
 from PIL import Image
 import cv2
 import io
+from data import DataStore
+from datetime import datetime
+import json 
 
 clients = []
+
+dataStore = DataStore()
 
 cachedImage = np.array(Image.open('mygraph.png'))
 def setImage(image):
     global cachedImage
+    # filename = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    # cv2.imwrite("../../dump/{0}.jpg".format(filename), image)
     cachedImage = image
 
 cachedPositions = '{}'
@@ -27,6 +34,13 @@ Cache = {}
 def setCache(c):
     global Cache
     Cache = c
+
+zed = {}
+sl = {}
+def setZed(c,l):
+    global zed, sl
+    zed = c
+    sl = l
 
 class SimpleChat(WebSocket):
     def handle(self):
@@ -49,8 +63,47 @@ def sendWebsocketMessage(msg):
         client.send_message(str(msg))
 
 class MyServer(http.server.SimpleHTTPRequestHandler):
+    def test(text):
+        print(text)
     def log_message(self, format, *args):
         pass
+    def do_POST(self):
+        if self.path == '/zed':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            content_length = int(self.headers['Content-Length']) # <--- Gets the size of data
+            post_data = self.rfile.read(content_length) # <--- Gets the data itself
+            dic = json.loads(post_data)
+            print(dic)
+            if "BRIGHTNESS" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.BRIGHTNESS,dic["BRIGHTNESS"])
+            if "CONTRAST" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.CONTRAST,dic["CONTRAST"])
+            if "HUE" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.HUE,dic["HUE"])
+            if "SATURATION" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.SATURATION,dic["SATURATION"])
+            if "SHARPNESS" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.SHARPNESS,dic["SHARPNESS"])
+            if "GAMMA" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.GAMMA,dic["GAMMA"])
+            if "GAIN" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.GAIN,dic["GAIN"])
+            if "EXPOSURE" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.EXPOSURE,dic["EXPOSURE"])
+            if "AEC_AGC" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.AEC_AGC,dic["AEC_AGC"])
+            if "AEC_AGC_ROI" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.AEC_AGC_ROI,dic["AEC_AGC_ROI"])
+            if "WHITEBALANCE_TEMPERATURE" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.WHITEBALANCE_TEMPERATURE,dic["WHITEBALANCE_TEMPERATURE"])
+            if "WHITEBALANCE_AUTO" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.WHITEBALANCE_AUTO,dic["WHITEBALANCE_AUTO"])
+            if "LED_STATUS" in dic:
+                zed.set_camera_settings(sl.VIDEO_SETTINGS.LED_STATUS,dic["LED_STATUS"])
+            self.wfile.write(b"ok")
+            return
     def do_GET(self):
         if self.path == '/':
             self.path = 'index.html'
@@ -67,19 +120,50 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(b"done")
             return
         if self.path.startswith('/image'):
+            image = dataStore.get_image()
+            if image is None:
+                self.send_response(500)
+                self.end_headers()
+                return
             self.send_response(200)
             self.send_header('Content-type', 'image/jpeg')
             self.end_headers()
 
-            # img_str = cv2.imencode('.jpg', cachedImage)[1].tostring()
-            # nparr = np.fromstring(STRING_FROM_DATABASE, np.uint8)
-            # img = cv2.imencode('.jpg',cachedImage).encode()
-            img = Image.fromarray(np.uint8(cachedImage[...,::-1].copy())).convert('RGB') #.astype(np.uint8)
+            # cachedImage[...,::-1].copy()
+
+            # filename = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            # cv2.imwrite("../../dump/cached-{0}.jpg".format(filename), cachedImage)
+            img = Image.fromarray(np.uint8(image[...,::-1].copy())).convert('RGB') #.astype(np.uint8)
             imgByteArr = io.BytesIO()
             img.save(imgByteArr, format="jpeg")
             imgByteArr = imgByteArr.getvalue()
 
             self.wfile.write(imgByteArr)
+            return
+        if self.path == '/zed':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            print("pre get")
+            jsn = {
+                "BRIGHTNESS": zed.get_camera_settings(sl.VIDEO_SETTINGS.BRIGHTNESS),
+                "CONTRAST": zed.get_camera_settings(sl.VIDEO_SETTINGS.CONTRAST),
+                "HUE": zed.get_camera_settings(sl.VIDEO_SETTINGS.HUE),
+                "SATURATION": zed.get_camera_settings(sl.VIDEO_SETTINGS.SATURATION),
+                "SHARPNESS": zed.get_camera_settings(sl.VIDEO_SETTINGS.SHARPNESS),
+                "GAMMA": zed.get_camera_settings(sl.VIDEO_SETTINGS.GAMMA),
+                "GAIN": zed.get_camera_settings(sl.VIDEO_SETTINGS.GAIN),
+                "EXPOSURE": zed.get_camera_settings(sl.VIDEO_SETTINGS.EXPOSURE),
+                "AEC_AGC": zed.get_camera_settings(sl.VIDEO_SETTINGS.AEC_AGC),
+                "AEC_AGC_ROI": zed.get_camera_settings(sl.VIDEO_SETTINGS.AEC_AGC_ROI),
+                "WHITEBALANCE_TEMPERATURE": zed.get_camera_settings(sl.VIDEO_SETTINGS.WHITEBALANCE_TEMPERATURE),
+                "WHITEBALANCE_AUTO": zed.get_camera_settings(sl.VIDEO_SETTINGS.WHITEBALANCE_AUTO),
+                "LED_STATUS": zed.get_camera_settings(sl.VIDEO_SETTINGS.LED_STATUS),
+            }
+            print("suf get")
+            json_object = json.dumps(jsn, indent = 4) 
+            print("dumped")
+            self.wfile.write(json_object.encode('utf-8'))
             return
         if self.path == '/positions':
             self.send_response(200)
