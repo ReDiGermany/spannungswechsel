@@ -120,78 +120,12 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
     <script>
-
-        function interpolate(t, points, tangents, knots, derivative, result) {
-
-        var n = points.length;    // number or points / tangents / knots
-        var d = points[0].length; // vector dimensionality
-        var v = result || new Array(d); // destination vector
-
-        if(knots) {
-            // find knot interval for t
-            for(var i=0; i<n-1; i++) {
-            if(t >= knots[i] && t <= knots[i+1]) {
-                break;
-            }
-            }
-
-            if(i === n-1) throw new Error('out of bounds');
-
-            var i0 = i;
-            var i1 = i + 1;
-            var k0 = knots[i0];
-            var k1 = knots[i1];
-            var scale = k1 - k0;
-
-            t = (t - k0) / scale;
-
-        } else {
-
-            var t = t * (n - 1); // rescale t to [0, n-1]
-            var i0 = t|0;        // truncate
-            var i1 = i0 + 1;
-
-            if(i0 > n-1) throw new Error('out of bounds');
-            if(i0 === n-1) i1 = i0;
-
-            var scale = i1 - i0;
-
-            t = (t - i0) / scale;
-        }
-
-        if(derivative) {
-            var t2 = t * t;
-            var h00 = 6 * t2 - 6 * t;
-            var h10 = 3 * t2 - 4 * t + 1;
-            var h01 = - 6 * t2 + 6 * t;
-            var h11 = 3 * t2 - 2 * t;
-        } else {
-            var t2 = t * t;
-            var it = 1 - t;
-            var it2 = it * it;
-            var tt = 2 * t;
-            var h00 = (1 + tt) * it2;
-            var h10 = t * it2;
-            var h01 = t2 * (3 - tt);
-            var h11 = t2 * (t - 1);
-        }
-
-        for(var i=0; i<d; i++) {
-            v[i] = h00 * points[i0][i] + 
-                h10 * tangents[i0][i] * scale +
-                h01 * points[i1][i] +
-                h11 * tangents[i1][i] * scale;
-        }
-
-        return v;
-        }
-
         document.querySelector("body").classList.add(window.innerWidth > window.innerHeight ? "normal" : "phone")
         const x = document.getElementById("stream");
         
         const webSocket = new WebSocket("ws://" + window.location.host.split(":")[0] + ":8081");
         webSocket.onopen = (event) => {
-            webSocket.send("Here's some text that the server is urgently awaiting!");
+            // webSocket.send("Here's some text that the server is urgently awaiting!");
         };
         webSocket.onmessage = (event) => {
             let img = event.data.substr(11)
@@ -429,163 +363,144 @@
                     })
             },1000)
         }else{
-            const tempData = {"neighbours": [{"color": "blue", "x": 32, "neighbours": [{"distance": 64.4980619863884, "color": "red", "sameColor": false, "y": 51, "x": -32, "id": "5"}, {"distance": 52.773099207835045, "color": "blue", "sameColor": true, "y": 111, "x": 23, "id": "4"}], "id": "1", "y": 59}, {"color": "blue", "x": -8, "neighbours": [{"distance": 78.24321056807422, "color": "red", "sameColor": false, "y": 94, "x": -57, "id": "6"}, {"distance": 52.392747589718944, "color": "blue", "sameColor": true, "y": 176, "x": -56, "id": "3"}], "id": "2", "y": 155}, {"color": "blue", "x": -56, "neighbours": [{"distance": 82.00609733428362, "color": "red", "sameColor": false, "y": 94, "x": -57, "id": "6"}, {"distance": 52.392747589718944, "color": "blue", "sameColor": true, "y": 155, "x": -8, "id": "2"}], "id": "3", "y": 176}, {"color": "blue", "x": 23, "neighbours": [{"distance": 81.39410298049853, "color": "red", "sameColor": false, "y": 51, "x": -32, "id": "5"}, {"distance": 52.773099207835045, "color": "blue", "sameColor": true, "y": 59, "x": 32, "id": "1"}], "id": "4", "y": 111}, {"color": "red", "x": -32, "neighbours": [{"distance": 64.4980619863884, "color": "blue", "sameColor": false, "y": 59, "x": 32, "id": "1"}, {"distance": 49.73932046178355, "color": "red", "sameColor": true, "y": 94, "x": -57, "id": "6"}], "id": "5", "y": 51}, {"color": "red", "x": -57, "neighbours": [{"distance": 78.24321056807422, "color": "blue", "sameColor": false, "y": 155, "x": -8, "id": "2"}, {"distance": 49.73932046178355, "color": "red", "sameColor": true, "y": 51, "x": -32, "id": "5"}], "id": "6", "y": 94}], "route": {"y": 55, "x": 0, "id": "0", "next": [{"y": 81, "x": -5, "id": "3", "distance": 26.476404589747453}, {"y": 124, "x": -33, "id": "1", "distance": 76.48529270389177}, {"y": 124, "x": -33, "id": "5", "distance": 76.48529270389177}, {"y": 135, "x": -57, "id": "2", "distance": 98.22932352408826}]}}
-
+            const tempData = {"neighbours": [{"id": "1", "color": "blue", "x": 32, "y": 59, "neighbour_same_color": {"distance": 52.773099207835045, "id": "4", "x": 23, "y": 111, "color": "blue", "sameColor": true}, "neighbour_other_color": {"distance": 64.4980619863884, "id": "5", "x": -32, "y": 51, "color": "red", "sameColor": false}}, {"id": "2", "color": "blue", "x": -8, "y": 155, "neighbour_same_color": {"distance": 52.392747589718944, "id": "3", "x": -56, "y": 176, "color": "blue", "sameColor": true}, "neighbour_other_color": {"distance": 78.24321056807422, "id": "6", "x": -57, "y": 94, "color": "red", "sameColor": false}}, {"id": "3", "color": "blue", "x": -56, "y": 176, "neighbour_same_color": {"distance": 52.392747589718944, "id": "2", "x": -8, "y": 155, "color": "blue", "sameColor": true}, "neighbour_other_color": {"distance": 82.00609733428362, "id": "6", "x": -57, "y": 94, "color": "red", "sameColor": false}}, {"id": "4", "color": "blue", "x": 23, "y": 111, "neighbour_same_color": {"distance": 52.773099207835045, "id": "1", "x": 32, "y": 59, "color": "blue", "sameColor": true}, "neighbour_other_color": {"distance": 81.39410298049853, "id": "5", "x": -32, "y": 51, "color": "red", "sameColor": false}}, {"id": "5", "color": "red", "x": -32, "y": 51, "neighbour_same_color": {"distance": 49.73932046178355, "id": "6", "x": -57, "y": 94, "color": "red", "sameColor": true}, "neighbour_other_color": {"distance": 64.4980619863884, "id": "1", "x": 32, "y": 59, "color": "blue", "sameColor": false}}, {"id": "6", "color": "red", "x": -57, "y": 94, "neighbour_same_color": {"distance": 49.73932046178355, "id": "5", "x": -32, "y": 51, "color": "red", "sameColor": true}, "neighbour_other_color": {"distance": 78.24321056807422, "id": "2", "x": -8, "y": 155, "color": "blue", "sameColor": false}}], "route": {"x": 0.0, "y": 55.0, "id": "0", "next": [{"x": -4.5, "y": 81.0, "id": "3", "distance": 26.386549603917523}, {"x": -32.5, "y": 124.5, "id": "1", "distance": 76.72352963726317}, {"x": -56.5, "y": 135.0, "id": "2", "distance": 97.94003267305969}]}, "curve": {"x": [0.0, -0.07900800000000001, -0.13846399999999998, -0.182016, -0.213312, -0.236, -0.25372800000000006, -0.27014399999999994, -0.2888959999999998, -0.3136319999999999, -0.3480000000000001, -0.3956480000000002, -0.4602240000000004, -0.5453760000000001, -0.6547520000000002, -0.7920000000000003, -0.9607680000000007, -1.164704, -1.4074559999999998, -1.6926720000000008, -2.024000000000001, -2.4050879999999992, -2.8395839999999994, -3.331136, -4.5, -4.5, -5.18992, -5.95616, -6.7934399999999995, -7.696480000000001, -8.66, -9.67872, -10.747359999999999, -11.86064, -13.013279999999998, -14.200000000000001, -15.415519999999999, -16.654560000000004, -17.911840000000005, -19.18208, -20.460000000000004, -21.74032, -23.017760000000003, -24.287039999999998, -25.54288, -26.780000000000005, -27.993119999999994, -29.176959999999998, -30.326240000000006, -32.5, -32.5, -33.55216, -34.62608, -35.71792, -36.82384, -37.940000000000005, -39.062560000000005, -40.18768, -41.31152, -42.43024, -43.540000000000006, -44.63696, -45.717279999999995, -46.77712, -47.812639999999995, -48.82000000000001, -49.795359999999995, -50.73488, -51.63472, -52.49104, -53.300000000000004, -54.05776, -54.76048, -55.40431999999999], "y": [55.0, 55.547328, 56.148224000000006, 56.801056, 57.504191999999996, 58.256, 59.054848, 59.899103999999994, 60.787136000000004, 61.717312, 62.688, 63.697568, 64.744384, 65.826816, 66.943232, 68.09200000000001, 69.271488, 70.480064, 71.716096, 72.97795199999999, 74.26400000000001, 75.57260799999999, 76.902144, 78.250976, 81.0, 81.0, 82.442784, 83.984672, 85.615968, 87.326976, 89.108, 90.949344, 92.84131199999999, 94.77420799999999, 96.73833599999999, 98.72400000000002, 100.721504, 102.72115200000002, 104.713248, 106.688096, 108.636, 110.54726400000001, 112.41219199999999, 114.22108799999998, 115.964256, 117.632, 119.21462399999999, 120.702432, 122.08572799999999, 124.5, 124.5, 125.53631999999999, 126.48816000000001, 127.35984, 128.15568, 128.88, 129.53712000000002, 130.13135999999997, 130.66704, 131.14848, 131.58, 131.96591999999998, 132.31055999999998, 132.61824000000001, 132.89328, 133.14000000000001, 133.36272, 133.56575999999998, 133.75344, 133.93008, 134.10000000000002, 134.26752000000002, 134.43695999999997, 134.61264]}, "pylons": {"blue": [{"id": "1", "color": "blue", "x": 32, "y": 59, "distance": 0.0}, {"id": "4", "color": "blue", "x": 23, "y": 111, "distance": 52.773099207835045}, {"id": "2", "color": "blue", "x": -8, "y": 155, "distance": 104.0}, {"id": "3", "color": "blue", "x": -56, "y": 176, "distance": 146.40013661195812}], "red": [{"id": "5", "color": "red", "x": -32, "y": 51, "distance": 0.0}, {"id": "6", "color": "red", "x": -57, "y": 94, "distance": 49.73932046178355}]}, "blueCurved": {"x": [32.0, 31.822784, 31.649472, 31.477568, 31.304576, 31.128, 30.945344, 30.754112, 30.551807999999998, 30.335936, 30.104000000000003, 29.853504, 29.581952, 29.286848, 28.965696, 28.616, 28.235264, 27.820992, 27.370688, 26.881855999999996, 26.352, 25.778624, 25.159232000000003, 24.491328, 23.0, 23.0, 22.178560000000004, 21.314880000000002, 20.40992, 19.46464, 18.48, 17.456960000000002, 16.39648, 15.299520000000001, 14.16704, 13.0, 11.79936, 10.56608, 9.301119999999997, 8.00544, 6.679999999999996, 5.325759999999999, 3.9436799999999983, 2.534719999999999, 1.099839999999996, -0.3600000000000021, -1.843839999999994, -3.3507199999999995, -4.879680000000002, -8.0, -8.0, -9.64352, -11.40576, -13.274239999999999, -15.23648, -17.28, -19.39232, -21.56096, -23.77344, -26.01728, -28.28, -30.549119999999995, -32.812160000000006, -35.05664, -37.27008, -39.44000000000001, -41.55392, -43.599360000000004, -45.563840000000006, -47.43487999999999, -49.2, -50.84671999999999, -52.362559999999995, -53.73504000000001], "y": [59.0, 60.12767999999999, 61.42304, 62.87456, 64.47072, 66.2, 68.05088, 70.01184, 72.07136, 74.21791999999999, 76.44, 78.72608, 81.06464000000001, 83.44416, 85.85311999999999, 88.28, 90.71328, 93.14144, 95.55295999999998, 97.93632000000001, 100.28, 102.57247999999998, 104.80224, 106.95776000000001, 111.0, 111.0, 112.92511999999999, 114.85856, 116.79744, 118.73888000000001, 120.68, 122.61792000000001, 124.54976, 126.47264, 128.38368, 130.28, 132.15872000000002, 134.01696, 135.85184, 137.66048, 139.44, 141.18752, 142.90015999999997, 144.57504, 146.20928, 147.8, 149.34432, 150.83936, 152.28224000000003, 155.0, 155.0, 156.28006399999998, 157.520512, 158.72172799999998, 159.88409599999997, 161.00799999999998, 162.093824, 163.14195200000003, 164.15276800000004, 165.12665599999997, 166.064, 166.965184, 167.83059200000002, 168.66060799999997, 169.45561599999996, 170.216, 170.94214399999998, 171.634432, 172.293248, 172.918976, 173.512, 174.07270400000002, 174.60147200000003, 175.098688]}, "redCurved": {"x": [-32.0, -32.5584, -33.2272, -33.9968, -34.857600000000005, -35.800000000000004, -36.8144, -37.891200000000005, -39.02080000000001, -40.1936, -41.39999999999999, -42.63040000000001, -43.8752, -45.1248, -46.3696, -47.60000000000001, -48.8064, -49.9792, -51.10880000000001, -52.18560000000001, -53.2, -54.142399999999995, -55.0032, -55.7728], "y": [51.0, 51.960448, 53.110784, 54.434496, 55.915071999999995, 57.536, 59.280767999999995, 61.132864000000005, 63.07577600000001, 65.09299200000001, 67.16799999999999, 69.284288, 71.425344, 73.574656, 75.715712, 77.832, 79.907008, 81.92422400000001, 83.867136, 85.719232, 87.46400000000001, 89.084928, 90.565504, 91.88921599999999]}}
+            
             console.log(tempData)
 
-            const traces1 = {
-                blue: {
-                    x: [],
-                    y: [],
-                    mode: showLines?'lines+markers':'markers',
-                    type: 'scatter',
-                    marker: {
-                        color: 'rgb(0,0,255)',
-                    },
-                    line: {
-                        color: 'rgba(0,0,255,.2)',
-                    }
-                },
-                red: {
-                    x: [],
-                    y: [],
-                    type: 'scatter',
-                    mode: showLines?'lines+markers':'markers',
-                    marker: {
-                        color: 'rgb(255,0,0)',
-                    },
-                    line: {
-                        color: 'rgba(255,0,0,.2)',
-                    }
-                },
-                yellow: {
-                    x: [],
-                    y: [],
-                    type: 'scatter',
-                    mode: showLines?'lines+markers':'markers',
-                    marker: {
-                        color: 'rgb(255,255,0)',
-                    },
-                    line: {
-                        color: 'rgba(255,255,0,.2)',
-                    }
-                },
-                green: {
-                    x: [],
-                    y: [],
-                    type: 'scatter',
-                    mode: showLines?'lines+markers':'markers',
-                    marker: {
-                        color: 'rgb(0,255,0)',
-                    },
-                    line: {
-                        color: 'rgba(0,255,0,.2)',
-                    }
-                },
-                pink: {
-                    x: [],
-                    y: [],
-                    type: 'scatter',
-                    mode: showLines?'lines+markers':'markers',
-                    marker: {
-                        color: 'rgb(255,0,255)',
-                    },
-                    line: {
-                        color: 'rgba(255,0,255,.2)',
-                    }
-                },
-                black: {
-                    x: [],
-                    y: [],
-                    type: 'scatter',
-                    mode: 'markers',
-                    marker: {
-                        color: 'rgb(0,0,0)',
-                        size: [10,5],
-                    }
-                },
-                selected: {
-                    x: [],
-                    y: [],
-                    // yaxis: 'y2',
-                    mode: 'markers',
-                    type: 'scatter',
-                    marker: {
-                        color: 'rgb(0,0,0)',
-                        size: [10],
-                    }
-                },
-            }
-            
-            console.log(tempData.route.next)
-            const driveX = [tempData.route.x,...tempData.route.next.map(e=>e.x)]
-            const driveY = [tempData.route.y,...tempData.route.next.map(e=>e.y)]
-            
-            const points = []
-
-            for(var t=0; t<1; t+=0.01) {
-                points.push(interpolate(
-                    t,
-                    // [[tempData.route.x,tempData.route.y],[tempData.route.next[0].x,tempData.route.next[0].y]],
-                    [[tempData.route.x,tempData.route.y],...tempData.route.next.map(e=>[e.x,e.y])],
-                    [[0,0],...tempData.route.next.map(e=>[1,0])],
-                ))
-            }
-            console.log("points:",points)
-
-            const tempReturn = []
             const driveRoute = {
                 x: [tempData.route.x,...tempData.route.next.map(e=>e.x)],
                 y: [tempData.route.y,...tempData.route.next.map(e=>e.y)],
                 mode: 'lines+markers', // lines+
                 type: 'scatter',
+                name: "Direct Path",
+                active: false,
                 line: {
-                    color: "#000"
+                    color: "rgba(255,255,255,.1)",
+                    width: 1
                 },
                 marker: {
-                    color: "#000"
-                },
-            }
-            const interpolatedRoute = {
-                x: [...points.map(e=>e[0])],
-                y: [...points.map(e=>e[1])],
-                mode: 'lines+markers', // lines+
-                type: 'scatter',
-                line: {
-                    color: "#000"
-                },
-                marker: {
-                    color: "#000"
+                    color: "#fff",
                 },
             }
             
-            // const first = Object.values(tempData.route)[0]
-
-            // const buildDriveRoute = (x,y,first,route,id) => {
-            //     if(route[id].next.id==first) return [x,y]
-            //     x.push(route[id].x)
-            //     y.push(route[id].y)
-            //     const [tx,ty] = buildDriveRoute(x,y,first,route,route[id].next.id)
-            // }
-            // let x = []
-            // let y = []
-            // [x,y] = buildDriveRoute(x,y,first,tempData.route,first.id)
-            // console.log(x,y)
-
+            const interpolatedRoute = {
+                x: tempData.curve.x,
+                y: tempData.curve.y,
+                mode: 'lines+markers',
+                type: 'scatter',
+                name: "Calculated Path",
+                line: {
+                    color: "#fff"
+                },
+                marker: {
+                    color: "transparent"
+                },
+            }
+            
+            const bluePylons = {
+                x: [...tempData.pylons.blue.map(e=>e.x)],
+                y: [...tempData.pylons.blue.map(e=>e.y)],
+                mode: 'lines+markers',
+                type: 'scatter',
+                name: "Blue Pylons",
+                line: {
+                    color: "#0000ff30"
+                },
+                marker: {
+                    color: "#0000ff"
+                },
+            }
+            const interpolatedBluePylons = {
+                x: tempData.blueCurved.x,
+                y: tempData.blueCurved.y,
+                mode: 'lines+markers',
+                type: 'scatter',
+                name: "Blue Outline",
+                line: {
+                    color: "#00f"
+                },
+                marker: {
+                    color: "transparent"
+                },
+            }
+            
+            const redPylons = {
+                x: [...tempData.pylons.red.map(e=>e.x)],
+                y: [...tempData.pylons.red.map(e=>e.y)],
+                mode: 'lines+markers',
+                type: 'scatter',
+                name: "Red Pylons",
+                line: {
+                    color: "#ff000030"
+                },
+                marker: {
+                    color: "#f00"
+                },
+            }
+            const interpolatedRedPylons = {
+                x: tempData.redCurved.x,
+                y: tempData.redCurved.y,
+                mode: 'lines+markers',
+                type: 'scatter',
+                name: "Red Outline",
+                line: {
+                    color: "#f00"
+                },
+                marker: {
+                    color: "transparent"
+                },
+            }
+            
+            const tempReturn = []
             for(let i=0;i<tempData.neighbours.length;i++){
-                // console.log(tempData.neighbours[i].neighbours.map(e=>e.x))
                 tempReturn.push({
-                    x: [tempData.neighbours[i].x,...tempData.neighbours[i].neighbours.map(e=>e.x),tempData.neighbours[i].x],
-                    y: [tempData.neighbours[i].y,...tempData.neighbours[i].neighbours.map(e=>e.y),tempData.neighbours[i].y],
+                    x: [tempData.neighbours[i].x,tempData.neighbours[i].neighbour_same_color.x,tempData.neighbours[i].neighbour_other_color.x,tempData.neighbours[i].x],
+                    y: [tempData.neighbours[i].y,tempData.neighbours[i].neighbour_same_color.y,tempData.neighbours[i].neighbour_other_color.y,tempData.neighbours[i].y],
                     mode: 'lines+markers',
                     type: 'scatter',
+                    name: `Triangle ${i+1}`,
+                    legend: false,
+                    line: {
+                        color: "#303030",
+                        width: 1
+                    },
+                    marker: {
+                        color: "#303030",
+                    },
                 })
             }
             // tempReturn.push(driveRoute)
-            Plotly.newPlot('myDiv', [...tempReturn,driveRoute,interpolatedRoute], {
+            Plotly.newPlot('myDiv', [
+                ...tempReturn,
+                driveRoute,
+                interpolatedRoute,
+                bluePylons,
+                interpolatedBluePylons,
+                redPylons,
+                interpolatedRedPylons,
+            ], {
                 width: 500,
                 height: 500,
                 autoscale: true,
+                plot_bgcolor:"transparent",
+                paper_bgcolor:"#202020",
+                yaxis: {
+                    tickcolor: "transparent",
+                    // tickwidth: 15,
+                    
+                    gridcolor: "transparent",
+                    // gridwidth: 15,
+                    
+                    zerolinecolor: "green",
+                    // zerolinewidth: 2,
+                },
+                xaxis: {
+                    tickcolor: "transparent",
+                    // tickwidth: 50,
+                    
+                    gridcolor: "transparent",
+                    // gridwidth: 2,      
+                }
             });
         }
     </script>

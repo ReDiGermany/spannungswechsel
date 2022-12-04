@@ -10,13 +10,11 @@ import numpy as np
 from PIL import Image
 import cv2
 import io
-from data import DataStore
 from datetime import datetime
 import json 
 
 clients = []
 
-dataStore = DataStore()
 
 cachedImage = np.array(Image.open('mygraph.png'))
 def setImage(image):
@@ -119,27 +117,27 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
             print(Cache)
             self.wfile.write(b"done")
             return
-        if self.path.startswith('/image'):
-            image = dataStore.get_image()
-            if image is None:
-                self.send_response(500)
-                self.end_headers()
-                return
-            self.send_response(200)
-            self.send_header('Content-type', 'image/jpeg')
-            self.end_headers()
+        # if self.path.startswith('/image'):
+        #     image = dataStore.get_image()
+        #     if image is None:
+        #         self.send_response(500)
+        #         self.end_headers()
+        #         return
+        #     self.send_response(200)
+        #     self.send_header('Content-type', 'image/jpeg')
+        #     self.end_headers()
 
-            # cachedImage[...,::-1].copy()
+        #     # cachedImage[...,::-1].copy()
 
-            # filename = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            # cv2.imwrite("../../dump/cached-{0}.jpg".format(filename), cachedImage)
-            img = Image.fromarray(np.uint8(image[...,::-1].copy())).convert('RGB') #.astype(np.uint8)
-            imgByteArr = io.BytesIO()
-            img.save(imgByteArr, format="jpeg")
-            imgByteArr = imgByteArr.getvalue()
+        #     # filename = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        #     # cv2.imwrite("../../dump/cached-{0}.jpg".format(filename), cachedImage)
+        #     img = Image.fromarray(np.uint8(image[...,::-1].copy())).convert('RGB') #.astype(np.uint8)
+        #     imgByteArr = io.BytesIO()
+        #     img.save(imgByteArr, format="jpeg")
+        #     imgByteArr = imgByteArr.getvalue()
 
-            self.wfile.write(imgByteArr)
-            return
+        #     self.wfile.write(imgByteArr)
+        #     return
         if self.path == '/zed':
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
