@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Remote</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="top">
+                <div>{info}</div>
+                <div id="clock-container">
+                    <div id="clock"></div>
+                    <div id="date"></div>
+                </div>
+                <div>
+                    <div id="cpuLoad"></div>
+                    <div id="ramLoad"></div>
+                </div>
+            </div>
+            <div id="container">
+                <div id="chartImage">
+                    <div id="myDiv">
+
+                    </div>
+                    <div id="details">
+                        Translation:<br>
+                        x: 0<br>
+                        y: 0<br>
+                        z: 0<br>
+                        timestamp: 0<br>
+                        Orientation:<br>
+                        x: 0<br>
+                        y: 0<br>
+                        z: 0<br>
+                        w: 0<br>
+                        Orientation 2:<br>
+                        roll: 0<br>
+                        pitch: 0<br>
+                        yaw: 0<br>
+                        winkel: 0<br>
+                    </div>
+                </div>
+                <div id="deletes">
+                    <h2>Known Cones</h2>
+                    <a data-delete="" href="/reset_cones">Delete all</a>
+                </div>
+                <div id="mainImage">
+                    <img id="stream" src="" alt="" />
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+        <script src="/script.js" defer></script>
+    </body>
+</html>

@@ -4,7 +4,7 @@ import sys
 import torch
 import base64
 import pyzed.sl as sl
-sys.path.insert(0, './yolov5')
+sys.path.insert(0, './car/detector/yolov5')
 from utils.general import check_img_size, non_max_suppression, scale_boxes, xyxy2xywh
 from utils.torch_utils import select_device
 from utils.augmentations import letterbox

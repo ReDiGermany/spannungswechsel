@@ -13,7 +13,7 @@ neighbours = [
     # { "id":"7","color": "yellow", "x": -99, "y": 176},
 ]
 
-route,neighbours,curve,pylons,blue_curved,red_curved = nearest_neighbour(neighbours)
+route,neighbours,curve,pylons,blue_curved,red_curved = nearest_neighbour(neighbours,True)
 
 print(json.dumps({
     "neighbours":neighbours,

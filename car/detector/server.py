@@ -12,11 +12,14 @@ import cv2
 import io
 from datetime import datetime
 import json 
+import psutil
+import subprocess
 
 clients = []
 
 
-cachedImage = np.array(Image.open('mygraph.png'))
+# sys.path.insert(0, './car/detector/yolov5')
+cachedImage = np.array(Image.open('./car/detector/mygraph.png'))
 def setImage(image):
     global cachedImage
     # filename = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -61,6 +64,24 @@ def sendWebsocketMessage(msg):
         client.send_message(str(msg))
 
 class MyServer(http.server.SimpleHTTPRequestHandler):
+    def get_file(self,file,t):
+        with open("./dashboard/{}".format(file), 'r') as file:
+            data = file.read()
+            self.send_response(200)
+            self.send_header('Content-type', t)
+            self.end_headers()
+            self.wfile.write(data.encode('utf-8'))
+            return
+
+    def get_css(self,file):
+        return self.get_file(file,'text/css')
+
+    def get_js(self,file):
+        return self.get_file(file,'text/javascript')
+
+    def get_html(self,file):
+        return self.get_file(file,'text/html')
+
     def test(text):
         print(text)
     def log_message(self, format, *args):
@@ -104,7 +125,37 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
             return
     def do_GET(self):
         if self.path == '/':
-            self.path = 'index.html'
+            return self.get_html("index.html")
+                
+        if self.path.endswith('.css'):
+            return self.get_css(self.path)
+                
+        if self.path.endswith('.js'):
+            return self.get_js(self.path)
+                
+        if self.path.endswith('.html'):
+            return self.get_html(self.path)
+                
+        if self.path == "/api/system":
+            nic = "wlan0"
+            hostName = ni.ifaddresses(nic)[ni.AF_INET][0]['addr']
+
+            proc = subprocess.Popen('iwconfig', shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+            out, err = proc.communicate()
+
+            data = {
+                "cpu": psutil.cpu_percent(),
+                "ram": psutil.virtual_memory().percent,
+                "ip": hostName,
+                # "wifi": out
+            }
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            js = json.dumps(data)
+            self.wfile.write(js.encode("utf-8"))
+            return
+        
         if self.path == '/reset_cones':
             # global Cache
             self.send_response(200)

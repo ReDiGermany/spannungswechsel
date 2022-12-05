@@ -52,7 +52,7 @@ def parse(pts, cache, l, tension, numOfSeg, res, rPos):
         i = i + 2
 
 # https://github.com/gdenisov/cardinal-spline-js/blob/master/src/curve_calc.js
-def get_curve_points(points, tension = 0.5, numOfSeg = 25, close = False):
+def get_curve_points(points, tension = 0.5, numOfSeg = 3, close = False):
     i = 1
     l = len(points)
     rPos = 0
@@ -114,7 +114,16 @@ def get_curve_points(points, tension = 0.5, numOfSeg = 25, close = False):
     rPos = rPos + 1
     res[rPos] = points[l+1]
 
-    return res[2:-2:]
+    for idx,item in enumerate(res):
+        res[idx] = round(item,2)
+
+    # TODO: Check why this shit is necessary
+    # otherwhise the last point would either be missing or some weird shit would happen (try removing the [2:-2:])
+    re = res[2:-2:]
+    re.append(points[len(points)-2])
+    re.append(points[len(points)-1])
+
+    return re
 
 def check_permut(item1,item2,item3,temp_dict,neighbours,idx):
     key = "{}={}={}".format(item1,item2,item3)
@@ -127,7 +136,7 @@ def check_permut(item1,item2,item3,temp_dict,neighbours,idx):
     return key,False
 
 # Main Function
-def nearest_neighbour(neighbours):
+def nearest_neighbour(neighbours,detailed = False):
     route = {}
 
     # Finding outlines
@@ -211,28 +220,35 @@ def nearest_neighbour(neighbours):
             return_route["next"].pop(idx)
         temp_dict[key] = True
 
-    # Preparing points array & calculating curves
-    givenPoints = [return_route["x"],return_route["y"]]
-    for item in return_route["next"]:
-        givenPoints.append(item["x"])
-        givenPoints.append(item["y"])
-    curve = get_curve_points(givenPoints)
-    curved_points = {"x":curve[::2],"y":curve[1::2]}
+    curved_points = []
+    blue_curved = []
+    red_curved = []
 
     # Preparing points array & calculating curves
-    givenPoints = []
-    for item in pylons["blue"]:
-        givenPoints.append(item["x"])
-        givenPoints.append(item["y"])
-    curve = get_curve_points(givenPoints)
-    blue_curved = {"x":curve[::2],"y":curve[1::2]}
+    if detailed:
+        givenPoints = [return_route["x"],return_route["y"]]
+        for item in return_route["next"]:
+            givenPoints.append(item["x"])
+            givenPoints.append(item["y"])
+        curve = get_curve_points(givenPoints)
+        curved_points = {"x":curve[::2],"y":curve[1::2]}
 
     # Preparing points array & calculating curves
-    givenPoints = []
-    for item in pylons["red"]:
-        givenPoints.append(item["x"])
-        givenPoints.append(item["y"])
-    curve = get_curve_points(givenPoints)
-    red_curved = {"x":curve[::2],"y":curve[1::2]}
+    if detailed:
+        givenPoints = []
+        for item in pylons["blue"]:
+            givenPoints.append(item["x"])
+            givenPoints.append(item["y"])
+        curve = get_curve_points(givenPoints)
+        blue_curved = {"x":curve[::2],"y":curve[1::2]}
+
+    # Preparing points array & calculating curves
+    if detailed:
+        givenPoints = []
+        for item in pylons["red"]:
+            givenPoints.append(item["x"])
+            givenPoints.append(item["y"])
+        curve = get_curve_points(givenPoints)
+        red_curved = {"x":curve[::2],"y":curve[1::2]}
 
     return return_route,neighbours,curved_points,pylons,blue_curved,red_curved
