@@ -139,7 +139,7 @@ def check_permut(item1,item2,item3,temp_dict,neighbours,idx):
 def nearest_neighbour(neighbours,detailed = False):
     route = {}
 
-    # print(neighbours)
+    # print("\n\n INIT:\n{}".format(json.dumps(neighbours)))
 
     # Finding outlines
     pylons = {
@@ -162,7 +162,7 @@ def nearest_neighbour(neighbours,detailed = False):
                 item["distance"] = dist
         pylons[color].sort(key=sort_by_distance)
 
-    neighbours = pylons["blue"] + pylons["red"]
+    # neighbours = pylons["blue"] + pylons["red"]
 
     # print(pylons)
 
@@ -187,6 +187,8 @@ def nearest_neighbour(neighbours,detailed = False):
 
         item["neighbour_same_color"] =  nearest_same_color
         item["neighbour_other_color"] =  nearest_other_color
+
+    # print("\n\n With neighbours:\n{}".format(json.dumps(neighbours)))
 
     # Building Base route
     for idx,item in enumerate(neighbours):

@@ -190,6 +190,7 @@ img.onload = function() {
 // },1000)
 
 const fillPlot = (tempData) => {
+    console.log(tempData)
     const driveRoute = {
         x: [tempData.route.x,...tempData.route.next.map(e=>e.x)],
         y: [tempData.route.y,...tempData.route.next.map(e=>e.y)],
@@ -206,7 +207,7 @@ const fillPlot = (tempData) => {
         },
     }
     
-    const interpolatedRoute = {
+    const interpolatedDriveRoute = {
         x: tempData.curve.x,
         y: tempData.curve.y,
         mode: 'lines+markers',
@@ -223,6 +224,7 @@ const fillPlot = (tempData) => {
     const bluePylons = {
         x: [...tempData.pylons.blue.map(e=>e.x)],
         y: [...tempData.pylons.blue.map(e=>e.y)],
+        text: [...tempData.pylons.blue.map(e=>e.id)],
         mode: 'lines+markers',
         type: 'scatter',
         name: "Blue Pylons",
@@ -296,7 +298,7 @@ const fillPlot = (tempData) => {
     Plotly.newPlot('myDiv', [
         ...tempReturn,
         driveRoute,
-        interpolatedRoute,
+        interpolatedDriveRoute,
         bluePylons,
         interpolatedBluePylons,
         redPylons,
@@ -418,6 +420,9 @@ if(false){
     },1000)
 }else{
     fetch("/nearest-neighbour.json")
+    .catch(e=>{
+        console.log("failed")
+    })
         .then((response) => response.json())
         .then(data=>{
             fillPlot(data)

@@ -273,3 +273,7 @@ def startServers():
     wsThread.join()
     webServer.server_close()
     print("Server stopped.")
+
+def stopServer():
+    webServer.terminate()
+    server.terminate()

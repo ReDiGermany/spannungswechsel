@@ -1,0 +1,4 @@
+#!/bin/bash
+IP=$(ip addr show dev $(ip route ls|awk '/default/ {print $5}')|grep -Po 'inet \K(\d{1,3}\.?){4}')
+echo "IP: " $IP
+jupyter lab --ip $IP --port 8888

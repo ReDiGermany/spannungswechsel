@@ -100,10 +100,10 @@ h2 {
 }
 #top {
     background: #111;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.5);
     height: 40px;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 42px;
+    font-size: 15px;
     position: relative;
 }
 #top > div {
