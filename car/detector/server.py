@@ -15,6 +15,8 @@ import json
 import psutil
 import subprocess
 
+from get_wifi import get_wifi
+
 clients = []
 
 
@@ -82,6 +84,9 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
     def get_html(self,file):
         return self.get_file(file,'text/html')
 
+    def get_json(self,file):
+        return self.get_file("json/{}".format(file),'application/json')
+
     def test(text):
         print(text)
     def log_message(self, format, *args):
@@ -136,18 +141,20 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         if self.path.endswith('.html'):
             return self.get_html(self.path)
                 
+        if self.path.endswith('.json'):
+            return self.get_json(self.path)
+                
         if self.path == "/api/system":
             nic = "wlan0"
             hostName = ni.ifaddresses(nic)[ni.AF_INET][0]['addr']
 
-            proc = subprocess.Popen('iwconfig', shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-            out, err = proc.communicate()
+            wifi = get_wifi()
 
             data = {
                 "cpu": psutil.cpu_percent(),
                 "ram": psutil.virtual_memory().percent,
                 "ip": hostName,
-                # "wifi": out
+                "wifi": wifi
             }
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
