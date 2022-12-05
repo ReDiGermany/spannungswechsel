@@ -14,8 +14,6 @@ body {
 #main {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 body > div {
@@ -81,16 +79,6 @@ h2 {
 #details {
     padding-top: 20px;
 }
-#top {
-    background: #111;
-    color: rgba(255,255,255,.7);
-    height: 40px;
-    line-height: 40px;
-    padding: 0 15px;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-}
 #clock-container {
     display: flex;
     flex-direction: column;
@@ -110,7 +98,54 @@ h2 {
     line-height: 10px;
     font-size: 10px;
 }
+#top {
+    background: #111;
+    color: rgba(255,255,255,.7);
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    position: relative;
+}
 #top > div {
     display: flex;
-    gap: 15px
+    position: absolute;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+}
+#top > div:nth-of-type(1) {
+    left: 15px;
+}
+#top > div:nth-of-type(2) {
+    left: 50%;
+    transform: translateX(-50%)
+}
+#top > div:nth-of-type(3) {
+    right: 15px;
+}
+#top > div.hoverable > div {
+    padding: 0 15px
+}
+#top > div.hoverable > div:hover {
+    background: rgba(255,255,255,.1)
+}
+#wifi_details {
+    position: fixed;
+    top: 40px;
+    margin-left: -7.5px;
+    /* right: 0; */
+    background: #111;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 0;
+    list-style: none;
+}
+#wifi_details li {
+    padding: 5px 15px;
+}
+#wifi:not(:hover) > #wifi_details {
+    display: none;
+}
+#container {
+    display: flex;
 }

@@ -9,6 +9,8 @@ import numpy as np
 import json 
 import sys
 
+sys.path.insert(0, './car')
+from nearest_neighbour import nearest_neighbour
 sys.path.insert(0, './car/detector')
 import aux
 import server
@@ -434,7 +436,44 @@ def plt_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
 
                 # print("show")
 
-                json_object = json.dumps(Cache)
+                temp_pylons = []
+
+                def copy_item(item,i,cls):
+                    return {"x":item["x"],"y":item["y"],"color":cls,"id":str(i)}
+
+                for item in Cache["blue"]["items"]:
+                    temp_pylons.append(copy_item(Cache["blue"]["items"][item],item,"blue"))
+
+                for item in Cache["green"]["items"]:
+                    temp_pylons.append(copy_item(Cache["green"]["items"][item],item,"blue"))
+
+                for item in Cache["red"]["items"]:
+                    temp_pylons.append(copy_item(Cache["red"]["items"][item],item,"red"))
+
+                for item in Cache["pink"]["items"]:
+                    temp_pylons.append(copy_item(Cache["pink"]["items"][item],item,"red"))
+
+                # print(temp_pylons)
+
+                route = None
+                neighbours = None
+                curve = None
+                pylons = None
+                blue_curved = None
+                red_curved = None
+
+                if(len(temp_pylons)):
+                    route,neighbours,curve,pylons,blue_curved,red_curved = nearest_neighbour(temp_pylons,False)
+
+                # json_object = json.dumps(Cache)
+                json_object = json.dumps({
+                    "neighbours": neighbours,
+                    "route": route,
+                    "curve": curve,
+                    "pylons": pylons,
+                    "blueCurved": blue_curved,
+                    "redCurved": red_curved,
+                })
                 server.setImage(image_net[:,:,:3])
                 now = datetime.now()
                 if secCache != now.second:
