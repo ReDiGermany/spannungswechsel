@@ -340,12 +340,14 @@ class SpannungsWechsel(Thread):
         if len(obj_array) > 0:
             for obj in obj_array:
                 if not math.isnan(obj.position[0]):
+                    # print(obj.position)
                     self.check_item(obj)
 
             temp_pylons = []
 
             def copy_item(item,i,cls):
-                return {"x":item["x"],"y":item["y"],"color":cls,"id":str(i)}
+                # print(item)
+                return {"x":item["x"],"y":item["z"],"color":cls,"id":str(i)}
 
             for item in self.Cache["blue"]["items"]:
                 temp_pylons.append(copy_item(self.Cache["blue"]["items"][item],item,"blue"))
@@ -367,6 +369,7 @@ class SpannungsWechsel(Thread):
             pylons = None
             blue_curved = None
             red_curved = None
+
 
             if(len(temp_pylons)):
                 route,neighbours,curve,pylons,blue_curved,red_curved = nearest_neighbour(temp_pylons,False)

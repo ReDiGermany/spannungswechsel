@@ -410,7 +410,7 @@ const fillPlot = (tempData) => {
 
 }
 
-if(false){
+if(!false){
     setInterval(()=>{
         fetch("/positions")
             .then((response) => response.json())
@@ -420,9 +420,9 @@ if(false){
     },1000)
 }else{
     fetch("/nearest-neighbour.json")
-    .catch(e=>{
-        console.log("failed")
-    })
+        .catch(e=>{
+            console.log("failed")
+        })
         .then((response) => response.json())
         .then(data=>{
             fillPlot(data)
