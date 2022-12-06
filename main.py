@@ -271,16 +271,18 @@ class SpannungsWechsel(Thread):
         return old if dist > limit else new
 
     def add_label(self,obj,name):
+        dist = math.sqrt(math.pow(obj.position[0]-self.Cache["self"]["items"]["0"]["translation"]["x"],2) + math.pow(obj.position[2]-self.Cache["self"]["items"]["0"]["translation"]["y"],2))
         font = cv2.FONT_HERSHEY_SIMPLEX
         org = (int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])-10)
         org2 = (int(obj.bounding_box_2d[0][0])+1,int(obj.bounding_box_2d[0][1])-9)
         fontScale = .5
         thickness = 2
-        text = "({2} {3}) {0} x {1}".format(
+        text = "({2} {3}) {0} x {1} ({4}cm)".format(
             round(obj.position[0]),
             round(obj.position[2]),
             obj.id,
-            name[0]
+            name[0],
+            round(dist)
         )
         self.image_net = cv2.putText(self.image_net, text, org, font, fontScale, (0,0,0), 10, cv2.LINE_AA)
         self.image_net = cv2.putText(self.image_net, text, org, font, fontScale, (255,255,255), 1, cv2.LINE_AA)
@@ -296,22 +298,32 @@ class SpannungsWechsel(Thread):
             key = ""
 
             if(obj.raw_label == self.Cache["blue"]["classId"]): key = "blue"
-            elif(obj.raw_label == self.Cache["green"]["classId"]): key = "green"
+            elif(obj.raw_label == self.Cache["green"]["classId"]): key = "blue"#"green"
             elif(obj.raw_label == self.Cache["red"]["classId"]): key = "red"
-            elif(obj.raw_label == self.Cache["pink"]["classId"]): key = "pink"
+            elif(obj.raw_label == self.Cache["pink"]["classId"]): key = "red"#"pink"
             elif(obj.raw_label == self.Cache["yellow"]["classId"]): key = "yellow"
             else:
                 print("Found pylon out of identity")
                 return
             
             color = self.Cache[key]["color"]
+            temp_pos = self.position_to_object(obj.position)
             if obj.id in self.Cache[key]["items"]:
                 self.Cache[key]["items"][obj.id] = self.compare_position_and_update(
                     self.Cache[key]["items"][obj.id],
-                    self.position_to_object(obj.position)
+                    temp_pos
                 )
             else:
-                self.Cache[key]["items"][obj.id] = self.position_to_object(obj.position)
+                found = False
+                for temp in self.Cache[key]["items"]:
+                    # return math.sqrt(math.pow(el1["x"]-el2["x"],2) + math.pow(el1["y"]-el2["y"],2))
+                    dist = math.sqrt(math.pow(temp_pos["x"]-self.Cache[key]["items"][temp]["x"],2) + math.pow(temp_pos["y"]-self.Cache[key]["items"][temp]["y"],2))
+                    if dist < 10:
+                        found = True
+                if not found:
+                    dist = math.sqrt(math.pow(temp_pos["x"]-self.Cache["self"]["items"]["0"]["translation"]["x"],2) + math.pow(temp_pos["y"]-self.Cache["self"]["items"]["0"]["translation"]["y"],2))
+                    if dist > 50 and dist < 100:
+                        self.Cache[key]["items"][obj.id] = temp_pos
             self.add_label(obj,key)
 
     def process_image(self):

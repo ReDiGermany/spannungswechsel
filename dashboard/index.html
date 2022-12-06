@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Web Remote</title>
-        <link rel="stylesheet" href="/style.css">
-    </head>
-    <body>
-        <div id="main">
-            <div id="top">
-                <div>{info}</div>
-                <div id="clock-container">
-                    <div id="clock"></div>
-                    <div id="date"></div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Remote</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="top">
+            <div>{info}</div>
+            <div id="clock-container">
+                <div id="clock"></div>
+                <div id="date"></div>
+            </div>
+            <div class="hoverable">
+                <div id="power">
+                    <i class="fas fa-bolt"></i>
+                    <ul id="power_details">
+                    </ul>
                 </div>
-                <div class="hoverable">
-                    <div id="wifi">
-                        <i class="fas fa-wifi"></i>
-                        <ul id="wifi_details">
-                            <li>SSID: none</li>
-                            <li>Access Point: none</li>
-                            <li>Bit Rate: none</li>
-                            <li>Frequency: none</li>
-                            <li>Link Quality: none</li>
-                            <li>Nickname: none</li>
-                            <li>Noise Level: none</li>
-                            <li>Signal Level: none</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <i class="fas fa-microchip"></i> <span id="cpuLoad">0.0%</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-memory"></i> <span id="ramLoad">0.0%</span>
-                    </div>
+                <div id="wifi">
+                    <i class="fas fa-wifi"></i>
+                    <ul id="wifi_details">
+                        <li>SSID: none</li>
+                        <li>Access Point: none</li>
+                        <li>Bit Rate: none</li>
+                        <li>Frequency: none</li>
+                        <li>Link Quality: none</li>
+                        <li>Nickname: none</li>
+                        <li>Noise Level: none</li>
+                        <li>Signal Level: none</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fas fa-microchip"></i> <span id="cpuLoad">0.0%</span>
+                </div>
+                <div>
+                    <i class="fas fa-memory"></i> <span id="ramLoad">0.0%</span>
                 </div>
             </div>
-            <div id="container">
-                <div id="chartImage">
-                    <div id="myDiv">
+        </div>
+        <div id="container">
+            <div id="chartImage">
+                <div id="myDiv">
 
-                    </div>
-                    <!-- <div id="details">
+                </div>
+                <!-- <div id="details">
                         Translation:<br>
                         x: 0<br>
                         y: 0<br>
@@ -59,19 +66,20 @@
                         yaw: 0<br>
                         winkel: 0<br>
                     </div> -->
-                </div>
-                <div id="deletes">
-                    <h2>Known Cones</h2>
-                    <a data-delete="" href="/reset_cones">Delete all</a>
-                </div>
-                <div id="mainImage">
-                    <img id="stream" src="" alt="" />
-                </div>
+            </div>
+            <div id="deletes">
+                <h2>Known Cones</h2>
+                <a data-delete="" href="/reset_cones">Delete all</a>
+            </div>
+            <div id="mainImage">
+                <img id="stream" src="" alt="" />
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
-        <script src="/script.js" defer></script>
-        <script src="https://kit.fontawesome.com/0b707a452a.js" crossorigin="anonymous"></script>
-    </body>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+    <script src="/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0b707a452a.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

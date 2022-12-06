@@ -25,6 +25,9 @@ const updateLoad = () => {
                                     <li>Signal Level: ${data.wifi.signal_level}</li>
                                 </ul>`
     })
+    fetch("/power_mode").then(e=>e.json()).then(data=>{
+        document.getElementById("power_details").innerHTML = data.map(e=>`<li class="${e.active?"active":""}"><a target="_blank" href="/power_mode/${e.id}">${e.name.replace("MODE_","").replace("_"," ")}</a></li>`).join("")
+    })
 }
 updateLoad()
 
@@ -357,38 +360,39 @@ const fillPlot = (tempData) => {
 
     // plot()
 
-    // const html = ["<h2>Known Cones</h2>"]                    
-    // for(let k in data){
-    //     if(k==="self") continue;
-    //     for(let n in data[k].items){
-    //         html.push(`<a data-delete="" href="/delete/${k}:${n}">${k.padStart(6," ")} ${Math.round(data[k].items[n].x)} ${Math.round(data[k].items[n].z)}</a>`)
-    //     }
-    // }
-    // html.push(`<a data-delete="" href="/reset_cones">Delete all</a>`)
+    const html = ["<h2>Known Cones</h2>"]                    
+    for(let k in tempData.neighbours){
+        const itm = tempData.neighbours[k]
+        // if(k==="self") continue;
+        // for(let n in data[k].items){
+        html.push(`<a data-delete="" href="/delete/${itm.color}:${itm.id}">${itm.color.padStart(6," ")} ${Math.round(itm.x)} ${Math.round(itm.y)}</a>`)
+        // }
+    }
+    html.push(`<a data-delete="" href="/reset_cones">Delete all</a>`)
 
-    // document.getElementById("deletes").innerHTML = html.join("")
-    // const d = document.querySelectorAll("[data-delete]");
-    // for(let i=0;i<d.length;i++){
-    //     d[i].addEventListener("click",e=>{
-    //         e.preventDefault();
-    //         fetch(e.target.href)
-    //     })
-    //     d[i].addEventListener("mouseenter",e=>{
-    //         e.preventDefault();
-    //         const href = e.target.href.split("/")
-    //         const uri = href[href.length - 1].split(":")
-    //         const item = rawTraces[uri[0]].items[uri[1]];
-    //         traces.selected.x = [item.x]
-    //         traces.selected.y = [item.z]
-    //         plot()
-    //     })
-    //     d[i].addEventListener("mouseleave",e=>{
-    //         e.preventDefault();
-    //         traces.selected.x = []
-    //         traces.selected.y = []
-    //         plot()
-    //     })
-    // }
+    document.getElementById("deletes").innerHTML = html.join("")
+    const d = document.querySelectorAll("[data-delete]");
+    for(let i=0;i<d.length;i++){
+        d[i].addEventListener("click",e=>{
+            e.preventDefault();
+            fetch(e.target.href)
+        })
+        // d[i].addEventListener("mouseenter",e=>{
+        //     e.preventDefault();
+        //     const href = e.target.href.split("/")
+        //     const uri = href[href.length - 1].split(":")
+        //     const item = rawTraces[uri[0]].items[uri[1]];
+        //     traces.selected.x = [item.x]
+        //     traces.selected.y = [item.z]
+        //     plot()
+        // })
+        // d[i].addEventListener("mouseleave",e=>{
+        //     e.preventDefault();
+        //     traces.selected.x = []
+        //     traces.selected.y = []
+        //     plot()
+        // })
+    }
 
     // document.getElementById("details").innerHTML = `Translation:<br />
     // x: ${pos.translation.x}<br />

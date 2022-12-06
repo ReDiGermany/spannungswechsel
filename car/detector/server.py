@@ -14,8 +14,9 @@ from datetime import datetime
 import json 
 import psutil
 import subprocess
+import re
 
-from get_wifi import get_wifi
+from get_wifi import get_wifi, shell
 
 clients = []
 
@@ -163,6 +164,47 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(js.encode("utf-8"))
             return
         
+        if self.path == '/power_mode':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            lines = shell('cat /etc/nvpmodel.conf  | grep "^< POWER_MODEL ID="')
+            current_mode = shell('sudo nvpmodel -q')
+            modes = []
+            for line in lines:
+                found = re.findall("< POWER_MODEL ID=(.*) NAME=(.*) >",line)
+                if(len(found)>0 and len(found[0])>0):
+                    modes.append({
+                        "id": found[0][0],
+                        "name": found[0][1],
+                        "active": found[0][0] == current_mode[1]
+                    })
+                
+            def test(x):
+                return x["name"]
+                
+            modes.sort(key=test)
+            self.wfile.write(json.dumps(modes).encode("utf-8"))
+            return
+        if self.path.startswith('/power_mode/'):
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            identity = re.findall("/power_mode/(.*)",self.path)
+            wasFound = False
+            if len(identity) > 0:
+                lines = shell('cat /etc/nvpmodel.conf  | grep "^< POWER_MODEL ID="')
+                current_mode = shell('sudo nvpmodel -q')
+                modes = []
+                for line in lines:
+                    found = re.findall("< POWER_MODEL ID=(.*) NAME=(.*) >",line)
+                    if(len(found)>0 and len(found[0])>0):
+                        if found[0][0] == identity[0]:
+                            lines = shell("sudo nvpmodel -m {}".format(identity[0]))
+                            wasFound = True
+                            break
+            self.wfile.write(json.dumps({"success":wasFound}).encode("utf-8"))
+            return
         if self.path == '/reset_cones':
             # global Cache
             self.send_response(200)

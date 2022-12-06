@@ -146,6 +146,30 @@ h2 {
 #wifi:not(:hover) > #wifi_details {
     display: none;
 }
+#power_details {
+    position: fixed;
+    top: 40px;
+    margin:0;
+    margin-left: -15px;
+    /* right: 0; */
+    background: #111;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 0;
+    list-style: none;
+}
+#power_details li a {
+    color: inherit;
+    display:block;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+#power_details li.active {
+    color: #fff;
+}
+#power:not(:hover) > #power_details {
+    display: none;
+}
 #container {
     display: flex;
 }
