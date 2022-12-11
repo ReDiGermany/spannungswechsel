@@ -12,7 +12,7 @@ import sys
 sys.path.insert(0, './car')
 from nearest_neighbour import nearest_neighbour
 sys.path.insert(0, './car/detector')
-import aux
+import external_functions
 import server
 
 import argparse
@@ -351,10 +351,10 @@ class SpannungsWechsel(Thread):
         self.image_net = self.image_left_tmp.get_data()
         
         
-        img, ratio, pad = aux.img_preprocess(self.image_net, self.device, self.half, self.imgsz)
+        img, ratio, pad = external_functions.img_preprocess(self.image_net, self.device, self.half, self.imgsz)
         pred = self.model(img)[0]
         det = non_max_suppression(pred, self.conf_thres, self.iou_thres)
-        detections = aux.detections_to_custom_box(det, img, self.image_net)
+        detections = external_functions.detections_to_custom_box(det, img, self.image_net)
         self.zed.ingest_custom_box_objects(detections)
         self.zed.retrieve_objects(self.objects, self.obj_runtime_param)
         # if self.objects.is_new :
@@ -424,8 +424,8 @@ class SpannungsWechsel(Thread):
             now = datetime.now()
             if self.secCache != now.second:
                 self.secCache  = now.second
-                server.sendWebsocketMessage("left-eye:"+str(aux.image_to_base64(self.image_net[:,:,:3])))
-            # server.sendWebsocketMessage("chart:"+str(aux.image_to_base64(image)))
+                server.sendWebsocketMessage("left-eye:"+str(external_functions.image_to_base64(self.image_net[:,:,:3])))
+            # server.sendWebsocketMessage("chart:"+str(external_functions.image_to_base64(image)))
             server.setPositions(json_object)
             # server.sendWebsocketMessage("pylons:"+json_object)
             # else:

@@ -9,7 +9,7 @@ import numpy as np
 import json 
 
 from data import DataStore
-import aux
+import external_functions
 import server
 
 import argparse
