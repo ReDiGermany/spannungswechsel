@@ -53,31 +53,32 @@ class SpannungsWechsel(Thread):
         self.exit_signal = False
         self.run_signal = True
         self.detections = []
+        self.current_id = 0
         self.Cache = {
             "blue": {
                 "classId": 0,
                 "color": (255,0,0),
-                "items": {}
+                "items": []
             },
             "green": {
                 "classId": 1,
                 "color": (0,255,0),
-                "items": {}
+                "items": []
             },
             "red": {
                 "classId": 2,
                 "color": (0,0,255),
-                "items": {}
+                "items": []
             },
             "pink": {
                 "classId": 3,
                 "color": (255,0,255),
-                "items": {}
+                "items": []
             },
             "yellow": {
                 "classId": 4,
                 "color": (0,255,255),
-                "items": {}
+                "items": []
             },
             "self": {
                 "classId": [],
@@ -184,7 +185,7 @@ class SpannungsWechsel(Thread):
     def activate_camera_object_detection(self):
         obj_param = sl.ObjectDetectionParameters()
         obj_param.detection_model = sl.DETECTION_MODEL.CUSTOM_BOX_OBJECTS
-        # obj_param.enable_tracking = True
+        obj_param.enable_tracking = False
         # obj_param.enable_mask_output = True
         self.zed.enable_object_detection(obj_param)
 
@@ -262,7 +263,7 @@ class SpannungsWechsel(Thread):
         }
 
     def position_to_object(self,pos):
-        return {"x":pos[0],"y":pos[1],"z":pos[2]}
+        return {"x":round(pos[0]),"y":round(pos[1]),"z":round(pos[2]),"items":[],"count":0}
         
     def compare_position_and_update(self,old,new,limit=0.5):
         a = np.array((old["x"],old["y"],old["z"]))
@@ -291,40 +292,57 @@ class SpannungsWechsel(Thread):
         image = cv2.rectangle(self.image_net, (int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])), (int(obj.bounding_box_2d[2][0]),int(obj.bounding_box_2d[2][1])), self.Cache[name]["color"], thickness)
 
     def check_item(self,obj):
-        if obj.tracking_state==sl.OBJECT_TRACKING_STATE.OK:
+        # if obj.tracking_state==sl.OBJECT_TRACKING_STATE.OK:
 
-            color = (0,0,0)
+        color = (0,0,0)
 
-            key = ""
+        key = ""
 
-            if(obj.raw_label == self.Cache["blue"]["classId"]): key = "blue"
-            elif(obj.raw_label == self.Cache["green"]["classId"]): key = "blue"#"green"
-            elif(obj.raw_label == self.Cache["red"]["classId"]): key = "red"
-            elif(obj.raw_label == self.Cache["pink"]["classId"]): key = "red"#"pink"
-            elif(obj.raw_label == self.Cache["yellow"]["classId"]): key = "yellow"
-            else:
-                print("Found pylon out of identity")
-                return
-            
-            color = self.Cache[key]["color"]
-            temp_pos = self.position_to_object(obj.position)
-            if obj.id in self.Cache[key]["items"]:
-                self.Cache[key]["items"][obj.id] = self.compare_position_and_update(
-                    self.Cache[key]["items"][obj.id],
-                    temp_pos
-                )
-            else:
-                found = False
-                for temp in self.Cache[key]["items"]:
-                    # return math.sqrt(math.pow(el1["x"]-el2["x"],2) + math.pow(el1["y"]-el2["y"],2))
-                    dist = math.sqrt(math.pow(temp_pos["x"]-self.Cache[key]["items"][temp]["x"],2) + math.pow(temp_pos["y"]-self.Cache[key]["items"][temp]["y"],2))
-                    if dist < 10:
-                        found = True
-                if not found:
-                    dist = math.sqrt(math.pow(temp_pos["x"]-self.Cache["self"]["items"]["0"]["translation"]["x"],2) + math.pow(temp_pos["y"]-self.Cache["self"]["items"]["0"]["translation"]["y"],2))
-                    if dist > 50 and dist < 100:
-                        self.Cache[key]["items"][obj.id] = temp_pos
+        if(obj.raw_label == self.Cache["blue"]["classId"]): key = "blue"
+        elif(obj.raw_label == self.Cache["green"]["classId"]): key = "blue" #"green"
+        elif(obj.raw_label == self.Cache["red"]["classId"]): key = "red"
+        elif(obj.raw_label == self.Cache["pink"]["classId"]): key = "red" #"pink"
+        elif(obj.raw_label == self.Cache["yellow"]["classId"]): key = "yellow"
+        else:
+            print("Found pylon out of identity")
+            return
+        
+        color = self.Cache[key]["color"]
+        temp_pos = self.position_to_object(obj.position)
+        is_new = True
+        for temp in self.Cache[key]["items"]:
             self.add_label(obj,key)
+            dist = math.sqrt(math.pow(temp_pos["x"]-temp["x"],2) + math.pow(temp_pos["y"]-temp["y"],2))
+            # Check min distance 10cm
+            if dist < 10:
+                is_new = False
+                if temp["count"] < 10:
+                    temp["count"] = temp["count"] + 1
+                # temp["items"].append(temp_pos)
+        if is_new:
+            self.add_label(obj,key)
+            print("is_new @{} {}".format(key,json.dumps(temp_pos)))
+            cv2.imwrite(filename, self.image_net)
+            self.Cache[key]["items"].append(temp_pos)
+        # print(json.dumps(self.Cache[key]))
+
+        # self.current_id = self.current_id + 1
+        # if obj.id in self.Cache[key]["items"]:
+        #     self.Cache[key]["items"][obj.id] = self.compare_position_and_update(
+        #         self.Cache[key]["items"][obj.id],
+        #         temp_pos
+        #     )
+        # else:
+        # found = False
+        # for temp in self.Cache[key]["items"]:
+        #     # return math.sqrt(math.pow(el1["x"]-el2["x"],2) + math.pow(el1["y"]-el2["y"],2))
+        #     dist = math.sqrt(math.pow(temp_pos["x"]-self.Cache[key]["items"][temp]["x"],2) + math.pow(temp_pos["y"]-self.Cache[key]["items"][temp]["y"],2))
+        #     if dist < 10:
+        #         found = True
+        # if not found:
+        #     dist = math.sqrt(math.pow(temp_pos["x"]-self.Cache["self"]["items"]["0"]["translation"]["x"],2) + math.pow(temp_pos["y"]-self.Cache["self"]["items"]["0"]["translation"]["y"],2))
+        #     if dist > 50 and dist < 100:
+        #         self.Cache[key]["items"][obj.id] = temp_pos
 
     def process_image(self):
         self.update_own_position()
@@ -352,26 +370,33 @@ class SpannungsWechsel(Thread):
         if len(obj_array) > 0:
             for obj in obj_array:
                 if not math.isnan(obj.position[0]):
-                    # print(obj.position)
+                    # print((obj.position))
                     self.check_item(obj)
 
             temp_pylons = []
 
-            def copy_item(item,i,cls):
-                # print(item)
-                return {"x":item["x"],"y":item["z"],"color":cls,"id":str(i)}
+            def copy_item(item,c):
+                return {"x":item["x"],"y":item["z"],"color":c,"count":item["count"]}
 
             for item in self.Cache["blue"]["items"]:
-                temp_pylons.append(copy_item(self.Cache["blue"]["items"][item],item,"blue"))
+                temp_item = copy_item(item,"blue")
+                if temp_item["count"] > 9:
+                    temp_pylons.append(temp_item)
 
             for item in self.Cache["green"]["items"]:
-                temp_pylons.append(copy_item(self.Cache["green"]["items"][item],item,"blue"))
+                temp_item = copy_item(item,"blue")
+                if temp_item["count"] > 9:
+                    temp_pylons.append(temp_item)
 
             for item in self.Cache["red"]["items"]:
-                temp_pylons.append(copy_item(self.Cache["red"]["items"][item],item,"red"))
+                temp_item = copy_item(item,"red")
+                if temp_item["count"] > 9:
+                    temp_pylons.append(temp_item)
 
             for item in self.Cache["pink"]["items"]:
-                temp_pylons.append(copy_item(self.Cache["pink"]["items"][item],item,"red"))
+                temp_item = copy_item(item,"red")
+                if temp_item["count"] > 9:
+                    temp_pylons.append(temp_item)
 
             # print(temp_pylons)
 

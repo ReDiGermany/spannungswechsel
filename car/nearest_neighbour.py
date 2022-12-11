@@ -10,7 +10,7 @@ def distance_of(el1,el2):
 def template(item,distance,same_color):
     return {
         "distance": distance,
-        "id": item["id"],
+        # "id": item["id"],
         "x": item["x"],
         "y": item["y"],
         "color": item["color"],
@@ -149,7 +149,7 @@ def nearest_neighbour(neighbours,detailed = False):
     for item in neighbours:
         # print(item)
         pylons[item["color"]].append({
-            'id': item['id'],
+            # 'id': item['id'],
             'color': item['color'],
             'x': item['x'],
             'y': item['y'],
