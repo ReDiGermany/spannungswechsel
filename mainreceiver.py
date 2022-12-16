@@ -47,6 +47,7 @@ class SpannungsWechsel(Thread):
         print("Init")
         self.weights = kwargs["weights"]
         self.img_size = kwargs["img_size"]
+        self.ip = kwargs["ip"]
         self.conf_thres = 0.2
         self.iou_thres = 0.45
         self.image_net = []
@@ -122,12 +123,16 @@ class SpannungsWechsel(Thread):
     def init_camera_params(self):
         # Create a InitParameters object and set configuration parameters
         init_params = sl.InitParameters(input_t=self.input_type, svo_real_time_mode=True)
-        init_params.camera_resolution = sl.RESOLUTION.HD1080
+        init_params.camera_resolution = sl.RESOLUTION.HD720
         init_params.coordinate_units = sl.UNIT.CENTIMETER
         init_params.coordinate_system = sl.COORDINATE_SYSTEM.LEFT_HANDED_Y_UP
         # init_params.depth_mode = sl.DEPTH_MODE.ULTRA  # QUALITY
         init_params.depth_mode = sl.DEPTH_MODE.QUALITY #PERFORMANCE  # QUALITY
+        if self.ip != None:
+            print(f"Using remote IP: {self.ip}")
+            init_params.set_from_stream(self.ip)
         # init_params.depth_maximum_distance = 20
+        init_params.camera_fps = -1
 
         self.runtime_params = sl.RuntimeParameters()
         self.status = self.zed.open(init_params)
@@ -322,7 +327,7 @@ class SpannungsWechsel(Thread):
         if is_new:
             self.add_label(obj,key)
             print("is_new @{} {}".format(key,json.dumps(temp_pos)))
-            cv2.imwrite(filename, self.image_net)
+            cv2.imwrite("image.png", self.image_net)
             self.Cache[key]["items"].append(temp_pos)
         # print(json.dumps(self.Cache[key]))
 
@@ -362,7 +367,7 @@ class SpannungsWechsel(Thread):
 
         tempTime = str(datetime.utcnow().strftime('%H:%M:%S.%f')[:-3])[0:8]
         if self.timeName != tempTime:
-            print("FPS: {0}".format(str(self.timeNum)))
+            print("Receiving FPS: {0}".format(str(self.timeNum)))
             self.timeNum = 0
             self.timeName = tempTime
         self.timeNum = self.timeNum + 1
@@ -440,6 +445,7 @@ class SpannungsWechsel(Thread):
 
         if self.status != sl.ERROR_CODE.SUCCESS:
             print(repr(self.status))
+            print(repr(self.status))
             exit()
 
         print("Initialized Camera")
@@ -453,17 +459,19 @@ class SpannungsWechsel(Thread):
         self.load_model()
 
         while not exit_signal:
-            if self.zed.grab(self.runtime_params) == sl.ERROR_CODE.SUCCESS:
+            te = self.zed.grab(self.runtime_params)
+            if te == sl.ERROR_CODE.SUCCESS:
                 self.process_image()
             else:
                 print("failed")
+                print(te)
         print("done")
 
         self.zed.close()
         
 def main():
-    plot_thread = SpannungsWechsel(kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
-    plot_thread.start()
+    plot_thread = SpannungsWechsel(kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres, "ip": opt.ip})
+    plot_thread.run()
     server.startServers()
     
     while bizzi:
@@ -475,6 +483,7 @@ if __name__ == '__main__':
     parser.add_argument('--svo', type=str, default=None, help='optional svo file')
     parser.add_argument('--img_size', type=int, default=416, help='inference size (pixels)')
     parser.add_argument('--conf_thres', type=float, default=0.4, help='object confidence threshold')
+    parser.add_argument('--ip', type=str, default=None, help='The Remote IP of the car (for external camera)')
     opt = parser.parse_args()
 
     with torch.no_grad():

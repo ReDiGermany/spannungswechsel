@@ -287,7 +287,8 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
 
 def startServers():
     nic = "wlan0"
-    hostName = ni.ifaddresses(nic)[ni.AF_INET][0]['addr']
+    # hostName = ni.ifaddresses(nic)[ni.AF_INET][0]['addr']
+    hostName = "192.168.0.29"
     serverPort = 8080
     print("Using {0}'s ip: {1}".format(nic,hostName))
     
