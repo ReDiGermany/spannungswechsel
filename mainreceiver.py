@@ -471,7 +471,7 @@ class SpannungsWechsel(Thread):
         
 def main():
     plot_thread = SpannungsWechsel(kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres, "ip": opt.ip})
-    plot_thread.run()
+    plot_thread.start()
     server.startServers()
     
     while bizzi:
