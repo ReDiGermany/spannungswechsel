@@ -146,11 +146,27 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
             return self.get_json(self.path)
                 
         if self.path == "/api/system":
-            nic = "wlan0"
+            nic = ""
+            if "wlan0" in ni.interfaces():
+                nic = "wlan0"
+            else:
+                foundIps = []
+                for addr in ni.interfaces():
+                    temp = ni.ifaddresses(addr)
+                    for n in temp:
+                        a = temp[n][0]["addr"]
+                        if re.match("(.*)\.(.*)\.(.*)\.(.*)",a) and a!="127.0.0.1":
+                            nic = addr
+                            foundIps.append(a)
+                if len(foundIps)>1:
+                    print(f"[WARNING] MULTIPLE IP ADDRESSES FOUND! {json.dumps(foundIps)} - PROBABLY MULTIPLE ACTIVE ADAPTERS! TRY SETTING FIXED IP ON car/detector/server.py:~300")
             hostName = ni.ifaddresses(nic)[ni.AF_INET][0]['addr']
-
-            wifi = get_wifi()
-
+            
+            try:
+                wifi = get_wifi()
+            except:
+                wifi = None
+            
             data = {
                 "cpu": psutil.cpu_percent(),
                 "ram": psutil.virtual_memory().percent,
@@ -286,9 +302,22 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 def startServers():
-    nic = "wlan0"
-    # hostName = ni.ifaddresses(nic)[ni.AF_INET][0]['addr']
-    hostName = "192.168.0.29"
+    nic = ""
+    if "wlan0" in ni.interfaces():
+        nic = "wlan0"
+    else:
+        foundIps = []
+        for addr in ni.interfaces():
+            temp = ni.ifaddresses(addr)
+            for n in temp:
+                a = temp[n][0]["addr"]
+                if re.match("(.*)\.(.*)\.(.*)\.(.*)",a) and a!="127.0.0.1":
+                    nic = addr
+                    foundIps.append(a)
+        if len(foundIps)>1:
+            print(f"[WARNING] MULTIPLE IP ADDRESSES FOUND! {json.dumps(foundIps)} - PROBABLY MULTIPLE ACTIVE ADAPTERS! TRY SETTING FIXED IP ON car/detector/server.py:~300")
+    hostName = ni.ifaddresses(nic)[ni.AF_INET][0]['addr']
+    # hostName = "192.168.0.5"
     serverPort = 8080
     print("Using {0}'s ip: {1}".format(nic,hostName))
     
