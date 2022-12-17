@@ -11,11 +11,11 @@ if __name__ == "__main__":
     temp_dict = {}
     i=0
     while i < 10_000:
-        key = round_item({"x":r(),"y":r()})
+        key = round_item({"x":r(),"y":r()},20)
         if key not in temp_dict:
             temp_dict[key] = True
-            # print(f"Added {key}")
-        # else:
-            # print(f"Found double {key}")
+            print(f"Added {key}")
+        else:
+            print(f"Found double {key}")
         i = i+1
-    # print(temp_dict)
+    print(temp_dict)

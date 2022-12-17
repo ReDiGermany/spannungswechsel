@@ -224,7 +224,7 @@ const fillPlot = (tempData) => {
             color: "#fff"
         },
         marker: {
-            color: "transparent"
+            color: "#fff"
         },
     }
     
@@ -282,7 +282,20 @@ const fillPlot = (tempData) => {
             color: "transparent"
         },
     }
-    
+    const yellowPylons = {
+        x: [...tempData.pylons.yellow.map(e=>e.x)],
+        y: [...tempData.pylons.yellow.map(e=>e.y)],
+        mode: 'lines+markers',
+        type: 'scatter',
+        name: "Yellow Pylons",
+        line: {
+            color: "transparent"
+        },
+        marker: {
+            color: "#ffff00"
+        },
+    }
+
     const tempReturn = []
     for(let i=0;i<tempData.neighbours.length;i++){
         tempReturn.push({
@@ -302,6 +315,31 @@ const fillPlot = (tempData) => {
         })
     }
     // tempReturn.push(driveRoute)
+    const maxDistanceXBlue = tempData.pylons.blue.map(e=>e.x).sort((a,b)=>a-b)
+    const maxDistanceYBlue = tempData.pylons.blue.map(e=>e.y).sort((a,b)=>a-b)
+    const maxDistanceXRed = tempData.pylons.red.map(e=>e.x).sort((a,b)=>a-b)
+    const maxDistanceYRed = tempData.pylons.red.map(e=>e.y).sort((a,b)=>a-b)
+    let distance = 10
+    if(maxDistanceXBlue[maxDistanceXBlue.length - 1] - maxDistanceXBlue[0] > distance) distance = maxDistanceXBlue[maxDistanceXBlue.length - 1] - maxDistanceXBlue[0]
+    if(maxDistanceYBlue[maxDistanceYBlue.length - 1] - maxDistanceYBlue[0] > distance) distance = maxDistanceYBlue[maxDistanceYBlue.length - 1] - maxDistanceYBlue[0]
+    if(maxDistanceXRed[maxDistanceXRed.length - 1] - maxDistanceXRed[0] > distance) distance = maxDistanceXRed[maxDistanceXRed.length - 1] - maxDistanceXRed[0]
+    if(maxDistanceYRed[maxDistanceYRed.length - 1] - maxDistanceYRed[0] > distance) distance = maxDistanceYRed[maxDistanceYRed.length - 1] - maxDistanceYRed[0]
+    distance = distance / 10
+    const a = distance * Math.sin(tempData.position.euler.y)
+    const b = distance * Math.cos(tempData.position.euler.y)
+    const ownx = [tempData.position.translation.x,tempData.position.translation.x+a]
+    const owny = [tempData.position.translation.z,tempData.position.translation.z+b]
+
+
+    const blockerX = []
+    const blockerY = []
+
+    for(const item in tempData.blocker){
+        const c = item.split(":")
+        blockerX.push(parseInt(c[0]))
+        blockerY.push(parseInt(c[1]))
+    };
+
     Plotly.newPlot('myDiv', [
         ...tempReturn,
         driveRoute,
@@ -310,6 +348,34 @@ const fillPlot = (tempData) => {
         interpolatedBluePylons,
         redPylons,
         interpolatedRedPylons,
+        yellowPylons,
+        {
+            x: ownx,
+            y: owny,
+            mode: 'lines+markers',
+            type: 'scatter',
+            name: "carPosition",
+            line: {
+                color: "#4ae53a"
+            },
+            marker: {
+                color: "#4ae53a",
+                size: [10,0]
+            },
+        },
+        {
+            x: blockerX,
+            y: blockerY,
+            mode: 'markers',
+            type: 'scatter',
+            name: "Blocker",
+            line: {
+                color: "#00000080"
+            },
+            marker: {
+                color: "#00000080",
+            },
+        }
     ], {
         width: 500,
         height: 500,
@@ -353,7 +419,6 @@ const fillPlot = (tempData) => {
     // const allx = val[0].sort()
     // const allz = val[1].sort()
 
-    // const distance = 10
     // const point2 = []
     // const pos = data.self.items["0"];
     // // console.log(t,pos.euler)
@@ -379,7 +444,9 @@ const fillPlot = (tempData) => {
     for(let i=0;i<d.length;i++){
         d[i].addEventListener("click",e=>{
             e.preventDefault();
-            fetch(e.target.href)
+            fetch(e.target.href).then(e=>{
+                loadPlot()
+            })
         })
         // d[i].addEventListener("mouseenter",e=>{
         //     e.preventDefault();
@@ -418,14 +485,17 @@ const fillPlot = (tempData) => {
 
 }
 
+const loadPlot = ()=> {
+    fetch("/positions")
+        .then((response) => response.json())
+        .then(data=>{
+            fillPlot(data)
+        })
+}
+
 if(!false){
-    setInterval(()=>{
-        fetch("/positions")
-            .then((response) => response.json())
-            .then(data=>{
-                fillPlot(data)
-            })
-    },10*1000)
+    setInterval(()=>{loadPlot()},10*1000)
+    loadPlot()
 }else{
     fetch("/nearest-neighbour.json")
         .catch(e=>{

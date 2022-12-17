@@ -38,6 +38,11 @@ Cache = {}
 def setCache(c):
     global Cache
     Cache = c
+    
+BlockerGrid = {}
+def setBlockerGrid(c):
+    global BlockerGrid
+    BlockerGrid = c
 
 zed = {}
 sl = {}
@@ -228,8 +233,8 @@ class MyServer(http.server.SimpleHTTPRequestHandler):
             self.end_headers()
             for color in list(Cache.keys()):
                 if color!="self":
-                    for item in list(Cache[color]["items"].keys()):
-                        del Cache[color]["items"][item]
+                    Cache[color]["items"] = {}
+            BlockerGrid = {}
             print(Cache)
             self.wfile.write(b"done")
             return

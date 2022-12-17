@@ -11,7 +11,7 @@ import sys
 
 sys.path.insert(0, './car')
 from nearest_neighbour import nearest_neighbour
-from round_item import round_item
+from round_item import round_group
 sys.path.insert(0, './car/detector')
 import external_functions
 import server
@@ -51,6 +51,9 @@ class SpannungsWechsel(Thread):
         self.ip = kwargs["ip"]
         self.conf_thres = 0.2
         self.iou_thres = 0.45
+        self.object_validation_threshhold = 30
+        self.object_validation_time_offset = 5
+        self.object_grid_size = 5
         self.image_net = []
         self.exit_signal = False
         self.run_signal = True
@@ -82,28 +85,22 @@ class SpannungsWechsel(Thread):
                 "color": (0,255,255),
                 "items": {}
             },
-            "self": {
-                "classId": -1,
-                "color": (0,0,0),
-                "items": {
-                    "0":{
-                        "translation":{
-                            "x": 0,
-                            "y": 0,
-                            "z": 0,
-                        },
-                        "orientation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0,
-                            "w": 0,
-                        },
-                        "timestamp": 0
-                    }
-                }
-            }
+        }
+        self.Position = {
+            "translation":{
+                "x": 0,
+                "y": 0,
+                "z": 0,
+            },
+            "euler": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+            },
+            "timestamp": 0      
         }
         self.zed = None
+        self.BlockerGrid = {}
         self.input_type = None
         self.runtime_params = None
         self.status = None
@@ -119,6 +116,7 @@ class SpannungsWechsel(Thread):
         self.imgsz = None
         self.model = None
         server.setCache(self.Cache)
+        server.setBlockerGrid(self.BlockerGrid)
         print(".Init")
 
     def init_camera_params(self):
@@ -136,6 +134,8 @@ class SpannungsWechsel(Thread):
         init_params.camera_fps = -1
 
         self.runtime_params = sl.RuntimeParameters()
+        self.runtime_params.measure3D_reference_frame = sl.REFERENCE_FRAME.WORLD
+
         self.status = self.zed.open(init_params)
 
     def print_camera_settings(self):
@@ -224,46 +224,21 @@ class SpannungsWechsel(Thread):
         tx = round(self.cam_w_pose.get_translation(py_translation).get()[0], 3)
         ty = round(self.cam_w_pose.get_translation(py_translation).get()[1], 3)
         tz = round(self.cam_w_pose.get_translation(py_translation).get()[2], 3)
-        # print("Translation: tx: {0}, ty:  {1}, tz:  {2}, timestamp: {3}".format(tx, ty, tz, self.cam_w_pose.timestamp.get_seconds()))
-        #Display orientation quaternion
-        py_orientation = sl.Orientation()
-        ox = round(self.cam_w_pose.get_orientation(py_orientation).get()[0], 3)
-        oy = round(self.cam_w_pose.get_orientation(py_orientation).get()[1], 3)
-        oz = round(self.cam_w_pose.get_orientation(py_orientation).get()[2], 3)
-        ow = round(self.cam_w_pose.get_orientation(py_orientation).get()[3], 3)
-        
+
         ex = round(self.cam_w_pose.get_euler_angles()[0],3)
         ey = round(self.cam_w_pose.get_euler_angles()[1],3)
         ez = round(self.cam_w_pose.get_euler_angles()[2],3)
 
-        vx = round(self.cam_w_pose.get_rotation_vector()[0],3)
-        vy = round(self.cam_w_pose.get_rotation_vector()[1],3)
-        vz = round(self.cam_w_pose.get_rotation_vector()[2],3)
-
-        # print("Translation: tx: {0}, ty:  {1}, tz:  {2}, timestamp: {3} | Orientation: ox: {4}, oy:  {5}, oz: {6}, ow: {7}".format(tx, ty, tz, self.cam_w_pose.timestamp.get_seconds(),ox, oy, oz, ow))
-        # roll_x, pitch_y, yaw_z = euler_from_quaternion(ox,oy,oz,ow)
-        # (x, y, z, w):
-        self.Cache["self"]["items"]["0"] = {
+        self.Position = {
             "translation":{
                 "x": tx,
                 "y": ty,
                 "z": tz,
             },
-            "orientation": {
-                "x": ox,
-                "y": oy,
-                "z": oz,
-                "w": ow,
-            },
             "euler": {
                 "x": ex,
                 "y": ey,
                 "z": ez,
-            },
-            "rvect": {
-                "x": vx,
-                "y": vy,
-                "z": vz,
             },
             "timestamp": self.cam_w_pose.timestamp.get_seconds()
         }
@@ -278,7 +253,7 @@ class SpannungsWechsel(Thread):
         return old if dist > limit else new
 
     def add_label(self,obj,name):
-        dist = math.sqrt(math.pow(obj.position[0]-self.Cache["self"]["items"]["0"]["translation"]["x"],2) + math.pow(obj.position[2]-self.Cache["self"]["items"]["0"]["translation"]["y"],2))
+        dist = math.sqrt(math.pow(obj.position[0]-self.Position["translation"]["x"],2) + math.pow(obj.position[2]-self.Position["translation"]["y"],2))
         font = cv2.FONT_HERSHEY_SIMPLEX
         org = (int(obj.bounding_box_2d[0][0]),int(obj.bounding_box_2d[0][1])-10)
         org2 = (int(obj.bounding_box_2d[0][0])+1,int(obj.bounding_box_2d[0][1])-9)
@@ -315,6 +290,8 @@ class SpannungsWechsel(Thread):
         
         color = self.Cache[key]["color"]
         temp_pos = self.position_to_object(obj.position)
+        if temp_pos["y"] < -40 or temp_pos["y"] > 0:
+            return
         is_new = True
         # for temp in self.Cache[key]["items"]:
         #     self.add_label(obj,key)
@@ -325,19 +302,26 @@ class SpannungsWechsel(Thread):
         #         if temp["count"] < 10:
         #             temp["count"] = temp["count"] + 1
         #         # temp["items"].append(temp_pos)
-        new_key = round_item(temp_pos)
-        if new_key in self.Cache[key]["items"]:
-            temp_item = self.Cache[key]["items"][new_key]
-            if temp_item["count"] < 10:
-                temp_item["count"] = temp_item["count"] + 1
-                temp_item["last_time"] = time.time()
-        else:
-            self.Cache[key]["items"][new_key] = temp_pos
-        if is_new:
-            self.add_label(obj,key)
-            print("is_new @{} {}".format(key,json.dumps(temp_pos)))
+        group = round_group(temp_pos,self.object_grid_size)
+        new_key = group["center"]
+        # if BlockerGrid
+        if new_key not in self.BlockerGrid:
+            if new_key in self.Cache[key]["items"]:
+                temp_item = self.Cache[key]["items"][new_key]
+                if temp_item["count"] < self.object_validation_threshhold:
+                    temp_item["count"] = temp_item["count"] + 1
+                    temp_item["last_time"] = time.time()
+                    if temp_item["count"] == self.object_validation_threshhold:
+                        for itm in group["corners"]:
+                            print(f"Adding blocker {itm} for item @ {new_key}")
+                            self.BlockerGrid[itm] = True
+            else:
+                self.Cache[key]["items"][new_key] = temp_pos
+        self.add_label(obj,key)
+        #if is_new:
+            #self.add_label(obj,key)
+            #print("is_new @{} {}".format(key,json.dumps(temp_pos)))
             # cv2.imwrite("image.png", self.image_net)
-            self.Cache[key]["items"].append(temp_pos)
         # print(json.dumps(self.Cache[key]))
 
         # self.current_id = self.current_id + 1
@@ -354,7 +338,7 @@ class SpannungsWechsel(Thread):
         #     if dist < 10:
         #         found = True
         # if not found:
-        #     dist = math.sqrt(math.pow(temp_pos["x"]-self.Cache["self"]["items"]["0"]["translation"]["x"],2) + math.pow(temp_pos["y"]-self.Cache["self"]["items"]["0"]["translation"]["y"],2))
+        #     dist = math.sqrt(math.pow(temp_pos["x"]-self.Position["translation"]["x"],2) + math.pow(temp_pos["y"]-self.Position["translation"]["y"],2))
         #     if dist > 50 and dist < 100:
         #         self.Cache[key]["items"][obj.id] = temp_pos
 
@@ -381,14 +365,14 @@ class SpannungsWechsel(Thread):
             self.timeName = tempTime
 
             # Checking every 5 seconds
-            if self.timeNum % 5 == 0:
+            if self.timeNum % self.object_validation_time_offset == 0:
                 for cls in self.Cache:
                     temp_item = self.Cache[cls]
-                    if temp_item["classId"]>=0: # if is proper class (filtering self.Cache["self"])
-                        for key in temp_item["items"]:
-                            if temp_item["items"][key]["count"] < 10: # first check is count
+                    if temp_item["classId"]>=0: # if is proper class (filtering self.Cache ["self"])
+                        for key in list(temp_item["items"]):
+                            if temp_item["items"][key]["count"] < self.object_validation_threshhold: # first check is count
                                 # temp_item["last_time"] = time.time()
-                                if temp_item["items"][key]["last_time"] < time.time() - 5: # check last seen time
+                                if temp_item["items"][key]["last_time"] < time.time() - self.object_validation_time_offset: # check last seen time
                                     del temp_item["items"][key] # remove item
         self.timeNum = self.timeNum + 1
 
@@ -404,24 +388,29 @@ class SpannungsWechsel(Thread):
                 return {"x":item["x"],"y":item["z"],"color":c,"count":item["count"]}
 
             for item in self.Cache["blue"]["items"]:
-                temp_item = copy_item(item,"blue")
-                if temp_item["count"] > 9:
+                temp_item = copy_item(self.Cache["blue"]["items"][item],"blue")
+                if temp_item["count"] >= self.object_validation_threshhold:
                     temp_pylons.append(temp_item)
 
             for item in self.Cache["green"]["items"]:
-                temp_item = copy_item(item,"blue")
-                if temp_item["count"] > 9:
+                temp_item = copy_item(self.Cache["green"]["items"][item],"blue")
+                if temp_item["count"] >= self.object_validation_threshhold:
                     temp_pylons.append(temp_item)
 
             for item in self.Cache["red"]["items"]:
-                temp_item = copy_item(item,"red")
-                if temp_item["count"] > 9:
+                temp_item = copy_item(self.Cache["red"]["items"][item],"red")
+                if temp_item["count"] >= self.object_validation_threshhold:
                     temp_pylons.append(temp_item)
 
             for item in self.Cache["pink"]["items"]:
-                temp_item = copy_item(item,"red")
-                if temp_item["count"] > 9:
+                temp_item = copy_item(self.Cache["pink"]["items"][item],"red")
+                if temp_item["count"] >= self.object_validation_threshhold:
                     temp_pylons.append(temp_item)
+
+            # for item in self.Cache["yellow"]["items"]:
+            #     temp_item = copy_item(self.Cache["yellow"]["items"][item],"yellow")
+            #     if temp_item["count"] >= self.object_validation_threshhold:
+            #         temp_pylons.append(temp_item)
 
             # print(temp_pylons)
 
@@ -432,7 +421,7 @@ class SpannungsWechsel(Thread):
             blue_curved = None
             red_curved = None
 
-
+            # getting nearest neighbours
             if(len(temp_pylons)):
                 route,neighbours,curve,pylons,blue_curved,red_curved = nearest_neighbour(temp_pylons,False)
 
@@ -444,6 +433,8 @@ class SpannungsWechsel(Thread):
                 "pylons": pylons,
                 "blueCurved": blue_curved,
                 "redCurved": red_curved,
+                "position": self.Position,
+                "blocker": self.BlockerGrid,
             })
             server.setImage(self.image_net[:,:,:3])
             now = datetime.now()
@@ -491,6 +482,7 @@ class SpannungsWechsel(Thread):
         
 def main():
     plot_thread = SpannungsWechsel(kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres, "ip": opt.ip})
+    plot_thread.deamon=True
     plot_thread.start()
     server.startServers()
     

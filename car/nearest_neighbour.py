@@ -63,6 +63,9 @@ def get_curve_points(points, tension = 0.5, numOfSeg = 3, close = False):
 
     pts = points #js> pts = points.slice(0);
     
+    if l <= 0:
+        return
+
     if close:
         pts.insert(0,points[l - 1])				    # insert end point as first point
         pts.insert(0,points[l - 2])
@@ -143,6 +146,7 @@ def nearest_neighbour(neighbours,detailed = False):
 
     # Finding outlines
     pylons = {
+        "yellow":[],
         "blue":[],
         "red":[]
     }
@@ -218,6 +222,8 @@ def nearest_neighbour(neighbours,detailed = False):
                     })
         route[item]["next"].sort(key=sort_by_distance)
 
+    # print(route)
+
     return_route = route["0"]
 
     # Removing double entries
@@ -238,7 +244,8 @@ def nearest_neighbour(neighbours,detailed = False):
         for item in return_route["next"]:
             givenPoints.append(item["x"])
             givenPoints.append(item["y"])
-        curve = get_curve_points(givenPoints)
+        curve = get_curve_points(givenPoints,numOfSeg=10)
+        print(curve)
         curved_points = {"x":curve[::2],"y":curve[1::2]}
 
     # Preparing points array & calculating curves
@@ -247,7 +254,7 @@ def nearest_neighbour(neighbours,detailed = False):
         for item in pylons["blue"]:
             givenPoints.append(item["x"])
             givenPoints.append(item["y"])
-        curve = get_curve_points(givenPoints)
+        curve = get_curve_points(givenPoints,numOfSeg=10)
         blue_curved = {"x":curve[::2],"y":curve[1::2]}
 
     # Preparing points array & calculating curves
@@ -256,7 +263,7 @@ def nearest_neighbour(neighbours,detailed = False):
         for item in pylons["red"]:
             givenPoints.append(item["x"])
             givenPoints.append(item["y"])
-        curve = get_curve_points(givenPoints)
+        curve = get_curve_points(givenPoints,numOfSeg=10)
         red_curved = {"x":curve[::2],"y":curve[1::2]}
 
     return return_route,neighbours,curved_points,pylons,blue_curved,red_curved
