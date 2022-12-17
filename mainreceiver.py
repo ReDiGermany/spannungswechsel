@@ -11,6 +11,7 @@ import sys
 
 sys.path.insert(0, './car')
 from nearest_neighbour import nearest_neighbour
+from round_item import round_item
 sys.path.insert(0, './car/detector')
 import external_functions
 import server
@@ -59,30 +60,30 @@ class SpannungsWechsel(Thread):
             "blue": {
                 "classId": 0,
                 "color": (255,0,0),
-                "items": []
+                "items": {}
             },
             "green": {
                 "classId": 1,
                 "color": (0,255,0),
-                "items": []
+                "items": {}
             },
             "red": {
                 "classId": 2,
                 "color": (0,0,255),
-                "items": []
+                "items": {}
             },
             "pink": {
                 "classId": 3,
                 "color": (255,0,255),
-                "items": []
+                "items": {}
             },
             "yellow": {
                 "classId": 4,
                 "color": (0,255,255),
-                "items": []
+                "items": {}
             },
             "self": {
-                "classId": [],
+                "classId": -1,
                 "color": (0,0,0),
                 "items": {
                     "0":{
@@ -268,7 +269,7 @@ class SpannungsWechsel(Thread):
         }
 
     def position_to_object(self,pos):
-        return {"x":round(pos[0]),"y":round(pos[1]),"z":round(pos[2]),"items":[],"count":0}
+        return {"x":round(pos[0]),"y":round(pos[1]),"z":round(pos[2]),"count":0,"last_time":-1}
         
     def compare_position_and_update(self,old,new,limit=0.5):
         a = np.array((old["x"],old["y"],old["z"]))
@@ -315,19 +316,27 @@ class SpannungsWechsel(Thread):
         color = self.Cache[key]["color"]
         temp_pos = self.position_to_object(obj.position)
         is_new = True
-        for temp in self.Cache[key]["items"]:
-            self.add_label(obj,key)
-            dist = math.sqrt(math.pow(temp_pos["x"]-temp["x"],2) + math.pow(temp_pos["y"]-temp["y"],2))
-            # Check min distance 10cm
-            if dist < 10:
-                is_new = False
-                if temp["count"] < 10:
-                    temp["count"] = temp["count"] + 1
-                # temp["items"].append(temp_pos)
+        # for temp in self.Cache[key]["items"]:
+        #     self.add_label(obj,key)
+        #     dist = math.sqrt(math.pow(temp_pos["x"]-temp["x"],2) + math.pow(temp_pos["y"]-temp["y"],2))
+        #     # Check min distance 10cm
+        #     if dist < 10:
+        #         is_new = False
+        #         if temp["count"] < 10:
+        #             temp["count"] = temp["count"] + 1
+        #         # temp["items"].append(temp_pos)
+        new_key = round_item(temp_pos)
+        if new_key in self.Cache[key]["items"]:
+            temp_item = self.Cache[key]["items"][new_key]
+            if temp_item["count"] < 10:
+                temp_item["count"] = temp_item["count"] + 1
+                temp_item["last_time"] = time.time()
+        else:
+            self.Cache[key]["items"][new_key] = temp_pos
         if is_new:
             self.add_label(obj,key)
             print("is_new @{} {}".format(key,json.dumps(temp_pos)))
-            cv2.imwrite("image.png", self.image_net)
+            # cv2.imwrite("image.png", self.image_net)
             self.Cache[key]["items"].append(temp_pos)
         # print(json.dumps(self.Cache[key]))
 
@@ -367,9 +376,20 @@ class SpannungsWechsel(Thread):
 
         tempTime = str(datetime.utcnow().strftime('%H:%M:%S.%f')[:-3])[0:8]
         if self.timeName != tempTime:
-            print("Receiving FPS: {0}".format(str(self.timeNum)))
+            print(f"Receiving FPS: {str(self.timeNum)}")
             self.timeNum = 0
             self.timeName = tempTime
+
+            # Checking every 5 seconds
+            if self.timeNum % 5 == 0:
+                for cls in self.Cache:
+                    temp_item = self.Cache[cls]
+                    if temp_item["classId"]>=0: # if is proper class (filtering self.Cache["self"])
+                        for key in temp_item["items"]:
+                            if temp_item["items"][key]["count"] < 10: # first check is count
+                                # temp_item["last_time"] = time.time()
+                                if temp_item["items"][key]["last_time"] < time.time() - 5: # check last seen time
+                                    del temp_item["items"][key] # remove item
         self.timeNum = self.timeNum + 1
 
         if len(obj_array) > 0:
