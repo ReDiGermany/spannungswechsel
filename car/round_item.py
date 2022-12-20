@@ -13,6 +13,7 @@ def round_group(item,base=5):
 
     return {
         "center": f"{rawx}:{rawy}",
+        "center_raw":{"x":rawx,"y":rawy},
         "corners": [
             f"{rawx-base}:{rawy-base}", f"{rawx}:{rawy-base}", f"{rawx+base}:{rawy-base}",
             f"{rawx-base}:{rawy}", f"{rawx+base}:{rawy}", # f"{rawx}:{rawy}", @ middle but no need to block that due to it wont count up then
